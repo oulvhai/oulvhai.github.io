@@ -1,0 +1,835 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>  
+	  
+  	Coder For Art
+  	
+	</title
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="atom.xml" rel="alternate" title="Coder For Art" type="application/atom+xml">
+
+	<link href="asset/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<link href="asset/stylesheets/font-awesome.min.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<script src="asset/javascripts/jquery.min.js"></script>
+	<script src="asset/highlightjs/highlight.pack.js"></script>
+	<link href="asset/highlightjs/styles/solarized_dark.css" media="screen, projection" rel="stylesheet" type="text/css">
+<script>hljs.initHighlightingOnLoad();</script>
+	<!--[if lt IE 9]><script src="asset/javascripts/html5.js"></script><![endif]-->
+	<!-- <link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'> -->
+	<style type="text/css">
+/* latin */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Nunito-Light'), url(asset/font/1TiHc9yag0wq3lDO9cw0voX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Nunito-Regular'), url(asset/font/6TbRXKWJjpj6V2v_WyRbMX-_kf6ByYO6CLYdB4HQE-Y.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Nunito-Bold'), url(asset/font/TttUCfJ272GBgSKaOaD7KoX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+	</style>
+	
+	<style type="text/css">
+	.container .left-col{ opacity: 1;}
+	#pagenavi a{ font-size: 1.3em;}
+	#pagenavi .next:before{ top: 3px;}
+	#pagenavi .prev:before{ top: 3px;}
+	.container .mid-col .mid-col-container #content .archives .title{ font-size: 1.5em;}
+	.container .mid-col .mid-col-container #content article{ padding: 15px 0px;}
+	#header .subtitle {
+		line-height: 1.2em;
+		padding-top: 8px;
+	}
+	#sub-nav .social a.weibo {
+		background: url('asset/images/social/weibo.png?1419407210') center no-repeat #4ec4fa;
+		border: 1px solid #4ec4fa;
+	}
+	article pre{ background: none; border: none; padding: 0;}
+	article .entry-content{text-align: left;}
+	</style>
+
+</head>
+
+
+<body>
+	<div class="container">
+		<div class="left-col">
+			<div class="intrude-less">
+				<header id="header" class="inner">
+					<div class="profilepic">
+						<img src="asset/icon.jpg" style="width:160px;">
+					</div>
+					<h1><a href="index.html">Coder For Art</a></h1>
+					<p class="subtitle">I'm an indie Mac/iOS developer, also want to be a CG artist</p>
+					<nav id="main-nav">
+						<ul class="main">
+							<li><a href="index.html">Home</a></li>
+						    <li><a href="all.html">Blog</a></li>
+						    <li><a href="archives.html">Archives</a></li>
+						</ul>
+					</nav>
+
+					<nav id="sub-nav">
+						<div class="social">
+
+<!-- 
+			<a class="email" href="mailto:" title="Email">Email</a>
+			<a class="facebook" href="http://www.facebook.com/" title="Facebook">Facebook</a>
+			<a class="google" href="https://plus.google.com/" rel="author" title="Google+">Google+</a>
+			<a class="twitter" href="http://twitter.com/" title="Twitter">Twitter</a>
+			<a class="github" href="https://github.com/" title="GitHub">GitHub</a>
+			<a class="coderwall" href="https://coderwall.com/" title="Coderwall">Coderwall</a>
+		    <a class="stackoverflow" href="http://stackoverflow.com/users/" title="StackOverflow"></a>
+			<a class="linkedin" href="http://www.linkedin.com/in/" title="LinkedIn">LinkedIn</a>
+			<a class="pinterest" href="https://pinterest.com/" title="Pinterest">Pinterest</a>
+			<a class="delicious" href="http://delicious.com/" title="Delicious">Delicious</a>
+			<a class="pinboard" href="https://pinboard.in/u:" title="Pinboard">Pinboard</a>
+			<a class="douban" href="https://www.douban.com/people/" title="Douban">Douban</a>
+			<a class="quora" href="https://quora.com/" title="Quora">Quora</a>
+			<a class="instagram" href="https://instagram.com/" title="Instagram">Instagram</a>
+			<a class="behance" href="https://www.behance.net/" title="Behance">Behance</a>
+			<a class="facebook" href="http://www.facebook.com/" title="Facebook">Facebook</a>
+-->	
+								<a class="weibo" target="_blank" href="http://weibo.com/oulvhai" title="weibo">Weibo</a>
+								
+								<a class="github" target="_blank" href="https://github.com/oulvhai" title="GitHub">GitHub</a>
+								<a class="twitter" target="_blank" href="http://twitter.com/oulvhai" title="Twitter">Twitter</a>
+								<a class="rss" href="atom.xml" title="RSS">RSS</a>
+							
+						</div>
+					</nav>
+				</header>				
+			</div>
+		</div>	
+		<div class="mid-col">
+			<div class="mid-col-container"> <div id="content" class="inner">
+<div itemscope itemtype="http://schema.org/Blog">
+
+
+	<article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+		<div class="meta">
+			<div class="date">
+				<time datetime="2015-01-19T15:02:30GMT+08:00" itemprop="datePublished">2015/1/19</time>
+			</div>
+			<div class="tags">posted in 
+			
+			    <a class='category' href='MWeb-cat.html'>MWeb</a>&nbsp;
+			 
+			</div>
+		</div>
+		<h1 class="title" itemprop="name"><a href="mweb-v1.1-release.html" itemprop="url">
+		MWeb 1.1 release</a></h1>
+		<div class="entry-content" itemprop="articleBody">
+			
+			<h2>New feature</h2>
+
+<ul>
+<li>Add import files (.txt and .md) featrue：File &ndash;&gt; Import Files To Library&hellip;</li>
+<li>Add TOC（Table of Content）featrue: Preferences &ndash;&gt; Themes &ndash;&gt; Enable TOC (Table of Content)</li>
+<li>Add MWeb Lite</li>
+<li>Add sitemap suport.</li>
+<li>Add right click for category edit.</li>
+<li>Add syntax highlighting in fenced code blocks feature,for version 1.0 user, please go to <a href="https://github.com/oulvhai/MWeb-Themes/">https://github.com/oulvhai/MWeb-Themes/</a> download new themes. Language name detail:<a href="http://highlightjs.readthedocs.org/en/latest/css-classes-reference.html">http://highlightjs.readthedocs.org/en/latest/css-classes-reference.html</a></li>
+</ul>
+
+<h2>Fixed</h2>
+
+<ul>
+<li>Live preview improved</li>
+<li>Outline improved</li>
+<li>case sensitive system can&rsquo;t open MWeb&rsquo;s document.</li>
+</ul>
+
+<h2>Syntax highlighting in fenced code blocks screenshot</h2>
+
+<p><img src="media/14216489427773/Snip20150119_6.png" alt="">￼￼￼￼</p>
+
+<p><img src="media/14216489427773/Snip20150119_5.png" alt="">￼￼</p>
+
+
+			
+			
+		</div>
+
+	</article>
+ 
+	<article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+		<div class="meta">
+			<div class="date">
+				<time datetime="2015-01-19T14:29:02GMT+08:00" itemprop="datePublished">2015/1/19</time>
+			</div>
+			<div class="tags">posted in 
+			
+			    <a class='category' href='MWeb-cat.html'>MWeb</a>&nbsp;
+			 
+			</div>
+		</div>
+		<h1 class="title" itemprop="name"><a href="mweb-v1.1-release-zh.html" itemprop="url">
+		MWeb 1.1 版更新说明</a></h1>
+		<div class="entry-content" itemprop="articleBody">
+			
+			<h2>新增</h2>
+
+<ul>
+<li>增加导入.txt或Markdown文档到文档库功能：File &ndash;&gt; Import Files To Library&hellip;</li>
+<li>增加TOC（Table of Content）支持，和是否 Render TOC 选项</li>
+<li>增加免费版</li>
+<li>增加sitemap功能</li>
+<li>站点文件夹增加右键菜单</li>
+<li>增加代码高亮功能，支持超多编程语言，1.0版本的朋友请去<a href="https://github.com/oulvhai/MWeb-Themes/">https://github.com/oulvhai/MWeb-Themes/</a>下载最新的主题即可。支持语言及缩写详细请参考：<a href="http://highlightjs.readthedocs.org/en/latest/css-classes-reference.html">http://highlightjs.readthedocs.org/en/latest/css-classes-reference.html</a></li>
+</ul>
+
+<h2>修正</h2>
+
+<ul>
+<li>即时预览功能大改进，现在是真正即时了，然后滚动时，同步的位置也比较准确了。</li>
+<li>Outline跳到所在位置时高亮选中文字</li>
+<li>区分大小写系统在初次打开时无法看到自带的文档问题</li>
+<li>初次使用直接点Preview Site无效果问题</li>
+</ul>
+
+<h2>代码高亮功能截图</h2>
+
+<p><img src="media/14216489427773/Snip20150119_6.png" alt="">￼￼</p>
+
+<p><img src="media/14216489427773/Snip20150119_5.png" alt="">￼￼</p>
+
+
+			
+			
+		</div>
+
+	</article>
+ 
+	<article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+		<div class="meta">
+			<div class="date">
+				<time datetime="2015-01-16T14:19:42GMT+08:00" itemprop="datePublished">2015/1/16</time>
+			</div>
+			<div class="tags">posted in 
+			
+			    <a class='category' href='Game%20Engine.html'>Game Engine</a>&nbsp;
+			
+			    <a class='category' href='CG%20Artist.html'>CG Artist</a>&nbsp;
+			 
+			</div>
+		</div>
+		<h1 class="title" itemprop="name"><a href="unrealengine4-windows-mac.html" itemprop="url">
+		游戏制作之路：游戏引擎选择、Mac下和Windows下UnrealEngine 4体验对比、文档及其他</a></h1>
+		<div class="entry-content" itemprop="articleBody">
+			
+			<h2>UnrealEngine 4和Unity3d的选择</h2>
+
+<p>订阅了UrealEngine4（UE4）开发者。我开始做网站用的是ASP.NET和C#，之后做网站虽然换用更方便的PHP（因为做的都是小网站）。我想说，做了长达7年的小网站就算我再水，但是C#我还是懂一些的，而Unity3d刚刚好最建议用的就是C#。C++我不懂，只在高中毕业后看了C++编程思想并把大部分例子都手打入电脑并运行。Unity3d在移动端有大量成功的案例，文档非常好，视频教程也很全，研究的人也非常多，有问题很容易找到文案等等等等，简直是好得不能再好了！但是：UE4是开源的，《游戏引擎架构》里说游戏一般都用C++，我这次学是认真的！！作为一个有追求的人也必须选UE4等等！！最后我要说的是，这些都不是我选UE4的主要原因，真相是：Unity3D好贵！月付400多，不付就马上没有全功能的，全买更贵！UE4如果你不用最新的，你只要买一个月，之后都是免费的，全功能的。虽然这点钱对于真正做产品来说，不算什么，但是对于学习了说，不一样。反正做游戏也不单单是引擎的事，然后学会了一个引擎，再学另一个，或者也就是几天的事。</p>
+
+
+
+			 
+			<a href="unrealengine4-windows-mac.html#more" class="more-link">Read on &rarr;</a>
+    		
+			
+		</div>
+
+	</article>
+ 
+	<article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+		<div class="meta">
+			<div class="date">
+				<time datetime="2015-01-07T13:58:07GMT+08:00" itemprop="datePublished">2015/1/7</time>
+			</div>
+			<div class="tags">posted in 
+			
+			    <a class='category' href='Introduction.html'>Introduction</a>&nbsp;
+			 
+			</div>
+		</div>
+		<h1 class="title" itemprop="name"><a href="me-screenshot-and-in-yosemite.html" itemprop="url">
+		MWeb Screenshot and in Yosemite</a></h1>
+		<div class="entry-content" itemprop="articleBody">
+			
+			<h2>Yosemite</h2>
+
+<p><img src="media/14206095675933/yosemite-01.jpg" alt="yosemite-01">￼</p>
+
+
+
+			 
+			<a href="me-screenshot-and-in-yosemite.html#more" class="more-link">Read on &rarr;</a>
+    		
+			
+		</div>
+
+	</article>
+ 
+	<article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+		<div class="meta">
+			<div class="date">
+				<time datetime="2015-01-07T13:54:03GMT+08:00" itemprop="datePublished">2015/1/7</time>
+			</div>
+			<div class="tags">posted in 
+			
+			    <a class='category' href='MWeb-cat.html'>MWeb</a>&nbsp;
+			 
+			</div>
+		</div>
+		<h1 class="title" itemprop="name"><a href="custom-site-theme-detail.html" itemprop="url">
+		Custom site theme or design you owner theme</a></h1>
+		<div class="entry-content" itemprop="articleBody">
+			
+			<p>I&rsquo;ll update in this month. Now you can reference <code>Octopress</code> and <code>Greyshade</code> Theme, just edit any site category and click <code>Theme: --&gt; Edit..</code> button. </p>
+
+<p><a href="http://coderforart.com/">http://coderforart.com/</a> Theme now add to github:<a href="https://github.com/oulvhai/MWeb-Themes">https://github.com/oulvhai/MWeb-Themes</a>.</p>
+
+
+			
+			
+		</div>
+
+	</article>
+ 
+	<article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+		<div class="meta">
+			<div class="date">
+				<time datetime="2015-01-07T01:48:59GMT+08:00" itemprop="datePublished">2015/1/7</time>
+			</div>
+			<div class="tags">posted in 
+			
+			    <a class='category' href='Introduction.html'>Introduction</a>&nbsp;
+			 
+			</div>
+		</div>
+		<h1 class="title" itemprop="name"><a href="custom-site-theme-detail-zh.html" itemprop="url">
+		自定网站或博客主题简单说明</a></h1>
+		<div class="entry-content" itemprop="articleBody">
+			
+			<p>详细说明还没写好，大概要过些天吧，现在可以参考自带的主题 <code>Octopress</code> 和 <code>Greyshade</code> 。 双击任何<code>site category</code> 然后点击 <code>Theme: --&gt; Edit..</code> 按钮或者去 github 下载: <a href="https://github.com/oulvhai/MWeb-Themes">https://github.com/oulvhai/MWeb-Themes</a>.</p>
+
+<h2>自定首页</h2>
+
+<p>如图，设定想要设置为首页的文档的 HTML file name 为 <code>index</code>, 选中 <code>Is page</code> 选项。<br>
+<img src="media/14189904700669/14210659918568.jpg" alt="">￼￼￼￼￼￼</p>
+
+<h2>自定文档页的HTML模板</h2>
+
+<p>不选<code>Is page</code>选项时，生成HTML时读取的模板为：header.html+post.html+sidebar.html+footer.html。选中了<code>Is page</code>选项后，生成HTML时会读取的模板为：header.html+page.html+footer.html，如果要自定文档的模板，可以在主题文件夹里新增一个名称为：page-{HTML file name}.html 的页面，这样生成HTML时的读取的模板就会变成：header.html+page-{HTML file name}.html+footer.html。比如说要自定首页的模板，则在主题文件夹里新增一个名为：page-index.html 的页面即可。如 <a href="http://coderforart.com">http://coderforart.com</a> 就自定了首页，内容为：<a href="https://github.com/oulvhai/MWeb-Themes/blob/master/mweb-greyshade/page-index.html">https://github.com/oulvhai/MWeb-Themes/blob/master/mweb-greyshade/page-index.html</a> </p>
+
+<h2>自定分类页的HTML模板</h2>
+
+<p>分类页生成HTML时读取的模板为：header.html+category.html+sidebar.html+footer.html。 其中category.html可以自定，MWeb生成分类页的HTML时，会判定是否存在：category-{HTML file name}.html的模板，如果存在，则会优先使用category-{HTML file name}.html模板。比如说有一个分类的 HTML file name 为 Cocoa，如果要自定这个分类的分类页的模板，则只要在主题文件夹里新增一个名为：category-Cocoa.html的页面即可，MWeb生成HTML时读取模板就会变为：header.html+category-Cocoa.html+sidebar.html+footer.html。</p>
+
+<h2>自定主题更详细的说明</h2>
+
+<p>MWeb所有网站主题模板都放在SiteThemes这个资料夹里，一个资料夹就表示一个主题。每个主题里包含的文档和文件夹的作用如下：</p>
+
+<ul>
+<li>asset &ndash; 主题所有要用到的东西，图片、CSS、JS等等都放这里</li>
+<li>archives.html &ndash; archives.html页所使用的模板</li>
+<li>atom.xml &ndash; RSS所使用的模板</li>
+<li>category.html &ndash; 分类所使用的模板</li>
+<li>footer.html &ndash; 页面的底部</li>
+<li>header.html &ndash; 页面的顶部</li>
+<li>page-index.html &ndash; 自定首页模板</li>
+<li>page.html &ndash; 文档选中<code>Is page</code>时所使用的模板</li>
+<li>post.html &ndash; 文档不选中<code>Is page</code>所使用的模板</li>
+<li>sidebar.html &ndash; 侧边栏的模板</li>
+<li>sitemap.xml &ndash; 网站sitemap所使用的模板</li>
+</ul>
+
+<h2>生成HTML时传入模板页的变量说明</h2>
+
+<h3>文档分类对象变量</h3>
+
+<table><thead>
+<tr>
+<th>变量名称</th>
+<th>说明</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>name</td>
+<td>分类的名称</td>
+</tr>
+<tr>
+<td>url</td>
+<td>分类的网址</td>
+</tr>
+</tbody></table>
+
+<h3>文档对象变量</h3>
+
+<table><thead>
+<tr>
+<th>变量名称</th>
+<th>说明</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>title</td>
+<td>文章的标题，通常为第一行</td>
+</tr>
+<tr>
+<td>desContent</td>
+<td>文章的HTML格式的描述，如果文档中没有<code>&lt;!-- more --&gt;</code>则跟content一样</td>
+</tr>
+<tr>
+<td>desContentTextOnly</td>
+<td>文章的纯文字描述，不带HTML</td>
+</tr>
+<tr>
+<td>content</td>
+<td>文章的内容</td>
+</tr>
+<tr>
+<td>date</td>
+<td>文章的时间，格式按网站设定，默认为：2014/10/24</td>
+</tr>
+<tr>
+<td>dateGTM</td>
+<td>文章的时间，格式为 2014-10-24T13:54:03GMT+08:00</td>
+</tr>
+<tr>
+<td>artDate</td>
+<td>文章新增的时间，格式按网站设定，默认为：2014/10/24</td>
+</tr>
+<tr>
+<td>cats</td>
+<td>文章分类的数组，数组的对象为<code>文档分类对象变量</code></td>
+</tr>
+<tr>
+<td>readMore</td>
+<td>文章中是否有<code>&lt;!-- more --&gt;</code></td>
+</tr>
+<tr>
+<td>url</td>
+<td>文章的网址</td>
+</tr>
+</tbody></table>
+
+<h3>最近文章变量</h3>
+
+<table><thead>
+<tr>
+<th>变量名称</th>
+<th>说明</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>title</td>
+<td>文章的名称</td>
+</tr>
+<tr>
+<td>url</td>
+<td>文章的网址</td>
+</tr>
+</tbody></table>
+
+<h3>分类对象变量</h3>
+
+<table><thead>
+<tr>
+<th>变量名称</th>
+<th>说明</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>name</td>
+<td>分类的名称</td>
+</tr>
+<tr>
+<td>url</td>
+<td>分类的网址</td>
+</tr>
+<tr>
+<td>count</td>
+<td>分类的文章数量</td>
+</tr>
+</tbody></table>
+
+<h2>生成网站</h2>
+
+<h3>所有页面都会传入的变量</h3>
+
+<table><thead>
+<tr>
+<th>变量名称</th>
+<th>说明</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>siteURL</td>
+<td>网站设置中的网站网址</td>
+</tr>
+<tr>
+<td>siteDomain</td>
+<td>网站的域名</td>
+</tr>
+<tr>
+<td>siteName</td>
+<td>网站的名称</td>
+</tr>
+<tr>
+<td>pageTitle</td>
+<td>网站的标题</td>
+</tr>
+<tr>
+<td>siteDes</td>
+<td>网站的描述</td>
+</tr>
+<tr>
+<td>lastBuildDate</td>
+<td>网站最后生成时间</td>
+</tr>
+<tr>
+<td>siteOther</td>
+<td>网站设置中的<code>other</code></td>
+</tr>
+<tr>
+<td>recentPosts</td>
+<td>数组，数组的对象为<code>最近文章变量</code></td>
+</tr>
+<tr>
+<td>allCategories</td>
+<td>数组，数组的对象为<code>分类对象变量</code></td>
+</tr>
+<tr>
+<td>categoriesTree</td>
+<td>二层分类树，数组，数组的对象为<code>分类对象变量</code>，外加children。请参考 <a href="https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/sidebar.html">https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/sidebar.html</a></td>
+</tr>
+</tbody></table>
+
+<h3>生成RSS: atom.xml</h3>
+
+<p>读取的模板：atom.xml<br>
+传入的变量：</p>
+
+<table><thead>
+<tr>
+<th>变量名称</th>
+<th>说明</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>posts</td>
+<td>数组，数组对象为<code>文档对象变量</code></td>
+</tr>
+</tbody></table>
+
+<p>参考模板：<a href="https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/atom.xml">https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/atom.xml</a></p>
+
+<h3>生成所有文章的页面</h3>
+
+<p>读取的模板：header.html + post.html + sidebar.html + footer.html<br>
+传入的变量：</p>
+
+<table><thead>
+<tr>
+<th>变量名称</th>
+<th>说明</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>post</td>
+<td>对象为<code>文档对象变量</code></td>
+</tr>
+<tr>
+<td>postNav</td>
+<td>字典，带有<code>next</code>，<code>prev</code>两个对象，对象为 <code>最近文章变量</code></td>
+</tr>
+</tbody></table>
+
+<p>参考模板：<a href="https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/post.html">https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/post.html</a></p>
+
+<h3>生成所有分类的页面</h3>
+
+<p>读取的模板：header.html + category.html + sidebar.html + footer.html<br>
+传入的变量：</p>
+
+<table><thead>
+<tr>
+<th>变量名称</th>
+<th>说明</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>posts</td>
+<td>数组，数组的对象为<code>文档对象变量</code></td>
+</tr>
+<tr>
+<td>prevPageUrl</td>
+<td>上一页的网址</td>
+</tr>
+<tr>
+<td>nextPageUrl</td>
+<td>下一页的网址</td>
+</tr>
+</tbody></table>
+
+<p>参考模板：<a href="https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/category.html">https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/category.html</a></p>
+
+<h3>生成所有文章选中<code>Is page</code>的页面</h3>
+
+<p>读取的模板：header.html + page.html +  footer.html<br>
+传入的变量：</p>
+
+<table><thead>
+<tr>
+<th>变量名称</th>
+<th>说明</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>posts</td>
+<td>数组，数组的对象为<code>文档对象变量</code></td>
+</tr>
+<tr>
+<td>post</td>
+<td>对象为<code>文档对象变量</code></td>
+</tr>
+</tbody></table>
+
+<p>参考模板：<a href="https://github.com/oulvhai/MWeb-Themes/blob/master/mweb-greyshade/page-index.html">https://github.com/oulvhai/MWeb-Themes/blob/master/mweb-greyshade/page-index.html</a></p>
+
+<h3>生成archives.html</h3>
+
+<p>读取的模板：header.html + archives.html + footer.html<br>
+传入的变量：</p>
+
+<table><thead>
+<tr>
+<th>变量名称</th>
+<th>说明</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>posts</td>
+<td>数组，数组对象请参考下表</td>
+</tr>
+</tbody></table>
+
+<table><thead>
+<tr>
+<th>变量名称</th>
+<th>说明</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>year</td>
+<td>文章年份</td>
+</tr>
+<tr>
+<td>title</td>
+<td>文章标题</td>
+</tr>
+<tr>
+<td>url</td>
+<td>文章网址</td>
+</tr>
+<tr>
+<td>cats</td>
+<td>文章分类的数组，数组的对象为<code>文档分类对象变量</code></td>
+</tr>
+<tr>
+<td>date</td>
+<td>文章的时间，格式按网站设定，默认为：2014/10/24</td>
+</tr>
+<tr>
+<td>dateMonth</td>
+<td>文章月份</td>
+</tr>
+<tr>
+<td>dateDay</td>
+<td>文章日期</td>
+</tr>
+<tr>
+<td>dateYear</td>
+<td>文章年份</td>
+</tr>
+<tr>
+<td>dateGTM</td>
+<td>文章的时间，格式为 2014-10-24T13:54:03GMT+08:00</td>
+</tr>
+<tr>
+<td>artDate</td>
+<td>文章新增的时间，格式按网站设定，默认为：2014/10/24</td>
+</tr>
+</tbody></table>
+
+<p>参考模板：<a href="https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/archives.html">https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/archives.html</a></p>
+
+<h3>生成sitemap.xml</h3>
+
+<p>读取的模板：sitemap.xml<br>
+传入的变量：</p>
+
+<table><thead>
+<tr>
+<th>变量名称</th>
+<th>说明</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>archives</td>
+<td>数组，数组对象请参考下表</td>
+</tr>
+<tr>
+<td>pages</td>
+<td>数组，数组对象请参考下表</td>
+</tr>
+<tr>
+<td>nowDateGTM</td>
+<td>当前时间</td>
+</tr>
+</tbody></table>
+
+<table><thead>
+<tr>
+<th>变量名称</th>
+<th>说明</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>posts</td>
+<td>数组，数组对象请参考下表</td>
+</tr>
+</tbody></table>
+
+<table><thead>
+<tr>
+<th>变量名称</th>
+<th>说明</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>title</td>
+<td>文章标题</td>
+</tr>
+<tr>
+<td>url</td>
+<td>文章网址</td>
+</tr>
+<tr>
+<td>date</td>
+<td>文章的时间，格式按网站设定，默认为：2014/10/24</td>
+</tr>
+<tr>
+<td>dateGTM</td>
+<td>文章的时间，格式为 2014-10-24T13:54:03GMT+08:00</td>
+</tr>
+<tr>
+<td>artDate</td>
+<td>文章新增的时间，格式按网站设定，默认为：2014/10/24</td>
+</tr>
+</tbody></table>
+
+<p>参考模板：<a href="https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/sitemap.xml">https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/sitemap.xml</a></p>
+
+
+			
+			
+		</div>
+
+	</article>
+ 
+	<article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+		<div class="meta">
+			<div class="date">
+				<time datetime="2014-12-17T16:50:02GMT+08:00" itemprop="datePublished">2014/12/17</time>
+			</div>
+			<div class="tags">posted in 
+			
+			    <a class='category' href='Introduction.html'>Introduction</a>&nbsp;
+			 
+			</div>
+		</div>
+		<h1 class="title" itemprop="name"><a href="mweb.html" itemprop="url">
+		Introduction MWeb</a></h1>
+		<div class="entry-content" itemprop="articleBody">
+			
+			<p>MWeb is a markdown editor for static websites and blogs on OS X, like <a href="http://octopress.org/">Octopress</a> or <a href="http://jekyllrb.com/">Jekyll</a> but easy to use. You can write document with markdown,drag &amp; drop or paste photos to the editor, MWeb will automatically add markdown code and display photos in editor. You can choose some categories to organize the document, and build static websites and blogs <strong>One Click</strong>.</p>
+
+<p><img src="media/14189656825627/MWeb.jpg" alt="MWeb">￼￼￼￼￼￼￼￼￼￼￼￼</p>
+
+
+
+			 
+			<a href="mweb.html#more" class="more-link">Read on &rarr;</a>
+    		
+			
+		</div>
+
+	</article>
+ 
+	<article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+		<div class="meta">
+			<div class="date">
+				<time datetime="2014-12-17T10:38:19GMT+08:00" itemprop="datePublished">2014/12/17</time>
+			</div>
+			<div class="tags">posted in 
+			
+			    <a class='category' href='Introduction.html'>Introduction</a>&nbsp;
+			 
+			</div>
+		</div>
+		<h1 class="title" itemprop="name"><a href="mweb-zh.html" itemprop="url">
+		MWeb简介</a></h1>
+		<div class="entry-content" itemprop="articleBody">
+			
+			<p>MWeb是一个Markdown编辑器和全静态网站、博客生成工具，像<a href="http://octopress.org/">Octopress</a>和 <a href="http://jekyllrb.com/">Jekyll</a>，但是更简单易用。MWeb不仅仅是一个好用的Markdown编辑器，它专门为用Markdown写文章并且要发布成网站、博客的这一类用户优化。一般的场景为：想写文章时，随意选一个分类或不选分类开始写，当某天想把文章发布出来时，只需要选择一下要发布的网站分类的任一分类，点<code>Build site</code>即可生成全静态网站。全静态网站相比PHP等网站，除了速度超快之外，更节省时间精力，可以有更多的时间关心内容和生活。MWeb也专门为喜欢写教程类的用户优化，比如拖拽或粘贴即可插入图片，Fenced code blocks和代码高亮支持这几个很方便实用的功能。</p>
+
+<p><img src="media/14189656825627/MWeb.jpg" alt="MWeb">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
+
+
+
+			 
+			<a href="mweb-zh.html#more" class="more-link">Read on &rarr;</a>
+    		
+			
+		</div>
+
+	</article>
+  
+
+</div>
+<nav id="pagenavi">
+	 
+	 <a class="next" href="all_1.html">Next</a> 
+	<div class="center"><a href="archives.html">Blog Archives</a></div>
+
+</nav>
+
+</div>
+
+
+
+        </div>
+			<footer id="footer" class="inner">Copyright &copy; 2014
+Powered by <a target="_blank" href="http://coderforart.com/">MWeb</a> &nbsp;&nbsp; 
+Theme by <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank Mehta</a>
+      </footer>
+		</div>
+	</div>
+
+
+
+</body>
+</html>

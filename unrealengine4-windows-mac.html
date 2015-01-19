@@ -1,0 +1,222 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>  
+	  
+  	游戏制作之路：游戏引擎选择、Mac下和Windows下UnrealEngine 4体验对比、文档及其他 - Coder For Art
+  	
+	</title
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="atom.xml" rel="alternate" title="Coder For Art" type="application/atom+xml">
+
+	<link href="asset/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<link href="asset/stylesheets/font-awesome.min.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<script src="asset/javascripts/jquery.min.js"></script>
+	<script src="asset/highlightjs/highlight.pack.js"></script>
+	<link href="asset/highlightjs/styles/solarized_dark.css" media="screen, projection" rel="stylesheet" type="text/css">
+<script>hljs.initHighlightingOnLoad();</script>
+	<!--[if lt IE 9]><script src="asset/javascripts/html5.js"></script><![endif]-->
+	<!-- <link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'> -->
+	<style type="text/css">
+/* latin */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Nunito-Light'), url(asset/font/1TiHc9yag0wq3lDO9cw0voX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Nunito-Regular'), url(asset/font/6TbRXKWJjpj6V2v_WyRbMX-_kf6ByYO6CLYdB4HQE-Y.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Nunito-Bold'), url(asset/font/TttUCfJ272GBgSKaOaD7KoX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+	</style>
+	
+	<style type="text/css">
+	.container .left-col{ opacity: 1;}
+	#pagenavi a{ font-size: 1.3em;}
+	#pagenavi .next:before{ top: 3px;}
+	#pagenavi .prev:before{ top: 3px;}
+	.container .mid-col .mid-col-container #content .archives .title{ font-size: 1.5em;}
+	.container .mid-col .mid-col-container #content article{ padding: 15px 0px;}
+	#header .subtitle {
+		line-height: 1.2em;
+		padding-top: 8px;
+	}
+	#sub-nav .social a.weibo {
+		background: url('asset/images/social/weibo.png?1419407210') center no-repeat #4ec4fa;
+		border: 1px solid #4ec4fa;
+	}
+	article pre{ background: none; border: none; padding: 0;}
+	article .entry-content{text-align: left;}
+	</style>
+
+</head>
+
+
+<body>
+	<div class="container">
+		<div class="left-col">
+			<div class="intrude-less">
+				<header id="header" class="inner">
+					<div class="profilepic">
+						<img src="asset/icon.jpg" style="width:160px;">
+					</div>
+					<h1><a href="index.html">Coder For Art</a></h1>
+					<p class="subtitle">I'm an indie Mac/iOS developer, also want to be a CG artist</p>
+					<nav id="main-nav">
+						<ul class="main">
+							<li><a href="index.html">Home</a></li>
+						    <li><a href="all.html">Blog</a></li>
+						    <li><a href="archives.html">Archives</a></li>
+						</ul>
+					</nav>
+
+					<nav id="sub-nav">
+						<div class="social">
+
+<!-- 
+			<a class="email" href="mailto:" title="Email">Email</a>
+			<a class="facebook" href="http://www.facebook.com/" title="Facebook">Facebook</a>
+			<a class="google" href="https://plus.google.com/" rel="author" title="Google+">Google+</a>
+			<a class="twitter" href="http://twitter.com/" title="Twitter">Twitter</a>
+			<a class="github" href="https://github.com/" title="GitHub">GitHub</a>
+			<a class="coderwall" href="https://coderwall.com/" title="Coderwall">Coderwall</a>
+		    <a class="stackoverflow" href="http://stackoverflow.com/users/" title="StackOverflow"></a>
+			<a class="linkedin" href="http://www.linkedin.com/in/" title="LinkedIn">LinkedIn</a>
+			<a class="pinterest" href="https://pinterest.com/" title="Pinterest">Pinterest</a>
+			<a class="delicious" href="http://delicious.com/" title="Delicious">Delicious</a>
+			<a class="pinboard" href="https://pinboard.in/u:" title="Pinboard">Pinboard</a>
+			<a class="douban" href="https://www.douban.com/people/" title="Douban">Douban</a>
+			<a class="quora" href="https://quora.com/" title="Quora">Quora</a>
+			<a class="instagram" href="https://instagram.com/" title="Instagram">Instagram</a>
+			<a class="behance" href="https://www.behance.net/" title="Behance">Behance</a>
+			<a class="facebook" href="http://www.facebook.com/" title="Facebook">Facebook</a>
+-->	
+								<a class="weibo" target="_blank" href="http://weibo.com/oulvhai" title="weibo">Weibo</a>
+								
+								<a class="github" target="_blank" href="https://github.com/oulvhai" title="GitHub">GitHub</a>
+								<a class="twitter" target="_blank" href="http://twitter.com/oulvhai" title="Twitter">Twitter</a>
+								<a class="rss" href="atom.xml" title="RSS">RSS</a>
+							
+						</div>
+					</nav>
+				</header>				
+			</div>
+		</div>	
+		<div class="mid-col">
+			<div class="mid-col-container"> <div id="content" class="inner">
+
+	<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+		<h1 class="title" itemprop="name">游戏制作之路：游戏引擎选择、Mac下和Windows下UnrealEngine 4体验对比、文档及其他</h1>
+		<div class="entry-content" itemprop="articleBody">
+			<h2>UnrealEngine 4和Unity3d的选择</h2>
+
+<p>订阅了UrealEngine4（UE4）开发者。我开始做网站用的是ASP.NET和C#，之后做网站虽然换用更方便的PHP（因为做的都是小网站）。我想说，做了长达7年的小网站就算我再水，但是C#我还是懂一些的，而Unity3d刚刚好最建议用的就是C#。C++我不懂，只在高中毕业后看了C++编程思想并把大部分例子都手打入电脑并运行。Unity3d在移动端有大量成功的案例，文档非常好，视频教程也很全，研究的人也非常多，有问题很容易找到文案等等等等，简直是好得不能再好了！但是：UE4是开源的，《游戏引擎架构》里说游戏一般都用C++，我这次学是认真的！！作为一个有追求的人也必须选UE4等等！！最后我要说的是，这些都不是我选UE4的主要原因，真相是：Unity3D好贵！月付400多，不付就马上没有全功能的，全买更贵！UE4如果你不用最新的，你只要买一个月，之后都是免费的，全功能的。虽然这点钱对于真正做产品来说，不算什么，但是对于学习了说，不一样。反正做游戏也不单单是引擎的事，然后学会了一个引擎，再学另一个，或者也就是几天的事。</p>
+
+<span id="more"></span><!-- more -->
+
+<h2>Mac OS X下下载和编译UnrealEngine 4</h2>
+
+<p>UE4在github中有三个版本，我直接下载release版本的.zip（因为我用git clone太慢了）。我下载的是4.6.1版。下载完成解压后右键setup.command打开，然后还会要下载大概2G左右的东西，这个下载的速度不错。然后再右键GenerateProjectFiles.command打开。等一会儿后就生成UE4.xcodeproj了。打开UE4.xcodeproj后，选择UE4Editor-Mac，然后build，发现我下载这个版本会出错。出错是这行：</p>
+
+<pre><code class="cpp">static bool GAllowApplePlatformSymbolication = PLATFORM_MAC &amp;&amp; IS_PROGRAM;
+</code></pre>
+
+<p>错误信息是：<code>Use of logical &#39;&amp;&amp;&#39; with constant operand</code>。<br>
+我看不大懂，实在是找不到好办法，看意思他肯定是<code>true</code>，就改成：</p>
+
+<pre><code class="cpp">static bool GAllowApplePlatformSymbolication = true;//PLATFORM_MAC &amp;&amp; IS_PROGRAM;
+</code></pre>
+
+<p>然后就编译通过了。</p>
+
+<p>但是，我运行的时候，好慢好慢，然后xcode下打出来一堆东西，然后就挂掉了，没办法运行。。</p>
+
+<p>我去Epic打包好的地方下载一包试试。</p>
+
+<p>伤心了，还是一样错误，变成以下这样看看。。</p>
+
+<pre><code class="cpp">#if PLATFORM_MAC &amp;&amp; IS_PROGRAM
+static bool GAllowApplePlatformSymbolication = true;
+#else
+static bool GAllowApplePlatformSymbolication = false;
+#endif
+
+</code></pre>
+
+<p>编译过了，但是一样还是没办法运行。</p>
+
+<p>没办法了，试试4.5.1版本看看。<br>
+下载后编译（方法跟4.6.1不大一样）。这次可以成功编译了。然后运行也没问题，但是好慢好慢好慢，好像我的rmbp15寸高配根本不大合适做这样的任务似的。新建项目xcode提示又出bug，我懒得管了，直接生成release版本的UE4Editor。应该会比debug版本的UE4Editor快很多吧。<del>先熟悉UE4Editor和学学Blueprints先了。C++什么的先不管先，因为太麻烦了，按照我编译后运行一下得要好久好久，估计10来分钟，如果全部编译，要大半个钟吧。。 如果改一下C++代码，还要编译后才能看到结果，那还得了。。 我直接不用学得了。（虽然可能不是这样，虽然Win下可能会快很多很多）</del> <strong>后来证明不是这样，然后如果用不到C++，UE4比想像中方便</strong></p>
+
+<p>话说我都编译好Release版后，然后去看 Getting Started，看到这页：<a href="https://docs.unrealengine.com/latest/INT/Engine/QuickStart/4/index.html">https://docs.unrealengine.com/latest/INT/Engine/QuickStart/4/index.html</a>，发现我编译这版没有Geometry！不得已我又下载了4.1版，又编译了，然后终于可以学习了。有图有真相！左边是4.1版！<br>
+<img src="media/14213891828854/14214041748379.jpg" alt="">￼￼￼￼￼￼￼</p>
+
+<p>不得不说我耐心真好，编译好花时间 ╮(╯▽╰)╭  </p>
+
+<p><strong>注</strong> 后来发现4.5.1版只是换了名字，BSP 就是Geometry！╮(╯▽╰)╭  </p>
+
+<h2>Windows下编译UnrealEngine 4</h2>
+
+<p>周未有点空，就开Windows挂着下载UE4，想试一下Window下的体验如何，因为UE4好像是Windows下优化极好的。</p>
+
+<p>先说一下我的机器供参考：CPU:e3-1230v2  GPU:gtx660 内存:8G SSD:128G。</p>
+
+<p>下载编译跟Mac差不多，时间上也差不多。Windows下编译4.6.1 完全没有任何出错。非常顺利！然后启动Debug版的Unreal Editor，比Mac下快很多，打开大场景也很快，很顺。试运行，很好，好得不能再好了！！但是好占空间，我随便试一下，下载三个Demo的游戏或场景，30多G空间就没了。 Mac下因为是512G所以没注意。</p>
+
+<h2>Windows、Mac下UnrealEngine 4使用C++项目对比</h2>
+
+<p>再试了一下新建C++的项目看看。按 <a href="https://docs.unrealengine.com/latest/INT/Programming/QuickStart/index.html">https://docs.unrealengine.com/latest/INT/Programming/QuickStart/index.html</a> 这个文档加了几行C++代码，然后从开始编译到编译成功并打开Unreal Editor，大概1分钟左右。这并非不能接受。当然，这不能跟Unity3D用C#比，那才真正快。</p>
+
+<p>然后好奇再在Mac上试了一下（版本是4.5.1，因为4.6.1我编译不成功），新建C++项目，然后也按 <a href="https://docs.unrealengine.com/latest/INT/Programming/QuickStart/index.html">https://docs.unrealengine.com/latest/INT/Programming/QuickStart/index.html</a> 这个文档加了几行C++代码，想不到却出错了！版本不一样的原因，修正了一下，让他结果一样，然后从开始编译到编译成功并打开Unreal Editor，也是大概1分钟左右！这个结果让我惊喜了，看来是如果做场景小些的游戏，Mac下用UE4完全没问题！而我大概也是也只能是做场景小些的游戏（场景小，但是画面质量可以超高，UE4的画面比Unity3d好太多了），因为目标是丢上iPad、iPhone上玩的。上一张Mac下的图吧：</p>
+
+<p><img src="media/14213891828854/14215892261441.jpg" alt="">￼￼￼￼￼</p>
+
+<h2>如果用不到C++，只用Blueprints使用UnrealEngine 4的简单方法</h2>
+
+<p>去 <a href="https://www.unrealengine.com/">https://www.unrealengine.com/</a> 登入后下载红线这个：<br>
+<img src="media/14213891828854/14215898337076.jpg" alt="">￼￼￼￼</p>
+
+<p>下载后运行并登入，会自动下载4.6.1版的Unreal Editor，如下图，点Launch就可以了，还可以下载旧版本的Unreal Editor，如右边我就下载了4.5.1版的。╮(╯▽╰)╭  ，如果我是用不到C++我花这些时间到底在折腾什么？！！！</p>
+
+<p><img src="media/14213891828854/Snip20150118_4.png" alt="Snip20150118_4">￼￼￼￼</p>
+
+<h2>关于UnrealEngine 4的文档和其他</h2>
+
+<p>之前说UE4文档不如Unity3d好，但是我仔细看了，也是相当全面的，学会大概不成问题，更何况youtube上还有大量的视频可以看。C++也不成问题，按《游戏引擎架构》中说的，游戏中用到的C++不会太复杂，太复杂大不了不做那种特性就好。所以引擎部分应该不会对我产生大的难度了。但是做游戏引擎只是一小部分，最最重要部分：内容和玩法！首先说内容，这部分要学画画和3D了，而学3D软件对我来说也不成问题，只是画画目前还没有任何比较靠普的路子能成，至于动画随便弄一下然后买本《动画师生存手册》看看到底要如何了，也没有太大把握。。玩法部分，随便弄弄应该可以。因为时间不多只有一年，所以几个东西要并行学习，边学边加上引擎综合考虑。大概是这样想法先。</p>
+
+		</div>
+	</article>
+	<div class="share">
+		
+	</div>
+</div>        </div>
+			<footer id="footer" class="inner">Copyright &copy; 2014
+Powered by <a target="_blank" href="http://coderforart.com/">MWeb</a> &nbsp;&nbsp; 
+Theme by <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank Mehta</a>
+      </footer>
+		</div>
+	</div>
+
+
+
+</body>
+</html>

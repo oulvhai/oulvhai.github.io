@@ -1,0 +1,337 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>  
+	  
+  	Markdown 语法简单说明 - Coder For Art
+  	
+	</title
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="atom.xml" rel="alternate" title="Coder For Art" type="application/atom+xml">
+
+	<link href="asset/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<link href="asset/stylesheets/font-awesome.min.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<script src="asset/javascripts/jquery.min.js"></script>
+	<script src="asset/highlightjs/highlight.pack.js"></script>
+	<link href="asset/highlightjs/styles/solarized_dark.css" media="screen, projection" rel="stylesheet" type="text/css">
+<script>hljs.initHighlightingOnLoad();</script>
+	<!--[if lt IE 9]><script src="asset/javascripts/html5.js"></script><![endif]-->
+	<!-- <link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'> -->
+	<style type="text/css">
+/* latin */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Nunito-Light'), url(asset/font/1TiHc9yag0wq3lDO9cw0voX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Nunito-Regular'), url(asset/font/6TbRXKWJjpj6V2v_WyRbMX-_kf6ByYO6CLYdB4HQE-Y.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Nunito-Bold'), url(asset/font/TttUCfJ272GBgSKaOaD7KoX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+	</style>
+	
+	<style type="text/css">
+	.container .left-col{ opacity: 1;}
+	#pagenavi a{ font-size: 1.3em;}
+	#pagenavi .next:before{ top: 3px;}
+	#pagenavi .prev:before{ top: 3px;}
+	.container .mid-col .mid-col-container #content .archives .title{ font-size: 1.5em;}
+	.container .mid-col .mid-col-container #content article{ padding: 15px 0px;}
+	#header .subtitle {
+		line-height: 1.2em;
+		padding-top: 8px;
+	}
+	#sub-nav .social a.weibo {
+		background: url('asset/images/social/weibo.png?1419407210') center no-repeat #4ec4fa;
+		border: 1px solid #4ec4fa;
+	}
+	article pre{ background: none; border: none; padding: 0;}
+	article .entry-content{text-align: left;}
+	</style>
+
+</head>
+
+
+<body>
+	<div class="container">
+		<div class="left-col">
+			<div class="intrude-less">
+				<header id="header" class="inner">
+					<div class="profilepic">
+						<img src="asset/icon.jpg" style="width:160px;">
+					</div>
+					<h1><a href="index.html">Coder For Art</a></h1>
+					<p class="subtitle">I'm an indie Mac/iOS developer, also want to be a CG artist</p>
+					<nav id="main-nav">
+						<ul class="main">
+							<li><a href="index.html">Home</a></li>
+						    <li><a href="all.html">Blog</a></li>
+						    <li><a href="archives.html">Archives</a></li>
+						</ul>
+					</nav>
+
+					<nav id="sub-nav">
+						<div class="social">
+
+<!-- 
+			<a class="email" href="mailto:" title="Email">Email</a>
+			<a class="facebook" href="http://www.facebook.com/" title="Facebook">Facebook</a>
+			<a class="google" href="https://plus.google.com/" rel="author" title="Google+">Google+</a>
+			<a class="twitter" href="http://twitter.com/" title="Twitter">Twitter</a>
+			<a class="github" href="https://github.com/" title="GitHub">GitHub</a>
+			<a class="coderwall" href="https://coderwall.com/" title="Coderwall">Coderwall</a>
+		    <a class="stackoverflow" href="http://stackoverflow.com/users/" title="StackOverflow"></a>
+			<a class="linkedin" href="http://www.linkedin.com/in/" title="LinkedIn">LinkedIn</a>
+			<a class="pinterest" href="https://pinterest.com/" title="Pinterest">Pinterest</a>
+			<a class="delicious" href="http://delicious.com/" title="Delicious">Delicious</a>
+			<a class="pinboard" href="https://pinboard.in/u:" title="Pinboard">Pinboard</a>
+			<a class="douban" href="https://www.douban.com/people/" title="Douban">Douban</a>
+			<a class="quora" href="https://quora.com/" title="Quora">Quora</a>
+			<a class="instagram" href="https://instagram.com/" title="Instagram">Instagram</a>
+			<a class="behance" href="https://www.behance.net/" title="Behance">Behance</a>
+			<a class="facebook" href="http://www.facebook.com/" title="Facebook">Facebook</a>
+-->	
+								<a class="weibo" target="_blank" href="http://weibo.com/oulvhai" title="weibo">Weibo</a>
+								
+								<a class="github" target="_blank" href="https://github.com/oulvhai" title="GitHub">GitHub</a>
+								<a class="twitter" target="_blank" href="http://twitter.com/oulvhai" title="Twitter">Twitter</a>
+								<a class="rss" href="atom.xml" title="RSS">RSS</a>
+							
+						</div>
+					</nav>
+				</header>				
+			</div>
+		</div>	
+		<div class="mid-col">
+			<div class="mid-col-container"> <div id="content" class="inner">
+
+	<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+		<h1 class="title" itemprop="name">Markdown 语法简单说明</h1>
+		<div class="entry-content" itemprop="articleBody">
+			<h2>标题</h2>
+
+<pre><code># 第一级标题 `&lt;h1&gt;` 
+## 第二级标题 `&lt;h2&gt;` 
+###### 第六级标题 `&lt;h6&gt;` 
+</code></pre>
+
+<span id="more"></span><!-- more -->
+
+<h1>第一级标题 <code>&lt;h1&gt;</code></h1>
+
+<h2>第二级标题 <code>&lt;h2&gt;</code></h2>
+
+<h6>第六级标题 <code>&lt;h6&gt;</code></h6>
+
+<!-- more -->
+
+<h2>强调</h2>
+
+<pre><code>*这些文字会生成`&lt;em&gt;`*
+_这些文字会生成`&lt;u&gt;`_
+
+**这些文字会生成`&lt;strong&gt;`**
+__这些文字会生成`&lt;strong&gt;`__
+</code></pre>
+
+<p><em>这些文字会生成<code>&lt;em&gt;</code></em><br>
+<u>这些文字会生成<code>&lt;u&gt;</code></u></p>
+
+<p><strong>这些文字会生成<code>&lt;strong&gt;</code></strong><br>
+<strong>这些文字会生成<code>&lt;strong&gt;</code></strong></p>
+
+<h2>换行</h2>
+
+<p>四个及以上空格加回车。<br>
+如果不想打这么多空格，只要回车就为换行，请勾选：MWeb&ndash;&gt;Preferences&ndash;&gt;Themes&ndash;&gt;Translate newlines to <br> tags</p>
+
+<h2>列表</h2>
+
+<h3>无序列表</h3>
+
+<pre><code>* 项目一 无序列表 `* + 空格键`
+* 项目二
+    * 项目二的子项目一 无序列表 `* + TAB + 空格键`
+    * 项目二的子项目二
+</code></pre>
+
+<ul>
+<li>项目一 无序列表 <code>* + 空格键</code></li>
+<li>项目二
+
+<ul>
+<li>项目二的子项目一 无序列表 <code>* + TAB + 空格键</code></li>
+<li>项目二的子项目二</li>
+</ul></li>
+</ul>
+
+<h3>有序列表</h3>
+
+<pre><code>1. 项目一 有序列表 `数字 + . + 空格键`
+2. 项目二 
+3. 项目三
+    1. 项目三的子项目一 有序列表 `数字 + . + TAB + 空格键`
+    2. 项目三的子项目二
+</code></pre>
+
+<ol>
+<li>项目一 有序列表 <code>数字 + . + 空格键</code></li>
+<li>项目二 </li>
+<li>项目三
+
+<ol>
+<li>项目三的子项目一 有序列表 <code>数字 + . + TAB + 空格键</code></li>
+<li>项目三的子项目二</li>
+</ol></li>
+</ol>
+
+<h2>图片</h2>
+
+<pre><code>![GitHub set up](https://help.github.com/assets/images/site/set-up-git.gif)
+格式: ![Alt Text](url)
+</code></pre>
+
+<p><img src="https://help.github.com/assets/images/site/set-up-git.gif" alt="GitHub set up"><br>
+格式: <img src="url" alt="Alt Text"></p>
+
+<h2>链接</h2>
+
+<pre><code>email &lt;example@example.com&gt;
+[GitHub](http://github.com)
+自动生成连接  &lt;http://www.github.com/&gt;
+</code></pre>
+
+<p>Email 连接： <a href="mailto:example@example.com">example@example.com</a><br>
+<a href="http://github.com">连接标题Github网站</a><br>
+自动生成连接像： <a href="http://www.github.com/">http://www.github.com/</a> 这样</p>
+
+<h2>区块引用</h2>
+
+<pre><code>某某说:
+&gt; 第一行引用
+&gt; 第二行费用文字
+</code></pre>
+
+<p>某某说:</p>
+
+<blockquote>
+<p>第一行引用<br>
+第二行费用文字</p>
+</blockquote>
+
+<h2>行内代码</h2>
+
+<pre><code>像这样即可：`&lt;addr&gt;` `code`
+</code></pre>
+
+<p>像这样即可：<code>&lt;addr&gt;</code> <code>code</code></p>
+
+<h2>多行或者一段代码</h2>
+
+<pre><code>```js
+function fancyAlert(arg) {
+  if(arg) {
+    $.facebox({div:&#39;#foo&#39;})
+  }
+
+}
+```
+</code></pre>
+
+<pre><code class="js">function fancyAlert(arg) {
+    if(arg) {
+        $.facebox({div:&#39;#foo&#39;})
+    }
+
+}
+</code></pre>
+
+<h2>表格</h2>
+
+<pre><code>第一格表头 | 第二格表头
+--------- | -------------
+内容单元格 第一列第一格 | 内容单元格第二列第一格
+内容单元格 第一列第二格 多加文字 | 内容单元格第二列第二格
+</code></pre>
+
+<p>以下即会生成一个表格：</p>
+
+<table><thead>
+<tr>
+<th>第一格表头</th>
+<th>第二格表头</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>内容单元格 第一列第一格</td>
+<td>内容单元格第二列第一格</td>
+</tr>
+<tr>
+<td>内容单元格 第一列第二格 多加文字</td>
+<td>内容单元格第二列第二格</td>
+</tr>
+</tbody></table>
+
+<h2>删除线</h2>
+
+<p>加删除线像这样用： <del>删除这些</del></p>
+
+<h2>分隔线</h2>
+
+<p>以下三种方式都可以生成分隔线：</p>
+
+<hr>
+
+<hr>
+
+<hr>
+
+<h2>注释和阅读更多</h2>
+
+<!-- comment -->
+
+<!-- more -->
+
+<p>Actions-&gt;Insert Read More Comment <em>或者</em> <code>Command + .</code><br>
+<strong>注</strong> 阅读更多的功能只用在生成网站或博客时。</p>
+
+<h2>此文参考:</h2>
+
+<p><a href="https://guides.github.com/features/mastering-markdown/">https://guides.github.com/features/mastering-markdown/</a></p>
+
+		</div>
+	</article>
+	<div class="share">
+		
+	</div>
+</div>        </div>
+			<footer id="footer" class="inner">Copyright &copy; 2014
+Powered by <a target="_blank" href="http://coderforart.com/">MWeb</a> &nbsp;&nbsp; 
+Theme by <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank Mehta</a>
+      </footer>
+		</div>
+	</div>
+
+
+
+</body>
+</html>
