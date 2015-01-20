@@ -129,6 +129,92 @@
 	<article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
 		<div class="meta">
 			<div class="date">
+				<time datetime="2015-01-20T10:04:01GMT+08:00" itemprop="datePublished">2015/1/20</time>
+			</div>
+			<div class="tags">posted in 
+			
+			    <a class='category' href='MWeb-cat.html'>MWeb</a>&nbsp;
+			 
+			</div>
+		</div>
+		<h1 class="title" itemprop="name"><a href="mweb-qa.html" itemprop="url">
+		MWeb Q & A</a></h1>
+		<div class="entry-content" itemprop="articleBody">
+			
+			<h2>How to export HTML style PDF？</h2>
+
+<p><code>CMD+R</code> open <q>Live Preview</q>,click share button,select <code>Save as PDF</code>.</p>
+
+<h2>How to enable MathJax preview support? How to enable website MathJax support?</h2>
+
+<p><code>CMD+,</code> open Preferences，Themes &ndash;&gt; Enable Math.<br>
+For enable website MathJax support,the simple way is copy below code to <code>Site category</code> &ndash;&gt; <code>Site other:</code> text box. </p>
+
+<pre><code class="js">&lt;script type=&quot;text/x-mathjax-config&quot;&gt;
+  MathJax.Hub.Config({tex2jax: {inlineMath: [[&#39;$&#39;,&#39;$&#39;], [&#39;\\(&#39;,&#39;\\)&#39;]]}});
+&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;
+  src=&quot;http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&quot;&gt;
+&lt;/script&gt;
+</code></pre>
+
+<p>If you website is https,please replace <code>http://cdn.mathjax.org...</code> to <code>https://cdn.mathjax.org...</code>.</p>
+
+
+			
+			
+		</div>
+
+	</article>
+ 
+	<article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+		<div class="meta">
+			<div class="date">
+				<time datetime="2015-01-20T10:03:00GMT+08:00" itemprop="datePublished">2015/1/20</time>
+			</div>
+			<div class="tags">posted in 
+			
+			    <a class='category' href='MWeb-cat.html'>MWeb</a>&nbsp;
+			 
+			</div>
+		</div>
+		<h1 class="title" itemprop="name"><a href="mweb-qa-zh.html.html" itemprop="url">
+		MWeb 所有问题和回答收集</a></h1>
+		<div class="entry-content" itemprop="articleBody">
+			
+			<h2>如何导出HTML样式的PDF？</h2>
+
+<p><code>CMD+R</code>打开Live Preview窗口，点右边的分享按钮，选择<code>Save as PDF</code>即可。</p>
+
+<h2>如何开启MathJax预览支持？如何让网站支持MathJax？</h2>
+
+<p><code>CMD+,</code>打开设置面板，切到Themes，勾选Enable Math选项。<br>
+如果要让网站支持MathJax，最简单的方法是在网站分类设置中的：Site other:的文本框中填入以下代码：</p>
+
+<pre><code class="js">&lt;script type=&quot;text/x-mathjax-config&quot;&gt;
+  MathJax.Hub.Config({tex2jax: {inlineMath: [[&#39;$&#39;,&#39;$&#39;], [&#39;\\(&#39;,&#39;\\)&#39;]]}});
+&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;
+  src=&quot;http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&quot;&gt;
+&lt;/script&gt;
+</code></pre>
+
+<p>如果您的网站是要用HTTPS，请把：<code>http://cdn.mathjax.org...</code>改为：<code>https://cdn.mathjax.org...</code></p>
+
+<h2>虽然在后面打中文不会跳动，但是在文章中间插入中文时，下面的文本会跳动怎么办？</h2>
+
+<p>这个解决办法只有一个，就是在设置中把编辑器的字体换成<code>Hiragino Sans GB</code>，中文名称应该是叫<code>冬青黑体</code>。</p>
+
+
+			
+			
+		</div>
+
+	</article>
+ 
+	<article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+		<div class="meta">
+			<div class="date">
 				<time datetime="2015-01-19T15:02:30GMT+08:00" itemprop="datePublished">2015/1/19</time>
 			</div>
 			<div class="tags">posted in 
@@ -297,73 +383,36 @@
 			</div>
 		</div>
 		<h1 class="title" itemprop="name"><a href="mweb.html" itemprop="url">
-		Introduction MWeb</a></h1>
+		Help and introduction for MWeb</a></h1>
 		<div class="entry-content" itemprop="articleBody">
 			
-			<p>MWeb is a markdown editor for static websites and blogs on OS X, like <a href="http://octopress.org/">Octopress</a> or <a href="http://jekyllrb.com/">Jekyll</a> but easy to use. You can write document with markdown,drag &amp; drop or paste photos to the editor, MWeb will automatically add markdown code and display photos in editor. You can choose some categories to organize the document, and build static websites and blogs <strong>One Click</strong>.</p>
+			<h2>MWeb Help</h2>
 
-<p><img src="media/14189656825627/MWeb.jpg" alt="MWeb">￼￼￼￼￼￼￼￼￼￼￼￼</p>
+<h3>Markdown syntax guide</h3>
+
+<p><a href="http://coderforart.com/markdown-syntax-guide-suggest-version.html">Markdown syntax guide suggest version</a><br>
+<a href="http://coderforart.com/markdown-syntax-guide-full-version.html">Markdown syntax guide full version</a></p>
+
+<h3>MWeb Q &amp; A</h3>
+
+<p><a href="http://coderforart.com/mweb-qa.html">MWeb Q &amp; A</a><br>
+If you can&rsquo;t find the answer, please send feedback to me: Help &ndash;&gt; Send Feedback</p>
+
+<h3>Some may useful articles</h3>
+
+<p><a href="http://coderforart.com/custom-site-theme-detail.html">Custom site theme or design you owner theme&hellip;</a><br>
+<a href="http://coderforart.com/me-screenshot-and-in-yosemite.html">MWeb Screenshot and in Yosemite</a></p>
+
+<h2>Introduction MWeb</h2>
+
+<p>MWeb is a markdown editor for static websites and blogs on OS X, like <a href="http://octopress.org/">Octopress</a> or <a href="http://jekyllrb.com/">Jekyll</a> but easy to use. You can write document with markdown,drag &amp; drop or paste photos to the editor, MWeb will automatically add markdown code and display photos in editor. You can choose some categories to organize the document, and build static websites and blogs <strong>One Click</strong>.</p>
+
+<p><img src="media/14189656825627/MWeb.jpg" alt="MWeb">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
 
 
 
 			 
 			<a href="mweb.html#more" class="more-link">Read on &rarr;</a>
-    		
-			
-		</div>
-
-	</article>
- 
-	<article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-		<div class="meta">
-			<div class="date">
-				<time datetime="2014-12-17T10:38:19GMT+08:00" itemprop="datePublished">2014/12/17</time>
-			</div>
-			<div class="tags">posted in 
-			
-			    <a class='category' href='Introduction.html'>Introduction</a>&nbsp;
-			 
-			</div>
-		</div>
-		<h1 class="title" itemprop="name"><a href="mweb-zh.html" itemprop="url">
-		MWeb简介</a></h1>
-		<div class="entry-content" itemprop="articleBody">
-			
-			<p>MWeb是一个Markdown编辑器和全静态网站、博客生成工具，像<a href="http://octopress.org/">Octopress</a>和 <a href="http://jekyllrb.com/">Jekyll</a>，但是更简单易用。MWeb不仅仅是一个好用的Markdown编辑器，它专门为用Markdown写文章并且要发布成网站、博客的这一类用户优化。一般的场景为：想写文章时，随意选一个分类或不选分类开始写，当某天想把文章发布出来时，只需要选择一下要发布的网站分类的任一分类，点<code>Build site</code>即可生成全静态网站。全静态网站相比PHP等网站，除了速度超快之外，更节省时间精力，可以有更多的时间关心内容和生活。MWeb也专门为喜欢写教程类的用户优化，比如拖拽或粘贴即可插入图片，Fenced code blocks和代码高亮支持这几个很方便实用的功能。</p>
-
-<p><img src="media/14189656825627/MWeb.jpg" alt="MWeb">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
-
-
-
-			 
-			<a href="mweb-zh.html#more" class="more-link">Read on &rarr;</a>
-    		
-			
-		</div>
-
-	</article>
- 
-	<article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-		<div class="meta">
-			<div class="date">
-				<time datetime="2014-12-16T23:15:39GMT+08:00" itemprop="datePublished">2014/12/16</time>
-			</div>
-			<div class="tags">posted in 
-			
-			    <a class='category' href='Introduction.html'>Introduction</a>&nbsp;
-			 
-			</div>
-		</div>
-		<h1 class="title" itemprop="name"><a href="insert-photos-and-display-in-editor.html" itemprop="url">
-		Insert photos and display in editor</a></h1>
-		<div class="entry-content" itemprop="articleBody">
-			
-			<p>Drag &amp; drop photo or paste to the editor, the markdown code will add automatically and the photo will display in editor.</p>
-
-
-
-			 
-			<a href="insert-photos-and-display-in-editor.html#more" class="more-link">Read on &rarr;</a>
     		
 			
 		</div>
