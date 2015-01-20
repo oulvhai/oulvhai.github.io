@@ -4,7 +4,7 @@
   <title><![CDATA[Coder For Art]]></title>
   <link href="http://coderforart.com/atom.xml" rel="self"/>
   <link href="http://coderforart.com/"/>
-  <updated>2015-01-19T18:17:24GMT+08:00</updated>
+  <updated>2015-01-20T09:41:10GMT+08:00</updated>
   <id>http://coderforart.com/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -30,6 +30,8 @@
 <li>Add syntax highlighting in fenced code blocks feature,for version 1.0 user, please go to <a href="https://github.com/oulvhai/MWeb-Themes/">https://github.com/oulvhai/MWeb-Themes/</a> download new themes. Language name detail:<a href="http://highlightjs.readthedocs.org/en/latest/css-classes-reference.html">http://highlightjs.readthedocs.org/en/latest/css-classes-reference.html</a></li>
 </ul>
 
+<span id="more"></span><!-- more -->
+
 <h2>Fixed</h2>
 
 <ul>
@@ -40,9 +42,9 @@
 
 <h2>Syntax highlighting in fenced code blocks screenshot</h2>
 
-<p><img src="media/14216489427773/Snip20150119_6.png" alt="">￼￼￼￼￼</p>
+<p><img src="media/14216489427773/Snip20150119_6.png" alt="">￼￼￼￼￼￼</p>
 
-<p><img src="media/14216489427773/Snip20150119_5.png" alt="">￼￼￼</p>
+<p><img src="media/14216489427773/Snip20150119_5.png" alt="">￼￼￼￼</p>
 
 ]]></content>
   </entry>
@@ -64,6 +66,8 @@
 <li>增加代码高亮功能，支持超多编程语言，1.0版本的朋友请去<a href="https://github.com/oulvhai/MWeb-Themes/">https://github.com/oulvhai/MWeb-Themes/</a>下载最新的主题即可。支持语言及缩写详细请参考：<a href="http://highlightjs.readthedocs.org/en/latest/css-classes-reference.html">http://highlightjs.readthedocs.org/en/latest/css-classes-reference.html</a></li>
 </ul>
 
+<span id="more"></span><!-- more -->
+
 <h2>修正</h2>
 
 <ul>
@@ -75,9 +79,9 @@
 
 <h2>代码高亮功能截图</h2>
 
-<p><img src="media/14216489427773/Snip20150119_6.png" alt="">￼￼￼</p>
+<p><img src="media/14216489427773/Snip20150119_6.png" alt="">￼￼￼￼</p>
 
-<p><img src="media/14216489427773/Snip20150119_5.png" alt="">￼￼￼</p>
+<p><img src="media/14216489427773/Snip20150119_5.png" alt="">￼￼￼￼</p>
 
 ]]></content>
   </entry>
@@ -211,12 +215,14 @@ static bool GAllowApplePlatformSymbolication = false;
     <updated>2014-12-19T20:48:59GMT+08:00</updated>
     <id>http://coderforart.com/custom-site-theme-detail-zh.html</id>
     <content type="html"><![CDATA[
-<p>详细说明还没写好，大概要过些天吧，现在可以参考自带的主题 <code>Octopress</code> 和 <code>Greyshade</code> 。 双击任何<code>site category</code> 然后点击 <code>Theme: --&gt; Edit..</code> 按钮或者去 github 下载: <a href="https://github.com/oulvhai/MWeb-Themes">https://github.com/oulvhai/MWeb-Themes</a>.</p>
+<p>MWeb全部主题已上传到Github: <a href="https://github.com/oulvhai/MWeb-Themes">https://github.com/oulvhai/MWeb-Themes</a>.</p>
 
 <h2>自定首页</h2>
 
 <p>如图，设定想要设置为首页的文档的 HTML file name 为 <code>index</code>, 选中 <code>Is page</code> 选项。<br>
-<img src="media/14189904700669/14210659918568.jpg" alt="">￼￼￼￼￼￼</p>
+<img src="media/14189904700669/14210659918568.jpg" alt="">￼￼￼￼￼￼￼</p>
+
+<span id="more"></span><!-- more -->
 
 <h2>自定文档页的HTML模板</h2>
 
