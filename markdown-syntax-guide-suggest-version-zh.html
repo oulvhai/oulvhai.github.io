@@ -66,6 +66,7 @@
 	}
 	article pre{ background: none; border: none; padding: 0;}
 	article .entry-content{text-align: left;}
+	article .entry-content table th,article .entry-content table td{ padding: 4px;border-collapse: collapse; border:solid 1px #ddd;}
 	</style>
 
 </head>
@@ -162,7 +163,7 @@ __这些文字会生成`&lt;strong&gt;`__
 <h2>换行</h2>
 
 <p>四个及以上空格加回车。<br>
-如果不想打这么多空格，只要回车就为换行，请勾选：MWeb&ndash;&gt;Preferences&ndash;&gt;Themes&ndash;&gt;Translate newlines to <br> tags</p>
+如果不想打这么多空格，只要回车就为换行，请勾选：MWeb&ndash;&gt;Preferences&ndash;&gt;Themes&ndash;&gt;Translate newlines to <code>&lt;br&gt;</code> tags</p>
 
 <h2>列表</h2>
 
@@ -293,11 +294,21 @@ function fancyAlert(arg) {
 
 <h2>删除线</h2>
 
+<pre><code>加删除线像这样用： ~~删除这些~~
+</code></pre>
+
 <p>加删除线像这样用： <del>删除这些</del></p>
 
 <h2>分隔线</h2>
 
 <p>以下三种方式都可以生成分隔线：</p>
+
+<pre><code>***
+
+*****
+
+- - -
+</code></pre>
 
 <hr>
 
