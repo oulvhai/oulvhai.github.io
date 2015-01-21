@@ -134,12 +134,12 @@
 
 <span id="more"></span><!-- more -->
 
-<h2>Custom home page</h2>
+<h2 id="toc_0">Custom home page</h2>
 
 <p><img src="media/14189904700669/14210659918568.jpg" alt="">￼<br>
 Set the document&rsquo;s HTML file name is <code>index</code>, and make it <code>Is page</code></p>
 
-<h2>Site theme floder detail</h2>
+<h2 id="toc_1">Site theme floder detail</h2>
 
 <p>The floder name is the Theme name, the floder contain below document and floder:</p>
 
@@ -155,11 +155,11 @@ Set the document&rsquo;s HTML file name is <code>index</code>, and make it <code
 <li>post.html &ndash; article template</li>
 </ul>
 
-<h2>Building workflow</h2>
+<h2 id="toc_2">Building workflow</h2>
 
-<h3>common object detail:</h3>
+<h3 id="toc_3">common object detail:</h3>
 
-<h4>the post object detail:</h4>
+<h4 id="toc_4">the post object detail:</h4>
 
 <pre><code>@{@&quot;title&quot;: titleClear,
 @&quot;desContent&quot;:desContentHtml,
@@ -180,7 +180,7 @@ Set the document&rsquo;s HTML file name is <code>index</code>, and make it <code
 @&quot;url&quot;:catEncodeDocName}
 </code></pre>
 
-<h3>All page variables:</h3>
+<h3 id="toc_5">All page variables:</h3>
 
 <pre><code>@{
  @&quot;siteURL&quot;:siteURL,
@@ -196,15 +196,15 @@ Set the document&rsquo;s HTML file name is <code>index</code>, and make it <code
  }
 </code></pre>
 
-<h3>archives.html</h3>
+<h3 id="toc_6">archives.html</h3>
 
 <p>This page will list all site post.</p>
 
-<h4>template:</h4>
+<h4 id="toc_7">template:</h4>
 
 <p>header.html + archives.html + footer.html</p>
 
-<h4>variables:</h4>
+<h4 id="toc_8">variables:</h4>
 
 <p><code>posts</code> &ndash;&gt; array, the object detail:</p>
 
@@ -227,41 +227,41 @@ Set the document&rsquo;s HTML file name is <code>index</code>, and make it <code
 @&quot;url&quot;:catEncodeDocName}
 </code></pre>
 
-<h3>atom.xml</h3>
+<h3 id="toc_9">atom.xml</h3>
 
 <p>site feed.</p>
 
-<h4>template:</h4>
+<h4 id="toc_10">template:</h4>
 
 <p>atom.xml</p>
 
-<h4>variables:</h4>
+<h4 id="toc_11">variables:</h4>
 
 <p><code>posts</code> &ndash;&gt; array, the object detail is <code>the post object detail</code></p>
 
-<h3>category.html</h3>
+<h3 id="toc_12">category.html</h3>
 
 <p>all categories page</p>
 
-<h4>template:</h4>
+<h4 id="toc_13">template:</h4>
 
 <p>header.html + category.html + sidebar.html + footer.html</p>
 
-<h4>variables:</h4>
+<h4 id="toc_14">variables:</h4>
 
 <p><code>posts</code> &ndash;&gt; array, the object detail is <code>the post object detail</code><br>
 <code>prevPageUrl</code> &ndash;&gt; string <br>
 <code>nextPageUrl</code> &ndash;&gt; string</p>
 
-<h3>post.html</h3>
+<h3 id="toc_15">post.html</h3>
 
 <p>all post page</p>
 
-<h4>template:</h4>
+<h4 id="toc_16">template:</h4>
 
 <p>header.html + post.html + sidebar.html + footer.html</p>
 
-<h4>variables:</h4>
+<h4 id="toc_17">variables:</h4>
 
 <p><code>post</code> &ndash;&gt; object, the object detail is <code>the post object detail</code><br>
 <code>postNav</code> &ndash;&gt; Dictionary, the object detail:</p>
@@ -270,20 +270,20 @@ Set the document&rsquo;s HTML file name is <code>index</code>, and make it <code
 dic[@&quot;prev&quot;] = @{@&quot;title&quot;: prevArt.title, @&quot;url&quot;:urlVar};
 </code></pre>
 
-<h3>page.html</h3>
+<h3 id="toc_18">page.html</h3>
 
 <p>all page &ndash; the document <code>Is page</code></p>
 
-<h4>template:</h4>
+<h4 id="toc_19">template:</h4>
 
 <p>header.html + page.html +  footer.html</p>
 
-<h4>variables:</h4>
+<h4 id="toc_20">variables:</h4>
 
 <p><code>posts</code> &ndash;&gt; array, the object detail is <code>the post object detail</code><br>
 <code>post</code> &ndash;&gt; object, the object detail is <code>the post object detail</code></p>
 
-<h3>index.html</h3>
+<h3 id="toc_21">index.html</h3>
 
 <p>If document or categories is set <em>HTML file name</em> value <code>index</code> then will create <code>index.html</code> . If no <code>index.html</code>, the index.html is same content of <code>all.html</code>. </p>
 
@@ -299,6 +299,7 @@ Theme by <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank 
 		</div>
 	</div>
 
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54bf2ae85c91fc87" async="async"></script>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

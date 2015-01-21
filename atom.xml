@@ -4,7 +4,7 @@
   <title><![CDATA[Coder For Art]]></title>
   <link href="http://coderforart.com/atom.xml" rel="self"/>
   <link href="http://coderforart.com/"/>
-  <updated>2015-01-20T10:53:00GMT+08:00</updated>
+  <updated>2015-01-21T12:12:12GMT+08:00</updated>
   <id>http://coderforart.com/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -14,16 +14,64 @@
 
   
   <entry>
+    <title type="html"><![CDATA[游戏制作之路：一个对我来说可实现的High-end的Mac/iOS游戏制作大概计划]]></title>
+    <link href="http://coderforart.com/make-a-simple-high-end-mac-ios-game.html"/>
+    <updated>2015-01-21T10:05:07GMT+08:00</updated>
+    <id>http://coderforart.com/make-a-simple-high-end-mac-ios-game.html</id>
+    <content type="html"><![CDATA[
+<p>对于学习一些东西，我比较习惯任务驱动式的学习，也就是说，要事先订好一个目标，要做什么东西，达到什么效果，然后根据自己了解的知识作一个可以实现这个目标的计划。</p>
+
+<p>现在要学的是游戏制作，而且是High-end的3D游戏制作。如前文 <a href="unrealengine4-windows-mac.html">游戏制作之路：游戏引擎选择、Mac下和Windows下UnrealEngine 4体验对比、文档及其他</a> 所说的，我已经选择了UE4这个画面最顶级的引擎，它即使是在iOS上，画面也是最高端的，可以参考 <a href="https://www.unrealengine.com/blog/unreal-engine-powered-zen-garden-released">Zen Garden</a> 这个Demo。然后我也大概确认了可行性，现在要解决的是玩法（游戏性）、内容创作、音效这些东西。</p>
+
+<h2 id="toc_0">游戏的大概内容和玩法</h2>
+
+<p>为了让目标尽可能得以实现，游戏要尽可能简单。考虑到内容创作难度太大，所以我要使用尽可能少的元素。目前确认的有山、树、花草、水、岩石火山怪物、钢铁怪物、一两个造型复杂点的Boss、一两个女性人物角色。下面分开说明</p>
+
+<ul>
+<li>山：UE4对山地的制作支持的比较好，所以我要做的只有设计山地的外形和画山地材质了。这点内容创作我相信能做好，只要仔细研究山的画法，表现形式和树、花草的布局即可</li>
+<li>树：UE4有支持SpeedTree这样的简单可以做出各种外形的树的软件插件，但是这显然不是我的目标，在迫不得以的情况下才会用。我开始会从画画和3D建模去从头开始创作树，然后仔细研究树的材质和表现，从而真正掌握树的制作。</li>
+<li>花草：UE4好像内置花草的支持，不大清楚是如何，但是应该是很好的消息。不过估计也是要去画花的材质和表现，花草这部分也是我要仔细研究和全程掌握的。从开始创作花草外形到如何做3D建模，上材质并引入到UE4都要掌握。</li>
+<li>水：这部分在UE4中比较好实现，应该是只要设计位置和外形就好，任务比较简单。</li>
+<li>岩石火山怪物、钢铁怪物：怪物制作在游戏中是重点，难度很高。从开始设计到引入UE4，像树或花草那样流程即可。真正有挑战的是怪物AI了，这部分就关系到游戏玩法和游戏性了。这部分我了解不多，反正是要花大量时间研究就是了，初步方向是UE4中内置的AI的组件如何使用，然后读一些游戏AI的书等等。估计是可能会用到C++了，这也是要学习的。</li>
+<li>人物角色：人物角色是我学习的重点，我希望这部分在做完这个游戏后能真正掌握一些。这部分要研究的东西太多了，光是人物设计就是要花大量时间，人体结构，画法，服饰。还有是3D建模，人物皮肤材质，服饰材质等等。服饰部分东西太庞大，我只选一个小方向即可。还有比如说头发和衣服在游戏中的做法等等。再有就是角色动画，初步估计应该是在3D软件中调好，然后引入UE4中也是有大量工作要做的。这也只是在对角色动画比较了解的基础上，刚刚好我不了解，这也得学！不知道UE4能不能做到像下图那样的画出来的角色的质量？这也是我想研究的。
+<img src="media/14218059079784/5bf24facgw1eo0sjmlsiwj20uk0hoju2.jpg" alt="5bf24facgw1eo0sjmlsiwj20uk0hoju2">￼￼
+<img src="media/14218059079784/5bf24facgw1eo0sjsnjb6j20dw0cnta3.jpg" alt="5bf24facgw1eo0sjsnjb6j20dw0cnta3">￼￼</li>
+</ul>
+
+<p>游戏玩法部分，这部分需要我在学习中慢慢想了，这部分应该不难，只是做得好不好的问题，即使做得不好，也没关系了。我的方向不在这。</p>
+
+<h2 id="toc_1">内容创作工具</h2>
+
+<p>内容创作非工具部分花费时间最多，量最大，但是这部分我无法写更多的东西，只能说是边学边研究了。然后工具部分却有一些可写的。<br>
+硬件部分要求不大，我目前有一台高性能的PC，两台MacBook Pro，现用的是2013版的15寸MacBook Pro，还有一台绘画板子 cintiq 13HD，足够用了。软件部分如下</p>
+
+<ul>
+<li>Photoshop：这个神器肯定是必须要的，不管是设计或画画还是做材质，他都是首选的工具。</li>
+<li>ZBrush：这个也属于易用性极好的神器，它大大降低了3D建模的难度。它也是我认为我可以掌握怪物和人物角色创作的理由。还有它的价格不贵，$795，在我可以接受范围。</li>
+<li>Maya LT：为什么是Maya而不是免费的Blender？最主要是Maya提供了官方的.FBX导出支持，而Blender是以插件的形式出现的，还有就是《游戏引擎架构》多次提到Maya，想来是不会错的。为什么是Maya LT，有写错？没有！因为Maya太贵了，全买$3675，订阅$185每月。Maya LT订阅$30每月，年订$240。而且autodesk的软件都可以很方便地申请3年的教育学习用途。</li>
+<li>我的另一款软件：这软件是要先做出来，当然不是什么强大的软件，这是我认为对内容创作和学习有用的小软件。</li>
+</ul>
+
+<p>软件部分除非以上的软件都不够用了，否则不会再引进新软件，因为评估和学习也是要成本的。当然，不用学的小软件是除外。</p>
+
+<h2 id="toc_2">游戏音效、背景故事</h2>
+
+<p>音效部分虽然也是属于非常重要的，但是我完全不懂音效，也没有兴趣深入研究它，大概来几个还算可以的音效就行了。背景故事部分在学习研究中跟游戏玩法一起慢慢考虑。</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[MWeb Q & A]]></title>
     <link href="http://coderforart.com/mweb-qa.html"/>
     <updated>2015-01-20T10:04:01GMT+08:00</updated>
     <id>http://coderforart.com/mweb-qa.html</id>
     <content type="html"><![CDATA[
-<h2>How to export HTML style PDF？</h2>
+<h2 id="toc_0">How to export HTML style PDF？</h2>
 
 <p><code>CMD+R</code> open <q>Live Preview</q>,click share button,select <code>Save as PDF</code>.</p>
 
-<h2>How to enable MathJax preview support? How to enable website MathJax support?</h2>
+<h2 id="toc_1">How to enable MathJax preview support? How to enable website MathJax support?</h2>
 
 <p><code>CMD+,</code> open Preferences，Themes &ndash;&gt; Enable Math.<br>
 For enable website MathJax support,the simple way is copy below code to <code>Site category</code> &ndash;&gt; <code>Site other:</code> text box. </p>
@@ -47,11 +95,11 @@ For enable website MathJax support,the simple way is copy below code to <code>Si
     <updated>2015-01-20T10:03:00GMT+08:00</updated>
     <id>http://coderforart.com/mweb-qa-zh.html.html</id>
     <content type="html"><![CDATA[
-<h2>如何导出HTML样式的PDF？</h2>
+<h2 id="toc_0">如何导出HTML样式的PDF？</h2>
 
 <p><code>CMD+R</code>打开Live Preview窗口，点右边的分享按钮，选择<code>Save as PDF</code>即可。</p>
 
-<h2>如何开启MathJax预览支持？如何让网站支持MathJax？</h2>
+<h2 id="toc_1">如何开启MathJax预览支持？如何让网站支持MathJax？</h2>
 
 <p><code>CMD+,</code>打开设置面板，切到Themes，勾选Enable Math选项。<br>
 如果要让网站支持MathJax，最简单的方法是在网站分类设置中的：Site other:的文本框中填入以下代码：</p>
@@ -66,9 +114,9 @@ For enable website MathJax support,the simple way is copy below code to <code>Si
 
 <p>如果您的网站是要用HTTPS，请把：<code>http://cdn.mathjax.org...</code>改为：<code>https://cdn.mathjax.org...</code></p>
 
-<h2>虽然在后面打中文不会跳动，但是在文章中间插入中文时，下面的文本会跳动怎么办？</h2>
+<h2 id="toc_2">虽然在后面打中文不会跳动，但是在文章中间插入中文时，下面的文本会跳动怎么办？</h2>
 
-<p>这个解决办法只有一个，就是在设置中把编辑器的字体换成<code>Hiragino Sans GB</code>，中文名称应该是叫<code>冬青黑体</code>。</p>
+<p>这个解决办法好像只能换字体，就是在设置中把编辑器的字体换成<code>Hiragino Sans GB</code>，中文名称应该是叫<code>冬青黑体</code>。另外我有试过Yosemite下不会跳了，当然如果你在用Yosemite，就不会有这个问题了。</p>
 
 ]]></content>
   </entry>
@@ -79,7 +127,7 @@ For enable website MathJax support,the simple way is copy below code to <code>Si
     <updated>2015-01-19T15:02:30GMT+08:00</updated>
     <id>http://coderforart.com/mweb-v1.1-release.html</id>
     <content type="html"><![CDATA[
-<h2>New feature</h2>
+<h2 id="toc_0">New feature</h2>
 
 <ul>
 <li>Add import files (.txt and .md) featrue：File &ndash;&gt; Import Files To Library&hellip;</li>
@@ -92,7 +140,7 @@ For enable website MathJax support,the simple way is copy below code to <code>Si
 
 <span id="more"></span><!-- more -->
 
-<h2>Fixed</h2>
+<h2 id="toc_1">Fixed</h2>
 
 <ul>
 <li>Live preview improved</li>
@@ -100,7 +148,7 @@ For enable website MathJax support,the simple way is copy below code to <code>Si
 <li>case sensitive system can&rsquo;t open MWeb&rsquo;s document.</li>
 </ul>
 
-<h2>Syntax highlighting in fenced code blocks screenshot</h2>
+<h2 id="toc_2">Syntax highlighting in fenced code blocks screenshot</h2>
 
 <p><img src="media/14216489427773/Snip20150119_6.png" alt="">￼￼￼￼￼￼</p>
 
@@ -115,7 +163,7 @@ For enable website MathJax support,the simple way is copy below code to <code>Si
     <updated>2015-01-19T14:29:02GMT+08:00</updated>
     <id>http://coderforart.com/mweb-v1.1-release-zh.html</id>
     <content type="html"><![CDATA[
-<h2>新增</h2>
+<h2 id="toc_0">新增</h2>
 
 <ul>
 <li>增加导入.txt或Markdown文档到文档库功能：File &ndash;&gt; Import Files To Library&hellip;</li>
@@ -128,7 +176,7 @@ For enable website MathJax support,the simple way is copy below code to <code>Si
 
 <span id="more"></span><!-- more -->
 
-<h2>修正</h2>
+<h2 id="toc_1">修正</h2>
 
 <ul>
 <li>即时预览功能大改进，现在是真正即时了，然后滚动时，同步的位置也比较准确了。</li>
@@ -137,11 +185,11 @@ For enable website MathJax support,the simple way is copy below code to <code>Si
 <li>初次使用直接点Preview Site无效果问题</li>
 </ul>
 
-<h2>代码高亮功能截图</h2>
+<h2 id="toc_2">代码高亮功能截图</h2>
 
-<p><img src="media/14216489427773/Snip20150119_6.png" alt="">￼￼￼￼</p>
+<p><img src="media/14216489427773/Snip20150119_6.png" alt="">￼￼￼￼￼￼</p>
 
-<p><img src="media/14216489427773/Snip20150119_5.png" alt="">￼￼￼￼</p>
+<p><img src="media/14216489427773/Snip20150119_5.png" alt="">￼￼￼￼￼￼</p>
 
 ]]></content>
   </entry>
@@ -152,13 +200,13 @@ For enable website MathJax support,the simple way is copy below code to <code>Si
     <updated>2015-01-16T14:19:42GMT+08:00</updated>
     <id>http://coderforart.com/unrealengine4-windows-mac.html</id>
     <content type="html"><![CDATA[
-<h2>UnrealEngine 4和Unity3d的选择</h2>
+<h2 id="toc_0">UnrealEngine 4和Unity3d的选择</h2>
 
 <p>订阅了UrealEngine4（UE4）开发者。我开始做网站用的是ASP.NET和C#，之后做网站虽然换用更方便的PHP（因为做的都是小网站）。我想说，做了长达7年的小网站就算我再水，但是C#我还是懂一些的，而Unity3d刚刚好最建议用的就是C#。C++我不懂，只在高中毕业后看了C++编程思想并把大部分例子都手打入电脑并运行。Unity3d在移动端有大量成功的案例，文档非常好，视频教程也很全，研究的人也非常多，有问题很容易找到文案等等等等，简直是好得不能再好了！但是：UE4是开源的，《游戏引擎架构》里说游戏一般都用C++，我这次学是认真的！！作为一个有追求的人也必须选UE4等等！！最后我要说的是，这些都不是我选UE4的主要原因，真相是：Unity3D好贵！月付400多，不付就马上没有全功能的，全买更贵！UE4如果你不用最新的，你只要买一个月，之后都是免费的，全功能的。虽然这点钱对于真正做产品来说，不算什么，但是对于学习了说，不一样。反正做游戏也不单单是引擎的事，然后学会了一个引擎，再学另一个，或者也就是几天的事。</p>
 
 <span id="more"></span><!-- more -->
 
-<h2>Mac OS X下下载和编译UnrealEngine 4</h2>
+<h2 id="toc_1">Mac OS X下下载和编译UnrealEngine 4</h2>
 
 <p>UE4在github中有三个版本，我直接下载release版本的.zip（因为我用git clone太慢了）。我下载的是4.6.1版。下载完成解压后右键setup.command打开，然后还会要下载大概2G左右的东西，这个下载的速度不错。然后再右键GenerateProjectFiles.command打开。等一会儿后就生成UE4.xcodeproj了。打开UE4.xcodeproj后，选择UE4Editor-Mac，然后build，发现我下载这个版本会出错。出错是这行：</p>
 
@@ -199,7 +247,7 @@ static bool GAllowApplePlatformSymbolication = false;
 
 <p><strong>注</strong> 后来发现4.5.1版只是换了名字，BSP 就是Geometry！╮(╯▽╰)╭  </p>
 
-<h2>Windows下编译UnrealEngine 4</h2>
+<h2 id="toc_2">Windows下编译UnrealEngine 4</h2>
 
 <p>周未有点空，就开Windows挂着下载UE4，想试一下Window下的体验如何，因为UE4好像是Windows下优化极好的。</p>
 
@@ -207,7 +255,7 @@ static bool GAllowApplePlatformSymbolication = false;
 
 <p>下载编译跟Mac差不多，时间上也差不多。Windows下编译4.6.1 完全没有任何出错。非常顺利！然后启动Debug版的Unreal Editor，比Mac下快很多，打开大场景也很快，很顺。试运行，很好，好得不能再好了！！但是好占空间，我随便试一下，下载三个Demo的游戏或场景，30多G空间就没了。 Mac下因为是512G所以没注意。</p>
 
-<h2>Windows、Mac下UnrealEngine 4使用C++项目对比</h2>
+<h2 id="toc_3">Windows、Mac下UnrealEngine 4使用C++项目对比</h2>
 
 <p>再试了一下新建C++的项目看看。按 <a href="https://docs.unrealengine.com/latest/INT/Programming/QuickStart/index.html">https://docs.unrealengine.com/latest/INT/Programming/QuickStart/index.html</a> 这个文档加了几行C++代码，然后从开始编译到编译成功并打开Unreal Editor，大概1分钟左右。这并非不能接受。当然，这不能跟Unity3D用C#比，那才真正快。</p>
 
@@ -215,7 +263,7 @@ static bool GAllowApplePlatformSymbolication = false;
 
 <p><img src="media/14213891828854/14215892261441.jpg" alt="">￼￼￼￼￼</p>
 
-<h2>如果用不到C++，只用Blueprints使用UnrealEngine 4的简单方法</h2>
+<h2 id="toc_4">如果用不到C++，只用Blueprints使用UnrealEngine 4的简单方法</h2>
 
 <p>去 <a href="https://www.unrealengine.com/">https://www.unrealengine.com/</a> 登入后下载红线这个：<br>
 <img src="media/14213891828854/14215898337076.jpg" alt="">￼￼￼￼</p>
@@ -224,7 +272,7 @@ static bool GAllowApplePlatformSymbolication = false;
 
 <p><img src="media/14213891828854/Snip20150118_4.png" alt="Snip20150118_4">￼￼￼￼</p>
 
-<h2>关于UnrealEngine 4的文档和其他</h2>
+<h2 id="toc_5">关于UnrealEngine 4的文档和其他</h2>
 
 <p>之前说UE4文档不如Unity3d好，但是我仔细看了，也是相当全面的，学会大概不成问题，更何况youtube上还有大量的视频可以看。C++也不成问题，按《游戏引擎架构》中说的，游戏中用到的C++不会太复杂，太复杂大不了不做那种特性就好。所以引擎部分应该不会对我产生大的难度了。但是做游戏引擎只是一小部分，最最重要部分：内容和玩法！首先说内容，这部分要学画画和3D了，而学3D软件对我来说也不成问题，只是画画目前还没有任何比较靠普的路子能成，至于动画随便弄一下然后买本《动画师生存手册》看看到底要如何了，也没有太大把握。。玩法部分，随便弄弄应该可以。因为时间不多只有一年，所以几个东西要并行学习，边学边加上引擎综合考虑。大概是这样想法先。</p>
 
@@ -237,7 +285,7 @@ static bool GAllowApplePlatformSymbolication = false;
     <updated>2015-01-07T13:46:07GMT+08:00</updated>
     <id>http://coderforart.com/me-screenshot-and-in-yosemite.html</id>
     <content type="html"><![CDATA[
-<h2>Yosemite</h2>
+<h2 id="toc_0">Yosemite</h2>
 
 <p><img src="media/14206095675933/yosemite-01.jpg" alt="yosemite-01">￼</p>
 
@@ -245,11 +293,11 @@ static bool GAllowApplePlatformSymbolication = false;
 
 <p><img src="media/14206095675933/yosemite-02.jpg" alt="yosemite-02">￼</p>
 
-<h2>All menus</h2>
+<h2 id="toc_1">All menus</h2>
 
 <p><img src="media/14206095675933/menus.jpg" alt="menus">￼￼￼</p>
 
-<h2>Preferences</h2>
+<h2 id="toc_2">Preferences</h2>
 
 <p><img src="media/14206095675933/preferences.jpg" alt="preferences">￼￼￼</p>
 
@@ -277,22 +325,22 @@ static bool GAllowApplePlatformSymbolication = false;
     <content type="html"><![CDATA[
 <p>MWeb全部主题已上传到Github: <a href="https://github.com/oulvhai/MWeb-Themes">https://github.com/oulvhai/MWeb-Themes</a>.</p>
 
-<h2>自定首页</h2>
+<h2 id="toc_0">自定首页</h2>
 
 <p>如图，设定想要设置为首页的文档的 HTML file name 为 <code>index</code>, 选中 <code>Is page</code> 选项。<br>
 <img src="media/14189904700669/14210659918568.jpg" alt="">￼￼￼￼￼￼￼</p>
 
 <span id="more"></span><!-- more -->
 
-<h2>自定文档页的HTML模板</h2>
+<h2 id="toc_1">自定文档页的HTML模板</h2>
 
 <p>不选<code>Is page</code>选项时，生成HTML时读取的模板为：header.html+post.html+sidebar.html+footer.html。选中了<code>Is page</code>选项后，生成HTML时会读取的模板为：header.html+page.html+footer.html，如果要自定文档的模板，可以在主题文件夹里新增一个名称为：page-{HTML file name}.html 的页面，这样生成HTML时的读取的模板就会变成：header.html+page-{HTML file name}.html+footer.html。比如说要自定首页的模板，则在主题文件夹里新增一个名为：page-index.html 的页面即可。如 <a href="http://coderforart.com">http://coderforart.com</a> 就自定了首页，内容为：<a href="https://github.com/oulvhai/MWeb-Themes/blob/master/mweb-greyshade/page-index.html">https://github.com/oulvhai/MWeb-Themes/blob/master/mweb-greyshade/page-index.html</a> </p>
 
-<h2>自定分类页的HTML模板</h2>
+<h2 id="toc_2">自定分类页的HTML模板</h2>
 
 <p>分类页生成HTML时读取的模板为：header.html+category.html+sidebar.html+footer.html。 其中category.html可以自定，MWeb生成分类页的HTML时，会判定是否存在：category-{HTML file name}.html的模板，如果存在，则会优先使用category-{HTML file name}.html模板。比如说有一个分类的 HTML file name 为 Cocoa，如果要自定这个分类的分类页的模板，则只要在主题文件夹里新增一个名为：category-Cocoa.html的页面即可，MWeb生成HTML时读取模板就会变为：header.html+category-Cocoa.html+sidebar.html+footer.html。</p>
 
-<h2>自定主题更详细的说明</h2>
+<h2 id="toc_3">自定主题更详细的说明</h2>
 
 <p>MWeb所有网站主题模板都放在SiteThemes这个资料夹里，一个资料夹就表示一个主题。每个主题里包含的文档和文件夹的作用如下：</p>
 
@@ -310,9 +358,9 @@ static bool GAllowApplePlatformSymbolication = false;
 <li>sitemap.xml &ndash; 网站sitemap所使用的模板</li>
 </ul>
 
-<h2>生成HTML时传入模板页的变量说明</h2>
+<h2 id="toc_4">生成HTML时传入模板页的变量说明</h2>
 
-<h3>文档分类对象变量</h3>
+<h3 id="toc_5">文档分类对象变量</h3>
 
 <table><thead>
 <tr>
@@ -330,7 +378,7 @@ static bool GAllowApplePlatformSymbolication = false;
 </tr>
 </tbody></table>
 
-<h3>文档对象变量</h3>
+<h3 id="toc_6">文档对象变量</h3>
 
 <table><thead>
 <tr>
@@ -380,7 +428,7 @@ static bool GAllowApplePlatformSymbolication = false;
 </tr>
 </tbody></table>
 
-<h3>最近文章变量</h3>
+<h3 id="toc_7">最近文章变量</h3>
 
 <table><thead>
 <tr>
@@ -398,7 +446,7 @@ static bool GAllowApplePlatformSymbolication = false;
 </tr>
 </tbody></table>
 
-<h3>分类对象变量</h3>
+<h3 id="toc_8">分类对象变量</h3>
 
 <table><thead>
 <tr>
@@ -420,9 +468,9 @@ static bool GAllowApplePlatformSymbolication = false;
 </tr>
 </tbody></table>
 
-<h2>生成网站</h2>
+<h2 id="toc_9">生成网站</h2>
 
-<h3>所有页面都会传入的变量</h3>
+<h3 id="toc_10">所有页面都会传入的变量</h3>
 
 <table><thead>
 <tr>
@@ -472,7 +520,7 @@ static bool GAllowApplePlatformSymbolication = false;
 </tr>
 </tbody></table>
 
-<h3>生成RSS: atom.xml</h3>
+<h3 id="toc_11">生成RSS: atom.xml</h3>
 
 <p>读取的模板：atom.xml<br>
 传入的变量：</p>
@@ -491,7 +539,7 @@ static bool GAllowApplePlatformSymbolication = false;
 
 <p>参考模板：<a href="https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/atom.xml">https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/atom.xml</a></p>
 
-<h3>生成所有文章的页面</h3>
+<h3 id="toc_12">生成所有文章的页面</h3>
 
 <p>读取的模板：header.html + post.html + sidebar.html + footer.html<br>
 传入的变量：</p>
@@ -514,7 +562,7 @@ static bool GAllowApplePlatformSymbolication = false;
 
 <p>参考模板：<a href="https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/post.html">https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/post.html</a></p>
 
-<h3>生成所有分类的页面</h3>
+<h3 id="toc_13">生成所有分类的页面</h3>
 
 <p>读取的模板：header.html + category.html + sidebar.html + footer.html<br>
 传入的变量：</p>
@@ -541,7 +589,7 @@ static bool GAllowApplePlatformSymbolication = false;
 
 <p>参考模板：<a href="https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/category.html">https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/category.html</a></p>
 
-<h3>生成所有文章选中<code>Is page</code>的页面</h3>
+<h3 id="toc_14">生成所有文章选中<code>Is page</code>的页面</h3>
 
 <p>读取的模板：header.html + page.html +  footer.html<br>
 传入的变量：</p>
@@ -564,7 +612,7 @@ static bool GAllowApplePlatformSymbolication = false;
 
 <p>参考模板：<a href="https://github.com/oulvhai/MWeb-Themes/blob/master/mweb-greyshade/page-index.html">https://github.com/oulvhai/MWeb-Themes/blob/master/mweb-greyshade/page-index.html</a></p>
 
-<h3>生成archives.html</h3>
+<h3 id="toc_15">生成archives.html</h3>
 
 <p>读取的模板：header.html + archives.html + footer.html<br>
 传入的变量：</p>
@@ -631,7 +679,7 @@ static bool GAllowApplePlatformSymbolication = false;
 
 <p>参考模板：<a href="https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/archives.html">https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/archives.html</a></p>
 
-<h3>生成sitemap.xml</h3>
+<h3 id="toc_16">生成sitemap.xml</h3>
 
 <p>读取的模板：sitemap.xml<br>
 传入的变量：</p>
@@ -707,24 +755,24 @@ static bool GAllowApplePlatformSymbolication = false;
     <updated>2014-12-19T13:08:02GMT+08:00</updated>
     <id>http://coderforart.com/mweb.html</id>
     <content type="html"><![CDATA[
-<h2>MWeb Help</h2>
+<h2 id="toc_0">MWeb Help</h2>
 
-<h3>Markdown syntax guide</h3>
+<h3 id="toc_1">Markdown syntax guide</h3>
 
 <p><a href="markdown-syntax-guide-suggest-version.html">Markdown syntax guide suggest version</a><br>
 <a href="markdown-syntax-guide-full-version.html">Markdown syntax guide full version</a></p>
 
-<h3>MWeb Q &amp; A</h3>
+<h3 id="toc_2">MWeb Q &amp; A</h3>
 
 <p><a href="mweb-qa.html">MWeb Q &amp; A</a><br>
 If you can&rsquo;t find the answer, please send feedback to me: Help &ndash;&gt; Send Feedback</p>
 
-<h3>Some may useful articles</h3>
+<h3 id="toc_3">Some may useful articles</h3>
 
 <p><a href="custom-site-theme-detail.html">Custom site theme or design you owner theme&hellip;</a><br>
 <a href="me-screenshot-and-in-yosemite.html">MWeb Screenshot and in Yosemite</a></p>
 
-<h2>Introduction MWeb</h2>
+<h2 id="toc_4">Introduction MWeb</h2>
 
 <p>MWeb is a markdown editor for static websites and blogs on OS X, like <a href="http://octopress.org/">Octopress</a> or <a href="http://jekyllrb.com/">Jekyll</a> but easy to use. You can write document with markdown,drag &amp; drop or paste photos to the editor, MWeb will automatically add markdown code and display photos in editor. You can choose some categories to organize the document, and build static websites and blogs <strong>One Click</strong>.</p>
 
@@ -736,7 +784,7 @@ If you can&rsquo;t find the answer, please send feedback to me: Help &ndash;&gt;
 <a href="http://itunes.apple.com/us/app/mweb-markdown-editor-for-static/id954188948?ls=1&mt=12" target="_blank"><img src="media/14195170907881/icon_apple_store-download-small.png" width="180" /></a>
 </p>
 
-<h2>A markdown editor</h2>
+<h2 id="toc_5">A markdown editor</h2>
 
 <p>MWeb is a markdown editor suport markdown syntax highlight, preview,syntax highlighting in fenced code blocks,math ML,export to HTML/PDF, custom editor theme, words counter, outline, autosave, full document versions and more.. It has two pattern:</p>
 
@@ -747,14 +795,14 @@ If you can&rsquo;t find the answer, please send feedback to me: Help &ndash;&gt;
 
 <p>￼￼￼￼￼￼￼￼￼￼￼￼<img src="media/14189656825627/MWeb-markdown-editor.jpg" alt="MWeb-markdown-editor">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
 
-<h2>Drag &amp; drop or paste photos to the editor and display</h2>
+<h2 id="toc_6">Drag &amp; drop or paste photos to the editor and display</h2>
 
 <p>Drag &amp; drop or paste photo to the editor, the markdown code will automatically add and the photo will display in editor.</p>
 
 <p>￼￼￼￼￼￼￼￼￼<img src="media/14189656825627/MWeb-inset-photo.jpg" alt="MWeb-inset-photo">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼<br>
 ￼￼￼￼￼￼￼￼￼￼￼￼</p>
 
-<h2>Easy to build static websites and blogs</h2>
+<h2 id="toc_7">Easy to build static websites and blogs</h2>
 
 <p>Selected a category &ndash;&gt; Set to site, setting site name and description and just click <code>Build site</code>. click <code>Clear and rebuild site</code> button when the Theme is change. click <code>Preview site</code> button to preview. Just double click <code>Coder For Art</code> category and try.</p>
 
@@ -762,13 +810,13 @@ If you can&rsquo;t find the answer, please send feedback to me: Help &ndash;&gt;
 
 <p>More info, please read this post: <a href="custom-site-theme-detail.html">Custom site theme or design you owner theme&hellip;</a></p>
 
-<h2>Three view pattern</h2>
+<h2 id="toc_8">Three view pattern</h2>
 
 <p>Editor Only:<code>CMD + 1</code>, Two Panes:<code>CMD + 2</code>, Three Panes:<code>CMD + 3</code>. The editor area will not resize when the view pattern change.</p>
 
 <p>￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼<img src="media/14189656825627/MWeb-view-pattern.jpg" alt="MWeb-view-pattern">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
 
-<h2>Preview, Share,Save as PDF, More Screenshot</h2>
+<h2 id="toc_9">Preview, Share,Save as PDF, More Screenshot</h2>
 
 <p>Preview：<code>CMD + R</code>，Close Preview：<code>CMD + W</code> </p>
 
@@ -787,24 +835,24 @@ If you can&rsquo;t find the answer, please send feedback to me: Help &ndash;&gt;
     <updated>2014-12-17T11:38:19GMT+08:00</updated>
     <id>http://coderforart.com/mweb-zh.html</id>
     <content type="html"><![CDATA[
-<h2>MWeb帮助</h2>
+<h2 id="toc_0">MWeb帮助</h2>
 
-<h3>如果您不知道什么是Markdown，请阅读以下两篇文章</h3>
+<h3 id="toc_1">如果您不知道什么是Markdown，请阅读以下两篇文章</h3>
 
 <p><a href="markdown-syntax-guide-suggest-version-zh.html">Markdown 语法简单说明</a><br>
 <a href="markdown-syntax-guide-full-version-zh.html">Markdown 语法官方说明繁体中文版</a></p>
 
-<h3>MWeb所有问题和回答收集（会不断更新）</h3>
+<h3 id="toc_2">MWeb所有问题和回答收集（会不断更新）</h3>
 
 <p><a href="mweb-qa-zh.html">MWeb问题和回答</a><br>
 如果您在上面的连接中找不到答案，请在MWeb中点：Help &ndash;&gt; Send Feedback 写信给我！</p>
 
-<h3>MWeb其他可能有用的文章</h3>
+<h3 id="toc_3">MWeb其他可能有用的文章</h3>
 
 <p><a href="custom-site-theme-detail-zh.html">自定网站主题、增加评论和分享和设计新主题&hellip;</a><br>
 <a href="me-screenshot-and-in-yosemite.html">MWeb更多截图和在Yosemite下的效果</a></p>
 
-<h2>MWeb简介</h2>
+<h2 id="toc_4">MWeb简介</h2>
 
 <p>MWeb是一个Markdown编辑器和全静态网站、博客生成工具，像<a href="http://octopress.org/">Octopress</a>和 <a href="http://jekyllrb.com/">Jekyll</a>，但是更简单易用。MWeb不仅仅是一个好用的Markdown编辑器，它专门为用Markdown写文章并且要发布成网站、博客的这一类用户优化。一般的场景为：想写文章时，随意选一个分类或不选分类开始写，当某天想把文章发布出来时，只需要选择一下要发布的网站分类的任一分类，点<code>Build site</code>即可生成全静态网站。全静态网站相比PHP等网站，除了速度超快之外，更节省时间精力，可以有更多的时间关心内容和生活。MWeb也专门为喜欢写教程类的用户优化，比如拖拽或粘贴即可插入图片，Fenced code blocks和代码高亮支持这几个很方便实用的功能。</p>
 
@@ -816,7 +864,7 @@ If you can&rsquo;t find the answer, please send feedback to me: Help &ndash;&gt;
 <a href="http://itunes.apple.com/cn/app/mweb-markdown-editor-for-static/id954188948?ls=1&mt=12" target="_blank"><img src="media/14195170907881/icon_apple_store-download-small.png" width="180" /></a>
 </p>
 
-<h2>MWeb的Markdown编辑功能</h2>
+<h2 id="toc_5">MWeb的Markdown编辑功能</h2>
 
 <p>首先MWeb必须是一个好用的Markdown编辑器，语法高亮，预览，Fenced code blocks和代码高亮支持，Math ML支持，导出HTML/PDF，自定编辑器主题，字数统计，大纲视图，autosave,文档历史版本什么的等等都是要有的。另外MWeb分为两种模式：</p>
 
@@ -827,14 +875,14 @@ If you can&rsquo;t find the answer, please send feedback to me: Help &ndash;&gt;
 
 <p>￼￼￼￼￼￼￼￼￼￼￼￼<img src="media/14189656825627/MWeb-markdown-editor.jpg" alt="MWeb-markdown-editor">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
 
-<h2>插入图片并显示在编辑器内</h2>
+<h2 id="toc_6">插入图片并显示在编辑器内</h2>
 
 <p>MWeb的设计就是为了能方便地用Markdown记日记、简单的管理日记并生成博客。而写日记时插入图片的功能是经常用到的。一般的Markdown工具如果要插入图片，要先丢到网上。像Ulysses是可以方便插入图片，但是要双击或者预览时才能看到。MWeb设计成可拖拽或直接粘贴即可插入图片并显示出来，以方便查看。</p>
 
 <p>￼￼￼￼￼￼￼￼￼<img src="media/14189656825627/MWeb-inset-photo.jpg" alt="MWeb-inset-photo">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼<br>
 ￼￼￼￼￼￼￼￼￼￼￼</p>
 
-<h2>一键将分类生成全静态的网站和博客</h2>
+<h2 id="toc_7">一键将分类生成全静态的网站和博客</h2>
 
 <p>MWeb的分类管理的设计跟博客的结构差不多，一个文档可以选择多个分类。将分类变成博客的方法为：选择该分类 &ndash;&gt; Set to site。设定好博客的名称和描述等等，点：<code>Build site</code> 按钮即可。如果有改动到 <code>Theme</code> 或者有任何没有在预料之中的结果，试试点 <code>Clear and rebuild site</code> 按钮。 点 <code>Preview site</code> 按钮可以预览生成的博客。<a href="http://coderforart.com/">http://coderforart.com/</a> 网站就是用MWeb生成的。</p>
 
@@ -842,13 +890,13 @@ If you can&rsquo;t find the answer, please send feedback to me: Help &ndash;&gt;
 
 <p>MWeb还可以自定网站和博客主题，增加评论和分享功能，请参考这个网址: <a href="custom-site-theme-detail-zh.html">自定网站主题、增加评论和分享和设计新主题&hellip;</a></p>
 
-<h2>三种视图模式、改变视图时编辑器大小会固定</h2>
+<h2 id="toc_8">三种视图模式、改变视图时编辑器大小会固定</h2>
 
 <p>Editor Only:<code>CMD + 1</code>, Two Pane:<code>CMD + 2</code>, There Pane:<code>CMD + 3</code>。我觉得改变视图时，编辑器区域大小也同时改变不大爽，所以改变视图时就直接改变窗口大小，而编辑器区域大小会保持不变。</p>
 
 <p>￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼<img src="media/14189656825627/MWeb-view-pattern.jpg" alt="MWeb-view-pattern">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
 
-<h2>预览、分享功能，更多截图</h2>
+<h2 id="toc_9">预览、分享功能，更多截图</h2>
 
 <p>预览快捷键：<code>CMD + R</code>，关闭预览：<code>CMD + W</code> </p>
 
@@ -895,7 +943,7 @@ If you can&rsquo;t find the answer, please send feedback to me: Help &ndash;&gt;
     <updated>2014-12-16T19:08:31GMT+08:00</updated>
     <id>http://coderforart.com/markdown-syntax-guide-suggest-version.html</id>
     <content type="html"><![CDATA[
-<h2>Headers</h2>
+<h2 id="toc_0">Headers</h2>
 
 <pre><code># This is an `&lt;h1&gt;` tag
 ## This is an `&lt;h2&gt;` tag
@@ -904,13 +952,13 @@ If you can&rsquo;t find the answer, please send feedback to me: Help &ndash;&gt;
 
 <span id="more"></span><!-- more -->
 
-<h1>This is an <code>&lt;h1&gt;</code> tag</h1>
+<h1 id="toc_1">This is an <code>&lt;h1&gt;</code> tag</h1>
 
-<h2>This is an <code>&lt;h2&gt;</code> tag</h2>
+<h2 id="toc_2">This is an <code>&lt;h2&gt;</code> tag</h2>
 
-<h6>This is an <code>&lt;h6&gt;</code> tag</h6>
+<h6 id="toc_3">This is an <code>&lt;h6&gt;</code> tag</h6>
 
-<h2>Emphasis</h2>
+<h2 id="toc_4">Emphasis</h2>
 
 <pre><code>*This text will be italic*
 _This will also be italic_
@@ -929,14 +977,14 @@ __This will also be bold__
 
 <p><em>You *</em>can** combine them*</p>
 
-<h2>Newlines</h2>
+<h2 id="toc_5">Newlines</h2>
 
 <p>End a line with two or more spaces + enter.<br>
 Just typing enter to newline,please set：MWeb &ndash;&gt; Preferences &ndash;&gt; Themes &ndash;&gt; Translate newlines to <code>&lt;br&gt;</code> tags is On(default is On)</p>
 
-<h2>Lists</h2>
+<h2 id="toc_6">Lists</h2>
 
-<h3>Unordered</h3>
+<h3 id="toc_7">Unordered</h3>
 
 <pre><code>* Item 1 unordered list `* + SPACE`
 * Item 2
@@ -954,7 +1002,7 @@ Just typing enter to newline,please set：MWeb &ndash;&gt; Preferences &ndash;&g
 </ul></li>
 </ul>
 
-<h3>Ordered</h3>
+<h3 id="toc_8">Ordered</h3>
 
 <pre><code>1. Item 1 ordered list `Number + . + SPACE`
 2. Item 2 
@@ -974,7 +1022,7 @@ Just typing enter to newline,please set：MWeb &ndash;&gt; Preferences &ndash;&g
 </ol></li>
 </ol>
 
-<h2>Images</h2>
+<h2 id="toc_9">Images</h2>
 
 <pre><code>![GitHub set up](https://help.github.com/assets/images/site/set-up-git.gif)
 Format: ![Alt Text](url)
@@ -983,7 +1031,7 @@ Format: ![Alt Text](url)
 <p><img src="https://help.github.com/assets/images/site/set-up-git.gif" alt="GitHub set up"><br>
 Format: <img src="url" alt="Alt Text"></p>
 
-<h2>Links</h2>
+<h2 id="toc_10">Links</h2>
 
 <pre><code>email &lt;example@example.com&gt;
 [GitHub](http://github.com)
@@ -995,7 +1043,7 @@ autolink  &lt;http://www.github.com/&gt;
 Automatic linking for URLs<br>
 Any URL (like <a href="http://www.github.com/">http://www.github.com/</a>) will be automatically converted into a clickable link.</p>
 
-<h2>Blockquotes</h2>
+<h2 id="toc_11">Blockquotes</h2>
 
 <pre><code>As Kanye West said:
 &gt; We&#39;re living the future so
@@ -1009,7 +1057,7 @@ Any URL (like <a href="http://www.github.com/">http://www.github.com/</a>) will 
 the present is our past.</p>
 </blockquote>
 
-<h2>Inline code</h2>
+<h2 id="toc_12">Inline code</h2>
 
 <pre><code>I think you should use an
 `&lt;addr&gt;` `code` element here instead.
@@ -1018,7 +1066,7 @@ the present is our past.</p>
 <p>I think you should use an<br>
 <code>&lt;addr&gt;</code> <code>code</code> element here instead.</p>
 
-<h2>Multi-line code</h2>
+<h2 id="toc_13">Multi-line code</h2>
 
 <pre><code>```js
 function fancyAlert(arg) {
@@ -1038,7 +1086,7 @@ function fancyAlert(arg) {
 }
 </code></pre>
 
-<h2>Tables</h2>
+<h2 id="toc_14">Tables</h2>
 
 <pre><code>First Header | Second Header
 ------------ | -------------
@@ -1064,14 +1112,14 @@ Content in the first column | Content in the second column
 </tr>
 </tbody></table>
 
-<h2>Strikethrough</h2>
+<h2 id="toc_15">Strikethrough</h2>
 
 <pre><code> (like ~~this~~)
 </code></pre>
 
 <p>Any word wrapped with two tildes (like <del>this</del>) will appear crossed out.</p>
 
-<h2>Horizontal Rules</h2>
+<h2 id="toc_16">Horizontal Rules</h2>
 
 <p>Following lines will produce a horizontal rule:</p>
 
@@ -1088,7 +1136,7 @@ Content in the first column | Content in the second column
 
 <hr>
 
-<h2>Comment And Read More..</h2>
+<h2 id="toc_17">Comment And Read More..</h2>
 
 <!-- comment -->
 
@@ -1096,7 +1144,7 @@ Content in the first column | Content in the second column
 
 <p>Actions-&gt;Insert Read More Comment <em>OR</em> <code>CMD + .</code></p>
 
-<h2>Reference:</h2>
+<h2 id="toc_18">Reference:</h2>
 
 <p><a href="https://guides.github.com/features/mastering-markdown/">https://guides.github.com/features/mastering-markdown/</a></p>
 
@@ -1109,7 +1157,7 @@ Content in the first column | Content in the second column
     <updated>2014-12-16T21:57:10GMT+08:00</updated>
     <id>http://coderforart.com/markdown-syntax-guide-suggest-version-zh.html</id>
     <content type="html"><![CDATA[
-<h2>标题</h2>
+<h2 id="toc_0">标题</h2>
 
 <pre><code># 第一级标题 `&lt;h1&gt;` 
 ## 第二级标题 `&lt;h2&gt;` 
@@ -1118,15 +1166,15 @@ Content in the first column | Content in the second column
 
 <span id="more"></span><!-- more -->
 
-<h1>第一级标题 <code>&lt;h1&gt;</code></h1>
+<h1 id="toc_1">第一级标题 <code>&lt;h1&gt;</code></h1>
 
-<h2>第二级标题 <code>&lt;h2&gt;</code></h2>
+<h2 id="toc_2">第二级标题 <code>&lt;h2&gt;</code></h2>
 
-<h6>第六级标题 <code>&lt;h6&gt;</code></h6>
+<h6 id="toc_3">第六级标题 <code>&lt;h6&gt;</code></h6>
 
 <!-- more -->
 
-<h2>强调</h2>
+<h2 id="toc_4">强调</h2>
 
 <pre><code>*这些文字会生成`&lt;em&gt;`*
 _这些文字会生成`&lt;u&gt;`_
@@ -1141,14 +1189,14 @@ __这些文字会生成`&lt;strong&gt;`__
 <p><strong>这些文字会生成<code>&lt;strong&gt;</code></strong><br>
 <strong>这些文字会生成<code>&lt;strong&gt;</code></strong></p>
 
-<h2>换行</h2>
+<h2 id="toc_5">换行</h2>
 
 <p>四个及以上空格加回车。<br>
 如果不想打这么多空格，只要回车就为换行，请勾选：MWeb&ndash;&gt;Preferences&ndash;&gt;Themes&ndash;&gt;Translate newlines to <code>&lt;br&gt;</code> tags</p>
 
-<h2>列表</h2>
+<h2 id="toc_6">列表</h2>
 
-<h3>无序列表</h3>
+<h3 id="toc_7">无序列表</h3>
 
 <pre><code>* 项目一 无序列表 `* + 空格键`
 * 项目二
@@ -1166,7 +1214,7 @@ __这些文字会生成`&lt;strong&gt;`__
 </ul></li>
 </ul>
 
-<h3>有序列表</h3>
+<h3 id="toc_8">有序列表</h3>
 
 <pre><code>1. 项目一 有序列表 `数字 + . + 空格键`
 2. 项目二 
@@ -1186,7 +1234,7 @@ __这些文字会生成`&lt;strong&gt;`__
 </ol></li>
 </ol>
 
-<h2>图片</h2>
+<h2 id="toc_9">图片</h2>
 
 <pre><code>![GitHub set up](https://help.github.com/assets/images/site/set-up-git.gif)
 格式: ![Alt Text](url)
@@ -1195,7 +1243,7 @@ __这些文字会生成`&lt;strong&gt;`__
 <p><img src="https://help.github.com/assets/images/site/set-up-git.gif" alt="GitHub set up"><br>
 格式: <img src="url" alt="Alt Text"></p>
 
-<h2>链接</h2>
+<h2 id="toc_10">链接</h2>
 
 <pre><code>email &lt;example@example.com&gt;
 [GitHub](http://github.com)
@@ -1206,7 +1254,7 @@ __这些文字会生成`&lt;strong&gt;`__
 <a href="http://github.com">连接标题Github网站</a><br>
 自动生成连接像： <a href="http://www.github.com/">http://www.github.com/</a> 这样</p>
 
-<h2>区块引用</h2>
+<h2 id="toc_11">区块引用</h2>
 
 <pre><code>某某说:
 &gt; 第一行引用
@@ -1220,14 +1268,14 @@ __这些文字会生成`&lt;strong&gt;`__
 第二行费用文字</p>
 </blockquote>
 
-<h2>行内代码</h2>
+<h2 id="toc_12">行内代码</h2>
 
 <pre><code>像这样即可：`&lt;addr&gt;` `code`
 </code></pre>
 
 <p>像这样即可：<code>&lt;addr&gt;</code> <code>code</code></p>
 
-<h2>多行或者一段代码</h2>
+<h2 id="toc_13">多行或者一段代码</h2>
 
 <pre><code>```js
 function fancyAlert(arg) {
@@ -1247,7 +1295,7 @@ function fancyAlert(arg) {
 }
 </code></pre>
 
-<h2>表格</h2>
+<h2 id="toc_14">表格</h2>
 
 <pre><code>第一格表头 | 第二格表头
 --------- | -------------
@@ -1273,14 +1321,14 @@ function fancyAlert(arg) {
 </tr>
 </tbody></table>
 
-<h2>删除线</h2>
+<h2 id="toc_15">删除线</h2>
 
 <pre><code>加删除线像这样用： ~~删除这些~~
 </code></pre>
 
 <p>加删除线像这样用： <del>删除这些</del></p>
 
-<h2>分隔线</h2>
+<h2 id="toc_16">分隔线</h2>
 
 <p>以下三种方式都可以生成分隔线：</p>
 
@@ -1297,7 +1345,7 @@ function fancyAlert(arg) {
 
 <hr>
 
-<h2>注释和阅读更多</h2>
+<h2 id="toc_17">注释和阅读更多</h2>
 
 <!-- comment -->
 
@@ -1306,7 +1354,7 @@ function fancyAlert(arg) {
 <p>Actions-&gt;Insert Read More Comment <em>或者</em> <code>Command + .</code><br>
 <strong>注</strong> 阅读更多的功能只用在生成网站或博客时。</p>
 
-<h2>此文参考:</h2>
+<h2 id="toc_18">此文参考:</h2>
 
 <p><a href="https://guides.github.com/features/mastering-markdown/">https://guides.github.com/features/mastering-markdown/</a></p>
 
@@ -1360,11 +1408,11 @@ can <a href="/projects/markdown/syntax.text">see the source for it by adding &ls
 
 <hr>
 
-<h2>Overview</h2>
+<h2 id="toc_0">Overview</h2>
 
 <p><a id="overview"></a></p>
 
-<h3>Philosophy</h3>
+<h3 id="toc_1">Philosophy</h3>
 
 <p><a id="philosophy"></a></p>
 
@@ -1385,7 +1433,7 @@ look like *emphasis*. Markdown lists look like, well, lists. Even<br>
 blockquotes look like quoted passages of text, assuming you&rsquo;ve ever<br>
 used email.</p>
 
-<h3>Inline HTML</h3>
+<h3 id="toc_2">Inline HTML</h3>
 
 <p><a id="html"></a></p>
 
@@ -1438,7 +1486,7 @@ link or image syntax, go right ahead.</p>
 <p>Unlike block-level HTML tags, Markdown syntax <em>is</em> processed within<br>
 span-level tags.</p>
 
-<h3>Automatic Escaping for Special Characters</h3>
+<h3 id="toc_3">Automatic Escaping for Special Characters</h3>
 
 <p><a id="autoescape"></a></p>
 
@@ -1504,11 +1552,11 @@ and <code>&amp;</code> in your example code needs to be escaped.)</p>
 
 <hr>
 
-<h2>Block Elements</h2>
+<h2 id="toc_4">Block Elements</h2>
 
 <p><a id="block"></a></p>
 
-<h3>Paragraphs and Line Breaks</h3>
+<h3 id="toc_5">Paragraphs and Line Breaks</h3>
 
 <p><a id="p"></a></p>
 
@@ -1531,7 +1579,7 @@ end a line with two or more spaces, then type return.</p>
 Markdown&rsquo;s email-style <a href="#blockquote">blockquoting</a> and multi-paragraph <a href="#list">list items</a><br>
 work best &ndash; and look better &ndash; when you format them with hard breaks.</p>
 
-<h3>Headers</h3>
+<h3 id="toc_6">Headers</h3>
 
 <p><a id="header"></a></p>
 
@@ -1572,7 +1620,7 @@ determines the header level.) :</p>
 ### This is an H3 ######
 </code></pre>
 
-<h3>Blockquotes</h3>
+<h3 id="toc_7">Blockquotes</h3>
 
 <p><a id="blockquote"></a></p>
 
@@ -1627,7 +1675,7 @@ and code blocks:</p>
 example, with BBEdit, you can make a selection and choose Increase<br>
 Quote Level from the Text menu.</p>
 
-<h3>Lists</h3>
+<h3 id="toc_8">Lists</h3>
 
 <p><a id="list"></a></p>
 
@@ -1805,7 +1853,7 @@ line. To avoid this, you can backslash-escape the period:</p>
 <pre><code>1986\. What a great season.
 </code></pre>
 
-<h3>Code Blocks</h3>
+<h3 id="toc_9">Code Blocks</h3>
 
 <p><a id="precode"></a></p>
 
@@ -1876,7 +1924,7 @@ ampersands and angle brackets. For example, this:</p>
 asterisks are just literal asterisks within a code block. This means<br>
 it&rsquo;s also easy to use Markdown to write about Markdown&rsquo;s own syntax.</p>
 
-<h3>Horizontal Rules</h3>
+<h3 id="toc_10">Horizontal Rules</h3>
 
 <p><a id="hr"></a></p>
 
@@ -1898,11 +1946,11 @@ following lines will produce a horizontal rule:</p>
 
 <hr>
 
-<h2>Span Elements</h2>
+<h2 id="toc_11">Span Elements</h2>
 
 <p><a id="span"></a></p>
 
-<h3>Links</h3>
+<h3 id="toc_12">Links</h3>
 
 <p><a id="link"></a></p>
 
@@ -2078,7 +2126,7 @@ allowing you to move the markup-related metadata out of the paragraph,<br>
 you can add links without interrupting the narrative flow of your<br>
 prose.</p>
 
-<h3>Emphasis</h3>
+<h3 id="toc_13">Emphasis</h3>
 
 <p><a id="em"></a></p>
 
@@ -2125,7 +2173,7 @@ escape it:</p>
 <pre><code>\*this text is surrounded by literal asterisks\*
 </code></pre>
 
-<h3>Code</h3>
+<h3 id="toc_14">Code</h3>
 
 <p><a id="code"></a></p>
 
@@ -2191,7 +2239,7 @@ tags. Markdown will turn this:</p>
 equivalent of &lt;code&gt;&amp;amp;mdash;&lt;/code&gt;.&lt;/p&gt;
 </code></pre>
 
-<h3>Images</h3>
+<h3 id="toc_15">Images</h3>
 
 <p><a id="img"></a></p>
 
@@ -2236,11 +2284,11 @@ use regular HTML <code>&lt;img&gt;</code> tags.</p>
 
 <hr>
 
-<h2>Miscellaneous</h2>
+<h2 id="toc_16">Miscellaneous</h2>
 
 <p><a id="misc"></a></p>
 
-<h3>Automatic Links</h3>
+<h3 id="toc_17">Automatic Links</h3>
 
 <p><a id="autolink"></a></p>
 
@@ -2277,7 +2325,7 @@ most, address-harvesting bots, but it definitely won&rsquo;t fool all of<br>
 them. It&rsquo;s better than nothing, but an address published in this way<br>
 will probably eventually start receiving spam.)</p>
 
-<h3>Backslash Escapes</h3>
+<h3 id="toc_18">Backslash Escapes</h3>
 
 <p><a id="backslash"></a></p>
 
@@ -2315,7 +2363,7 @@ _   underscore
     <updated>2014-12-16T21:26:32GMT+08:00</updated>
     <id>http://coderforart.com/markdown-syntax-guide-full-version-zh.html</id>
     <content type="html"><![CDATA[
-<h2>Markdown 文件</h2>
+<h2 id="toc_0">Markdown 文件</h2>
 
 <p><img src="http://markdown.tw/images/208x128.png" alt="Markdown"></p>
 
@@ -2325,7 +2373,7 @@ Document. Please refer to <a href="http://daringfireball.net/projects/markdown/s
 
 <span id="more"></span><!-- more -->
 
-<h2>Markdown: Syntax</h2>
+<h2 id="toc_1">Markdown: Syntax</h2>
 
 <ul>
 <li><a href="#overview">概述</a>
@@ -2366,11 +2414,11 @@ Document. Please refer to <a href="http://daringfireball.net/projects/markdown/s
 
 <hr>
 
-<h2>概述</h2>
+<h2 id="toc_2">概述</h2>
 
 <p><a id="overview"></a></p>
 
-<h3>哲學</h3>
+<h3 id="toc_3">哲學</h3>
 
 <p><a id="philosophy"></a></p>
 
@@ -2380,7 +2428,7 @@ Document. Please refer to <a href="http://daringfireball.net/projects/markdown/s
 
 <p>因此 Markdown 的語法全由標點符號所組成，並經過嚴謹慎選，是為了讓它們看起來就像所要表達的意思。像是在文字兩旁加上星號，看起來就像*強調*。Markdown 的清單看起來，嗯，就是清單。假如你有使用過電子郵件，區塊引言看起來就真的像是引用一段文字。</p>
 
-<h3>行內 HTML</h3>
+<h3 id="toc_4">行內 HTML</h3>
 
 <p><a id="html"></a></p>
 
@@ -2411,7 +2459,7 @@ This is another regular paragraph.
 
 <p>HTML 區段標籤和區塊標籤不同，在區段標籤的範圍內， Markdown 的語法是有效的。</p>
 
-<h3>特殊字元自動轉換</h3>
+<h3 id="toc_5">特殊字元自動轉換</h3>
 
 <p><a id="autoescape"></a></p>
 
@@ -2458,11 +2506,11 @@ This is another regular paragraph.
 
 <hr>
 
-<h2>區塊元素</h2>
+<h2 id="toc_6">區塊元素</h2>
 
 <p><a id="block"></a></p>
 
-<h3>段落和換行</h3>
+<h3 id="toc_7">段落和換行</h3>
 
 <p><a id="p"></a></p>
 
@@ -2474,7 +2522,7 @@ This is another regular paragraph.
 
 <p>是的，這確實需要花比較多功夫來插入 <code>&lt;br /&gt;</code> ，但是「每個換行都轉換為 <code>&lt;br /&gt;</code>」的方法在 Markdown 中並不適合， Markdown 中 email 式的 <a href="#blockquote">區塊引言</a> 和多段落的 <a href="#list">清單</a> 在使用換行來排版的時候，不但更好用，還更好閱讀。</p>
 
-<h3>標題</h3>
+<h3 id="toc_8">標題</h3>
 
 <p><a id="header"></a></p>
 
@@ -2509,7 +2557,7 @@ This is an H2
 ### This is an H3 ######
 </code></pre>
 
-<h3>Blockquotes</h3>
+<h3 id="toc_9">Blockquotes</h3>
 
 <p><a id="blockquote"></a></p>
 
@@ -2556,7 +2604,7 @@ id sem consectetuer libero luctus adipiscing.
 
 <p>任何標準的文字編輯器都能簡單地建立 email 樣式的引言，例如 BBEdit ，你可以選取文字後然後從選單中選擇<em>增加引言階層</em>。</p>
 
-<h3>清單</h3>
+<h3 id="toc_10">清單</h3>
 
 <p>Markdown 支援有序清單和無序清單。</p>
 
@@ -2714,7 +2762,7 @@ sit amet, consectetuer adipiscing elit.
 <pre><code>1986\. What a great season.
 </code></pre>
 
-<h3>程式碼區塊</h3>
+<h3 id="toc_11">程式碼區塊</h3>
 
 <p><a id="precode"></a></p>
 
@@ -2773,7 +2821,7 @@ end tell
 
 <p>程式碼區塊中，一般的 Markdown 語法不會被轉換，像是星號便只是星號，這表示你可以很容易地以 Markdown 語法撰寫 Markdown 語法相關的文件。</p>
 
-<h3>分隔線</h3>
+<h3 id="toc_12">分隔線</h3>
 
 <p><a id="hr"></a></p>
 
@@ -2792,11 +2840,11 @@ end tell
 
 <hr>
 
-<h2>區段元素</h2>
+<h2 id="toc_13">區段元素</h2>
 
 <p><a id="span"></a></p>
 
-<h3>連結</h3>
+<h3 id="toc_14">連結</h3>
 
 <p><a id="link"></a></p>
 
@@ -2939,7 +2987,7 @@ than from [Yahoo](http://search.yahoo.com/ &quot;Yahoo Search&quot;) or
 
 <p>使用 Markdown 的參考式連結，可以讓文件更像是瀏覽器最後產生的結果，讓你可以把一些標記相關的資訊移到段落文字之外，你就可以增加連結而不讓文章的閱讀感覺被打斷。</p>
 
-<h3>強調</h3>
+<h3 id="toc_15">強調</h3>
 
 <p><a id="em"></a></p>
 
@@ -2979,7 +3027,7 @@ __double underscores__
 <pre><code>\*this text is surrounded by literal asterisks\*
 </code></pre>
 
-<h3>程式碼</h3>
+<h3 id="toc_16">程式碼</h3>
 
 <p><a id="code"></a></p>
 
@@ -3038,7 +3086,7 @@ A backtick-delimited string in a code span: `` `foo` ``
 equivalent of &lt;code&gt;&amp;amp;mdash;&lt;/code&gt;.&lt;/p&gt;
 </code></pre>
 
-<h3>圖片</h3>
+<h3 id="toc_17">圖片</h3>
 
 <p><a id="img"></a></p>
 
@@ -3076,11 +3124,11 @@ equivalent of &lt;code&gt;&amp;amp;mdash;&lt;/code&gt;.&lt;/p&gt;
 
 <hr>
 
-<h2>其它</h2>
+<h2 id="toc_18">其它</h2>
 
 <p><a id="misc"></a></p>
 
-<h3>自動連結</h3>
+<h3 id="toc_19">自動連結</h3>
 
 <p><a id="autolink"></a></p>
 
@@ -3111,7 +3159,7 @@ equivalent of &lt;code&gt;&amp;amp;mdash;&lt;/code&gt;.&lt;/p&gt;
 
 <p>（這種作法雖然可以混淆不少的機器人，但並無法全部擋下來，不過這樣也比什麼都不做好些。無論如何，公開你的信箱終究會引來廣告信件的。）</p>
 
-<h3>跳脫字元</h3>
+<h3 id="toc_20">跳脫字元</h3>
 
 <p><a id="backslash"></a></p>
 
@@ -3136,7 +3184,7 @@ _   底線
 !   驚嘆號
 </code></pre>
 
-<h2>感謝</h2>
+<h2 id="toc_21">感謝</h2>
 
 <p><a id="acknowledgement"></a></p>
 

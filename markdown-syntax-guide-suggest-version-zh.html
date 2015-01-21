@@ -128,7 +128,7 @@
 	<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 		<h1 class="title" itemprop="name">Markdown 语法简单说明</h1>
 		<div class="entry-content" itemprop="articleBody">
-			<h2>标题</h2>
+			<h2 id="toc_0">标题</h2>
 
 <pre><code># 第一级标题 `&lt;h1&gt;` 
 ## 第二级标题 `&lt;h2&gt;` 
@@ -137,15 +137,15 @@
 
 <span id="more"></span><!-- more -->
 
-<h1>第一级标题 <code>&lt;h1&gt;</code></h1>
+<h1 id="toc_1">第一级标题 <code>&lt;h1&gt;</code></h1>
 
-<h2>第二级标题 <code>&lt;h2&gt;</code></h2>
+<h2 id="toc_2">第二级标题 <code>&lt;h2&gt;</code></h2>
 
-<h6>第六级标题 <code>&lt;h6&gt;</code></h6>
+<h6 id="toc_3">第六级标题 <code>&lt;h6&gt;</code></h6>
 
 <!-- more -->
 
-<h2>强调</h2>
+<h2 id="toc_4">强调</h2>
 
 <pre><code>*这些文字会生成`&lt;em&gt;`*
 _这些文字会生成`&lt;u&gt;`_
@@ -160,14 +160,14 @@ __这些文字会生成`&lt;strong&gt;`__
 <p><strong>这些文字会生成<code>&lt;strong&gt;</code></strong><br>
 <strong>这些文字会生成<code>&lt;strong&gt;</code></strong></p>
 
-<h2>换行</h2>
+<h2 id="toc_5">换行</h2>
 
 <p>四个及以上空格加回车。<br>
 如果不想打这么多空格，只要回车就为换行，请勾选：MWeb&ndash;&gt;Preferences&ndash;&gt;Themes&ndash;&gt;Translate newlines to <code>&lt;br&gt;</code> tags</p>
 
-<h2>列表</h2>
+<h2 id="toc_6">列表</h2>
 
-<h3>无序列表</h3>
+<h3 id="toc_7">无序列表</h3>
 
 <pre><code>* 项目一 无序列表 `* + 空格键`
 * 项目二
@@ -185,7 +185,7 @@ __这些文字会生成`&lt;strong&gt;`__
 </ul></li>
 </ul>
 
-<h3>有序列表</h3>
+<h3 id="toc_8">有序列表</h3>
 
 <pre><code>1. 项目一 有序列表 `数字 + . + 空格键`
 2. 项目二 
@@ -205,7 +205,7 @@ __这些文字会生成`&lt;strong&gt;`__
 </ol></li>
 </ol>
 
-<h2>图片</h2>
+<h2 id="toc_9">图片</h2>
 
 <pre><code>![GitHub set up](https://help.github.com/assets/images/site/set-up-git.gif)
 格式: ![Alt Text](url)
@@ -214,7 +214,7 @@ __这些文字会生成`&lt;strong&gt;`__
 <p><img src="https://help.github.com/assets/images/site/set-up-git.gif" alt="GitHub set up"><br>
 格式: <img src="url" alt="Alt Text"></p>
 
-<h2>链接</h2>
+<h2 id="toc_10">链接</h2>
 
 <pre><code>email &lt;example@example.com&gt;
 [GitHub](http://github.com)
@@ -225,7 +225,7 @@ __这些文字会生成`&lt;strong&gt;`__
 <a href="http://github.com">连接标题Github网站</a><br>
 自动生成连接像： <a href="http://www.github.com/">http://www.github.com/</a> 这样</p>
 
-<h2>区块引用</h2>
+<h2 id="toc_11">区块引用</h2>
 
 <pre><code>某某说:
 &gt; 第一行引用
@@ -239,14 +239,14 @@ __这些文字会生成`&lt;strong&gt;`__
 第二行费用文字</p>
 </blockquote>
 
-<h2>行内代码</h2>
+<h2 id="toc_12">行内代码</h2>
 
 <pre><code>像这样即可：`&lt;addr&gt;` `code`
 </code></pre>
 
 <p>像这样即可：<code>&lt;addr&gt;</code> <code>code</code></p>
 
-<h2>多行或者一段代码</h2>
+<h2 id="toc_13">多行或者一段代码</h2>
 
 <pre><code>```js
 function fancyAlert(arg) {
@@ -266,7 +266,7 @@ function fancyAlert(arg) {
 }
 </code></pre>
 
-<h2>表格</h2>
+<h2 id="toc_14">表格</h2>
 
 <pre><code>第一格表头 | 第二格表头
 --------- | -------------
@@ -292,14 +292,14 @@ function fancyAlert(arg) {
 </tr>
 </tbody></table>
 
-<h2>删除线</h2>
+<h2 id="toc_15">删除线</h2>
 
 <pre><code>加删除线像这样用： ~~删除这些~~
 </code></pre>
 
 <p>加删除线像这样用： <del>删除这些</del></p>
 
-<h2>分隔线</h2>
+<h2 id="toc_16">分隔线</h2>
 
 <p>以下三种方式都可以生成分隔线：</p>
 
@@ -316,7 +316,7 @@ function fancyAlert(arg) {
 
 <hr>
 
-<h2>注释和阅读更多</h2>
+<h2 id="toc_17">注释和阅读更多</h2>
 
 <!-- comment -->
 
@@ -325,15 +325,30 @@ function fancyAlert(arg) {
 <p>Actions-&gt;Insert Read More Comment <em>或者</em> <code>Command + .</code><br>
 <strong>注</strong> 阅读更多的功能只用在生成网站或博客时。</p>
 
-<h2>此文参考:</h2>
+<h2 id="toc_18">此文参考:</h2>
 
 <p><a href="https://guides.github.com/features/mastering-markdown/">https://guides.github.com/features/mastering-markdown/</a></p>
 
 		</div>
 	</article>
 	<div class="share">
-		
+		<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<div class="addthis_native_toolbox"></div>
 	</div>
+
+	<div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'coderforart'; 
+
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
+
 </div>        </div>
 			<footer id="footer" class="inner">Copyright &copy; 2014
 Powered by <a target="_blank" href="http://coderforart.com/">MWeb</a> &nbsp;&nbsp; 
@@ -342,6 +357,7 @@ Theme by <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank 
 		</div>
 	</div>
 
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54bf2ae85c91fc87" async="async"></script>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

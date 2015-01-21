@@ -128,13 +128,13 @@
 	<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 		<h1 class="title" itemprop="name">游戏制作之路：游戏引擎选择、Mac下和Windows下UnrealEngine 4体验对比、文档及其他</h1>
 		<div class="entry-content" itemprop="articleBody">
-			<h2>UnrealEngine 4和Unity3d的选择</h2>
+			<h2 id="toc_0">UnrealEngine 4和Unity3d的选择</h2>
 
 <p>订阅了UrealEngine4（UE4）开发者。我开始做网站用的是ASP.NET和C#，之后做网站虽然换用更方便的PHP（因为做的都是小网站）。我想说，做了长达7年的小网站就算我再水，但是C#我还是懂一些的，而Unity3d刚刚好最建议用的就是C#。C++我不懂，只在高中毕业后看了C++编程思想并把大部分例子都手打入电脑并运行。Unity3d在移动端有大量成功的案例，文档非常好，视频教程也很全，研究的人也非常多，有问题很容易找到文案等等等等，简直是好得不能再好了！但是：UE4是开源的，《游戏引擎架构》里说游戏一般都用C++，我这次学是认真的！！作为一个有追求的人也必须选UE4等等！！最后我要说的是，这些都不是我选UE4的主要原因，真相是：Unity3D好贵！月付400多，不付就马上没有全功能的，全买更贵！UE4如果你不用最新的，你只要买一个月，之后都是免费的，全功能的。虽然这点钱对于真正做产品来说，不算什么，但是对于学习了说，不一样。反正做游戏也不单单是引擎的事，然后学会了一个引擎，再学另一个，或者也就是几天的事。</p>
 
 <span id="more"></span><!-- more -->
 
-<h2>Mac OS X下下载和编译UnrealEngine 4</h2>
+<h2 id="toc_1">Mac OS X下下载和编译UnrealEngine 4</h2>
 
 <p>UE4在github中有三个版本，我直接下载release版本的.zip（因为我用git clone太慢了）。我下载的是4.6.1版。下载完成解压后右键setup.command打开，然后还会要下载大概2G左右的东西，这个下载的速度不错。然后再右键GenerateProjectFiles.command打开。等一会儿后就生成UE4.xcodeproj了。打开UE4.xcodeproj后，选择UE4Editor-Mac，然后build，发现我下载这个版本会出错。出错是这行：</p>
 
@@ -175,7 +175,7 @@ static bool GAllowApplePlatformSymbolication = false;
 
 <p><strong>注</strong> 后来发现4.5.1版只是换了名字，BSP 就是Geometry！╮(╯▽╰)╭  </p>
 
-<h2>Windows下编译UnrealEngine 4</h2>
+<h2 id="toc_2">Windows下编译UnrealEngine 4</h2>
 
 <p>周未有点空，就开Windows挂着下载UE4，想试一下Window下的体验如何，因为UE4好像是Windows下优化极好的。</p>
 
@@ -183,7 +183,7 @@ static bool GAllowApplePlatformSymbolication = false;
 
 <p>下载编译跟Mac差不多，时间上也差不多。Windows下编译4.6.1 完全没有任何出错。非常顺利！然后启动Debug版的Unreal Editor，比Mac下快很多，打开大场景也很快，很顺。试运行，很好，好得不能再好了！！但是好占空间，我随便试一下，下载三个Demo的游戏或场景，30多G空间就没了。 Mac下因为是512G所以没注意。</p>
 
-<h2>Windows、Mac下UnrealEngine 4使用C++项目对比</h2>
+<h2 id="toc_3">Windows、Mac下UnrealEngine 4使用C++项目对比</h2>
 
 <p>再试了一下新建C++的项目看看。按 <a href="https://docs.unrealengine.com/latest/INT/Programming/QuickStart/index.html">https://docs.unrealengine.com/latest/INT/Programming/QuickStart/index.html</a> 这个文档加了几行C++代码，然后从开始编译到编译成功并打开Unreal Editor，大概1分钟左右。这并非不能接受。当然，这不能跟Unity3D用C#比，那才真正快。</p>
 
@@ -191,7 +191,7 @@ static bool GAllowApplePlatformSymbolication = false;
 
 <p><img src="media/14213891828854/14215892261441.jpg" alt="">￼￼￼￼￼</p>
 
-<h2>如果用不到C++，只用Blueprints使用UnrealEngine 4的简单方法</h2>
+<h2 id="toc_4">如果用不到C++，只用Blueprints使用UnrealEngine 4的简单方法</h2>
 
 <p>去 <a href="https://www.unrealengine.com/">https://www.unrealengine.com/</a> 登入后下载红线这个：<br>
 <img src="media/14213891828854/14215898337076.jpg" alt="">￼￼￼￼</p>
@@ -200,15 +200,30 @@ static bool GAllowApplePlatformSymbolication = false;
 
 <p><img src="media/14213891828854/Snip20150118_4.png" alt="Snip20150118_4">￼￼￼￼</p>
 
-<h2>关于UnrealEngine 4的文档和其他</h2>
+<h2 id="toc_5">关于UnrealEngine 4的文档和其他</h2>
 
 <p>之前说UE4文档不如Unity3d好，但是我仔细看了，也是相当全面的，学会大概不成问题，更何况youtube上还有大量的视频可以看。C++也不成问题，按《游戏引擎架构》中说的，游戏中用到的C++不会太复杂，太复杂大不了不做那种特性就好。所以引擎部分应该不会对我产生大的难度了。但是做游戏引擎只是一小部分，最最重要部分：内容和玩法！首先说内容，这部分要学画画和3D了，而学3D软件对我来说也不成问题，只是画画目前还没有任何比较靠普的路子能成，至于动画随便弄一下然后买本《动画师生存手册》看看到底要如何了，也没有太大把握。。玩法部分，随便弄弄应该可以。因为时间不多只有一年，所以几个东西要并行学习，边学边加上引擎综合考虑。大概是这样想法先。</p>
 
 		</div>
 	</article>
 	<div class="share">
-		
+		<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<div class="addthis_native_toolbox"></div>
 	</div>
+
+	<div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'coderforart'; 
+
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
+
 </div>        </div>
 			<footer id="footer" class="inner">Copyright &copy; 2014
 Powered by <a target="_blank" href="http://coderforart.com/">MWeb</a> &nbsp;&nbsp; 
@@ -217,6 +232,7 @@ Theme by <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank 
 		</div>
 	</div>
 
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54bf2ae85c91fc87" async="async"></script>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

@@ -130,6 +130,69 @@
 	<article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
 		<div class="meta">
 			<div class="date">
+				<time datetime="2015-01-21T10:05:07GMT+08:00" itemprop="datePublished">2015/1/21</time>
+			</div>
+			<div class="tags">posted in 
+			
+			    <a class='category' href='Game%20Engine.html'>Game Engine</a>&nbsp;
+			
+			    <a class='category' href='CG%20Artist.html'>CG Artist</a>&nbsp;
+			 
+			</div>
+		</div>
+		<h1 class="title" itemprop="name"><a href="make-a-simple-high-end-mac-ios-game.html" itemprop="url">
+		游戏制作之路：一个对我来说可实现的High-end的Mac/iOS游戏制作大概计划</a></h1>
+		<div class="entry-content" itemprop="articleBody">
+			
+			<p>对于学习一些东西，我比较习惯任务驱动式的学习，也就是说，要事先订好一个目标，要做什么东西，达到什么效果，然后根据自己了解的知识作一个可以实现这个目标的计划。</p>
+
+<p>现在要学的是游戏制作，而且是High-end的3D游戏制作。如前文 <a href="unrealengine4-windows-mac.html">游戏制作之路：游戏引擎选择、Mac下和Windows下UnrealEngine 4体验对比、文档及其他</a> 所说的，我已经选择了UE4这个画面最顶级的引擎，它即使是在iOS上，画面也是最高端的，可以参考 <a href="https://www.unrealengine.com/blog/unreal-engine-powered-zen-garden-released">Zen Garden</a> 这个Demo。然后我也大概确认了可行性，现在要解决的是玩法（游戏性）、内容创作、音效这些东西。</p>
+
+<h2 id="toc_0">游戏的大概内容和玩法</h2>
+
+<p>为了让目标尽可能得以实现，游戏要尽可能简单。考虑到内容创作难度太大，所以我要使用尽可能少的元素。目前确认的有山、树、花草、水、岩石火山怪物、钢铁怪物、一两个造型复杂点的Boss、一两个女性人物角色。下面分开说明</p>
+
+<ul>
+<li>山：UE4对山地的制作支持的比较好，所以我要做的只有设计山地的外形和画山地材质了。这点内容创作我相信能做好，只要仔细研究山的画法，表现形式和树、花草的布局即可</li>
+<li>树：UE4有支持SpeedTree这样的简单可以做出各种外形的树的软件插件，但是这显然不是我的目标，在迫不得以的情况下才会用。我开始会从画画和3D建模去从头开始创作树，然后仔细研究树的材质和表现，从而真正掌握树的制作。</li>
+<li>花草：UE4好像内置花草的支持，不大清楚是如何，但是应该是很好的消息。不过估计也是要去画花的材质和表现，花草这部分也是我要仔细研究和全程掌握的。从开始创作花草外形到如何做3D建模，上材质并引入到UE4都要掌握。</li>
+<li>水：这部分在UE4中比较好实现，应该是只要设计位置和外形就好，任务比较简单。</li>
+<li>岩石火山怪物、钢铁怪物：怪物制作在游戏中是重点，难度很高。从开始设计到引入UE4，像树或花草那样流程即可。真正有挑战的是怪物AI了，这部分就关系到游戏玩法和游戏性了。这部分我了解不多，反正是要花大量时间研究就是了，初步方向是UE4中内置的AI的组件如何使用，然后读一些游戏AI的书等等。估计是可能会用到C++了，这也是要学习的。</li>
+<li>人物角色：人物角色是我学习的重点，我希望这部分在做完这个游戏后能真正掌握一些。这部分要研究的东西太多了，光是人物设计就是要花大量时间，人体结构，画法，服饰。还有是3D建模，人物皮肤材质，服饰材质等等。服饰部分东西太庞大，我只选一个小方向即可。还有比如说头发和衣服在游戏中的做法等等。再有就是角色动画，初步估计应该是在3D软件中调好，然后引入UE4中也是有大量工作要做的。这也只是在对角色动画比较了解的基础上，刚刚好我不了解，这也得学！不知道UE4能不能做到像下图那样的画出来的角色的质量？这也是我想研究的。
+<img src="media/14218059079784/5bf24facgw1eo0sjmlsiwj20uk0hoju2.jpg" alt="5bf24facgw1eo0sjmlsiwj20uk0hoju2">￼￼
+<img src="media/14218059079784/5bf24facgw1eo0sjsnjb6j20dw0cnta3.jpg" alt="5bf24facgw1eo0sjsnjb6j20dw0cnta3">￼￼</li>
+</ul>
+
+<p>游戏玩法部分，这部分需要我在学习中慢慢想了，这部分应该不难，只是做得好不好的问题，即使做得不好，也没关系了。我的方向不在这。</p>
+
+<h2 id="toc_1">内容创作工具</h2>
+
+<p>内容创作非工具部分花费时间最多，量最大，但是这部分我无法写更多的东西，只能说是边学边研究了。然后工具部分却有一些可写的。<br>
+硬件部分要求不大，我目前有一台高性能的PC，两台MacBook Pro，现用的是2013版的15寸MacBook Pro，还有一台绘画板子 cintiq 13HD，足够用了。软件部分如下</p>
+
+<ul>
+<li>Photoshop：这个神器肯定是必须要的，不管是设计或画画还是做材质，他都是首选的工具。</li>
+<li>ZBrush：这个也属于易用性极好的神器，它大大降低了3D建模的难度。它也是我认为我可以掌握怪物和人物角色创作的理由。还有它的价格不贵，$795，在我可以接受范围。</li>
+<li>Maya LT：为什么是Maya而不是免费的Blender？最主要是Maya提供了官方的.FBX导出支持，而Blender是以插件的形式出现的，还有就是《游戏引擎架构》多次提到Maya，想来是不会错的。为什么是Maya LT，有写错？没有！因为Maya太贵了，全买$3675，订阅$185每月。Maya LT订阅$30每月，年订$240。而且autodesk的软件都可以很方便地申请3年的教育学习用途。</li>
+<li>我的另一款软件：这软件是要先做出来，当然不是什么强大的软件，这是我认为对内容创作和学习有用的小软件。</li>
+</ul>
+
+<p>软件部分除非以上的软件都不够用了，否则不会再引进新软件，因为评估和学习也是要成本的。当然，不用学的小软件是除外。</p>
+
+<h2 id="toc_2">游戏音效、背景故事</h2>
+
+<p>音效部分虽然也是属于非常重要的，但是我完全不懂音效，也没有兴趣深入研究它，大概来几个还算可以的音效就行了。背景故事部分在学习研究中跟游戏玩法一起慢慢考虑。</p>
+
+
+			
+			
+		</div>
+
+	</article>
+ 
+	<article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+		<div class="meta">
+			<div class="date">
 				<time datetime="2015-01-20T10:04:01GMT+08:00" itemprop="datePublished">2015/1/20</time>
 			</div>
 			<div class="tags">posted in 
@@ -142,11 +205,11 @@
 		MWeb Q & A</a></h1>
 		<div class="entry-content" itemprop="articleBody">
 			
-			<h2>How to export HTML style PDF？</h2>
+			<h2 id="toc_0">How to export HTML style PDF？</h2>
 
 <p><code>CMD+R</code> open <q>Live Preview</q>,click share button,select <code>Save as PDF</code>.</p>
 
-<h2>How to enable MathJax preview support? How to enable website MathJax support?</h2>
+<h2 id="toc_1">How to enable MathJax preview support? How to enable website MathJax support?</h2>
 
 <p><code>CMD+,</code> open Preferences，Themes &ndash;&gt; Enable Math.<br>
 For enable website MathJax support,the simple way is copy below code to <code>Site category</code> &ndash;&gt; <code>Site other:</code> text box. </p>
@@ -183,11 +246,11 @@ For enable website MathJax support,the simple way is copy below code to <code>Si
 		MWeb 所有问题和回答收集</a></h1>
 		<div class="entry-content" itemprop="articleBody">
 			
-			<h2>如何导出HTML样式的PDF？</h2>
+			<h2 id="toc_0">如何导出HTML样式的PDF？</h2>
 
 <p><code>CMD+R</code>打开Live Preview窗口，点右边的分享按钮，选择<code>Save as PDF</code>即可。</p>
 
-<h2>如何开启MathJax预览支持？如何让网站支持MathJax？</h2>
+<h2 id="toc_1">如何开启MathJax预览支持？如何让网站支持MathJax？</h2>
 
 <p><code>CMD+,</code>打开设置面板，切到Themes，勾选Enable Math选项。<br>
 如果要让网站支持MathJax，最简单的方法是在网站分类设置中的：Site other:的文本框中填入以下代码：</p>
@@ -202,9 +265,9 @@ For enable website MathJax support,the simple way is copy below code to <code>Si
 
 <p>如果您的网站是要用HTTPS，请把：<code>http://cdn.mathjax.org...</code>改为：<code>https://cdn.mathjax.org...</code></p>
 
-<h2>虽然在后面打中文不会跳动，但是在文章中间插入中文时，下面的文本会跳动怎么办？</h2>
+<h2 id="toc_2">虽然在后面打中文不会跳动，但是在文章中间插入中文时，下面的文本会跳动怎么办？</h2>
 
-<p>这个解决办法只有一个，就是在设置中把编辑器的字体换成<code>Hiragino Sans GB</code>，中文名称应该是叫<code>冬青黑体</code>。</p>
+<p>这个解决办法好像只能换字体，就是在设置中把编辑器的字体换成<code>Hiragino Sans GB</code>，中文名称应该是叫<code>冬青黑体</code>。另外我有试过Yosemite下不会跳了，当然如果你在用Yosemite，就不会有这个问题了。</p>
 
 
 			
@@ -228,7 +291,7 @@ For enable website MathJax support,the simple way is copy below code to <code>Si
 		MWeb 1.1 release (Submited to App Store Waiting For Review)</a></h1>
 		<div class="entry-content" itemprop="articleBody">
 			
-			<h2>New feature</h2>
+			<h2 id="toc_0">New feature</h2>
 
 <ul>
 <li>Add import files (.txt and .md) featrue：File &ndash;&gt; Import Files To Library&hellip;</li>
@@ -264,7 +327,7 @@ For enable website MathJax support,the simple way is copy below code to <code>Si
 		MWeb 1.1 版更新说明 （已提交到App Store，目前在等待审核中）</a></h1>
 		<div class="entry-content" itemprop="articleBody">
 			
-			<h2>新增</h2>
+			<h2 id="toc_0">新增</h2>
 
 <ul>
 <li>增加导入.txt或Markdown文档到文档库功能：File &ndash;&gt; Import Files To Library&hellip;</li>
@@ -302,7 +365,7 @@ For enable website MathJax support,the simple way is copy below code to <code>Si
 		游戏制作之路：游戏引擎选择、Mac下和Windows下UnrealEngine 4体验对比、文档及其他</a></h1>
 		<div class="entry-content" itemprop="articleBody">
 			
-			<h2>UnrealEngine 4和Unity3d的选择</h2>
+			<h2 id="toc_0">UnrealEngine 4和Unity3d的选择</h2>
 
 <p>订阅了UrealEngine4（UE4）开发者。我开始做网站用的是ASP.NET和C#，之后做网站虽然换用更方便的PHP（因为做的都是小网站）。我想说，做了长达7年的小网站就算我再水，但是C#我还是懂一些的，而Unity3d刚刚好最建议用的就是C#。C++我不懂，只在高中毕业后看了C++编程思想并把大部分例子都手打入电脑并运行。Unity3d在移动端有大量成功的案例，文档非常好，视频教程也很全，研究的人也非常多，有问题很容易找到文案等等等等，简直是好得不能再好了！但是：UE4是开源的，《游戏引擎架构》里说游戏一般都用C++，我这次学是认真的！！作为一个有追求的人也必须选UE4等等！！最后我要说的是，这些都不是我选UE4的主要原因，真相是：Unity3D好贵！月付400多，不付就马上没有全功能的，全买更贵！UE4如果你不用最新的，你只要买一个月，之后都是免费的，全功能的。虽然这点钱对于真正做产品来说，不算什么，但是对于学习了说，不一样。反正做游戏也不单单是引擎的事，然后学会了一个引擎，再学另一个，或者也就是几天的事。</p>
 
@@ -331,7 +394,7 @@ For enable website MathJax support,the simple way is copy below code to <code>Si
 		MWeb Screenshot and in Yosemite</a></h1>
 		<div class="entry-content" itemprop="articleBody">
 			
-			<h2>Yosemite</h2>
+			<h2 id="toc_0">Yosemite</h2>
 
 <p><img src="media/14206095675933/yosemite-01.jpg" alt="yosemite-01">￼</p>
 
@@ -370,38 +433,6 @@ For enable website MathJax support,the simple way is copy below code to <code>Si
 		</div>
 
 	</article>
- 
-	<article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-		<div class="meta">
-			<div class="date">
-				<time datetime="2015-01-07T01:48:59GMT+08:00" itemprop="datePublished">2015/1/7</time>
-			</div>
-			<div class="tags">posted in 
-			
-			    <a class='category' href='Introduction.html'>Introduction</a>&nbsp;
-			 
-			</div>
-		</div>
-		<h1 class="title" itemprop="name"><a href="custom-site-theme-detail-zh.html" itemprop="url">
-		自定网站或博客主题简单说明</a></h1>
-		<div class="entry-content" itemprop="articleBody">
-			
-			<p>MWeb全部主题已上传到Github: <a href="https://github.com/oulvhai/MWeb-Themes">https://github.com/oulvhai/MWeb-Themes</a>.</p>
-
-<h2>自定首页</h2>
-
-<p>如图，设定想要设置为首页的文档的 HTML file name 为 <code>index</code>, 选中 <code>Is page</code> 选项。<br>
-<img src="media/14189904700669/14210659918568.jpg" alt="">￼￼￼￼￼￼￼</p>
-
-
-
-			 
-			<a href="custom-site-theme-detail-zh.html#more" class="more-link">Read on &rarr;</a>
-    		
-			
-		</div>
-
-	</article>
   
 
 </div>
@@ -424,6 +455,7 @@ Theme by <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank 
 		</div>
 	</div>
 
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54bf2ae85c91fc87" async="async"></script>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
