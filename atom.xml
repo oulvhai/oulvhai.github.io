@@ -4,7 +4,7 @@
   <title><![CDATA[Coder For Art]]></title>
   <link href="http://coderforart.com/atom.xml" rel="self"/>
   <link href="http://coderforart.com/"/>
-  <updated>2015-01-21T13:13:43GMT+08:00</updated>
+  <updated>2015-01-27T11:44:27GMT+08:00</updated>
   <id>http://coderforart.com/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -166,7 +166,7 @@ For enable website MathJax support,the simple way is copy below code to <code>Si
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[MWeb 1.1 release (Submited to App Store Waiting For Review)]]></title>
+    <title type="html"><![CDATA[MWeb 1.1 release]]></title>
     <link href="http://coderforart.com/mweb-v1.1-release.html"/>
     <updated>2015-01-19T15:02:30GMT+08:00</updated>
     <id>http://coderforart.com/mweb-v1.1-release.html</id>
@@ -194,15 +194,15 @@ For enable website MathJax support,the simple way is copy below code to <code>Si
 
 <h2 id="toc_2">Syntax highlighting in fenced code blocks screenshot</h2>
 
-<p><img src="media/14216489427773/Snip20150119_6.png" alt="">￼￼￼￼￼￼</p>
+<p><img src="media/14216489427773/Snip20150119_6.png" alt="">￼￼￼￼￼￼￼</p>
 
-<p><img src="media/14216489427773/Snip20150119_5.png" alt="">￼￼￼￼</p>
+<p><img src="media/14216489427773/Snip20150119_5.png" alt="">￼￼￼￼￼</p>
 
 ]]></content>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[MWeb 1.1 版更新说明 （已提交到App Store，目前在等待审核中）]]></title>
+    <title type="html"><![CDATA[MWeb 1.1 版更新说明]]></title>
     <link href="http://coderforart.com/mweb-v1.1-release-zh.html"/>
     <updated>2015-01-19T14:29:02GMT+08:00</updated>
     <id>http://coderforart.com/mweb-v1.1-release-zh.html</id>
@@ -231,9 +231,9 @@ For enable website MathJax support,the simple way is copy below code to <code>Si
 
 <h2 id="toc_2">代码高亮功能截图</h2>
 
-<p><img src="media/14216489427773/Snip20150119_6.png" alt="">￼￼￼￼￼￼</p>
+<p><img src="media/14216489427773/Snip20150119_6.png" alt="">￼￼￼￼￼￼￼</p>
 
-<p><img src="media/14216489427773/Snip20150119_5.png" alt="">￼￼￼￼￼￼</p>
+<p><img src="media/14216489427773/Snip20150119_5.png" alt="">￼￼￼￼￼￼￼</p>
 
 ]]></content>
   </entry>
@@ -246,7 +246,7 @@ For enable website MathJax support,the simple way is copy below code to <code>Si
     <content type="html"><![CDATA[
 <h2 id="toc_0">UnrealEngine 4和Unity3d的选择</h2>
 
-<p>订阅了UrealEngine4（UE4）开发者。我开始做网站用的是ASP.NET和C#，之后做网站虽然换用更方便的PHP（因为做的都是小网站）。我想说，做了长达7年的小网站就算我再水，但是C#我还是懂一些的，而Unity3d刚刚好最建议用的就是C#。C++我不懂，只在高中毕业后看了C++编程思想并把大部分例子都手打入电脑并运行。Unity3d在移动端有大量成功的案例，文档非常好，视频教程也很全，研究的人也非常多，有问题很容易找到文案等等等等，简直是好得不能再好了！但是：UE4是开源的，《游戏引擎架构》里说游戏一般都用C++，我这次学是认真的！！作为一个有追求的人也必须选UE4等等！！最后我要说的是，这些都不是我选UE4的主要原因，真相是：Unity3D好贵！月付400多，不付就马上没有全功能的，全买更贵！UE4如果你不用最新的，你只要买一个月，之后都是免费的，全功能的。虽然这点钱对于真正做产品来说，不算什么，但是对于学习了说，不一样。反正做游戏也不单单是引擎的事，然后学会了一个引擎，再学另一个，或者也就是几天的事。</p>
+<p>订阅了UrealEngine4（UE4）开发者。我开始做网站用的是ASP.NET和C#，之后做网站虽然换用更方便的PHP（因为做的都是小网站）。我想说，做了长达7年的小网站就算我再水，但是C#我还是懂一些的，而Unity3d刚刚好最建议用的就是C#。C++我不懂，只在高中毕业后看了C++编程思想并把大部分例子都手打入电脑并运行。不极是在肖极Unity3d在移动端有大量成功的案例，文档非常好，视频教程也很全，研究的人也非常多，有问题很容易找到文案等等等等，简直是好得不能再好了！但是：UE4是开源的，《游戏引擎架构》里说游戏一般都用C++，我这次学是认真的！！作为一个有追求的人也必须选UE4等等！！最后我要说的是，这些都不是我选UE4的主要原因，真相是：Unity3D好贵！月付400多，不付就马上没有全功能的，全买更贵！UE4如果你不用最新的，你只要买一个月，之后都是免费的，全功能的。虽然这点钱对于真正做产品来说，不算什么，但是对于学习了说，不一样。反正做游戏也不单单是引擎的事，然后学会了一个引擎，再学另一个，或者也就是几天的事。</p>
 
 <span id="more"></span><!-- more -->
 
@@ -285,7 +285,7 @@ static bool GAllowApplePlatformSymbolication = false;
 下载后编译（方法跟4.6.1不大一样）。这次可以成功编译了。然后运行也没问题，但是好慢好慢好慢，好像我的rmbp15寸高配根本不大合适做这样的任务似的。新建项目xcode提示又出bug，我懒得管了，直接生成release版本的UE4Editor。应该会比debug版本的UE4Editor快很多吧。<del>先熟悉UE4Editor和学学Blueprints先了。C++什么的先不管先，因为太麻烦了，按照我编译后运行一下得要好久好久，估计10来分钟，如果全部编译，要大半个钟吧。。 如果改一下C++代码，还要编译后才能看到结果，那还得了。。 我直接不用学得了。（虽然可能不是这样，虽然Win下可能会快很多很多）</del> <strong>后来证明不是这样，然后如果用不到C++，UE4比想像中方便</strong></p>
 
 <p>话说我都编译好Release版后，然后去看 Getting Started，看到这页：<a href="https://docs.unrealengine.com/latest/INT/Engine/QuickStart/4/index.html">https://docs.unrealengine.com/latest/INT/Engine/QuickStart/4/index.html</a>，发现我编译这版没有Geometry！不得已我又下载了4.1版，又编译了，然后终于可以学习了。有图有真相！左边是4.1版！<br>
-<img src="media/14213891828854/14214041748379.jpg" alt="">￼￼￼￼￼￼￼</p>
+<img src="media/14213891828854/14214041748379.jpg" alt="">￼￼￼￼￼￼￼￼</p>
 
 <p>不得不说我耐心真好，编译好花时间 ╮(╯▽╰)╭  </p>
 
@@ -305,16 +305,16 @@ static bool GAllowApplePlatformSymbolication = false;
 
 <p>然后好奇再在Mac上试了一下（版本是4.5.1，因为4.6.1我编译不成功），新建C++项目，然后也按 <a href="https://docs.unrealengine.com/latest/INT/Programming/QuickStart/index.html">https://docs.unrealengine.com/latest/INT/Programming/QuickStart/index.html</a> 这个文档加了几行C++代码，想不到却出错了！版本不一样的原因，修正了一下，让他结果一样，然后从开始编译到编译成功并打开Unreal Editor，也是大概1分钟左右！这个结果让我惊喜了，看来是如果做场景小些的游戏，Mac下用UE4完全没问题！而我大概也是也只能是做场景小些的游戏（场景小，但是画面质量可以超高，UE4的画面比Unity3d好太多了），因为目标是丢上iPad、iPhone上玩的。上一张Mac下的图吧：</p>
 
-<p><img src="media/14213891828854/14215892261441.jpg" alt="">￼￼￼￼￼</p>
+<p><img src="media/14213891828854/14215892261441.jpg" alt="">￼￼￼￼￼￼</p>
 
 <h2 id="toc_4">如果用不到C++，只用Blueprints使用UnrealEngine 4的简单方法</h2>
 
 <p>去 <a href="https://www.unrealengine.com/">https://www.unrealengine.com/</a> 登入后下载红线这个：<br>
-<img src="media/14213891828854/14215898337076.jpg" alt="">￼￼￼￼</p>
+<img src="media/14213891828854/14215898337076.jpg" alt="">￼￼￼￼￼</p>
 
 <p>下载后运行并登入，会自动下载4.6.1版的Unreal Editor，如下图，点Launch就可以了，还可以下载旧版本的Unreal Editor，如右边我就下载了4.5.1版的。╮(╯▽╰)╭  ，如果我是用不到C++我花这些时间到底在折腾什么？！！！</p>
 
-<p><img src="media/14213891828854/Snip20150118_4.png" alt="Snip20150118_4">￼￼￼￼</p>
+<p><img src="media/14213891828854/Snip20150118_4.png" alt="Snip20150118_4">￼￼￼￼￼</p>
 
 <h2 id="toc_5">关于UnrealEngine 4的文档和其他</h2>
 
@@ -821,12 +821,13 @@ If you can&rsquo;t find the answer, please send feedback to me: Help &ndash;&gt;
 
 <p>MWeb is a markdown editor for static websites and blogs on OS X, like <a href="http://octopress.org/">Octopress</a> or <a href="http://jekyllrb.com/">Jekyll</a> but easy to use. You can write document with markdown,drag &amp; drop or paste photos to the editor, MWeb will automatically add markdown code and display photos in editor. You can choose some categories to organize the document, and build static websites and blogs <strong>One Click</strong>.</p>
 
-<p><img src="media/14189656825627/MWeb.jpg" alt="MWeb">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
+<p><img src="media/14189656825627/MWeb.jpg" alt="MWeb">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
 
 <span id="more"></span><!-- more -->
 
 <p style="text-align:center">
-<a href="http://itunes.apple.com/us/app/mweb-markdown-editor-for-static/id954188948?ls=1&mt=12" target="_blank"><img src="media/14195170907881/icon_apple_store-download-small.png" width="180" /></a>
+<a target="_blank" onclick="ga('send','event','buy-mweb');" href="http://itunes.apple.com/app/mweb-markdown-editor-for-static/id954188948?ls=1&mt=12" target="_blank"><img src="media/14195170907881/icon_apple_store-download-small.png" width="180" /></a><br />OR &nbsp;<a target="_blank" onclick="ga('send','event','download-mweb');" href="media/14195170907881/MWeb-Lite.zip">Free Download MWeb Lite</a>
+
 </p>
 
 <h2 id="toc_5">A markdown editor</h2>
@@ -838,20 +839,20 @@ If you can&rsquo;t find the answer, please send feedback to me: Help &ndash;&gt;
 <li>Not library pattern, it just like <code>TextEdit</code> but has full markdown suport like syntax highlight, preview, outline etc..</li>
 </ol>
 
-<p>￼￼￼￼￼￼￼￼￼￼￼￼<img src="media/14189656825627/MWeb-markdown-editor.jpg" alt="MWeb-markdown-editor">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
+<p>￼￼￼￼￼￼￼￼￼￼￼￼<img src="media/14189656825627/MWeb-markdown-editor.jpg" alt="MWeb-markdown-editor">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
 
 <h2 id="toc_6">Drag &amp; drop or paste photos to the editor and display</h2>
 
 <p>Drag &amp; drop or paste photo to the editor, the markdown code will automatically add and the photo will display in editor.</p>
 
-<p>￼￼￼￼￼￼￼￼￼<img src="media/14189656825627/MWeb-inset-photo.jpg" alt="MWeb-inset-photo">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼<br>
+<p>￼￼￼￼￼￼￼￼￼<img src="media/14189656825627/MWeb-inset-photo.jpg" alt="MWeb-inset-photo">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼<br>
 ￼￼￼￼￼￼￼￼￼￼￼￼</p>
 
 <h2 id="toc_7">Easy to build static websites and blogs</h2>
 
 <p>Selected a category &ndash;&gt; Set to site, setting site name and description and just click <code>Build site</code>. click <code>Clear and rebuild site</code> button when the Theme is change. click <code>Preview site</code> button to preview. Just double click <code>Coder For Art</code> category and try.</p>
 
-<p>￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼<img src="media/14187874991645/MWeb-build-static-websites-and-blogs-1-1-2.jpg" alt="MWeb-build-static-websites-and-blogs-1-1-2">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
+<p>￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼<img src="media/14187874991645/MWeb-build-static-websites-and-blogs-1-1-2.jpg" alt="MWeb-build-static-websites-and-blogs-1-1-2">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
 
 <p>More info, please read this post: <a href="custom-site-theme-detail.html">Custom site theme or design you owner theme&hellip;</a></p>
 
@@ -859,13 +860,13 @@ If you can&rsquo;t find the answer, please send feedback to me: Help &ndash;&gt;
 
 <p>Editor Only:<code>CMD + 1</code>, Two Panes:<code>CMD + 2</code>, Three Panes:<code>CMD + 3</code>. The editor area will not resize when the view pattern change.</p>
 
-<p>￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼<img src="media/14189656825627/MWeb-view-pattern.jpg" alt="MWeb-view-pattern">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
+<p>￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼<img src="media/14189656825627/MWeb-view-pattern.jpg" alt="MWeb-view-pattern">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
 
 <h2 id="toc_9">Preview, Share,Save as PDF, More Screenshot</h2>
 
 <p>Preview：<code>CMD + R</code>，Close Preview：<code>CMD + W</code> </p>
 
-<p><img src="media/14187874991645/MWeb-preview-share-1-1.jpg" alt="MWeb-preview-share-1-1">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
+<p><img src="media/14187874991645/MWeb-preview-share-1-1.jpg" alt="MWeb-preview-share-1-1">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
 
 <p>Save as PDF: Difference between in editor share button and Preview share button.</p>
 
@@ -902,12 +903,13 @@ If you can&rsquo;t find the answer, please send feedback to me: Help &ndash;&gt;
 
 <p>MWeb是一个Markdown编辑器和全静态网站、博客生成工具，像<a href="http://octopress.org/">Octopress</a>和 <a href="http://jekyllrb.com/">Jekyll</a>，但是更简单易用。MWeb不仅仅是一个好用的Markdown编辑器，它专门为用Markdown写文章并且要发布成网站、博客的这一类用户优化。一般的场景为：想写文章时，随意选一个分类或不选分类开始写，当某天想把文章发布出来时，只需要选择一下要发布的网站分类的任一分类，点<code>Build site</code>即可生成全静态网站。全静态网站相比PHP等网站，除了速度超快之外，更节省时间精力，可以有更多的时间关心内容和生活。MWeb也专门为喜欢写教程类的用户优化，比如拖拽或粘贴即可插入图片，Fenced code blocks和代码高亮支持这几个很方便实用的功能。</p>
 
-<p><img src="media/14189656825627/MWeb.jpg" alt="MWeb">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
+<p><img src="media/14189656825627/MWeb.jpg" alt="MWeb">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
 
 <span id="more"></span><!-- more -->
 
 <p style="text-align:center">
-<a href="http://itunes.apple.com/cn/app/mweb-markdown-editor-for-static/id954188948?ls=1&mt=12" target="_blank"><img src="media/14195170907881/icon_apple_store-download-small.png" width="180" /></a>
+<a target="_blank" onclick="ga('send','event','buy-mweb-zh');" href="http://itunes.apple.com/cn/app/mweb-markdown-editor-for-static/id954188948?ls=1&mt=12" target="_blank"><img src="media/14195170907881/icon_apple_store-download-small.png" width="180" /></a><br />或者&nbsp;<a target="_blank" onclick="ga('send','event','download-mweb-zh');" href="media/14195170907881/MWeb-Lite.zip">免费下载 MWeb Lite</a>
+
 </p>
 
 <h2 id="toc_5">MWeb的Markdown编辑功能</h2>
@@ -919,20 +921,20 @@ If you can&rsquo;t find the answer, please send feedback to me: Help &ndash;&gt;
 <li>一种是外部文文件模式，文件夹的Markdown文檔直接用MWeb打开就是这种模式，区别是无拖拽插入图片功能，不能生成网站。</li>
 </ul>
 
-<p>￼￼￼￼￼￼￼￼￼￼￼￼<img src="media/14189656825627/MWeb-markdown-editor.jpg" alt="MWeb-markdown-editor">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
+<p>￼￼￼￼￼￼￼￼￼￼￼￼<img src="media/14189656825627/MWeb-markdown-editor.jpg" alt="MWeb-markdown-editor">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
 
 <h2 id="toc_6">插入图片并显示在编辑器内</h2>
 
 <p>MWeb的设计就是为了能方便地用Markdown记日记、简单的管理日记并生成博客。而写日记时插入图片的功能是经常用到的。一般的Markdown工具如果要插入图片，要先丢到网上。像Ulysses是可以方便插入图片，但是要双击或者预览时才能看到。MWeb设计成可拖拽或直接粘贴即可插入图片并显示出来，以方便查看。</p>
 
-<p>￼￼￼￼￼￼￼￼￼<img src="media/14189656825627/MWeb-inset-photo.jpg" alt="MWeb-inset-photo">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼<br>
+<p>￼￼￼￼￼￼￼￼￼<img src="media/14189656825627/MWeb-inset-photo.jpg" alt="MWeb-inset-photo">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼<br>
 ￼￼￼￼￼￼￼￼￼￼￼</p>
 
 <h2 id="toc_7">一键将分类生成全静态的网站和博客</h2>
 
 <p>MWeb的分类管理的设计跟博客的结构差不多，一个文档可以选择多个分类。将分类变成博客的方法为：选择该分类 &ndash;&gt; Set to site。设定好博客的名称和描述等等，点：<code>Build site</code> 按钮即可。如果有改动到 <code>Theme</code> 或者有任何没有在预料之中的结果，试试点 <code>Clear and rebuild site</code> 按钮。 点 <code>Preview site</code> 按钮可以预览生成的博客。<a href="http://coderforart.com/">http://coderforart.com/</a> 网站就是用MWeb生成的。</p>
 
-<p><img src="media/14187874991645/MWeb-build-static-websites-and-blogs-1-1-2.jpg" alt="MWeb-build-static-websites-and-blogs-1-1-2">￼<br>
+<p><img src="media/14187874991645/MWeb-build-static-websites-and-blogs-1-1-2.jpg" alt="MWeb-build-static-websites-and-blogs-1-1-2">￼￼<br>
 ￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼<br>
 MWeb还可以自定网站和博客主题，增加评论和分享功能，请参考这个网址: <a href="custom-site-theme-detail-zh.html">自定网站主题、增加评论和分享和设计新主题&hellip;</a></p>
 
@@ -940,13 +942,13 @@ MWeb还可以自定网站和博客主题，增加评论和分享功能，请参�
 
 <p>Editor Only:<code>CMD + 1</code>, Two Pane:<code>CMD + 2</code>, There Pane:<code>CMD + 3</code>。我觉得改变视图时，编辑器区域大小也同时改变不大爽，所以改变视图时就直接改变窗口大小，而编辑器区域大小会保持不变。</p>
 
-<p>￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼<img src="media/14189656825627/MWeb-view-pattern.jpg" alt="MWeb-view-pattern">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
+<p>￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼<img src="media/14189656825627/MWeb-view-pattern.jpg" alt="MWeb-view-pattern">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
 
 <h2 id="toc_9">预览、分享功能，更多截图</h2>
 
 <p>预览快捷键：<code>CMD + R</code>，关闭预览：<code>CMD + W</code> </p>
 
-<p><img src="media/14187874991645/MWeb-preview-share-1-1.jpg" alt="MWeb-preview-share-1-1">￼<br>
+<p><img src="media/14187874991645/MWeb-preview-share-1-1.jpg" alt="MWeb-preview-share-1-1">￼￼<br>
 ￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
 
 <p>更多截图: <a href="me-screenshot-and-in-yosemite.html">MWeb更多截图和在Yosemite下的效果</a></p>
