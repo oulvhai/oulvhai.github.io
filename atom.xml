@@ -4,7 +4,7 @@
   <title><![CDATA[Coder For Art]]></title>
   <link href="http://coderforart.com/atom.xml" rel="self"/>
   <link href="http://coderforart.com/"/>
-  <updated>2015-01-27T11:46:16GMT+08:00</updated>
+  <updated>2015-01-27T20:12:24GMT+08:00</updated>
   <id>http://coderforart.com/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -94,7 +94,7 @@ For enable website MathJax support,the simple way is copy below code to <code>Si
 
 <p>Please open Terminal ( Spotlight&ndash;&gt;enter <code>terminal</code> ) and enter the following command. </p>
 
-<pre><code class="nohighlight">ln -s ~/Library/Containers/com.coderforart.MWeb/Data/Documents/MWeb ~/Dropbox/MWebBackup
+<pre><code>ln -s ~/Library/Containers/com.coderforart.MWeb/Data/Documents/MWeb ~/Dropbox/MWebBackup
 </code></pre>
 
 <h2 id="toc_3">How to add Disqus support?</h2>
@@ -150,7 +150,7 @@ For enable website MathJax support,the simple way is copy below code to <code>Si
 
 <p>请打开终端工具(Terminal),并执行以下命令：</p>
 
-<pre><code class="nohighlight">ln -s ~/Library/Containers/com.coderforart.MWeb/Data/Documents/MWeb ~/Dropbox/MWebBackup
+<pre><code>ln -s ~/Library/Containers/com.coderforart.MWeb/Data/Documents/MWeb ~/Dropbox/MWebBackup
 </code></pre>
 
 <h2 id="toc_3">如何为文章增加Disqus或者多说等评论？</h2>
