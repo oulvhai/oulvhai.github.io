@@ -130,6 +130,112 @@
 	<article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
 		<div class="meta">
 			<div class="date">
+				<time datetime="2015-01-28T11:23:05GMT+08:00" itemprop="datePublished">2015/1/28</time>
+			</div>
+			<div class="tags">posted in 
+			
+			    <a class='category' href='Introduction.html'>Introduction</a>&nbsp;
+			
+			    <a class='category' href='MWeb-cat.html'>MWeb</a>&nbsp;
+			 
+			</div>
+		</div>
+		<h1 class="title" itemprop="name"><a href="sync-webistes-to-github-or-ftp-zh.html" itemprop="url">
+		把生成的静态网站发布到github或FTP</a></h1>
+		<div class="entry-content" itemprop="articleBody">
+			
+			<p>😄看现在多几个人浏览，就花时间写这一篇了。</p>
+
+<p>MWeb的优点是生成的网站都在你的本地电脑上，所以你可以备份、同步到Dropbox等网盘。当然也可以一键重新生成，您只需要备份好您的文档库即可。比如备份文档库到dropbox的方法为：</p>
+
+<p>请打开终端工具(Terminal),并执行以下命令：</p>
+
+<pre><code>ln -s ~/Library/Containers/com.coderforart.MWeb/Data/Documents/MWeb ~/Dropbox/MWebBackup
+</code></pre>
+
+<p>可以看出来大概语法是：</p>
+
+<pre><code>ln -s ~/Library/Containers/com.coderforart.MWeb/Data/Documents/MWeb + 网盘同步的位置
+</code></pre>
+
+<p>这样就可以备份到任何网盘了。</p>
+
+<p>您也可以把你的网站传到dropbox上，再分享出来，因为dropbox支持直接显示HTML，所以其它人就可以很方便查看。MWeb之后也会增加一些其他类型用途的主题模板。下面说一下如何找到MWeb生成的网站的位置，如图。<br>
+<img src="media/14224153855854/14224159407048.jpg" alt="">￼￼￼<br>
+如果你觉得MWeb默认的位置比较不好，所以您可以改变MWeb网站输出的文件夹，如图我把输出的文件夹改到我的<code>Documents/MWebSites</code>下了。<br>
+<img src="media/14224153855854/14224164068185.jpg" alt="">￼￼￼</p>
+
+<p>这样话就比较好找了。</p>
+
+<h2 id="toc_0">发布到github</h2>
+
+<p>github目前应该是最好的提供免费博客、网站服务的公司了（当然这其实并不是github的的想法）。如果你有了github的帐号后只需要新增一个 <code>Github repository</code>，名称为<code>username.github.io</code>,如图<br>
+<img src="media/14224153855854/14224167094764.jpg" alt="">￼￼￼</p>
+
+<p>然后会看到这页：<br>
+<img src="media/14224153855854/14224167472996.jpg" alt="">￼￼￼</p>
+
+<p>这样就简单了，先进入MWeb生成的网站的所在文件夹（如上面所说，在MWeb中点<code>Show in finder</code>），我这里是选择 <code>Coder For Art</code> 然后 <code>CMD+C</code>。如图：<br>
+<img src="media/14224153855854/14224170128740.jpg" alt="">￼￼￼</p>
+
+<p>然后打开终端工具(Terminal)，打<code>cd</code> （注意cd后带一空格），然后<code>CMD+V</code>，然后Enter，如图：<br>
+<img src="media/14224153855854/14224172504947.jpg" alt="">￼￼￼</p>
+
+<p>然后再分别打入上边github提示的命令样本，注意我这边有改动到喔。再注意，如果你先前没有在MWeb中<code>Build site</code>，要先生成一下。</p>
+
+<pre><code>echo &quot;# oimotis.github.io&quot; &gt;&gt; README.md
+git init
+git add .
+git commit -m &quot;first commit&quot;
+git remote add origin https://github.com/oimotis/oimotis.github.io.git
+git push -u origin master
+</code></pre>
+
+<p>效果如图：<br>
+<img src="media/14224153855854/14224176047741.jpg" alt="">￼￼￼<br>
+<img src="media/14224153855854/14224181872446.jpg" alt="">￼￼￼</p>
+
+<p>可以看到已经传成功了，<a href="http://oimotis.github.io/">http://oimotis.github.io/</a> 直接用这个网址就可以浏览了（注意因为我下边设定的原因，现在不能这样浏览了，虽然我又删除了）。</p>
+
+<p>下面就要自定域名了。<br>
+依次执行以下命令即可：</p>
+
+<pre><code>echo &#39;blog.coderforart.com&#39; &gt;&gt; CNAME
+git add --ignore-removal .
+git commit -m &quot;cname&quot;
+git push -u origin master
+</code></pre>
+
+<p>效果如图：<br>
+<img src="media/14224153855854/14224187391174.jpg" alt="">￼￼￼</p>
+
+<p>然后在域名中设定CNAME到<code>oimotis.github.io</code>（oimotis要换成你的github用户名）即可。 如图，这是我上边的设置<br>
+<img src="media/14224153855854/14224192721298.jpg" alt="">￼￼￼</p>
+
+<p>注意，我并没有真设置喔，所以 blog.coderforart.com 是无效的。<br>
+我的网站<a href="http://coderforart.com">http://coderforart.com</a>是设定CNAME文件的内容为：coderforart.com，CNAME的host为 www, POINTS TO:为 oulvhai.github.io，然后还要把 A Record（A记录）设置为 <code>192.30.252.153</code> 和 <code>192.30.252.154</code> 才行。</p>
+
+<p>以后发新文章要更新，就执行以下命令即可：</p>
+
+<pre><code>git add --ignore-removal .
+git commit -m &quot;cname&quot;
+git push -u origin master
+</code></pre>
+
+<h2 id="toc_1">发布到FTP</h2>
+
+<p>对于一般用户来说，github可能比较麻烦，还是FTP简单。就直接传上FTP即可。如果你是在用 ForkLift 或者 Yummy FTP 这种有 可以自动同步本地和服务器端的文件夹的功能的FTP就更好用了，比github方便多了。具体我就不介绍了。</p>
+
+
+			
+			
+		</div>
+
+	</article>
+ 
+	<article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+		<div class="meta">
+			<div class="date">
 				<time datetime="2015-01-07T13:58:07GMT+08:00" itemprop="datePublished">2015/1/7</time>
 			</div>
 			<div class="tags">posted in 
@@ -268,13 +374,14 @@ If you can&rsquo;t find the answer, please send feedback to me: Help &ndash;&gt;
 
 <p><a href="custom-site-theme-detail-zh.html">自定网站主题、增加评论和分享和设计新主题&hellip;</a><br>
 <a href="me-screenshot-and-in-yosemite.html">MWeb更多截图和在Yosemite下的效果</a><br>
-<a href="mweb-v1.1-release-zh.html">MWeb 1.1 版更新说明</a></p>
+<a href="mweb-v1.1-release-zh.html">MWeb 1.1 版更新说明</a><br>
+<a href="sync-webistes-to-github-or-ftp-zh.html">把生成的静态网站发布到github或FTP</a></p>
 
 <h2 id="toc_4">MWeb简介</h2>
 
-<p>MWeb是一个Markdown编辑器和全静态网站、博客生成工具，像<a href="http://octopress.org/">Octopress</a>和 <a href="http://jekyllrb.com/">Jekyll</a>，但是更简单易用。MWeb不仅仅是一个好用的Markdown编辑器，它专门为用Markdown写文章并且要发布成网站、博客的这一类用户优化。一般的场景为：想写文章时，随意选一个分类或不选分类开始写，当某天想把文章发布出来时，只需要选择一下要发布的网站分类的任一分类，点<code>Build site</code>即可生成全静态网站。全静态网站相比PHP等网站，除了速度超快之外，更节省时间精力，可以有更多的时间关心内容和生活。MWeb也专门为喜欢写教程类的用户优化，比如拖拽或粘贴即可插入图片，Fenced code blocks和代码高亮支持这几个很方便实用的功能。</p>
+<p>MWeb是一个Markdown编辑器和全静态网站、博客生成工具，像<a href="http://octopress.org/">Octopress</a>和 <a href="http://jekyllrb.com/">Jekyll</a>，但是更简单易用。MWeb不仅仅是一个好用的Markdown编辑器，它专门为用Markdown写文章并且要发布成网站、博客的这一类用户优化。一般的场景为：想写文章时，随意选一个分类或不选分类开始写，当某天想把文章发布出来时，只需要选择一下要发布的网站分类的任一分类，点<code>Build site</code>即可生成全静态网站。全静态网站相比PHP等网站，除了速度超快之外，更节省时间精力。MWeb也专门为喜欢写教程类的用户优化，比如拖拽或粘贴即可插入图片，Fenced code blocks和代码高亮支持这几个很方便实用的功能。</p>
 
-<p><img src="media/14189656825627/MWeb.jpg" alt="MWeb">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
+<p><img src="media/14189656825627/MWeb.jpg" alt="MWeb">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
 
 
 

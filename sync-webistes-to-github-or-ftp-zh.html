@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<title>  
 	  
-  	MWeb - Coder For Art
+  	把生成的静态网站发布到github或FTP - Coder For Art
   	
 	</title
 
@@ -124,26 +124,10 @@
 		</div>	
 		<div class="mid-col">
 			<div class="mid-col-container"> <div id="content" class="inner">
-<div itemscope itemtype="http://schema.org/Blog">
 
-
-	<article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-		<div class="meta">
-			<div class="date">
-				<time datetime="2015-01-28T11:23:05GMT+08:00" itemprop="datePublished">2015/1/28</time>
-			</div>
-			<div class="tags">posted in 
-			
-			    <a class='category' href='Introduction.html'>Introduction</a>&nbsp;
-			
-			    <a class='category' href='MWeb-cat.html'>MWeb</a>&nbsp;
-			 
-			</div>
-		</div>
-		<h1 class="title" itemprop="name"><a href="sync-webistes-to-github-or-ftp-zh.html" itemprop="url">
-		把生成的静态网站发布到github或FTP</a></h1>
+	<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+		<h1 class="title" itemprop="name">把生成的静态网站发布到github或FTP</h1>
 		<div class="entry-content" itemprop="articleBody">
-			
 			<p>😄看现在多几个人浏览，就花时间写这一篇了。</p>
 
 <p>MWeb的优点是生成的网站都在你的本地电脑上，所以你可以备份、同步到Dropbox等网盘。当然也可以一键重新生成，您只需要备份好您的文档库即可。比如备份文档库到dropbox的方法为：</p>
@@ -226,274 +210,37 @@ git push -u origin master
 
 <p>对于一般用户来说，github可能比较麻烦，还是FTP简单。就直接传上FTP即可。如果你是在用 ForkLift 或者 Yummy FTP 这种有 可以自动同步本地和服务器端的文件夹的功能的FTP就更好用了，比github方便多了。具体我就不介绍了。</p>
 
-
-			
-			
 		</div>
-
 	</article>
- 
-	<article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-		<div class="meta">
-			<div class="date">
-				<time datetime="2015-01-20T10:04:01GMT+08:00" itemprop="datePublished">2015/1/20</time>
-			</div>
-			<div class="tags">posted in 
-			
-			    <a class='category' href='MWeb-cat.html'>MWeb</a>&nbsp;
-			 
-			</div>
-		</div>
-		<h1 class="title" itemprop="name"><a href="mweb-qa.html" itemprop="url">
-		MWeb Q & A</a></h1>
-		<div class="entry-content" itemprop="articleBody">
-			
-			<h2 id="toc_0">How to export HTML style PDF？</h2>
-
-<p><code>CMD+R</code> open <q>Live Preview</q>,click share button,select <code>Save as PDF</code>.</p>
-
-<h2 id="toc_1">How to enable MathJax preview support? How to enable website MathJax support?</h2>
-
-<p><code>CMD+,</code> open Preferences，Themes &ndash;&gt; Enable Math.<br>
-For enable website MathJax support,the simple way is copy below code to <code>Site category</code> &ndash;&gt; <code>Site other:</code> text box. </p>
-
-<pre><code class="js">&lt;script type=&quot;text/x-mathjax-config&quot;&gt;
-  MathJax.Hub.Config({tex2jax: {inlineMath: [[&#39;$&#39;,&#39;$&#39;], [&#39;\\(&#39;,&#39;\\)&#39;]]}});
-&lt;/script&gt;
-&lt;script type=&quot;text/javascript&quot;
-  src=&quot;http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&quot;&gt;
-&lt;/script&gt;
-</code></pre>
-
-<p>If you website is https,please replace <code>http://cdn.mathjax.org...</code> to <code>https://cdn.mathjax.org...</code>.</p>
-
-
-
-			 
-			<a href="mweb-qa.html#more" class="more-link">Read on &rarr;</a>
-    		
-			
-		</div>
-
-	</article>
- 
-	<article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-		<div class="meta">
-			<div class="date">
-				<time datetime="2015-01-20T10:03:00GMT+08:00" itemprop="datePublished">2015/1/20</time>
-			</div>
-			<div class="tags">posted in 
-			
-			    <a class='category' href='MWeb-cat.html'>MWeb</a>&nbsp;
-			 
-			</div>
-		</div>
-		<h1 class="title" itemprop="name"><a href="mweb-qa-zh.html.html" itemprop="url">
-		MWeb 所有问题和回答收集</a></h1>
-		<div class="entry-content" itemprop="articleBody">
-			
-			<h2 id="toc_0">如何导出HTML样式的PDF？</h2>
-
-<p><code>CMD+R</code>打开Live Preview窗口，点右边的分享按钮，选择<code>Save as PDF</code>即可。</p>
-
-<h2 id="toc_1">如何开启MathJax预览支持？如何让网站支持MathJax？</h2>
-
-<p><code>CMD+,</code>打开设置面板，切到Themes，勾选Enable Math选项。<br>
-如果要让网站支持MathJax，最简单的方法是在网站分类设置中的：Site other:的文本框中填入以下代码：</p>
-
-<pre><code class="js">&lt;script type=&quot;text/x-mathjax-config&quot;&gt;
-  MathJax.Hub.Config({tex2jax: {inlineMath: [[&#39;$&#39;,&#39;$&#39;], [&#39;\\(&#39;,&#39;\\)&#39;]]}});
-&lt;/script&gt;
-&lt;script type=&quot;text/javascript&quot;
-  src=&quot;http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&quot;&gt;
-&lt;/script&gt;
-</code></pre>
-
-<p>如果您的网站是要用HTTPS，请把：<code>http://cdn.mathjax.org...</code>改为：<code>https://cdn.mathjax.org...</code></p>
-
-
-
-			 
-			<a href="mweb-qa-zh.html.html#more" class="more-link">Read on &rarr;</a>
-    		
-			
-		</div>
-
-	</article>
- 
-	<article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-		<div class="meta">
-			<div class="date">
-				<time datetime="2015-01-19T15:02:30GMT+08:00" itemprop="datePublished">2015/1/19</time>
-			</div>
-			<div class="tags">posted in 
-			
-			    <a class='category' href='MWeb-cat.html'>MWeb</a>&nbsp;
-			 
-			</div>
-		</div>
-		<h1 class="title" itemprop="name"><a href="mweb-v1.1-release.html" itemprop="url">
-		MWeb 1.1 release</a></h1>
-		<div class="entry-content" itemprop="articleBody">
-			
-			<h2 id="toc_0">New feature</h2>
-
-<ul>
-<li>Add import files (.txt and .md) featrue：File &ndash;&gt; Import Files To Library&hellip;</li>
-<li>Add TOC（Table of Content）featrue: Preferences &ndash;&gt; Themes &ndash;&gt; Enable TOC (Table of Content)</li>
-<li>Add MWeb Lite</li>
-<li>Add sitemap suport.</li>
-<li>Add right click for category edit.</li>
-<li>Add syntax highlighting in fenced code blocks feature,for version 1.0 user, please go to <a href="https://github.com/oulvhai/MWeb-Themes/">https://github.com/oulvhai/MWeb-Themes/</a> download new themes. Language name detail:<a href="http://highlightjs.readthedocs.org/en/latest/css-classes-reference.html">http://highlightjs.readthedocs.org/en/latest/css-classes-reference.html</a></li>
-</ul>
-
-
-
-			 
-			<a href="mweb-v1.1-release.html#more" class="more-link">Read on &rarr;</a>
-    		
-			
-		</div>
-
-	</article>
- 
-	<article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-		<div class="meta">
-			<div class="date">
-				<time datetime="2015-01-19T14:29:02GMT+08:00" itemprop="datePublished">2015/1/19</time>
-			</div>
-			<div class="tags">posted in 
-			
-			    <a class='category' href='MWeb-cat.html'>MWeb</a>&nbsp;
-			 
-			</div>
-		</div>
-		<h1 class="title" itemprop="name"><a href="mweb-v1.1-release-zh.html" itemprop="url">
-		MWeb 1.1 版更新说明</a></h1>
-		<div class="entry-content" itemprop="articleBody">
-			
-			<h2 id="toc_0">新增</h2>
-
-<ul>
-<li>增加导入.txt或Markdown文档到文档库功能：File &ndash;&gt; Import Files To Library&hellip;</li>
-<li>增加TOC（Table of Content）支持，和是否 Render TOC 选项</li>
-<li>增加免费版</li>
-<li>增加sitemap功能</li>
-<li>站点文件夹增加右键菜单</li>
-<li>增加代码高亮功能，支持超多编程语言，1.0版本的朋友请去<a href="https://github.com/oulvhai/MWeb-Themes/">https://github.com/oulvhai/MWeb-Themes/</a>下载最新的主题即可。支持语言及缩写详细请参考：<a href="http://highlightjs.readthedocs.org/en/latest/css-classes-reference.html">http://highlightjs.readthedocs.org/en/latest/css-classes-reference.html</a></li>
-</ul>
-
-
-
-			 
-			<a href="mweb-v1.1-release-zh.html#more" class="more-link">Read on &rarr;</a>
-    		
-			
-		</div>
-
-	</article>
- 
-	<article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-		<div class="meta">
-			<div class="date">
-				<time datetime="2015-01-07T13:58:07GMT+08:00" itemprop="datePublished">2015/1/7</time>
-			</div>
-			<div class="tags">posted in 
-			
-			    <a class='category' href='Introduction.html'>Introduction</a>&nbsp;
-			 
-			</div>
-		</div>
-		<h1 class="title" itemprop="name"><a href="me-screenshot-and-in-yosemite.html" itemprop="url">
-		MWeb Screenshot and in Yosemite</a></h1>
-		<div class="entry-content" itemprop="articleBody">
-			
-			<h2 id="toc_0">Yosemite</h2>
-
-<p><img src="media/14206095675933/yosemite-01.jpg" alt="yosemite-01">￼</p>
-
-
-
-			 
-			<a href="me-screenshot-and-in-yosemite.html#more" class="more-link">Read on &rarr;</a>
-    		
-			
-		</div>
-
-	</article>
- 
-	<article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-		<div class="meta">
-			<div class="date">
-				<time datetime="2015-01-07T13:54:03GMT+08:00" itemprop="datePublished">2015/1/7</time>
-			</div>
-			<div class="tags">posted in 
-			
-			    <a class='category' href='MWeb-cat.html'>MWeb</a>&nbsp;
-			 
-			</div>
-		</div>
-		<h1 class="title" itemprop="name"><a href="custom-site-theme-detail.html" itemprop="url">
-		Custom site theme or design you owner theme</a></h1>
-		<div class="entry-content" itemprop="articleBody">
-			
-			<p>I&rsquo;ll update in this month. Now you can reference <code>Octopress</code> and <code>Greyshade</code> Theme, just edit any site category and click <code>Theme: --&gt; Edit..</code> button. </p>
-
-<p><a href="http://coderforart.com/">http://coderforart.com/</a> Theme now add to github:<a href="https://github.com/oulvhai/MWeb-Themes">https://github.com/oulvhai/MWeb-Themes</a>.</p>
-
-
-			
-			
-		</div>
-
-	</article>
- 
-	<article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-		<div class="meta">
-			<div class="date">
-				<time datetime="2015-01-07T01:48:59GMT+08:00" itemprop="datePublished">2015/1/7</time>
-			</div>
-			<div class="tags">posted in 
-			
-			    <a class='category' href='Introduction.html'>Introduction</a>&nbsp;
-			 
-			</div>
-		</div>
-		<h1 class="title" itemprop="name"><a href="custom-site-theme-detail-zh.html" itemprop="url">
-		自定网站或博客主题简单说明</a></h1>
-		<div class="entry-content" itemprop="articleBody">
-			
-			<p>MWeb全部主题已上传到Github: <a href="https://github.com/oulvhai/MWeb-Themes">https://github.com/oulvhai/MWeb-Themes</a>.</p>
-
-<h2 id="toc_0">自定首页</h2>
-
-<p>如图，设定想要设置为首页的文档的 HTML file name 为 <code>index</code>, 选中 <code>Is page</code> 选项。<br>
-<img src="media/14189904700669/14210659918568.jpg" alt="">￼￼￼￼￼￼￼</p>
-
-
-
-			 
-			<a href="custom-site-theme-detail-zh.html#more" class="more-link">Read on &rarr;</a>
-    		
-			
-		</div>
-
-	</article>
-  
-
+	<div style="height:26px;" class="share">
+<!-- JiaThis Button BEGIN -->
+<div class="jiathis_style_24x24">
+	<a class="jiathis_button_tsina"></a>
+	<a class="jiathis_button_tqq"></a>
+	<a class="jiathis_button_weixin"></a>
+	<a class="jiathis_button_qzone"></a>
+	<a class="jiathis_button_renren"></a>
+	<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	<a class="jiathis_counter_style"></a>
 </div>
-<nav id="pagenavi">
-	 
-	 <a class="next" href="MWeb-cat_1.html">Next</a> 
-	<div class="center"><a href="archives.html">Blog Archives</a></div>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1406813199499778" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+	</div>
 
-</nav>
+	<div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'coderforart'; 
 
-</div>
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
 
-
-
-        </div>
+</div>        </div>
 			<footer id="footer" class="inner">Copyright &copy; 2014
 Powered by <a target="_blank" href="http://coderforart.com/">MWeb</a> &nbsp;&nbsp; 
 Theme by <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank Mehta</a>
