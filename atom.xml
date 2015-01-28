@@ -4,7 +4,7 @@
   <title><![CDATA[Coder For Art]]></title>
   <link href="http://coderforart.com/atom.xml" rel="self"/>
   <link href="http://coderforart.com/"/>
-  <updated>2015-01-28T13:13:24GMT+08:00</updated>
+  <updated>2015-01-28T13:53:42GMT+08:00</updated>
   <id>http://coderforart.com/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -39,7 +39,7 @@
 
 <p>您也可以把你的网站传到dropbox上，再分享出来，因为dropbox支持直接显示HTML，所以其它人就可以很方便查看。MWeb之后也会增加一些其他类型用途的主题模板。下面说一下如何找到MWeb生成的网站的位置，如图。<br>
 <img src="media/14224153855854/14224159407048.jpg" alt="">￼￼￼￼￼<br>
-如果你觉得MWeb默认的位置比较不好，所以您可以改变MWeb网站输出的文件夹，如图我把输出的文件夹改到我的<code>Documents/MWebSites</code>下了。<br>
+如果你觉得MWeb默认的位置比较不好，您可以改变MWeb网站输出的文件夹，如图我把输出的文件夹改到我的<code>Documents/MWebSites</code>下了。<br>
 <img src="media/14224153855854/14224164068185.jpg" alt="">￼￼￼￼￼</p>
 
 <p>这样话就比较好找了。</p>
