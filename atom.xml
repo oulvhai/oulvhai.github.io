@@ -4,7 +4,7 @@
   <title><![CDATA[Coder For Art]]></title>
   <link href="http://coderforart.com/atom.xml" rel="self"/>
   <link href="http://coderforart.com/"/>
-  <updated>2015-01-28T13:03:55GMT+08:00</updated>
+  <updated>2015-01-28T13:13:24GMT+08:00</updated>
   <id>http://coderforart.com/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -23,6 +23,8 @@
 
 <p>MWeb的优点是生成的网站都在你的本地电脑上，所以你可以备份、同步到Dropbox等网盘。当然也可以一键重新生成，您只需要备份好您的文档库即可。比如备份文档库到dropbox的方法为：</p>
 
+<span id="more"></span><!-- more -->
+
 <p>请打开终端工具(Terminal),并执行以下命令：</p>
 
 <pre><code>ln -s ~/Library/Containers/com.coderforart.MWeb/Data/Documents/MWeb ~/Dropbox/MWebBackup
@@ -36,25 +38,25 @@
 <p>这样就可以备份到任何网盘了。</p>
 
 <p>您也可以把你的网站传到dropbox上，再分享出来，因为dropbox支持直接显示HTML，所以其它人就可以很方便查看。MWeb之后也会增加一些其他类型用途的主题模板。下面说一下如何找到MWeb生成的网站的位置，如图。<br>
-<img src="media/14224153855854/14224159407048.jpg" alt="">￼￼￼￼<br>
+<img src="media/14224153855854/14224159407048.jpg" alt="">￼￼￼￼￼<br>
 如果你觉得MWeb默认的位置比较不好，所以您可以改变MWeb网站输出的文件夹，如图我把输出的文件夹改到我的<code>Documents/MWebSites</code>下了。<br>
-<img src="media/14224153855854/14224164068185.jpg" alt="">￼￼￼￼</p>
+<img src="media/14224153855854/14224164068185.jpg" alt="">￼￼￼￼￼</p>
 
 <p>这样话就比较好找了。</p>
 
 <h2 id="toc_0">发布到github</h2>
 
-<p>github目前应该是最好的提供免费博客、网站服务的公司了（当然这其实并不是github的的想法）。如果你有了github的帐号后只需要新增一个 <code>Github repository</code>，名称为<code>username.github.io</code>,如图<br>
-<img src="media/14224153855854/14224167094764.jpg" alt="">￼￼￼￼</p>
+<p>github目前应该是最好的提供免费博客、网站服务的公司了（当然这其实并不是github的想法）。如果你有了github的帐号后只需要新增一个 <code>Github repository</code>，名称为<code>username.github.io</code>,如图<br>
+<img src="media/14224153855854/14224167094764.jpg" alt="">￼￼￼￼￼</p>
 
 <p>然后会看到这页：<br>
-<img src="media/14224153855854/14224167472996.jpg" alt="">￼￼￼￼</p>
+<img src="media/14224153855854/14224167472996.jpg" alt="">￼￼￼￼￼</p>
 
 <p>这样就简单了，先进入MWeb生成的网站的所在文件夹（如上面所说，在MWeb中点<code>Show in finder</code>），我这里是选择 <code>Coder For Art</code> 然后 <code>CMD+C</code>。如图：<br>
-<img src="media/14224153855854/14224170128740.jpg" alt="">￼￼￼￼</p>
+<img src="media/14224153855854/14224170128740.jpg" alt="">￼￼￼￼￼</p>
 
 <p>然后打开终端工具(Terminal)，打<code>cd</code> （注意cd后带一空格），然后<code>CMD+V</code>，然后Enter，如图：<br>
-<img src="media/14224153855854/14224172504947.jpg" alt="">￼￼￼￼</p>
+<img src="media/14224153855854/14224172504947.jpg" alt="">￼￼￼￼￼</p>
 
 <p>然后再分别打入上边github提示的命令样本，注意我这边有改动到喔。再注意，如果你先前没有在MWeb中<code>Build site</code>，要先生成一下。</p>
 
@@ -67,8 +69,8 @@ git push -u origin master
 </code></pre>
 
 <p>效果如图：<br>
-<img src="media/14224153855854/14224176047741.jpg" alt="">￼￼￼￼<br>
-<img src="media/14224153855854/14224181872446.jpg" alt="">￼￼￼￼</p>
+<img src="media/14224153855854/14224176047741.jpg" alt="">￼￼￼￼￼<br>
+<img src="media/14224153855854/14224181872446.jpg" alt="">￼￼￼￼￼</p>
 
 <p>可以看到已经传成功了，<a href="http://oimotis.github.io/">http://oimotis.github.io/</a> 直接用这个网址就可以浏览了。</p>
 
@@ -82,10 +84,10 @@ git push -u origin master
 </code></pre>
 
 <p>效果如图：<br>
-<img src="media/14224153855854/14224187391174.jpg" alt="">￼￼￼￼</p>
+<img src="media/14224153855854/14224187391174.jpg" alt="">￼￼￼￼￼</p>
 
 <p>然后在域名中设定CNAME到<code>oimotis.github.io</code>（oimotis要换成你的github用户名）即可。 如图，这是我上边的设置<br>
-<img src="media/14224153855854/14224192721298.jpg" alt="">￼￼￼￼</p>
+<img src="media/14224153855854/14224192721298.jpg" alt="">￼￼￼￼￼</p>
 
 <p>注意，我并没有真设置喔，所以 blog.coderforart.com 是无效的。<br>
 我的网站<a href="http://coderforart.com">http://coderforart.com</a>是设定CNAME文件的内容为：coderforart.com，CNAME的host为 www, POINTS TO:为 oulvhai.github.io，然后还要把 A Record（A记录）设置为 <code>192.30.252.153</code> 和 <code>192.30.252.154</code> 才行。</p>
