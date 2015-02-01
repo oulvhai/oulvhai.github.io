@@ -130,24 +130,9 @@
 		<div class="entry-content" itemprop="articleBody">
 			<p>MWeb全部主题已上传到Github: <a href="https://github.com/oulvhai/MWeb-Themes">https://github.com/oulvhai/MWeb-Themes</a>.</p>
 
-<h2 id="toc_0">自定首页</h2>
+<h2 id="toc_0">MWeb主题模板结构</h2>
 
-<p>如图，设定想要设置为首页的文档的 HTML file name 为 <code>index</code>, 选中 <code>Is page</code> 选项。<br>
-<img src="media/14189904700669/14210659918568.jpg" alt="">￼￼￼￼￼￼￼</p>
-
-<span id="more"></span><!-- more -->
-
-<h2 id="toc_1">自定文档页的HTML模板</h2>
-
-<p>不选<code>Is page</code>选项时，生成HTML时读取的模板为：header.html+post.html+sidebar.html+footer.html。选中了<code>Is page</code>选项后，生成HTML时会读取的模板为：header.html+page.html+footer.html，如果要自定文档的模板，可以在主题文件夹里新增一个名称为：page-{HTML file name}.html 的页面，这样生成HTML时的读取的模板就会变成：header.html+page-{HTML file name}.html+footer.html。比如说要自定首页的模板，则在主题文件夹里新增一个名为：page-index.html 的页面即可。如 <a href="http://coderforart.com">http://coderforart.com</a> 就自定了首页，内容为：<a href="https://github.com/oulvhai/MWeb-Themes/blob/master/mweb-greyshade/page-index.html">https://github.com/oulvhai/MWeb-Themes/blob/master/mweb-greyshade/page-index.html</a> </p>
-
-<h2 id="toc_2">自定分类页的HTML模板</h2>
-
-<p>分类页生成HTML时读取的模板为：header.html+category.html+sidebar.html+footer.html。 其中category.html可以自定，MWeb生成分类页的HTML时，会判定是否存在：category-{HTML file name}.html的模板，如果存在，则会优先使用category-{HTML file name}.html模板。比如说有一个分类的 HTML file name 为 Cocoa，如果要自定这个分类的分类页的模板，则只要在主题文件夹里新增一个名为：category-Cocoa.html的页面即可，MWeb生成HTML时读取模板就会变为：header.html+category-Cocoa.html+sidebar.html+footer.html。</p>
-
-<h2 id="toc_3">自定主题更详细的说明</h2>
-
-<p>MWeb所有网站主题模板都放在SiteThemes这个资料夹里，一个资料夹就表示一个主题。每个主题里包含的文档和文件夹的作用如下：</p>
+<p>MWeb所有网站主题模板都放在SiteThemes这个文件夹里，点击 <img src="media/14206135238767/14227577752365.jpg" alt="">￼￼￼ 这里可以直接显示SiteThemes文件夹，一个文件夹就表示一个主题。每个主题里包含的文档和文件夹的作用如下：</p>
 
 <ul>
 <li>asset &ndash; 主题所有要用到的东西，图片、CSS、JS等等都放这里</li>
@@ -162,6 +147,21 @@
 <li>sidebar.html &ndash; 侧边栏的模板</li>
 <li>sitemap.xml &ndash; 网站sitemap所使用的模板</li>
 </ul>
+
+<h2 id="toc_1">自定首页</h2>
+
+<p>如图，设定想要设置为首页的文档的 HTML file name 为 <code>index</code>, 选中 <code>Is page</code> 选项。<br>
+<img src="media/14189904700669/14210659918568.jpg" alt="">￼￼￼￼￼￼￼￼￼￼￼￼</p>
+
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_2">自定文档页的HTML模板</h2>
+
+<p>不选<code>Is page</code>选项时，生成HTML时读取的模板为：header.html+post.html+sidebar.html+footer.html。选中了<code>Is page</code>选项后，生成HTML时会读取的模板为：header.html+page.html+footer.html，如果要自定文档的模板，可以在主题文件夹里新增一个名称为：page-{HTML file name}.html 的页面，这样生成HTML时的读取的模板就会变成：header.html+page-{HTML file name}.html+footer.html。比如说要自定首页的模板，则在主题文件夹里新增一个名为：page-index.html 的页面即可。如 <a href="http://coderforart.com">http://coderforart.com</a> 就自定了首页，内容为：<a href="https://github.com/oulvhai/MWeb-Themes/blob/master/mweb-greyshade/page-index.html">https://github.com/oulvhai/MWeb-Themes/blob/master/mweb-greyshade/page-index.html</a> </p>
+
+<h2 id="toc_3">自定分类页的HTML模板</h2>
+
+<p>分类页生成HTML时读取的模板为：header.html+category.html+sidebar.html+footer.html。 其中category.html可以自定，MWeb生成分类页的HTML时，会判定是否存在：category-{HTML file name}.html的模板，如果存在，则会优先使用category-{HTML file name}.html模板。比如说有一个分类的 HTML file name 为 Cocoa，如果要自定这个分类的分类页的模板，则只要在主题文件夹里新增一个名为：category-Cocoa.html的页面即可，MWeb生成HTML时读取模板就会变为：header.html+category-Cocoa.html+sidebar.html+footer.html。</p>
 
 <h2 id="toc_4">生成HTML时传入模板页的变量说明</h2>
 
@@ -506,18 +506,6 @@
 <tr>
 <td>nowDateGTM</td>
 <td>当前时间</td>
-</tr>
-</tbody></table>
-
-<table><thead>
-<tr>
-<th>变量名称</th>
-<th>说明</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>posts</td>
-<td>数组，数组对象请参考下表</td>
 </tr>
 </tbody></table>
 

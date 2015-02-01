@@ -4,7 +4,7 @@
   <title><![CDATA[Coder For Art]]></title>
   <link href="http://coderforart.com/atom.xml" rel="self"/>
   <link href="http://coderforart.com/"/>
-  <updated>2015-01-28T13:53:42GMT+08:00</updated>
+  <updated>2015-02-01T12:34:15GMT+08:00</updated>
   <id>http://coderforart.com/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -461,9 +461,416 @@ static bool GAllowApplePlatformSymbolication = false;
     <updated>2015-01-07T14:52:03GMT+08:00</updated>
     <id>http://coderforart.com/custom-site-theme-detail.html</id>
     <content type="html"><![CDATA[
-<p>I&rsquo;ll update in this month. Now you can reference <code>Octopress</code> and <code>Greyshade</code> Theme, just edit any site category and click <code>Theme: --&gt; Edit..</code> button. </p>
+<p>MWeb themes now add to github: <a href="https://github.com/oulvhai/MWeb-Themes">https://github.com/oulvhai/MWeb-Themes</a>.</p>
 
-<p><a href="http://coderforart.com/">http://coderforart.com/</a> Theme now add to github:<a href="https://github.com/oulvhai/MWeb-Themes">https://github.com/oulvhai/MWeb-Themes</a>.</p>
+<h2 id="toc_0">MWeb theme structure</h2>
+
+<p>Click <img src="media/14206135238767/14227577752365.jpg" alt="">￼, you will found a floder name is SiteThemes. MWeb all themes in this flodler,and a floder is a theme,it contains some documents and floders.</p>
+
+<ul>
+<li>asset &ndash; floder, contains all theme&rsquo;s picture,CSS,JS etc..</li>
+<li>archives.html &ndash; archives.html page template</li>
+<li>atom.xml &ndash; RSS page template</li>
+<li>category.html &ndash; all categiries pages template</li>
+<li>footer.html &ndash; bottom of each page</li>
+<li>header.html &ndash; top of each page</li>
+<li>page-index.html &ndash; custom home page template</li>
+<li>page.html &ndash; document when enable <code>Is page</code> use this template</li>
+<li>post.html &ndash; document when disable <code>Is page</code> use this template</li>
+<li>sidebar.html &ndash; sidebar template</li>
+<li>sitemap.xml &ndash; google sitemap template</li>
+</ul>
+
+<h2 id="toc_1">Custom home page</h2>
+
+<p>Set a document&rsquo;s HTML file name value: <code>index</code> and enable <code>Is page</code>.<br>
+<img src="media/14189904700669/14210659918568.jpg" alt="">￼￼￼￼￼￼￼￼￼</p>
+
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_2">Custom <code>Is page</code> enable document&rsquo;s template</h2>
+
+<p>Use <q>header.html+post.html+sidebar.html+footer.html</q> templates when the document <code>Is page</code> is disable; use <q>header.html+page.html+footer.html</q> templates when the document <code>Is page</code> is enable. You can add a page-{HTML file name}.html template for custom <code>Is page</code> enable document&rsquo;s template. MWeb will use <q>header.html+page-{HTML file name}.html+footer.html</q> when you add page-{HTML file name}.html template. For example:  <a href="http://coderforart.com">http://coderforart.com</a>&rsquo;s theme have page-index.html template for home page <a href="https://github.com/oulvhai/MWeb-Themes/blob/master/mweb-greyshade/page-index.html">https://github.com/oulvhai/MWeb-Themes/blob/master/mweb-greyshade/page-index.html</a> . </p>
+
+<h2 id="toc_3">Custom category page template</h2>
+
+<p>Use <q>header.html+category.html+sidebar.html+footer.html</q> by default. Use <q>header.html+category-{HTML file name}.html+sidebar.html+footer.html</q> when you add category-{HTML file name}.html template. For example: a category&rsquo;s HTML file name is <code>Cocoa</code> and the theme have category-Cocoa.html template, MWeb will use <q>header.html+category-Cocoa.html+sidebar.html</q>.</p>
+
+<h2 id="toc_4">Common variables define</h2>
+
+<h3 id="toc_5">the category object</h3>
+
+<table><thead>
+<tr>
+<th>variable name</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>name</td>
+<td>category&rsquo;s name</td>
+</tr>
+<tr>
+<td>url</td>
+<td>category&rsquo;s url</td>
+</tr>
+</tbody></table>
+
+<h3 id="toc_6">the document object</h3>
+
+<table><thead>
+<tr>
+<th>variable name</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>title</td>
+<td>document&rsquo;s title</td>
+</tr>
+<tr>
+<td>desContent</td>
+<td>document&rsquo;s description for HTML format. Same with <code>content</code> when the document do not add <code>&lt;!-- more --&gt;</code>.</td>
+</tr>
+<tr>
+<td>desContentTextOnly</td>
+<td>document&rsquo;s description without HTML</td>
+</tr>
+<tr>
+<td>content</td>
+<td>document content</td>
+</tr>
+<tr>
+<td>date</td>
+<td>document&rsquo;s date,defalut format is:2014/10/24</td>
+</tr>
+<tr>
+<td>dateGTM</td>
+<td>document&rsquo;s date,format is: 2014-10-24T13:54:03GMT+08:00</td>
+</tr>
+<tr>
+<td>artDate</td>
+<td>document&rsquo;s create date,default format is: 2014/10/24</td>
+</tr>
+<tr>
+<td>cats</td>
+<td>document&rsquo;s categories,array &ndash;&gt; <code>the category object</code></td>
+</tr>
+<tr>
+<td>readMore</td>
+<td>document have <code>&lt;!-- more --&gt;</code> or not</td>
+</tr>
+<tr>
+<td>url</td>
+<td>document&rsquo;s url</td>
+</tr>
+</tbody></table>
+
+<h3 id="toc_7">recent document object</h3>
+
+<table><thead>
+<tr>
+<th>variable name</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>title</td>
+<td>document&rsquo;s title</td>
+</tr>
+<tr>
+<td>url</td>
+<td>document&rsquo;s url</td>
+</tr>
+</tbody></table>
+
+<h3 id="toc_8">top category object</h3>
+
+<table><thead>
+<tr>
+<th>variable name</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>name</td>
+<td>category&rsquo;s name</td>
+</tr>
+<tr>
+<td>url</td>
+<td>category&rsquo;s url</td>
+</tr>
+<tr>
+<td>count</td>
+<td>category documents count</td>
+</tr>
+</tbody></table>
+
+<h2 id="toc_9">Build site</h2>
+
+<h3 id="toc_10">All HTML page variables</h3>
+
+<table><thead>
+<tr>
+<th>variable name</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>siteURL</td>
+<td>site URL</td>
+</tr>
+<tr>
+<td>siteDomain</td>
+<td>site domain</td>
+</tr>
+<tr>
+<td>siteName</td>
+<td>site name</td>
+</tr>
+<tr>
+<td>pageTitle</td>
+<td>site title</td>
+</tr>
+<tr>
+<td>siteDes</td>
+<td>site description</td>
+</tr>
+<tr>
+<td>lastBuildDate</td>
+<td>site last build date</td>
+</tr>
+<tr>
+<td>siteOther</td>
+<td>site other</td>
+</tr>
+<tr>
+<td>recentPosts</td>
+<td>array,the item is <code>recent document object</code></td>
+</tr>
+<tr>
+<td>allCategories</td>
+<td>array,the item is <code>top category object</code></td>
+</tr>
+<tr>
+<td>categoriesTree</td>
+<td>categories tree,array,the item is <code>top category object</code>, and children. reference: <a href="https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/sidebar.html">https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/sidebar.html</a></td>
+</tr>
+</tbody></table>
+
+<h3 id="toc_11">build RSS: atom.xml</h3>
+
+<p>template: atom.xml<br>
+addition variables:</p>
+
+<table><thead>
+<tr>
+<th>variable name</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>posts</td>
+<td>array,the item is <code>the document object</code></td>
+</tr>
+</tbody></table>
+
+<p>Reference: <a href="https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/atom.xml">https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/atom.xml</a></p>
+
+<h3 id="toc_12">build all posts template</h3>
+
+<p>template: header.html + post.html + sidebar.html + footer.html<br>
+addition variables:</p>
+
+<table><thead>
+<tr>
+<th>variable name</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>post</td>
+<td><code>the document object</code></td>
+</tr>
+<tr>
+<td>postNav</td>
+<td>dictionary，has <code>next</code>,<code>prev</code> to item,item is  <code>recent document object</code></td>
+</tr>
+</tbody></table>
+
+<p>Reference: <a href="https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/post.html">https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/post.html</a></p>
+
+<h3 id="toc_13">build all cateogries template</h3>
+
+<p>template:header.html + category.html + sidebar.html + footer.html<br>
+addition variables:</p>
+
+<table><thead>
+<tr>
+<th>variable name</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>posts</td>
+<td>array,the item is <code>the document object</code></td>
+</tr>
+<tr>
+<td>prevPageUrl</td>
+<td>prev page Url</td>
+</tr>
+<tr>
+<td>nextPageUrl</td>
+<td>next page Url</td>
+</tr>
+</tbody></table>
+
+<p>Reference:<a href="https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/category.html">https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/category.html</a></p>
+
+<h3 id="toc_14">build all pages template (<code>Is page</code> enable)</h3>
+
+<p>template: header.html + page.html +  footer.html<br>
+addition variables:</p>
+
+<table><thead>
+<tr>
+<th>variable name</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>posts</td>
+<td>recent documents, array,the item is <code>the document object</code></td>
+</tr>
+<tr>
+<td>post</td>
+<td><code>the document object</code></td>
+</tr>
+</tbody></table>
+
+<p>Reference: <a href="https://github.com/oulvhai/MWeb-Themes/blob/master/mweb-greyshade/page-index.html">https://github.com/oulvhai/MWeb-Themes/blob/master/mweb-greyshade/page-index.html</a></p>
+
+<h3 id="toc_15">build archives.html</h3>
+
+<p>template: header.html + archives.html + footer.html<br>
+addition variables:</p>
+
+<table><thead>
+<tr>
+<th>variable name</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>posts</td>
+<td>array, please reference below table for item detail</td>
+</tr>
+</tbody></table>
+
+<table><thead>
+<tr>
+<th>variable name</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>year</td>
+<td>document&rsquo;s year</td>
+</tr>
+<tr>
+<td>title</td>
+<td>document&rsquo;s title</td>
+</tr>
+<tr>
+<td>url</td>
+<td>document&rsquo;s url</td>
+</tr>
+<tr>
+<td>cats</td>
+<td>document&rsquo;s categries, array, the item is <code>the category object</code></td>
+</tr>
+<tr>
+<td>date</td>
+<td>document&rsquo;s date,defalut format is:2014/10/24</td>
+</tr>
+<tr>
+<td>dateMonth</td>
+<td>document&rsquo;s month</td>
+</tr>
+<tr>
+<td>dateDay</td>
+<td>document&rsquo;s day</td>
+</tr>
+<tr>
+<td>dateYear</td>
+<td>document&rsquo;s year</td>
+</tr>
+<tr>
+<td>dateGTM</td>
+<td>document&rsquo;s date,format is:  2014-10-24T13:54:03GMT+08:00</td>
+</tr>
+<tr>
+<td>artDate</td>
+<td>document&rsquo;s create date,default format is:2014/10/24</td>
+</tr>
+</tbody></table>
+
+<p>Reference: <a href="https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/archives.html">https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/archives.html</a></p>
+
+<h3 id="toc_16">build sitemap.xml</h3>
+
+<p>template: sitemap.xml<br>
+addition variables:</p>
+
+<table><thead>
+<tr>
+<th>variable name</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>archives</td>
+<td>array, please reference below table for item detail</td>
+</tr>
+<tr>
+<td>pages</td>
+<td>array, please reference below table for item detail</td>
+</tr>
+<tr>
+<td>nowDateGTM</td>
+<td>current date, format is:  2014-10-24T13:54:03GMT+08:00</td>
+</tr>
+</tbody></table>
+
+<table><thead>
+<tr>
+<th>variable name</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>title</td>
+<td>document&rsquo;s title</td>
+</tr>
+<tr>
+<td>url</td>
+<td>document&rsquo;s url</td>
+</tr>
+<tr>
+<td>date</td>
+<td>document&rsquo;s date,defalut format is:2014/10/24</td>
+</tr>
+<tr>
+<td>dateGTM</td>
+<td>document&rsquo;s date,format is:2014-10-24T13:54:03GMT+08:00</td>
+</tr>
+<tr>
+<td>artDate</td>
+<td>document&rsquo;s create date,default format is:2014/10/24</td>
+</tr>
+</tbody></table>
+
+<p>Reference: <a href="https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/sitemap.xml">https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/sitemap.xml</a></p>
 
 ]]></content>
   </entry>
@@ -476,24 +883,9 @@ static bool GAllowApplePlatformSymbolication = false;
     <content type="html"><![CDATA[
 <p>MWeb全部主题已上传到Github: <a href="https://github.com/oulvhai/MWeb-Themes">https://github.com/oulvhai/MWeb-Themes</a>.</p>
 
-<h2 id="toc_0">自定首页</h2>
+<h2 id="toc_0">MWeb主题模板结构</h2>
 
-<p>如图，设定想要设置为首页的文档的 HTML file name 为 <code>index</code>, 选中 <code>Is page</code> 选项。<br>
-<img src="media/14189904700669/14210659918568.jpg" alt="">￼￼￼￼￼￼￼</p>
-
-<span id="more"></span><!-- more -->
-
-<h2 id="toc_1">自定文档页的HTML模板</h2>
-
-<p>不选<code>Is page</code>选项时，生成HTML时读取的模板为：header.html+post.html+sidebar.html+footer.html。选中了<code>Is page</code>选项后，生成HTML时会读取的模板为：header.html+page.html+footer.html，如果要自定文档的模板，可以在主题文件夹里新增一个名称为：page-{HTML file name}.html 的页面，这样生成HTML时的读取的模板就会变成：header.html+page-{HTML file name}.html+footer.html。比如说要自定首页的模板，则在主题文件夹里新增一个名为：page-index.html 的页面即可。如 <a href="http://coderforart.com">http://coderforart.com</a> 就自定了首页，内容为：<a href="https://github.com/oulvhai/MWeb-Themes/blob/master/mweb-greyshade/page-index.html">https://github.com/oulvhai/MWeb-Themes/blob/master/mweb-greyshade/page-index.html</a> </p>
-
-<h2 id="toc_2">自定分类页的HTML模板</h2>
-
-<p>分类页生成HTML时读取的模板为：header.html+category.html+sidebar.html+footer.html。 其中category.html可以自定，MWeb生成分类页的HTML时，会判定是否存在：category-{HTML file name}.html的模板，如果存在，则会优先使用category-{HTML file name}.html模板。比如说有一个分类的 HTML file name 为 Cocoa，如果要自定这个分类的分类页的模板，则只要在主题文件夹里新增一个名为：category-Cocoa.html的页面即可，MWeb生成HTML时读取模板就会变为：header.html+category-Cocoa.html+sidebar.html+footer.html。</p>
-
-<h2 id="toc_3">自定主题更详细的说明</h2>
-
-<p>MWeb所有网站主题模板都放在SiteThemes这个资料夹里，一个资料夹就表示一个主题。每个主题里包含的文档和文件夹的作用如下：</p>
+<p>MWeb所有网站主题模板都放在SiteThemes这个文件夹里，点击 <img src="media/14206135238767/14227577752365.jpg" alt="">￼￼￼ 这里可以直接显示SiteThemes文件夹，一个文件夹就表示一个主题。每个主题里包含的文档和文件夹的作用如下：</p>
 
 <ul>
 <li>asset &ndash; 主题所有要用到的东西，图片、CSS、JS等等都放这里</li>
@@ -508,6 +900,21 @@ static bool GAllowApplePlatformSymbolication = false;
 <li>sidebar.html &ndash; 侧边栏的模板</li>
 <li>sitemap.xml &ndash; 网站sitemap所使用的模板</li>
 </ul>
+
+<h2 id="toc_1">自定首页</h2>
+
+<p>如图，设定想要设置为首页的文档的 HTML file name 为 <code>index</code>, 选中 <code>Is page</code> 选项。<br>
+<img src="media/14189904700669/14210659918568.jpg" alt="">￼￼￼￼￼￼￼￼￼￼￼￼</p>
+
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_2">自定文档页的HTML模板</h2>
+
+<p>不选<code>Is page</code>选项时，生成HTML时读取的模板为：header.html+post.html+sidebar.html+footer.html。选中了<code>Is page</code>选项后，生成HTML时会读取的模板为：header.html+page.html+footer.html，如果要自定文档的模板，可以在主题文件夹里新增一个名称为：page-{HTML file name}.html 的页面，这样生成HTML时的读取的模板就会变成：header.html+page-{HTML file name}.html+footer.html。比如说要自定首页的模板，则在主题文件夹里新增一个名为：page-index.html 的页面即可。如 <a href="http://coderforart.com">http://coderforart.com</a> 就自定了首页，内容为：<a href="https://github.com/oulvhai/MWeb-Themes/blob/master/mweb-greyshade/page-index.html">https://github.com/oulvhai/MWeb-Themes/blob/master/mweb-greyshade/page-index.html</a> </p>
+
+<h2 id="toc_3">自定分类页的HTML模板</h2>
+
+<p>分类页生成HTML时读取的模板为：header.html+category.html+sidebar.html+footer.html。 其中category.html可以自定，MWeb生成分类页的HTML时，会判定是否存在：category-{HTML file name}.html的模板，如果存在，则会优先使用category-{HTML file name}.html模板。比如说有一个分类的 HTML file name 为 Cocoa，如果要自定这个分类的分类页的模板，则只要在主题文件夹里新增一个名为：category-Cocoa.html的页面即可，MWeb生成HTML时读取模板就会变为：header.html+category-Cocoa.html+sidebar.html+footer.html。</p>
 
 <h2 id="toc_4">生成HTML时传入模板页的变量说明</h2>
 
@@ -862,18 +1269,6 @@ static bool GAllowApplePlatformSymbolication = false;
 </tr>
 </thead><tbody>
 <tr>
-<td>posts</td>
-<td>数组，数组对象请参考下表</td>
-</tr>
-</tbody></table>
-
-<table><thead>
-<tr>
-<th>变量名称</th>
-<th>说明</th>
-</tr>
-</thead><tbody>
-<tr>
 <td>title</td>
 <td>文章标题</td>
 </tr>
@@ -901,7 +1296,7 @@ static bool GAllowApplePlatformSymbolication = false;
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Help and introduction for MWeb]]></title>
+    <title type="html"><![CDATA[MWeb - Markdown editor for static websites and blogs on OS X]]></title>
     <link href="http://coderforart.com/mweb.html"/>
     <updated>2014-12-19T13:08:02GMT+08:00</updated>
     <id>http://coderforart.com/mweb.html</id>
@@ -928,7 +1323,7 @@ If you can&rsquo;t find the answer, please send feedback to me: Help &ndash;&gt;
 
 <p>MWeb is a markdown editor for static websites and blogs on OS X, like <a href="http://octopress.org/">Octopress</a> or <a href="http://jekyllrb.com/">Jekyll</a> but easy to use. You can write document with markdown,drag &amp; drop or paste photos to the editor, MWeb will automatically add markdown code and display photos in editor. You can choose some categories to organize the document, and build static websites and blogs <strong>One Click</strong>.</p>
 
-<p><img src="media/14189656825627/MWeb.jpg" alt="MWeb">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
+<p><img src="media/14189656825627/MWeb.jpg" alt="MWeb">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
 
 <span id="more"></span><!-- more -->
 
@@ -939,27 +1334,27 @@ If you can&rsquo;t find the answer, please send feedback to me: Help &ndash;&gt;
 
 <h2 id="toc_5">A markdown editor</h2>
 
-<p>MWeb is a markdown editor suport markdown syntax highlight, preview,syntax highlighting in fenced code blocks,math ML,export to HTML/PDF, custom editor theme, words counter, outline, autosave, full document versions and more.. It has two pattern:</p>
+<p>MWeb is a markdown editor suport markdown syntax highlight, preview,syntax highlighting in fenced code blocks,Math ML,export to HTML/PDF, custom editor theme, words counter, outline, autosave, full document versions and more.. It has two pattern:</p>
 
 <ol>
 <li>Library pattern, you can organize document with categories,drag &amp; drop or paste photos to the editor and display. You can build static websites and blogs. <code>CMD + L</code> to show the Library pattern. </li>
 <li>Not library pattern, it just like <code>TextEdit</code> but has full markdown suport like syntax highlight, preview, outline etc..</li>
 </ol>
 
-<p>￼￼￼￼￼￼￼￼￼￼￼￼<img src="media/14189656825627/MWeb-markdown-editor.jpg" alt="MWeb-markdown-editor">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
+<p>￼￼￼￼￼￼￼￼￼￼￼￼<img src="media/14189656825627/MWeb-markdown-editor.jpg" alt="MWeb-markdown-editor">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
 
 <h2 id="toc_6">Drag &amp; drop or paste photos to the editor and display</h2>
 
 <p>Drag &amp; drop or paste photo to the editor, the markdown code will automatically add and the photo will display in editor.</p>
 
-<p>￼￼￼￼￼￼￼￼￼<img src="media/14189656825627/MWeb-inset-photo.jpg" alt="MWeb-inset-photo">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼<br>
+<p>￼￼￼￼￼￼￼￼￼<img src="media/14189656825627/MWeb-inset-photo.jpg" alt="MWeb-inset-photo">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼<br>
 ￼￼￼￼￼￼￼￼￼￼￼￼</p>
 
 <h2 id="toc_7">Easy to build static websites and blogs</h2>
 
 <p>Selected a category &ndash;&gt; Set to site, setting site name and description and just click <code>Build site</code>. click <code>Clear and rebuild site</code> button when the Theme is change. click <code>Preview site</code> button to preview. Just double click <code>Coder For Art</code> category and try.</p>
 
-<p>￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼<img src="media/14187874991645/MWeb-build-static-websites-and-blogs-1-1-2.jpg" alt="MWeb-build-static-websites-and-blogs-1-1-2">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
+<p>￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼<img src="media/14187874991645/MWeb-build-static-websites-and-blogs-1-1-2.jpg" alt="MWeb-build-static-websites-and-blogs-1-1-2">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
 
 <p>More info, please read this post: <a href="custom-site-theme-detail.html">Custom site theme or design you owner theme&hellip;</a></p>
 
@@ -967,13 +1362,13 @@ If you can&rsquo;t find the answer, please send feedback to me: Help &ndash;&gt;
 
 <p>Editor Only:<code>CMD + 1</code>, Two Panes:<code>CMD + 2</code>, Three Panes:<code>CMD + 3</code>. The editor area will not resize when the view pattern change.</p>
 
-<p>￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼<img src="media/14189656825627/MWeb-view-pattern.jpg" alt="MWeb-view-pattern">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
+<p>￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼<img src="media/14189656825627/MWeb-view-pattern.jpg" alt="MWeb-view-pattern">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
 
 <h2 id="toc_9">Preview, Share,Save as PDF, More Screenshot</h2>
 
 <p>Preview：<code>CMD + R</code>，Close Preview：<code>CMD + W</code> </p>
 
-<p><img src="media/14187874991645/MWeb-preview-share-1-1.jpg" alt="MWeb-preview-share-1-1">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
+<p><img src="media/14187874991645/MWeb-preview-share-1-1.jpg" alt="MWeb-preview-share-1-1">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
 
 <p>Save as PDF: Difference between in editor share button and Preview share button.</p>
 
@@ -983,7 +1378,7 @@ If you can&rsquo;t find the answer, please send feedback to me: Help &ndash;&gt;
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[MWeb帮助及简介]]></title>
+    <title type="html"><![CDATA[MWeb - OS X上的Markdown编辑器和全静态网站、博客生成工具]]></title>
     <link href="http://coderforart.com/mweb-zh.html"/>
     <updated>2014-12-17T11:38:19GMT+08:00</updated>
     <id>http://coderforart.com/mweb-zh.html</id>
@@ -1009,9 +1404,9 @@ If you can&rsquo;t find the answer, please send feedback to me: Help &ndash;&gt;
 
 <h2 id="toc_4">MWeb简介</h2>
 
-<p>MWeb是一个Markdown编辑器和全静态网站、博客生成工具，像<a href="http://octopress.org/">Octopress</a>和 <a href="http://jekyllrb.com/">Jekyll</a>，但是更简单易用。MWeb不仅仅是一个好用的Markdown编辑器，它专门为用Markdown写文章并且要发布成网站、博客的这一类用户优化。一般的场景为：想写文章时，随意选一个分类或不选分类开始写，当某天想把文章发布出来时，只需要选择一下要发布的网站分类的任一分类，点<code>Build site</code>即可生成全静态网站。全静态网站相比PHP等网站，除了速度超快之外，更节省时间精力。MWeb也专门为喜欢写教程类的用户优化，比如拖拽或粘贴即可插入图片，Fenced code blocks和代码高亮支持这几个很方便实用的功能。</p>
+<p>MWeb是一个Markdown编辑器和全静态网站、博客生成工具，像<a href="http://octopress.org/">Octopress</a>和 <a href="http://jekyllrb.com/">Jekyll</a>，但是更简单易用。MWeb很合适经常用Markdown写文档、日记，还经常要插入图片和大段代码的朋友。</p>
 
-<p><img src="media/14189656825627/MWeb.jpg" alt="MWeb">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
+<p><img src="media/14189656825627/MWeb.jpg" alt="MWeb">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
 
 <span id="more"></span><!-- more -->
 
@@ -1029,20 +1424,20 @@ If you can&rsquo;t find the answer, please send feedback to me: Help &ndash;&gt;
 <li>一种是外部文文件模式，文件夹的Markdown文檔直接用MWeb打开就是这种模式，区别是无拖拽插入图片功能，不能生成网站。</li>
 </ul>
 
-<p>￼￼￼￼￼￼￼￼￼￼￼￼<img src="media/14189656825627/MWeb-markdown-editor.jpg" alt="MWeb-markdown-editor">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
+<p>￼￼￼￼￼￼￼￼￼￼￼￼<img src="media/14189656825627/MWeb-markdown-editor.jpg" alt="MWeb-markdown-editor">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
 
 <h2 id="toc_6">插入图片并显示在编辑器内</h2>
 
 <p>MWeb的设计就是为了能方便地用Markdown记日记、简单的管理日记并生成博客。而写日记时插入图片的功能是经常用到的。一般的Markdown工具如果要插入图片，要先丢到网上。像Ulysses是可以方便插入图片，但是要双击或者预览时才能看到。MWeb设计成可拖拽或直接粘贴即可插入图片并显示出来，以方便查看。</p>
 
-<p>￼￼￼￼￼￼￼￼￼<img src="media/14189656825627/MWeb-inset-photo.jpg" alt="MWeb-inset-photo">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼<br>
+<p>￼￼￼￼￼￼￼￼￼<img src="media/14189656825627/MWeb-inset-photo.jpg" alt="MWeb-inset-photo">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼<br>
 ￼￼￼￼￼￼￼￼￼￼￼</p>
 
 <h2 id="toc_7">一键将分类生成全静态的网站和博客</h2>
 
 <p>MWeb的分类管理的设计跟博客的结构差不多，一个文档可以选择多个分类。将分类变成博客的方法为：选择该分类 &ndash;&gt; Set to site。设定好博客的名称和描述等等，点：<code>Build site</code> 按钮即可。如果有改动到 <code>Theme</code> 或者有任何没有在预料之中的结果，试试点 <code>Clear and rebuild site</code> 按钮。 点 <code>Preview site</code> 按钮可以预览生成的博客。<a href="http://coderforart.com/">http://coderforart.com/</a> 网站就是用MWeb生成的。</p>
 
-<p><img src="media/14187874991645/MWeb-build-static-websites-and-blogs-1-1-2.jpg" alt="MWeb-build-static-websites-and-blogs-1-1-2">￼￼￼￼<br>
+<p><img src="media/14187874991645/MWeb-build-static-websites-and-blogs-1-1-2.jpg" alt="MWeb-build-static-websites-and-blogs-1-1-2">￼￼￼￼￼￼￼<br>
 ￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼<br>
 MWeb还可以自定网站和博客主题，增加评论和分享功能，请参考这个网址: <a href="custom-site-theme-detail-zh.html">自定网站主题、增加评论和分享和设计新主题&hellip;</a></p>
 
@@ -1050,13 +1445,13 @@ MWeb还可以自定网站和博客主题，增加评论和分享功能，请参�
 
 <p>Editor Only:<code>CMD + 1</code>, Two Pane:<code>CMD + 2</code>, There Pane:<code>CMD + 3</code>。我觉得改变视图时，编辑器区域大小也同时改变不大爽，所以改变视图时就直接改变窗口大小，而编辑器区域大小会保持不变。</p>
 
-<p>￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼<img src="media/14189656825627/MWeb-view-pattern.jpg" alt="MWeb-view-pattern">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
+<p>￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼<img src="media/14189656825627/MWeb-view-pattern.jpg" alt="MWeb-view-pattern">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
 
 <h2 id="toc_9">预览、分享功能，更多截图</h2>
 
 <p>预览快捷键：<code>CMD + R</code>，关闭预览：<code>CMD + W</code> </p>
 
-<p><img src="media/14187874991645/MWeb-preview-share-1-1.jpg" alt="MWeb-preview-share-1-1">￼￼￼￼<br>
+<p><img src="media/14187874991645/MWeb-preview-share-1-1.jpg" alt="MWeb-preview-share-1-1">￼￼￼￼￼￼￼<br>
 ￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
 
 <p>更多截图: <a href="me-screenshot-and-in-yosemite.html">MWeb更多截图和在Yosemite下的效果</a></p>
