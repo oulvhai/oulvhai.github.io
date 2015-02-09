@@ -130,6 +130,49 @@
 	<article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
 		<div class="meta">
 			<div class="date">
+				<time datetime="2015-02-08T23:50:28+08:00" itemprop="datePublished">2015/2/8</time>
+			</div>
+			<div class="tags">posted in 
+			
+			    <a class='category' href='Introduction.html'>Introduction</a>&nbsp;
+			
+			    <a class='category' href='MWeb-cat.html'>MWeb</a>&nbsp;
+			 
+			</div>
+		</div>
+		<h1 class="title" itemprop="name"><a href="mweb-v1.2-release.html" itemprop="url">
+		MWeb 1.2 release (Submited App Store Waiting For Review)</a></h1>
+		<div class="entry-content" itemprop="articleBody">
+			
+			<h2 id="toc_0">New feature</h2>
+
+<ul>
+<li>Add auto insert list and blockquote prefix: Preferences &ndash;&gt; General &ndash;&gt; Auto insert list and blockquote prefix</li>
+<li>In Editor share: Copy as image,Save as image,Save as PDF etc&hellip; now change to HTML style.</li>
+<li>Add HTML or PDF export suport for documents. You can selected documents &ndash;&gt; Right Mouse Button Click(RMB) &ndash;&gt; Export as HTML or PDF.</li>
+<li>Add HTML or PDF export suport for category. You can selected category &ndash;&gt; RMB &ndash;&gt; Export as HTML or PDF.</li>
+<li>Add new preview css: octopress,greyshade.</li>
+<li>Add drag &amp; drop to sort documents. RMB parent category &ndash;&gt; Edit &ndash;&gt; set Order by to Custom &ndash;&gt; you can drag &amp; drop to sort</li>
+<li>Add drag &amp; drop to sort categories.</li>
+</ul>
+
+<h2 id="toc_1">Fixed</h2>
+
+<ul>
+<li>Build site crash some time</li>
+<li>Preview site not work some time</li>
+</ul>
+
+
+			
+			
+		</div>
+
+	</article>
+ 
+	<article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+		<div class="meta">
+			<div class="date">
 				<time datetime="2015-02-08T17:47:38+08:00" itemprop="datePublished">2015/2/8</time>
 			</div>
 			<div class="tags">posted in 
@@ -148,78 +191,19 @@
 
 <ul>
 <li>可选择在输入时是否自动插入列表编号，可以在 Preferences &ndash;&gt; General &ndash;&gt; Auto insert list and blockquote prefix 开启和关闭。</li>
-<li>分享功能的 Copy as image、Save as image、Save as PDF 等现在统一都生成HTML的样式了，另外还专门为分享到微薄等SNS生成的图片做了优化，比如说如果有代码，会强制换行。</li>
-<li>现在可以把库文档里的单个或多个文档导出为HTML或者PDF了，所导出的HTML或PDF的样式为预览所选择的样式。使用方法为：选择要导出的文档 &ndash;&gt; 鼠标右键 &ndash;&gt; Export as HTML、Export as PDF</li>
-<li>现在也在也可以把整个分类导出为HTML或者PDF了。使用方法为：右键要导出的分类 &ndash;&gt; Export as HTML、Export as PDF。导出的PDF现在还没办法自动生成目录，下边会分享一个可以自动生成目录的方法，然后个人觉得生成的PDF非常好。</li>
-<li>增加MWeb自带的两个主题:octopress、greyshade的即时预览CSS。现在可以不用 Build site 就可以即时预览文章的大概效果了。另外自定网站的预览CSS非常简单，下边会再介绍。</li>
-<li>增加可以拖拽改变文档的顺序。使用方法为：鼠标右键父分类 &ndash;&gt; Edit &ndash;&gt; 把Order by设定为：Custom &ndash;&gt; 然后就可以用拖拽调节这个父分类下的文档顺序了。</li>
-<li>增加可以拖拽改变分类的顺序。使用方法为：直接拖拽要调节顺序的分类。</li>
+<li>分享功能的 Copy as image、Save as image、Save as PDF 等现在统一都用HTML的样式了，另外还专门为分享到微薄等SNS生成的图片做了优化，比如说如果有代码，会强制换行。</li>
+<li>新增把文档库里的单个或多个文档导出为HTML或者PDF。使用方法为：选择要导出的文档（可多选） &ndash;&gt; 鼠标右键 &ndash;&gt; Export as HTML、PDF</li>
+<li>新增把整个分类导出为HTML或者PDF。使用方法为：右键要导出的分类 &ndash;&gt; Export as HTML、PDF。导出的PDF现在还没办法自动生成目录，下边的详细介绍会分享一个可以自动生成目录的方法，然后个人觉得生成的PDF非常好。</li>
+<li>新增MWeb自带的两个主题octopress、greyshade的即时预览CSS。现在可以不用 Build site 就可以即时预览文章的大概效果了。另外自定网站的预览CSS非常简单，请看下边的详细介绍。</li>
+<li>新增可以拖拽改变文档的顺序。使用方法为：鼠标右键父分类 &ndash;&gt; Edit &ndash;&gt; 把Order by设定为：Custom &ndash;&gt; 然后就可以用拖拽调节这个父分类下的文档顺序了。</li>
+<li>新增可以拖拽改变分类的顺序。</li>
 </ul>
 
-<h2 id="toc_1">修正</h2>
-
-<ul>
-<li>Build site 闪退问题，这也是这次版本发布的原因。</li>
-<li>Preview site 无效果问题。</li>
-<li>编辑器小修正。</li>
-</ul>
-
-<h2 id="toc_2">发到微薄等SNS长代码自动换行DEMO</h2>
-
-<pre><code class="swift">func blur(radius: Double) -&gt; Filter {
-    return { image in
-        let parameters : Parameters = [kCIInputRadiusKey: radius, kCIInputImageKey: image]
-        let filter = CIFilter(name:&quot;CIGaussianBlur&quot;, parameters:parameters)
-        return filter.outputImage
-    }
-}
-</code></pre>
-
-<h2 id="toc_3">生成带目录的PDF的方法</h2>
-
-<p>先安装wkhtmltopdf，网址：<a href="http://wkhtmltopdf.org/">http://wkhtmltopdf.org/</a>。<br>
-然后用Export as HTML把要生成带目录的PDF的内容导出为HTML。我这里是选择整个Coder For Art网站。如图是导出到tocPDF文件夹下的情况。<br>
-<img src="media/14233888581377/14233994590970.jpg" alt="">￼￼￼￼</p>
-
-<p>选择tocPDF文件夹，并<code>CMD+C</code>复制,打开终端工具(Terminal)，打<code>cd</code> （注意cd后带一空格），然后<code>CMD+V</code>，再 Enter。<br>
-然后再执行以下命令</p>
-
-<pre><code>wkhtmltopdf toc index.html CoderForArt.pdf
-</code></pre>
-
-<p>￼执行结果生成的PDF如图：<br>
-<img src="media/14233888581377/14233999928601.jpg" alt="">￼￼￼￼</p>
-
-<p>一般情况下有代码的地方如果过长会被切掉，可以加入以下CSS</p>
-
-<pre><code class="css">.hljs{overflow: visible; word-wrap: break-word;}
-</code></pre>
-
-<p>就不会被切了。如图：<br>
-<img src="media/14233888581377/14234006629706.jpg" alt="">￼￼￼￼</p>
-
-<h2 id="toc_4">自定预览CSS</h2>
-
-<p>把要自定的预览的网站的主题整个文件夹复制到预览CSS文件夹的layout文件夹下，如图是我要自定greyshade主题的预览CSS：</p>
-
-<p><img src="media/14233888581377/14233974412288.jpg" alt="">￼￼￼￼￼￼</p>
-
-<p>然后只留下layout/greyshade文件夹下的asset文件夹和随便两个.html文件，其他都删除。把留下的两个.html文件分别改名为：demo.html和index.html。</p>
-
-<p>使用Build site &ndash;&gt; Preview site &ndash;&gt; 转到任何一个单独的文章页面 &ndash;&gt; 查看原代码 &ndash;&gt; 复制并把它粘贴到demo.html上。现在你可以直接打开demo.html看效果了。调整demo.html到合适的预览效果时，再把demo.html的所有内容粘贴到index.html上。</p>
-
-<p>把index.html页的标题都用<code>{{title}}</code>替换，内容用<code>{{content}}</code>替换，并在<code>&lt;head&gt;&lt;/head&gt;</code>之间加上<code>{{head}}</code>，一般加在<code>&lt;/head&gt;</code>前面即可。</p>
-
-<p>如图，在预览CSS的文件夹里新增一个名为greyshade.css的内容为空的文件即可。<br>
-<img src="media/14233888581377/14233984379844.jpg" alt="">￼￼￼￼￼</p>
-
-<p>要注意的是：greyshade.css的文件名greyshade和layout文件夹下的greyshade文件夹的名称是一样的。然后如果你引用的CSS加有<code>media=&quot;screen, projection&quot;</code>这样的限定，请删除，不然MWeb在导出PDF功能上会没有样式。还有如果你在用highlightjs这个代码高亮插件，导出PDF或者生成图片时，代码被切掉的话，可以用以下CSS强制换行：</p>
-
-<pre><code class="css">.hljs{overflow: visible; word-wrap: break-word;}
-</code></pre>
 
 
-			
+			 
+			<a href="mweb-v1.2-release-zh.html#more" class="more-link">Read on &rarr;</a>
+    		
 			
 		</div>
 
@@ -294,9 +278,9 @@
 			</div>
 			<div class="tags">posted in 
 			
-			    <a class='category' href='Game%20Engine.html'>Game Engine</a>&nbsp;
-			
 			    <a class='category' href='CG%20Artist.html'>CG Artist</a>&nbsp;
+			
+			    <a class='category' href='Game%20Engine.html'>Game Engine</a>&nbsp;
 			 
 			</div>
 		</div>
@@ -377,7 +361,7 @@ For enable website MathJax support,the simple way is copy below code to <code>Si
 		MWeb 所有问题和回答收集</a></h1>
 		<div class="entry-content" itemprop="articleBody">
 			
-			<h2 id="toc_0">如何导出HTML样式的PDF？</h2>
+			<h2 id="toc_0">如何导出HTML样式的PDF？（1.2版已改进这个问题。）</h2>
 
 <p><code>CMD+R</code>打开Live Preview窗口，点右边的分享按钮，选择<code>Save as PDF</code>即可。</p>
 
@@ -436,42 +420,6 @@ For enable website MathJax support,the simple way is copy below code to <code>Si
 
 			 
 			<a href="mweb-v1.1-release.html#more" class="more-link">Read on &rarr;</a>
-    		
-			
-		</div>
-
-	</article>
- 
-	<article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-		<div class="meta">
-			<div class="date">
-				<time datetime="2015-01-19T14:29:02+08:00" itemprop="datePublished">2015/1/19</time>
-			</div>
-			<div class="tags">posted in 
-			
-			    <a class='category' href='MWeb-cat.html'>MWeb</a>&nbsp;
-			 
-			</div>
-		</div>
-		<h1 class="title" itemprop="name"><a href="mweb-v1.1-release-zh.html" itemprop="url">
-		MWeb 1.1 版更新说明</a></h1>
-		<div class="entry-content" itemprop="articleBody">
-			
-			<h2 id="toc_0">新增</h2>
-
-<ul>
-<li>增加导入.txt或Markdown文档到文档库功能：File &ndash;&gt; Import Files To Library&hellip;</li>
-<li>增加TOC（Table of Content）支持，和是否 Render TOC 选项</li>
-<li>增加免费版</li>
-<li>增加sitemap功能</li>
-<li>站点文件夹增加右键菜单</li>
-<li>增加代码高亮功能，支持超多编程语言，1.0版本的朋友请去<a href="https://github.com/oulvhai/MWeb-Themes/">https://github.com/oulvhai/MWeb-Themes/</a>下载最新的主题即可。支持语言及缩写详细请参考：<a href="http://highlightjs.readthedocs.org/en/latest/css-classes-reference.html">http://highlightjs.readthedocs.org/en/latest/css-classes-reference.html</a></li>
-</ul>
-
-
-
-			 
-			<a href="mweb-v1.1-release-zh.html#more" class="more-link">Read on &rarr;</a>
     		
 			
 		</div>

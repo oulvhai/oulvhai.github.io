@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<title>  
 	  
-  	MWeb 所有问题和回答收集 - Coder For Art
+  	Introduction - Coder For Art
   	
 	</title
 
@@ -124,92 +124,50 @@
 		</div>	
 		<div class="mid-col">
 			<div class="mid-col-container"> <div id="content" class="inner">
+<div itemscope itemtype="http://schema.org/Blog">
 
-	<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-		<h1 class="title" itemprop="name">MWeb 所有问题和回答收集</h1>
-		<div class="entry-content" itemprop="articleBody">
-			<h2 id="toc_0">如何导出HTML样式的PDF？（1.2版已改进这个问题。）</h2>
 
-<p><code>CMD+R</code>打开Live Preview窗口，点右边的分享按钮，选择<code>Save as PDF</code>即可。</p>
-
-<h2 id="toc_1">如何开启MathJax预览支持？如何让网站支持MathJax？</h2>
-
-<p><code>CMD+,</code>打开设置面板，切到Themes，勾选Enable Math选项。<br>
-如果要让网站支持MathJax，最简单的方法是在网站分类设置中的：Site other:的文本框中填入以下代码：</p>
-
-<pre><code class="js">&lt;script type=&quot;text/x-mathjax-config&quot;&gt;
-  MathJax.Hub.Config({tex2jax: {inlineMath: [[&#39;$&#39;,&#39;$&#39;], [&#39;\\(&#39;,&#39;\\)&#39;]]}});
-&lt;/script&gt;
-&lt;script type=&quot;text/javascript&quot;
-  src=&quot;http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&quot;&gt;
-&lt;/script&gt;
-</code></pre>
-
-<p>如果您的网站是要用HTTPS，请把：<code>http://cdn.mathjax.org...</code>改为：<code>https://cdn.mathjax.org...</code></p>
-
-<span id="more"></span><!-- more -->
-
-<h2 id="toc_2">如何将MWeb的文档库备份至Dropbox？</h2>
-
-<p>请打开终端工具(Terminal),并执行以下命令：</p>
-
-<pre><code>ln -s ~/Library/Containers/com.coderforart.MWeb/Data/Documents/MWeb ~/Dropbox/MWebBackup
-</code></pre>
-
-<h2 id="toc_3">如何为文章增加Disqus或者多说等评论？</h2>
-
-<p>Disqus的话，去<a href="https://disqus.com/">https://disqus.com/</a>，然后会得到像以下这样的代码，点到主题模板的post.html页的合适的位置即可。</p>
-
-<pre><code class="js">&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
-&lt;script type=&quot;text/javascript&quot;&gt;
-   var disqus_shortname = &#39;这个会不一样&#39;; 
-
-   (function() {
-       var dsq = document.createElement(&#39;script&#39;); dsq.type = &#39;text/javascript&#39;; dsq.async = true;
-       dsq.src = &#39;//&#39; + disqus_shortname + &#39;.disqus.com/embed.js&#39;;
-       (document.getElementsByTagName(&#39;head&#39;)[0] || document.getElementsByTagName(&#39;body&#39;)[0]).appendChild(dsq);
-   })();
-&lt;/script&gt;
-&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;
-</code></pre>
-
-<p>多说应该是差不多的方法。可以参考这个网址的情况：<a href="https://github.com/oulvhai/MWeb-Themes/blob/master/mweb-greyshade/post.html">https://github.com/oulvhai/MWeb-Themes/blob/master/mweb-greyshade/post.html</a></p>
-
-<h2 id="toc_4">虽然在后面打中文不会跳动，但是在文章中间插入中文时，下面的文本会跳动怎么办？</h2>
-
-<p>这个解决办法好像只能换字体，就是在设置中把编辑器的字体换成<code>Hiragino Sans GB</code>，中文名称应该是叫<code>冬青黑体</code>。另外我有试过Yosemite下不会跳了，当然如果你在用Yosemite，就不会有这个问题了。</p>
-
+	<article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+		<div class="meta">
+			<div class="date">
+				<time datetime="2014-12-16T23:10:52+08:00" itemprop="datePublished">2014/12/16</time>
+			</div>
+			<div class="tags">posted in 
+			
+			    <a class='category' href='Introduction.html'>Introduction</a>&nbsp;
+			 
+			</div>
 		</div>
+		<h1 class="title" itemprop="name"><a href="insert-photos-and-display-in-editor-zh.html" itemprop="url">
+		插入图片并显示在编辑器内</a></h1>
+		<div class="entry-content" itemprop="articleBody">
+			
+			<p>拖拽图片（支持多张）到编辑器或者直接用粘贴即可插入图片，图片会直接显示在编辑器里（也可设定不显示），像这样：</p>
+
+
+
+			 
+			<a href="insert-photos-and-display-in-editor-zh.html#more" class="more-link">Read on &rarr;</a>
+    		
+			
+		</div>
+
 	</article>
-	<div style="height:26px;" class="share">
-<!-- JiaThis Button BEGIN -->
-<div class="jiathis_style_24x24">
-	<a class="jiathis_button_tsina"></a>
-	<a class="jiathis_button_tqq"></a>
-	<a class="jiathis_button_weixin"></a>
-	<a class="jiathis_button_qzone"></a>
-	<a class="jiathis_button_renren"></a>
-	<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
-	<a class="jiathis_counter_style"></a>
+  
+
 </div>
-<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1406813199499778" charset="utf-8"></script>
-<!-- JiaThis Button END -->
-	</div>
+<nav id="pagenavi">
+	 <a class="prev" href="Introduction.html">Prev</a>  
+	
+	<div class="center"><a href="archives.html">Blog Archives</a></div>
 
-	<div id="disqus_thread"></div>
-    <script type="text/javascript">
-        var disqus_shortname = 'coderforart'; 
+</nav>
 
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    
+</div>
 
-</div>        </div>
+
+
+        </div>
 			<footer id="footer" class="inner">Copyright &copy; 2014
 Powered by <a target="_blank" href="http://coderforart.com/">MWeb</a> &nbsp;&nbsp; 
 Theme by <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank Mehta</a>
