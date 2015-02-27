@@ -2,7 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
   <loc>http://coderforart.com/</loc>
-  <lastmod>2015-02-19T10:06:01+08:00</lastmod>
+  <lastmod>2015-02-27T12:43:41+08:00</lastmod>
+</url>
+
+<url>
+  <loc>http://coderforart.com/use-goodsync-sync-mweb-static-websites.html</loc>
+  <lastmod>2015-02-27T12:01:25+08:00</lastmod>
+</url>
+
+<url>
+  <loc>http://coderforart.com/use-goodsync-sync-mweb-static-websites-zh.html</loc>
+  <lastmod>2015-02-27T10:55:50+08:00</lastmod>
 </url>
 
 <url>
@@ -128,6 +138,10 @@
 
 
 <url>
+  <loc>http://coderforart.com/CG%20Artist.html</loc>
+</url>
+
+<url>
   <loc>http://coderforart.com/MWeb-cat.html</loc>
 </url>
 
@@ -137,10 +151,6 @@
 
 <url>
   <loc>http://coderforart.com/Introduction.html</loc>
-</url>
-
-<url>
-  <loc>http://coderforart.com/CG%20Artist.html</loc>
 </url>
 
 <url>

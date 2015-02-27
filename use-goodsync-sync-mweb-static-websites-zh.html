@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<title>  
 	  
-  	MWeb - Markdown editor for static websites and blogs on OS X - Coder For Art
+  	使用GoodSync把MWeb生成的静态网站自动同步到FTP、SFTP、WebDAV、Amazon S3等 - Coder For Art
   	
 	</title
 
@@ -126,82 +126,46 @@
 			<div class="mid-col-container"> <div id="content" class="inner">
 
 	<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-		<h1 class="title" itemprop="name">MWeb - Markdown editor for static websites and blogs on OS X</h1>
+		<h1 class="title" itemprop="name">使用GoodSync把MWeb生成的静态网站自动同步到FTP、SFTP、WebDAV、Amazon S3等</h1>
 		<div class="entry-content" itemprop="articleBody">
-			<h2 id="toc_0">MWeb Help</h2>
-
-<h3 id="toc_1">Markdown syntax guide</h3>
-
-<p><a href="markdown-syntax-guide-suggest-version.html">Markdown syntax guide suggest version</a><br>
-<a href="markdown-syntax-guide-full-version.html">Markdown syntax guide full version</a></p>
-
-<h3 id="toc_2">MWeb Q &amp; A</h3>
-
-<p><a href="mweb-qa.html">MWeb Q &amp; A</a><br>
-If you can&rsquo;t find the answer, please send feedback to me: Help &ndash;&gt; Send Feedback</p>
-
-<h3 id="toc_3">Some may useful articles</h3>
-
-<p><a href="custom-site-theme-detail.html">Custom site theme or design you owner theme&hellip;</a><br>
-<a href="me-screenshot-and-in-yosemite.html">MWeb Screenshot and in Yosemite</a><br>
-<a href="mweb-v1.1-release.html">MWeb 1.1 release</a><br>
-<a href="mweb-v1.2-release.html">MWeb 1.2 release</a><br>
-<a href="use-goodsync-sync-mweb-static-websites.html">Use GoodSync synchronize MWeb&rsquo;s static websites to FTP,SFTP,WebDAV,Amazon S3 automatically</a></p>
-
-<h2 id="toc_4">Introduction MWeb</h2>
-
-<p>MWeb is a markdown editor for static websites and blogs on OS X, like <a href="http://octopress.org/">Octopress</a> or <a href="http://jekyllrb.com/">Jekyll</a> but easy to use. You can write document with markdown,drag &amp; drop or paste photos to the editor, MWeb will automatically add markdown code and display photos in editor. You can choose some categories to organize the document, and build static websites and blogs <strong>One Click</strong>.</p>
-
-<p><img src="media/14189656825627/MWeb.jpg" alt="MWeb">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
+			<p>之前有写过如何用ForkLift这样的FTP软件自带的同步功能传到FTP，但是还是有点麻烦，昨天发现了一个非常好的软件GoodSync，它有非常强大的同步功能，而且还免费！</p>
 
 <span id="more"></span><!-- more -->
 
-<p style="text-align:center">
-<a target="_blank" onclick="ga('send','event','buy-mweb');" href="http://itunes.apple.com/app/mweb-markdown-editor-for-static/id954188948?ls=1&mt=12" target="_blank"><img src="media/14195170907881/icon_apple_store-download-small.png" width="180" /></a><br />OR &nbsp;<a target="_blank" onclick="ga('send','event','download-mweb');" href="media/14195170907881/MWeb-Lite.zip">Free Download MWeb Lite</a>
+<h2 id="toc_0">下载并安装GoodSync</h2>
 
-</p>
+<p>去这个网址：<a href="http://www.goodsync.com/">http://www.goodsync.com/</a> 免费下载GoodSync并安装。安装时要选择是否设置GoodSync Connect时，我选择是否：Do not setup GoodSync Connect。完成后点新建任务，就会新增一个同步任务。</p>
 
-<h2 id="toc_5">A markdown editor</h2>
+<h2 id="toc_1">选择要同步的文件夹</h2>
 
-<p>MWeb is a markdown editor support markdown syntax highlight, preview,syntax highlighting in fenced code blocks,Math ML,export to HTML/PDF, a custom editor theme, words counter, outline, autosave, full document versions and more.. It has two patterns:</p>
+<p>在左侧选择MWeb生成的静态网站所在的文件夹。如果您没有设置MWeb生成的静态网站的文件夹，默认在：</p>
 
-<ol>
-<li>Library pattern, you can organize documents with categories,drag &amp; drop or paste photos to the editor and display. You can build static websites and blogs. <code>CMD + L</code> to display the Library pattern. </li>
-<li>No library pattern, it just like <code>TextEdit</code> but has full markdown support like syntax highlight, preview, outline etc..</li>
-</ol>
+<pre><code>file:///Users/您的帐号/Library/Containers/com.coderforart.MWeb/Data/Documents/MWeb/LocalData/Site
+</code></pre>
 
-<p>￼￼￼￼￼￼￼￼￼￼￼￼<img src="media/14189656825627/MWeb-markdown-editor.jpg" alt="MWeb-markdown-editor">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
+<p>这个位置，在GoodSync的选择位置的窗口中勾选：<code>Show hidden Files/Floders</code> 才能找到这个位置。</p>
 
-<h2 id="toc_6">Drag &amp; drop or paste photos to the editor and display</h2>
+<h2 id="toc_2">选择要同步的目标位置</h2>
 
-<p>Drag &amp; drop or paste photo to the editor, the markdown code will automatically add and the photo will display in editor.</p>
+<p>在右侧选择要同步的目标位置，我这里选择FTP，如下图，可以看到GoodSync还支持SFTP、WebDAV、Amazon S3等非常多的同步服务。<br>
+<img src="media/14250057502319/14250078774218.jpg" alt="">￼￼</p>
 
-<p>￼￼￼￼￼￼￼￼￼<img src="media/14189656825627/MWeb-inset-photo.jpg" alt="MWeb-inset-photo">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼<br>
-￼￼￼￼￼￼￼￼￼￼￼￼</p>
+<p>点“连接”按钮，连上FTP后，选择FTP上要同步的文件夹，再点“选择”按钮。如果有跳出来提示，点“Yes”。</p>
 
-<h2 id="toc_7">Easy to build static websites and blogs</h2>
+<h2 id="toc_3">设置自动同步</h2>
 
-<p>Selected a category &ndash;&gt; Set to site, setting site name and description and just click <code>Build site</code>. click <code>Clear and rebuild site</code> button when the Theme is change. click <code>Preview site</code> button to preview. Just double click <code>Coder For Art</code> category and try.</p>
+<p>如下图：点“自动”按钮，设置当文件改变时就分析和同步。<br>
+<img src="media/14250057502319/14250082156068.jpg" alt="">￼￼</p>
 
-<p>￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼<img src="media/14187874991645/MWeb-build-static-websites-and-blogs-1-1-2.jpg" alt="MWeb-build-static-websites-and-blogs-1-1-2">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
+<p>点“确定”后就会开始分析和同步了。</p>
 
-<p>More info, please read this post: <a href="custom-site-theme-detail.html">Custom site theme or design you owner theme&hellip;</a></p>
+<p>之后当您每一次用MWeb “Build Site”时，如果有打开GoodSync，它就会自动同步了，非常方便，比Github还方便！</p>
 
-<h2 id="toc_8">Three view pattern</h2>
+<h2 id="toc_4">总结</h2>
 
-<p>Editor Only:<code>CMD + 1</code>, Two Panes:<code>CMD + 2</code>, Three Panes:<code>CMD + 3</code>. The editor area will not resize when the view pattern change.</p>
+<p>GoodSync的功能还有很多，比如说同步到SFTP、WebDAV、Amazon S3等等，非常强大而且还免费。</p>
 
-<p>￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼<img src="media/14189656825627/MWeb-view-pattern.jpg" alt="MWeb-view-pattern">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
-
-<h2 id="toc_9">Preview, Share,Save as PDF, More Screenshot</h2>
-
-<p>Preview：<code>CMD + R</code>，Close Preview：<code>CMD + W</code> </p>
-
-<p><img src="media/14187874991645/MWeb-preview-share-1-1.jpg" alt="MWeb-preview-share-1-1">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
-
-<p>Save as PDF: Difference between in editor share button and Preview share button.</p>
-
-<p>More Screenshot: <a href="me-screenshot-and-in-yosemite.html">MWeb Screenshot and in Yosemite</a></p>
+<p>因为有GoodSync这个同步软件，MWeb变得更方便好用了。我现在也在考虑是否把CoderForArt搬到有FTP功能的主机，这样在国内访问会快很多，写新文章时也不用打github命令手动去上传了。然后本来是有考虑为MWeb加上自动同步功能或者另做一软件，现在看来也没有必要了。</p>
 
 		</div>
 	</article>

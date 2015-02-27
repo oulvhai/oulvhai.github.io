@@ -4,7 +4,7 @@
   <title><![CDATA[Coder For Art]]></title>
   <link href="http://coderforart.com/atom.xml" rel="self"/>
   <link href="http://coderforart.com/"/>
-  <updated>2015-02-10T21:12:28+08:00</updated>
+  <updated>2015-02-27T12:40:04+08:00</updated>
   <id>http://coderforart.com/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -12,6 +12,96 @@
   </author>
   <generator uri="http://www.coderforart.com/">CoderForArt</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Use GoodSync synchronize MWeb's static websites to FTP,SFTP,WebDAV,Amazon S3 automatically]]></title>
+    <link href="http://coderforart.com/use-goodsync-sync-mweb-static-websites.html"/>
+    <updated>2015-02-27T12:01:25+08:00</updated>
+    <id>http://coderforart.com/use-goodsync-sync-mweb-static-websites.html</id>
+    <content type="html"><![CDATA[
+<p>GoodSync is free powerful synchronize App!GoodSync syncs files between your computer, mobile devices, FTP, SFTP, Amazon S3, Google Drive, SkyDrive, WebDAV, Azure.</p>
+
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_0">Download and install GoodSync</h2>
+
+<p>Go to <a href="http://www.goodsync.com/">http://www.goodsync.com/</a> download GoodSync and install. I checked <q>Do not setup GoodSync Connect</q> and finish install.</p>
+
+<p>Click <q>Create a New Job</q> button to create a new synchronize job. </p>
+
+<h2 id="toc_1">Select sync path</h2>
+
+<p>Select MWeb build site path for the left panel.<br>
+If you didn&rsquo;t change MWeb build site path,the default path is:</p>
+
+<pre><code>file:///Users/You Account/Library/Containers/com.coderforart.MWeb/Data/Documents/MWeb/LocalData/Site
+</code></pre>
+
+<p>To find this path, you must checked <code>Show hidden Files/Floders</code>.</p>
+
+<h2 id="toc_2">Select sync to path</h2>
+
+<p>Select sync to path for the right panel.I choose sync to FTP.<br>
+<img src="media/14250096857643/14250109782773.jpg" alt="">￼￼￼</p>
+
+<h2 id="toc_3">Enable automatically synchronize</h2>
+
+<p>Click <q>auto</q> button,enable On File Change: Analyze,Sync. Click <q>OK</q>.<br>
+<img src="media/14250096857643/14250112704266.jpg" alt="">￼￼￼</p>
+
+<p>All is OK!! <br>
+When you click <q>Build site</q> button in MWeb, GoodSync will automatically synchronize your static website to FTP.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[使用GoodSync把MWeb生成的静态网站自动同步到FTP、SFTP、WebDAV、Amazon S3等]]></title>
+    <link href="http://coderforart.com/use-goodsync-sync-mweb-static-websites-zh.html"/>
+    <updated>2015-02-27T10:55:50+08:00</updated>
+    <id>http://coderforart.com/use-goodsync-sync-mweb-static-websites-zh.html</id>
+    <content type="html"><![CDATA[
+<p>之前有写过如何用ForkLift这样的FTP软件自带的同步功能传到FTP，但是还是有点麻烦，昨天发现了一个非常好的软件GoodSync，它有非常强大的同步功能，而且还免费！</p>
+
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_0">下载并安装GoodSync</h2>
+
+<p>去这个网址：<a href="http://www.goodsync.com/">http://www.goodsync.com/</a> 免费下载GoodSync并安装。安装时要选择是否设置GoodSync Connect时，我选择是否：Do not setup GoodSync Connect。完成后点新建任务，就会新增一个同步任务。</p>
+
+<h2 id="toc_1">选择要同步的文件夹</h2>
+
+<p>在左侧选择MWeb生成的静态网站所在的文件夹。如果您没有设置MWeb生成的静态网站的文件夹，默认在：</p>
+
+<pre><code>file:///Users/您的帐号/Library/Containers/com.coderforart.MWeb/Data/Documents/MWeb/LocalData/Site
+</code></pre>
+
+<p>这个位置，在GoodSync的选择位置的窗口中勾选：<code>Show hidden Files/Floders</code> 才能找到这个位置。</p>
+
+<h2 id="toc_2">选择要同步的目标位置</h2>
+
+<p>在右侧选择要同步的目标位置，我这里选择FTP，如下图，可以看到GoodSync还支持SFTP、WebDAV、Amazon S3等非常多的同步服务。<br>
+<img src="media/14250057502319/14250078774218.jpg" alt="">￼￼</p>
+
+<p>点“连接”按钮，连上FTP后，选择FTP上要同步的文件夹，再点“选择”按钮。如果有跳出来提示，点“Yes”。</p>
+
+<h2 id="toc_3">设置自动同步</h2>
+
+<p>如下图：点“自动”按钮，设置当文件改变时就分析和同步。<br>
+<img src="media/14250057502319/14250082156068.jpg" alt="">￼￼</p>
+
+<p>点“确定”后就会开始分析和同步了。</p>
+
+<p>之后当您每一次用MWeb “Build Site”时，如果有打开GoodSync，它就会自动同步了，非常方便，比Github还方便！</p>
+
+<h2 id="toc_4">总结</h2>
+
+<p>GoodSync的功能还有很多，比如说同步到SFTP、WebDAV、Amazon S3等等，非常强大而且还免费。</p>
+
+<p>因为有GoodSync这个同步软件，MWeb变得更方便好用了。我现在也在考虑是否把CoderForArt搬到有FTP功能的主机，这样在国内访问会快很多，写新文章时也不用打github命令手动去上传了。然后本来是有考虑为MWeb加上自动同步功能或者另做一软件，现在看来也没有必要了。</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[MWeb 1.2 release]]></title>
@@ -181,25 +271,25 @@
 <p>这样就可以备份到任何网盘了。</p>
 
 <p>您也可以把你的网站传到dropbox上，再分享出来，因为dropbox支持直接显示HTML，所以其它人就可以很方便查看。MWeb之后也会增加一些其他类型用途的主题模板。下面说一下如何找到MWeb生成的网站的位置，如图。<br>
-<img src="media/14224153855854/14224159407048.jpg" alt="">￼￼￼￼￼￼<br>
+<img src="media/14224153855854/14224159407048.jpg" alt="">￼￼￼￼￼￼￼<br>
 如果你觉得MWeb默认的位置比较不好，您可以改变MWeb网站输出的文件夹，如图我把输出的文件夹改到我的<code>Documents/MWebSites</code>下了。<br>
-<img src="media/14224153855854/14224164068185.jpg" alt="">￼￼￼￼￼￼</p>
+<img src="media/14224153855854/14224164068185.jpg" alt="">￼￼￼￼￼￼￼</p>
 
 <p>这样话就比较好找了。</p>
 
 <h2 id="toc_0">发布到github</h2>
 
 <p>github目前应该是最好的提供免费博客、网站服务的公司了（当然这其实并不是github的想法）。如果你有了github的帐号后只需要新增一个 <code>Github repository</code>，名称为<code>username.github.io</code>,如图<br>
-<img src="media/14224153855854/14224167094764.jpg" alt="">￼￼￼￼￼￼</p>
+<img src="media/14224153855854/14224167094764.jpg" alt="">￼￼￼￼￼￼￼</p>
 
 <p>然后会看到这页：<br>
-<img src="media/14224153855854/14224167472996.jpg" alt="">￼￼￼￼￼￼</p>
+<img src="media/14224153855854/14224167472996.jpg" alt="">￼￼￼￼￼￼￼</p>
 
 <p>这样就简单了，先进入MWeb生成的网站的所在文件夹（如上面所说，在MWeb中点<code>Show in finder</code>），我这里是选择 <code>Coder For Art</code> 然后 <code>CMD+C</code>。如图：<br>
-<img src="media/14224153855854/14224170128740.jpg" alt="">￼￼￼￼￼￼</p>
+<img src="media/14224153855854/14224170128740.jpg" alt="">￼￼￼￼￼￼￼</p>
 
 <p>然后打开终端工具(Terminal)，打<code>cd</code> （注意cd后带一空格），然后<code>CMD+V</code>，然后Enter，如图：<br>
-<img src="media/14224153855854/14224172504947.jpg" alt="">￼￼￼￼￼￼</p>
+<img src="media/14224153855854/14224172504947.jpg" alt="">￼￼￼￼￼￼￼</p>
 
 <p>然后再分别打入上边github提示的命令样本，注意我这边有改动到喔。再注意，如果你先前没有在MWeb中<code>Build site</code>，要先生成一下。</p>
 
@@ -212,8 +302,8 @@ git push -u origin master
 </code></pre>
 
 <p>效果如图：<br>
-<img src="media/14224153855854/14224176047741.jpg" alt="">￼￼￼￼￼￼<br>
-<img src="media/14224153855854/14224181872446.jpg" alt="">￼￼￼￼￼￼</p>
+<img src="media/14224153855854/14224176047741.jpg" alt="">￼￼￼￼￼￼￼<br>
+<img src="media/14224153855854/14224181872446.jpg" alt="">￼￼￼￼￼￼￼</p>
 
 <p>可以看到已经传成功了，<a href="http://oimotis.github.io/">http://oimotis.github.io/</a> 直接用这个网址就可以浏览了。</p>
 
@@ -227,10 +317,10 @@ git push -u origin master
 </code></pre>
 
 <p>效果如图：<br>
-<img src="media/14224153855854/14224187391174.jpg" alt="">￼￼￼￼￼￼</p>
+<img src="media/14224153855854/14224187391174.jpg" alt="">￼￼￼￼￼￼￼</p>
 
 <p>然后在域名中设定CNAME到<code>oimotis.github.io</code>（oimotis要换成你的github用户名）即可。 如图，这是我上边的设置<br>
-<img src="media/14224153855854/14224192721298.jpg" alt="">￼￼￼￼￼￼</p>
+<img src="media/14224153855854/14224192721298.jpg" alt="">￼￼￼￼￼￼￼</p>
 
 <p>注意，我并没有真设置喔，所以 blog.coderforart.com 是无效的。<br>
 我的网站<a href="http://coderforart.com">http://coderforart.com</a>是设定CNAME文件的内容为：coderforart.com，CNAME的host为 www, POINTS TO:为 oulvhai.github.io，然后还要把 A Record（A记录）设置为 <code>192.30.252.153</code> 和 <code>192.30.252.154</code> 才行。</p>
@@ -247,6 +337,8 @@ git push -u origin master
 <p>对于一般用户来说，github可能比较麻烦，还是FTP简单。就直接传上FTP即可。如果你是在用 ForkLift 或者 Yummy FTP 这种有 可以自动同步本地和服务器端的文件夹的功能的FTP就更好用了，比github方便多了。具体我就不介绍了。</p>
 
 <p><strong>2/3更新</strong> FTP上传可以看看这篇 <a href="aliyun-net-cn-free-web-host-express.html">万网（阿里云）免费虚拟主机体验</a></p>
+
+<p><strong>2/27更新</strong> <a href="use-goodsync-sync-mweb-static-websites-zh.html">使用GoodSync把MWeb生成的静态网站自动同步到FTP、SFTP、WebDAV、Amazon S3等</a></p>
 
 ]]></content>
   </entry>
@@ -1463,13 +1555,14 @@ If you can&rsquo;t find the answer, please send feedback to me: Help &ndash;&gt;
 <p><a href="custom-site-theme-detail.html">Custom site theme or design you owner theme&hellip;</a><br>
 <a href="me-screenshot-and-in-yosemite.html">MWeb Screenshot and in Yosemite</a><br>
 <a href="mweb-v1.1-release.html">MWeb 1.1 release</a><br>
-<a href="mweb-v1.2-release.html">MWeb 1.2 release</a></p>
+<a href="mweb-v1.2-release.html">MWeb 1.2 release</a><br>
+<a href="use-goodsync-sync-mweb-static-websites.html">Use GoodSync synchronize MWeb&rsquo;s static websites to FTP,SFTP,WebDAV,Amazon S3 automatically</a></p>
 
 <h2 id="toc_4">Introduction MWeb</h2>
 
 <p>MWeb is a markdown editor for static websites and blogs on OS X, like <a href="http://octopress.org/">Octopress</a> or <a href="http://jekyllrb.com/">Jekyll</a> but easy to use. You can write document with markdown,drag &amp; drop or paste photos to the editor, MWeb will automatically add markdown code and display photos in editor. You can choose some categories to organize the document, and build static websites and blogs <strong>One Click</strong>.</p>
 
-<p><img src="media/14189656825627/MWeb.jpg" alt="MWeb">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
+<p><img src="media/14189656825627/MWeb.jpg" alt="MWeb">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
 
 <span id="more"></span><!-- more -->
 
@@ -1487,20 +1580,20 @@ If you can&rsquo;t find the answer, please send feedback to me: Help &ndash;&gt;
 <li>No library pattern, it just like <code>TextEdit</code> but has full markdown support like syntax highlight, preview, outline etc..</li>
 </ol>
 
-<p>￼￼￼￼￼￼￼￼￼￼￼￼<img src="media/14189656825627/MWeb-markdown-editor.jpg" alt="MWeb-markdown-editor">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
+<p>￼￼￼￼￼￼￼￼￼￼￼￼<img src="media/14189656825627/MWeb-markdown-editor.jpg" alt="MWeb-markdown-editor">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
 
 <h2 id="toc_6">Drag &amp; drop or paste photos to the editor and display</h2>
 
 <p>Drag &amp; drop or paste photo to the editor, the markdown code will automatically add and the photo will display in editor.</p>
 
-<p>￼￼￼￼￼￼￼￼￼<img src="media/14189656825627/MWeb-inset-photo.jpg" alt="MWeb-inset-photo">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼<br>
+<p>￼￼￼￼￼￼￼￼￼<img src="media/14189656825627/MWeb-inset-photo.jpg" alt="MWeb-inset-photo">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼<br>
 ￼￼￼￼￼￼￼￼￼￼￼￼</p>
 
 <h2 id="toc_7">Easy to build static websites and blogs</h2>
 
 <p>Selected a category &ndash;&gt; Set to site, setting site name and description and just click <code>Build site</code>. click <code>Clear and rebuild site</code> button when the Theme is change. click <code>Preview site</code> button to preview. Just double click <code>Coder For Art</code> category and try.</p>
 
-<p>￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼<img src="media/14187874991645/MWeb-build-static-websites-and-blogs-1-1-2.jpg" alt="MWeb-build-static-websites-and-blogs-1-1-2">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
+<p>￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼<img src="media/14187874991645/MWeb-build-static-websites-and-blogs-1-1-2.jpg" alt="MWeb-build-static-websites-and-blogs-1-1-2">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
 
 <p>More info, please read this post: <a href="custom-site-theme-detail.html">Custom site theme or design you owner theme&hellip;</a></p>
 
@@ -1508,13 +1601,13 @@ If you can&rsquo;t find the answer, please send feedback to me: Help &ndash;&gt;
 
 <p>Editor Only:<code>CMD + 1</code>, Two Panes:<code>CMD + 2</code>, Three Panes:<code>CMD + 3</code>. The editor area will not resize when the view pattern change.</p>
 
-<p>￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼<img src="media/14189656825627/MWeb-view-pattern.jpg" alt="MWeb-view-pattern">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
+<p>￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼<img src="media/14189656825627/MWeb-view-pattern.jpg" alt="MWeb-view-pattern">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
 
 <h2 id="toc_9">Preview, Share,Save as PDF, More Screenshot</h2>
 
 <p>Preview：<code>CMD + R</code>，Close Preview：<code>CMD + W</code> </p>
 
-<p><img src="media/14187874991645/MWeb-preview-share-1-1.jpg" alt="MWeb-preview-share-1-1">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
+<p><img src="media/14187874991645/MWeb-preview-share-1-1.jpg" alt="MWeb-preview-share-1-1">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
 
 <p>Save as PDF: Difference between in editor share button and Preview share button.</p>
 
@@ -1548,13 +1641,13 @@ If you can&rsquo;t find the answer, please send feedback to me: Help &ndash;&gt;
 <a href="mweb-v1.1-release-zh.html">MWeb 1.1 版更新说明</a><br>
 <a href="mweb-v1.2-release-zh.html">MWeb 1.2 版更新说明</a><br>
 <a href="sync-webistes-to-github-or-ftp-zh.html">把生成的静态网站发布到github或FTP</a><br>
- <a href="aliyun-net-cn-free-web-host-express.html">万网（阿里云）免费虚拟主机体验</a></p>
+<a href="use-goodsync-sync-mweb-static-websites-zh.html">使用GoodSync把MWeb生成的静态网站自动同步到FTP、SFTP、WebDAV、Amazon S3等</a></p>
 
 <h2 id="toc_4">MWeb简介</h2>
 
 <p>MWeb是一个Markdown编辑器和全静态网站、博客生成工具，像<a href="http://octopress.org/">Octopress</a>和 <a href="http://jekyllrb.com/">Jekyll</a>，但是更简单易用。MWeb很合适经常用Markdown写文档、日记和经常要插入图片和大段代码的朋友。</p>
 
-<p><img src="media/14189656825627/MWeb.jpg" alt="MWeb">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
+<p><img src="media/14189656825627/MWeb.jpg" alt="MWeb">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
 
 <span id="more"></span><!-- more -->
 
@@ -1572,20 +1665,20 @@ If you can&rsquo;t find the answer, please send feedback to me: Help &ndash;&gt;
 <li>一种是外部文文件模式，文件夹的Markdown文檔直接用MWeb打开就是这种模式，区别是无拖拽插入图片功能，不能生成网站。</li>
 </ul>
 
-<p>￼￼￼￼￼￼￼￼￼￼￼￼<img src="media/14189656825627/MWeb-markdown-editor.jpg" alt="MWeb-markdown-editor">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
+<p>￼￼￼￼￼￼￼￼￼￼￼￼<img src="media/14189656825627/MWeb-markdown-editor.jpg" alt="MWeb-markdown-editor">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
 
 <h2 id="toc_6">插入图片并显示在编辑器内</h2>
 
 <p>MWeb的设计就是为了能方便地用Markdown记日记、简单的管理日记并生成博客。而写日记时插入图片的功能是经常用到的。一般的Markdown工具如果要插入图片，要先丢到网上。像Ulysses是可以方便插入图片，但是要双击或者预览时才能看到。MWeb设计成可拖拽或直接粘贴即可插入图片并显示出来，以方便查看。</p>
 
-<p>￼￼￼￼￼￼￼￼￼<img src="media/14189656825627/MWeb-inset-photo.jpg" alt="MWeb-inset-photo">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼<br>
+<p>￼￼￼￼￼￼￼￼￼<img src="media/14189656825627/MWeb-inset-photo.jpg" alt="MWeb-inset-photo">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼<br>
 ￼￼￼￼￼￼￼￼￼￼￼</p>
 
 <h2 id="toc_7">一键将分类生成全静态的网站和博客</h2>
 
 <p>MWeb的分类管理的设计跟博客的结构差不多，一个文档可以选择多个分类。将分类变成博客的方法为：选择该分类 &ndash;&gt; Set to site。设定好博客的名称和描述等等，点：<code>Build site</code> 按钮即可。如果有改动到 <code>Theme</code> 或者有任何没有在预料之中的结果，试试点 <code>Clear and rebuild site</code> 按钮。 点 <code>Preview site</code> 按钮可以预览生成的博客。<a href="http://coderforart.com/">http://coderforart.com/</a> 网站就是用MWeb生成的。</p>
 
-<p><img src="media/14187874991645/MWeb-build-static-websites-and-blogs-1-1-2.jpg" alt="MWeb-build-static-websites-and-blogs-1-1-2">￼￼￼￼￼￼￼￼￼￼<br>
+<p><img src="media/14187874991645/MWeb-build-static-websites-and-blogs-1-1-2.jpg" alt="MWeb-build-static-websites-and-blogs-1-1-2">￼￼￼￼￼￼￼￼￼￼￼<br>
 ￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼<br>
 MWeb还可以自定网站和博客主题，增加评论和分享功能，请参考这个网址: <a href="custom-site-theme-detail-zh.html">自定网站主题、增加评论和分享和设计新主题&hellip;</a></p>
 
@@ -1593,13 +1686,13 @@ MWeb还可以自定网站和博客主题，增加评论和分享功能，请参�
 
 <p>Editor Only:<code>CMD + 1</code>, Two Pane:<code>CMD + 2</code>, There Pane:<code>CMD + 3</code>。我觉得改变视图时，编辑器区域大小也同时改变不大爽，所以改变视图时就直接改变窗口大小，而编辑器区域大小会保持不变。</p>
 
-<p>￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼<img src="media/14189656825627/MWeb-view-pattern.jpg" alt="MWeb-view-pattern">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
+<p>￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼<img src="media/14189656825627/MWeb-view-pattern.jpg" alt="MWeb-view-pattern">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
 
 <h2 id="toc_9">预览、分享功能，更多截图</h2>
 
 <p>预览快捷键：<code>CMD + R</code>，关闭预览：<code>CMD + W</code> </p>
 
-<p><img src="media/14187874991645/MWeb-preview-share-1-1.jpg" alt="MWeb-preview-share-1-1">￼￼￼￼￼￼￼￼￼￼<br>
+<p><img src="media/14187874991645/MWeb-preview-share-1-1.jpg" alt="MWeb-preview-share-1-1">￼￼￼￼￼￼￼￼￼￼￼<br>
 ￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
 
 <p>更多截图: <a href="me-screenshot-and-in-yosemite.html">MWeb更多截图和在Yosemite下的效果</a></p>
@@ -1847,1212 +1940,6 @@ Content in the first column | Content in the second column
 <h2 id="toc_18">Reference:</h2>
 
 <p><a href="https://guides.github.com/features/mastering-markdown/">https://guides.github.com/features/mastering-markdown/</a></p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Markdown 语法简单说明]]></title>
-    <link href="http://coderforart.com/markdown-syntax-guide-suggest-version-zh.html"/>
-    <updated>2014-12-16T21:57:10+08:00</updated>
-    <id>http://coderforart.com/markdown-syntax-guide-suggest-version-zh.html</id>
-    <content type="html"><![CDATA[
-<h2 id="toc_0">标题</h2>
-
-<pre><code># 第一级标题 `&lt;h1&gt;` 
-## 第二级标题 `&lt;h2&gt;` 
-###### 第六级标题 `&lt;h6&gt;` 
-</code></pre>
-
-<span id="more"></span><!-- more -->
-
-<h1 id="toc_1">第一级标题 <code>&lt;h1&gt;</code></h1>
-
-<h2 id="toc_2">第二级标题 <code>&lt;h2&gt;</code></h2>
-
-<h6 id="toc_3">第六级标题 <code>&lt;h6&gt;</code></h6>
-
-<!-- more -->
-
-<h2 id="toc_4">强调</h2>
-
-<pre><code>*这些文字会生成`&lt;em&gt;`*
-_这些文字会生成`&lt;u&gt;`_
-
-**这些文字会生成`&lt;strong&gt;`**
-__这些文字会生成`&lt;strong&gt;`__
-</code></pre>
-
-<p><em>这些文字会生成<code>&lt;em&gt;</code></em><br>
-<u>这些文字会生成<code>&lt;u&gt;</code></u></p>
-
-<p><strong>这些文字会生成<code>&lt;strong&gt;</code></strong><br>
-<strong>这些文字会生成<code>&lt;strong&gt;</code></strong></p>
-
-<h2 id="toc_5">换行</h2>
-
-<p>四个及以上空格加回车。<br>
-如果不想打这么多空格，只要回车就为换行，请勾选：MWeb&ndash;&gt;Preferences&ndash;&gt;Themes&ndash;&gt;Translate newlines to <code>&lt;br&gt;</code> tags</p>
-
-<h2 id="toc_6">列表</h2>
-
-<h3 id="toc_7">无序列表</h3>
-
-<pre><code>* 项目一 无序列表 `* + 空格键`
-* 项目二
-    * 项目二的子项目一 无序列表 `* + TAB + 空格键`
-    * 项目二的子项目二
-</code></pre>
-
-<ul>
-<li>项目一 无序列表 <code>* + 空格键</code></li>
-<li>项目二
-
-<ul>
-<li>项目二的子项目一 无序列表 <code>* + TAB + 空格键</code></li>
-<li>项目二的子项目二</li>
-</ul></li>
-</ul>
-
-<h3 id="toc_8">有序列表</h3>
-
-<pre><code>1. 项目一 有序列表 `数字 + . + 空格键`
-2. 项目二 
-3. 项目三
-    1. 项目三的子项目一 有序列表 `数字 + . + TAB + 空格键`
-    2. 项目三的子项目二
-</code></pre>
-
-<ol>
-<li>项目一 有序列表 <code>数字 + . + 空格键</code></li>
-<li>项目二 </li>
-<li>项目三
-
-<ol>
-<li>项目三的子项目一 有序列表 <code>数字 + . + TAB + 空格键</code></li>
-<li>项目三的子项目二</li>
-</ol></li>
-</ol>
-
-<h2 id="toc_9">图片</h2>
-
-<pre><code>![GitHub set up](https://help.github.com/assets/images/site/set-up-git.gif)
-格式: ![Alt Text](url)
-</code></pre>
-
-<p><img src="https://help.github.com/assets/images/site/set-up-git.gif" alt="GitHub set up"><br>
-格式: <img src="url" alt="Alt Text"></p>
-
-<h2 id="toc_10">链接</h2>
-
-<pre><code>email &lt;example@example.com&gt;
-[GitHub](http://github.com)
-自动生成连接  &lt;http://www.github.com/&gt;
-</code></pre>
-
-<p>Email 连接： <a href="mailto:example@example.com">example@example.com</a><br>
-<a href="http://github.com">连接标题Github网站</a><br>
-自动生成连接像： <a href="http://www.github.com/">http://www.github.com/</a> 这样</p>
-
-<h2 id="toc_11">区块引用</h2>
-
-<pre><code>某某说:
-&gt; 第一行引用
-&gt; 第二行费用文字
-</code></pre>
-
-<p>某某说:</p>
-
-<blockquote>
-<p>第一行引用<br>
-第二行费用文字</p>
-</blockquote>
-
-<h2 id="toc_12">行内代码</h2>
-
-<pre><code>像这样即可：`&lt;addr&gt;` `code`
-</code></pre>
-
-<p>像这样即可：<code>&lt;addr&gt;</code> <code>code</code></p>
-
-<h2 id="toc_13">多行或者一段代码</h2>
-
-<pre><code>```js
-function fancyAlert(arg) {
-  if(arg) {
-    $.facebox({div:&#39;#foo&#39;})
-  }
-
-}
-```
-</code></pre>
-
-<pre><code class="js">function fancyAlert(arg) {
-    if(arg) {
-        $.facebox({div:&#39;#foo&#39;})
-    }
-
-}
-</code></pre>
-
-<h2 id="toc_14">表格</h2>
-
-<pre><code>第一格表头 | 第二格表头
---------- | -------------
-内容单元格 第一列第一格 | 内容单元格第二列第一格
-内容单元格 第一列第二格 多加文字 | 内容单元格第二列第二格
-</code></pre>
-
-<p>以下即会生成一个表格：</p>
-
-<table><thead>
-<tr>
-<th>第一格表头</th>
-<th>第二格表头</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>内容单元格 第一列第一格</td>
-<td>内容单元格第二列第一格</td>
-</tr>
-<tr>
-<td>内容单元格 第一列第二格 多加文字</td>
-<td>内容单元格第二列第二格</td>
-</tr>
-</tbody></table>
-
-<h2 id="toc_15">删除线</h2>
-
-<pre><code>加删除线像这样用： ~~删除这些~~
-</code></pre>
-
-<p>加删除线像这样用： <del>删除这些</del></p>
-
-<h2 id="toc_16">分隔线</h2>
-
-<p>以下三种方式都可以生成分隔线：</p>
-
-<pre><code>***
-
-*****
-
-- - -
-</code></pre>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<h2 id="toc_17">注释和阅读更多</h2>
-
-<!-- comment -->
-
-<!-- more -->
-
-<p>Actions-&gt;Insert Read More Comment <em>或者</em> <code>Command + .</code><br>
-<strong>注</strong> 阅读更多的功能只用在生成网站或博客时。</p>
-
-<h2 id="toc_18">此文参考:</h2>
-
-<p><a href="https://guides.github.com/features/mastering-markdown/">https://guides.github.com/features/mastering-markdown/</a></p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Markdown syntax guide full version]]></title>
-    <link href="http://coderforart.com/markdown-syntax-guide-full-version.html"/>
-    <updated>2014-12-16T20:10:44+08:00</updated>
-    <id>http://coderforart.com/markdown-syntax-guide-full-version.html</id>
-    <content type="html"><![CDATA[
-<ul>
-<li><a href="#overview">Overview</a>
-
-<ul>
-<li><a href="#philosophy">Philosophy</a></li>
-<li><a href="#html">Inline HTML</a></li>
-<li><a href="#autoescape">Automatic Escaping for Special Characters</a></li>
-</ul></li>
-<li><a href="#block">Block Elements</a>
-
-<ul>
-<li><a href="#p">Paragraphs and Line Breaks</a></li>
-<li><a href="#header">Headers</a></li>
-<li><a href="#blockquote">Blockquotes</a></li>
-<li><a href="#list">Lists</a></li>
-<li><a href="#precode">Code Blocks</a></li>
-<li><a href="#hr">Horizontal Rules</a></li>
-</ul></li>
-<li><a href="#span">Span Elements</a>
-
-<ul>
-<li><a href="#link">Links</a></li>
-<li><a href="#em">Emphasis</a></li>
-<li><a href="#code">Code</a></li>
-<li><a href="#img">Images</a></li>
-</ul></li>
-<li><a href="#misc">Miscellaneous</a>
-
-<ul>
-<li><a href="#backslash">Backslash Escapes</a></li>
-<li><a href="#autolink">Automatic Links</a></li>
-</ul></li>
-</ul>
-
-<span id="more"></span><!-- more -->
-
-<p><strong>Note:</strong> This document is itself written using Markdown; you<br>
-can <a href="/projects/markdown/syntax.text">see the source for it by adding &lsquo;.text&rsquo; to the URL</a>.</p>
-
-<hr>
-
-<h2 id="toc_0">Overview</h2>
-
-<p><a id="overview"></a></p>
-
-<h3 id="toc_1">Philosophy</h3>
-
-<p><a id="philosophy"></a></p>
-
-<p>Markdown is intended to be as easy-to-read and easy-to-write as is feasible.</p>
-
-<p>Readability, however, is emphasized above all else. A Markdown-formatted<br>
-document should be publishable as-is, as plain text, without looking<br>
-like it&rsquo;s been marked up with tags or formatting instructions. While<br>
-Markdown&rsquo;s syntax has been influenced by several existing text-to-HTML<br>
-filters &ndash; including <a href="http://docutils.sourceforge.net/mirror/setext.html">Setext</a>, <a href="http://www.aaronsw.com/2002/atx/">atx</a>, <a href="http://textism.com/tools/textile/">Textile</a>, <a href="http://docutils.sourceforge.net/rst.html">reStructuredText</a>,<br>
-<a href="http://www.triptico.com/software/grutatxt.html">Grutatext</a>, and <a href="http://ettext.taint.org/doc/">EtText</a> &ndash; the single biggest source of<br>
-inspiration for Markdown&rsquo;s syntax is the format of plain text email.</p>
-
-<p>To this end, Markdown&rsquo;s syntax is comprised entirely of punctuation<br>
-characters, which punctuation characters have been carefully chosen so<br>
-as to look like what they mean. E.g., asterisks around a word actually<br>
-look like *emphasis*. Markdown lists look like, well, lists. Even<br>
-blockquotes look like quoted passages of text, assuming you&rsquo;ve ever<br>
-used email.</p>
-
-<h3 id="toc_2">Inline HTML</h3>
-
-<p><a id="html"></a></p>
-
-<p>Markdown&rsquo;s syntax is intended for one purpose: to be used as a<br>
-format for <em>writing</em> for the web.</p>
-
-<p>Markdown is not a replacement for HTML, or even close to it. Its<br>
-syntax is very small, corresponding only to a very small subset of<br>
-HTML tags. The idea is <em>not</em> to create a syntax that makes it easier<br>
-to insert HTML tags. In my opinion, HTML tags are already easy to<br>
-insert. The idea for Markdown is to make it easy to read, write, and<br>
-edit prose. HTML is a <em>publishing</em> format; Markdown is a <em>writing</em><br>
-format. Thus, Markdown&rsquo;s formatting syntax only addresses issues that<br>
-can be conveyed in plain text.</p>
-
-<p>For any markup that is not covered by Markdown&rsquo;s syntax, you simply<br>
-use HTML itself. There&rsquo;s no need to preface it or delimit it to<br>
-indicate that you&rsquo;re switching from Markdown to HTML; you just use<br>
-the tags.</p>
-
-<p>The only restrictions are that block-level HTML elements &ndash; e.g. <code>&lt;div&gt;</code>,<br>
-<code>&lt;table&gt;</code>, <code>&lt;pre&gt;</code>, <code>&lt;p&gt;</code>, etc. &ndash; must be separated from surrounding<br>
-content by blank lines, and the start and end tags of the block should<br>
-not be indented with tabs or spaces. Markdown is smart enough not<br>
-to add extra (unwanted) <code>&lt;p&gt;</code> tags around HTML block-level tags.</p>
-
-<p>For example, to add an HTML table to a Markdown article:</p>
-
-<pre><code>This is a regular paragraph.
-
-&lt;table&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Foo&lt;/td&gt;
-    &lt;/tr&gt;
-&lt;/table&gt;
-
-This is another regular paragraph.
-</code></pre>
-
-<p>Note that Markdown formatting syntax is not processed within block-level<br>
-HTML tags. E.g., you can&rsquo;t use Markdown-style <code>*emphasis*</code> inside an<br>
-HTML block.</p>
-
-<p>Span-level HTML tags &ndash; e.g. <code>&lt;span&gt;</code>, <code>&lt;cite&gt;</code>, or <code>&lt;del&gt;</code> &ndash; can be<br>
-used anywhere in a Markdown paragraph, list item, or header. If you<br>
-want, you can even use HTML tags instead of Markdown formatting; e.g. if<br>
-you&rsquo;d prefer to use HTML <code>&lt;a&gt;</code> or <code>&lt;img&gt;</code> tags instead of Markdown&rsquo;s<br>
-link or image syntax, go right ahead.</p>
-
-<p>Unlike block-level HTML tags, Markdown syntax <em>is</em> processed within<br>
-span-level tags.</p>
-
-<h3 id="toc_3">Automatic Escaping for Special Characters</h3>
-
-<p><a id="autoescape"></a></p>
-
-<p>In HTML, there are two characters that demand special treatment: <code>&lt;</code><br>
-and <code>&amp;</code>. Left angle brackets are used to start tags; ampersands are<br>
-used to denote HTML entities. If you want to use them as literal<br>
-characters, you must escape them as entities, e.g. <code>&amp;lt;</code>, and<br>
-<code>&amp;amp;</code>.</p>
-
-<p>Ampersands in particular are bedeviling for web writers. If you want to<br>
-write about &lsquo;AT&amp;T&rsquo;, you need to write &lsquo;<code>AT&amp;amp;T</code>&rsquo;. You even need to<br>
-escape ampersands within URLs. Thus, if you want to link to:</p>
-
-<pre><code>http://images.google.com/images?num=30&amp;q=larry+bird
-</code></pre>
-
-<p>you need to encode the URL as:</p>
-
-<pre><code>http://images.google.com/images?num=30&amp;amp;q=larry+bird
-</code></pre>
-
-<p>in your anchor tag <code>href</code> attribute. Needless to say, this is easy to<br>
-forget, and is probably the single most common source of HTML validation<br>
-errors in otherwise well-marked-up web sites.</p>
-
-<p>Markdown allows you to use these characters naturally, taking care of<br>
-all the necessary escaping for you. If you use an ampersand as part of<br>
-an HTML entity, it remains unchanged; otherwise it will be translated<br>
-into <code>&amp;amp;</code>.</p>
-
-<p>So, if you want to include a copyright symbol in your article, you can write:</p>
-
-<pre><code>&amp;copy;
-</code></pre>
-
-<p>and Markdown will leave it alone. But if you write:</p>
-
-<pre><code>AT&amp;T
-</code></pre>
-
-<p>Markdown will translate it to:</p>
-
-<pre><code>AT&amp;amp;T
-</code></pre>
-
-<p>Similarly, because Markdown supports <a href="#html">inline HTML</a>, if you use<br>
-angle brackets as delimiters for HTML tags, Markdown will treat them as<br>
-such. But if you write:</p>
-
-<pre><code>4 &lt; 5
-</code></pre>
-
-<p>Markdown will translate it to:</p>
-
-<pre><code>4 &amp;lt; 5
-</code></pre>
-
-<p>However, inside Markdown code spans and blocks, angle brackets and<br>
-ampersands are <em>always</em> encoded automatically. This makes it easy to use<br>
-Markdown to write about HTML code. (As opposed to raw HTML, which is a<br>
-terrible format for writing about HTML syntax, because every single <code>&lt;</code><br>
-and <code>&amp;</code> in your example code needs to be escaped.)</p>
-
-<hr>
-
-<h2 id="toc_4">Block Elements</h2>
-
-<p><a id="block"></a></p>
-
-<h3 id="toc_5">Paragraphs and Line Breaks</h3>
-
-<p><a id="p"></a></p>
-
-<p>A paragraph is simply one or more consecutive lines of text, separated<br>
-by one or more blank lines. (A blank line is any line that looks like a<br>
-blank line &ndash; a line containing nothing but spaces or tabs is considered<br>
-blank.) Normal paragraphs should not be indented with spaces or tabs.</p>
-
-<p>The implication of the <q>one or more consecutive lines of text</q> rule is<br>
-that Markdown supports <q>hard-wrapped</q> text paragraphs. This differs<br>
-significantly from most other text-to-HTML formatters (including Movable<br>
-Type&rsquo;s <q>Convert Line Breaks</q> option) which translate every line break<br>
-character in a paragraph into a <code>&lt;br /&gt;</code> tag.</p>
-
-<p>When you <em>do</em> want to insert a <code>&lt;br /&gt;</code> break tag using Markdown, you<br>
-end a line with two or more spaces, then type return.</p>
-
-<p>Yes, this takes a tad more effort to create a <code>&lt;br /&gt;</code>, but a simplistic<br>
-<q>every line break is a `<br />`</q> rule wouldn&rsquo;t work for Markdown.<br>
-Markdown&rsquo;s email-style <a href="#blockquote">blockquoting</a> and multi-paragraph <a href="#list">list items</a><br>
-work best &ndash; and look better &ndash; when you format them with hard breaks.</p>
-
-<h3 id="toc_6">Headers</h3>
-
-<p><a id="header"></a></p>
-
-<p>Markdown supports two styles of headers, <a href="http://docutils.sourceforge.net/mirror/setext.html">Setext</a> and <a href="http://www.aaronsw.com/2002/atx/">atx</a>.</p>
-
-<p>Setext-style headers are <q>underlined</q> using equal signs (for first-level<br>
-headers) and dashes (for second-level headers). For example:</p>
-
-<pre><code>This is an H1
-=============
-
-This is an H2
--------------
-</code></pre>
-
-<p>Any number of underlining <code>=</code>&rsquo;s or <code>-</code>&rsquo;s will work.</p>
-
-<p>Atx-style headers use 1-6 hash characters at the start of the line,<br>
-corresponding to header levels 1-6. For example:</p>
-
-<pre><code># This is an H1
-
-## This is an H2
-
-###### This is an H6
-</code></pre>
-
-<p>Optionally, you may <q>close</q> atx-style headers. This is purely<br>
-cosmetic &ndash; you can use this if you think it looks better. The<br>
-closing hashes don&rsquo;t even need to match the number of hashes<br>
-used to open the header. (The number of opening hashes<br>
-determines the header level.) :</p>
-
-<pre><code># This is an H1 #
-
-## This is an H2 ##
-
-### This is an H3 ######
-</code></pre>
-
-<h3 id="toc_7">Blockquotes</h3>
-
-<p><a id="blockquote"></a></p>
-
-<p>Markdown uses email-style <code>&gt;</code> characters for blockquoting. If you&rsquo;re<br>
-familiar with quoting passages of text in an email message, then you<br>
-know how to create a blockquote in Markdown. It looks best if you hard<br>
-wrap the text and put a <code>&gt;</code> before every line:</p>
-
-<pre><code>&gt; This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
-&gt; consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
-&gt; Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
-&gt; 
-&gt; Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
-&gt; id sem consectetuer libero luctus adipiscing.
-</code></pre>
-
-<p>Markdown allows you to be lazy and only put the <code>&gt;</code> before the first<br>
-line of a hard-wrapped paragraph:</p>
-
-<pre><code>&gt; This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
-consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
-Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
-
-&gt; Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
-id sem consectetuer libero luctus adipiscing.
-</code></pre>
-
-<p>Blockquotes can be nested (i.e. a blockquote-in-a-blockquote) by<br>
-adding additional levels of <code>&gt;</code>:</p>
-
-<pre><code>&gt; This is the first level of quoting.
-&gt;
-&gt; &gt; This is nested blockquote.
-&gt;
-&gt; Back to the first level.
-</code></pre>
-
-<p>Blockquotes can contain other Markdown elements, including headers, lists,<br>
-and code blocks:</p>
-
-<pre><code>&gt; ## This is a header.
-&gt; 
-&gt; 1.   This is the first list item.
-&gt; 2.   This is the second list item.
-&gt; 
-&gt; Here&#39;s some example code:
-&gt; 
-&gt;     return shell_exec(&quot;echo $input | $markdown_script&quot;);
-</code></pre>
-
-<p>Any decent text editor should make email-style quoting easy. For<br>
-example, with BBEdit, you can make a selection and choose Increase<br>
-Quote Level from the Text menu.</p>
-
-<h3 id="toc_8">Lists</h3>
-
-<p><a id="list"></a></p>
-
-<p>Markdown supports ordered (numbered) and unordered (bulleted) lists.</p>
-
-<p>Unordered lists use asterisks, pluses, and hyphens &ndash; interchangably<br>
-&ndash; as list markers:</p>
-
-<pre><code>*   Red
-*   Green
-*   Blue
-</code></pre>
-
-<p>is equivalent to:</p>
-
-<pre><code>+   Red
-+   Green
-+   Blue
-</code></pre>
-
-<p>and:</p>
-
-<pre><code>-   Red
--   Green
--   Blue
-</code></pre>
-
-<p>Ordered lists use numbers followed by periods:</p>
-
-<pre><code>1.  Bird
-2.  McHale
-3.  Parish
-</code></pre>
-
-<p>It&rsquo;s important to note that the actual numbers you use to mark the<br>
-list have no effect on the HTML output Markdown produces. The HTML<br>
-Markdown produces from the above list is:</p>
-
-<pre><code>&lt;ol&gt;
-&lt;li&gt;Bird&lt;/li&gt;
-&lt;li&gt;McHale&lt;/li&gt;
-&lt;li&gt;Parish&lt;/li&gt;
-&lt;/ol&gt;
-</code></pre>
-
-<p>If you instead wrote the list in Markdown like this:</p>
-
-<pre><code>1.  Bird
-1.  McHale
-1.  Parish
-</code></pre>
-
-<p>or even:</p>
-
-<pre><code>3. Bird
-1. McHale
-8. Parish
-</code></pre>
-
-<p>you&rsquo;d get the exact same HTML output. The point is, if you want to,<br>
-you can use ordinal numbers in your ordered Markdown lists, so that<br>
-the numbers in your source match the numbers in your published HTML.<br>
-But if you want to be lazy, you don&rsquo;t have to.</p>
-
-<p>If you do use lazy list numbering, however, you should still start the<br>
-list with the number 1. At some point in the future, Markdown may support<br>
-starting ordered lists at an arbitrary number.</p>
-
-<p>List markers typically start at the left margin, but may be indented by<br>
-up to three spaces. List markers must be followed by one or more spaces<br>
-or a tab.</p>
-
-<p>To make lists look nice, you can wrap items with hanging indents:</p>
-
-<pre><code>*   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-    Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
-    viverra nec, fringilla in, laoreet vitae, risus.
-*   Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
-    Suspendisse id sem consectetuer libero luctus adipiscing.
-</code></pre>
-
-<p>But if you want to be lazy, you don&rsquo;t have to:</p>
-
-<pre><code>*   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
-viverra nec, fringilla in, laoreet vitae, risus.
-*   Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
-Suspendisse id sem consectetuer libero luctus adipiscing.
-</code></pre>
-
-<p>If list items are separated by blank lines, Markdown will wrap the<br>
-items in <code>&lt;p&gt;</code> tags in the HTML output. For example, this input:</p>
-
-<pre><code>*   Bird
-*   Magic
-</code></pre>
-
-<p>will turn into:</p>
-
-<pre><code>&lt;ul&gt;
-&lt;li&gt;Bird&lt;/li&gt;
-&lt;li&gt;Magic&lt;/li&gt;
-&lt;/ul&gt;
-</code></pre>
-
-<p>But this:</p>
-
-<pre><code>*   Bird
-
-*   Magic
-</code></pre>
-
-<p>will turn into:</p>
-
-<pre><code>&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Bird&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Magic&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</code></pre>
-
-<p>List items may consist of multiple paragraphs. Each subsequent<br>
-paragraph in a list item must be indented by either 4 spaces<br>
-or one tab:</p>
-
-<pre><code>1.  This is a list item with two paragraphs. Lorem ipsum dolor
-    sit amet, consectetuer adipiscing elit. Aliquam hendrerit
-    mi posuere lectus.
-
-    Vestibulum enim wisi, viverra nec, fringilla in, laoreet
-    vitae, risus. Donec sit amet nisl. Aliquam semper ipsum
-    sit amet velit.
-
-2.  Suspendisse id sem consectetuer libero luctus adipiscing.
-</code></pre>
-
-<p>It looks nice if you indent every line of the subsequent<br>
-paragraphs, but here again, Markdown will allow you to be<br>
-lazy:</p>
-
-<pre><code>*   This is a list item with two paragraphs.
-
-    This is the second paragraph in the list item. You&#39;re
-only required to indent the first line. Lorem ipsum dolor
-sit amet, consectetuer adipiscing elit.
-
-*   Another item in the same list.
-</code></pre>
-
-<p>To put a blockquote within a list item, the blockquote&rsquo;s <code>&gt;</code><br>
-delimiters need to be indented:</p>
-
-<pre><code>*   A list item with a blockquote:
-
-    &gt; This is a blockquote
-    &gt; inside a list item.
-</code></pre>
-
-<p>To put a code block within a list item, the code block needs<br>
-to be indented <em>twice</em> &ndash; 8 spaces or two tabs:</p>
-
-<pre><code>*   A list item with a code block:
-
-        &lt;code goes here&gt;
-</code></pre>
-
-<p>It&rsquo;s worth noting that it&rsquo;s possible to trigger an ordered list by<br>
-accident, by writing something like this:</p>
-
-<pre><code>1986. What a great season.
-</code></pre>
-
-<p>In other words, a <em>number-period-space</em> sequence at the beginning of a<br>
-line. To avoid this, you can backslash-escape the period:</p>
-
-<pre><code>1986\. What a great season.
-</code></pre>
-
-<h3 id="toc_9">Code Blocks</h3>
-
-<p><a id="precode"></a></p>
-
-<p>Pre-formatted code blocks are used for writing about programming or<br>
-markup source code. Rather than forming normal paragraphs, the lines<br>
-of a code block are interpreted literally. Markdown wraps a code block<br>
-in both <code>&lt;pre&gt;</code> and <code>&lt;code&gt;</code> tags.</p>
-
-<p>To produce a code block in Markdown, simply indent every line of the<br>
-block by at least 4 spaces or 1 tab. For example, given this input:</p>
-
-<pre><code>This is a normal paragraph:
-
-    This is a code block.
-</code></pre>
-
-<p>Markdown will generate:</p>
-
-<pre><code>&lt;p&gt;This is a normal paragraph:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;This is a code block.
-&lt;/code&gt;&lt;/pre&gt;
-</code></pre>
-
-<p>One level of indentation &ndash; 4 spaces or 1 tab &ndash; is removed from each<br>
-line of the code block. For example, this:</p>
-
-<pre><code>Here is an example of AppleScript:
-
-    tell application &quot;Foo&quot;
-        beep
-    end tell
-</code></pre>
-
-<p>will turn into:</p>
-
-<pre><code>&lt;p&gt;Here is an example of AppleScript:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;tell application &quot;Foo&quot;
-    beep
-end tell
-&lt;/code&gt;&lt;/pre&gt;
-</code></pre>
-
-<p>A code block continues until it reaches a line that is not indented<br>
-(or the end of the article).</p>
-
-<p>Within a code block, ampersands (<code>&amp;</code>) and angle brackets (<code>&lt;</code> and <code>&gt;</code>)<br>
-are automatically converted into HTML entities. This makes it very<br>
-easy to include example HTML source code using Markdown &ndash; just paste<br>
-it and indent it, and Markdown will handle the hassle of encoding the<br>
-ampersands and angle brackets. For example, this:</p>
-
-<pre><code>    &lt;div class=&quot;footer&quot;&gt;
-        &amp;copy; 2004 Foo Corporation
-    &lt;/div&gt;
-</code></pre>
-
-<p>will turn into:</p>
-
-<pre><code>&lt;pre&gt;&lt;code&gt;&amp;lt;div class=&quot;footer&quot;&amp;gt;
-    &amp;amp;copy; 2004 Foo Corporation
-&amp;lt;/div&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-</code></pre>
-
-<p>Regular Markdown syntax is not processed within code blocks. E.g.,<br>
-asterisks are just literal asterisks within a code block. This means<br>
-it&rsquo;s also easy to use Markdown to write about Markdown&rsquo;s own syntax.</p>
-
-<h3 id="toc_10">Horizontal Rules</h3>
-
-<p><a id="hr"></a></p>
-
-<p>You can produce a horizontal rule tag (<code>&lt;hr /&gt;</code>) by placing three or<br>
-more hyphens, asterisks, or underscores on a line by themselves. If you<br>
-wish, you may use spaces between the hyphens or asterisks. Each of the<br>
-following lines will produce a horizontal rule:</p>
-
-<pre><code>* * *
-
-***
-
-*****
-
-- - -
-
----------------------------------------
-</code></pre>
-
-<hr>
-
-<h2 id="toc_11">Span Elements</h2>
-
-<p><a id="span"></a></p>
-
-<h3 id="toc_12">Links</h3>
-
-<p><a id="link"></a></p>
-
-<p>Markdown supports two style of links: <em>inline</em> and <em>reference</em>.</p>
-
-<p>In both styles, the link text is delimited by [square brackets].</p>
-
-<p>To create an inline link, use a set of regular parentheses immediately<br>
-after the link text&rsquo;s closing square bracket. Inside the parentheses,<br>
-put the URL where you want the link to point, along with an <em>optional</em><br>
-title for the link, surrounded in quotes. For example:</p>
-
-<pre><code>This is [an example](http://example.com/ &quot;Title&quot;) inline link.
-
-[This link](http://example.net/) has no title attribute.
-</code></pre>
-
-<p>Will produce:</p>
-
-<pre><code>&lt;p&gt;This is &lt;a href=&quot;http://example.com/&quot; title=&quot;Title&quot;&gt;
-an example&lt;/a&gt; inline link.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://example.net/&quot;&gt;This link&lt;/a&gt; has no
-title attribute.&lt;/p&gt;
-</code></pre>
-
-<p>If you&rsquo;re referring to a local resource on the same server, you can<br>
-use relative paths:</p>
-
-<pre><code>See my [About](/about/) page for details.   
-</code></pre>
-
-<p>Reference-style links use a second set of square brackets, inside<br>
-which you place a label of your choosing to identify the link:</p>
-
-<pre><code>This is [an example][id] reference-style link.
-</code></pre>
-
-<p>You can optionally use a space to separate the sets of brackets:</p>
-
-<pre><code>This is [an example] [id] reference-style link.
-</code></pre>
-
-<p>Then, anywhere in the document, you define your link label like this,<br>
-on a line by itself:</p>
-
-<pre><code>[id]: http://example.com/  &quot;Optional Title Here&quot;
-</code></pre>
-
-<p>That is:</p>
-
-<ul>
-<li>  Square brackets containing the link identifier (optionally
-indented from the left margin using up to three spaces);</li>
-<li>  followed by a colon;</li>
-<li>  followed by one or more spaces (or tabs);</li>
-<li>  followed by the URL for the link;</li>
-<li>  optionally followed by a title attribute for the link, enclosed
-in double or single quotes, or enclosed in parentheses.</li>
-</ul>
-
-<p>The following three link definitions are equivalent:</p>
-
-<pre><code>[foo]: http://example.com/  &quot;Optional Title Here&quot;
-[foo]: http://example.com/  &#39;Optional Title Here&#39;
-[foo]: http://example.com/  (Optional Title Here)
-</code></pre>
-
-<p><strong>Note:</strong> There is a known bug in Markdown.pl 1.0.1 which prevents<br>
-single quotes from being used to delimit link titles.</p>
-
-<p>The link URL may, optionally, be surrounded by angle brackets:</p>
-
-<pre><code>[id]: &lt;http://example.com/&gt;  &quot;Optional Title Here&quot;
-</code></pre>
-
-<p>You can put the title attribute on the next line and use extra spaces<br>
-or tabs for padding, which tends to look better with longer URLs:</p>
-
-<pre><code>[id]: http://example.com/longish/path/to/resource/here
-    &quot;Optional Title Here&quot;
-</code></pre>
-
-<p>Link definitions are only used for creating links during Markdown<br>
-processing, and are stripped from your document in the HTML output.</p>
-
-<p>Link definition names may consist of letters, numbers, spaces, and<br>
-punctuation &ndash; but they are <em>not</em> case sensitive. E.g. these two<br>
-links:</p>
-
-<pre><code>[link text][a]
-[link text][A]
-</code></pre>
-
-<p>are equivalent.</p>
-
-<p>The <em>implicit link name</em> shortcut allows you to omit the name of the<br>
-link, in which case the link text itself is used as the name.<br>
-Just use an empty set of square brackets &ndash; e.g., to link the word<br>
-<q>Google</q> to the google.com web site, you could simply write:</p>
-
-<pre><code>[Google][]
-</code></pre>
-
-<p>And then define the link:</p>
-
-<pre><code>[Google]: http://google.com/
-</code></pre>
-
-<p>Because link names may contain spaces, this shortcut even works for<br>
-multiple words in the link text:</p>
-
-<pre><code>Visit [Daring Fireball][] for more information.
-</code></pre>
-
-<p>And then define the link:</p>
-
-<pre><code>[Daring Fireball]: http://daringfireball.net/
-</code></pre>
-
-<p>Link definitions can be placed anywhere in your Markdown document. I<br>
-tend to put them immediately after each paragraph in which they&rsquo;re<br>
-used, but if you want, you can put them all at the end of your<br>
-document, sort of like footnotes.</p>
-
-<p>Here&rsquo;s an example of reference links in action:</p>
-
-<pre><code>I get 10 times more traffic from [Google] [1] than from
-[Yahoo] [2] or [MSN] [3].
-
-  [1]: http://google.com/        &quot;Google&quot;
-  [2]: http://search.yahoo.com/  &quot;Yahoo Search&quot;
-  [3]: http://search.msn.com/    &quot;MSN Search&quot;
-</code></pre>
-
-<p>Using the implicit link name shortcut, you could instead write:</p>
-
-<pre><code>I get 10 times more traffic from [Google][] than from
-[Yahoo][] or [MSN][].
-
-  [google]: http://google.com/        &quot;Google&quot;
-  [yahoo]:  http://search.yahoo.com/  &quot;Yahoo Search&quot;
-  [msn]:    http://search.msn.com/    &quot;MSN Search&quot;
-</code></pre>
-
-<p>Both of the above examples will produce the following HTML output:</p>
-
-<pre><code>&lt;p&gt;I get 10 times more traffic from &lt;a href=&quot;http://google.com/&quot;
-title=&quot;Google&quot;&gt;Google&lt;/a&gt; than from
-&lt;a href=&quot;http://search.yahoo.com/&quot; title=&quot;Yahoo Search&quot;&gt;Yahoo&lt;/a&gt;
-or &lt;a href=&quot;http://search.msn.com/&quot; title=&quot;MSN Search&quot;&gt;MSN&lt;/a&gt;.&lt;/p&gt;
-</code></pre>
-
-<p>For comparison, here is the same paragraph written using<br>
-Markdown&rsquo;s inline link style:</p>
-
-<pre><code>I get 10 times more traffic from [Google](http://google.com/ &quot;Google&quot;)
-than from [Yahoo](http://search.yahoo.com/ &quot;Yahoo Search&quot;) or
-[MSN](http://search.msn.com/ &quot;MSN Search&quot;).
-</code></pre>
-
-<p>The point of reference-style links is not that they&rsquo;re easier to<br>
-write. The point is that with reference-style links, your document<br>
-source is vastly more readable. Compare the above examples: using<br>
-reference-style links, the paragraph itself is only 81 characters<br>
-long; with inline-style links, it&rsquo;s 176 characters; and as raw HTML,<br>
-it&rsquo;s 234 characters. In the raw HTML, there&rsquo;s more markup than there<br>
-is text.</p>
-
-<p>With Markdown&rsquo;s reference-style links, a source document much more<br>
-closely resembles the final output, as rendered in a browser. By<br>
-allowing you to move the markup-related metadata out of the paragraph,<br>
-you can add links without interrupting the narrative flow of your<br>
-prose.</p>
-
-<h3 id="toc_13">Emphasis</h3>
-
-<p><a id="em"></a></p>
-
-<p>Markdown treats asterisks (<code>*</code>) and underscores (<code>_</code>) as indicators of<br>
-emphasis. Text wrapped with one <code>*</code> or <code>_</code> will be wrapped with an<br>
-HTML <code>&lt;em&gt;</code> tag; double <code>*</code>&rsquo;s or <code>_</code>&rsquo;s will be wrapped with an HTML<br>
-<code>&lt;strong&gt;</code> tag. E.g., this input:</p>
-
-<pre><code>*single asterisks*
-
-_single underscores_
-
-**double asterisks**
-
-__double underscores__
-</code></pre>
-
-<p>will produce:</p>
-
-<pre><code>&lt;em&gt;single asterisks&lt;/em&gt;
-
-&lt;em&gt;single underscores&lt;/em&gt;
-
-&lt;strong&gt;double asterisks&lt;/strong&gt;
-
-&lt;strong&gt;double underscores&lt;/strong&gt;
-</code></pre>
-
-<p>You can use whichever style you prefer; the lone restriction is that<br>
-the same character must be used to open and close an emphasis span.</p>
-
-<p>Emphasis can be used in the middle of a word:</p>
-
-<pre><code>un*frigging*believable
-</code></pre>
-
-<p>But if you surround an <code>*</code> or <code>_</code> with spaces, it&rsquo;ll be treated as a<br>
-literal asterisk or underscore.</p>
-
-<p>To produce a literal asterisk or underscore at a position where it<br>
-would otherwise be used as an emphasis delimiter, you can backslash<br>
-escape it:</p>
-
-<pre><code>\*this text is surrounded by literal asterisks\*
-</code></pre>
-
-<h3 id="toc_14">Code</h3>
-
-<p><a id="code"></a></p>
-
-<p>To indicate a span of code, wrap it with backtick quotes (<code>`</code>).<br>
-Unlike a pre-formatted code block, a code span indicates code within a<br>
-normal paragraph. For example:</p>
-
-<pre><code>Use the `printf()` function.
-</code></pre>
-
-<p>will produce:</p>
-
-<pre><code>&lt;p&gt;Use the &lt;code&gt;printf()&lt;/code&gt; function.&lt;/p&gt;
-</code></pre>
-
-<p>To include a literal backtick character within a code span, you can use<br>
-multiple backticks as the opening and closing delimiters:</p>
-
-<pre><code>``There is a literal backtick (`) here.``
-</code></pre>
-
-<p>which will produce this:</p>
-
-<pre><code>&lt;p&gt;&lt;code&gt;There is a literal backtick (`) here.&lt;/code&gt;&lt;/p&gt;
-</code></pre>
-
-<p>The backtick delimiters surrounding a code span may include spaces &ndash;<br>
-one after the opening, one before the closing. This allows you to place<br>
-literal backtick characters at the beginning or end of a code span:</p>
-
-<pre><code>A single backtick in a code span: `` ` ``
-
-A backtick-delimited string in a code span: `` `foo` ``
-</code></pre>
-
-<p>will produce:</p>
-
-<pre><code>&lt;p&gt;A single backtick in a code span: &lt;code&gt;`&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;A backtick-delimited string in a code span: &lt;code&gt;`foo`&lt;/code&gt;&lt;/p&gt;
-</code></pre>
-
-<p>With a code span, ampersands and angle brackets are encoded as HTML<br>
-entities automatically, which makes it easy to include example HTML<br>
-tags. Markdown will turn this:</p>
-
-<pre><code>Please don&#39;t use any `&lt;blink&gt;` tags.
-</code></pre>
-
-<p>into:</p>
-
-<pre><code>&lt;p&gt;Please don&#39;t use any &lt;code&gt;&amp;lt;blink&amp;gt;&lt;/code&gt; tags.&lt;/p&gt;
-</code></pre>
-
-<p>You can write this:</p>
-
-<pre><code>`&amp;#8212;` is the decimal-encoded equivalent of `&amp;mdash;`.
-</code></pre>
-
-<p>to produce:</p>
-
-<pre><code>&lt;p&gt;&lt;code&gt;&amp;amp;#8212;&lt;/code&gt; is the decimal-encoded
-equivalent of &lt;code&gt;&amp;amp;mdash;&lt;/code&gt;.&lt;/p&gt;
-</code></pre>
-
-<h3 id="toc_15">Images</h3>
-
-<p><a id="img"></a></p>
-
-<p>Admittedly, it&rsquo;s fairly difficult to devise a <q>natural</q> syntax for<br>
-placing images into a plain text document format.</p>
-
-<p>Markdown uses an image syntax that is intended to resemble the syntax<br>
-for links, allowing for two styles: <em>inline</em> and <em>reference</em>.</p>
-
-<p>Inline image syntax looks like this:</p>
-
-<pre><code>![Alt text](/path/to/img.jpg)
-
-![Alt text](/path/to/img.jpg &quot;Optional title&quot;)
-</code></pre>
-
-<p>That is:</p>
-
-<ul>
-<li>  An exclamation mark: <code>!</code>;</li>
-<li>  followed by a set of square brackets, containing the <code>alt</code>
-attribute text for the image;</li>
-<li>  followed by a set of parentheses, containing the URL or path to
-the image, and an optional <code>title</code> attribute enclosed in double
-or single quotes.</li>
-</ul>
-
-<p>Reference-style image syntax looks like this:</p>
-
-<pre><code>![Alt text][id]
-</code></pre>
-
-<p>Where <q>id</q> is the name of a defined image reference. Image references<br>
-are defined using syntax identical to link references:</p>
-
-<pre><code>[id]: url/to/image  &quot;Optional title attribute&quot;
-</code></pre>
-
-<p>As of this writing, Markdown has no syntax for specifying the<br>
-dimensions of an image; if this is important to you, you can simply<br>
-use regular HTML <code>&lt;img&gt;</code> tags.</p>
-
-<hr>
-
-<h2 id="toc_16">Miscellaneous</h2>
-
-<p><a id="misc"></a></p>
-
-<h3 id="toc_17">Automatic Links</h3>
-
-<p><a id="autolink"></a></p>
-
-<p>Markdown supports a shortcut style for creating <q>automatic</q> links for URLs and email addresses: simply surround the URL or email address with angle brackets. What this means is that if you want to show the actual text of a URL or email address, and also have it be a clickable link, you can do this:</p>
-
-<pre><code>&lt;http://example.com/&gt;
-</code></pre>
-
-<p>Markdown will turn this into:</p>
-
-<pre><code>&lt;a href=&quot;http://example.com/&quot;&gt;http://example.com/&lt;/a&gt;
-</code></pre>
-
-<p>Automatic links for email addresses work similarly, except that<br>
-Markdown will also perform a bit of randomized decimal and hex<br>
-entity-encoding to help obscure your address from address-harvesting<br>
-spambots. For example, Markdown will turn this:</p>
-
-<pre><code>&lt;address@example.com&gt;
-</code></pre>
-
-<p>into something like this:</p>
-
-<pre><code>&lt;a href=&quot;&amp;#x6D;&amp;#x61;i&amp;#x6C;&amp;#x74;&amp;#x6F;:&amp;#x61;&amp;#x64;&amp;#x64;&amp;#x72;&amp;#x65;
-&amp;#115;&amp;#115;&amp;#64;&amp;#101;&amp;#120;&amp;#x61;&amp;#109;&amp;#x70;&amp;#x6C;e&amp;#x2E;&amp;#99;&amp;#111;
-&amp;#109;&quot;&gt;&amp;#x61;&amp;#x64;&amp;#x64;&amp;#x72;&amp;#x65;&amp;#115;&amp;#115;&amp;#64;&amp;#101;&amp;#120;&amp;#x61;
-&amp;#109;&amp;#x70;&amp;#x6C;e&amp;#x2E;&amp;#99;&amp;#111;&amp;#109;&lt;/a&gt;
-</code></pre>
-
-<p>which will render in a browser as a clickable link to <q>address@example.com</q>.</p>
-
-<p>(This sort of entity-encoding trick will indeed fool many, if not<br>
-most, address-harvesting bots, but it definitely won&rsquo;t fool all of<br>
-them. It&rsquo;s better than nothing, but an address published in this way<br>
-will probably eventually start receiving spam.)</p>
-
-<h3 id="toc_18">Backslash Escapes</h3>
-
-<p><a id="backslash"></a></p>
-
-<p>Markdown allows you to use backslash escapes to generate literal<br>
-characters which would otherwise have special meaning in Markdown&rsquo;s<br>
-formatting syntax. For example, if you wanted to surround a word<br>
-with literal asterisks (instead of an HTML <code>&lt;em&gt;</code> tag), you can use<br>
-backslashes before the asterisks, like this:</p>
-
-<pre><code>\*literal asterisks\*
-</code></pre>
-
-<p>Markdown provides backslash escapes for the following characters:</p>
-
-<pre><code>\   backslash
-`   backtick
-*   asterisk
-_   underscore
-{}  curly braces
-[]  square brackets
-()  parentheses
-#   hash mark
-+   plus sign
--   minus sign (hyphen)
-.   dot
-!   exclamation mark
-</code></pre>
 
 ]]></content>
   </entry>

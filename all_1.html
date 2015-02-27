@@ -130,6 +130,86 @@
 	<article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
 		<div class="meta">
 			<div class="date">
+				<time datetime="2015-01-20T10:03:00+08:00" itemprop="datePublished">2015/1/20</time>
+			</div>
+			<div class="tags">posted in 
+			
+			    <a class='category' href='MWeb-cat.html'>MWeb</a>&nbsp;
+			 
+			</div>
+		</div>
+		<h1 class="title" itemprop="name"><a href="mweb-qa-zh.html" itemprop="url">
+		MWeb 所有问题和回答收集</a></h1>
+		<div class="entry-content" itemprop="articleBody">
+			
+			<h2 id="toc_0">如何导出HTML样式的PDF？（1.2版已改进这个问题。）</h2>
+
+<p><code>CMD+R</code>打开Live Preview窗口，点右边的分享按钮，选择<code>Save as PDF</code>即可。</p>
+
+<h2 id="toc_1">如何开启MathJax预览支持？如何让网站支持MathJax？</h2>
+
+<p><code>CMD+,</code>打开设置面板，切到Themes，勾选Enable Math选项。<br>
+如果要让网站支持MathJax，最简单的方法是在网站分类设置中的：Site other:的文本框中填入以下代码：</p>
+
+<pre><code class="js">&lt;script type=&quot;text/x-mathjax-config&quot;&gt;
+  MathJax.Hub.Config({tex2jax: {inlineMath: [[&#39;$&#39;,&#39;$&#39;], [&#39;\\(&#39;,&#39;\\)&#39;]]}});
+&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;
+  src=&quot;http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&quot;&gt;
+&lt;/script&gt;
+</code></pre>
+
+<p>如果您的网站是要用HTTPS，请把：<code>http://cdn.mathjax.org...</code>改为：<code>https://cdn.mathjax.org...</code></p>
+
+
+
+			 
+			<a href="mweb-qa-zh.html#more" class="more-link">Read on &rarr;</a>
+    		
+			
+		</div>
+
+	</article>
+ 
+	<article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+		<div class="meta">
+			<div class="date">
+				<time datetime="2015-01-19T15:02:30+08:00" itemprop="datePublished">2015/1/19</time>
+			</div>
+			<div class="tags">posted in 
+			
+			    <a class='category' href='MWeb-cat.html'>MWeb</a>&nbsp;
+			 
+			</div>
+		</div>
+		<h1 class="title" itemprop="name"><a href="mweb-v1.1-release.html" itemprop="url">
+		MWeb 1.1 release</a></h1>
+		<div class="entry-content" itemprop="articleBody">
+			
+			<h2 id="toc_0">New feature</h2>
+
+<ul>
+<li>Add import files (.txt and .md) featrue：File &ndash;&gt; Import Files To Library&hellip;</li>
+<li>Add TOC（Table of Content）featrue: Preferences &ndash;&gt; Themes &ndash;&gt; Enable TOC (Table of Content)</li>
+<li>Add MWeb Lite</li>
+<li>Add sitemap suport.</li>
+<li>Add right click for category edit.</li>
+<li>Add syntax highlighting in fenced code blocks feature,for version 1.0 user, please go to <a href="https://github.com/oulvhai/MWeb-Themes/">https://github.com/oulvhai/MWeb-Themes/</a> download new themes. Language name detail:<a href="http://highlightjs.readthedocs.org/en/latest/css-classes-reference.html">http://highlightjs.readthedocs.org/en/latest/css-classes-reference.html</a></li>
+</ul>
+
+
+
+			 
+			<a href="mweb-v1.1-release.html#more" class="more-link">Read on &rarr;</a>
+    		
+			
+		</div>
+
+	</article>
+ 
+	<article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+		<div class="meta">
+			<div class="date">
 				<time datetime="2015-01-19T14:29:02+08:00" itemprop="datePublished">2015/1/19</time>
 			</div>
 			<div class="tags">posted in 
@@ -170,9 +250,9 @@
 			</div>
 			<div class="tags">posted in 
 			
-			    <a class='category' href='Game%20Engine.html'>Game Engine</a>&nbsp;
-			
 			    <a class='category' href='CG%20Artist.html'>CG Artist</a>&nbsp;
+			
+			    <a class='category' href='Game%20Engine.html'>Game Engine</a>&nbsp;
 			 
 			</div>
 		</div>
@@ -355,97 +435,19 @@ If you can&rsquo;t find the answer, please send feedback to me: Help &ndash;&gt;
 <p><a href="custom-site-theme-detail.html">Custom site theme or design you owner theme&hellip;</a><br>
 <a href="me-screenshot-and-in-yosemite.html">MWeb Screenshot and in Yosemite</a><br>
 <a href="mweb-v1.1-release.html">MWeb 1.1 release</a><br>
-<a href="mweb-v1.2-release.html">MWeb 1.2 release</a></p>
+<a href="mweb-v1.2-release.html">MWeb 1.2 release</a><br>
+<a href="use-goodsync-sync-mweb-static-websites.html">Use GoodSync synchronize MWeb&rsquo;s static websites to FTP,SFTP,WebDAV,Amazon S3 automatically</a></p>
 
 <h2 id="toc_4">Introduction MWeb</h2>
 
 <p>MWeb is a markdown editor for static websites and blogs on OS X, like <a href="http://octopress.org/">Octopress</a> or <a href="http://jekyllrb.com/">Jekyll</a> but easy to use. You can write document with markdown,drag &amp; drop or paste photos to the editor, MWeb will automatically add markdown code and display photos in editor. You can choose some categories to organize the document, and build static websites and blogs <strong>One Click</strong>.</p>
 
-<p><img src="media/14189656825627/MWeb.jpg" alt="MWeb">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
+<p><img src="media/14189656825627/MWeb.jpg" alt="MWeb">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
 
 
 
 			 
 			<a href="mweb.html#more" class="more-link">Read on &rarr;</a>
-    		
-			
-		</div>
-
-	</article>
- 
-	<article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-		<div class="meta">
-			<div class="date">
-				<time datetime="2014-12-17T10:38:19+08:00" itemprop="datePublished">2014/12/17</time>
-			</div>
-			<div class="tags">posted in 
-			
-			    <a class='category' href='Introduction.html'>Introduction</a>&nbsp;
-			 
-			</div>
-		</div>
-		<h1 class="title" itemprop="name"><a href="mweb-zh.html" itemprop="url">
-		MWeb - OS X上的Markdown编辑器和全静态网站、博客生成工具</a></h1>
-		<div class="entry-content" itemprop="articleBody">
-			
-			<h2 id="toc_0">MWeb帮助</h2>
-
-<h3 id="toc_1">如果您不知道什么是Markdown，请阅读以下两篇文章</h3>
-
-<p><a href="markdown-syntax-guide-suggest-version-zh.html">Markdown 语法简单说明</a><br>
-<a href="markdown-syntax-guide-full-version-zh.html">Markdown 语法官方说明繁体中文版</a></p>
-
-<h3 id="toc_2">MWeb所有问题和回答收集（会不断更新）</h3>
-
-<p><a href="mweb-qa-zh.html">MWeb问题和回答</a><br>
-如果您在上面的连接中找不到答案，请在MWeb中点：Help &ndash;&gt; Send Feedback 写信给我！</p>
-
-<h3 id="toc_3">MWeb其他可能有用的文章</h3>
-
-<p><a href="custom-site-theme-detail-zh.html">自定网站主题、增加评论和分享和设计新主题&hellip;</a><br>
-<a href="me-screenshot-and-in-yosemite.html">MWeb更多截图和在Yosemite下的效果</a><br>
-<a href="mweb-v1.1-release-zh.html">MWeb 1.1 版更新说明</a><br>
-<a href="mweb-v1.2-release-zh.html">MWeb 1.2 版更新说明</a><br>
-<a href="sync-webistes-to-github-or-ftp-zh.html">把生成的静态网站发布到github或FTP</a><br>
- <a href="aliyun-net-cn-free-web-host-express.html">万网（阿里云）免费虚拟主机体验</a></p>
-
-<h2 id="toc_4">MWeb简介</h2>
-
-<p>MWeb是一个Markdown编辑器和全静态网站、博客生成工具，像<a href="http://octopress.org/">Octopress</a>和 <a href="http://jekyllrb.com/">Jekyll</a>，但是更简单易用。MWeb很合适经常用Markdown写文档、日记和经常要插入图片和大段代码的朋友。</p>
-
-<p><img src="media/14189656825627/MWeb.jpg" alt="MWeb">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
-
-
-
-			 
-			<a href="mweb-zh.html#more" class="more-link">Read on &rarr;</a>
-    		
-			
-		</div>
-
-	</article>
- 
-	<article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-		<div class="meta">
-			<div class="date">
-				<time datetime="2014-12-16T23:15:39+08:00" itemprop="datePublished">2014/12/16</time>
-			</div>
-			<div class="tags">posted in 
-			
-			    <a class='category' href='Introduction.html'>Introduction</a>&nbsp;
-			 
-			</div>
-		</div>
-		<h1 class="title" itemprop="name"><a href="insert-photos-and-display-in-editor.html" itemprop="url">
-		Insert photos and display in editor</a></h1>
-		<div class="entry-content" itemprop="articleBody">
-			
-			<p>Drag &amp; drop photo or paste to the editor, the markdown code will add automatically and the photo will display in editor.</p>
-
-
-
-			 
-			<a href="insert-photos-and-display-in-editor.html#more" class="more-link">Read on &rarr;</a>
     		
 			
 		</div>
