@@ -4,7 +4,7 @@
   <title><![CDATA[Coder For Art]]></title>
   <link href="http://coderforart.com/atom.xml" rel="self"/>
   <link href="http://coderforart.com/"/>
-  <updated>2015-02-27T12:40:04+08:00</updated>
+  <updated>2015-02-27T12:43:42+08:00</updated>
   <id>http://coderforart.com/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -19,7 +19,7 @@
     <updated>2015-02-27T12:01:25+08:00</updated>
     <id>http://coderforart.com/use-goodsync-sync-mweb-static-websites.html</id>
     <content type="html"><![CDATA[
-<p>GoodSync is free powerful synchronize App!GoodSync syncs files between your computer, mobile devices, FTP, SFTP, Amazon S3, Google Drive, SkyDrive, WebDAV, Azure.</p>
+<p>GoodSync syncs files between your computer, mobile devices, FTP, SFTP, Amazon S3, Google Drive, SkyDrive, WebDAV, Azure.</p>
 
 <span id="more"></span><!-- more -->
 
@@ -42,12 +42,12 @@ If you didn&rsquo;t change MWeb build site path,the default path is:</p>
 <h2 id="toc_2">Select sync to path</h2>
 
 <p>Select sync to path for the right panel.I choose sync to FTP.<br>
-<img src="media/14250096857643/14250109782773.jpg" alt="">￼￼￼</p>
+<img src="media/14250096857643/14250109782773.jpg" alt="">￼￼￼￼</p>
 
 <h2 id="toc_3">Enable automatically synchronize</h2>
 
 <p>Click <q>auto</q> button,enable On File Change: Analyze,Sync. Click <q>OK</q>.<br>
-<img src="media/14250096857643/14250112704266.jpg" alt="">￼￼￼</p>
+<img src="media/14250096857643/14250112704266.jpg" alt="">￼￼￼￼</p>
 
 <p>All is OK!! <br>
 When you click <q>Build site</q> button in MWeb, GoodSync will automatically synchronize your static website to FTP.</p>
@@ -81,14 +81,14 @@ When you click <q>Build site</q> button in MWeb, GoodSync will automatically syn
 <h2 id="toc_2">选择要同步的目标位置</h2>
 
 <p>在右侧选择要同步的目标位置，我这里选择FTP，如下图，可以看到GoodSync还支持SFTP、WebDAV、Amazon S3等非常多的同步服务。<br>
-<img src="media/14250057502319/14250078774218.jpg" alt="">￼￼</p>
+<img src="media/14250057502319/14250078774218.jpg" alt="">￼￼￼</p>
 
 <p>点“连接”按钮，连上FTP后，选择FTP上要同步的文件夹，再点“选择”按钮。如果有跳出来提示，点“Yes”。</p>
 
 <h2 id="toc_3">设置自动同步</h2>
 
 <p>如下图：点“自动”按钮，设置当文件改变时就分析和同步。<br>
-<img src="media/14250057502319/14250082156068.jpg" alt="">￼￼</p>
+<img src="media/14250057502319/14250082156068.jpg" alt="">￼￼￼</p>
 
 <p>点“确定”后就会开始分析和同步了。</p>
 
@@ -99,6 +99,12 @@ When you click <q>Build site</q> button in MWeb, GoodSync will automatically syn
 <p>GoodSync的功能还有很多，比如说同步到SFTP、WebDAV、Amazon S3等等，非常强大而且还免费。</p>
 
 <p>因为有GoodSync这个同步软件，MWeb变得更方便好用了。我现在也在考虑是否把CoderForArt搬到有FTP功能的主机，这样在国内访问会快很多，写新文章时也不用打github命令手动去上传了。然后本来是有考虑为MWeb加上自动同步功能或者另做一软件，现在看来也没有必要了。</p>
+
+<p><strong>更新</strong>：GoodSync 免费版是有限定的，限定为：<br>
+Q: What are free version limitations? <br>
+A: You can have 3 or less jobs in free version and 100 or less files and folders in each job.</p>
+
+<p>虽然GoodSync不免费，但是非常好用。我也会关注是否有其他同步软件。</p>
 
 ]]></content>
   </entry>
