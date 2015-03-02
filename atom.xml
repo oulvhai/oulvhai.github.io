@@ -4,7 +4,7 @@
   <title><![CDATA[Coder For Art]]></title>
   <link href="http://coderforart.com/atom.xml" rel="self"/>
   <link href="http://coderforart.com/"/>
-  <updated>2015-02-27T12:43:42+08:00</updated>
+  <updated>2015-02-27T15:39:13+08:00</updated>
   <id>http://coderforart.com/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -12,6 +12,47 @@
   </author>
   <generator uri="http://www.coderforart.com/">CoderForArt</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[第二个Mac App差不多完成了，但是名字难以确定，求助万能的v2ex和ourcoders]]></title>
+    <link href="http://coderforart.com/14252762205423.html"/>
+    <updated>2015-03-02T14:03:40+08:00</updated>
+    <id>http://coderforart.com/14252762205423.html</id>
+    <content type="html"><![CDATA[
+<p>这个免费App是1月初MWeb发布后才有的点子，MWeb1.2提交后正式开始做，春节长假过后再小修了一下，终于到了差不多可以发布的时候。</p>
+
+<p>App的功能是：把经常要看的相关联的图片摆放到屏幕任何位置并存成文件，下次打开时恢复之前的状态。摆放时可以放大、缩小、移动图片，也可以改变视图窗口的位置、大小等，支持双指缩放、三指拖动。</p>
+
+<span id="more"></span><!-- more -->
+
+<p>名字一开始是想叫：Research Pro的，因为这个App最开始的目的就是Research。因为我喜欢并想学CG艺术，然后通常会在网上看到不错的图，就想把相关联的排起来对比看。有时候也会特意对找一些东西，比如说唐代古装的服饰、饰品、发型等，找到后想全部排起来一并查看和研究。所以流程为：收集资料&ndash;&gt;排好&ndash;&gt;保存成文档&ndash;&gt;下次打开恢复排好的状态。这大概是Research的流程，这软件我想同样也适用于设计师研究设计方案，屏幕越大，可以摆的图越多，很是YY iMac retina 27下的效果。</p>
+
+<p>后来觉得Research Pro有点太高端，这是一个小软件，有点名副其实，所以就改为PinPhoto，低调了一些。但是总觉得可能有更好的名字，或者这两个名字那个好？发上来求助万能的V友。</p>
+
+<p>做好后突然发现可以用来看漂亮妹子的图也很不错！多收集一些妹子图，并排好。一个人一个文档或者一种风格一个文档或多个文档。写代码累了就切过来看看，因为我设定了左右键切换，所以体验不错！收集也很方便，chrome右键图片：copy image， 切到PinPhoto(暂时叫这个)再 CMD+V 就行了。</p>
+
+<p>当然也不排除这个奇葩的App没有多少人会用，这次发上来也看看有没有人关注。</p>
+
+<p>图一：基本的功能和用法：<br>
+<img src="media/14252762205423/01.jpg" alt="">￼</p>
+
+<p>图二：色彩的知识，会要经常看类型，主窗口可以用 CMD+D 隐藏，这样就全屏观看了。<br>
+<img src="media/14252762205423/02.jpg" alt="05">￼</p>
+
+<p>图三：比较长的教程可以贴进来，摆好以方便查看（隐藏了主窗口）。<br>
+<img src="media/14252762205423/03.jpg" alt="04">￼</p>
+
+<p>图四：同一作者的线搞对比查看<br>
+<img src="media/14252762205423/04.jpg" alt="03">￼</p>
+
+<p>图五：收集到一些特别的蘑菇，画画时参考。<br>
+<img src="media/14252762205423/05.jpg" alt="02">￼</p>
+
+<p>图六：把一张图片顶置。对着图画画时有些用。<br>
+<img src="media/14252762205423/06.jpg" alt="01">￼</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Use GoodSync synchronize MWeb's static websites to FTP,SFTP,WebDAV,Amazon S3 automatically]]></title>
@@ -81,14 +122,14 @@ When you click <q>Build site</q> button in MWeb, GoodSync will automatically syn
 <h2 id="toc_2">选择要同步的目标位置</h2>
 
 <p>在右侧选择要同步的目标位置，我这里选择FTP，如下图，可以看到GoodSync还支持SFTP、WebDAV、Amazon S3等非常多的同步服务。<br>
-<img src="media/14250057502319/14250078774218.jpg" alt="">￼￼￼</p>
+<img src="media/14250057502319/14250078774218.jpg" alt="">￼￼￼￼</p>
 
 <p>点“连接”按钮，连上FTP后，选择FTP上要同步的文件夹，再点“选择”按钮。如果有跳出来提示，点“Yes”。</p>
 
 <h2 id="toc_3">设置自动同步</h2>
 
 <p>如下图：点“自动”按钮，设置当文件改变时就分析和同步。<br>
-<img src="media/14250057502319/14250082156068.jpg" alt="">￼￼￼</p>
+<img src="media/14250057502319/14250082156068.jpg" alt="">￼￼￼￼</p>
 
 <p>点“确定”后就会开始分析和同步了。</p>
 
@@ -1732,220 +1773,6 @@ MWeb还可以自定网站和博客主题，增加评论和分享功能，请参�
 <span id="more"></span><!-- more -->
 
 <p><img src="media/14187874991645/716_max.jpg" alt="716_max">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Markdown syntax guide suggest version]]></title>
-    <link href="http://coderforart.com/markdown-syntax-guide-suggest-version.html"/>
-    <updated>2014-12-16T19:08:31+08:00</updated>
-    <id>http://coderforart.com/markdown-syntax-guide-suggest-version.html</id>
-    <content type="html"><![CDATA[
-<h2 id="toc_0">Headers</h2>
-
-<pre><code># This is an `&lt;h1&gt;` tag
-## This is an `&lt;h2&gt;` tag
-###### This is an `&lt;h6&gt;` tag
-</code></pre>
-
-<span id="more"></span><!-- more -->
-
-<h1 id="toc_1">This is an <code>&lt;h1&gt;</code> tag</h1>
-
-<h2 id="toc_2">This is an <code>&lt;h2&gt;</code> tag</h2>
-
-<h6 id="toc_3">This is an <code>&lt;h6&gt;</code> tag</h6>
-
-<h2 id="toc_4">Emphasis</h2>
-
-<pre><code>*This text will be italic*
-_This will also be italic_
-
-**This text will be bold**
-__This will also be bold__
-
-*You **can** combine them*
-</code></pre>
-
-<p><em>This text will be italic</em><br>
-<u>This will also be italic</u></p>
-
-<p><strong>This text will be bold</strong><br>
-<strong>This will also be bold</strong></p>
-
-<p><em>You *</em>can** combine them*</p>
-
-<h2 id="toc_5">Newlines</h2>
-
-<p>End a line with two or more spaces + enter.<br>
-Just typing enter to newline,please set：MWeb &ndash;&gt; Preferences &ndash;&gt; Themes &ndash;&gt; Translate newlines to <code>&lt;br&gt;</code> tags is On(default is On)</p>
-
-<h2 id="toc_6">Lists</h2>
-
-<h3 id="toc_7">Unordered</h3>
-
-<pre><code>* Item 1 unordered list `* + SPACE`
-* Item 2
-    * Item 2a unordered list `* + TAB + SPACE`
-    * Item 2b
-</code></pre>
-
-<ul>
-<li>Item 1 unordered list <code>* + SPACE</code></li>
-<li>Item 2
-
-<ul>
-<li>Item 2a unordered list <code>* + TAB + SPACE</code></li>
-<li>Item 2b</li>
-</ul></li>
-</ul>
-
-<h3 id="toc_8">Ordered</h3>
-
-<pre><code>1. Item 1 ordered list `Number + . + SPACE`
-2. Item 2 
-3. Item 3
-    1. Item 3a ordered list `Number + . + TAB + SPACE`
-    2. Item 3b
-</code></pre>
-
-<ol>
-<li>Item 1 ordered list <code>Number + . + SPACE</code></li>
-<li>Item 2 </li>
-<li>Item 3
-
-<ol>
-<li>Item 3a ordered list <code>Number + . + TAB + SPACE</code></li>
-<li>Item 3b</li>
-</ol></li>
-</ol>
-
-<h2 id="toc_9">Images</h2>
-
-<pre><code>![GitHub set up](https://help.github.com/assets/images/site/set-up-git.gif)
-Format: ![Alt Text](url)
-</code></pre>
-
-<p><img src="https://help.github.com/assets/images/site/set-up-git.gif" alt="GitHub set up"><br>
-Format: <img src="url" alt="Alt Text"></p>
-
-<h2 id="toc_10">Links</h2>
-
-<pre><code>email &lt;example@example.com&gt;
-[GitHub](http://github.com)
-autolink  &lt;http://www.github.com/&gt;
-</code></pre>
-
-<p>An email <a href="mailto:example@example.com">example@example.com</a> link.<br>
-<a href="http://github.com">GitHub</a><br>
-Automatic linking for URLs<br>
-Any URL (like <a href="http://www.github.com/">http://www.github.com/</a>) will be automatically converted into a clickable link.</p>
-
-<h2 id="toc_11">Blockquotes</h2>
-
-<pre><code>As Kanye West said:
-&gt; We&#39;re living the future so
-&gt; the present is our past.
-</code></pre>
-
-<p>As Kanye West said:</p>
-
-<blockquote>
-<p>We&rsquo;re living the future so<br>
-the present is our past.</p>
-</blockquote>
-
-<h2 id="toc_12">Inline code</h2>
-
-<pre><code>I think you should use an
-`&lt;addr&gt;` `code` element here instead.
-</code></pre>
-
-<p>I think you should use an<br>
-<code>&lt;addr&gt;</code> <code>code</code> element here instead.</p>
-
-<h2 id="toc_13">Multi-line code</h2>
-
-<pre><code>```js
-function fancyAlert(arg) {
-  if(arg) {
-    $.facebox({div:&#39;#foo&#39;})
-  }
-
-}
-```
-</code></pre>
-
-<pre><code class="js">function fancyAlert(arg) {
-  if(arg) {
-    $.facebox({div:&#39;#foo&#39;})
-  }
-
-}
-</code></pre>
-
-<h2 id="toc_14">Tables</h2>
-
-<pre><code>First Header | Second Header
------------- | -------------
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column
-</code></pre>
-
-<p>You can create tables by assembling a list of words and dividing them with hyphens - (for the first row), and then separating each column with a pipe |:</p>
-
-<table><thead>
-<tr>
-<th>First Header</th>
-<th>Second Header</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>Content from cell 1</td>
-<td>Content from cell 2</td>
-</tr>
-<tr>
-<td>Content in the first column</td>
-<td>Content in the second column</td>
-</tr>
-</tbody></table>
-
-<h2 id="toc_15">Strikethrough</h2>
-
-<pre><code> (like ~~this~~)
-</code></pre>
-
-<p>Any word wrapped with two tildes (like <del>this</del>) will appear crossed out.</p>
-
-<h2 id="toc_16">Horizontal Rules</h2>
-
-<p>Following lines will produce a horizontal rule:</p>
-
-<pre><code>***
-
-*****
-
-- - -
-</code></pre>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<h2 id="toc_17">Comment And Read More..</h2>
-
-<!-- comment -->
-
-<!-- more -->
-
-<p>Actions-&gt;Insert Read More Comment <em>OR</em> <code>CMD + .</code></p>
-
-<h2 id="toc_18">Reference:</h2>
-
-<p><a href="https://guides.github.com/features/mastering-markdown/">https://guides.github.com/features/mastering-markdown/</a></p>
 
 ]]></content>
   </entry>
