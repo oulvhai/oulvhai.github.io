@@ -4,7 +4,7 @@
   <title><![CDATA[Coder For Art]]></title>
   <link href="http://coderforart.com/atom.xml" rel="self"/>
   <link href="http://coderforart.com/"/>
-  <updated>2015-03-02T19:10:29+08:00</updated>
+  <updated>2015-03-05T19:39:03+08:00</updated>
   <id>http://coderforart.com/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -12,6 +12,193 @@
   </author>
   <generator uri="http://www.coderforart.com/">CoderForArt</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[PinPhoto On OS X]]></title>
+    <link href="http://coderforart.com/pinphoto-en.html"/>
+    <updated>2015-03-05T16:21:11+08:00</updated>
+    <id>http://coderforart.com/pinphoto-en.html</id>
+    <content type="html"><![CDATA[
+<p>Placement your photos to anywhere on the screen and save as a document, PinPhoto will restore the state when you reopen.</p>
+
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_0">Introduction PinPhoto</h2>
+
+<h3 id="toc_1">New PinPhoto document and import photos</h3>
+
+<p><code>CMD+N</code> to new PinPhoto document. Use Drag &amp; drop or <code>Import</code> button to add photos. You can also press <code>CMD+V</code> to paste photo when you copy a photo to pasteboard.</p>
+
+<p><img src="media/14255436714850/1.jpg" alt="">￼</p>
+
+<p>Tip: If you want to add some lovely photo from website to PinPhoto document, right click website&rsquo;s photo, choose <code>Copy Image</code>, and go to PinPhoto document press <code>CMD+V</code>.</p>
+
+<h3 id="toc_2">Open and placement the photos</h3>
+
+<p>Click <code>Main Window</code> photos list&rsquo;s photo to open <code>Photo View</code>. Mouse moves to the top of <code>Photo View</code> and drag to change the position. You can use two finger zoom the photo. Use the right click context menu or main menu &ndash;&gt; view for more.</p>
+
+<p><img src="media/14255436714850/2.jpg" alt="">￼</p>
+
+<p><strong>Right click context menu:</strong></p>
+
+<ul>
+<li>Zoom In: <code>CMD+=</code></li>
+<li>Zoom Out: <code>CMD+-</code></li>
+<li>Zoom to Fix: <code>CMD+9</code></li>
+<li>100%: actual size - <code>CMD+0</code></li>
+<li>200%: double&rsquo;s actual size - <code>CMD+8</code></li>
+<li>100% And Resize Window: actual size photo and view</li>
+<li>Duplicate View</li>
+<li>Colse View</li>
+<li>Close All View</li>
+<li>Show Main Window: <code>CMD+F</code></li>
+<li>Toggle Main Window: <code>CMD+D</code></li>
+<li>Toggle Floating: <code>CMD+T</code></li>
+<li>All Floating: <code>CMD+Shift+T</code></li>
+<li>Clear All Floating: <code>CMD+Option+T</code></li>
+<li>Prev Document: <code>⇤</code></li>
+<li>Next Document: <code>⇥</code></li>
+<li>Close Document: <code>CMD+Shift+W</code></li>
+</ul>
+
+<p>Automatic placement selected photos:<br>
+You can select some photos &ndash;&gt; right click &ndash;&gt; choose <code>Open &amp; Placement Selected Photos</code>. PinPhoto will placement selected photos on full screen automatically.</p>
+
+<p><img src="media/14255436714850/3.jpg" alt="">￼</p>
+
+<p><strong>Right click context menu:</strong></p>
+
+<ul>
+<li>Open Selected Photos View</li>
+<li>Open &amp; Placement Selected Photos</li>
+<li>Close Selected Photos View</li>
+<li>Close All View</li>
+<li>Deselect All</li>
+<li>Select All</li>
+<li>Delete: <code>CMD+Delete</code></li>
+<li>Hide Main Window</li>
+<li>All Floating: <code>CMD+Shift+T</code></li>
+<li>Clear All Floating: - <code>CMD+Option+T</code></li>
+<li>Prev Document: <code>⇤</code></li>
+<li>Next Document: <code>⇥</code></li>
+</ul>
+
+<h3 id="toc_3">Floating Photo View</h3>
+
+<p><code>CMD+T</code> to toggle floating <code>Photo View</code>, <code>CMD+Shift+T</code> floating all <code>Photo View</code>, <code>CMD+Option+T</code> cancels floating all <code>Photo View</code>.</p>
+
+<p><img src="media/14255436714850/4.jpg" alt="">￼</p>
+
+<h3 id="toc_4">Hide/Show Main Window</h3>
+
+<p><code>CMD+D</code> toggle hide/show <code>Main Window</code>, <code>CMD+F</code> show <code>Main Window</code></p>
+
+<p><img src="media/14255436714850/5.jpg" alt="">￼</p>
+
+<h3 id="toc_5">Switch opened PinPhoto documents</h3>
+
+<p>To switch prev document,please use <code>⇤</code> key. To switch next document,please use <code>⇥</code> key.</p>
+
+<h2 id="toc_6">Questions?</h2>
+
+<p>Please use Help &ndash;&gt; Send Feedback in PinPhoto or Twitter: <a href="https://twitter.com/oulvhai">@oulvhai</a></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[PinPhoto On OS X]]></title>
+    <link href="http://coderforart.com/pinphoto.html"/>
+    <updated>2015-03-05T10:46:54+08:00</updated>
+    <id>http://coderforart.com/pinphoto.html</id>
+    <content type="html"><![CDATA[
+<p>把多张图片摆放到屏幕任何位置并保存成文件，下次打开时恢复之前的状态！</p>
+
+<p>PS:过两天录个视频&hellip;.</p>
+
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_0">软件功能和使用方法</h2>
+
+<h3 id="toc_1">新建PinPhoto文档和导入图片</h3>
+
+<p><code>CMD+N</code>新建PinPhoto文档，使用拖拽或者点<code>Import</code>按钮增加要摆放的图片，如果你的剪切板上复制有图片，也可以直接用<code>CMD+V</code>粘贴进来。</p>
+
+<p><img src="media/14255236146194/1.jpg" alt="">￼￼</p>
+
+<p>小技巧：在网页中看到喜欢的图片想增加到PinPhoto文档中，可以右键网页中的图片，在弹出的菜单中选择：复制图片(Copy Image) 然后切换到PinPhoto，用快捷键<code>CMD+V</code>粘贴以增加到PinPhoto的文档中。</p>
+
+<h3 id="toc_2">打开并摆放导入的图片</h3>
+
+<p>点击列表中的图片即可打开该图片的图片视图，在打开的图片视图中，鼠标移到图片顶部的位置，会显示一条黑色的半透明长方形，拖动即可改变位置，你也可以用双指缩放、平移图片，更多的调节请用右键菜单、主菜单的View菜单或者快捷键。</p>
+
+<p><img src="media/14255236146194/2.jpg" alt="">￼￼</p>
+
+<p><strong>右键菜单项目说明：</strong></p>
+
+<ul>
+<li>Zoom In：放大图片 - <code>CMD+=</code></li>
+<li>Zoom Out：缩小图片 - <code>CMD+-</code></li>
+<li>Zoom to Fix：缩小图片至窗口大小 - <code>CMD+9</code></li>
+<li>100%：图片实际大小 - <code>CMD+0</code></li>
+<li>200%：图片实际大小的2倍 - <code>CMD+8</code></li>
+<li>100% And Resize Window：设定图片为实际大小，窗口也设置为和图片一样大小。</li>
+<li>Duplicate View：另开一个图片视图</li>
+<li>Colse View：关闭图片视图</li>
+<li>Close All View：关闭当前文档的所有图片视图</li>
+<li>Show Main Window：显示主窗口 - <code>CMD+F</code></li>
+<li>Toggle Main Window：显示/隐藏主窗口 - <code>CMD+D</code></li>
+<li>Toggle Floating：置顶/取消置顶图片视图 - <code>CMD+T</code></li>
+<li>All Floating：全部置顶当前文档的所有图片视图 - <code>CMD+Shift+T</code></li>
+<li>Clear All Floating：全部取消置顶当前文档的所有图片视图 - <code>CMD+Option+T</code></li>
+<li>Prev Document：切换到上一打开的文档 - <code>⇤</code></li>
+<li>Next Document：切换到下一打开的文档 - <code>⇥</code></li>
+<li>Close Document：关闭当前文档 - <code>CMD+Shift+W</code></li>
+</ul>
+
+<p>另外也可以在主窗口中右键打开多张图片，有个实用的功能为：自动排列图片。选择要自动排列的图片，右键，并选<code>Open &amp; Placement Selected Photos</code>，则会把您选择的图片自动排满整个屏幕。如下图。</p>
+
+<p><img src="media/14255236146194/3.jpg" alt="">￼￼</p>
+
+<p><strong>右键菜单项目说明：</strong></p>
+
+<ul>
+<li>Open Selected Photos View：打开所选择的图片的图片视图</li>
+<li>Open &amp; Placement Selected Photos：把选择的图片自动排满整个屏幕</li>
+<li>Close Selected Photos View：关闭所选择的图片的图片视图</li>
+<li>Close All View：关闭当前文档的所有图片视图</li>
+<li>Deselect All：取消全选</li>
+<li>Select All：全选</li>
+<li>Delete：删除所选的图片 - <code>CMD+Delete</code></li>
+<li>Hide Main Window：隐藏主窗口</li>
+<li>All Floating：全部置顶当前文档的所有图片视图 - <code>CMD+Shift+T</code></li>
+<li>Clear All Floating：全部取消置顶当前文档的所有图片视图 - <code>CMD+Option+T</code></li>
+<li>Prev Document：切换到上一打开的文档 - <code>⇤</code></li>
+<li>Next Document：切换到下一打开的文档 - <code>⇥</code></li>
+</ul>
+
+<h3 id="toc_3">置顶图片</h3>
+
+<p>选中图片视图后，可以用<code>CMD+T</code>或者右键选择菜单来置顶图片，图片置顶后，当你切换到其它程序时，会一直显示。经典的使用场景是对着图片画画。再按<code>CMD+T</code>则会取消置顶。也可以用<code>CMD+Shift+T</code>来置顶当前文档中的所有图片视图。用<code>CMD+Option+T</code>来取消置顶所有图片视图</p>
+
+<p><img src="media/14255236146194/4.jpg" alt="">￼￼</p>
+
+<h3 id="toc_4">隐藏主窗口</h3>
+
+<p>主窗口有时候非常影响观看摆好的图片，可以用<code>CMD+D</code>来显示/隐藏主窗口，<code>CMD+F</code>会直接显示主窗口。</p>
+
+<p><img src="media/14255236146194/5.jpg" alt="">￼￼</p>
+
+<h3 id="toc_5">切换打开的PinPhoto文档</h3>
+
+<p>可以使用键盘的向左向右键切换在PinPhoto中打开的文档，也可以用Window菜单切换。</p>
+
+<h2 id="toc_6">用得不爽或者有功能上的建议？</h2>
+
+<p>请直接 Help &ndash;&gt; Send Feedback 发信给我。或者微薄私信我：<a href="http://weibo.com/oulvhai">@oulvhai</a></p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[第二个奇葩的Mac App差不多完成了，但是名字难以确定，求助万能的v2ex和ourcoders]]></title>
@@ -1746,36 +1933,6 @@ MWeb还可以自定网站和博客主题，增加评论和分享功能，请参�
 ￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
 
 <p>更多截图: <a href="me-screenshot-and-in-yosemite.html">MWeb更多截图和在Yosemite下的效果</a></p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Insert photos and display in editor]]></title>
-    <link href="http://coderforart.com/insert-photos-and-display-in-editor.html"/>
-    <updated>2014-12-22T15:45:39+08:00</updated>
-    <id>http://coderforart.com/insert-photos-and-display-in-editor.html</id>
-    <content type="html"><![CDATA[
-<p>Drag &amp; drop photo or paste to the editor, the markdown code will add automatically and the photo will display in editor.</p>
-
-<span id="more"></span><!-- more -->
-
-<p><img src="media/14187874991645/716_max.jpg" alt="716_max">￼￼￼￼￼￼</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[插入图片并显示在编辑器内]]></title>
-    <link href="http://coderforart.com/insert-photos-and-display-in-editor-zh.html"/>
-    <updated>2014-12-17T11:59:52+08:00</updated>
-    <id>http://coderforart.com/insert-photos-and-display-in-editor-zh.html</id>
-    <content type="html"><![CDATA[
-<p>拖拽图片（支持多张）到编辑器或者直接用粘贴即可插入图片，图片会直接显示在编辑器里（也可设定不显示），像这样：</p>
-
-<span id="more"></span><!-- more -->
-
-<p><img src="media/14187874991645/716_max.jpg" alt="716_max">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
 
 ]]></content>
   </entry>
