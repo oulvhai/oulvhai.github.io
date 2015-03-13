@@ -137,22 +137,22 @@
 <h2 id="toc_0">Custom home page</h2>
 
 <p><img src="media/14189904700669/14210659918568.jpg" alt="">￼<br>
-Set the document&rsquo;s HTML file name is <code>index</code>, and make it <code>Is page</code></p>
+Set the document&#39;s HTML file name is <code>index</code>, and make it <code>Is page</code></p>
 
 <h2 id="toc_1">Site theme floder detail</h2>
 
 <p>The floder name is the Theme name, the floder contain below document and floder:</p>
 
 <ul>
-<li>asset &ndash; this floder contain all asset,when build site,asset floder will copy to the site output location.</li>
-<li>atom.xml &ndash; site feed template</li>
-<li>header.html &ndash; site header</li>
-<li>footer.html &ndash; site footer</li>
-<li>archives.html &ndash; archives page template</li>
-<li>category.html &ndash; all categories page template</li>
-<li>sidebar.html &ndash; sidebar template</li>
-<li>page.html &ndash; page template, if the document <code>Is page</code>,then use this template</li>
-<li>post.html &ndash; article template</li>
+<li>asset -- this floder contain all asset,when build site,asset floder will copy to the site output location.</li>
+<li>atom.xml -- site feed template</li>
+<li>header.html -- site header</li>
+<li>footer.html -- site footer</li>
+<li>archives.html -- archives page template</li>
+<li>category.html -- all categories page template</li>
+<li>sidebar.html -- sidebar template</li>
+<li>page.html -- page template, if the document <code>Is page</code>,then use this template</li>
+<li>post.html -- article template</li>
 </ul>
 
 <h2 id="toc_2">Building workflow</h2>
@@ -174,7 +174,7 @@ Set the document&rsquo;s HTML file name is <code>index</code>, and make it <code
 }
 </code></pre>
 
-<p><code>cats</code> &ndash;&gt; array, the object detail:</p>
+<p><code>cats</code> --&gt; array, the object detail:</p>
 
 <pre><code>@{@&quot;name&quot;:tArtCat.name,
 @&quot;url&quot;:catEncodeDocName}
@@ -206,7 +206,7 @@ Set the document&rsquo;s HTML file name is <code>index</code>, and make it <code
 
 <h4 id="toc_8">variables:</h4>
 
-<p><code>posts</code> &ndash;&gt; array, the object detail:</p>
+<p><code>posts</code> --&gt; array, the object detail:</p>
 
 <pre><code>@{@&quot;year&quot;:setDateYearString,
 @&quot;title&quot;:[self clearArticleTitleMark:art.title],
@@ -221,7 +221,7 @@ Set the document&rsquo;s HTML file name is <code>index</code>, and make it <code
 }
 </code></pre>
 
-<p><code>cats</code> &ndash;&gt; array, the object detail:</p>
+<p><code>cats</code> --&gt; array, the object detail:</p>
 
 <pre><code>@{@&quot;name&quot;:tArtCat.name,
 @&quot;url&quot;:catEncodeDocName}
@@ -237,7 +237,7 @@ Set the document&rsquo;s HTML file name is <code>index</code>, and make it <code
 
 <h4 id="toc_11">variables:</h4>
 
-<p><code>posts</code> &ndash;&gt; array, the object detail is <code>the post object detail</code></p>
+<p><code>posts</code> --&gt; array, the object detail is <code>the post object detail</code></p>
 
 <h3 id="toc_12">category.html</h3>
 
@@ -249,9 +249,9 @@ Set the document&rsquo;s HTML file name is <code>index</code>, and make it <code
 
 <h4 id="toc_14">variables:</h4>
 
-<p><code>posts</code> &ndash;&gt; array, the object detail is <code>the post object detail</code><br>
-<code>prevPageUrl</code> &ndash;&gt; string <br>
-<code>nextPageUrl</code> &ndash;&gt; string</p>
+<p><code>posts</code> --&gt; array, the object detail is <code>the post object detail</code><br>
+<code>prevPageUrl</code> --&gt; string <br>
+<code>nextPageUrl</code> --&gt; string</p>
 
 <h3 id="toc_15">post.html</h3>
 
@@ -263,8 +263,8 @@ Set the document&rsquo;s HTML file name is <code>index</code>, and make it <code
 
 <h4 id="toc_17">variables:</h4>
 
-<p><code>post</code> &ndash;&gt; object, the object detail is <code>the post object detail</code><br>
-<code>postNav</code> &ndash;&gt; Dictionary, the object detail:</p>
+<p><code>post</code> --&gt; object, the object detail is <code>the post object detail</code><br>
+<code>postNav</code> --&gt; Dictionary, the object detail:</p>
 
 <pre><code>dic[@&quot;next&quot;] = @{@&quot;title&quot;: nextArt.title, @&quot;url&quot;:urlVar};
 dic[@&quot;prev&quot;] = @{@&quot;title&quot;: prevArt.title, @&quot;url&quot;:urlVar};
@@ -272,7 +272,7 @@ dic[@&quot;prev&quot;] = @{@&quot;title&quot;: prevArt.title, @&quot;url&quot;:u
 
 <h3 id="toc_18">page.html</h3>
 
-<p>all page &ndash; the document <code>Is page</code></p>
+<p>all page -- the document <code>Is page</code></p>
 
 <h4 id="toc_19">template:</h4>
 
@@ -280,8 +280,8 @@ dic[@&quot;prev&quot;] = @{@&quot;title&quot;: prevArt.title, @&quot;url&quot;:u
 
 <h4 id="toc_20">variables:</h4>
 
-<p><code>posts</code> &ndash;&gt; array, the object detail is <code>the post object detail</code><br>
-<code>post</code> &ndash;&gt; object, the object detail is <code>the post object detail</code></p>
+<p><code>posts</code> --&gt; array, the object detail is <code>the post object detail</code><br>
+<code>post</code> --&gt; object, the object detail is <code>the post object detail</code></p>
 
 <h3 id="toc_21">index.html</h3>
 

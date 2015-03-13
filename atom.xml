@@ -4,7 +4,7 @@
   <title><![CDATA[Coder For Art]]></title>
   <link href="http://coderforart.com/atom.xml" rel="self"/>
   <link href="http://coderforart.com/"/>
-  <updated>2015-03-11T09:18:19+08:00</updated>
+  <updated>2015-03-13T13:37:06+08:00</updated>
   <id>http://coderforart.com/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -23,7 +23,7 @@
 
 <p style="text-align:center">
 <a target="_blank" onclick="ga('send','event','download-PinPhoto-Page-EN');" href="https://itunes.apple.com/us/app/pinphoto/id972438457?mt=12" target="_blank"><img src="media/14195170907881/icon_apple_store-download-small.png" width="180" /></a><br />
-<span style="color:#ff0000;">It&rsquo;s Free!</span>
+<span style="color:#ff0000;">Free Download !</span>
 </p>
 
 <span id="more"></span><!-- more -->
@@ -34,15 +34,15 @@
 
 <p><code>CMD+N</code> to new PinPhoto document. Use Drag &amp; drop or <code>Import</code> button to add photos. You can also press <code>CMD+V</code> to paste photo when you copy a photo to pasteboard.</p>
 
-<p><img src="media/14255436714850/1.jpg" alt="">￼￼￼￼￼</p>
+<p><img src="media/14255436714850/1.jpg" alt="">￼￼￼￼￼￼</p>
 
-<p>Tip: If you want to add some lovely photo from website to PinPhoto document, right click website&rsquo;s photo, choose <code>Copy Image</code>, and go to PinPhoto document press <code>CMD+V</code>.</p>
+<p>Tip: If you want to add some lovely photo from website to PinPhoto document, right click website&#39;s photo, choose <code>Copy Image</code>, and go to PinPhoto document press <code>CMD+V</code>.</p>
 
 <h3 id="toc_2">Open and placement the photos</h3>
 
-<p>Click <code>Main Window</code> photos list&rsquo;s photo to open <code>Photo View</code>. Mouse moves to the top of <code>Photo View</code> and drag to change the position. You can use two finger zoom the photo. Use the right click context menu or main menu &ndash;&gt; view for more.</p>
+<p>Click <code>Main Window</code> photos list&#39;s photo to open <code>Photo View</code>. Mouse moves to the top of <code>Photo View</code> and drag to change the position. You can use two finger zoom the photo. Use the right click context menu or main menu --&gt; view for more.</p>
 
-<p><img src="media/14255436714850/2.jpg" alt="">￼￼￼￼￼</p>
+<p><img src="media/14255436714850/2.jpg" alt="">￼￼￼￼￼￼</p>
 
 <p><strong>Right click context menu:</strong></p>
 
@@ -51,7 +51,7 @@
 <li>Zoom Out: <code>CMD+-</code></li>
 <li>Zoom to Fix: <code>CMD+9</code></li>
 <li>100%: actual size - <code>CMD+0</code></li>
-<li>200%: double&rsquo;s actual size - <code>CMD+8</code></li>
+<li>200%: double&#39;s actual size - <code>CMD+8</code></li>
 <li>100% And Resize Window: actual size photo and view</li>
 <li>Duplicate View</li>
 <li>Colse View  - <code>CMD+W</code></li>
@@ -67,9 +67,9 @@
 </ul>
 
 <p>Automatic placement selected photos:<br>
-You can select some photos &ndash;&gt; right click &ndash;&gt; choose <code>Open &amp; Placement Selected Photos</code>. PinPhoto will placement selected photos on full screen automatically.</p>
+You can select some photos --&gt; right click --&gt; choose <code>Open &amp; Placement Selected Photos</code>. PinPhoto will placement selected photos on full screen automatically.</p>
 
-<p><img src="media/14255436714850/3.jpg" alt="">￼￼￼￼￼</p>
+<p><img src="media/14255436714850/3.jpg" alt="">￼￼￼￼￼￼</p>
 
 <p><strong>Right click context menu:</strong></p>
 
@@ -92,13 +92,13 @@ You can select some photos &ndash;&gt; right click &ndash;&gt; choose <code>Open
 
 <p><code>CMD+T</code> to toggle floating <code>Photo View</code>, <code>CMD+Shift+T</code> floating all <code>Photo View</code>, <code>CMD+Option+T</code> cancels floating all <code>Photo View</code>.</p>
 
-<p><img src="media/14255436714850/4.jpg" alt="">￼￼￼￼￼</p>
+<p><img src="media/14255436714850/4.jpg" alt="">￼￼￼￼￼￼</p>
 
 <h3 id="toc_4">Hide/Show Main Window</h3>
 
 <p><code>CMD+D</code> toggle hide/show <code>Main Window</code>, <code>CMD+F</code> show <code>Main Window</code></p>
 
-<p><img src="media/14255436714850/5.jpg" alt="">￼￼￼￼￼</p>
+<p><img src="media/14255436714850/5.jpg" alt="">￼￼￼￼￼￼</p>
 
 <h3 id="toc_5">Switch opened PinPhoto documents</h3>
 
@@ -106,7 +106,7 @@ You can select some photos &ndash;&gt; right click &ndash;&gt; choose <code>Open
 
 <h2 id="toc_6">Questions?</h2>
 
-<p>Please use Help &ndash;&gt; Send Feedback in PinPhoto or Twitter: <a href="https://twitter.com/oulvhai">@oulvhai</a></p>
+<p>Please use Help --&gt; Send Feedback in PinPhoto or Twitter: <a href="https://twitter.com/oulvhai">@oulvhai</a></p>
 
 ]]></content>
   </entry>
@@ -123,7 +123,9 @@ You can select some photos &ndash;&gt; right click &ndash;&gt; choose <code>Open
 
 <p>经常要看的图片，比如说软件快捷键、库的API、英文生词、常用配色等等摆好在屏幕上以便查看和记忆。</p>
 
-<p>做设计、UI、画画、角色创作等工作时，用来做资料收集、激发灵感。有时候看电视剧、动漫等会看到不错的想收藏的画面，比如说某场景色彩太带感、某妹子的饰品或发型不错等，总之是看到觉得要收集的东西，可以用<code>Control+CMD+Shift+4</code>截屏并存到剪贴板、网页图可以右键<code>Copy Image</code>，然后再转到PinPhoto新建或打开文档，再<code>CMD+V</code>导入。然后就可以把图排出来并找灵感啦，因为我感觉把相关图摆满桌面，更容易找到灵感！ </p>
+<p>用PS等画画、设计、调照片时，常常会有好几个版本都不错的情况，这时候可以先复制，然后<code>CMD+V</code>粘贴到PinPhoto，然后排出来对比查看！</p>
+
+<p>做设计、UI、画画、角色创作等工作时，用来做资料收集、激发灵感。有时候看电视剧、动漫等会看到不错的想收藏的画面，比如说某场景色彩太带感、某妹子的饰品或发型不错等，总之是看到觉得要收集的东西，可以用<code>Control+CMD+Shift+4</code>截屏并存到剪贴板、网页图可以右键<code>Copy Image</code>，然后再转到PinPhoto新建或打开文档，再<code>CMD+V</code>导入。然后就可以把图排出来并对比查看或找灵感啦！ </p>
 
 <h3 id="toc_1">看美图和妹子等娱乐用：</h3>
 
@@ -142,7 +144,7 @@ You can select some photos &ndash;&gt; right click &ndash;&gt; choose <code>Open
 
 <p><code>CMD+N</code>新建PinPhoto文档，使用拖拽或者点<code>Import</code>按钮增加要摆放的图片，如果你的剪切板上复制有图片，也可以直接用<code>CMD+V</code>粘贴进来。</p>
 
-<p><img src="media/14255236146194/1.jpg" alt="">￼￼￼￼￼￼￼</p>
+<p><img src="media/14255236146194/1.jpg" alt="">￼￼￼￼￼￼￼￼￼￼￼</p>
 
 <p>小技巧：在网页中看到喜欢的图片想增加到PinPhoto文档中，可以右键网页中的图片，在弹出的菜单中选择：复制图片(Copy Image) 然后切换到PinPhoto，用快捷键<code>CMD+V</code>粘贴以增加到PinPhoto的文档中。</p>
 
@@ -150,7 +152,7 @@ You can select some photos &ndash;&gt; right click &ndash;&gt; choose <code>Open
 
 <p>点击列表中的图片即可打开该图片的图片视图，在打开的图片视图中，鼠标移到图片顶部的位置，会显示一条黑色的半透明长方形，拖动即可改变位置，你也可以用双指缩放、平移图片，更多的调节请用右键菜单、主菜单的View菜单或者快捷键。</p>
 
-<p><img src="media/14255236146194/2.jpg" alt="">￼￼￼￼￼￼￼</p>
+<p><img src="media/14255236146194/2.jpg" alt="">￼￼￼￼￼￼￼￼￼￼￼</p>
 
 <p><strong>右键菜单项目说明：</strong></p>
 
@@ -176,7 +178,7 @@ You can select some photos &ndash;&gt; right click &ndash;&gt; choose <code>Open
 
 <p>另外也可以在主窗口中右键打开多张图片，有个实用的功能为：自动排列图片。选择要自动排列的图片，右键，并选<code>Open &amp; Placement Selected Photos</code>，则会把您选择的图片自动排满整个屏幕。如下图。</p>
 
-<p><img src="media/14255236146194/3.jpg" alt="">￼￼￼￼￼￼￼</p>
+<p><img src="media/14255236146194/3.jpg" alt="">￼￼￼￼￼￼￼￼￼￼￼</p>
 
 <p><strong>右键菜单项目说明：</strong></p>
 
@@ -199,13 +201,13 @@ You can select some photos &ndash;&gt; right click &ndash;&gt; choose <code>Open
 
 <p>选中图片视图后，可以用<code>CMD+T</code>或者右键选择菜单来置顶图片，图片置顶后，当你切换到其它程序时，会一直显示。经典的使用场景是对着图片画画。再按<code>CMD+T</code>则会取消置顶。也可以用<code>CMD+Shift+T</code>来置顶当前文档中的所有图片视图。用<code>CMD+Option+T</code>来取消置顶所有图片视图</p>
 
-<p><img src="media/14255236146194/4.jpg" alt="">￼￼￼￼￼￼￼</p>
+<p><img src="media/14255236146194/4.jpg" alt="">￼￼￼￼￼￼￼￼￼￼￼</p>
 
 <h3 id="toc_6">隐藏主窗口</h3>
 
 <p>主窗口有时候非常影响观看摆好的图片，可以用<code>CMD+D</code>来显示/隐藏主窗口，<code>CMD+F</code>会直接显示主窗口。</p>
 
-<p><img src="media/14255236146194/5.jpg" alt="">￼￼￼￼￼￼￼</p>
+<p><img src="media/14255236146194/5.jpg" alt="">￼￼￼￼￼￼￼￼￼￼￼</p>
 
 <h3 id="toc_7">切换打开的PinPhoto文档</h3>
 
@@ -213,7 +215,7 @@ You can select some photos &ndash;&gt; right click &ndash;&gt; choose <code>Open
 
 <h2 id="toc_8">用得不爽或者有功能上的建议？</h2>
 
-<p>请直接 Help &ndash;&gt; Send Feedback 发信给我。或者微薄私信我：<a href="http://weibo.com/oulvhai">@oulvhai</a></p>
+<p>请直接 Help --&gt; Send Feedback 发信给我。或者微薄私信我：<a href="http://weibo.com/oulvhai">@oulvhai</a></p>
 
 ]]></content>
   </entry>
@@ -233,7 +235,7 @@ ourcoders:<a href="http://ourcoders.com/thread/show/5653/">http://ourcoders.com/
 
 <span id="more"></span><!-- more -->
 
-<p>名字一开始是想叫：Research Pro的，因为这个App最开始的目的就是Research。因为我喜欢并想学CG艺术，然后通常会在网上看到不错的图，就想把相关联的排起来对比看。有时候也会特意对找一些东西，比如说唐代古装的服饰、饰品、发型等，找到后想全部排起来一并查看和研究。所以流程为：收集资料&ndash;&gt;排好&ndash;&gt;保存成文档&ndash;&gt;下次打开恢复排好的状态。这大概是Research的流程，这软件我想同样也适用于设计师研究设计方案，屏幕越大，可以摆的图越多，很是YY iMac retina 27下的效果。</p>
+<p>名字一开始是想叫：Research Pro的，因为这个App最开始的目的就是Research。因为我喜欢并想学CG艺术，然后通常会在网上看到不错的图，就想把相关联的排起来对比看。有时候也会特意对找一些东西，比如说唐代古装的服饰、饰品、发型等，找到后想全部排起来一并查看和研究。所以流程为：收集资料--&gt;排好--&gt;保存成文档--&gt;下次打开恢复排好的状态。这大概是Research的流程，这软件我想同样也适用于设计师研究设计方案，屏幕越大，可以摆的图越多，很是YY iMac retina 27下的效果。</p>
 
 <p>后来觉得Research Pro有点太高端，这是一个小软件，有点名不副其实，所以就改为PinPhoto，低调了一些。但是总觉得可能有更好的名字，或者这两个名字那个好？发上来求助万能的V友。</p>
 
@@ -281,7 +283,7 @@ ourcoders:<a href="http://ourcoders.com/thread/show/5653/">http://ourcoders.com/
 <h2 id="toc_1">Select sync path</h2>
 
 <p>Select MWeb build site path for the left panel.<br>
-If you didn&rsquo;t change MWeb build site path,the default path is:</p>
+If you didn&#39;t change MWeb build site path,the default path is:</p>
 
 <pre><code>file:///Users/You Account/Library/Containers/com.coderforart.MWeb/Data/Documents/MWeb/LocalData/Site
 </code></pre>
@@ -367,12 +369,12 @@ A: You can have 3 or less jobs in free version and 100 or less files and folders
 <h2 id="toc_0">New feature</h2>
 
 <ul>
-<li>Add auto insert list and blockquote prefix: Preferences &ndash;&gt; General &ndash;&gt; Auto insert list and blockquote prefix</li>
-<li>In Editor share: Copy as image,Save as image,Save as PDF etc&hellip; now change to HTML style.</li>
-<li>Add HTML or PDF export suport for documents. You can selected documents &ndash;&gt; Right Mouse Button Click(RMB) &ndash;&gt; Export as HTML or PDF.</li>
-<li>Add HTML or PDF export suport for category. You can selected category &ndash;&gt; RMB &ndash;&gt; Export as HTML or PDF.</li>
+<li>Add auto insert list and blockquote prefix: Preferences --&gt; General --&gt; Auto insert list and blockquote prefix</li>
+<li>In Editor share: Copy as image,Save as image,Save as PDF etc... now change to HTML style.</li>
+<li>Add HTML or PDF export suport for documents. You can selected documents --&gt; Right Mouse Button Click(RMB) --&gt; Export as HTML or PDF.</li>
+<li>Add HTML or PDF export suport for category. You can selected category --&gt; RMB --&gt; Export as HTML or PDF.</li>
 <li>Add new preview css: octopress,greyshade.</li>
-<li>Add drag &amp; drop to sort documents. RMB parent category &ndash;&gt; Edit &ndash;&gt; set Order by to Custom &ndash;&gt; you can drag &amp; drop to sort</li>
+<li>Add drag &amp; drop to sort documents. RMB parent category --&gt; Edit --&gt; set Order by to Custom --&gt; you can drag &amp; drop to sort</li>
 <li>Add drag &amp; drop to sort categories.</li>
 </ul>
 
@@ -395,12 +397,12 @@ A: You can have 3 or less jobs in free version and 100 or less files and folders
 <h2 id="toc_0">新增</h2>
 
 <ul>
-<li>可选择在输入时是否自动插入列表编号，可以在 Preferences &ndash;&gt; General &ndash;&gt; Auto insert list and blockquote prefix 开启和关闭。</li>
+<li>可选择在输入时是否自动插入列表编号，可以在 Preferences --&gt; General --&gt; Auto insert list and blockquote prefix 开启和关闭。</li>
 <li>分享功能的 Copy as image、Save as image、Save as PDF 等现在统一都用HTML的样式了，另外还专门为分享到微薄等SNS生成的图片做了优化，比如说如果有代码，会强制换行。</li>
-<li>新增把文档库里的单个或多个文档导出为HTML或者PDF。使用方法为：选择要导出的文档（可多选） &ndash;&gt; 鼠标右键 &ndash;&gt; Export as HTML、PDF</li>
-<li>新增把整个分类导出为HTML或者PDF。使用方法为：右键要导出的分类 &ndash;&gt; Export as HTML、PDF。导出的PDF现在还没办法自动生成目录，下边的详细介绍会分享一个可以自动生成目录的方法，然后个人觉得生成的PDF非常好。</li>
+<li>新增把文档库里的单个或多个文档导出为HTML或者PDF。使用方法为：选择要导出的文档（可多选） --&gt; 鼠标右键 --&gt; Export as HTML、PDF</li>
+<li>新增把整个分类导出为HTML或者PDF。使用方法为：右键要导出的分类 --&gt; Export as HTML、PDF。导出的PDF现在还没办法自动生成目录，下边的详细介绍会分享一个可以自动生成目录的方法，然后个人觉得生成的PDF非常好。</li>
 <li>新增MWeb自带的两个主题octopress、greyshade的即时预览CSS。现在可以不用 Build site 就可以即时预览文章的大概效果了。另外自定网站的预览CSS非常简单，请看下边的详细介绍。</li>
-<li>新增可以拖拽改变文档的顺序。使用方法为：鼠标右键父分类 &ndash;&gt; Edit &ndash;&gt; 把Order by设定为：Custom &ndash;&gt; 然后就可以用拖拽调节这个父分类下的文档顺序了。</li>
+<li>新增可以拖拽改变文档的顺序。使用方法为：鼠标右键父分类 --&gt; Edit --&gt; 把Order by设定为：Custom --&gt; 然后就可以用拖拽调节这个父分类下的文档顺序了。</li>
 <li>新增可以拖拽改变分类的顺序。</li>
 </ul>
 
@@ -445,7 +447,7 @@ A: You can have 3 or less jobs in free version and 100 or less files and folders
 
 <p>然后只留下layout/greyshade文件夹下的asset文件夹和随便两个.html文件，其他都删除。把留下的两个.html文件分别改名为：demo.html和index.html。</p>
 
-<p>使用Build site &ndash;&gt; Preview site &ndash;&gt; 转到任何一个单独的文章页面 &ndash;&gt; 查看原代码 &ndash;&gt; 复制并把它粘贴到demo.html上。现在你可以直接打开demo.html看效果了。调整demo.html到合适的预览效果时，再把demo.html的所有内容粘贴到index.html上。</p>
+<p>使用Build site --&gt; Preview site --&gt; 转到任何一个单独的文章页面 --&gt; 查看原代码 --&gt; 复制并把它粘贴到demo.html上。现在你可以直接打开demo.html看效果了。调整demo.html到合适的预览效果时，再把demo.html的所有内容粘贴到index.html上。</p>
 
 <p>把index.html页的标题都用<code>{{title}}</code>替换，内容用<code>{{content}}</code>替换，并在<code>&lt;head&gt;&lt;/head&gt;</code>之间加上<code>{{head}}</code>，一般加在<code>&lt;/head&gt;</code>前面即可。</p>
 
@@ -472,7 +474,7 @@ A: You can have 3 or less jobs in free version and 100 or less files and folders
 
 <span id="more"></span><!-- more -->
 
-<p>我是用MWeb生成的静态网站并上传试试如何的。下图左边是我本机的用MWeb生成的静态网站的所在文件夹，然后右边是连上所给的FTP后，转到htdocs文件夹，在ForkLift中选择File&ndash;&gt;Sync to&hellip;</p>
+<p>我是用MWeb生成的静态网站并上传试试如何的。下图左边是我本机的用MWeb生成的静态网站的所在文件夹，然后右边是连上所给的FTP后，转到htdocs文件夹，在ForkLift中选择File--&gt;Sync to...</p>
 
 <p><img src="media/14229369882579/14229376408401.jpg" alt="">￼￼</p>
 
@@ -485,7 +487,7 @@ A: You can have 3 or less jobs in free version and 100 or less files and folders
 <p>然后试试更新文章，看看ForkLift是否会自动同步！<br>
 因为我现在是新写了一文章，所以在MWeb中 Build site 然后看看ForkLift会不会侦测到文件改变，然后自动同步更新到FTP。</p>
 
-<p>可惜的是：ForkLift不会自动同步，还是要你去点File&ndash;&gt;Sync to&hellip;才可以。如图，他会找出那些文档有改动，然后点Sync，才会更新到FTP。</p>
+<p>可惜的是：ForkLift不会自动同步，还是要你去点File--&gt;Sync to...才可以。如图，他会找出那些文档有改动，然后点Sync，才会更新到FTP。</p>
 
 <p><img src="media/14229369882579/14229393304301.jpg" alt="">￼￼</p>
 
@@ -660,8 +662,8 @@ git push -u origin master
 
 <h2 id="toc_1">How to enable MathJax preview support? How to enable website MathJax support?</h2>
 
-<p><code>CMD+,</code> open Preferences，Themes &ndash;&gt; Enable Math.<br>
-For enable website MathJax support,the simple way is copy below code to <code>Site category</code> &ndash;&gt; <code>Site other:</code> text box. </p>
+<p><code>CMD+,</code> open Preferences，Themes --&gt; Enable Math.<br>
+For enable website MathJax support,the simple way is copy below code to <code>Site category</code> --&gt; <code>Site other:</code> text box. </p>
 
 <pre><code class="js">&lt;script type=&quot;text/x-mathjax-config&quot;&gt;
   MathJax.Hub.Config({tex2jax: {inlineMath: [[&#39;$&#39;,&#39;$&#39;], [&#39;\\(&#39;,&#39;\\)&#39;]]}});
@@ -675,16 +677,16 @@ For enable website MathJax support,the simple way is copy below code to <code>Si
 
 <span id="more"></span><!-- more -->
 
-<h2 id="toc_2">How to backup MWeb&rsquo;s documents library to Dropbox？</h2>
+<h2 id="toc_2">How to backup MWeb&#39;s documents library to Dropbox？</h2>
 
-<p>Please open Terminal ( Spotlight&ndash;&gt;enter <code>terminal</code> ) and enter the following command. </p>
+<p>Please open Terminal ( Spotlight--&gt;enter <code>terminal</code> ) and enter the following command. </p>
 
 <pre><code>ln -s ~/Library/Containers/com.coderforart.MWeb/Data/Documents/MWeb ~/Dropbox/MWebBackup
 </code></pre>
 
 <h2 id="toc_3">How to add Disqus support?</h2>
 
-<p>go to <a href="https://disqus.com/">https://disqus.com/</a>,click <code>Add Disqus to Your Site</code>&hellip;. At last you will get code like below:</p>
+<p>go to <a href="https://disqus.com/">https://disqus.com/</a>,click <code>Add Disqus to Your Site</code>.... At last you will get code like below:</p>
 
 <pre><code class="js">&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
 &lt;script type=&quot;text/javascript&quot;&gt;
@@ -773,8 +775,8 @@ For enable website MathJax support,the simple way is copy below code to <code>Si
 <h2 id="toc_0">New feature</h2>
 
 <ul>
-<li>Add import files (.txt and .md) featrue：File &ndash;&gt; Import Files To Library&hellip;</li>
-<li>Add TOC（Table of Content）featrue: Preferences &ndash;&gt; Themes &ndash;&gt; Enable TOC (Table of Content)</li>
+<li>Add import files (.txt and .md) featrue：File --&gt; Import Files To Library...</li>
+<li>Add TOC（Table of Content）featrue: Preferences --&gt; Themes --&gt; Enable TOC (Table of Content)</li>
 <li>Add MWeb Lite</li>
 <li>Add sitemap suport.</li>
 <li>Add right click for category edit.</li>
@@ -788,7 +790,7 @@ For enable website MathJax support,the simple way is copy below code to <code>Si
 <ul>
 <li>Live preview improved</li>
 <li>Outline improved</li>
-<li>case sensitive system can&rsquo;t open MWeb&rsquo;s document.</li>
+<li>case sensitive system can&#39;t open MWeb&#39;s document.</li>
 </ul>
 
 <h2 id="toc_2">Syntax highlighting in fenced code blocks screenshot</h2>
@@ -809,7 +811,7 @@ For enable website MathJax support,the simple way is copy below code to <code>Si
 <h2 id="toc_0">新增</h2>
 
 <ul>
-<li>增加导入.txt或Markdown文档到文档库功能：File &ndash;&gt; Import Files To Library&hellip;</li>
+<li>增加导入.txt或Markdown文档到文档库功能：File --&gt; Import Files To Library...</li>
 <li>增加TOC（Table of Content）支持，和是否 Render TOC 选项</li>
 <li>增加免费版</li>
 <li>增加sitemap功能</li>
@@ -960,33 +962,33 @@ static bool GAllowApplePlatformSymbolication = false;
 <p>Click <img src="media/14206135238767/14227577752365.jpg" alt="">￼, you will found a floder name is SiteThemes. MWeb all themes in this flodler,and a floder is a theme,it contains some documents and floders.</p>
 
 <ul>
-<li>asset &ndash; floder, contains all theme&rsquo;s picture,CSS,JS etc..</li>
-<li>archives.html &ndash; archives.html page template</li>
-<li>atom.xml &ndash; RSS page template</li>
-<li>category.html &ndash; all categiries pages template</li>
-<li>footer.html &ndash; bottom of each page</li>
-<li>header.html &ndash; top of each page</li>
-<li>page-index.html &ndash; custom home page template</li>
-<li>page.html &ndash; document when enable <code>Is page</code> use this template</li>
-<li>post.html &ndash; document when disable <code>Is page</code> use this template</li>
-<li>sidebar.html &ndash; sidebar template</li>
-<li>sitemap.xml &ndash; google sitemap template</li>
+<li>asset -- floder, contains all theme&#39;s picture,CSS,JS etc..</li>
+<li>archives.html -- archives.html page template</li>
+<li>atom.xml -- RSS page template</li>
+<li>category.html -- all categiries pages template</li>
+<li>footer.html -- bottom of each page</li>
+<li>header.html -- top of each page</li>
+<li>page-index.html -- custom home page template</li>
+<li>page.html -- document when enable <code>Is page</code> use this template</li>
+<li>post.html -- document when disable <code>Is page</code> use this template</li>
+<li>sidebar.html -- sidebar template</li>
+<li>sitemap.xml -- google sitemap template</li>
 </ul>
 
 <h2 id="toc_1">Custom home page</h2>
 
-<p>Set a document&rsquo;s HTML file name value: <code>index</code> and enable <code>Is page</code>.<br>
+<p>Set a document&#39;s HTML file name value: <code>index</code> and enable <code>Is page</code>.<br>
 <img src="media/14189904700669/14210659918568.jpg" alt="">￼￼￼￼￼￼￼￼￼</p>
 
 <span id="more"></span><!-- more -->
 
-<h2 id="toc_2">Custom <code>Is page</code> enable document&rsquo;s template</h2>
+<h2 id="toc_2">Custom <code>Is page</code> enable document&#39;s template</h2>
 
-<p>Use <q>header.html+post.html+sidebar.html+footer.html</q> templates when the document <code>Is page</code> is disable; use <q>header.html+page.html+footer.html</q> templates when the document <code>Is page</code> is enable. You can add a page-{HTML file name}.html template for custom <code>Is page</code> enable document&rsquo;s template. MWeb will use <q>header.html+page-{HTML file name}.html+footer.html</q> when you add page-{HTML file name}.html template. For example:  <a href="http://coderforart.com">http://coderforart.com</a>&rsquo;s theme have page-index.html template for home page <a href="https://github.com/oulvhai/MWeb-Themes/blob/master/mweb-greyshade/page-index.html">https://github.com/oulvhai/MWeb-Themes/blob/master/mweb-greyshade/page-index.html</a> . </p>
+<p>Use <q>header.html+post.html+sidebar.html+footer.html</q> templates when the document <code>Is page</code> is disable; use <q>header.html+page.html+footer.html</q> templates when the document <code>Is page</code> is enable. You can add a page-{HTML file name}.html template for custom <code>Is page</code> enable document&#39;s template. MWeb will use <q>header.html+page-{HTML file name}.html+footer.html</q> when you add page-{HTML file name}.html template. For example:  <a href="http://coderforart.com">http://coderforart.com</a>&#39;s theme have page-index.html template for home page <a href="https://github.com/oulvhai/MWeb-Themes/blob/master/mweb-greyshade/page-index.html">https://github.com/oulvhai/MWeb-Themes/blob/master/mweb-greyshade/page-index.html</a> . </p>
 
 <h2 id="toc_3">Custom category page template</h2>
 
-<p>Use <q>header.html+category.html+sidebar.html+footer.html</q> by default. Use <q>header.html+category-{HTML file name}.html+sidebar.html+footer.html</q> when you add category-{HTML file name}.html template. For example: a category&rsquo;s HTML file name is <code>Cocoa</code> and the theme have category-Cocoa.html template, MWeb will use <q>header.html+category-Cocoa.html+sidebar.html</q>.</p>
+<p>Use <q>header.html+category.html+sidebar.html+footer.html</q> by default. Use <q>header.html+category-{HTML file name}.html+sidebar.html+footer.html</q> when you add category-{HTML file name}.html template. For example: a category&#39;s HTML file name is <code>Cocoa</code> and the theme have category-Cocoa.html template, MWeb will use <q>header.html+category-Cocoa.html+sidebar.html</q>.</p>
 
 <h2 id="toc_4">Common variables define</h2>
 
@@ -1000,11 +1002,11 @@ static bool GAllowApplePlatformSymbolication = false;
 </thead><tbody>
 <tr>
 <td>name</td>
-<td>category&rsquo;s name</td>
+<td>category&#39;s name</td>
 </tr>
 <tr>
 <td>url</td>
-<td>category&rsquo;s url</td>
+<td>category&#39;s url</td>
 </tr>
 </tbody></table>
 
@@ -1018,15 +1020,15 @@ static bool GAllowApplePlatformSymbolication = false;
 </thead><tbody>
 <tr>
 <td>title</td>
-<td>document&rsquo;s title</td>
+<td>document&#39;s title</td>
 </tr>
 <tr>
 <td>desContent</td>
-<td>document&rsquo;s description for HTML format. Same with <code>content</code> when the document do not add <code>&lt;!-- more --&gt;</code>.</td>
+<td>document&#39;s description for HTML format. Same with <code>content</code> when the document do not add <code>&lt;!-- more --&gt;</code>.</td>
 </tr>
 <tr>
 <td>desContentTextOnly</td>
-<td>document&rsquo;s description without HTML</td>
+<td>document&#39;s description without HTML</td>
 </tr>
 <tr>
 <td>content</td>
@@ -1034,19 +1036,19 @@ static bool GAllowApplePlatformSymbolication = false;
 </tr>
 <tr>
 <td>date</td>
-<td>document&rsquo;s date,defalut format is:2014/10/24</td>
+<td>document&#39;s date,defalut format is:2014/10/24</td>
 </tr>
 <tr>
 <td>dateGTM</td>
-<td>document&rsquo;s date,format is: 2014-10-24T13:54:03GMT+08:00</td>
+<td>document&#39;s date,format is: 2014-10-24T13:54:03GMT+08:00</td>
 </tr>
 <tr>
 <td>artDate</td>
-<td>document&rsquo;s create date,default format is: 2014/10/24</td>
+<td>document&#39;s create date,default format is: 2014/10/24</td>
 </tr>
 <tr>
 <td>cats</td>
-<td>document&rsquo;s categories,array &ndash;&gt; <code>the category object</code></td>
+<td>document&#39;s categories,array --&gt; <code>the category object</code></td>
 </tr>
 <tr>
 <td>readMore</td>
@@ -1054,7 +1056,7 @@ static bool GAllowApplePlatformSymbolication = false;
 </tr>
 <tr>
 <td>url</td>
-<td>document&rsquo;s url</td>
+<td>document&#39;s url</td>
 </tr>
 </tbody></table>
 
@@ -1068,11 +1070,11 @@ static bool GAllowApplePlatformSymbolication = false;
 </thead><tbody>
 <tr>
 <td>title</td>
-<td>document&rsquo;s title</td>
+<td>document&#39;s title</td>
 </tr>
 <tr>
 <td>url</td>
-<td>document&rsquo;s url</td>
+<td>document&#39;s url</td>
 </tr>
 </tbody></table>
 
@@ -1086,11 +1088,11 @@ static bool GAllowApplePlatformSymbolication = false;
 </thead><tbody>
 <tr>
 <td>name</td>
-<td>category&rsquo;s name</td>
+<td>category&#39;s name</td>
 </tr>
 <tr>
 <td>url</td>
-<td>category&rsquo;s url</td>
+<td>category&#39;s url</td>
 </tr>
 <tr>
 <td>count</td>
@@ -1267,43 +1269,43 @@ addition variables:</p>
 </thead><tbody>
 <tr>
 <td>year</td>
-<td>document&rsquo;s year</td>
+<td>document&#39;s year</td>
 </tr>
 <tr>
 <td>title</td>
-<td>document&rsquo;s title</td>
+<td>document&#39;s title</td>
 </tr>
 <tr>
 <td>url</td>
-<td>document&rsquo;s url</td>
+<td>document&#39;s url</td>
 </tr>
 <tr>
 <td>cats</td>
-<td>document&rsquo;s categries, array, the item is <code>the category object</code></td>
+<td>document&#39;s categries, array, the item is <code>the category object</code></td>
 </tr>
 <tr>
 <td>date</td>
-<td>document&rsquo;s date,defalut format is:2014/10/24</td>
+<td>document&#39;s date,defalut format is:2014/10/24</td>
 </tr>
 <tr>
 <td>dateMonth</td>
-<td>document&rsquo;s month</td>
+<td>document&#39;s month</td>
 </tr>
 <tr>
 <td>dateDay</td>
-<td>document&rsquo;s day</td>
+<td>document&#39;s day</td>
 </tr>
 <tr>
 <td>dateYear</td>
-<td>document&rsquo;s year</td>
+<td>document&#39;s year</td>
 </tr>
 <tr>
 <td>dateGTM</td>
-<td>document&rsquo;s date,format is:  2014-10-24T13:54:03GMT+08:00</td>
+<td>document&#39;s date,format is:  2014-10-24T13:54:03GMT+08:00</td>
 </tr>
 <tr>
 <td>artDate</td>
-<td>document&rsquo;s create date,default format is:2014/10/24</td>
+<td>document&#39;s create date,default format is:2014/10/24</td>
 </tr>
 </tbody></table>
 
@@ -1342,23 +1344,23 @@ addition variables:</p>
 </thead><tbody>
 <tr>
 <td>title</td>
-<td>document&rsquo;s title</td>
+<td>document&#39;s title</td>
 </tr>
 <tr>
 <td>url</td>
-<td>document&rsquo;s url</td>
+<td>document&#39;s url</td>
 </tr>
 <tr>
 <td>date</td>
-<td>document&rsquo;s date,defalut format is:2014/10/24</td>
+<td>document&#39;s date,defalut format is:2014/10/24</td>
 </tr>
 <tr>
 <td>dateGTM</td>
-<td>document&rsquo;s date,format is:2014-10-24T13:54:03GMT+08:00</td>
+<td>document&#39;s date,format is:2014-10-24T13:54:03GMT+08:00</td>
 </tr>
 <tr>
 <td>artDate</td>
-<td>document&rsquo;s create date,default format is:2014/10/24</td>
+<td>document&#39;s create date,default format is:2014/10/24</td>
 </tr>
 </tbody></table>
 
@@ -1380,17 +1382,17 @@ addition variables:</p>
 <p>MWeb所有网站主题模板都放在SiteThemes这个文件夹里，点击 <img src="media/14206135238767/14227577752365.jpg" alt="">￼￼￼ 这里可以直接显示SiteThemes文件夹，一个文件夹就表示一个主题。每个主题里包含的文档和文件夹的作用如下：</p>
 
 <ul>
-<li>asset &ndash; 主题所有要用到的东西，图片、CSS、JS等等都放这里</li>
-<li>archives.html &ndash; archives.html页所使用的模板</li>
-<li>atom.xml &ndash; RSS所使用的模板</li>
-<li>category.html &ndash; 分类所使用的模板</li>
-<li>footer.html &ndash; 页面的底部</li>
-<li>header.html &ndash; 页面的顶部</li>
-<li>page-index.html &ndash; 自定首页模板</li>
-<li>page.html &ndash; 文档选中<code>Is page</code>时所使用的模板</li>
-<li>post.html &ndash; 文档不选中<code>Is page</code>所使用的模板</li>
-<li>sidebar.html &ndash; 侧边栏的模板</li>
-<li>sitemap.xml &ndash; 网站sitemap所使用的模板</li>
+<li>asset -- 主题所有要用到的东西，图片、CSS、JS等等都放这里</li>
+<li>archives.html -- archives.html页所使用的模板</li>
+<li>atom.xml -- RSS所使用的模板</li>
+<li>category.html -- 分类所使用的模板</li>
+<li>footer.html -- 页面的底部</li>
+<li>header.html -- 页面的顶部</li>
+<li>page-index.html -- 自定首页模板</li>
+<li>page.html -- 文档选中<code>Is page</code>时所使用的模板</li>
+<li>post.html -- 文档不选中<code>Is page</code>所使用的模板</li>
+<li>sidebar.html -- 侧边栏的模板</li>
+<li>sitemap.xml -- 网站sitemap所使用的模板</li>
 </ul>
 
 <h2 id="toc_1">自定首页</h2>
@@ -1803,15 +1805,15 @@ addition variables:</p>
 <h3 id="toc_2">MWeb Q &amp; A</h3>
 
 <p><a href="mweb-qa.html">MWeb Q &amp; A</a><br>
-If you can&rsquo;t find the answer, please send feedback to me: Help &ndash;&gt; Send Feedback</p>
+If you can&#39;t find the answer, please send feedback to me: Help --&gt; Send Feedback</p>
 
 <h3 id="toc_3">Some may useful articles</h3>
 
-<p><a href="custom-site-theme-detail.html">Custom site theme or design you owner theme&hellip;</a><br>
+<p><a href="custom-site-theme-detail.html">Custom site theme or design you owner theme...</a><br>
 <a href="me-screenshot-and-in-yosemite.html">MWeb Screenshot and in Yosemite</a><br>
 <a href="mweb-v1.1-release.html">MWeb 1.1 release</a><br>
 <a href="mweb-v1.2-release.html">MWeb 1.2 release</a><br>
-<a href="use-goodsync-sync-mweb-static-websites.html">Use GoodSync synchronize MWeb&rsquo;s static websites to FTP,SFTP,WebDAV,Amazon S3 automatically</a></p>
+<a href="use-goodsync-sync-mweb-static-websites.html">Use GoodSync synchronize MWeb&#39;s static websites to FTP,SFTP,WebDAV,Amazon S3 automatically</a></p>
 
 <h2 id="toc_4">Introduction MWeb</h2>
 
@@ -1846,11 +1848,11 @@ If you can&rsquo;t find the answer, please send feedback to me: Help &ndash;&gt;
 
 <h2 id="toc_7">Easy to build static websites and blogs</h2>
 
-<p>Selected a category &ndash;&gt; Set to site, setting site name and description and just click <code>Build site</code>. click <code>Clear and rebuild site</code> button when the Theme is change. click <code>Preview site</code> button to preview. Just double click <code>Coder For Art</code> category and try.</p>
+<p>Selected a category --&gt; Set to site, setting site name and description and just click <code>Build site</code>. click <code>Clear and rebuild site</code> button when the Theme is change. click <code>Preview site</code> button to preview. Just double click <code>Coder For Art</code> category and try.</p>
 
 <p>￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼<img src="media/14187874991645/MWeb-build-static-websites-and-blogs-1-1-2.jpg" alt="MWeb-build-static-websites-and-blogs-1-1-2">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
 
-<p>More info, please read this post: <a href="custom-site-theme-detail.html">Custom site theme or design you owner theme&hellip;</a></p>
+<p>More info, please read this post: <a href="custom-site-theme-detail.html">Custom site theme or design you owner theme...</a></p>
 
 <h2 id="toc_8">Three view pattern</h2>
 
@@ -1887,11 +1889,11 @@ If you can&rsquo;t find the answer, please send feedback to me: Help &ndash;&gt;
 <h3 id="toc_2">MWeb所有问题和回答收集（会不断更新）</h3>
 
 <p><a href="mweb-qa-zh.html">MWeb问题和回答</a><br>
-如果您在上面的连接中找不到答案，请在MWeb中点：Help &ndash;&gt; Send Feedback 写信给我！</p>
+如果您在上面的连接中找不到答案，请在MWeb中点：Help --&gt; Send Feedback 写信给我！</p>
 
 <h3 id="toc_3">MWeb其他可能有用的文章</h3>
 
-<p><a href="custom-site-theme-detail-zh.html">自定网站主题、增加评论和分享和设计新主题&hellip;</a><br>
+<p><a href="custom-site-theme-detail-zh.html">自定网站主题、增加评论和分享和设计新主题...</a><br>
 <a href="me-screenshot-and-in-yosemite.html">MWeb更多截图和在Yosemite下的效果</a><br>
 <a href="mweb-v1.1-release-zh.html">MWeb 1.1 版更新说明</a><br>
 <a href="mweb-v1.2-release-zh.html">MWeb 1.2 版更新说明</a><br>
@@ -1931,11 +1933,11 @@ If you can&rsquo;t find the answer, please send feedback to me: Help &ndash;&gt;
 
 <h2 id="toc_7">一键将分类生成全静态的网站和博客</h2>
 
-<p>MWeb的分类管理的设计跟博客的结构差不多，一个文档可以选择多个分类。将分类变成博客的方法为：选择该分类 &ndash;&gt; Set to site。设定好博客的名称和描述等等，点：<code>Build site</code> 按钮即可。如果有改动到 <code>Theme</code> 或者有任何没有在预料之中的结果，试试点 <code>Clear and rebuild site</code> 按钮。 点 <code>Preview site</code> 按钮可以预览生成的博客。<a href="http://coderforart.com/">http://coderforart.com/</a> 网站就是用MWeb生成的。</p>
+<p>MWeb的分类管理的设计跟博客的结构差不多，一个文档可以选择多个分类。将分类变成博客的方法为：选择该分类 --&gt; Set to site。设定好博客的名称和描述等等，点：<code>Build site</code> 按钮即可。如果有改动到 <code>Theme</code> 或者有任何没有在预料之中的结果，试试点 <code>Clear and rebuild site</code> 按钮。 点 <code>Preview site</code> 按钮可以预览生成的博客。<a href="http://coderforart.com/">http://coderforart.com/</a> 网站就是用MWeb生成的。</p>
 
 <p><img src="media/14187874991645/MWeb-build-static-websites-and-blogs-1-1-2.jpg" alt="MWeb-build-static-websites-and-blogs-1-1-2">￼￼￼￼￼￼￼￼￼￼￼<br>
 ￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼<br>
-MWeb还可以自定网站和博客主题，增加评论和分享功能，请参考这个网址: <a href="custom-site-theme-detail-zh.html">自定网站主题、增加评论和分享和设计新主题&hellip;</a></p>
+MWeb还可以自定网站和博客主题，增加评论和分享功能，请参考这个网址: <a href="custom-site-theme-detail-zh.html">自定网站主题、增加评论和分享和设计新主题...</a></p>
 
 <h2 id="toc_8">三种视图模式、改变视图时编辑器大小会固定</h2>
 
