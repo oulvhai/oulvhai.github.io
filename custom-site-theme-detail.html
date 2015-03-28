@@ -132,7 +132,7 @@
 
 <h2 id="toc_0">MWeb theme structure</h2>
 
-<p>Click <img src="media/14206135238767/14227577752365.jpg" alt="">￼, you will found a floder name is SiteThemes. MWeb all themes in this flodler,and a floder is a theme,it contains some documents and floders.</p>
+<p>Click <img src="media/14206135238767/14227577752365.jpg" alt=""/>￼￼, you will found a floder name is SiteThemes. MWeb all themes in this flodler,and a floder is a theme,it contains some documents and floders.</p>
 
 <ul>
 <li>asset -- floder, contains all theme&#39;s picture,CSS,JS etc..</li>
@@ -150,8 +150,8 @@
 
 <h2 id="toc_1">Custom home page</h2>
 
-<p>Set a document&#39;s HTML file name value: <code>index</code> and enable <code>Is page</code>.<br>
-<img src="media/14189904700669/14210659918568.jpg" alt="">￼￼￼￼￼￼￼￼￼</p>
+<p>Set a document&#39;s HTML file name value: <code>index</code> and enable <code>Is page</code>.<br/>
+<img src="media/14189904700669/14210659918568.jpg" alt=""/>￼￼￼￼￼￼￼￼￼￼</p>
 
 <span id="more"></span><!-- more -->
 
@@ -167,12 +167,15 @@
 
 <h3 id="toc_5">the category object</h3>
 
-<table><thead>
+<table>
+<thead>
 <tr>
 <th>variable name</th>
 <th>description</th>
 </tr>
-</thead><tbody>
+</thead>
+
+<tbody>
 <tr>
 <td>name</td>
 <td>category&#39;s name</td>
@@ -181,16 +184,20 @@
 <td>url</td>
 <td>category&#39;s url</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 
 <h3 id="toc_6">the document object</h3>
 
-<table><thead>
+<table>
+<thead>
 <tr>
 <th>variable name</th>
 <th>description</th>
 </tr>
-</thead><tbody>
+</thead>
+
+<tbody>
 <tr>
 <td>title</td>
 <td>document&#39;s title</td>
@@ -231,16 +238,20 @@
 <td>url</td>
 <td>document&#39;s url</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 
 <h3 id="toc_7">recent document object</h3>
 
-<table><thead>
+<table>
+<thead>
 <tr>
 <th>variable name</th>
 <th>description</th>
 </tr>
-</thead><tbody>
+</thead>
+
+<tbody>
 <tr>
 <td>title</td>
 <td>document&#39;s title</td>
@@ -249,16 +260,20 @@
 <td>url</td>
 <td>document&#39;s url</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 
 <h3 id="toc_8">top category object</h3>
 
-<table><thead>
+<table>
+<thead>
 <tr>
 <th>variable name</th>
 <th>description</th>
 </tr>
-</thead><tbody>
+</thead>
+
+<tbody>
 <tr>
 <td>name</td>
 <td>category&#39;s name</td>
@@ -271,18 +286,22 @@
 <td>count</td>
 <td>category documents count</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 
 <h2 id="toc_9">Build site</h2>
 
 <h3 id="toc_10">All HTML page variables</h3>
 
-<table><thead>
+<table>
+<thead>
 <tr>
 <th>variable name</th>
 <th>description</th>
 </tr>
-</thead><tbody>
+</thead>
+
+<tbody>
 <tr>
 <td>siteURL</td>
 <td>site URL</td>
@@ -312,6 +331,18 @@
 <td>site other</td>
 </tr>
 <tr>
+<td>mathJaxSupport</td>
+<td>MathJax support code. Available in MWeb 1.3 and later</td>
+</tr>
+<tr>
+<td>seqAndFlowChartSupport</td>
+<td>Sequence &amp; flow chart support code. Available in MWeb 1.3 and later</td>
+</tr>
+<tr>
+<td>commentAndShareCode</td>
+<td>Comment and share  support code. Available in MWeb 1.3 and later</td>
+</tr>
+<tr>
 <td>recentPosts</td>
 <td>array,the item is <code>recent document object</code></td>
 </tr>
@@ -323,38 +354,46 @@
 <td>categoriesTree</td>
 <td>categories tree,array,the item is <code>top category object</code>, and children. reference: <a href="https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/sidebar.html">https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/sidebar.html</a></td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 
 <h3 id="toc_11">build RSS: atom.xml</h3>
 
-<p>template: atom.xml<br>
+<p>template: atom.xml<br/>
 addition variables:</p>
 
-<table><thead>
+<table>
+<thead>
 <tr>
 <th>variable name</th>
 <th>description</th>
 </tr>
-</thead><tbody>
+</thead>
+
+<tbody>
 <tr>
 <td>posts</td>
 <td>array,the item is <code>the document object</code></td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 
 <p>Reference: <a href="https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/atom.xml">https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/atom.xml</a></p>
 
 <h3 id="toc_12">build all posts template</h3>
 
-<p>template: header.html + post.html + sidebar.html + footer.html<br>
+<p>template: header.html + post.html + sidebar.html + footer.html<br/>
 addition variables:</p>
 
-<table><thead>
+<table>
+<thead>
 <tr>
 <th>variable name</th>
 <th>description</th>
 </tr>
-</thead><tbody>
+</thead>
+
+<tbody>
 <tr>
 <td>post</td>
 <td><code>the document object</code></td>
@@ -363,21 +402,25 @@ addition variables:</p>
 <td>postNav</td>
 <td>dictionary，has <code>next</code>,<code>prev</code> to item,item is  <code>recent document object</code></td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 
 <p>Reference: <a href="https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/post.html">https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/post.html</a></p>
 
 <h3 id="toc_13">build all cateogries template</h3>
 
-<p>template:header.html + category.html + sidebar.html + footer.html<br>
+<p>template:header.html + category.html + sidebar.html + footer.html<br/>
 addition variables:</p>
 
-<table><thead>
+<table>
+<thead>
 <tr>
 <th>variable name</th>
 <th>description</th>
 </tr>
-</thead><tbody>
+</thead>
+
+<tbody>
 <tr>
 <td>posts</td>
 <td>array,the item is <code>the document object</code></td>
@@ -390,21 +433,25 @@ addition variables:</p>
 <td>nextPageUrl</td>
 <td>next page Url</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 
 <p>Reference:<a href="https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/category.html">https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/category.html</a></p>
 
 <h3 id="toc_14">build all pages template (<code>Is page</code> enable)</h3>
 
-<p>template: header.html + page.html +  footer.html<br>
+<p>template: header.html + page.html +  footer.html<br/>
 addition variables:</p>
 
-<table><thead>
+<table>
+<thead>
 <tr>
 <th>variable name</th>
 <th>description</th>
 </tr>
-</thead><tbody>
+</thead>
+
+<tbody>
 <tr>
 <td>posts</td>
 <td>recent documents, array,the item is <code>the document object</code></td>
@@ -413,33 +460,41 @@ addition variables:</p>
 <td>post</td>
 <td><code>the document object</code></td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 
 <p>Reference: <a href="https://github.com/oulvhai/MWeb-Themes/blob/master/mweb-greyshade/page-index.html">https://github.com/oulvhai/MWeb-Themes/blob/master/mweb-greyshade/page-index.html</a></p>
 
 <h3 id="toc_15">build archives.html</h3>
 
-<p>template: header.html + archives.html + footer.html<br>
+<p>template: header.html + archives.html + footer.html<br/>
 addition variables:</p>
 
-<table><thead>
+<table>
+<thead>
 <tr>
 <th>variable name</th>
 <th>description</th>
 </tr>
-</thead><tbody>
+</thead>
+
+<tbody>
 <tr>
 <td>posts</td>
 <td>array, please reference below table for item detail</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 
-<table><thead>
+<table>
+<thead>
 <tr>
 <th>variable name</th>
 <th>description</th>
 </tr>
-</thead><tbody>
+</thead>
+
+<tbody>
 <tr>
 <td>year</td>
 <td>document&#39;s year</td>
@@ -480,21 +535,25 @@ addition variables:</p>
 <td>artDate</td>
 <td>document&#39;s create date,default format is:2014/10/24</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 
 <p>Reference: <a href="https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/archives.html">https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/archives.html</a></p>
 
 <h3 id="toc_16">build sitemap.xml</h3>
 
-<p>template: sitemap.xml<br>
+<p>template: sitemap.xml<br/>
 addition variables:</p>
 
-<table><thead>
+<table>
+<thead>
 <tr>
 <th>variable name</th>
 <th>description</th>
 </tr>
-</thead><tbody>
+</thead>
+
+<tbody>
 <tr>
 <td>archives</td>
 <td>array, please reference below table for item detail</td>
@@ -507,14 +566,18 @@ addition variables:</p>
 <td>nowDateGTM</td>
 <td>current date, format is:  2014-10-24T13:54:03GMT+08:00</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 
-<table><thead>
+<table>
+<thead>
 <tr>
 <th>variable name</th>
 <th>description</th>
 </tr>
-</thead><tbody>
+</thead>
+
+<tbody>
 <tr>
 <td>title</td>
 <td>document&#39;s title</td>
@@ -535,13 +598,15 @@ addition variables:</p>
 <td>artDate</td>
 <td>document&#39;s create date,default format is:2014/10/24</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 
 <p>Reference: <a href="https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/sitemap.xml">https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/sitemap.xml</a></p>
 
 		</div>
 	</article>
-	<div style="height:26px;" class="share">
+<div class="share-comment">
+<div style="height:26px;" class="share">
 <!-- JiaThis Button BEGIN -->
 <div class="jiathis_style_24x24">
 	<a class="jiathis_button_tsina"></a>
@@ -568,14 +633,17 @@ addition variables:</p>
     </script>
     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     
+</div>
+
 
 </div>        </div>
 			<footer id="footer" class="inner">Copyright &copy; 2014
-Powered by <a target="_blank" href="http://coderforart.com/">MWeb</a> &nbsp;&nbsp; 
+Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a> &nbsp;&nbsp; 
 Theme by <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank Mehta</a>
       </footer>
 		</div>
 	</div>
+
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

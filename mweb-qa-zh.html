@@ -134,10 +134,10 @@
 
 <h2 id="toc_1">如何开启MathJax预览支持？如何让网站支持MathJax？</h2>
 
-<p><code>CMD+,</code>打开设置面板，切到Themes，勾选Enable Math选项。<br>
+<p><code>CMD+,</code>打开设置面板，切到Themes，勾选Enable Math选项。<br/>
 如果要让网站支持MathJax，最简单的方法是在网站分类设置中的：Site other:的文本框中填入以下代码：</p>
 
-<pre><code class="js">&lt;script type=&quot;text/x-mathjax-config&quot;&gt;
+<pre><code class="language-js">&lt;script type=&quot;text/x-mathjax-config&quot;&gt;
   MathJax.Hub.Config({tex2jax: {inlineMath: [[&#39;$&#39;,&#39;$&#39;], [&#39;\\(&#39;,&#39;\\)&#39;]]}});
 &lt;/script&gt;
 &lt;script type=&quot;text/javascript&quot;
@@ -160,7 +160,7 @@
 
 <p>Disqus的话，去<a href="https://disqus.com/">https://disqus.com/</a>，然后会得到像以下这样的代码，点到主题模板的post.html页的合适的位置即可。</p>
 
-<pre><code class="js">&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
+<pre><code class="language-js">&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
 &lt;script type=&quot;text/javascript&quot;&gt;
    var disqus_shortname = &#39;这个会不一样&#39;; 
 
@@ -181,7 +181,8 @@
 
 		</div>
 	</article>
-	<div style="height:26px;" class="share">
+<div class="share-comment">
+<div style="height:26px;" class="share">
 <!-- JiaThis Button BEGIN -->
 <div class="jiathis_style_24x24">
 	<a class="jiathis_button_tsina"></a>
@@ -208,14 +209,17 @@
     </script>
     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     
+</div>
+
 
 </div>        </div>
 			<footer id="footer" class="inner">Copyright &copy; 2014
-Powered by <a target="_blank" href="http://coderforart.com/">MWeb</a> &nbsp;&nbsp; 
+Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a> &nbsp;&nbsp; 
 Theme by <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank Mehta</a>
       </footer>
 		</div>
 	</div>
+
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

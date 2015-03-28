@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<title>  
 	  
-  	MWeb 1.1 版更新说明 - Coder For Art
+  	MWeb 1.3 release! 50% OFF, official site, new icon, task list support, optimized MathJax support etc... - Coder For Art
   	
 	</title
 
@@ -126,35 +126,42 @@
 			<div class="mid-col-container"> <div id="content" class="inner">
 
 	<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-		<h1 class="title" itemprop="name">MWeb 1.1 版更新说明</h1>
+		<h1 class="title" itemprop="name">MWeb 1.3 release! 50% OFF, official site, new icon, task list support, optimized MathJax support etc...</h1>
 		<div class="entry-content" itemprop="articleBody">
-			<h2 id="toc_0">新增</h2>
+			<h2 id="toc_0">Official Site</h2>
+
+<p>Chinese: <a href="http://zh.mweb.im">http://zh.mweb.im</a><br/>
+English: <a href="http://www.mweb.im">http://www.mweb.im</a></p>
+
+<h2 id="toc_1">Featrue</h2>
 
 <ul>
-<li>增加导入.txt或Markdown文档到文档库功能：File --&gt; Import Files To Library...</li>
-<li>增加TOC（Table of Content）支持，和是否 Render TOC 选项</li>
-<li>增加免费版</li>
-<li>增加sitemap功能</li>
-<li>站点文件夹增加右键菜单</li>
-<li>增加代码高亮功能，支持超多编程语言，1.0版本的朋友请去<a href="https://github.com/oulvhai/MWeb-Themes/">https://github.com/oulvhai/MWeb-Themes/</a>下载最新的主题即可。支持语言及缩写详细请参考：<a href="http://highlightjs.readthedocs.org/en/latest/css-classes-reference.html">http://highlightjs.readthedocs.org/en/latest/css-classes-reference.html</a></li>
+<li>Add <code>CMD+Shift+V</code> paste PNG pictrue.</li>
+<li>Add sequence and flow chart support</li>
+<li>Add task lists support. <code>- + space + [ ]</code>or <code>- + space + [x]</code></li>
+<li>Add Markdown export.</li>
+<li>Add setting Disqus Comment code support, more info: <a href="http://www.mweb.im/mweb-comment-and-share-help.html">http://www.mweb.im/mweb-comment-and-share-help.html</a></li>
+<li>Optimized MathJax support and add MathJax library to local.</li>
+<li>Optimized PDF export.</li>
 </ul>
 
-<span id="more"></span><!-- more -->
+<p>Fixed some crash.</p>
 
-<h2 id="toc_1">修正</h2>
+<h2 id="toc_2">For MWeb 1.2 users</h2>
 
-<ul>
-<li>即时预览功能大改进，现在是真正即时了，然后滚动时，同步的位置也比较准确了。</li>
-<li>Outline跳到所在位置时高亮选中文字</li>
-<li>区分大小写系统在初次打开时无法看到自带的文档问题</li>
-<li>初次使用直接点Preview Site无效果问题</li>
-</ul>
+<p>Site themes updated: greyshade, octopress themes updated for support setting Comment and Share code,MathJax ,sequence and flow chart. Three variables added like below:</p>
 
-<h2 id="toc_2">代码高亮功能截图</h2>
+<pre><code>{{ commentAndShareCode }}
+{{ seqAndFlowChartSupport }}
+{{ mathJaxSupport }}
+</code></pre>
 
-<p><img src="media/14216489427773/Snip20150119_6.png" alt=""/>￼￼￼￼￼￼￼</p>
+<p>Updated template pages:</p>
 
-<p><img src="media/14216489427773/Snip20150119_5.png" alt=""/>￼￼￼￼￼￼￼</p>
+<ol>
+<li>footer.html add <code>{{ seqAndFlowChartSupport }}</code>, <code>{{ mathJaxSupport }}</code> code, please check this link: <a href="https://github.com/oulvhai/MWeb-Themes/blob/master/greyshade/footer.html">https://github.com/oulvhai/MWeb-Themes/blob/master/greyshade/footer.html</a></li>
+<li>post.html add <code>{{ commentAndShareCode }}</code> code, please check this link: <a href="https://github.com/oulvhai/MWeb-Themes/blob/master/greyshade/post.html">https://github.com/oulvhai/MWeb-Themes/blob/master/greyshade/post.html</a></li>
+</ol>
 
 		</div>
 	</article>

@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<title>  
 	  
-  	MWeb 1.1 版更新说明 - Coder For Art
+  	MWeb Q & A - Coder For Art
   	
 	</title
 
@@ -126,35 +126,57 @@
 			<div class="mid-col-container"> <div id="content" class="inner">
 
 	<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-		<h1 class="title" itemprop="name">MWeb 1.1 版更新说明</h1>
+		<h1 class="title" itemprop="name">MWeb Q & A</h1>
 		<div class="entry-content" itemprop="articleBody">
-			<h2 id="toc_0">新增</h2>
-
-<ul>
-<li>增加导入.txt或Markdown文档到文档库功能：File --&gt; Import Files To Library...</li>
-<li>增加TOC（Table of Content）支持，和是否 Render TOC 选项</li>
-<li>增加免费版</li>
-<li>增加sitemap功能</li>
-<li>站点文件夹增加右键菜单</li>
-<li>增加代码高亮功能，支持超多编程语言，1.0版本的朋友请去<a href="https://github.com/oulvhai/MWeb-Themes/">https://github.com/oulvhai/MWeb-Themes/</a>下载最新的主题即可。支持语言及缩写详细请参考：<a href="http://highlightjs.readthedocs.org/en/latest/css-classes-reference.html">http://highlightjs.readthedocs.org/en/latest/css-classes-reference.html</a></li>
-</ul>
+			<p>Updated: 2015/3/25</p>
 
 <span id="more"></span><!-- more -->
 
-<h2 id="toc_1">修正</h2>
+<p>Question list: </p>
 
 <ul>
-<li>即时预览功能大改进，现在是真正即时了，然后滚动时，同步的位置也比较准确了。</li>
-<li>Outline跳到所在位置时高亮选中文字</li>
-<li>区分大小写系统在初次打开时无法看到自带的文档问题</li>
-<li>初次使用直接点Preview Site无效果问题</li>
+<li>
+<a href="#toc_0">What&#39;s difference between MWeb Lite and MWeb?</a>
+</li>
+<li>
+<a href="#toc_1">How to enable MathJax preview support?</a>
+</li>
+<li>
+<a href="#toc_2">How to enable blog MathJax support?</a>
+</li>
+<li>
+<a href="#toc_3">How to backup MWeb&#39;s documents library to Dropbox？</a>
+</li>
+<li>
+<a href="#toc_4">How to add Disqus support?</a>
+</li>
 </ul>
 
-<h2 id="toc_2">代码高亮功能截图</h2>
 
-<p><img src="media/14216489427773/Snip20150119_6.png" alt=""/>￼￼￼￼￼￼￼</p>
+<h2 id="toc_0">What&#39;s difference between MWeb Lite and MWeb?</h2>
 
-<p><img src="media/14216489427773/Snip20150119_5.png" alt=""/>￼￼￼￼￼￼￼</p>
+<p>MWeb design with two patterns: External Document pattern and Documents Library pattern. MWeb Lite&#39;s Documents Library limit to 10 documents.</p>
+
+<h2 id="toc_1">How to enable MathJax preview support?</h2>
+
+<p><code>CMD+,</code> open Preferences，<code>Themes</code> - <code>Enable MathJax</code>.</p>
+
+<h2 id="toc_2">How to enable blog MathJax support?</h2>
+
+<p><code>Right click blog setting</code> - <code>Edit</code> - <code>Enable MathJax</code></p>
+
+<!-- more -->
+
+<h2 id="toc_3">How to backup MWeb&#39;s documents library to Dropbox？</h2>
+
+<p>Please open Terminal ( Spotlight - enter <code>terminal</code> ) and enter the following command. </p>
+
+<pre><code>ln -s ~/Library/Containers/com.coderforart.MWeb/Data/Documents/MWeb ~/Dropbox/MWebBackup
+</code></pre>
+
+<h2 id="toc_4">How to add Disqus support?</h2>
+
+<p>Please check this post: <a href="mweb-comment-and-share-help.html">Add AddThis Share and Disqus Comment</a></p>
 
 		</div>
 	</article>

@@ -4,7 +4,7 @@
   <title><![CDATA[Coder For Art]]></title>
   <link href="http://coderforart.com/atom.xml" rel="self"/>
   <link href="http://coderforart.com/"/>
-  <updated>2015-03-13T13:38:35+08:00</updated>
+  <updated>2015-03-28T11:42:16+08:00</updated>
   <id>http://coderforart.com/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -12,6 +12,1077 @@
   </author>
   <generator uri="http://www.coderforart.com/">CoderForArt</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[MWeb 1.3 release! 50% OFF, official site, new icon, task list support, optimized MathJax support etc...]]></title>
+    <link href="http://coderforart.com/mweb1.3-release.html"/>
+    <updated>2015-03-28T11:13:42+08:00</updated>
+    <id>http://coderforart.com/mweb1.3-release.html</id>
+    <content type="html"><![CDATA[
+<h2 id="toc_0">Official Site</h2>
+
+<p>Chinese: <a href="http://zh.mweb.im">http://zh.mweb.im</a><br/>
+English: <a href="http://www.mweb.im">http://www.mweb.im</a></p>
+
+<h2 id="toc_1">Featrue</h2>
+
+<ul>
+<li>Add <code>CMD+Shift+V</code> paste PNG pictrue.</li>
+<li>Add sequence and flow chart support</li>
+<li>Add task lists support. <code>- + space + [ ]</code>or <code>- + space + [x]</code></li>
+<li>Add Markdown export.</li>
+<li>Add setting Disqus Comment code support, more info: <a href="http://www.mweb.im/mweb-comment-and-share-help.html">http://www.mweb.im/mweb-comment-and-share-help.html</a></li>
+<li>Optimized MathJax support and add MathJax library to local.</li>
+<li>Optimized PDF export.</li>
+</ul>
+
+<p>Fixed some crash.</p>
+
+<h2 id="toc_2">For MWeb 1.2 users</h2>
+
+<p>Site themes updated: greyshade, octopress themes updated for support setting Comment and Share code,MathJax ,sequence and flow chart. Three variables added like below:</p>
+
+<pre><code>{{ commentAndShareCode }}
+{{ seqAndFlowChartSupport }}
+{{ mathJaxSupport }}
+</code></pre>
+
+<p>Updated template pages:</p>
+
+<ol>
+<li>footer.html add <code>{{ seqAndFlowChartSupport }}</code>, <code>{{ mathJaxSupport }}</code> code, please check this link: <a href="https://github.com/oulvhai/MWeb-Themes/blob/master/greyshade/footer.html">https://github.com/oulvhai/MWeb-Themes/blob/master/greyshade/footer.html</a></li>
+<li>post.html add <code>{{ commentAndShareCode }}</code> code, please check this link: <a href="https://github.com/oulvhai/MWeb-Themes/blob/master/greyshade/post.html">https://github.com/oulvhai/MWeb-Themes/blob/master/greyshade/post.html</a></li>
+</ol>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[MWeb 1.3 版发布！半价促销，新官网，新图标，增加任务列表，顺序图和流程图，优化MathJax、PDF导出等]]></title>
+    <link href="http://coderforart.com/mweb1.3-release-zh.html"/>
+    <updated>2015-03-28T10:21:20+08:00</updated>
+    <id>http://coderforart.com/mweb1.3-release-zh.html</id>
+    <content type="html"><![CDATA[
+<h2 id="toc_0">新官网</h2>
+
+<p>中文：<a href="http://zh.mweb.im">http://zh.mweb.im</a><br/>
+英文：<a href="http://www.mweb.im">http://www.mweb.im</a></p>
+
+<h2 id="toc_1">新增：</h2>
+
+<ul>
+<li>增加 <code>CMD+Shift+V</code> 粘贴 PNG 格式图片</li>
+<li>增加sequence图和flow图支持</li>
+<li>增加任务列表（Task lists）支持，列表后再加<code>[ ]</code>或<code>[x]</code></li>
+<li>增加把分类或文档导出为Markdown</li>
+<li>现在可以直接在设置中填入Disqus、多说等评论代码了，请参考：<a href="http://zh.mweb.im/mweb-comment-and-share-help.html">http://zh.mweb.im/mweb-comment-and-share-help.html</a></li>
+<li>优化MathJax支持并把MathJax库放本地以提高预览速度</li>
+<li>优化PDF导出</li>
+</ul>
+
+<h2 id="toc_2">修正</h2>
+
+<ul>
+<li>图标小调整，应该顺眼了点。</li>
+<li>修正了一些BUG和闪退问题</li>
+</ul>
+
+<h2 id="toc_3">1.3 以下的朋友请注意：</h2>
+
+<p>这次更新中，greyshade、octopress 博客主题模板有变动！由于增加了可设置评论和分类、勾选支持 MathJax 和顺序图、流程图，所以增加了以下三个变量：</p>
+
+<pre><code>{{ commentAndShareCode }}
+{{ seqAndFlowChartSupport }}
+{{ mathJaxSupport }}
+</code></pre>
+
+<p>greyshade、octopress 博客主题模板有更新到的页为 footer.html 和 post.html。</p>
+
+<p>footer.html 会在 <code>{{ siteOther }}</code> 上增加 <code>{{ seqAndFlowChartSupport }}</code> 和 <code>{{ mathJaxSupport }}</code>。</p>
+
+<p>可参考这个网址：<a href="https://github.com/oulvhai/MWeb-Themes/blob/master/greyshade/footer.html">https://github.com/oulvhai/MWeb-Themes/blob/master/greyshade/footer.html</a></p>
+
+<p>post.html 则在要放评论和分享的地方增加 <code>{{ commentAndShareCode }}</code>。</p>
+
+<p>可参考这个网址：<a href="https://github.com/oulvhai/MWeb-Themes/blob/master/greyshade/post.html">https://github.com/oulvhai/MWeb-Themes/blob/master/greyshade/post.html</a></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Markdown syntax guide and writing on MWeb]]></title>
+    <link href="http://coderforart.com/markdown-syntax-guide-suggest-version.html"/>
+    <updated>2014-12-16T19:08:31+08:00</updated>
+    <id>http://coderforart.com/markdown-syntax-guide-suggest-version.html</id>
+    <content type="html"><![CDATA[
+<h2 id="toc_0">Philosophy</h2>
+
+<blockquote>
+<p>Markdown is intended to be as easy-to-read and easy-to-write as is feasible.<br/>
+Readability, however, is emphasized above all else. A Markdown-formatted document should be publishable as-is, as plain text, without looking like it&#39;s been marked up with tags or formatting instructions.<br/>
+Markdown&#39;s syntax is intended for one purpose: to be used as a format for <em>writing</em> for the web.</p>
+</blockquote>
+
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_1">Notice</h2>
+
+<p>You can use  <code>CMD + R</code> to preview the result.</p>
+
+<h2 id="toc_2">Headers</h2>
+
+<p><strong>Example:</strong></p>
+
+<pre><code># This is an `&lt;h1&gt;` tag
+## This is an `&lt;h2&gt;` tag
+###### This is an `&lt;h6&gt;` tag
+</code></pre>
+
+<p><strong>Result:</strong></p>
+
+<h1 id="toc_3">This is an <code>&lt;h1&gt;</code> tag</h1>
+
+<h2 id="toc_4">This is an <code>&lt;h2&gt;</code> tag</h2>
+
+<h6 id="toc_5">This is an <code>&lt;h6&gt;</code> tag</h6>
+
+<h2 id="toc_6">Emphasis</h2>
+
+<p><strong>Example:</strong></p>
+
+<pre><code>*This text will be italic*
+_This will also be italic_
+
+**This text will be bold**
+__This will also be bold__
+
+*You **can** combine them*
+</code></pre>
+
+<p><strong>Shortcuts:</strong>  <code>CMD + U</code>、<code>CMD + I</code>、<code>CMD + B</code><br/>
+<strong>Result:</strong></p>
+
+<p><em>This text will be italic</em><br/>
+<u>This will also be italic</u></p>
+
+<p><strong>This text will be bold</strong><br/>
+<strong>This will also be bold</strong></p>
+
+<p>*You <strong>can</strong> combine them*</p>
+
+<h2 id="toc_7">Newlines</h2>
+
+<p>End a line with two or more spaces + enter.<br/>
+Just typing enter to newline,please set：<code>Preferences</code> - <code>Themes</code> - <code>Translate newlines to &lt;br&gt; tags</code>  enable ( default is enable )</p>
+
+<h2 id="toc_8">Lists</h2>
+
+<h3 id="toc_9">Unordered</h3>
+
+<p><strong>Example:</strong></p>
+
+<pre><code>* Item 1 unordered list `* + SPACE`
+* Item 2
+    * Item 2a unordered list `* + TAB + SPACE`
+    * Item 2b
+</code></pre>
+
+<p><strong>Shortcuts:</strong>  <code>Option + U</code><br/>
+<strong>Result:</strong></p>
+
+<ul>
+<li>Item 1 unordered list <code>* + SPACE</code></li>
+<li>Item 2
+
+<ul>
+<li>Item 2a unordered list <code>* + TAB + SPACE</code></li>
+<li>Item 2b</li>
+</ul></li>
+</ul>
+
+<h3 id="toc_10">Ordered</h3>
+
+<p><strong>Example:</strong></p>
+
+<pre><code>1. Item 1 ordered list `Number + . + SPACE`
+2. Item 2 
+3. Item 3
+    1. Item 3a ordered list `Number + . + TAB + SPACE`
+    2. Item 3b
+</code></pre>
+
+<p><strong>Result:</strong></p>
+
+<ol>
+<li>Item 1 ordered list <code>Number + . + SPACE</code></li>
+<li>Item 2 </li>
+<li>Item 3
+
+<ol>
+<li>Item 3a ordered list <code>Number + . + TAB + SPACE</code></li>
+<li>Item 3b</li>
+</ol></li>
+</ol>
+
+<h3 id="toc_11">Task lists</h3>
+
+<p><strong>Example:</strong></p>
+
+<pre><code>- [ ] task one not finish `- + SPACE + [ ]`
+- [x] task two finished `- + SPACE + [x]`
+</code></pre>
+
+<p><strong>Result:</strong></p>
+
+<ul>
+<li class="task-list-item"><input type="checkbox" /> task one not finish <code>- + SPACE + [ ]</code>
+</li>
+<li class="task-list-item"><input type="checkbox" checked /> task two finished <code>- + SPACE + [x]</code>
+</li>
+</ul>
+
+<h2 id="toc_12">Images</h2>
+
+<p><strong>Example:</strong></p>
+
+<pre><code>![GitHub set up](https://help.github.com/assets/images/site/set-up-git.gif)
+Format: ![Alt Text](url)
+</code></pre>
+
+<p><strong>Shortcuts:</strong>  <code>Control + Shift + I</code><br/>
+The Library&#39;s document support drag &amp; drop or <code>CMD + V</code> paste or <code>CMD + Option + I</code> to insert  the pictrue.<br/>
+<strong>Result:</strong></p>
+
+<p><img src="https://help.github.com/assets/images/site/set-up-git.gif" alt="GitHub set up"/></p>
+
+<h2 id="toc_13">Links</h2>
+
+<p><strong>Example:</strong></p>
+
+<pre><code>email &lt;example@example.com&gt;
+[GitHub](http://github.com)
+autolink  &lt;http://www.github.com/&gt;
+</code></pre>
+
+<p><strong>Shortcuts:</strong>  <code>Control + Shift + L</code><br/>
+The Library&#39;s document support drag &amp; drop or <code>CMD + Option + I</code> to insert attachment.<br/>
+<strong>Result:</strong></p>
+
+<p>An email <a href="mailto:example@example.com">example@example.com</a> link.<br/>
+<a href="http://github.com">GitHub</a><br/>
+Automatic linking for URLs<br/>
+Any URL (like <a href="http://www.github.com/">http://www.github.com/</a>) will be automatically converted into a clickable link.</p>
+
+<h2 id="toc_14">Blockquotes</h2>
+
+<p><strong>Example:</strong></p>
+
+<pre><code>As Kanye West said:
+&gt; We&#39;re living the future so
+&gt; the present is our past.
+</code></pre>
+
+<p><strong>Shortcuts:</strong>  <code>Control + B</code><br/>
+<strong>Result:</strong></p>
+
+<p>As Kanye West said:</p>
+
+<blockquote>
+<p>We&#39;re living the future so<br/>
+the present is our past.</p>
+</blockquote>
+
+<h2 id="toc_15">Inline code</h2>
+
+<p><strong>Example:</strong></p>
+
+<pre><code>I think you should use an
+`&lt;addr&gt;` `code` element here instead.
+</code></pre>
+
+<p><strong>Shortcuts:</strong>  <code>CMD + K</code><br/>
+<strong>Result:</strong></p>
+
+<p>I think you should use an<br/>
+<code>&lt;addr&gt;</code> <code>code</code> element here instead.</p>
+
+<h2 id="toc_16">Multi-line code</h2>
+
+<p><strong>Example:</strong></p>
+
+<pre><code>```js
+function fancyAlert(arg) {
+  if(arg) {
+    $.facebox({div:&#39;#foo&#39;})
+  }
+
+}
+```
+</code></pre>
+
+<p><strong>Shortcuts:</strong>  <code>CMD + Shift + K</code><br/>
+<strong>Result:</strong></p>
+
+<pre><code class="language-js">function fancyAlert(arg) {
+  if(arg) {
+    $.facebox({div:&#39;#foo&#39;})
+  }
+
+}
+</code></pre>
+
+<h2 id="toc_17">Sequence and Flow chart</h2>
+
+<p><strong>Example:</strong></p>
+
+<pre><code>```sequence
+张三-&gt;李四: 嘿，小四儿, 写博客了没?
+Note right of 李四: 李四愣了一下，说：
+李四--&gt;张三: 忙得吐血，哪有时间写。
+```
+
+```flow
+st=&gt;start: 开始
+e=&gt;end: 结束
+op=&gt;operation: 我的操作
+cond=&gt;condition: 确认？
+
+st-&gt;op-&gt;cond
+cond(yes)-&gt;e
+cond(no)-&gt;op
+```
+</code></pre>
+
+<p><strong>Result:</strong> ( Please enable  <code>Preferences</code> - <code>Themes</code> - <code>Enable sequence &amp; flow chart</code>, default is enable. )</p>
+
+<pre><code class="language-sequence">张三-&gt;李四: 嘿，小四儿, 写博客了没?
+Note right of 李四: 李四愣了一下，说：
+李四--&gt;张三: 忙得吐血，哪有时间写。
+</code></pre>
+
+<pre><code class="language-flow">st=&gt;start: 开始
+e=&gt;end: 结束
+op=&gt;operation: 我的操作
+cond=&gt;condition: 确认？
+
+st-&gt;op-&gt;cond
+cond(yes)-&gt;e
+cond(no)-&gt;op
+</code></pre>
+
+<p>More info: <a href="http://bramp.github.io/js-sequence-diagrams/">http://bramp.github.io/js-sequence-diagrams/</a>, <a href="http://adrai.github.io/flowchart.js/">http://adrai.github.io/flowchart.js/</a></p>
+
+<h2 id="toc_18">Tables</h2>
+
+<p><strong>Example:</strong></p>
+
+<pre><code>First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
+</code></pre>
+
+<p>You can create tables by assembling a list of words and dividing them with hyphens - (for the first row), and then separating each column with a pipe |:</p>
+
+<p><strong>Result:</strong></p>
+
+<table>
+<thead>
+<tr>
+<th>First Header</th>
+<th>Second Header</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Content from cell 1</td>
+<td>Content from cell 2</td>
+</tr>
+<tr>
+<td>Content in the first column</td>
+<td>Content in the second column</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="toc_19">Strikethrough</h2>
+
+<p><strong>Example:</strong></p>
+
+<pre><code> (like ~~this~~)
+</code></pre>
+
+<p><strong>Result:</strong></p>
+
+<p>Any word wrapped with two tildes (like <del>this</del>) will appear crossed out.</p>
+
+<h2 id="toc_20">Horizontal Rules</h2>
+
+<p>Following lines will produce a horizontal rule:</p>
+
+<pre><code>***
+
+*****
+
+- - -
+</code></pre>
+
+<p><strong>Result:</strong></p>
+
+<hr/>
+
+<hr/>
+
+<hr/>
+
+<h2 id="toc_21">MathJax</h2>
+
+<p>Use double US dollors sign pair for Block level Math formula, and one US dollor sign pair for Inline Level.</p>
+
+<pre><code>For example this is a Block level $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$ formula, and this is an inline Level $x = {-b \pm \sqrt{b^2-4ac} \over 2a}$ formula.
+
+\\[ \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} =
+1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}}
+{1+\frac{e^{-8\pi}} {1+\ldots} } } } \\]
+
+</code></pre>
+
+<p><strong>Result:</strong></p>
+
+<p>For example this is a Block level \[x = {-b \pm \sqrt{b^2-4ac} \over 2a}\] formula, and this is an inline Level \(x = {-b \pm \sqrt{b^2-4ac} \over 2a}\) formula.</p>
+
+<p>\[ \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} =<br/>
+1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}}<br/>
+{1+\frac{e^{-8\pi}} {1+\ldots} } } } \]</p>
+
+<h2 id="toc_22">Footnote</h2>
+
+<p><strong>Example:</strong></p>
+
+<pre><code>This is a footnote:[^sample_footnote]
+</code></pre>
+
+<p><strong>Result:</strong></p>
+
+<p>This is a footnote:<sup id="fnref1"><a href="#fn1" rel="footnote">1</a></sup></p>
+
+<h2 id="toc_23">Comment And Read More..</h2>
+
+<!-- comment -->
+
+<!-- more -->
+
+<p>Actions-&gt;Insert Read More Comment <em>OR</em> <code>CMD + .</code></p>
+
+<h2 id="toc_24">TOC</h2>
+
+<p><strong>Example:</strong></p>
+
+<pre><code>[TOC]
+</code></pre>
+
+<p><strong>Result:</strong></p>
+
+<ul>
+<li>
+<a href="#toc_0">Philosophy</a>
+</li>
+<li>
+<a href="#toc_1">Notice</a>
+</li>
+<li>
+<a href="#toc_2">Headers</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_3">This is an <code>&lt;h1&gt;</code> tag</a>
+<ul>
+<li>
+<a href="#toc_4">This is an <code>&lt;h2&gt;</code> tag</a>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li>
+<a href="#toc_5">This is an <code>&lt;h6&gt;</code> tag</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_6">Emphasis</a>
+</li>
+<li>
+<a href="#toc_7">Newlines</a>
+</li>
+<li>
+<a href="#toc_8">Lists</a>
+<ul>
+<li>
+<a href="#toc_9">Unordered</a>
+</li>
+<li>
+<a href="#toc_10">Ordered</a>
+</li>
+<li>
+<a href="#toc_11">Task lists</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_12">Images</a>
+</li>
+<li>
+<a href="#toc_13">Links</a>
+</li>
+<li>
+<a href="#toc_14">Blockquotes</a>
+</li>
+<li>
+<a href="#toc_15">Inline code</a>
+</li>
+<li>
+<a href="#toc_16">Multi-line code</a>
+</li>
+<li>
+<a href="#toc_17">Sequence and Flow chart</a>
+</li>
+<li>
+<a href="#toc_18">Tables</a>
+</li>
+<li>
+<a href="#toc_19">Strikethrough</a>
+</li>
+<li>
+<a href="#toc_20">Horizontal Rules</a>
+</li>
+<li>
+<a href="#toc_21">MathJax</a>
+</li>
+<li>
+<a href="#toc_22">Footnote</a>
+</li>
+<li>
+<a href="#toc_23">Comment And Read More..</a>
+</li>
+<li>
+<a href="#toc_24">TOC</a>
+</li>
+</ul>
+
+
+<script src="asset/flow-sequence-chart/raphael-min.js"></script><script src="asset/flow-sequence-chart/underscore-min.js"></script><script src="asset/flow-sequence-chart/flowchart.min.js"></script><script src="asset/flow-sequence-chart/sequence-diagram-min.js"></script><script type="text/javascript">$(function(){    var mwebii=0;    var mwebChartEleId = 'mweb-chart-ele-';    $('pre>code').each(function(){        mwebii++;        var eleiid = mwebChartEleId+mwebii;        if($(this).hasClass('language-sequence')){            var ele = $(this).addClass('nohighlight').parent();            $('<div id="'+eleiid+'"><div>').insertAfter(ele);            ele.hide();            var diagram = Diagram.parse($(this).text());            diagram.drawSVG(eleiid,{theme: 'simple'});        }else if($(this).hasClass('language-flow')){            var ele = $(this).addClass('nohighlight').parent();            $('<div id="'+eleiid+'"><div>').insertAfter(ele);            ele.hide();            var diagram = flowchart.parse($(this).text());            diagram.drawSVG(eleiid);        }    });});</script>
+<script type="text/x-mathjax-config">if (typeof MathJaxListener !== 'undefined') { MathJax.Hub.Register.StartupHook('End', function () { MathJaxListener.invokeCallbackForKey_('End'); }); } </script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<div class="footnotes">
+<hr/>
+<ol>
+
+<li id="fn1">
+<p>footnote text detail...&nbsp;<a href="#fnref1" rev="footnote">&#8617;</a></p>
+</li>
+
+</ol>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Markdown 语法和 MWeb 写作使用说明]]></title>
+    <link href="http://coderforart.com/markdown-syntax-guide-suggest-version-zh.html"/>
+    <updated>2014-12-16T21:57:10+08:00</updated>
+    <id>http://coderforart.com/markdown-syntax-guide-suggest-version-zh.html</id>
+    <content type="html"><![CDATA[
+<h2 id="toc_0">Markdown 的设计哲学</h2>
+
+<blockquote>
+<p>Markdown 的目標是實現「易讀易寫」。<br/>
+不過最需要強調的便是它的可讀性。一份使用 Markdown 格式撰寫的文件應該可以直接以純文字發佈，並且看起來不會像是由許多標籤或是格式指令所構成。<br/>
+Markdown 的語法有個主要的目的：用來作為一種網路內容的<em>寫作</em>用語言。</p>
+</blockquote>
+
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_1">本文约定</h2>
+
+<p>如果有写 <code>效果如下：</code>， 在 MWeb 编辑状态下只有用 <code>CMD + R</code> 预览才可以看效果。</p>
+
+<h2 id="toc_2">标题</h2>
+
+<p>Markdown 语法：</p>
+
+<pre><code># 第一级标题 `&lt;h1&gt;` 
+## 第二级标题 `&lt;h2&gt;` 
+###### 第六级标题 `&lt;h6&gt;` 
+</code></pre>
+
+<p>效果如下：</p>
+
+<h1 id="toc_3">第一级标题 <code>&lt;h1&gt;</code></h1>
+
+<h2 id="toc_4">第二级标题 <code>&lt;h2&gt;</code></h2>
+
+<h6 id="toc_5">第六级标题 <code>&lt;h6&gt;</code></h6>
+
+<h2 id="toc_6">强调</h2>
+
+<p>Markdown 语法：</p>
+
+<pre><code>*这些文字会生成`&lt;em&gt;`*
+_这些文字会生成`&lt;u&gt;`_
+
+**这些文字会生成`&lt;strong&gt;`**
+__这些文字会生成`&lt;strong&gt;`__
+</code></pre>
+
+<p>在 MWeb 中的快捷键为： <code>CMD + U</code>、<code>CMD + I</code>、<code>CMD + B</code><br/>
+效果如下：</p>
+
+<p><em>这些文字会生成<code>&lt;em&gt;</code></em><br/>
+<u>这些文字会生成<code>&lt;u&gt;</code></u></p>
+
+<p><strong>这些文字会生成<code>&lt;strong&gt;</code></strong><br/>
+<strong>这些文字会生成<code>&lt;strong&gt;</code></strong></p>
+
+<h2 id="toc_7">换行</h2>
+
+<p>四个及以上空格加回车。<br/>
+如果不想打这么多空格，只要回车就为换行，请勾选：<code>Preferences</code> - <code>Themes</code> - <code>Translate newlines to &lt;br&gt; tags</code></p>
+
+<h2 id="toc_8">列表</h2>
+
+<h3 id="toc_9">无序列表</h3>
+
+<p>Markdown 语法：</p>
+
+<pre><code>* 项目一 无序列表 `* + 空格键`
+* 项目二
+    * 项目二的子项目一 无序列表 `* + TAB + 空格键`
+    * 项目二的子项目二
+</code></pre>
+
+<p>在 MWeb 中的快捷键为： <code>Option + U</code><br/>
+效果如下：</p>
+
+<ul>
+<li>项目一 无序列表 <code>* + 空格键</code></li>
+<li>项目二
+
+<ul>
+<li>项目二的子项目一 无序列表 <code>* + TAB + 空格键</code></li>
+<li>项目二的子项目二</li>
+</ul></li>
+</ul>
+
+<h3 id="toc_10">有序列表</h3>
+
+<p>Markdown 语法：</p>
+
+<pre><code>1. 项目一 有序列表 `数字 + . + 空格键`
+2. 项目二 
+3. 项目三
+    1. 项目三的子项目一 有序列表 `数字 + . + TAB + 空格键`
+    2. 项目三的子项目二
+</code></pre>
+
+<p>效果如下：</p>
+
+<ol>
+<li>项目一 有序列表 <code>数字 + . + 空格键</code></li>
+<li>项目二 </li>
+<li>项目三
+
+<ol>
+<li>项目三的子项目一 有序列表 <code>数字 + . + TAB + 空格键</code></li>
+<li>项目三的子项目二</li>
+</ol></li>
+</ol>
+
+<h3 id="toc_11">任务列表（Task lists）</h3>
+
+<p>Markdown 语法：</p>
+
+<pre><code>- [ ] 任务一 未做任务 `- + 空格 + [ ]`
+- [x] 任务二 已做任务 `- + 空格 + [x]`
+</code></pre>
+
+<p>效果如下：</p>
+
+<ul>
+<li class="task-list-item"><input type="checkbox" /> 任务一 未做任务 <code>- + 空格 + [ ]</code>
+</li>
+<li class="task-list-item"><input type="checkbox" checked /> 任务二 已做任务 <code>- + 空格 + [x]</code>
+</li>
+</ul>
+
+<h2 id="toc_12">图片</h2>
+
+<p>Markdown 语法：</p>
+
+<pre><code>![GitHub set up](https://help.github.com/assets/images/site/set-up-git.gif)
+格式: ![Alt Text](url)
+</code></pre>
+
+<p><code>Control + Shift + I</code> 可插入Markdown语法。<br/>
+如果是 MWeb 的文档库中的文档，还可以用拖放图片、<code>CMD + V</code> 粘贴、<code>CMD + Option + I</code> 导入这三种方式来增加图片。<br/>
+效果如下：</p>
+
+<p><img src="https://help.github.com/assets/images/site/set-up-git.gif" alt="GitHub set up"/></p>
+
+<h2 id="toc_13">链接</h2>
+
+<p>Markdown 语法：</p>
+
+<pre><code>email &lt;example@example.com&gt;
+[GitHub](http://github.com)
+自动生成连接  &lt;http://www.github.com/&gt;
+</code></pre>
+
+<p><code>Control + Shift + L</code> 可插入Markdown语法。<br/>
+如果是 MWeb 的文档库中的文档，拖放或<code>CMD + Option + I</code> 导入非图片时，会生成连接。<br/>
+效果如下：</p>
+
+<p>Email 连接： <a href="mailto:example@example.com">example@example.com</a><br/>
+<a href="http://github.com">连接标题Github网站</a><br/>
+自动生成连接像： <a href="http://www.github.com/">http://www.github.com/</a> 这样</p>
+
+<h2 id="toc_14">区块引用</h2>
+
+<p>Markdown 语法：</p>
+
+<pre><code>某某说:
+&gt; 第一行引用
+&gt; 第二行费用文字
+</code></pre>
+
+<p><code>Control + B</code> 可插入Markdown语法。<br/>
+效果如下：</p>
+
+<p>某某说:</p>
+
+<blockquote>
+<p>第一行引用<br/>
+第二行费用文字</p>
+</blockquote>
+
+<h2 id="toc_15">行内代码</h2>
+
+<p>Markdown 语法：</p>
+
+<pre><code>像这样即可：`&lt;addr&gt;` `code`
+</code></pre>
+
+<p><code>CMD + K</code> 可插入Markdown语法。<br/>
+效果如下：</p>
+
+<p>像这样即可：<code>&lt;addr&gt;</code> <code>code</code></p>
+
+<h2 id="toc_16">多行或者一段代码</h2>
+
+<p>Markdown 语法：</p>
+
+<pre><code>```js
+function fancyAlert(arg) {
+  if(arg) {
+    $.facebox({div:&#39;#foo&#39;})
+  }
+
+}
+```
+</code></pre>
+
+<p><code>CMD + Shift + K</code> 可插入Markdown语法。<br/>
+效果如下：</p>
+
+<pre><code class="language-js">function fancyAlert(arg) {
+    if(arg) {
+        $.facebox({div:&#39;#foo&#39;})
+    }
+
+}
+</code></pre>
+
+<h2 id="toc_17">顺序图或流程图</h2>
+
+<p>Markdown 语法：</p>
+
+<pre><code>```sequence
+张三-&gt;李四: 嘿，小四儿, 写博客了没?
+Note right of 李四: 李四愣了一下，说：
+李四--&gt;张三: 忙得吐血，哪有时间写。
+```
+
+```flow
+st=&gt;start: 开始
+e=&gt;end: 结束
+op=&gt;operation: 我的操作
+cond=&gt;condition: 确认？
+
+st-&gt;op-&gt;cond
+cond(yes)-&gt;e
+cond(no)-&gt;op
+```
+</code></pre>
+
+<p>效果如下（ <code>Preferences</code> - <code>Themes</code> - <code>Enable sequence &amp; flow chart</code> 才会看到效果 ）：</p>
+
+<pre><code class="language-sequence">张三-&gt;李四: 嘿，小四儿, 写博客了没?
+Note right of 李四: 李四愣了一下，说：
+李四--&gt;张三: 忙得吐血，哪有时间写。
+</code></pre>
+
+<pre><code class="language-flow">st=&gt;start: 开始
+e=&gt;end: 结束
+op=&gt;operation: 我的操作
+cond=&gt;condition: 确认？
+
+st-&gt;op-&gt;cond
+cond(yes)-&gt;e
+cond(no)-&gt;op
+</code></pre>
+
+<p>更多请参考：<a href="http://bramp.github.io/js-sequence-diagrams/">http://bramp.github.io/js-sequence-diagrams/</a>, <a href="http://adrai.github.io/flowchart.js/">http://adrai.github.io/flowchart.js/</a></p>
+
+<h2 id="toc_18">表格</h2>
+
+<p>Markdown 语法：</p>
+
+<pre><code>第一格表头 | 第二格表头
+--------- | -------------
+内容单元格 第一列第一格 | 内容单元格第二列第一格
+内容单元格 第一列第二格 多加文字 | 内容单元格第二列第二格
+</code></pre>
+
+<p>效果如下：</p>
+
+<table>
+<thead>
+<tr>
+<th>第一格表头</th>
+<th>第二格表头</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>内容单元格 第一列第一格</td>
+<td>内容单元格第二列第一格</td>
+</tr>
+<tr>
+<td>内容单元格 第一列第二格 多加文字</td>
+<td>内容单元格第二列第二格</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="toc_19">删除线</h2>
+
+<p>Markdown 语法：</p>
+
+<pre><code>加删除线像这样用： ~~删除这些~~
+</code></pre>
+
+<p>效果如下：</p>
+
+<p>加删除线像这样用： <del>删除这些</del></p>
+
+<h2 id="toc_20">分隔线</h2>
+
+<p>以下三种方式都可以生成分隔线：</p>
+
+<pre><code>***
+
+*****
+
+- - -
+</code></pre>
+
+<p>效果如下：</p>
+
+<hr/>
+
+<hr/>
+
+<hr/>
+
+<h2 id="toc_21">MathJax</h2>
+
+<p>Markdown 语法：</p>
+
+<pre><code>块级公式：
+$$  x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
+
+\\[ \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} =
+1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}}
+{1+\frac{e^{-8\pi}} {1+\ldots} } } } \\]
+
+行内公式： $\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$
+</code></pre>
+
+<p>效果如下（<code>Preferences</code> - <code>Themes</code> - <code>Enable MathJax</code> 才会看到效果）：</p>
+
+<p>块级公式：<br/>
+\[  x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} \]</p>
+
+<p>\[ \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} =<br/>
+1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}}<br/>
+{1+\frac{e^{-8\pi}} {1+\ldots} } } } \]</p>
+
+<p>行内公式： \(\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N\)</p>
+
+<h2 id="toc_22">脚注（Footnote）</h2>
+
+<p>Markdown 语法：</p>
+
+<pre><code>这是一个脚注：[^sample_footnote]
+</code></pre>
+
+<p>效果如下：</p>
+
+<p>这是一个脚注：<sup id="fnref1"><a href="#fn1" rel="footnote">1</a></sup></p>
+
+<h2 id="toc_23">注释和阅读更多</h2>
+
+<!-- comment -->
+
+<!-- more -->
+
+<p>Actions-&gt;Insert Read More Comment <em>或者</em> <code>Command + .</code><br/>
+<strong>注</strong> 阅读更多的功能只用在生成网站或博客时。</p>
+
+<h2 id="toc_24">TOC</h2>
+
+<p>Markdown 语法：</p>
+
+<pre><code>[TOC]
+</code></pre>
+
+<p>效果如下：</p>
+
+<ul>
+<li>
+<a href="#toc_0">Markdown 的设计哲学</a>
+</li>
+<li>
+<a href="#toc_1">本文约定</a>
+</li>
+<li>
+<a href="#toc_2">标题</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_3">第一级标题 <code>&lt;h1&gt;</code></a>
+<ul>
+<li>
+<a href="#toc_4">第二级标题 <code>&lt;h2&gt;</code></a>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li>
+<a href="#toc_5">第六级标题 <code>&lt;h6&gt;</code></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_6">强调</a>
+</li>
+<li>
+<a href="#toc_7">换行</a>
+</li>
+<li>
+<a href="#toc_8">列表</a>
+<ul>
+<li>
+<a href="#toc_9">无序列表</a>
+</li>
+<li>
+<a href="#toc_10">有序列表</a>
+</li>
+<li>
+<a href="#toc_11">任务列表（Task lists）</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_12">图片</a>
+</li>
+<li>
+<a href="#toc_13">链接</a>
+</li>
+<li>
+<a href="#toc_14">区块引用</a>
+</li>
+<li>
+<a href="#toc_15">行内代码</a>
+</li>
+<li>
+<a href="#toc_16">多行或者一段代码</a>
+</li>
+<li>
+<a href="#toc_17">顺序图或流程图</a>
+</li>
+<li>
+<a href="#toc_18">表格</a>
+</li>
+<li>
+<a href="#toc_19">删除线</a>
+</li>
+<li>
+<a href="#toc_20">分隔线</a>
+</li>
+<li>
+<a href="#toc_21">MathJax</a>
+</li>
+<li>
+<a href="#toc_22">脚注（Footnote）</a>
+</li>
+<li>
+<a href="#toc_23">注释和阅读更多</a>
+</li>
+<li>
+<a href="#toc_24">TOC</a>
+</li>
+</ul>
+
+
+<script src="asset/flow-sequence-chart/raphael-min.js"></script><script src="asset/flow-sequence-chart/underscore-min.js"></script><script src="asset/flow-sequence-chart/flowchart.min.js"></script><script src="asset/flow-sequence-chart/sequence-diagram-min.js"></script><script type="text/javascript">$(function(){    var mwebii=0;    var mwebChartEleId = 'mweb-chart-ele-';    $('pre>code').each(function(){        mwebii++;        var eleiid = mwebChartEleId+mwebii;        if($(this).hasClass('language-sequence')){            var ele = $(this).addClass('nohighlight').parent();            $('<div id="'+eleiid+'"><div>').insertAfter(ele);            ele.hide();            var diagram = Diagram.parse($(this).text());            diagram.drawSVG(eleiid,{theme: 'simple'});        }else if($(this).hasClass('language-flow')){            var ele = $(this).addClass('nohighlight').parent();            $('<div id="'+eleiid+'"><div>').insertAfter(ele);            ele.hide();            var diagram = flowchart.parse($(this).text());            diagram.drawSVG(eleiid);        }    });});</script>
+<script type="text/x-mathjax-config">if (typeof MathJaxListener !== 'undefined') { MathJax.Hub.Register.StartupHook('End', function () { MathJaxListener.invokeCallbackForKey_('End'); }); } </script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<div class="footnotes">
+<hr/>
+<ol>
+
+<li id="fn1">
+<p>这里是脚注信息&nbsp;<a href="#fnref1" rev="footnote">&#8617;</a></p>
+</li>
+
+</ol>
+</div>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[PinPhoto On OS X]]></title>
@@ -34,7 +1105,7 @@
 
 <p><code>CMD+N</code> to new PinPhoto document. Use Drag &amp; drop or <code>Import</code> button to add photos. You can also press <code>CMD+V</code> to paste photo when you copy a photo to pasteboard.</p>
 
-<p><img src="media/14255436714850/1.jpg" alt="">￼￼￼￼￼￼</p>
+<p><img src="media/14255436714850/1.jpg" alt=""/>￼￼￼￼￼￼</p>
 
 <p>Tip: If you want to add some lovely photo from website to PinPhoto document, right click website&#39;s photo, choose <code>Copy Image</code>, and go to PinPhoto document press <code>CMD+V</code>.</p>
 
@@ -42,7 +1113,7 @@
 
 <p>Click <code>Main Window</code> photos list&#39;s photo to open <code>Photo View</code>. Mouse moves to the top of <code>Photo View</code> and drag to change the position. You can use two finger zoom the photo. Use the right click context menu or main menu --&gt; view for more.</p>
 
-<p><img src="media/14255436714850/2.jpg" alt="">￼￼￼￼￼￼</p>
+<p><img src="media/14255436714850/2.jpg" alt=""/>￼￼￼￼￼￼</p>
 
 <p><strong>Right click context menu:</strong></p>
 
@@ -66,10 +1137,10 @@
 <li>Close Document: <code>CMD+Shift+W</code></li>
 </ul>
 
-<p>Automatic placement selected photos:<br>
+<p>Automatic placement selected photos:<br/>
 You can select some photos --&gt; right click --&gt; choose <code>Open &amp; Placement Selected Photos</code>. PinPhoto will placement selected photos on full screen automatically.</p>
 
-<p><img src="media/14255436714850/3.jpg" alt="">￼￼￼￼￼￼</p>
+<p><img src="media/14255436714850/3.jpg" alt=""/>￼￼￼￼￼￼</p>
 
 <p><strong>Right click context menu:</strong></p>
 
@@ -92,13 +1163,13 @@ You can select some photos --&gt; right click --&gt; choose <code>Open &amp; Pla
 
 <p><code>CMD+T</code> to toggle floating <code>Photo View</code>, <code>CMD+Shift+T</code> floating all <code>Photo View</code>, <code>CMD+Option+T</code> cancels floating all <code>Photo View</code>.</p>
 
-<p><img src="media/14255436714850/4.jpg" alt="">￼￼￼￼￼￼</p>
+<p><img src="media/14255436714850/4.jpg" alt=""/>￼￼￼￼￼￼</p>
 
 <h3 id="toc_4">Hide/Show Main Window</h3>
 
 <p><code>CMD+D</code> toggle hide/show <code>Main Window</code>, <code>CMD+F</code> show <code>Main Window</code></p>
 
-<p><img src="media/14255436714850/5.jpg" alt="">￼￼￼￼￼￼</p>
+<p><img src="media/14255436714850/5.jpg" alt=""/>￼￼￼￼￼￼</p>
 
 <h3 id="toc_5">Switch opened PinPhoto documents</h3>
 
@@ -138,13 +1209,13 @@ You can select some photos --&gt; right click --&gt; choose <code>Open &amp; Pla
 
 <span id="more"></span><!-- more -->
 
-<h2 id="toc_2">软件功能和使用方法</h2>
+<h2 id="toc_2">软件用途和使用方法</h2>
 
 <h3 id="toc_3">新建PinPhoto文档和导入图片</h3>
 
 <p><code>CMD+N</code>新建PinPhoto文档，使用拖拽或者点<code>Import</code>按钮增加要摆放的图片，如果你的剪切板上复制有图片，也可以直接用<code>CMD+V</code>粘贴进来。</p>
 
-<p><img src="media/14255236146194/1.jpg" alt="">￼￼￼￼￼￼￼￼￼￼￼</p>
+<p><img src="media/14255236146194/1.jpg" alt=""/>￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
 
 <p>小技巧：在网页中看到喜欢的图片想增加到PinPhoto文档中，可以右键网页中的图片，在弹出的菜单中选择：复制图片(Copy Image) 然后切换到PinPhoto，用快捷键<code>CMD+V</code>粘贴以增加到PinPhoto的文档中。</p>
 
@@ -152,7 +1223,7 @@ You can select some photos --&gt; right click --&gt; choose <code>Open &amp; Pla
 
 <p>点击列表中的图片即可打开该图片的图片视图，在打开的图片视图中，鼠标移到图片顶部的位置，会显示一条黑色的半透明长方形，拖动即可改变位置，你也可以用双指缩放、平移图片，更多的调节请用右键菜单、主菜单的View菜单或者快捷键。</p>
 
-<p><img src="media/14255236146194/2.jpg" alt="">￼￼￼￼￼￼￼￼￼￼￼</p>
+<p><img src="media/14255236146194/2.jpg" alt=""/>￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
 
 <p><strong>右键菜单项目说明：</strong></p>
 
@@ -178,7 +1249,7 @@ You can select some photos --&gt; right click --&gt; choose <code>Open &amp; Pla
 
 <p>另外也可以在主窗口中右键打开多张图片，有个实用的功能为：自动排列图片。选择要自动排列的图片，右键，并选<code>Open &amp; Placement Selected Photos</code>，则会把您选择的图片自动排满整个屏幕。如下图。</p>
 
-<p><img src="media/14255236146194/3.jpg" alt="">￼￼￼￼￼￼￼￼￼￼￼</p>
+<p><img src="media/14255236146194/3.jpg" alt=""/>￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
 
 <p><strong>右键菜单项目说明：</strong></p>
 
@@ -201,13 +1272,13 @@ You can select some photos --&gt; right click --&gt; choose <code>Open &amp; Pla
 
 <p>选中图片视图后，可以用<code>CMD+T</code>或者右键选择菜单来置顶图片，图片置顶后，当你切换到其它程序时，会一直显示。经典的使用场景是对着图片画画。再按<code>CMD+T</code>则会取消置顶。也可以用<code>CMD+Shift+T</code>来置顶当前文档中的所有图片视图。用<code>CMD+Option+T</code>来取消置顶所有图片视图</p>
 
-<p><img src="media/14255236146194/4.jpg" alt="">￼￼￼￼￼￼￼￼￼￼￼</p>
+<p><img src="media/14255236146194/4.jpg" alt=""/>￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
 
 <h3 id="toc_6">隐藏主窗口</h3>
 
 <p>主窗口有时候非常影响观看摆好的图片，可以用<code>CMD+D</code>来显示/隐藏主窗口，<code>CMD+F</code>会直接显示主窗口。</p>
 
-<p><img src="media/14255236146194/5.jpg" alt="">￼￼￼￼￼￼￼￼￼￼￼</p>
+<p><img src="media/14255236146194/5.jpg" alt=""/>￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
 
 <h3 id="toc_7">切换打开的PinPhoto文档</h3>
 
@@ -226,16 +1297,14 @@ You can select some photos --&gt; right click --&gt; choose <code>Open &amp; Pla
     <updated>2015-03-02T14:03:40+08:00</updated>
     <id>http://coderforart.com/my-sec-mac-app-request-name.html</id>
     <content type="html"><![CDATA[
-<p>v2ex:<a href="https://v2ex.com/t/173949">https://v2ex.com/t/173949</a><br>
+<p>v2ex:<a href="https://v2ex.com/t/173949">https://v2ex.com/t/173949</a><br/>
 ourcoders:<a href="http://ourcoders.com/thread/show/5653/">http://ourcoders.com/thread/show/5653/</a></p>
 
 <p>这个免费App是1月初MWeb发布后才有的点子，MWeb1.2提交后正式开始做，春节长假过后再小修了一下，终于到了差不多可以发布的时候。</p>
 
-<p>App的功能是：把经常要看的相关联的图片摆放到屏幕任何位置并存成文件，下次打开时恢复之前的状态。摆放时可以放大、缩小、移动图片，也可以改变视图窗口的位置、大小等，支持双指缩放、三指拖动。</p>
-
-<span id="more"></span><!-- more -->
-
-<p>名字一开始是想叫：Research Pro的，因为这个App最开始的目的就是Research。因为我喜欢并想学CG艺术，然后通常会在网上看到不错的图，就想把相关联的排起来对比看。有时候也会特意对找一些东西，比如说唐代古装的服饰、饰品、发型等，找到后想全部排起来一并查看和研究。所以流程为：收集资料--&gt;排好--&gt;保存成文档--&gt;下次打开恢复排好的状态。这大概是Research的流程，这软件我想同样也适用于设计师研究设计方案，屏幕越大，可以摆的图越多，很是YY iMac retina 27下的效果。</p>
+<p>App的功能是：把经常要看的相关联的图片摆放到屏幕任何位置并存成文件，下次打开时恢复之前的状态。摆放时可以放大、缩小、移动图片，也可以改变视图窗口的位置、大小等，支持双指缩放、三指拖动。<br/>
+&lt;!-- more --&gt;<br/>
+名字一开始是想叫：Research Pro的，因为这个App最开始的目的就是Research。因为我喜欢并想学CG艺术，然后通常会在网上看到不错的图，就想把相关联的排起来对比看。有时候也会特意对找一些东西，比如说唐代古装的服饰、饰品、发型等，找到后想全部排起来一并查看和研究。所以流程为：收集资料--&gt;排好--&gt;保存成文档--&gt;下次打开恢复排好的状态。这大概是Research的流程，这软件我想同样也适用于设计师研究设计方案，屏幕越大，可以摆的图越多，很是YY iMac retina 27下的效果。</p>
 
 <p>后来觉得Research Pro有点太高端，这是一个小软件，有点名不副其实，所以就改为PinPhoto，低调了一些。但是总觉得可能有更好的名字，或者这两个名字那个好？发上来求助万能的V友。</p>
 
@@ -243,23 +1312,23 @@ ourcoders:<a href="http://ourcoders.com/thread/show/5653/">http://ourcoders.com/
 
 <p>当然也不排除这个奇葩的App没有多少人会用，这次发上来也看看有没有人关注。</p>
 
-<p>图一：基本的功能和用法：<br>
-<img src="media/14252762205423/01.jpg" alt="">￼￼</p>
+<p>图一：基本的功能和用法：<br/>
+<img src="media/14252762205423/01.jpg" alt=""/>￼￼</p>
 
-<p>图二：色彩的知识，经常要看的类型，主窗口可以用 CMD+D 隐藏，这样就全屏观看了。<br>
-<img src="media/14252762205423/02.jpg" alt="05">￼￼</p>
+<p>图二：色彩的知识，经常要看的类型，主窗口可以用 CMD+D 隐藏，这样就全屏观看了。<br/>
+<img src="media/14252762205423/02.jpg" alt="05"/>￼￼</p>
 
-<p>图三：比较长的教程可以贴进来，摆好以方便查看（隐藏了主窗口）。<br>
-<img src="media/14252762205423/03.jpg" alt="04">￼￼</p>
+<p>图三：比较长的教程可以贴进来，摆好以方便查看（隐藏了主窗口）。<br/>
+<img src="media/14252762205423/03.jpg" alt="04"/>￼￼</p>
 
-<p>图四：同一作者的线搞对比查看<br>
-<img src="media/14252762205423/04.jpg" alt="03">￼￼</p>
+<p>图四：同一作者的线搞对比查看<br/>
+<img src="media/14252762205423/04.jpg" alt="03"/>￼￼</p>
 
-<p>图五：收集到一些特别的蘑菇，画画时参考。<br>
-<img src="media/14252762205423/05.jpg" alt="02">￼￼</p>
+<p>图五：收集到一些特别的蘑菇，画画时参考。<br/>
+<img src="media/14252762205423/05.jpg" alt="02"/>￼￼</p>
 
-<p>图六：把一张图片顶置。对着图画画时有些用。<br>
-<img src="media/14252762205423/06.jpg" alt="01">￼￼</p>
+<p>图六：把一张图片顶置。对着图画画时有些用。<br/>
+<img src="media/14252762205423/06.jpg" alt="01"/>￼￼</p>
 
 ]]></content>
   </entry>
@@ -282,7 +1351,7 @@ ourcoders:<a href="http://ourcoders.com/thread/show/5653/">http://ourcoders.com/
 
 <h2 id="toc_1">Select sync path</h2>
 
-<p>Select MWeb build site path for the left panel.<br>
+<p>Select MWeb build site path for the left panel.<br/>
 If you didn&#39;t change MWeb build site path,the default path is:</p>
 
 <pre><code>file:///Users/You Account/Library/Containers/com.coderforart.MWeb/Data/Documents/MWeb/LocalData/Site
@@ -292,15 +1361,15 @@ If you didn&#39;t change MWeb build site path,the default path is:</p>
 
 <h2 id="toc_2">Select sync to path</h2>
 
-<p>Select sync to path for the right panel.I choose sync to FTP.<br>
-<img src="media/14250096857643/14250109782773.jpg" alt="">￼￼￼￼</p>
+<p>Select sync to path for the right panel.I choose sync to FTP.<br/>
+<img src="media/14250096857643/14250109782773.jpg" alt=""/>￼￼￼￼</p>
 
 <h2 id="toc_3">Enable automatically synchronize</h2>
 
-<p>Click <q>auto</q> button,enable On File Change: Analyze,Sync. Click <q>OK</q>.<br>
-<img src="media/14250096857643/14250112704266.jpg" alt="">￼￼￼￼</p>
+<p>Click <q>auto</q> button,enable On File Change: Analyze,Sync. Click <q>OK</q>.<br/>
+<img src="media/14250096857643/14250112704266.jpg" alt=""/>￼￼￼￼</p>
 
-<p>All is OK!! <br>
+<p>All is OK!! <br/>
 When you click <q>Build site</q> button in MWeb, GoodSync will automatically synchronize your static website to FTP.</p>
 
 ]]></content>
@@ -331,15 +1400,15 @@ When you click <q>Build site</q> button in MWeb, GoodSync will automatically syn
 
 <h2 id="toc_2">选择要同步的目标位置</h2>
 
-<p>在右侧选择要同步的目标位置，我这里选择FTP，如下图，可以看到GoodSync还支持SFTP、WebDAV、Amazon S3等非常多的同步服务。<br>
-<img src="media/14250057502319/14250078774218.jpg" alt="">￼￼￼￼</p>
+<p>在右侧选择要同步的目标位置，我这里选择FTP，如下图，可以看到GoodSync还支持SFTP、WebDAV、Amazon S3等非常多的同步服务。<br/>
+<img src="media/14250057502319/14250078774218.jpg" alt=""/>￼￼￼￼</p>
 
 <p>点“连接”按钮，连上FTP后，选择FTP上要同步的文件夹，再点“选择”按钮。如果有跳出来提示，点“Yes”。</p>
 
 <h2 id="toc_3">设置自动同步</h2>
 
-<p>如下图：点“自动”按钮，设置当文件改变时就分析和同步。<br>
-<img src="media/14250057502319/14250082156068.jpg" alt="">￼￼￼￼</p>
+<p>如下图：点“自动”按钮，设置当文件改变时就分析和同步。<br/>
+<img src="media/14250057502319/14250082156068.jpg" alt=""/>￼￼￼￼</p>
 
 <p>点“确定”后就会开始分析和同步了。</p>
 
@@ -351,8 +1420,8 @@ When you click <q>Build site</q> button in MWeb, GoodSync will automatically syn
 
 <p>因为有GoodSync这个同步软件，MWeb变得更方便好用了。我现在也在考虑是否把CoderForArt搬到有FTP功能的主机，这样在国内访问会快很多，写新文章时也不用打github命令手动去上传了。然后本来是有考虑为MWeb加上自动同步功能或者另做一软件，现在看来也没有必要了。</p>
 
-<p><strong>更新</strong>：GoodSync 免费版是有限定的，限定为：<br>
-Q: What are free version limitations? <br>
+<p><strong>更新</strong>：GoodSync 免费版是有限定的，限定为：<br/>
+Q: What are free version limitations? <br/>
 A: You can have 3 or less jobs in free version and 100 or less files and folders in each job.</p>
 
 <p>虽然GoodSync不免费，但是非常好用。我也会关注是否有其他同步软件。</p>
@@ -389,7 +1458,7 @@ A: You can have 3 or less jobs in free version and 100 or less files and folders
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[MWeb 1.2 版更新说明]]></title>
+    <title type="html"><![CDATA[MWeb 1.2 版更新说明和用 wkhtmltopdf 生成带目录的 PDF 和自定预览 CSS]]></title>
     <link href="http://coderforart.com/mweb-v1.2-release-zh.html"/>
     <updated>2015-02-08T17:47:38+08:00</updated>
     <id>http://coderforart.com/mweb-v1.2-release-zh.html</id>
@@ -418,32 +1487,32 @@ A: You can have 3 or less jobs in free version and 100 or less files and folders
 
 <h2 id="toc_2">生成带目录的PDF的方法</h2>
 
-<p>先安装wkhtmltopdf，网址：<a href="http://wkhtmltopdf.org/">http://wkhtmltopdf.org/</a>。<br>
-然后用Export as HTML把要生成带目录的PDF的内容导出为HTML。我这里是选择整个Coder For Art网站。如图是导出到tocPDF文件夹下的情况。<br>
-<img src="media/14233888581377/14233994590970.jpg" alt="">￼￼￼￼￼￼￼￼￼</p>
+<p>先安装wkhtmltopdf，网址：<a href="http://wkhtmltopdf.org/">http://wkhtmltopdf.org/</a>。<br/>
+然后用Export as HTML把要生成带目录的PDF的内容导出为HTML。我这里是选择整个Coder For Art网站。如图是导出到tocPDF文件夹下的情况。<br/>
+<img src="media/14233888581377/14233994590970.jpg" alt=""/>￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
 
-<p>选择tocPDF文件夹，并<code>CMD+C</code>复制,打开终端工具(Terminal)，打<code>cd</code> （注意cd后带一空格），然后<code>CMD+V</code>，再 Enter。<br>
+<p>选择tocPDF文件夹，并<code>CMD+C</code>复制,打开终端工具(Terminal)，打<code>cd</code> （注意cd后带一空格），然后<code>CMD+V</code>，再 Enter。<br/>
 然后再执行以下命令</p>
 
 <pre><code>wkhtmltopdf toc index.html CoderForArt.pdf
 </code></pre>
 
-<p>￼执行结果生成的PDF如图：<br>
-<img src="media/14233888581377/14233999928601.jpg" alt="">￼￼￼￼￼￼￼￼￼</p>
+<p>￼执行结果生成的PDF如图：<br/>
+<img src="media/14233888581377/14233999928601.jpg" alt=""/>￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
 
 <p>一般情况下有代码的地方如果过长会被切掉，可以加入以下CSS</p>
 
-<pre><code class="css">.hljs{overflow: visible; word-wrap: break-word;}
+<pre><code class="language-css">.hljs{overflow: visible; word-wrap: break-word;}
 </code></pre>
 
-<p>就不会被切了。如图：<br>
-<img src="media/14233888581377/14234006629706.jpg" alt="">￼￼￼￼￼￼￼￼￼</p>
+<p>就不会被切了。如图：<br/>
+<img src="media/14233888581377/14234006629706.jpg" alt=""/>￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
 
 <h2 id="toc_3">自定预览CSS</h2>
 
 <p>把要自定的预览的网站的主题整个文件夹复制到预览CSS文件夹的layout文件夹下，如图是我要自定greyshade主题的预览CSS：</p>
 
-<p><img src="media/14233888581377/14233974412288.jpg" alt="">￼￼￼￼￼￼￼￼￼￼￼</p>
+<p><img src="media/14233888581377/14233974412288.jpg" alt=""/>￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
 
 <p>然后只留下layout/greyshade文件夹下的asset文件夹和随便两个.html文件，其他都删除。把留下的两个.html文件分别改名为：demo.html和index.html。</p>
 
@@ -451,12 +1520,12 @@ A: You can have 3 or less jobs in free version and 100 or less files and folders
 
 <p>把index.html页的标题都用<code>{{title}}</code>替换，内容用<code>{{content}}</code>替换，并在<code>&lt;head&gt;&lt;/head&gt;</code>之间加上<code>{{head}}</code>，一般加在<code>&lt;/head&gt;</code>前面即可。</p>
 
-<p>如图，在预览CSS的文件夹里新增一个名为greyshade.css的内容为空的文件即可。<br>
-<img src="media/14233888581377/14233984379844.jpg" alt="">￼￼￼￼￼￼￼￼￼￼</p>
+<p>如图，在预览CSS的文件夹里新增一个名为greyshade.css的内容为空的文件即可。<br/>
+<img src="media/14233888581377/14233984379844.jpg" alt=""/>￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
 
 <p>要注意的是：greyshade.css的文件名greyshade和layout文件夹下的greyshade文件夹的名称是一样的。然后如果你引用的CSS加有<code>media=&quot;screen, projection&quot;</code>这样的限定，请删除，不然MWeb在导出PDF功能上会没有样式。还有如果你在用highlightjs这个代码高亮插件，导出PDF或者生成图片时，代码被切掉的话，可以用以下CSS强制换行：</p>
 
-<pre><code class="css">.hljs{overflow: visible; word-wrap: break-word;}
+<pre><code class="language-css">.hljs{overflow: visible; word-wrap: break-word;}
 </code></pre>
 
 ]]></content>
@@ -476,23 +1545,23 @@ A: You can have 3 or less jobs in free version and 100 or less files and folders
 
 <p>我是用MWeb生成的静态网站并上传试试如何的。下图左边是我本机的用MWeb生成的静态网站的所在文件夹，然后右边是连上所给的FTP后，转到htdocs文件夹，在ForkLift中选择File--&gt;Sync to...</p>
 
-<p><img src="media/14229369882579/14229376408401.jpg" alt="">￼￼</p>
+<p><img src="media/14229369882579/14229376408401.jpg" alt=""/>￼￼</p>
 
-<p>上传速度一般，我的宽带是电信20M。<br>
-<img src="media/14229369882579/14229376940910.jpg" alt="">￼￼</p>
+<p>上传速度一般，我的宽带是电信20M。<br/>
+<img src="media/14229369882579/14229376940910.jpg" alt=""/>￼￼</p>
 
-<p>上传后就可以去预览看看速度如何了。进去一看，发现是要用自己的FTP密码登录才可以看。也就是说不备案是不能给别人看的，必须备案才可以。<br>
+<p>上传后就可以去预览看看速度如何了。进去一看，发现是要用自己的FTP密码登录才可以看。也就是说不备案是不能给别人看的，必须备案才可以。<br/>
 浏览一下图很多的页面。速度还可以，比放在github快很多！</p>
 
-<p>然后试试更新文章，看看ForkLift是否会自动同步！<br>
+<p>然后试试更新文章，看看ForkLift是否会自动同步！<br/>
 因为我现在是新写了一文章，所以在MWeb中 Build site 然后看看ForkLift会不会侦测到文件改变，然后自动同步更新到FTP。</p>
 
 <p>可惜的是：ForkLift不会自动同步，还是要你去点File--&gt;Sync to...才可以。如图，他会找出那些文档有改动，然后点Sync，才会更新到FTP。</p>
 
-<p><img src="media/14229369882579/14229393304301.jpg" alt="">￼￼</p>
+<p><img src="media/14229369882579/14229393304301.jpg" alt=""/>￼￼</p>
 
-<p>下图是上传后预览的结果：<br>
-<img src="media/14229369882579/14229395629085.jpg" alt="">￼￼</p>
+<p>下图是上传后预览的结果：<br/>
+<img src="media/14229369882579/14229395629085.jpg" alt=""/>￼￼</p>
 
 <h2 id="toc_0">备案和总结</h2>
 
@@ -527,26 +1596,26 @@ A: You can have 3 or less jobs in free version and 100 or less files and folders
 
 <p>这样就可以备份到任何网盘了。</p>
 
-<p>您也可以把你的网站传到dropbox上，再分享出来，因为dropbox支持直接显示HTML，所以其它人就可以很方便查看。MWeb之后也会增加一些其他类型用途的主题模板。下面说一下如何找到MWeb生成的网站的位置，如图。<br>
-<img src="media/14224153855854/14224159407048.jpg" alt="">￼￼￼￼￼￼￼<br>
-如果你觉得MWeb默认的位置比较不好，您可以改变MWeb网站输出的文件夹，如图我把输出的文件夹改到我的<code>Documents/MWebSites</code>下了。<br>
-<img src="media/14224153855854/14224164068185.jpg" alt="">￼￼￼￼￼￼￼</p>
+<p>您也可以把你的网站传到dropbox上，再分享出来，因为dropbox支持直接显示HTML，所以其它人就可以很方便查看。MWeb之后也会增加一些其他类型用途的主题模板。下面说一下如何找到MWeb生成的网站的位置，如图。<br/>
+<img src="media/14224153855854/14224159407048.jpg" alt=""/>￼￼￼￼￼￼￼￼<br/>
+如果你觉得MWeb默认的位置比较不好，您可以改变MWeb网站输出的文件夹，如图我把输出的文件夹改到我的<code>Documents/MWebSites</code>下了。<br/>
+<img src="media/14224153855854/14224164068185.jpg" alt=""/>￼￼￼￼￼￼￼￼</p>
 
 <p>这样话就比较好找了。</p>
 
 <h2 id="toc_0">发布到github</h2>
 
-<p>github目前应该是最好的提供免费博客、网站服务的公司了（当然这其实并不是github的想法）。如果你有了github的帐号后只需要新增一个 <code>Github repository</code>，名称为<code>username.github.io</code>,如图<br>
-<img src="media/14224153855854/14224167094764.jpg" alt="">￼￼￼￼￼￼￼</p>
+<p>github目前应该是最好的提供免费博客、网站服务的公司了（当然这其实并不是github的想法）。如果你有了github的帐号后只需要新增一个 <code>Github repository</code>，名称为<code>username.github.io</code>,如图<br/>
+<img src="media/14224153855854/14224167094764.jpg" alt=""/>￼￼￼￼￼￼￼￼</p>
 
-<p>然后会看到这页：<br>
-<img src="media/14224153855854/14224167472996.jpg" alt="">￼￼￼￼￼￼￼</p>
+<p>然后会看到这页：<br/>
+<img src="media/14224153855854/14224167472996.jpg" alt=""/>￼￼￼￼￼￼￼￼</p>
 
-<p>这样就简单了，先进入MWeb生成的网站的所在文件夹（如上面所说，在MWeb中点<code>Show in finder</code>），我这里是选择 <code>Coder For Art</code> 然后 <code>CMD+C</code>。如图：<br>
-<img src="media/14224153855854/14224170128740.jpg" alt="">￼￼￼￼￼￼￼</p>
+<p>这样就简单了，先进入MWeb生成的网站的所在文件夹（如上面所说，在MWeb中点<code>Show in finder</code>），我这里是选择 <code>Coder For Art</code> 然后 <code>CMD+C</code>。如图：<br/>
+<img src="media/14224153855854/14224170128740.jpg" alt=""/>￼￼￼￼￼￼￼￼</p>
 
-<p>然后打开终端工具(Terminal)，打<code>cd</code> （注意cd后带一空格），然后<code>CMD+V</code>，然后Enter，如图：<br>
-<img src="media/14224153855854/14224172504947.jpg" alt="">￼￼￼￼￼￼￼</p>
+<p>然后打开终端工具(Terminal)，打<code>cd</code> （注意cd后带一空格），然后<code>CMD+V</code>，然后Enter，如图：<br/>
+<img src="media/14224153855854/14224172504947.jpg" alt=""/>￼￼￼￼￼￼￼￼</p>
 
 <p>然后再分别打入上边github提示的命令样本，注意我这边有改动到喔。再注意，如果你先前没有在MWeb中<code>Build site</code>，要先生成一下。</p>
 
@@ -558,13 +1627,13 @@ git remote add origin https://github.com/oimotis/oimotis.github.io.git
 git push -u origin master
 </code></pre>
 
-<p>效果如图：<br>
-<img src="media/14224153855854/14224176047741.jpg" alt="">￼￼￼￼￼￼￼<br>
-<img src="media/14224153855854/14224181872446.jpg" alt="">￼￼￼￼￼￼￼</p>
+<p>效果如图：<br/>
+<img src="media/14224153855854/14224176047741.jpg" alt=""/>￼￼￼￼￼￼￼￼<br/>
+<img src="media/14224153855854/14224181872446.jpg" alt=""/>￼￼￼￼￼￼￼￼</p>
 
 <p>可以看到已经传成功了，<a href="http://oimotis.github.io/">http://oimotis.github.io/</a> 直接用这个网址就可以浏览了。</p>
 
-<p>下面就要自定域名了。<br>
+<p>下面就要自定域名了。<br/>
 依次执行以下命令即可：</p>
 
 <pre><code>echo &#39;blog.coderforart.com&#39; &gt;&gt; CNAME
@@ -573,13 +1642,13 @@ git commit -m &quot;cname&quot;
 git push -u origin master
 </code></pre>
 
-<p>效果如图：<br>
-<img src="media/14224153855854/14224187391174.jpg" alt="">￼￼￼￼￼￼￼</p>
+<p>效果如图：<br/>
+<img src="media/14224153855854/14224187391174.jpg" alt=""/>￼￼￼￼￼￼￼￼</p>
 
-<p>然后在域名中设定CNAME到<code>oimotis.github.io</code>（oimotis要换成你的github用户名）即可。 如图，这是我上边的设置<br>
-<img src="media/14224153855854/14224192721298.jpg" alt="">￼￼￼￼￼￼￼</p>
+<p>然后在域名中设定CNAME到<code>oimotis.github.io</code>（oimotis要换成你的github用户名）即可。 如图，这是我上边的设置<br/>
+<img src="media/14224153855854/14224192721298.jpg" alt=""/>￼￼￼￼￼￼￼￼</p>
 
-<p>注意，我并没有真设置喔，所以 blog.coderforart.com 是无效的。<br>
+<p>注意，我并没有真设置喔，所以 blog.coderforart.com 是无效的。<br/>
 我的网站<a href="http://coderforart.com">http://coderforart.com</a>是设定CNAME文件的内容为：coderforart.com，CNAME的host为 www, POINTS TO:为 oulvhai.github.io，然后还要把 A Record（A记录）设置为 <code>192.30.252.153</code> 和 <code>192.30.252.154</code> 才行。</p>
 
 <p>以后发新文章要更新，就执行以下命令即可：</p>
@@ -623,21 +1692,21 @@ git push -u origin master
 <li>水：这部分在UE4中比较好实现，应该是只要设计位置和外形就好，任务比较简单。</li>
 <li>岩石火山怪物、钢铁怪物：怪物制作在游戏中是重点，难度很高。从开始设计到引入UE4，像树或花草那样流程即可。真正有挑战的是怪物AI了，这部分就关系到游戏玩法和游戏性了。这部分我了解不多，反正是要花大量时间研究就是了，初步方向是UE4中内置的AI的组件如何使用，然后读一些游戏AI的书等等。估计是可能会用到C++了，这也是要学习的。</li>
 <li>人物角色：人物角色是我学习的重点，我希望这部分在做完这个游戏后能真正掌握一些。这部分要研究的东西太多了，光是人物设计就是要花大量时间，人体结构，画法，服饰。还有是3D建模，人物皮肤材质，服饰材质等等。服饰部分东西太庞大，我只选一个小方向即可。还有比如说头发和衣服在游戏中的做法等等。再有就是角色动画，初步估计应该是在3D软件中调好，然后引入UE4中也是有大量工作要做的。这也只是在对角色动画比较了解的基础上，刚刚好我不了解，这也得学！不知道UE4能不能做到像下图那样的画出来的角色的质量？这也是我想研究的。
-<img src="media/14218059079784/5bf24facgw1eo0sjmlsiwj20uk0hoju2.jpg" alt="5bf24facgw1eo0sjmlsiwj20uk0hoju2">￼￼￼
-<img src="media/14218059079784/5bf24facgw1eo0sjsnjb6j20dw0cnta3.jpg" alt="5bf24facgw1eo0sjsnjb6j20dw0cnta3">￼￼￼</li>
+<img src="media/14218059079784/5bf24facgw1eo0sjmlsiwj20uk0hoju2.jpg" alt="5bf24facgw1eo0sjmlsiwj20uk0hoju2"/>￼￼￼
+<img src="media/14218059079784/5bf24facgw1eo0sjsnjb6j20dw0cnta3.jpg" alt="5bf24facgw1eo0sjsnjb6j20dw0cnta3"/>￼￼￼</li>
 </ul>
 
 <p>游戏玩法部分，这部分需要我在学习中慢慢想了，这部分应该不难，只是做得好不好的问题，即使做得不好，也没关系了。我的方向不在这。</p>
 
 <h2 id="toc_1">内容创作工具</h2>
 
-<p>内容创作非工具部分花费时间最多，量最大，但是这部分我无法写更多的东西，只能说是边学边研究了。然后工具部分却有一些可写的。<br>
+<p>内容创作非工具部分花费时间最多，量最大，但是这部分我无法写更多的东西，只能说是边学边研究了。然后工具部分却有一些可写的。<br/>
 硬件部分要求不大，我目前有一台高性能的PC，两台MacBook Pro，现用的是2013版的15寸MacBook Pro，还有一台绘画板子 cintiq 13HD，足够用了。软件部分如下</p>
 
 <ul>
 <li>Photoshop：这个神器肯定是必须要的，不管是设计或画画还是做材质，他都是首选的工具。</li>
 <li>ZBrush：这个也属于易用性极好的神器，它大大降低了3D建模的难度。它也是我认为我可以掌握怪物和人物角色创作的理由。还有它的价格不贵，$795，在我可以接受范围。</li>
-<li>Maya LT：为什么是Maya而不是免费的Blender？最主要是Maya提供了官方的.FBX导出支持，而Blender是以插件的形式出现的，还有就是《游戏引擎架构》多次提到Maya，想来是不会错的。为什么是Maya LT，有写错？没有！因为Maya太贵了，全买$3675，订阅$185每月。Maya LT订阅$30每月，年订$240。而且autodesk的软件都可以很方便地申请3年的教育学习用途。</li>
+<li>Maya LT：为什么是Maya而不是免费的Blender？最主要是Maya提供了官方的.FBX导出支持，而Blender是以插件的形式出现的，还有就是《游戏引擎架构》多次提到Maya，想来是不会错的。为什么是Maya LT，有写错？没有！因为Maya太贵了，全买\(3675，订阅\)185每月。Maya LT订阅\(30每月，年订\)240。而且autodesk的软件都可以很方便地申请3年的教育学习用途。</li>
 <li>我的另一款软件：这软件是要先做出来，当然不是什么强大的软件，这是我认为对内容创作和学习有用的小软件。</li>
 </ul>
 
@@ -652,56 +1721,59 @@ git push -u origin master
   
   <entry>
     <title type="html"><![CDATA[MWeb Q & A]]></title>
-    <link href="http://coderforart.com/mweb-qa.html"/>
+    <link href="http://coderforart.com/qa.html"/>
     <updated>2015-01-20T10:04:01+08:00</updated>
-    <id>http://coderforart.com/mweb-qa.html</id>
+    <id>http://coderforart.com/qa.html</id>
     <content type="html"><![CDATA[
-<h2 id="toc_0">How to export HTML style PDF？</h2>
-
-<p><code>CMD+R</code> open <q>Live Preview</q>,click share button,select <code>Save as PDF</code>.</p>
-
-<h2 id="toc_1">How to enable MathJax preview support? How to enable website MathJax support?</h2>
-
-<p><code>CMD+,</code> open Preferences，Themes --&gt; Enable Math.<br>
-For enable website MathJax support,the simple way is copy below code to <code>Site category</code> --&gt; <code>Site other:</code> text box. </p>
-
-<pre><code class="js">&lt;script type=&quot;text/x-mathjax-config&quot;&gt;
-  MathJax.Hub.Config({tex2jax: {inlineMath: [[&#39;$&#39;,&#39;$&#39;], [&#39;\\(&#39;,&#39;\\)&#39;]]}});
-&lt;/script&gt;
-&lt;script type=&quot;text/javascript&quot;
-  src=&quot;http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&quot;&gt;
-&lt;/script&gt;
-</code></pre>
-
-<p>If you website is https,please replace <code>http://cdn.mathjax.org...</code> to <code>https://cdn.mathjax.org...</code>.</p>
+<p>Updated: 2015/3/25</p>
 
 <span id="more"></span><!-- more -->
 
-<h2 id="toc_2">How to backup MWeb&#39;s documents library to Dropbox？</h2>
+<p>Question list: </p>
 
-<p>Please open Terminal ( Spotlight--&gt;enter <code>terminal</code> ) and enter the following command. </p>
+<ul>
+<li>
+<a href="#toc_0">What&#39;s difference between MWeb Lite and MWeb?</a>
+</li>
+<li>
+<a href="#toc_1">How to enable MathJax preview support?</a>
+</li>
+<li>
+<a href="#toc_2">How to enable blog MathJax support?</a>
+</li>
+<li>
+<a href="#toc_3">How to backup MWeb&#39;s documents library to Dropbox？</a>
+</li>
+<li>
+<a href="#toc_4">How to add Disqus support?</a>
+</li>
+</ul>
+
+
+<h2 id="toc_0">What&#39;s difference between MWeb Lite and MWeb?</h2>
+
+<p>MWeb design with two patterns: External Document pattern and Documents Library pattern. MWeb Lite&#39;s Documents Library limit to 10 documents.</p>
+
+<h2 id="toc_1">How to enable MathJax preview support?</h2>
+
+<p><code>CMD+,</code> open Preferences，<code>Themes</code> - <code>Enable MathJax</code>.</p>
+
+<h2 id="toc_2">How to enable blog MathJax support?</h2>
+
+<p><code>Right click blog setting</code> - <code>Edit</code> - <code>Enable MathJax</code></p>
+
+<!-- more -->
+
+<h2 id="toc_3">How to backup MWeb&#39;s documents library to Dropbox？</h2>
+
+<p>Please open Terminal ( Spotlight - enter <code>terminal</code> ) and enter the following command. </p>
 
 <pre><code>ln -s ~/Library/Containers/com.coderforart.MWeb/Data/Documents/MWeb ~/Dropbox/MWebBackup
 </code></pre>
 
-<h2 id="toc_3">How to add Disqus support?</h2>
+<h2 id="toc_4">How to add Disqus support?</h2>
 
-<p>go to <a href="https://disqus.com/">https://disqus.com/</a>,click <code>Add Disqus to Your Site</code>.... At last you will get code like below:</p>
-
-<pre><code class="js">&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
-&lt;script type=&quot;text/javascript&quot;&gt;
-   var disqus_shortname = &#39;your_shortname&#39;; 
-
-   (function() {
-       var dsq = document.createElement(&#39;script&#39;); dsq.type = &#39;text/javascript&#39;; dsq.async = true;
-       dsq.src = &#39;//&#39; + disqus_shortname + &#39;.disqus.com/embed.js&#39;;
-       (document.getElementsByTagName(&#39;head&#39;)[0] || document.getElementsByTagName(&#39;body&#39;)[0]).appendChild(dsq);
-   })();
-&lt;/script&gt;
-&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;
-</code></pre>
-
-<p>Add the code to the themes template file: <code>post.html</code>, like this link: <a href="https://github.com/oulvhai/MWeb-Themes/blob/master/mweb-greyshade/post.html">https://github.com/oulvhai/MWeb-Themes/blob/master/mweb-greyshade/post.html</a></p>
+<p>Please check this post: <a href="mweb-comment-and-share-help.html">Add AddThis Share and Disqus Comment</a></p>
 
 ]]></content>
   </entry>
@@ -718,10 +1790,10 @@ For enable website MathJax support,the simple way is copy below code to <code>Si
 
 <h2 id="toc_1">如何开启MathJax预览支持？如何让网站支持MathJax？</h2>
 
-<p><code>CMD+,</code>打开设置面板，切到Themes，勾选Enable Math选项。<br>
+<p><code>CMD+,</code>打开设置面板，切到Themes，勾选Enable Math选项。<br/>
 如果要让网站支持MathJax，最简单的方法是在网站分类设置中的：Site other:的文本框中填入以下代码：</p>
 
-<pre><code class="js">&lt;script type=&quot;text/x-mathjax-config&quot;&gt;
+<pre><code class="language-js">&lt;script type=&quot;text/x-mathjax-config&quot;&gt;
   MathJax.Hub.Config({tex2jax: {inlineMath: [[&#39;$&#39;,&#39;$&#39;], [&#39;\\(&#39;,&#39;\\)&#39;]]}});
 &lt;/script&gt;
 &lt;script type=&quot;text/javascript&quot;
@@ -744,7 +1816,7 @@ For enable website MathJax support,the simple way is copy below code to <code>Si
 
 <p>Disqus的话，去<a href="https://disqus.com/">https://disqus.com/</a>，然后会得到像以下这样的代码，点到主题模板的post.html页的合适的位置即可。</p>
 
-<pre><code class="js">&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
+<pre><code class="language-js">&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
 &lt;script type=&quot;text/javascript&quot;&gt;
    var disqus_shortname = &#39;这个会不一样&#39;; 
 
@@ -795,9 +1867,9 @@ For enable website MathJax support,the simple way is copy below code to <code>Si
 
 <h2 id="toc_2">Syntax highlighting in fenced code blocks screenshot</h2>
 
-<p><img src="media/14216489427773/Snip20150119_6.png" alt="">￼￼￼￼￼￼￼</p>
+<p><img src="media/14216489427773/Snip20150119_6.png" alt=""/>￼￼￼￼￼￼￼</p>
 
-<p><img src="media/14216489427773/Snip20150119_5.png" alt="">￼￼￼￼￼</p>
+<p><img src="media/14216489427773/Snip20150119_5.png" alt=""/>￼￼￼￼￼</p>
 
 ]]></content>
   </entry>
@@ -832,9 +1904,9 @@ For enable website MathJax support,the simple way is copy below code to <code>Si
 
 <h2 id="toc_2">代码高亮功能截图</h2>
 
-<p><img src="media/14216489427773/Snip20150119_6.png" alt="">￼￼￼￼￼￼￼</p>
+<p><img src="media/14216489427773/Snip20150119_6.png" alt=""/>￼￼￼￼￼￼￼</p>
 
-<p><img src="media/14216489427773/Snip20150119_5.png" alt="">￼￼￼￼￼￼￼</p>
+<p><img src="media/14216489427773/Snip20150119_5.png" alt=""/>￼￼￼￼￼￼￼</p>
 
 ]]></content>
   </entry>
@@ -855,13 +1927,13 @@ For enable website MathJax support,the simple way is copy below code to <code>Si
 
 <p>UE4在github中有三个版本，我直接下载release版本的.zip（因为我用git clone太慢了）。我下载的是4.6.1版。下载完成解压后右键setup.command打开，然后还会要下载大概2G左右的东西，这个下载的速度不错。然后再右键GenerateProjectFiles.command打开。等一会儿后就生成UE4.xcodeproj了。打开UE4.xcodeproj后，选择UE4Editor-Mac，然后build，发现我下载这个版本会出错。出错是这行：</p>
 
-<pre><code class="cpp">static bool GAllowApplePlatformSymbolication = PLATFORM_MAC &amp;&amp; IS_PROGRAM;
+<pre><code class="language-cpp">static bool GAllowApplePlatformSymbolication = PLATFORM_MAC &amp;&amp; IS_PROGRAM;
 </code></pre>
 
-<p>错误信息是：<code>Use of logical &#39;&amp;&amp;&#39; with constant operand</code>。<br>
+<p>错误信息是：<code>Use of logical &#39;&amp;&amp;&#39; with constant operand</code>。<br/>
 我看不大懂，实在是找不到好办法，看意思他肯定是<code>true</code>，就改成：</p>
 
-<pre><code class="cpp">static bool GAllowApplePlatformSymbolication = true;//PLATFORM_MAC &amp;&amp; IS_PROGRAM;
+<pre><code class="language-cpp">static bool GAllowApplePlatformSymbolication = true;//PLATFORM_MAC &amp;&amp; IS_PROGRAM;
 </code></pre>
 
 <p>然后就编译通过了。</p>
@@ -872,7 +1944,7 @@ For enable website MathJax support,the simple way is copy below code to <code>Si
 
 <p>伤心了，还是一样错误，变成以下这样看看。。</p>
 
-<pre><code class="cpp">#if PLATFORM_MAC &amp;&amp; IS_PROGRAM
+<pre><code class="language-cpp">#if PLATFORM_MAC &amp;&amp; IS_PROGRAM
 static bool GAllowApplePlatformSymbolication = true;
 #else
 static bool GAllowApplePlatformSymbolication = false;
@@ -882,11 +1954,11 @@ static bool GAllowApplePlatformSymbolication = false;
 
 <p>编译过了，但是一样还是没办法运行。</p>
 
-<p>没办法了，试试4.5.1版本看看。<br>
+<p>没办法了，试试4.5.1版本看看。<br/>
 下载后编译（方法跟4.6.1不大一样）。这次可以成功编译了。然后运行也没问题，但是好慢好慢好慢，好像我的rmbp15寸高配根本不大合适做这样的任务似的。新建项目xcode提示又出bug，我懒得管了，直接生成release版本的UE4Editor。应该会比debug版本的UE4Editor快很多吧。<del>先熟悉UE4Editor和学学Blueprints先了。C++什么的先不管先，因为太麻烦了，按照我编译后运行一下得要好久好久，估计10来分钟，如果全部编译，要大半个钟吧。。 如果改一下C++代码，还要编译后才能看到结果，那还得了。。 我直接不用学得了。（虽然可能不是这样，虽然Win下可能会快很多很多）</del> <strong>后来证明不是这样，然后如果用不到C++，UE4比想像中方便</strong></p>
 
-<p>话说我都编译好Release版后，然后去看 Getting Started，看到这页：<a href="https://docs.unrealengine.com/latest/INT/Engine/QuickStart/4/index.html">https://docs.unrealengine.com/latest/INT/Engine/QuickStart/4/index.html</a>，发现我编译这版没有Geometry！不得已我又下载了4.1版，又编译了，然后终于可以学习了。有图有真相！左边是4.1版！<br>
-<img src="media/14213891828854/14214041748379.jpg" alt="">￼￼￼￼￼￼￼￼</p>
+<p>话说我都编译好Release版后，然后去看 Getting Started，看到这页：<a href="https://docs.unrealengine.com/latest/INT/Engine/QuickStart/4/index.html">https://docs.unrealengine.com/latest/INT/Engine/QuickStart/4/index.html</a>，发现我编译这版没有Geometry！不得已我又下载了4.1版，又编译了，然后终于可以学习了。有图有真相！左边是4.1版！<br/>
+<img src="media/14213891828854/14214041748379.jpg" alt=""/>￼￼￼￼￼￼￼￼</p>
 
 <p>不得不说我耐心真好，编译好花时间 ╮(╯▽╰)╭  </p>
 
@@ -906,16 +1978,16 @@ static bool GAllowApplePlatformSymbolication = false;
 
 <p>然后好奇再在Mac上试了一下（版本是4.5.1，因为4.6.1我编译不成功），新建C++项目，然后也按 <a href="https://docs.unrealengine.com/latest/INT/Programming/QuickStart/index.html">https://docs.unrealengine.com/latest/INT/Programming/QuickStart/index.html</a> 这个文档加了几行C++代码，想不到却出错了！版本不一样的原因，修正了一下，让他结果一样，然后从开始编译到编译成功并打开Unreal Editor，也是大概1分钟左右！这个结果让我惊喜了，看来是如果做场景小些的游戏，Mac下用UE4完全没问题！而我大概也是也只能是做场景小些的游戏（场景小，但是画面质量可以超高，UE4的画面比Unity3d好太多了），因为目标是丢上iPad、iPhone上玩的。上一张Mac下的图吧：</p>
 
-<p><img src="media/14213891828854/14215892261441.jpg" alt="">￼￼￼￼￼￼</p>
+<p><img src="media/14213891828854/14215892261441.jpg" alt=""/>￼￼￼￼￼￼</p>
 
 <h2 id="toc_4">如果用不到C++，只用Blueprints使用UnrealEngine 4的简单方法</h2>
 
-<p>去 <a href="https://www.unrealengine.com/">https://www.unrealengine.com/</a> 登入后下载红线这个：<br>
-<img src="media/14213891828854/14215898337076.jpg" alt="">￼￼￼￼￼</p>
+<p>去 <a href="https://www.unrealengine.com/">https://www.unrealengine.com/</a> 登入后下载红线这个：<br/>
+<img src="media/14213891828854/14215898337076.jpg" alt=""/>￼￼￼￼￼</p>
 
 <p>下载后运行并登入，会自动下载4.6.1版的Unreal Editor，如下图，点Launch就可以了，还可以下载旧版本的Unreal Editor，如右边我就下载了4.5.1版的。╮(╯▽╰)╭  ，如果我是用不到C++我花这些时间到底在折腾什么？！！！</p>
 
-<p><img src="media/14213891828854/Snip20150118_4.png" alt="Snip20150118_4">￼￼￼￼￼</p>
+<p><img src="media/14213891828854/Snip20150118_4.png" alt="Snip20150118_4"/>￼￼￼￼￼</p>
 
 <h2 id="toc_5">关于UnrealEngine 4的文档和其他</h2>
 
@@ -932,1027 +2004,19 @@ static bool GAllowApplePlatformSymbolication = false;
     <content type="html"><![CDATA[
 <h2 id="toc_0">Yosemite</h2>
 
-<p><img src="media/14206095675933/yosemite-01.jpg" alt="yosemite-01">￼</p>
+<p><img src="media/14206095675933/yosemite-01.jpg" alt="yosemite-01"/>￼</p>
 
 <span id="more"></span><!-- more -->
 
-<p><img src="media/14206095675933/yosemite-02.jpg" alt="yosemite-02">￼</p>
+<p><img src="media/14206095675933/yosemite-02.jpg" alt="yosemite-02"/>￼</p>
 
 <h2 id="toc_1">All menus</h2>
 
-<p><img src="media/14206095675933/menus.jpg" alt="menus">￼￼￼</p>
+<p><img src="media/14206095675933/menus.jpg" alt="menus"/>￼￼￼</p>
 
 <h2 id="toc_2">Preferences</h2>
 
-<p><img src="media/14206095675933/preferences.jpg" alt="preferences">￼￼￼</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Custom site theme or design you owner theme]]></title>
-    <link href="http://coderforart.com/custom-site-theme-detail.html"/>
-    <updated>2015-01-07T14:52:03+08:00</updated>
-    <id>http://coderforart.com/custom-site-theme-detail.html</id>
-    <content type="html"><![CDATA[
-<p>MWeb themes now add to github: <a href="https://github.com/oulvhai/MWeb-Themes">https://github.com/oulvhai/MWeb-Themes</a>.</p>
-
-<h2 id="toc_0">MWeb theme structure</h2>
-
-<p>Click <img src="media/14206135238767/14227577752365.jpg" alt="">￼, you will found a floder name is SiteThemes. MWeb all themes in this flodler,and a floder is a theme,it contains some documents and floders.</p>
-
-<ul>
-<li>asset -- floder, contains all theme&#39;s picture,CSS,JS etc..</li>
-<li>archives.html -- archives.html page template</li>
-<li>atom.xml -- RSS page template</li>
-<li>category.html -- all categiries pages template</li>
-<li>footer.html -- bottom of each page</li>
-<li>header.html -- top of each page</li>
-<li>page-index.html -- custom home page template</li>
-<li>page.html -- document when enable <code>Is page</code> use this template</li>
-<li>post.html -- document when disable <code>Is page</code> use this template</li>
-<li>sidebar.html -- sidebar template</li>
-<li>sitemap.xml -- google sitemap template</li>
-</ul>
-
-<h2 id="toc_1">Custom home page</h2>
-
-<p>Set a document&#39;s HTML file name value: <code>index</code> and enable <code>Is page</code>.<br>
-<img src="media/14189904700669/14210659918568.jpg" alt="">￼￼￼￼￼￼￼￼￼</p>
-
-<span id="more"></span><!-- more -->
-
-<h2 id="toc_2">Custom <code>Is page</code> enable document&#39;s template</h2>
-
-<p>Use <q>header.html+post.html+sidebar.html+footer.html</q> templates when the document <code>Is page</code> is disable; use <q>header.html+page.html+footer.html</q> templates when the document <code>Is page</code> is enable. You can add a page-{HTML file name}.html template for custom <code>Is page</code> enable document&#39;s template. MWeb will use <q>header.html+page-{HTML file name}.html+footer.html</q> when you add page-{HTML file name}.html template. For example:  <a href="http://coderforart.com">http://coderforart.com</a>&#39;s theme have page-index.html template for home page <a href="https://github.com/oulvhai/MWeb-Themes/blob/master/mweb-greyshade/page-index.html">https://github.com/oulvhai/MWeb-Themes/blob/master/mweb-greyshade/page-index.html</a> . </p>
-
-<h2 id="toc_3">Custom category page template</h2>
-
-<p>Use <q>header.html+category.html+sidebar.html+footer.html</q> by default. Use <q>header.html+category-{HTML file name}.html+sidebar.html+footer.html</q> when you add category-{HTML file name}.html template. For example: a category&#39;s HTML file name is <code>Cocoa</code> and the theme have category-Cocoa.html template, MWeb will use <q>header.html+category-Cocoa.html+sidebar.html</q>.</p>
-
-<h2 id="toc_4">Common variables define</h2>
-
-<h3 id="toc_5">the category object</h3>
-
-<table><thead>
-<tr>
-<th>variable name</th>
-<th>description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>name</td>
-<td>category&#39;s name</td>
-</tr>
-<tr>
-<td>url</td>
-<td>category&#39;s url</td>
-</tr>
-</tbody></table>
-
-<h3 id="toc_6">the document object</h3>
-
-<table><thead>
-<tr>
-<th>variable name</th>
-<th>description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>title</td>
-<td>document&#39;s title</td>
-</tr>
-<tr>
-<td>desContent</td>
-<td>document&#39;s description for HTML format. Same with <code>content</code> when the document do not add <code>&lt;!-- more --&gt;</code>.</td>
-</tr>
-<tr>
-<td>desContentTextOnly</td>
-<td>document&#39;s description without HTML</td>
-</tr>
-<tr>
-<td>content</td>
-<td>document content</td>
-</tr>
-<tr>
-<td>date</td>
-<td>document&#39;s date,defalut format is:2014/10/24</td>
-</tr>
-<tr>
-<td>dateGTM</td>
-<td>document&#39;s date,format is: 2014-10-24T13:54:03GMT+08:00</td>
-</tr>
-<tr>
-<td>artDate</td>
-<td>document&#39;s create date,default format is: 2014/10/24</td>
-</tr>
-<tr>
-<td>cats</td>
-<td>document&#39;s categories,array --&gt; <code>the category object</code></td>
-</tr>
-<tr>
-<td>readMore</td>
-<td>document have <code>&lt;!-- more --&gt;</code> or not</td>
-</tr>
-<tr>
-<td>url</td>
-<td>document&#39;s url</td>
-</tr>
-</tbody></table>
-
-<h3 id="toc_7">recent document object</h3>
-
-<table><thead>
-<tr>
-<th>variable name</th>
-<th>description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>title</td>
-<td>document&#39;s title</td>
-</tr>
-<tr>
-<td>url</td>
-<td>document&#39;s url</td>
-</tr>
-</tbody></table>
-
-<h3 id="toc_8">top category object</h3>
-
-<table><thead>
-<tr>
-<th>variable name</th>
-<th>description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>name</td>
-<td>category&#39;s name</td>
-</tr>
-<tr>
-<td>url</td>
-<td>category&#39;s url</td>
-</tr>
-<tr>
-<td>count</td>
-<td>category documents count</td>
-</tr>
-</tbody></table>
-
-<h2 id="toc_9">Build site</h2>
-
-<h3 id="toc_10">All HTML page variables</h3>
-
-<table><thead>
-<tr>
-<th>variable name</th>
-<th>description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>siteURL</td>
-<td>site URL</td>
-</tr>
-<tr>
-<td>siteDomain</td>
-<td>site domain</td>
-</tr>
-<tr>
-<td>siteName</td>
-<td>site name</td>
-</tr>
-<tr>
-<td>pageTitle</td>
-<td>site title</td>
-</tr>
-<tr>
-<td>siteDes</td>
-<td>site description</td>
-</tr>
-<tr>
-<td>lastBuildDate</td>
-<td>site last build date</td>
-</tr>
-<tr>
-<td>siteOther</td>
-<td>site other</td>
-</tr>
-<tr>
-<td>recentPosts</td>
-<td>array,the item is <code>recent document object</code></td>
-</tr>
-<tr>
-<td>allCategories</td>
-<td>array,the item is <code>top category object</code></td>
-</tr>
-<tr>
-<td>categoriesTree</td>
-<td>categories tree,array,the item is <code>top category object</code>, and children. reference: <a href="https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/sidebar.html">https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/sidebar.html</a></td>
-</tr>
-</tbody></table>
-
-<h3 id="toc_11">build RSS: atom.xml</h3>
-
-<p>template: atom.xml<br>
-addition variables:</p>
-
-<table><thead>
-<tr>
-<th>variable name</th>
-<th>description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>posts</td>
-<td>array,the item is <code>the document object</code></td>
-</tr>
-</tbody></table>
-
-<p>Reference: <a href="https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/atom.xml">https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/atom.xml</a></p>
-
-<h3 id="toc_12">build all posts template</h3>
-
-<p>template: header.html + post.html + sidebar.html + footer.html<br>
-addition variables:</p>
-
-<table><thead>
-<tr>
-<th>variable name</th>
-<th>description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>post</td>
-<td><code>the document object</code></td>
-</tr>
-<tr>
-<td>postNav</td>
-<td>dictionary，has <code>next</code>,<code>prev</code> to item,item is  <code>recent document object</code></td>
-</tr>
-</tbody></table>
-
-<p>Reference: <a href="https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/post.html">https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/post.html</a></p>
-
-<h3 id="toc_13">build all cateogries template</h3>
-
-<p>template:header.html + category.html + sidebar.html + footer.html<br>
-addition variables:</p>
-
-<table><thead>
-<tr>
-<th>variable name</th>
-<th>description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>posts</td>
-<td>array,the item is <code>the document object</code></td>
-</tr>
-<tr>
-<td>prevPageUrl</td>
-<td>prev page Url</td>
-</tr>
-<tr>
-<td>nextPageUrl</td>
-<td>next page Url</td>
-</tr>
-</tbody></table>
-
-<p>Reference:<a href="https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/category.html">https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/category.html</a></p>
-
-<h3 id="toc_14">build all pages template (<code>Is page</code> enable)</h3>
-
-<p>template: header.html + page.html +  footer.html<br>
-addition variables:</p>
-
-<table><thead>
-<tr>
-<th>variable name</th>
-<th>description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>posts</td>
-<td>recent documents, array,the item is <code>the document object</code></td>
-</tr>
-<tr>
-<td>post</td>
-<td><code>the document object</code></td>
-</tr>
-</tbody></table>
-
-<p>Reference: <a href="https://github.com/oulvhai/MWeb-Themes/blob/master/mweb-greyshade/page-index.html">https://github.com/oulvhai/MWeb-Themes/blob/master/mweb-greyshade/page-index.html</a></p>
-
-<h3 id="toc_15">build archives.html</h3>
-
-<p>template: header.html + archives.html + footer.html<br>
-addition variables:</p>
-
-<table><thead>
-<tr>
-<th>variable name</th>
-<th>description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>posts</td>
-<td>array, please reference below table for item detail</td>
-</tr>
-</tbody></table>
-
-<table><thead>
-<tr>
-<th>variable name</th>
-<th>description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>year</td>
-<td>document&#39;s year</td>
-</tr>
-<tr>
-<td>title</td>
-<td>document&#39;s title</td>
-</tr>
-<tr>
-<td>url</td>
-<td>document&#39;s url</td>
-</tr>
-<tr>
-<td>cats</td>
-<td>document&#39;s categries, array, the item is <code>the category object</code></td>
-</tr>
-<tr>
-<td>date</td>
-<td>document&#39;s date,defalut format is:2014/10/24</td>
-</tr>
-<tr>
-<td>dateMonth</td>
-<td>document&#39;s month</td>
-</tr>
-<tr>
-<td>dateDay</td>
-<td>document&#39;s day</td>
-</tr>
-<tr>
-<td>dateYear</td>
-<td>document&#39;s year</td>
-</tr>
-<tr>
-<td>dateGTM</td>
-<td>document&#39;s date,format is:  2014-10-24T13:54:03GMT+08:00</td>
-</tr>
-<tr>
-<td>artDate</td>
-<td>document&#39;s create date,default format is:2014/10/24</td>
-</tr>
-</tbody></table>
-
-<p>Reference: <a href="https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/archives.html">https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/archives.html</a></p>
-
-<h3 id="toc_16">build sitemap.xml</h3>
-
-<p>template: sitemap.xml<br>
-addition variables:</p>
-
-<table><thead>
-<tr>
-<th>variable name</th>
-<th>description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>archives</td>
-<td>array, please reference below table for item detail</td>
-</tr>
-<tr>
-<td>pages</td>
-<td>array, please reference below table for item detail</td>
-</tr>
-<tr>
-<td>nowDateGTM</td>
-<td>current date, format is:  2014-10-24T13:54:03GMT+08:00</td>
-</tr>
-</tbody></table>
-
-<table><thead>
-<tr>
-<th>variable name</th>
-<th>description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>title</td>
-<td>document&#39;s title</td>
-</tr>
-<tr>
-<td>url</td>
-<td>document&#39;s url</td>
-</tr>
-<tr>
-<td>date</td>
-<td>document&#39;s date,defalut format is:2014/10/24</td>
-</tr>
-<tr>
-<td>dateGTM</td>
-<td>document&#39;s date,format is:2014-10-24T13:54:03GMT+08:00</td>
-</tr>
-<tr>
-<td>artDate</td>
-<td>document&#39;s create date,default format is:2014/10/24</td>
-</tr>
-</tbody></table>
-
-<p>Reference: <a href="https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/sitemap.xml">https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/sitemap.xml</a></p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[自定网站或博客主题简单说明]]></title>
-    <link href="http://coderforart.com/custom-site-theme-detail-zh.html"/>
-    <updated>2014-12-19T20:48:59+08:00</updated>
-    <id>http://coderforart.com/custom-site-theme-detail-zh.html</id>
-    <content type="html"><![CDATA[
-<p>MWeb全部主题已上传到Github: <a href="https://github.com/oulvhai/MWeb-Themes">https://github.com/oulvhai/MWeb-Themes</a>.</p>
-
-<h2 id="toc_0">MWeb主题模板结构</h2>
-
-<p>MWeb所有网站主题模板都放在SiteThemes这个文件夹里，点击 <img src="media/14206135238767/14227577752365.jpg" alt="">￼￼￼ 这里可以直接显示SiteThemes文件夹，一个文件夹就表示一个主题。每个主题里包含的文档和文件夹的作用如下：</p>
-
-<ul>
-<li>asset -- 主题所有要用到的东西，图片、CSS、JS等等都放这里</li>
-<li>archives.html -- archives.html页所使用的模板</li>
-<li>atom.xml -- RSS所使用的模板</li>
-<li>category.html -- 分类所使用的模板</li>
-<li>footer.html -- 页面的底部</li>
-<li>header.html -- 页面的顶部</li>
-<li>page-index.html -- 自定首页模板</li>
-<li>page.html -- 文档选中<code>Is page</code>时所使用的模板</li>
-<li>post.html -- 文档不选中<code>Is page</code>所使用的模板</li>
-<li>sidebar.html -- 侧边栏的模板</li>
-<li>sitemap.xml -- 网站sitemap所使用的模板</li>
-</ul>
-
-<h2 id="toc_1">自定首页</h2>
-
-<p>如图，设定想要设置为首页的文档的 HTML file name 为 <code>index</code>, 选中 <code>Is page</code> 选项。<br>
-<img src="media/14189904700669/14210659918568.jpg" alt="">￼￼￼￼￼￼￼￼￼￼￼￼</p>
-
-<span id="more"></span><!-- more -->
-
-<h2 id="toc_2">自定文档页的HTML模板</h2>
-
-<p>不选<code>Is page</code>选项时，生成HTML时读取的模板为：header.html+post.html+sidebar.html+footer.html。选中了<code>Is page</code>选项后，生成HTML时会读取的模板为：header.html+page.html+footer.html，如果要自定文档的模板，可以在主题文件夹里新增一个名称为：page-{HTML file name}.html 的页面，这样生成HTML时的读取的模板就会变成：header.html+page-{HTML file name}.html+footer.html。比如说要自定首页的模板，则在主题文件夹里新增一个名为：page-index.html 的页面即可。如 <a href="http://coderforart.com">http://coderforart.com</a> 就自定了首页，内容为：<a href="https://github.com/oulvhai/MWeb-Themes/blob/master/mweb-greyshade/page-index.html">https://github.com/oulvhai/MWeb-Themes/blob/master/mweb-greyshade/page-index.html</a> </p>
-
-<h2 id="toc_3">自定分类页的HTML模板</h2>
-
-<p>分类页生成HTML时读取的模板为：header.html+category.html+sidebar.html+footer.html。 其中category.html可以自定，MWeb生成分类页的HTML时，会判定是否存在：category-{HTML file name}.html的模板，如果存在，则会优先使用category-{HTML file name}.html模板。比如说有一个分类的 HTML file name 为 Cocoa，如果要自定这个分类的分类页的模板，则只要在主题文件夹里新增一个名为：category-Cocoa.html的页面即可，MWeb生成HTML时读取模板就会变为：header.html+category-Cocoa.html+sidebar.html+footer.html。</p>
-
-<h2 id="toc_4">生成HTML时传入模板页的变量说明</h2>
-
-<h3 id="toc_5">文档分类对象变量</h3>
-
-<table><thead>
-<tr>
-<th>变量名称</th>
-<th>说明</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>name</td>
-<td>分类的名称</td>
-</tr>
-<tr>
-<td>url</td>
-<td>分类的网址</td>
-</tr>
-</tbody></table>
-
-<h3 id="toc_6">文档对象变量</h3>
-
-<table><thead>
-<tr>
-<th>变量名称</th>
-<th>说明</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>title</td>
-<td>文章的标题，通常为第一行</td>
-</tr>
-<tr>
-<td>desContent</td>
-<td>文章的HTML格式的描述，如果文档中没有<code>&lt;!-- more --&gt;</code>则跟content一样</td>
-</tr>
-<tr>
-<td>desContentTextOnly</td>
-<td>文章的纯文字描述，不带HTML</td>
-</tr>
-<tr>
-<td>content</td>
-<td>文章的内容</td>
-</tr>
-<tr>
-<td>date</td>
-<td>文章的时间，格式按网站设定，默认为：2014/10/24</td>
-</tr>
-<tr>
-<td>dateGTM</td>
-<td>文章的时间，格式为 2014-10-24T13:54:03GMT+08:00</td>
-</tr>
-<tr>
-<td>artDate</td>
-<td>文章新增的时间，格式按网站设定，默认为：2014/10/24</td>
-</tr>
-<tr>
-<td>cats</td>
-<td>文章分类的数组，数组的对象为<code>文档分类对象变量</code></td>
-</tr>
-<tr>
-<td>readMore</td>
-<td>文章中是否有<code>&lt;!-- more --&gt;</code></td>
-</tr>
-<tr>
-<td>url</td>
-<td>文章的网址</td>
-</tr>
-</tbody></table>
-
-<h3 id="toc_7">最近文章变量</h3>
-
-<table><thead>
-<tr>
-<th>变量名称</th>
-<th>说明</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>title</td>
-<td>文章的名称</td>
-</tr>
-<tr>
-<td>url</td>
-<td>文章的网址</td>
-</tr>
-</tbody></table>
-
-<h3 id="toc_8">分类对象变量</h3>
-
-<table><thead>
-<tr>
-<th>变量名称</th>
-<th>说明</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>name</td>
-<td>分类的名称</td>
-</tr>
-<tr>
-<td>url</td>
-<td>分类的网址</td>
-</tr>
-<tr>
-<td>count</td>
-<td>分类的文章数量</td>
-</tr>
-</tbody></table>
-
-<h2 id="toc_9">生成网站</h2>
-
-<h3 id="toc_10">所有页面都会传入的变量</h3>
-
-<table><thead>
-<tr>
-<th>变量名称</th>
-<th>说明</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>siteURL</td>
-<td>网站设置中的网站网址</td>
-</tr>
-<tr>
-<td>siteDomain</td>
-<td>网站的域名</td>
-</tr>
-<tr>
-<td>siteName</td>
-<td>网站的名称</td>
-</tr>
-<tr>
-<td>pageTitle</td>
-<td>网站的标题</td>
-</tr>
-<tr>
-<td>siteDes</td>
-<td>网站的描述</td>
-</tr>
-<tr>
-<td>lastBuildDate</td>
-<td>网站最后生成时间</td>
-</tr>
-<tr>
-<td>siteOther</td>
-<td>网站设置中的<code>other</code></td>
-</tr>
-<tr>
-<td>recentPosts</td>
-<td>数组，数组的对象为<code>最近文章变量</code></td>
-</tr>
-<tr>
-<td>allCategories</td>
-<td>数组，数组的对象为<code>分类对象变量</code></td>
-</tr>
-<tr>
-<td>categoriesTree</td>
-<td>二层分类树，数组，数组的对象为<code>分类对象变量</code>，外加children。请参考 <a href="https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/sidebar.html">https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/sidebar.html</a></td>
-</tr>
-</tbody></table>
-
-<h3 id="toc_11">生成RSS: atom.xml</h3>
-
-<p>读取的模板：atom.xml<br>
-传入的变量：</p>
-
-<table><thead>
-<tr>
-<th>变量名称</th>
-<th>说明</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>posts</td>
-<td>数组，数组对象为<code>文档对象变量</code></td>
-</tr>
-</tbody></table>
-
-<p>参考模板：<a href="https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/atom.xml">https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/atom.xml</a></p>
-
-<h3 id="toc_12">生成所有文章的页面</h3>
-
-<p>读取的模板：header.html + post.html + sidebar.html + footer.html<br>
-传入的变量：</p>
-
-<table><thead>
-<tr>
-<th>变量名称</th>
-<th>说明</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>post</td>
-<td>对象为<code>文档对象变量</code></td>
-</tr>
-<tr>
-<td>postNav</td>
-<td>字典，带有<code>next</code>，<code>prev</code>两个对象，对象为 <code>最近文章变量</code></td>
-</tr>
-</tbody></table>
-
-<p>参考模板：<a href="https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/post.html">https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/post.html</a></p>
-
-<h3 id="toc_13">生成所有分类的页面</h3>
-
-<p>读取的模板：header.html + category.html + sidebar.html + footer.html<br>
-传入的变量：</p>
-
-<table><thead>
-<tr>
-<th>变量名称</th>
-<th>说明</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>posts</td>
-<td>数组，数组的对象为<code>文档对象变量</code></td>
-</tr>
-<tr>
-<td>prevPageUrl</td>
-<td>上一页的网址</td>
-</tr>
-<tr>
-<td>nextPageUrl</td>
-<td>下一页的网址</td>
-</tr>
-</tbody></table>
-
-<p>参考模板：<a href="https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/category.html">https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/category.html</a></p>
-
-<h3 id="toc_14">生成所有文章选中<code>Is page</code>的页面</h3>
-
-<p>读取的模板：header.html + page.html +  footer.html<br>
-传入的变量：</p>
-
-<table><thead>
-<tr>
-<th>变量名称</th>
-<th>说明</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>posts</td>
-<td>数组，数组的对象为<code>文档对象变量</code></td>
-</tr>
-<tr>
-<td>post</td>
-<td>对象为<code>文档对象变量</code></td>
-</tr>
-</tbody></table>
-
-<p>参考模板：<a href="https://github.com/oulvhai/MWeb-Themes/blob/master/mweb-greyshade/page-index.html">https://github.com/oulvhai/MWeb-Themes/blob/master/mweb-greyshade/page-index.html</a></p>
-
-<h3 id="toc_15">生成archives.html</h3>
-
-<p>读取的模板：header.html + archives.html + footer.html<br>
-传入的变量：</p>
-
-<table><thead>
-<tr>
-<th>变量名称</th>
-<th>说明</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>posts</td>
-<td>数组，数组对象请参考下表</td>
-</tr>
-</tbody></table>
-
-<table><thead>
-<tr>
-<th>变量名称</th>
-<th>说明</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>year</td>
-<td>文章年份</td>
-</tr>
-<tr>
-<td>title</td>
-<td>文章标题</td>
-</tr>
-<tr>
-<td>url</td>
-<td>文章网址</td>
-</tr>
-<tr>
-<td>cats</td>
-<td>文章分类的数组，数组的对象为<code>文档分类对象变量</code></td>
-</tr>
-<tr>
-<td>date</td>
-<td>文章的时间，格式按网站设定，默认为：2014/10/24</td>
-</tr>
-<tr>
-<td>dateMonth</td>
-<td>文章月份</td>
-</tr>
-<tr>
-<td>dateDay</td>
-<td>文章日期</td>
-</tr>
-<tr>
-<td>dateYear</td>
-<td>文章年份</td>
-</tr>
-<tr>
-<td>dateGTM</td>
-<td>文章的时间，格式为 2014-10-24T13:54:03GMT+08:00</td>
-</tr>
-<tr>
-<td>artDate</td>
-<td>文章新增的时间，格式按网站设定，默认为：2014/10/24</td>
-</tr>
-</tbody></table>
-
-<p>参考模板：<a href="https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/archives.html">https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/archives.html</a></p>
-
-<h3 id="toc_16">生成sitemap.xml</h3>
-
-<p>读取的模板：sitemap.xml<br>
-传入的变量：</p>
-
-<table><thead>
-<tr>
-<th>变量名称</th>
-<th>说明</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>archives</td>
-<td>数组，数组对象请参考下表</td>
-</tr>
-<tr>
-<td>pages</td>
-<td>数组，数组对象请参考下表</td>
-</tr>
-<tr>
-<td>nowDateGTM</td>
-<td>当前时间</td>
-</tr>
-</tbody></table>
-
-<table><thead>
-<tr>
-<th>变量名称</th>
-<th>说明</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>title</td>
-<td>文章标题</td>
-</tr>
-<tr>
-<td>url</td>
-<td>文章网址</td>
-</tr>
-<tr>
-<td>date</td>
-<td>文章的时间，格式按网站设定，默认为：2014/10/24</td>
-</tr>
-<tr>
-<td>dateGTM</td>
-<td>文章的时间，格式为 2014-10-24T13:54:03GMT+08:00</td>
-</tr>
-<tr>
-<td>artDate</td>
-<td>文章新增的时间，格式按网站设定，默认为：2014/10/24</td>
-</tr>
-</tbody></table>
-
-<p>参考模板：<a href="https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/sitemap.xml">https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/sitemap.xml</a></p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[MWeb - Markdown editor for static websites and blogs on OS X]]></title>
-    <link href="http://coderforart.com/mweb.html"/>
-    <updated>2014-12-19T13:08:02+08:00</updated>
-    <id>http://coderforart.com/mweb.html</id>
-    <content type="html"><![CDATA[
-<h2 id="toc_0">MWeb Help</h2>
-
-<h3 id="toc_1">Markdown syntax guide</h3>
-
-<p><a href="markdown-syntax-guide-suggest-version.html">Markdown syntax guide suggest version</a><br>
-<a href="markdown-syntax-guide-full-version.html">Markdown syntax guide full version</a></p>
-
-<h3 id="toc_2">MWeb Q &amp; A</h3>
-
-<p><a href="mweb-qa.html">MWeb Q &amp; A</a><br>
-If you can&#39;t find the answer, please send feedback to me: Help --&gt; Send Feedback</p>
-
-<h3 id="toc_3">Some may useful articles</h3>
-
-<p><a href="custom-site-theme-detail.html">Custom site theme or design you owner theme...</a><br>
-<a href="me-screenshot-and-in-yosemite.html">MWeb Screenshot and in Yosemite</a><br>
-<a href="mweb-v1.1-release.html">MWeb 1.1 release</a><br>
-<a href="mweb-v1.2-release.html">MWeb 1.2 release</a><br>
-<a href="use-goodsync-sync-mweb-static-websites.html">Use GoodSync synchronize MWeb&#39;s static websites to FTP,SFTP,WebDAV,Amazon S3 automatically</a></p>
-
-<h2 id="toc_4">Introduction MWeb</h2>
-
-<p>MWeb is a markdown editor for static websites and blogs on OS X, like <a href="http://octopress.org/">Octopress</a> or <a href="http://jekyllrb.com/">Jekyll</a> but easy to use. You can write document with markdown,drag &amp; drop or paste photos to the editor, MWeb will automatically add markdown code and display photos in editor. You can choose some categories to organize the document, and build static websites and blogs <strong>One Click</strong>.</p>
-
-<p><img src="media/14189656825627/MWeb.jpg" alt="MWeb">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
-
-<span id="more"></span><!-- more -->
-
-<p style="text-align:center">
-<a target="_blank" onclick="ga('send','event','buy-mweb');" href="http://itunes.apple.com/app/mweb-markdown-editor-for-static/id954188948?ls=1&mt=12" target="_blank"><img src="media/14195170907881/icon_apple_store-download-small.png" width="180" /></a><br />OR &nbsp;<a target="_blank" onclick="ga('send','event','download-mweb');" href="media/14195170907881/MWeb-Lite.zip">Free Download MWeb Lite</a>
-
-</p>
-
-<h2 id="toc_5">A markdown editor</h2>
-
-<p>MWeb is a markdown editor support markdown syntax highlight, preview,syntax highlighting in fenced code blocks,Math ML,export to HTML/PDF, a custom editor theme, words counter, outline, autosave, full document versions and more.. It has two patterns:</p>
-
-<ol>
-<li>Library pattern, you can organize documents with categories,drag &amp; drop or paste photos to the editor and display. You can build static websites and blogs. <code>CMD + L</code> to display the Library pattern. </li>
-<li>No library pattern, it just like <code>TextEdit</code> but has full markdown support like syntax highlight, preview, outline etc..</li>
-</ol>
-
-<p>￼￼￼￼￼￼￼￼￼￼￼￼<img src="media/14189656825627/MWeb-markdown-editor.jpg" alt="MWeb-markdown-editor">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
-
-<h2 id="toc_6">Drag &amp; drop or paste photos to the editor and display</h2>
-
-<p>Drag &amp; drop or paste photo to the editor, the markdown code will automatically add and the photo will display in editor.</p>
-
-<p>￼￼￼￼￼￼￼￼￼<img src="media/14189656825627/MWeb-inset-photo.jpg" alt="MWeb-inset-photo">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼<br>
-￼￼￼￼￼￼￼￼￼￼￼￼</p>
-
-<h2 id="toc_7">Easy to build static websites and blogs</h2>
-
-<p>Selected a category --&gt; Set to site, setting site name and description and just click <code>Build site</code>. click <code>Clear and rebuild site</code> button when the Theme is change. click <code>Preview site</code> button to preview. Just double click <code>Coder For Art</code> category and try.</p>
-
-<p>￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼<img src="media/14187874991645/MWeb-build-static-websites-and-blogs-1-1-2.jpg" alt="MWeb-build-static-websites-and-blogs-1-1-2">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
-
-<p>More info, please read this post: <a href="custom-site-theme-detail.html">Custom site theme or design you owner theme...</a></p>
-
-<h2 id="toc_8">Three view pattern</h2>
-
-<p>Editor Only:<code>CMD + 1</code>, Two Panes:<code>CMD + 2</code>, Three Panes:<code>CMD + 3</code>. The editor area will not resize when the view pattern change.</p>
-
-<p>￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼<img src="media/14189656825627/MWeb-view-pattern.jpg" alt="MWeb-view-pattern">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
-
-<h2 id="toc_9">Preview, Share,Save as PDF, More Screenshot</h2>
-
-<p>Preview：<code>CMD + R</code>，Close Preview：<code>CMD + W</code> </p>
-
-<p><img src="media/14187874991645/MWeb-preview-share-1-1.jpg" alt="MWeb-preview-share-1-1">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
-
-<p>Save as PDF: Difference between in editor share button and Preview share button.</p>
-
-<p>More Screenshot: <a href="me-screenshot-and-in-yosemite.html">MWeb Screenshot and in Yosemite</a></p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[MWeb - OS X上的Markdown编辑器和全静态网站、博客生成工具]]></title>
-    <link href="http://coderforart.com/mweb-zh.html"/>
-    <updated>2014-12-17T11:38:19+08:00</updated>
-    <id>http://coderforart.com/mweb-zh.html</id>
-    <content type="html"><![CDATA[
-<h2 id="toc_0">MWeb帮助</h2>
-
-<h3 id="toc_1">如果您不知道什么是Markdown，请阅读以下两篇文章</h3>
-
-<p><a href="markdown-syntax-guide-suggest-version-zh.html">Markdown 语法简单说明</a><br>
-<a href="markdown-syntax-guide-full-version-zh.html">Markdown 语法官方说明繁体中文版</a></p>
-
-<h3 id="toc_2">MWeb所有问题和回答收集（会不断更新）</h3>
-
-<p><a href="mweb-qa-zh.html">MWeb问题和回答</a><br>
-如果您在上面的连接中找不到答案，请在MWeb中点：Help --&gt; Send Feedback 写信给我！</p>
-
-<h3 id="toc_3">MWeb其他可能有用的文章</h3>
-
-<p><a href="custom-site-theme-detail-zh.html">自定网站主题、增加评论和分享和设计新主题...</a><br>
-<a href="me-screenshot-and-in-yosemite.html">MWeb更多截图和在Yosemite下的效果</a><br>
-<a href="mweb-v1.1-release-zh.html">MWeb 1.1 版更新说明</a><br>
-<a href="mweb-v1.2-release-zh.html">MWeb 1.2 版更新说明</a><br>
-<a href="sync-webistes-to-github-or-ftp-zh.html">把生成的静态网站发布到github或FTP</a><br>
-<a href="use-goodsync-sync-mweb-static-websites-zh.html">使用GoodSync把MWeb生成的静态网站自动同步到FTP、SFTP、WebDAV、Amazon S3等</a></p>
-
-<h2 id="toc_4">MWeb简介</h2>
-
-<p>MWeb是一个Markdown编辑器和全静态网站、博客生成工具，像<a href="http://octopress.org/">Octopress</a>和 <a href="http://jekyllrb.com/">Jekyll</a>，但是更简单易用。MWeb很合适经常用Markdown写文档、日记和经常要插入图片和大段代码的朋友。</p>
-
-<p><img src="media/14189656825627/MWeb.jpg" alt="MWeb">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
-
-<span id="more"></span><!-- more -->
-
-<p style="text-align:center">
-<a target="_blank" onclick="ga('send','event','buy-mweb-zh');" href="http://itunes.apple.com/cn/app/mweb-markdown-editor-for-static/id954188948?ls=1&mt=12" target="_blank"><img src="media/14195170907881/icon_apple_store-download-small.png" width="180" /></a><br />或者&nbsp;<a target="_blank" onclick="ga('send','event','download-mweb-zh');" href="media/14195170907881/MWeb-Lite.zip">免费下载 MWeb Lite</a>
-
-</p>
-
-<h2 id="toc_5">MWeb的Markdown编辑功能</h2>
-
-<p>首先MWeb必须是一个好用的Markdown编辑器，语法高亮，预览，Fenced code blocks和代码高亮支持，Math ML支持，导出HTML/PDF，自定编辑器主题，字数统计，大纲视图，autosave,文档历史版本什么的等等都是要有的。另外MWeb分为两种模式：</p>
-
-<ul>
-<li>一种是由MWeb管理的库文档模式，这种模式下可以用分类管理文档，可以拖拽插入图片，可以生成全静态网站。</li>
-<li>一种是外部文文件模式，文件夹的Markdown文檔直接用MWeb打开就是这种模式，区别是无拖拽插入图片功能，不能生成网站。</li>
-</ul>
-
-<p>￼￼￼￼￼￼￼￼￼￼￼￼<img src="media/14189656825627/MWeb-markdown-editor.jpg" alt="MWeb-markdown-editor">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
-
-<h2 id="toc_6">插入图片并显示在编辑器内</h2>
-
-<p>MWeb的设计就是为了能方便地用Markdown记日记、简单的管理日记并生成博客。而写日记时插入图片的功能是经常用到的。一般的Markdown工具如果要插入图片，要先丢到网上。像Ulysses是可以方便插入图片，但是要双击或者预览时才能看到。MWeb设计成可拖拽或直接粘贴即可插入图片并显示出来，以方便查看。</p>
-
-<p>￼￼￼￼￼￼￼￼￼<img src="media/14189656825627/MWeb-inset-photo.jpg" alt="MWeb-inset-photo">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼<br>
-￼￼￼￼￼￼￼￼￼￼￼</p>
-
-<h2 id="toc_7">一键将分类生成全静态的网站和博客</h2>
-
-<p>MWeb的分类管理的设计跟博客的结构差不多，一个文档可以选择多个分类。将分类变成博客的方法为：选择该分类 --&gt; Set to site。设定好博客的名称和描述等等，点：<code>Build site</code> 按钮即可。如果有改动到 <code>Theme</code> 或者有任何没有在预料之中的结果，试试点 <code>Clear and rebuild site</code> 按钮。 点 <code>Preview site</code> 按钮可以预览生成的博客。<a href="http://coderforart.com/">http://coderforart.com/</a> 网站就是用MWeb生成的。</p>
-
-<p><img src="media/14187874991645/MWeb-build-static-websites-and-blogs-1-1-2.jpg" alt="MWeb-build-static-websites-and-blogs-1-1-2">￼￼￼￼￼￼￼￼￼￼￼<br>
-￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼<br>
-MWeb还可以自定网站和博客主题，增加评论和分享功能，请参考这个网址: <a href="custom-site-theme-detail-zh.html">自定网站主题、增加评论和分享和设计新主题...</a></p>
-
-<h2 id="toc_8">三种视图模式、改变视图时编辑器大小会固定</h2>
-
-<p>Editor Only:<code>CMD + 1</code>, Two Pane:<code>CMD + 2</code>, There Pane:<code>CMD + 3</code>。我觉得改变视图时，编辑器区域大小也同时改变不大爽，所以改变视图时就直接改变窗口大小，而编辑器区域大小会保持不变。</p>
-
-<p>￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼<img src="media/14189656825627/MWeb-view-pattern.jpg" alt="MWeb-view-pattern">￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
-
-<h2 id="toc_9">预览、分享功能，更多截图</h2>
-
-<p>预览快捷键：<code>CMD + R</code>，关闭预览：<code>CMD + W</code> </p>
-
-<p><img src="media/14187874991645/MWeb-preview-share-1-1.jpg" alt="MWeb-preview-share-1-1">￼￼￼￼￼￼￼￼￼￼￼<br>
-￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
-
-<p>更多截图: <a href="me-screenshot-and-in-yosemite.html">MWeb更多截图和在Yosemite下的效果</a></p>
+<p><img src="media/14206095675933/preferences.jpg" alt="preferences"/>￼￼￼</p>
 
 ]]></content>
   </entry>

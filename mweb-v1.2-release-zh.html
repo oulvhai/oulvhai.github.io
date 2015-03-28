@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<title>  
 	  
-  	MWeb 1.2 版更新说明 - Coder For Art
+  	MWeb 1.2 版更新说明和用 wkhtmltopdf 生成带目录的 PDF 和自定预览 CSS - Coder For Art
   	
 	</title
 
@@ -126,7 +126,7 @@
 			<div class="mid-col-container"> <div id="content" class="inner">
 
 	<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-		<h1 class="title" itemprop="name">MWeb 1.2 版更新说明</h1>
+		<h1 class="title" itemprop="name">MWeb 1.2 版更新说明和用 wkhtmltopdf 生成带目录的 PDF 和自定预览 CSS</h1>
 		<div class="entry-content" itemprop="articleBody">
 			<h2 id="toc_0">新增</h2>
 
@@ -152,32 +152,32 @@
 
 <h2 id="toc_2">生成带目录的PDF的方法</h2>
 
-<p>先安装wkhtmltopdf，网址：<a href="http://wkhtmltopdf.org/">http://wkhtmltopdf.org/</a>。<br>
-然后用Export as HTML把要生成带目录的PDF的内容导出为HTML。我这里是选择整个Coder For Art网站。如图是导出到tocPDF文件夹下的情况。<br>
-<img src="media/14233888581377/14233994590970.jpg" alt="">￼￼￼￼￼￼￼￼￼</p>
+<p>先安装wkhtmltopdf，网址：<a href="http://wkhtmltopdf.org/">http://wkhtmltopdf.org/</a>。<br/>
+然后用Export as HTML把要生成带目录的PDF的内容导出为HTML。我这里是选择整个Coder For Art网站。如图是导出到tocPDF文件夹下的情况。<br/>
+<img src="media/14233888581377/14233994590970.jpg" alt=""/>￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
 
-<p>选择tocPDF文件夹，并<code>CMD+C</code>复制,打开终端工具(Terminal)，打<code>cd</code> （注意cd后带一空格），然后<code>CMD+V</code>，再 Enter。<br>
+<p>选择tocPDF文件夹，并<code>CMD+C</code>复制,打开终端工具(Terminal)，打<code>cd</code> （注意cd后带一空格），然后<code>CMD+V</code>，再 Enter。<br/>
 然后再执行以下命令</p>
 
 <pre><code>wkhtmltopdf toc index.html CoderForArt.pdf
 </code></pre>
 
-<p>￼执行结果生成的PDF如图：<br>
-<img src="media/14233888581377/14233999928601.jpg" alt="">￼￼￼￼￼￼￼￼￼</p>
+<p>￼执行结果生成的PDF如图：<br/>
+<img src="media/14233888581377/14233999928601.jpg" alt=""/>￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
 
 <p>一般情况下有代码的地方如果过长会被切掉，可以加入以下CSS</p>
 
-<pre><code class="css">.hljs{overflow: visible; word-wrap: break-word;}
+<pre><code class="language-css">.hljs{overflow: visible; word-wrap: break-word;}
 </code></pre>
 
-<p>就不会被切了。如图：<br>
-<img src="media/14233888581377/14234006629706.jpg" alt="">￼￼￼￼￼￼￼￼￼</p>
+<p>就不会被切了。如图：<br/>
+<img src="media/14233888581377/14234006629706.jpg" alt=""/>￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
 
 <h2 id="toc_3">自定预览CSS</h2>
 
 <p>把要自定的预览的网站的主题整个文件夹复制到预览CSS文件夹的layout文件夹下，如图是我要自定greyshade主题的预览CSS：</p>
 
-<p><img src="media/14233888581377/14233974412288.jpg" alt="">￼￼￼￼￼￼￼￼￼￼￼</p>
+<p><img src="media/14233888581377/14233974412288.jpg" alt=""/>￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
 
 <p>然后只留下layout/greyshade文件夹下的asset文件夹和随便两个.html文件，其他都删除。把留下的两个.html文件分别改名为：demo.html和index.html。</p>
 
@@ -185,17 +185,18 @@
 
 <p>把index.html页的标题都用<code>{{title}}</code>替换，内容用<code>{{content}}</code>替换，并在<code>&lt;head&gt;&lt;/head&gt;</code>之间加上<code>{{head}}</code>，一般加在<code>&lt;/head&gt;</code>前面即可。</p>
 
-<p>如图，在预览CSS的文件夹里新增一个名为greyshade.css的内容为空的文件即可。<br>
-<img src="media/14233888581377/14233984379844.jpg" alt="">￼￼￼￼￼￼￼￼￼￼</p>
+<p>如图，在预览CSS的文件夹里新增一个名为greyshade.css的内容为空的文件即可。<br/>
+<img src="media/14233888581377/14233984379844.jpg" alt=""/>￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
 
 <p>要注意的是：greyshade.css的文件名greyshade和layout文件夹下的greyshade文件夹的名称是一样的。然后如果你引用的CSS加有<code>media=&quot;screen, projection&quot;</code>这样的限定，请删除，不然MWeb在导出PDF功能上会没有样式。还有如果你在用highlightjs这个代码高亮插件，导出PDF或者生成图片时，代码被切掉的话，可以用以下CSS强制换行：</p>
 
-<pre><code class="css">.hljs{overflow: visible; word-wrap: break-word;}
+<pre><code class="language-css">.hljs{overflow: visible; word-wrap: break-word;}
 </code></pre>
 
 		</div>
 	</article>
-	<div style="height:26px;" class="share">
+<div class="share-comment">
+<div style="height:26px;" class="share">
 <!-- JiaThis Button BEGIN -->
 <div class="jiathis_style_24x24">
 	<a class="jiathis_button_tsina"></a>
@@ -222,14 +223,17 @@
     </script>
     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     
+</div>
+
 
 </div>        </div>
 			<footer id="footer" class="inner">Copyright &copy; 2014
-Powered by <a target="_blank" href="http://coderforart.com/">MWeb</a> &nbsp;&nbsp; 
+Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a> &nbsp;&nbsp; 
 Theme by <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank Mehta</a>
       </footer>
 		</div>
 	</div>
+
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
