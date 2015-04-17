@@ -1,0 +1,259 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>  
+	  
+  	MWeb 1.3.7 发布！增加发布到 Wordpress 等支持 Metaweblog API 的服务，如：Wordpress 博客、新浪博客、cnblogs、oschina。 - Coder For Art
+  	
+	</title
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="atom.xml" rel="alternate" title="Coder For Art" type="application/atom+xml">
+
+	<link href="asset/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<link href="asset/stylesheets/font-awesome.min.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<script src="asset/javascripts/jquery.min.js"></script>
+	<script src="asset/highlightjs/highlight.pack.js"></script>
+	<link href="asset/highlightjs/styles/solarized_dark.css" media="screen, projection" rel="stylesheet" type="text/css">
+<script>hljs.initHighlightingOnLoad();</script>
+	<!--[if lt IE 9]><script src="asset/javascripts/html5.js"></script><![endif]-->
+	<!-- <link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'> -->
+	<style type="text/css">
+/* latin */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Nunito-Light'), url(asset/font/1TiHc9yag0wq3lDO9cw0voX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Nunito-Regular'), url(asset/font/6TbRXKWJjpj6V2v_WyRbMX-_kf6ByYO6CLYdB4HQE-Y.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Nunito-Bold'), url(asset/font/TttUCfJ272GBgSKaOaD7KoX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+	</style>
+	
+	<style type="text/css">
+	.container .left-col{ opacity: 1;}
+	#pagenavi a{ font-size: 1.3em;}
+	#pagenavi .next:before{ top: 3px;}
+	#pagenavi .prev:before{ top: 3px;}
+	.container .mid-col .mid-col-container #content .archives .title{ font-size: 1.5em;}
+	.container .mid-col .mid-col-container #content article{ padding: 15px 0px;}
+	#header .subtitle {
+		line-height: 1.2em;
+		padding-top: 8px;
+	}
+	#sub-nav .social a.weibo {
+		background: url('asset/images/social/weibo.png?1419407210') center no-repeat #4ec4fa;
+		border: 1px solid #4ec4fa;
+	}
+	article pre{ background: none; border: none; padding: 0;}
+	article .entry-content{text-align: left;}
+	article .entry-content table th,article .entry-content table td{ padding: 4px;border-collapse: collapse; border:solid 1px #ddd;}
+	</style>
+
+</head>
+
+
+<body>
+	<div class="container">
+		<div class="left-col">
+			<div class="intrude-less">
+				<header id="header" class="inner">
+					<div class="profilepic">
+						<img src="asset/icon.jpg" style="width:160px;">
+					</div>
+					<h1><a href="index.html">Coder For Art</a></h1>
+					<p class="subtitle">I'm an indie Mac/iOS developer, also want to be a CG artist</p>
+					<nav id="main-nav">
+						<ul class="main">
+							<li><a href="index.html">Home</a></li>
+						    <li><a href="all.html">Blog</a></li>
+						    <li><a href="archives.html">Archives</a></li>
+						</ul>
+					</nav>
+
+					<nav id="sub-nav">
+						<div class="social">
+
+<!-- 
+			<a class="email" href="mailto:" title="Email">Email</a>
+			<a class="facebook" href="http://www.facebook.com/" title="Facebook">Facebook</a>
+			<a class="google" href="https://plus.google.com/" rel="author" title="Google+">Google+</a>
+			<a class="twitter" href="http://twitter.com/" title="Twitter">Twitter</a>
+			<a class="github" href="https://github.com/" title="GitHub">GitHub</a>
+			<a class="coderwall" href="https://coderwall.com/" title="Coderwall">Coderwall</a>
+		    <a class="stackoverflow" href="http://stackoverflow.com/users/" title="StackOverflow"></a>
+			<a class="linkedin" href="http://www.linkedin.com/in/" title="LinkedIn">LinkedIn</a>
+			<a class="pinterest" href="https://pinterest.com/" title="Pinterest">Pinterest</a>
+			<a class="delicious" href="http://delicious.com/" title="Delicious">Delicious</a>
+			<a class="pinboard" href="https://pinboard.in/u:" title="Pinboard">Pinboard</a>
+			<a class="douban" href="https://www.douban.com/people/" title="Douban">Douban</a>
+			<a class="quora" href="https://quora.com/" title="Quora">Quora</a>
+			<a class="instagram" href="https://instagram.com/" title="Instagram">Instagram</a>
+			<a class="behance" href="https://www.behance.net/" title="Behance">Behance</a>
+			<a class="facebook" href="http://www.facebook.com/" title="Facebook">Facebook</a>
+-->	
+								<a class="weibo" target="_blank" href="http://weibo.com/oulvhai" title="weibo">Weibo</a>
+								
+								<a class="github" target="_blank" href="https://github.com/oulvhai" title="GitHub">GitHub</a>
+								<a class="twitter" target="_blank" href="http://twitter.com/oulvhai" title="Twitter">Twitter</a>
+								<a class="rss" href="atom.xml" title="RSS">RSS</a>
+							
+						</div>
+					</nav>
+				</header>				
+			</div>
+		</div>	
+		<div class="mid-col">
+			<div class="mid-col-container"> <div id="content" class="inner">
+
+	<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+		<h1 class="title" itemprop="name">MWeb 1.3.7 发布！增加发布到 Wordpress 等支持 Metaweblog API 的服务，如：Wordpress 博客、新浪博客、cnblogs、oschina。</h1>
+		<div class="entry-content" itemprop="articleBody">
+			<h2 id="toc_0">MWeb 1.3.7 版的新功能</h2>
+
+<ul>
+<li>增加发布到 Wordpress 等支持 Metaweblog API 的服务，目前经测试过的有： Wordpress 博客、新浪博客、cnblogs、oschina。</li>
+<li>增加发布到 Tumblr 和 Scriptogr.am </li>
+<li>即时预览改进，原来会闪动，现在拿掉了同步滚动功能后不会了。</li>
+<li>编辑器和三栏切换也有小改进。</li>
+</ul>
+
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_1">下边介绍一下发布到 Wordpress 等支持 Metaweblog API 的博客服务的功能</h2>
+
+<p>我所知，Mac 下支持这一功能的 Native 的 Markdown 编辑器就只有 MWeb 了。之前用过 Live Writer 的朋友都知道这功能非常好用，因为加图片非常方便！然后是离线写作，不用担心内容丢失，还可以方便地发布到多处地方。我之前用 Live Writer 时还会时不时要切到 HTML 代码下去修正一下格式问题，有点难用，现在用 Markdown 的话，就不会有这情况了。可以说：Markdown 和 Metaweblog API 才是真正的完美结合！</p>
+
+<p>在 MWeb 中点菜单：<code>MWeb</code> - <code>Preferences</code> - <code>Publishing</code> 即可进入发布设置界面，如下：</p>
+
+<p><img src="media/14292279084701/14292295737706.jpg" alt=""/>￼￼</p>
+
+<h3 id="toc_2">增加发布到 Wordpress 的服务</h3>
+
+<p>点 Wordpress.org 这个按钮，如下图，由于 Wordpress 的远程发布网址可以由博客网址得知，所以只需要填入博客网址、帐号、密码即可。密码是存到 Keychain，所以可无需担心。<br/>
+<img src="media/14292279084701/14292301869922.jpg" alt=""/>￼￼</p>
+
+<h3 id="toc_3">增加发布到 新浪博客、cnblogs、oschina 的博客服务的服务</h3>
+
+<p>点 Metaweblog API 这个按钮，如下图，必填的只有 帐号、密码、Publish URL。Publish URL 这个一般支持 Metaweblog API 的服务都会提供的。</p>
+
+<p><img src="media/14292279084701/14292306829254.jpg" alt=""/>￼￼</p>
+
+<p>下面说一下新浪博客、cnblogs、oschina 的 Publish URL。</p>
+
+<ul>
+<li>新浪博客的 Publish URL：<a href="http://upload.move.blog.sina.com.cn/blog_rebuild/blog/xmlrpc.php">http://upload.move.blog.sina.com.cn/blog_rebuild/blog/xmlrpc.php</a></li>
+<li>cnblogs 的 Publish URL：<a href="http://www.cnblogs.com/Blog%E5%90%8D/services/metaweblog.aspx">http://www.cnblogs.com/Blog名/services/metaweblog.aspx</a>。其中 <strong>Blog 名</strong> 请换为您的博客名。cnblogs 的博客后台设置，拉到最下面，也可以找到这个网址。比如说我的是  <a href="http://rpc.cnblogs.com/metaweblog/OtisBlog">http://rpc.cnblogs.com/metaweblog/OtisBlog</a> 两者网址不同，但是效果一样。</li>
+<li>oschina 的 Publish URL：<a href="http://my.oschina.net/action/xmlrpc">http://my.oschina.net/action/xmlrpc</a></li>
+</ul>
+
+<h3 id="toc_4">发布</h3>
+
+<p>如下图红框处，你可以在 MWeb 分享按钮（右上角的第三个按钮）中找到所增加的发布服务。名称会显示 <code>Blog Name</code> 中设定的名称。</p>
+
+<p><img src="media/14292279084701/14292318507812.jpg" alt=""/>￼￼</p>
+
+<p>比如说我要发布到我的 Wordpress 博客，点 <code>oulvhai 的 Wordpress 博客</code>，如下图：<br/>
+<img src="media/14292279084701/14292325545410.jpg" alt=""/>￼￼</p>
+
+<p>要注意的时，有些博客服务是不支持上边的一些设置的，比如说 <code>Custom URL</code>、<code>Publish Date</code>、<code>Status</code> 等。设定好后，点 <code>Publish</code> 按钮就可以发布了。</p>
+
+<p>要说明的是：Metaweblog API 有自动上传图片的功能，有看到我现在这文章的图片都是在本地的，发布时就会自动把图片上传到所发布的博客服务。所以就不用找图床了。我这文章会发布到以下几个地方：</p>
+
+<ul>
+<li>我的用 MWeb 静态网站功能生成的个人博客：<a href="http://coderforart.com">http://coderforart.com</a></li>
+<li>同样用 MWeb 静态网站功能生成的 MWeb 中文官网：<a href="http://zh.mweb.im">http://zh.mweb.im</a></li>
+<li>我的 Wordpress 测试博客：<a href="http://appbk.sinaapp.com/">http://appbk.sinaapp.com/</a></li>
+<li>我的新浪博客：<a href="http://blog.sina.com.cn/oulvhai">http://blog.sina.com.cn/oulvhai</a></li>
+<li>我在 cnblogs 的博客：<a href="http://www.cnblogs.com/OtisBlog">http://www.cnblogs.com/OtisBlog</a></li>
+<li>我在 oschina 的博客：<a href="http://my.oschina.net/oulvhai">http://my.oschina.net/oulvhai</a></li>
+</ul>
+
+<h2 id="toc_5">关于 MWeb Lite</h2>
+
+<p>MWeb Lite 的定位是 Markdown 编辑器和一些 MWeb 正式版的功能的体验。对于轻度使用 Markdown 的朋友来说， MWeb Lite 已足够了，MWeb 正式版的功能大部分用不到。MWeb Lite 的 Markdown 编辑器功能是跟 MWeb 正式版一样的。这个功能会随着 MWeb 这个产品的不断打磨而得到更好的体验。目前 MWeb Lite 对于正式版不同的地方有：</p>
+
+<ol>
+<li>文档库 MWeb Lite 限定为 10 个文档</li>
+<li>发布服务只能增加 1 个。</li>
+</ol>
+
+<h2 id="toc_6">其他</h2>
+
+<p>这里说一下用 MWeb 生成的静态博客的好处：可直接打开所生成的 HTML 文档就能预览！这个是不同于 otcpress 等静态博客生成方式的。otcpress 等生成的 HTML 直接打开预览是没办法看到效果的，必须上传或者用 otcpress 来预览。MWeb 的静态博客功能没有 otcpress 这么强大，但是对于简单只想写一下博客的朋友来说，我觉得足够了。当然，下一版也会增强静态博客功能的。</p>
+
+<p>另外发布到 Wordpress.com、bloger、evernote 功能也是会有的，这几个要在 1.4 版发布后才会开始弄。</p>
+
+		</div>
+	</article>
+<div class="share-comment">
+<div style="height:26px;" class="share">
+<!-- JiaThis Button BEGIN -->
+<div class="jiathis_style_24x24">
+	<a class="jiathis_button_tsina"></a>
+	<a class="jiathis_button_tqq"></a>
+	<a class="jiathis_button_weixin"></a>
+	<a class="jiathis_button_qzone"></a>
+	<a class="jiathis_button_renren"></a>
+	<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1406813199499778" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+	</div>
+
+	<div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'coderforart'; 
+
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
+</div>
+
+
+</div>        </div>
+			<footer id="footer" class="inner">Copyright &copy; 2014
+Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a> &nbsp;&nbsp; 
+Theme by <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank Mehta</a>
+      </footer>
+		</div>
+	</div>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-58735702-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
