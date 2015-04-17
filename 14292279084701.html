@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<title>  
 	  
-  	MWeb - OS X上的Markdown编辑器和全静态网站、博客生成工具 - Coder For Art
+  	MWeb 1.3.7 发布！增加发布到 Wordpress 等支持 Metaweblog API 的服务，如：Wordpress 博客、新浪博客、cnblogs、oschina。 - Coder For Art
   	
 	</title
 
@@ -126,89 +126,82 @@
 			<div class="mid-col-container"> <div id="content" class="inner">
 
 	<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-		<h1 class="title" itemprop="name">MWeb - OS X上的Markdown编辑器和全静态网站、博客生成工具</h1>
+		<h1 class="title" itemprop="name">MWeb 1.3.7 发布！增加发布到 Wordpress 等支持 Metaweblog API 的服务，如：Wordpress 博客、新浪博客、cnblogs、oschina。</h1>
 		<div class="entry-content" itemprop="articleBody">
-			<h2 id="toc_0">MWeb 现在有了新官网</h2>
+			<h2 id="toc_0">MWeb 1.3.7 版的新功能</h2>
 
-<p>中文：<a href="http://zh.mweb.im">http://zh.mweb.im</a><br/>
-English：<a href="http://www.mweb.im">http://www.mweb.im</a></p>
-
-<p><strong>注意：</strong> 这个页面的信息都是旧的，这页也不再更新！</p>
-
-<h2 id="toc_1">MWeb帮助</h2>
-
-<h3 id="toc_2">如果您不知道什么是Markdown，请阅读以下两篇文章</h3>
-
-<p><a href="markdown-syntax-guide-suggest-version-zh.html">Markdown 语法简单说明</a><br/>
-<a href="markdown-syntax-guide-full-version-zh.html">Markdown 语法官方说明繁体中文版</a></p>
-
-<h3 id="toc_3">MWeb所有问题和回答收集（会不断更新）</h3>
-
-<p><a href="mweb-qa-zh.html">MWeb问题和回答</a><br/>
-如果您在上面的连接中找不到答案，请在MWeb中点：Help --&gt; Send Feedback 写信给我！</p>
-
-<h3 id="toc_4">MWeb其他可能有用的文章</h3>
-
-<p><a href="custom-site-theme-detail-zh.html">自定网站主题、增加评论和分享和设计新主题...</a><br/>
-<a href="me-screenshot-and-in-yosemite.html">MWeb更多截图和在Yosemite下的效果</a><br/>
-<a href="mweb-v1.1-release-zh.html">MWeb 1.1 版更新说明</a><br/>
-<a href="mweb-v1.2-release-zh.html">MWeb 1.2 版更新说明</a><br/>
-<a href="sync-webistes-to-github-or-ftp-zh.html">把生成的静态网站发布到github或FTP</a><br/>
-<a href="use-goodsync-sync-mweb-static-websites-zh.html">使用GoodSync把MWeb生成的静态网站自动同步到FTP、SFTP、WebDAV、Amazon S3等</a></p>
-
-<h2 id="toc_5">MWeb简介</h2>
-
-<p>MWeb是一个Markdown编辑器和全静态网站、博客生成工具，像<a href="http://octopress.org/">Octopress</a>和 <a href="http://jekyllrb.com/">Jekyll</a>，但是更简单易用。MWeb很合适经常用Markdown写文档、日记和经常要插入图片和大段代码的朋友。</p>
-
-<p><img src="media/14189656825627/MWeb.jpg" alt="MWeb"/>￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
+<ul>
+<li>增加发布到 Wordpress 等支持 Metaweblog API 的服务，目前经测试过的有： Wordpress 博客、新浪博客、cnblogs、oschina。</li>
+<li>增加发布到 Tumblr 和 Scriptogr.am </li>
+<li>即时预览改进，原来会闪动，现在拿掉了同步滚动功能后不会了。</li>
+<li>编辑器和三栏切换也有小改进。</li>
+</ul>
 
 <span id="more"></span><!-- more -->
 
-<p style="text-align:center">
-<a target="_blank" onclick="ga('send','event','buy-mweb-zh');" href="http://itunes.apple.com/cn/app/mweb-markdown-editor-for-static/id954188948?ls=1&mt=12" target="_blank"><img src="media/14195170907881/icon_apple_store-download-small.png" width="180" /></a>
+<h2 id="toc_1">下边介绍一下发布到 Wordpress 等支持 Metaweblog API 的功能</h2>
 
-</p>
+<p>我所知，Mac 下支持这一功能的 Native 的 Markdown 编辑器就只有 MWeb 了。之前用过 Live Writer 的朋友都知道这功能非常好用，因为加图片非常方便！然后是离线写作，不用担心内容丢失，还可以方便地发布到多处地方。我之前用 Live Writer 时还会时不时要切到 HTML 代码下去修正一下格式问题，有点难用，现在用 Markdown 的话，就不会有这情况了。可以说：Markdown 和 Metaweblog API 才是真正的完美结合！</p>
 
-<h2 id="toc_6">MWeb的Markdown编辑功能</h2>
+<p>在 MWeb 中点菜单：<code>MWeb</code> - <code>Preferences</code> - <code>Publishing</code> 即可进入发布设置界面，如下：</p>
 
-<p>首先MWeb必须是一个好用的Markdown编辑器，语法高亮，预览，Fenced code blocks和代码高亮支持，Math ML支持，导出HTML/PDF，自定编辑器主题，字数统计，大纲视图，autosave,文档历史版本什么的等等都是要有的。另外MWeb分为两种模式：</p>
+<p><img src="media/14292279084701/14292295737706.jpg" alt=""/>￼</p>
+
+<h3 id="toc_2">增加发布到 Wordpress 的服务</h3>
+
+<p>点 Wordpress.org 这个按钮，如下图，由于 Wordpress 的远程发布网址可以由博客网址得知，所以只需要填入博客网址、帐号、密码即可。密码是存到 Keychain，所以可无需担心。<br/>
+<img src="media/14292279084701/14292301869922.jpg" alt=""/>￼</p>
+
+<h3 id="toc_3">增加发布到 新浪博客、cnblogs、oschina 的服务</h3>
+
+<p>点 Metaweblog API 这个按钮，如下图，必填的只有 帐号、密码、Publish URL。Publish URL 这个一般支持 Metaweblog API 的服务都会提供的。</p>
+
+<p><img src="media/14292279084701/14292306829254.jpg" alt=""/>￼</p>
+
+<p>下面说一下新浪博客、cnblogs、oschina 的 Publish URL。</p>
 
 <ul>
-<li>一种是由MWeb管理的库文档模式，这种模式下可以用分类管理文档，可以拖拽插入图片，可以生成全静态网站。</li>
-<li>一种是外部文文件模式，文件夹的Markdown文檔直接用MWeb打开就是这种模式，区别是无拖拽插入图片功能，不能生成网站。</li>
+<li>新浪博客的 Publish URL：<a href="http://upload.move.blog.sina.com.cn/blog_rebuild/blog/xmlrpc.php">http://upload.move.blog.sina.com.cn/blog_rebuild/blog/xmlrpc.php</a></li>
+<li>cnblogs 的 Publish URL：<a href="http://www.cnblogs.com/Blog%E5%90%8D/services/metaweblog.aspx">http://www.cnblogs.com/Blog名/services/metaweblog.aspx</a>。其中 <strong>Blog 名</strong> 请换为您的博客名。cnblogs 的博客后台设置，拉到最下面，也可以找到这个网址。比如说我的是  <a href="http://rpc.cnblogs.com/metaweblog/OtisBlog">http://rpc.cnblogs.com/metaweblog/OtisBlog</a> 两者网址不同，但是效果一样。</li>
+<li>oschina 的 Publish URL：<a href="http://my.oschina.net/action/xmlrpc">http://my.oschina.net/action/xmlrpc</a></li>
 </ul>
 
-<p>￼￼￼￼￼￼￼￼￼￼￼￼<img src="media/14189656825627/MWeb-markdown-editor.jpg" alt="MWeb-markdown-editor"/>￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
+<h3 id="toc_4">发布</h3>
 
-<h2 id="toc_7">插入图片并显示在编辑器内</h2>
+<p>如下图红框处，你可以在 MWeb 分享按钮（右上角的第三个按钮）中找到所增加的发布服务。名称会显示 <code>Blog Name</code> 中设定的名称。</p>
 
-<p>MWeb的设计就是为了能方便地用Markdown记日记、简单的管理日记并生成博客。而写日记时插入图片的功能是经常用到的。一般的Markdown工具如果要插入图片，要先丢到网上。像Ulysses是可以方便插入图片，但是要双击或者预览时才能看到。MWeb设计成可拖拽或直接粘贴即可插入图片并显示出来，以方便查看。</p>
+<p><img src="media/14292279084701/14292318507812.jpg" alt=""/>￼</p>
 
-<p>￼￼￼￼￼￼￼￼￼<img src="media/14189656825627/MWeb-inset-photo.jpg" alt="MWeb-inset-photo"/>￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼<br/>
-￼￼￼￼￼￼￼￼￼￼￼</p>
+<p>比如说我要发布到我的 Wordpress 博客，点 <code>oulvhai 的 Wordpress 博客</code>，如下图：<br/>
+<img src="media/14292279084701/14292325545410.jpg" alt=""/>￼</p>
 
-<h2 id="toc_8">一键将分类生成全静态的网站和博客</h2>
+<p>要注意的时，有些博客服务是不支持上边的一些设置的，比如说 <code>Custom URL</code>、<code>Publish Date</code>、<code>Status</code> 等。设定好后，点 <code>Publish</code> 按钮就可以发布了。</p>
 
-<p>MWeb的分类管理的设计跟博客的结构差不多，一个文档可以选择多个分类。将分类变成博客的方法为：选择该分类 --&gt; Set to site。设定好博客的名称和描述等等，点：<code>Build site</code> 按钮即可。如果有改动到 <code>Theme</code> 或者有任何没有在预料之中的结果，试试点 <code>Clear and rebuild site</code> 按钮。 点 <code>Preview site</code> 按钮可以预览生成的博客。<a href="http://coderforart.com/">http://coderforart.com/</a> 网站就是用MWeb生成的。</p>
+<p>要说明的是：Metaweblog API 有自动上传图片的功能，有看到我现在这文章的图片都是在本地的，发布时就会自动把图片上传到所发布的博客服务。所以就不用找图床了。我这文章会发布到以下五个地方：</p>
 
-<p><img src="media/14187874991645/MWeb-build-static-websites-and-blogs-1-1-2.jpg" alt="MWeb-build-static-websites-and-blogs-1-1-2"/>￼￼￼￼￼￼￼￼￼￼￼￼￼￼<br/>
-￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼<br/>
-MWeb还可以自定网站和博客主题，增加评论和分享功能，请参考这个网址: <a href="custom-site-theme-detail-zh.html">自定网站主题、增加评论和分享和设计新主题...</a></p>
+<ul>
+<li>我的用 MWeb 静态网站功能生成的个人博客：<a href="http://coderforart.com">http://coderforart.com</a></li>
+<li>同样用 MWeb 静态网站功能生成的 MWeb 中文官网：<a href="http://zh.mweb.im">http://zh.mweb.im</a></li>
+<li>我的 Wordpress 测试博客：<a href="http://appbk.sinaapp.com/">http://appbk.sinaapp.com/</a></li>
+<li>我的新浪博客：<a href="http://blog.sina.com.cn/oulvhai">http://blog.sina.com.cn/oulvhai</a></li>
+<li>我在 cnblogs 的博客：<a href="http://www.cnblogs.com/OtisBlog">http://www.cnblogs.com/OtisBlog</a></li>
+<li>我在 oschina 的博客：<a href="http://my.oschina.net/oulvhai">http://my.oschina.net/oulvhai</a></li>
+</ul>
 
-<h2 id="toc_9">三种视图模式、改变视图时编辑器大小会固定</h2>
+<h2 id="toc_5">关于 MWeb Lite</h2>
 
-<p>Editor Only:<code>CMD + 1</code>, Two Pane:<code>CMD + 2</code>, There Pane:<code>CMD + 3</code>。我觉得改变视图时，编辑器区域大小也同时改变不大爽，所以改变视图时就直接改变窗口大小，而编辑器区域大小会保持不变。</p>
+<p>MWeb Lite 的定位是 Markdown 编辑器和一些 MWeb 正式版的功能的体验。对于轻度使用 Markdown 的朋友来说， MWeb Lite 已足够了，MWeb 正式版的功能大部分用不到。MWeb Lite 的 Markdown 编辑器功能是跟 MWeb 正式版一样的。这个功能会随着 MWeb 这个产品的不断打磨而得到更好的体验。目前 MWeb Lite 对于正式版不同的地方有：</p>
 
-<p>￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼<img src="media/14189656825627/MWeb-view-pattern.jpg" alt="MWeb-view-pattern"/>￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
+<ol>
+<li>文档库 MWeb Lite 限定为 10 个文档</li>
+<li>发布服务只能增加 1 个。</li>
+</ol>
 
-<h2 id="toc_10">预览、分享功能，更多截图</h2>
+<h2 id="toc_6">其他</h2>
 
-<p>预览快捷键：<code>CMD + R</code>，关闭预览：<code>CMD + W</code> </p>
+<p>这里说一下用 MWeb 生成的静态博客的好处：可直接打开所生成的 HTML 文档就能预览！这个是不同于 otcpress 等静态博客生成方式的。otcpress 等生成的 HTML 直接打开预览是没办法看到效果的，必须上传或者用 otcpress 来预览。MWeb 的静态博客功能没有 otcpress 这么强大，但是对于简单只想写一下博客的朋友来说，我觉得足够了。当然，下一版也会增强静态博客功能的。</p>
 
-<p><img src="media/14187874991645/MWeb-preview-share-1-1.jpg" alt="MWeb-preview-share-1-1"/>￼￼￼￼￼￼￼￼￼￼￼￼￼￼<br/>
-￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
-
-<p>更多截图: <a href="me-screenshot-and-in-yosemite.html">MWeb更多截图和在Yosemite下的效果</a></p>
+<p>另外发布到 Wordpress.com、bloger、evernote 功能也是会有的，这几个要在 1.4 版发布后才会开始弄。</p>
 
 		</div>
 	</article>

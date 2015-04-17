@@ -4,7 +4,7 @@
   <title><![CDATA[Coder For Art]]></title>
   <link href="http://coderforart.com/atom.xml" rel="self"/>
   <link href="http://coderforart.com/"/>
-  <updated>2015-03-28T11:42:16+08:00</updated>
+  <updated>2015-04-17T09:40:01+08:00</updated>
   <id>http://coderforart.com/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -12,6 +12,90 @@
   </author>
   <generator uri="http://www.coderforart.com/">CoderForArt</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[MWeb 1.3.7 发布！增加发布到 Wordpress 等支持 Metaweblog API 的服务，如：Wordpress 博客、新浪博客、cnblogs、oschina。]]></title>
+    <link href="http://coderforart.com/14292279084701.html"/>
+    <updated>2015-04-17T07:45:08+08:00</updated>
+    <id>http://coderforart.com/14292279084701.html</id>
+    <content type="html"><![CDATA[
+<h2 id="toc_0">MWeb 1.3.7 版的新功能</h2>
+
+<ul>
+<li>增加发布到 Wordpress 等支持 Metaweblog API 的服务，目前经测试过的有： Wordpress 博客、新浪博客、cnblogs、oschina。</li>
+<li>增加发布到 Tumblr 和 Scriptogr.am </li>
+<li>即时预览改进，原来会闪动，现在拿掉了同步滚动功能后不会了。</li>
+<li>编辑器和三栏切换也有小改进。</li>
+</ul>
+
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_1">下边介绍一下发布到 Wordpress 等支持 Metaweblog API 的功能</h2>
+
+<p>我所知，Mac 下支持这一功能的 Native 的 Markdown 编辑器就只有 MWeb 了。之前用过 Live Writer 的朋友都知道这功能非常好用，因为加图片非常方便！然后是离线写作，不用担心内容丢失，还可以方便地发布到多处地方。我之前用 Live Writer 时还会时不时要切到 HTML 代码下去修正一下格式问题，有点难用，现在用 Markdown 的话，就不会有这情况了。可以说：Markdown 和 Metaweblog API 才是真正的完美结合！</p>
+
+<p>在 MWeb 中点菜单：<code>MWeb</code> - <code>Preferences</code> - <code>Publishing</code> 即可进入发布设置界面，如下：</p>
+
+<p><img src="media/14292279084701/14292295737706.jpg" alt=""/>￼</p>
+
+<h3 id="toc_2">增加发布到 Wordpress 的服务</h3>
+
+<p>点 Wordpress.org 这个按钮，如下图，由于 Wordpress 的远程发布网址可以由博客网址得知，所以只需要填入博客网址、帐号、密码即可。密码是存到 Keychain，所以可无需担心。<br/>
+<img src="media/14292279084701/14292301869922.jpg" alt=""/>￼</p>
+
+<h3 id="toc_3">增加发布到 新浪博客、cnblogs、oschina 的服务</h3>
+
+<p>点 Metaweblog API 这个按钮，如下图，必填的只有 帐号、密码、Publish URL。Publish URL 这个一般支持 Metaweblog API 的服务都会提供的。</p>
+
+<p><img src="media/14292279084701/14292306829254.jpg" alt=""/>￼</p>
+
+<p>下面说一下新浪博客、cnblogs、oschina 的 Publish URL。</p>
+
+<ul>
+<li>新浪博客的 Publish URL：<a href="http://upload.move.blog.sina.com.cn/blog_rebuild/blog/xmlrpc.php">http://upload.move.blog.sina.com.cn/blog_rebuild/blog/xmlrpc.php</a></li>
+<li>cnblogs 的 Publish URL：<a href="http://www.cnblogs.com/Blog%E5%90%8D/services/metaweblog.aspx">http://www.cnblogs.com/Blog名/services/metaweblog.aspx</a>。其中 <strong>Blog 名</strong> 请换为您的博客名。cnblogs 的博客后台设置，拉到最下面，也可以找到这个网址。比如说我的是  <a href="http://rpc.cnblogs.com/metaweblog/OtisBlog">http://rpc.cnblogs.com/metaweblog/OtisBlog</a> 两者网址不同，但是效果一样。</li>
+<li>oschina 的 Publish URL：<a href="http://my.oschina.net/action/xmlrpc">http://my.oschina.net/action/xmlrpc</a></li>
+</ul>
+
+<h3 id="toc_4">发布</h3>
+
+<p>如下图红框处，你可以在 MWeb 分享按钮（右上角的第三个按钮）中找到所增加的发布服务。名称会显示 <code>Blog Name</code> 中设定的名称。</p>
+
+<p><img src="media/14292279084701/14292318507812.jpg" alt=""/>￼</p>
+
+<p>比如说我要发布到我的 Wordpress 博客，点 <code>oulvhai 的 Wordpress 博客</code>，如下图：<br/>
+<img src="media/14292279084701/14292325545410.jpg" alt=""/>￼</p>
+
+<p>要注意的时，有些博客服务是不支持上边的一些设置的，比如说 <code>Custom URL</code>、<code>Publish Date</code>、<code>Status</code> 等。设定好后，点 <code>Publish</code> 按钮就可以发布了。</p>
+
+<p>要说明的是：Metaweblog API 有自动上传图片的功能，有看到我现在这文章的图片都是在本地的，发布时就会自动把图片上传到所发布的博客服务。所以就不用找图床了。我这文章会发布到以下五个地方：</p>
+
+<ul>
+<li>我的用 MWeb 静态网站功能生成的个人博客：<a href="http://coderforart.com">http://coderforart.com</a></li>
+<li>同样用 MWeb 静态网站功能生成的 MWeb 中文官网：<a href="http://zh.mweb.im">http://zh.mweb.im</a></li>
+<li>我的 Wordpress 测试博客：<a href="http://appbk.sinaapp.com/">http://appbk.sinaapp.com/</a></li>
+<li>我的新浪博客：<a href="http://blog.sina.com.cn/oulvhai">http://blog.sina.com.cn/oulvhai</a></li>
+<li>我在 cnblogs 的博客：<a href="http://www.cnblogs.com/OtisBlog">http://www.cnblogs.com/OtisBlog</a></li>
+<li>我在 oschina 的博客：<a href="http://my.oschina.net/oulvhai">http://my.oschina.net/oulvhai</a></li>
+</ul>
+
+<h2 id="toc_5">关于 MWeb Lite</h2>
+
+<p>MWeb Lite 的定位是 Markdown 编辑器和一些 MWeb 正式版的功能的体验。对于轻度使用 Markdown 的朋友来说， MWeb Lite 已足够了，MWeb 正式版的功能大部分用不到。MWeb Lite 的 Markdown 编辑器功能是跟 MWeb 正式版一样的。这个功能会随着 MWeb 这个产品的不断打磨而得到更好的体验。目前 MWeb Lite 对于正式版不同的地方有：</p>
+
+<ol>
+<li>文档库 MWeb Lite 限定为 10 个文档</li>
+<li>发布服务只能增加 1 个。</li>
+</ol>
+
+<h2 id="toc_6">其他</h2>
+
+<p>这里说一下用 MWeb 生成的静态博客的好处：可直接打开所生成的 HTML 文档就能预览！这个是不同于 otcpress 等静态博客生成方式的。otcpress 等生成的 HTML 直接打开预览是没办法看到效果的，必须上传或者用 otcpress 来预览。MWeb 的静态博客功能没有 otcpress 这么强大，但是对于简单只想写一下博客的朋友来说，我觉得足够了。当然，下一版也会增强静态博客功能的。</p>
+
+<p>另外发布到 Wordpress.com、bloger、evernote 功能也是会有的，这几个要在 1.4 版发布后才会开始弄。</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[MWeb 1.3 release! 50% OFF, official site, new icon, task list support, optimized MathJax support etc...]]></title>
@@ -730,7 +814,7 @@ __这些文字会生成`&lt;strong&gt;`__
 
 <p>Markdown 语法：</p>
 
-<pre><code>![GitHub set up](https://help.github.com/assets/images/site/set-up-git.gif)
+<pre><code>![GitHub set up](http://zh.mweb.im/asset/img/set-up-git.gif)
 格式: ![Alt Text](url)
 </code></pre>
 
@@ -738,7 +822,7 @@ __这些文字会生成`&lt;strong&gt;`__
 如果是 MWeb 的文档库中的文档，还可以用拖放图片、<code>CMD + V</code> 粘贴、<code>CMD + Option + I</code> 导入这三种方式来增加图片。<br/>
 效果如下：</p>
 
-<p><img src="https://help.github.com/assets/images/site/set-up-git.gif" alt="GitHub set up"/></p>
+<p><img src="http://zh.mweb.im/asset/img/set-up-git.gif" alt="GitHub set up"/></p>
 
 <h2 id="toc_13">链接</h2>
 
@@ -1215,7 +1299,7 @@ You can select some photos --&gt; right click --&gt; choose <code>Open &amp; Pla
 
 <p><code>CMD+N</code>新建PinPhoto文档，使用拖拽或者点<code>Import</code>按钮增加要摆放的图片，如果你的剪切板上复制有图片，也可以直接用<code>CMD+V</code>粘贴进来。</p>
 
-<p><img src="media/14255236146194/1.jpg" alt=""/>￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
+<p><img src="media/14255236146194/1.jpg" alt=""/>￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
 
 <p>小技巧：在网页中看到喜欢的图片想增加到PinPhoto文档中，可以右键网页中的图片，在弹出的菜单中选择：复制图片(Copy Image) 然后切换到PinPhoto，用快捷键<code>CMD+V</code>粘贴以增加到PinPhoto的文档中。</p>
 
@@ -1223,7 +1307,7 @@ You can select some photos --&gt; right click --&gt; choose <code>Open &amp; Pla
 
 <p>点击列表中的图片即可打开该图片的图片视图，在打开的图片视图中，鼠标移到图片顶部的位置，会显示一条黑色的半透明长方形，拖动即可改变位置，你也可以用双指缩放、平移图片，更多的调节请用右键菜单、主菜单的View菜单或者快捷键。</p>
 
-<p><img src="media/14255236146194/2.jpg" alt=""/>￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
+<p><img src="media/14255236146194/2.jpg" alt=""/>￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
 
 <p><strong>右键菜单项目说明：</strong></p>
 
@@ -1244,12 +1328,12 @@ You can select some photos --&gt; right click --&gt; choose <code>Open &amp; Pla
 <li>Clear All Floating：全部取消置顶当前文档的所有图片视图 - <code>CMD+Option+T</code></li>
 <li>Prev Document：切换到上一打开的文档 - <code>⇤</code></li>
 <li>Next Document：切换到下一打开的文档 - <code>⇥</code></li>
-<li>Close Document：关闭当前文档 - <code>CMD+Shift+W</code></li>
+<li>Close Document：关闭当前文档 - <code>CMD+Shift+W</code></li>
 </ul>
 
 <p>另外也可以在主窗口中右键打开多张图片，有个实用的功能为：自动排列图片。选择要自动排列的图片，右键，并选<code>Open &amp; Placement Selected Photos</code>，则会把您选择的图片自动排满整个屏幕。如下图。</p>
 
-<p><img src="media/14255236146194/3.jpg" alt=""/>￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
+<p><img src="media/14255236146194/3.jpg" alt=""/>￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
 
 <p><strong>右键菜单项目说明：</strong></p>
 
@@ -1272,13 +1356,13 @@ You can select some photos --&gt; right click --&gt; choose <code>Open &amp; Pla
 
 <p>选中图片视图后，可以用<code>CMD+T</code>或者右键选择菜单来置顶图片，图片置顶后，当你切换到其它程序时，会一直显示。经典的使用场景是对着图片画画。再按<code>CMD+T</code>则会取消置顶。也可以用<code>CMD+Shift+T</code>来置顶当前文档中的所有图片视图。用<code>CMD+Option+T</code>来取消置顶所有图片视图</p>
 
-<p><img src="media/14255236146194/4.jpg" alt=""/>￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
+<p><img src="media/14255236146194/4.jpg" alt=""/>￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
 
 <h3 id="toc_6">隐藏主窗口</h3>
 
 <p>主窗口有时候非常影响观看摆好的图片，可以用<code>CMD+D</code>来显示/隐藏主窗口，<code>CMD+F</code>会直接显示主窗口。</p>
 
-<p><img src="media/14255236146194/5.jpg" alt=""/>￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
+<p><img src="media/14255236146194/5.jpg" alt=""/>￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
 
 <h3 id="toc_7">切换打开的PinPhoto文档</h3>
 
@@ -1677,7 +1761,7 @@ git push -u origin master
     <content type="html"><![CDATA[
 <p>对于学习一些东西，我比较习惯任务驱动式的学习，也就是说，要事先订好一个目标，要做什么东西，达到什么效果，然后根据自己了解的知识作一个可以实现这个目标的计划。</p>
 
-<p>现在要学的是游戏制作，而且是High-end的3D游戏制作。如前文 <a href="unrealengine4-windows-mac.html">游戏制作之路：游戏引擎选择、Mac下和Windows下UnrealEngine 4体验对比、文档及其他</a> 所说的，我已经选择了UE4这个画面最顶级的引擎，它即使是在iOS上，画面也是最高端的，可以参考 <a href="https://www.unrealengine.com/blog/unreal-engine-powered-zen-garden-released">Zen Garden</a> 这个Demo。然后我也大概确认了可行性，现在要解决的是玩法（游戏性）、内容创作、音效这些东西。</p>
+<p>现在要学的是游戏制作，而且是High-end的3D游戏制作。如前文 <a href="http://coderforart.com/unrealengine4-windows-mac.html">游戏制作之路：游戏引擎选择、Mac下和Windows下UnrealEngine 4体验对比、文档及其他</a> 所说的，我已经选择了UE4这个画面最顶级的引擎，它即使是在iOS上，画面也是最高端的，可以参考 <a href="https://www.unrealengine.com/blog/unreal-engine-powered-zen-garden-released">Zen Garden</a> 这个Demo。然后我也大概确认了可行性，现在要解决的是玩法（游戏性）、内容创作、音效这些东西。</p>
 
 <span id="more"></span><!-- more -->
 
@@ -1692,8 +1776,8 @@ git push -u origin master
 <li>水：这部分在UE4中比较好实现，应该是只要设计位置和外形就好，任务比较简单。</li>
 <li>岩石火山怪物、钢铁怪物：怪物制作在游戏中是重点，难度很高。从开始设计到引入UE4，像树或花草那样流程即可。真正有挑战的是怪物AI了，这部分就关系到游戏玩法和游戏性了。这部分我了解不多，反正是要花大量时间研究就是了，初步方向是UE4中内置的AI的组件如何使用，然后读一些游戏AI的书等等。估计是可能会用到C++了，这也是要学习的。</li>
 <li>人物角色：人物角色是我学习的重点，我希望这部分在做完这个游戏后能真正掌握一些。这部分要研究的东西太多了，光是人物设计就是要花大量时间，人体结构，画法，服饰。还有是3D建模，人物皮肤材质，服饰材质等等。服饰部分东西太庞大，我只选一个小方向即可。还有比如说头发和衣服在游戏中的做法等等。再有就是角色动画，初步估计应该是在3D软件中调好，然后引入UE4中也是有大量工作要做的。这也只是在对角色动画比较了解的基础上，刚刚好我不了解，这也得学！不知道UE4能不能做到像下图那样的画出来的角色的质量？这也是我想研究的。
-<img src="media/14218059079784/5bf24facgw1eo0sjmlsiwj20uk0hoju2.jpg" alt="5bf24facgw1eo0sjmlsiwj20uk0hoju2"/>￼￼￼
-<img src="media/14218059079784/5bf24facgw1eo0sjsnjb6j20dw0cnta3.jpg" alt="5bf24facgw1eo0sjsnjb6j20dw0cnta3"/>￼￼￼</li>
+<img src="media/14218059079784/5bf24facgw1eo0sjmlsiwj20uk0hoju2.jpg" alt="5bf24facgw1eo0sjmlsiwj20uk0hoju2"/>￼￼￼￼
+<img src="media/14218059079784/5bf24facgw1eo0sjsnjb6j20dw0cnta3.jpg" alt="5bf24facgw1eo0sjsnjb6j20dw0cnta3"/>￼￼￼￼</li>
 </ul>
 
 <p>游戏玩法部分，这部分需要我在学习中慢慢想了，这部分应该不难，只是做得好不好的问题，即使做得不好，也没关系了。我的方向不在这。</p>
@@ -1992,31 +2076,6 @@ static bool GAllowApplePlatformSymbolication = false;
 <h2 id="toc_5">关于UnrealEngine 4的文档和其他</h2>
 
 <p>之前说UE4文档不如Unity3d好，但是我仔细看了，也是相当全面的，学会大概不成问题，更何况youtube上还有大量的视频可以看。C++也不成问题，按《游戏引擎架构》中说的，游戏中用到的C++不会太复杂，太复杂大不了不做那种特性就好。所以引擎部分应该不会对我产生大的难度了。但是做游戏引擎只是一小部分，最最重要部分：内容和玩法！首先说内容，这部分要学画画和3D了，而学3D软件对我来说也不成问题，只是画画目前还没有任何比较靠普的路子能成，至于动画随便弄一下然后买本《动画师生存手册》看看到底要如何了，也没有太大把握。。玩法部分，随便弄弄应该可以。因为时间不多只有一年，所以几个东西要并行学习，边学边加上引擎综合考虑。大概是这样想法先。</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[MWeb Screenshot and in Yosemite]]></title>
-    <link href="http://coderforart.com/me-screenshot-and-in-yosemite.html"/>
-    <updated>2015-01-07T13:46:07+08:00</updated>
-    <id>http://coderforart.com/me-screenshot-and-in-yosemite.html</id>
-    <content type="html"><![CDATA[
-<h2 id="toc_0">Yosemite</h2>
-
-<p><img src="media/14206095675933/yosemite-01.jpg" alt="yosemite-01"/>￼</p>
-
-<span id="more"></span><!-- more -->
-
-<p><img src="media/14206095675933/yosemite-02.jpg" alt="yosemite-02"/>￼</p>
-
-<h2 id="toc_1">All menus</h2>
-
-<p><img src="media/14206095675933/menus.jpg" alt="menus"/>￼￼￼</p>
-
-<h2 id="toc_2">Preferences</h2>
-
-<p><img src="media/14206095675933/preferences.jpg" alt="preferences"/>￼￼￼</p>
 
 ]]></content>
   </entry>
