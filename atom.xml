@@ -4,7 +4,7 @@
   <title><![CDATA[Coder For Art]]></title>
   <link href="http://coderforart.com/atom.xml" rel="self"/>
   <link href="http://coderforart.com/"/>
-  <updated>2015-04-18T23:40:09+08:00</updated>
+  <updated>2015-05-07T12:47:46+08:00</updated>
   <id>http://coderforart.com/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -12,6 +12,63 @@
   </author>
   <generator uri="http://www.coderforart.com/">CoderForArt</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[MWeb 1.4 新功能介绍一：引入文件夹到 MWeb 中管理，支持 Octpress、Jekyll 等静态博客拖拽插入图片和实时预览]]></title>
+    <link href="http://coderforart.com/mweb-1.4-add-floder-octpress-support.html"/>
+    <updated>2015-05-07T09:56:51+08:00</updated>
+    <id>http://coderforart.com/mweb-1.4-add-floder-octpress-support.html</id>
+    <content type="html"><![CDATA[
+<p>之前在 MWeb 中打开非文档库中的 Markdown 文档，如果文档中有引用到本机图片，是没办法在 MWeb 中显示出来和预览的。这是因为 Apple 规定在 Mac App Store（MAS） 上的软件，都不能对软件自己的沙箱之外的文档进行任何操作，连读取都不能，除非用户明确授权。而用户授权的方式是使用打开、保存对话框。比如说你用 MWeb 打开一个 Markdown 文档，那么 MWeb 就能得到读写这个文档的权限。再比如说你用 MWeb 导出为 HTML 功能，在保存为对话框中选择一个要导出到的文件夹，那么 MWeb 就能得到读写这个文件夹的权限。</p>
+
+<p>正因为这个原因，所以，一般情况下，如果一个软件有 MAS 版，都建议用 MAS 版，特别是国内大厂的软件，即使功能上少了点。</p>
+
+<p>这次 1.4 版新增可以引入文件夹到 MWeb 中管理的功能，就是为了解决用 MWeb 打开非文档库中的 Markdown 文档无法用拖拽和粘贴插入图片，预览时无法显示引用的本机图片的问题。然后 1.4 版还对 Octpress、Jekyll 等静态博客进行了优化。在用 MWeb 编辑 Octpress、Jekyll 的 Markdown 文档时，也可以在编辑器中拖拽或粘贴插入图片并显示在编辑器中和进行实时预览了。<br/>
+<br/>
+特别说明的是：1.4 版的实时预览增加了同步滚动功能！然后我觉得目前同步滚动功能是相当好用了，所以在这里特别说明一下。</p>
+
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_0">MWeb 引入文件夹功能介绍</h2>
+
+<p>为了方便使用引入文件夹功能，MWeb 的外部模式新增了一个快捷键：<code>CMD + E</code>。任何情况下按 <code>CMD + E</code> 即可打开外部模式，在外部模式中就可以看到所有引入的文件夹了。同样提示一下 MWeb 的文档库模式的快捷键是：<code>CMD + L</code>。如果你不喜欢用快捷键，也可以用菜单： <code>View</code> - <code>Open External</code> 打开外部模式。</p>
+
+<p>点软件左下方的 <code>+</code> - <code>Add External Source...</code>，然后在对话框中选择要引入到 MWeb 的文件夹，再点 <code>Choose</code> 即可。还有更多的设置如下图。</p>
+
+<p><img src="media/14309638110247/14309679087614.png" alt=""/></p>
+
+<p>引入后，在最左边那栏选择文件夹，中间那栏则会显示该文件夹下的 Markdown 文档。如下图显示，引入后的文档可以方便地拖拽插入图片和附件，下图是增加了一个 MP3 和一张图。然后需要说一下的是，点击软件的标题栏可以修改文档名称和为文档增加 Tags，如下图。</p>
+
+<p><img src="media/14309638110247/14309690743597.png" alt=""/></p>
+
+<p>然后实时预览、导出为HTML/PDF、发布到 Wordpress 等文档库中可以用的一些功能在外部模式也是可以使用的。同样，发布到 Wordpress、新浪博客等支持 Metaweblog API 的服务时，文档中的图片也是会一起发布的。</p>
+
+<h2 id="toc_1">对 Octpress、Jekyll 等静态博客优化介绍</h2>
+
+<p>如上边所写，MWeb 引入的文件夹的 Markdown 文档插入图片的保存位置设置有两个选择：Relative 和 Absolute。</p>
+
+<p>Octpress、Jekyll 等静态博客因为可以自定像 <code>http://域名/2015/3/the-blog-post/</code> 这样的网址，所以在增加图片时，都是用 <code>/images/pic.jpg</code> 这样的绝对路径。然后图片要放在 <code>source/images</code> 文件夹下。</p>
+
+<p>正因为这个原因，引入 Octpress 等静态博客的文件夹到 MWeb 时，请引入 <code>source</code> 文件夹。引入后你可以修改 <code>Display Name</code> 来标识。<strong>最重要一点</strong>，<code>Media Save Path</code> 请选择 <code>Absolute</code>。<br/>
+Octpress 的文档一般都在 <code>_posts</code> 这个资料夹下，在 MWeb 最左边那栏选择 <code>_posts</code> 文件夹，在中间那栏选择要编辑的文档即可。这时的文档已经是支持拖拽插入图片和实时预览了。然后无论你编辑 <code>source</code> 下的那个文档，你所插入的图片都会保存在 <code>source</code> 下的你在 <code>Media Floder Name</code> 中设置的文件夹下。 </p>
+
+<p>如果要新增文档，你可以用 MWeb 中的新增文档功能（点软件中间那栏搜寻框右边的新增按钮），也可以用 Octpress 等所带的命令行新增文档（推荐）。你用命令行新增后，MWeb 会在列表中自动显示你新增的文档。然后删除文档、新增文件夹等，也会自动更新显示的，总之 MWeb 能侦测到你引入的文件夹的内容的变化而自动更新显示。所以 MWeb 没有做 <code>刷新</code> 这个功能。</p>
+
+<p>引入 Otcpress 的 <code>source</code> 文件夹的属性设置、新增附件、图片效果，如图：<br/>
+<img src="media/14309638110247/14309715741257.png" alt=""/></p>
+
+<p>在 MWeb 中实时预览，MWeb 会对 Otcpress Markdown 文档中的 Meta 设置转成代码，如图：<br/>
+<img src="media/14309638110247/14309717157125.png" alt=""/></p>
+
+<p>用 Octpress 的网站预览功能，在 Safari 中查看的效果，如图：<br/>
+<img src="media/14309638110247/14309719918323.png" alt=""/></p>
+
+<p>其他如 hexo、Farbox 等引入 MWeb 中进行管理我想也差不多，不再多介绍了。引入文件夹比用 MWeb 文档库模式好的地方是同步和协作都比较方便。然后说明一下 MWeb 1.4 版现在还没有提交到 MAS 的，我还要多测试几天才会提交。所以看到这篇文章的朋友，如果有什么的建议，可以跟我说，这样就可以及时在提交前改进了。</p>
+
+<p>然后 1.4 版还对 MWeb 静态博客功能进行了增强，我也正在考虑介绍文章怎么写，初步计划是写两篇，一篇是介绍功能，一篇是再做一个生成 Apple 播客 RSS 的例子。最晚的话，明天应该会把文章发出来。</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[MWeb 1.3.7 发布！增加发布到 Wordpress 等支持 Metaweblog API 的服务，如：Wordpress 博客、新浪博客、cnblogs、oschina。]]></title>
@@ -36,25 +93,25 @@
 
 <p>在 MWeb 中点菜单：<code>MWeb</code> - <code>Preferences</code> - <code>Publishing</code> 即可进入发布设置界面，如下：</p>
 
-<p><img src="media/14292279084701/14292295737706.jpg" alt=""/>￼￼￼</p>
+<p><img src="media/14292279084701/14292295737706.jpg" alt=""/></p>
 
 <h3 id="toc_2">增加发布到 Wordpress 的服务</h3>
 
 <p>点 Wordpress.org 这个按钮，如下图，由于 Wordpress 的远程发布网址可以由博客网址得知，所以只需要填入博客网址、帐号、密码即可。密码是存到 Keychain，所以可无需担心。<br/>
-<img src="media/14292279084701/14292301869922.jpg" alt=""/>￼￼￼</p>
+<img src="media/14292279084701/14292301869922.jpg" alt=""/></p>
 
 <p><strong>注意：</strong> 如果遇到 <code>validate</code> 不通过并提示 404 错误的话，目前有两个可能（感谢 <a href="http://weibo.com/u/1862562001">@iamliunian</a>）：</p>
 
 <ol>
 <li>可以查看 Wordpress 的设置里是否开启远程发布。位置是 <code>设置</code> - <code>撰写</code> - <code>远程发布</code> 并开启 <code>XML-RPC</code></li>
-<li>检查 你的博客网址 + xmlrpc.php，看看是否正常，比如说我的 Wordpress 博客的是 <a href="http://appbk.sinaapp.com/xmlrpc.php">http://appbk.sinaapp.com/xmlrpc.php</a>，打开会显示 <code>XML-RPC server accepts POST requests only.</code> 是为正常，否则就有可能是 url rewrite 的设置，让xmlrpc.php不能用了。这要修改 .htaccess  让 xmlrpc.php 正常。</li>
+<li>检查 你的博客网址 + xmlrpc.php，看看是否正常，比如说我的 Wordpress 博客的是 <a href="http://appbk.sinaapp.com/xmlrpc.php">http://appbk.sinaapp.com/xmlrpc.php</a>，打开会显示 <code>XML-RPC server accepts POST requests only.</code> 是为正常，否则就有可能是 url rewrite 的设置，让 xmlrpc.php 不能用了。这要修改 .htaccess  让 xmlrpc.php 正常。</li>
 </ol>
 
 <h3 id="toc_3">增加发布到 新浪博客、cnblogs、oschina 的博客服务的服务</h3>
 
 <p>点 Metaweblog API 这个按钮，如下图，必填的只有 帐号、密码、Publish URL。Publish URL 这个一般支持 Metaweblog API 的服务都会提供的。</p>
 
-<p><img src="media/14292279084701/14292306829254.jpg" alt=""/>￼￼￼</p>
+<p><img src="media/14292279084701/14292306829254.jpg" alt=""/></p>
 
 <p>下面说一下新浪博客、cnblogs、oschina 的 Publish URL。</p>
 
@@ -68,10 +125,10 @@
 
 <p>如下图红框处，你可以在 MWeb 分享按钮（右上角的第三个按钮）中找到所增加的发布服务。名称会显示 <code>Blog Name</code> 中设定的名称。</p>
 
-<p><img src="media/14292279084701/14292318507812.jpg" alt=""/>￼￼￼</p>
+<p><img src="media/14292279084701/14292318507812.jpg" alt=""/></p>
 
 <p>比如说我要发布到我的 Wordpress 博客，点 <code>oulvhai 的 Wordpress 博客</code>，如下图：<br/>
-<img src="media/14292279084701/14292325545410.jpg" alt=""/>￼￼￼</p>
+<img src="media/14292279084701/14292325545410.jpg" alt=""/></p>
 
 <p>要注意的时，有些博客服务是不支持上边的一些设置的，比如说 <code>Custom URL</code>、<code>Publish Date</code>、<code>Status</code> 等。设定好后，点 <code>Publish</code> 按钮就可以发布了。</p>
 
@@ -1998,91 +2055,6 @@ git push -u origin master
 <p><img src="media/14216489427773/Snip20150119_6.png" alt=""/>￼￼￼￼￼￼￼</p>
 
 <p><img src="media/14216489427773/Snip20150119_5.png" alt=""/>￼￼￼￼￼￼￼</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[游戏制作之路：游戏引擎选择、Mac下和Windows下UnrealEngine 4体验对比、文档及其他]]></title>
-    <link href="http://coderforart.com/unrealengine4-windows-mac.html"/>
-    <updated>2015-01-16T14:19:42+08:00</updated>
-    <id>http://coderforart.com/unrealengine4-windows-mac.html</id>
-    <content type="html"><![CDATA[
-<h2 id="toc_0">UnrealEngine 4和Unity3d的选择</h2>
-
-<p>订阅了UrealEngine4（UE4）开发者。我开始做网站用的是ASP.NET和C#，之后做网站虽然换用更方便的PHP（因为做的都是小网站）。我想说，做了长达7年的小网站就算我再水，但是C#我还是懂一些的，而Unity3d刚刚好最建议用的就是C#。C++我不懂，只在高中毕业后看了C++编程思想并把大部分例子都手打入电脑并运行。不极是在肖极Unity3d在移动端有大量成功的案例，文档非常好，视频教程也很全，研究的人也非常多，有问题很容易找到文案等等等等，简直是好得不能再好了！但是：UE4是开源的，《游戏引擎架构》里说游戏一般都用C++，我这次学是认真的！！作为一个有追求的人也必须选UE4等等！！最后我要说的是，这些都不是我选UE4的主要原因，真相是：Unity3D好贵！月付400多，不付就马上没有全功能的，全买更贵！UE4如果你不用最新的，你只要买一个月，之后都是免费的，全功能的。虽然这点钱对于真正做产品来说，不算什么，但是对于学习了说，不一样。反正做游戏也不单单是引擎的事，然后学会了一个引擎，再学另一个，或者也就是几天的事。</p>
-
-<span id="more"></span><!-- more -->
-
-<h2 id="toc_1">Mac OS X下下载和编译UnrealEngine 4</h2>
-
-<p>UE4在github中有三个版本，我直接下载release版本的.zip（因为我用git clone太慢了）。我下载的是4.6.1版。下载完成解压后右键setup.command打开，然后还会要下载大概2G左右的东西，这个下载的速度不错。然后再右键GenerateProjectFiles.command打开。等一会儿后就生成UE4.xcodeproj了。打开UE4.xcodeproj后，选择UE4Editor-Mac，然后build，发现我下载这个版本会出错。出错是这行：</p>
-
-<pre><code class="language-cpp">static bool GAllowApplePlatformSymbolication = PLATFORM_MAC &amp;&amp; IS_PROGRAM;
-</code></pre>
-
-<p>错误信息是：<code>Use of logical &#39;&amp;&amp;&#39; with constant operand</code>。<br/>
-我看不大懂，实在是找不到好办法，看意思他肯定是<code>true</code>，就改成：</p>
-
-<pre><code class="language-cpp">static bool GAllowApplePlatformSymbolication = true;//PLATFORM_MAC &amp;&amp; IS_PROGRAM;
-</code></pre>
-
-<p>然后就编译通过了。</p>
-
-<p>但是，我运行的时候，好慢好慢，然后xcode下打出来一堆东西，然后就挂掉了，没办法运行。。</p>
-
-<p>我去Epic打包好的地方下载一包试试。</p>
-
-<p>伤心了，还是一样错误，变成以下这样看看。。</p>
-
-<pre><code class="language-cpp">#if PLATFORM_MAC &amp;&amp; IS_PROGRAM
-static bool GAllowApplePlatformSymbolication = true;
-#else
-static bool GAllowApplePlatformSymbolication = false;
-#endif
-
-</code></pre>
-
-<p>编译过了，但是一样还是没办法运行。</p>
-
-<p>没办法了，试试4.5.1版本看看。<br/>
-下载后编译（方法跟4.6.1不大一样）。这次可以成功编译了。然后运行也没问题，但是好慢好慢好慢，好像我的rmbp15寸高配根本不大合适做这样的任务似的。新建项目xcode提示又出bug，我懒得管了，直接生成release版本的UE4Editor。应该会比debug版本的UE4Editor快很多吧。<del>先熟悉UE4Editor和学学Blueprints先了。C++什么的先不管先，因为太麻烦了，按照我编译后运行一下得要好久好久，估计10来分钟，如果全部编译，要大半个钟吧。。 如果改一下C++代码，还要编译后才能看到结果，那还得了。。 我直接不用学得了。（虽然可能不是这样，虽然Win下可能会快很多很多）</del> <strong>后来证明不是这样，然后如果用不到C++，UE4比想像中方便</strong></p>
-
-<p>话说我都编译好Release版后，然后去看 Getting Started，看到这页：<a href="https://docs.unrealengine.com/latest/INT/Engine/QuickStart/4/index.html">https://docs.unrealengine.com/latest/INT/Engine/QuickStart/4/index.html</a>，发现我编译这版没有Geometry！不得已我又下载了4.1版，又编译了，然后终于可以学习了。有图有真相！左边是4.1版！<br/>
-<img src="media/14213891828854/14214041748379.jpg" alt=""/>￼￼￼￼￼￼￼￼</p>
-
-<p>不得不说我耐心真好，编译好花时间 ╮(╯▽╰)╭  </p>
-
-<p><strong>注</strong> 后来发现4.5.1版只是换了名字，BSP 就是Geometry！╮(╯▽╰)╭  </p>
-
-<h2 id="toc_2">Windows下编译UnrealEngine 4</h2>
-
-<p>周未有点空，就开Windows挂着下载UE4，想试一下Window下的体验如何，因为UE4好像是Windows下优化极好的。</p>
-
-<p>先说一下我的机器供参考：CPU:e3-1230v2  GPU:gtx660 内存:8G SSD:128G。</p>
-
-<p>下载编译跟Mac差不多，时间上也差不多。Windows下编译4.6.1 完全没有任何出错。非常顺利！然后启动Debug版的Unreal Editor，比Mac下快很多，打开大场景也很快，很顺。试运行，很好，好得不能再好了！！但是好占空间，我随便试一下，下载三个Demo的游戏或场景，30多G空间就没了。 Mac下因为是512G所以没注意。</p>
-
-<h2 id="toc_3">Windows、Mac下UnrealEngine 4使用C++项目对比</h2>
-
-<p>再试了一下新建C++的项目看看。按 <a href="https://docs.unrealengine.com/latest/INT/Programming/QuickStart/index.html">https://docs.unrealengine.com/latest/INT/Programming/QuickStart/index.html</a> 这个文档加了几行C++代码，然后从开始编译到编译成功并打开Unreal Editor，大概1分钟左右。这并非不能接受。当然，这不能跟Unity3D用C#比，那才真正快。</p>
-
-<p>然后好奇再在Mac上试了一下（版本是4.5.1，因为4.6.1我编译不成功），新建C++项目，然后也按 <a href="https://docs.unrealengine.com/latest/INT/Programming/QuickStart/index.html">https://docs.unrealengine.com/latest/INT/Programming/QuickStart/index.html</a> 这个文档加了几行C++代码，想不到却出错了！版本不一样的原因，修正了一下，让他结果一样，然后从开始编译到编译成功并打开Unreal Editor，也是大概1分钟左右！这个结果让我惊喜了，看来是如果做场景小些的游戏，Mac下用UE4完全没问题！而我大概也是也只能是做场景小些的游戏（场景小，但是画面质量可以超高，UE4的画面比Unity3d好太多了），因为目标是丢上iPad、iPhone上玩的。上一张Mac下的图吧：</p>
-
-<p><img src="media/14213891828854/14215892261441.jpg" alt=""/>￼￼￼￼￼￼</p>
-
-<h2 id="toc_4">如果用不到C++，只用Blueprints使用UnrealEngine 4的简单方法</h2>
-
-<p>去 <a href="https://www.unrealengine.com/">https://www.unrealengine.com/</a> 登入后下载红线这个：<br/>
-<img src="media/14213891828854/14215898337076.jpg" alt=""/>￼￼￼￼￼</p>
-
-<p>下载后运行并登入，会自动下载4.6.1版的Unreal Editor，如下图，点Launch就可以了，还可以下载旧版本的Unreal Editor，如右边我就下载了4.5.1版的。╮(╯▽╰)╭  ，如果我是用不到C++我花这些时间到底在折腾什么？！！！</p>
-
-<p><img src="media/14213891828854/Snip20150118_4.png" alt="Snip20150118_4"/>￼￼￼￼￼</p>
-
-<h2 id="toc_5">关于UnrealEngine 4的文档和其他</h2>
-
-<p>之前说UE4文档不如Unity3d好，但是我仔细看了，也是相当全面的，学会大概不成问题，更何况youtube上还有大量的视频可以看。C++也不成问题，按《游戏引擎架构》中说的，游戏中用到的C++不会太复杂，太复杂大不了不做那种特性就好。所以引擎部分应该不会对我产生大的难度了。但是做游戏引擎只是一小部分，最最重要部分：内容和玩法！首先说内容，这部分要学画画和3D了，而学3D软件对我来说也不成问题，只是画画目前还没有任何比较靠普的路子能成，至于动画随便弄一下然后买本《动画师生存手册》看看到底要如何了，也没有太大把握。。玩法部分，随便弄弄应该可以。因为时间不多只有一年，所以几个东西要并行学习，边学边加上引擎综合考虑。大概是这样想法先。</p>
 
 ]]></content>
   </entry>

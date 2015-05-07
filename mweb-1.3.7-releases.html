@@ -68,7 +68,7 @@
 	article .entry-content{text-align: left;}
 	article .entry-content table th,article .entry-content table td{ padding: 4px;border-collapse: collapse; border:solid 1px #ddd;}
 	</style>
-
+	
 </head>
 
 
@@ -145,25 +145,25 @@
 
 <p>在 MWeb 中点菜单：<code>MWeb</code> - <code>Preferences</code> - <code>Publishing</code> 即可进入发布设置界面，如下：</p>
 
-<p><img src="media/14292279084701/14292295737706.jpg" alt=""/>￼￼￼</p>
+<p><img src="media/14292279084701/14292295737706.jpg" alt=""/></p>
 
 <h3 id="toc_2">增加发布到 Wordpress 的服务</h3>
 
 <p>点 Wordpress.org 这个按钮，如下图，由于 Wordpress 的远程发布网址可以由博客网址得知，所以只需要填入博客网址、帐号、密码即可。密码是存到 Keychain，所以可无需担心。<br/>
-<img src="media/14292279084701/14292301869922.jpg" alt=""/>￼￼￼</p>
+<img src="media/14292279084701/14292301869922.jpg" alt=""/></p>
 
 <p><strong>注意：</strong> 如果遇到 <code>validate</code> 不通过并提示 404 错误的话，目前有两个可能（感谢 <a href="http://weibo.com/u/1862562001">@iamliunian</a>）：</p>
 
 <ol>
 <li>可以查看 Wordpress 的设置里是否开启远程发布。位置是 <code>设置</code> - <code>撰写</code> - <code>远程发布</code> 并开启 <code>XML-RPC</code></li>
-<li>检查 你的博客网址 + xmlrpc.php，看看是否正常，比如说我的 Wordpress 博客的是 <a href="http://appbk.sinaapp.com/xmlrpc.php">http://appbk.sinaapp.com/xmlrpc.php</a>，打开会显示 <code>XML-RPC server accepts POST requests only.</code> 是为正常，否则就有可能是 url rewrite 的设置，让xmlrpc.php不能用了。这要修改 .htaccess  让 xmlrpc.php 正常。</li>
+<li>检查 你的博客网址 + xmlrpc.php，看看是否正常，比如说我的 Wordpress 博客的是 <a href="http://appbk.sinaapp.com/xmlrpc.php">http://appbk.sinaapp.com/xmlrpc.php</a>，打开会显示 <code>XML-RPC server accepts POST requests only.</code> 是为正常，否则就有可能是 url rewrite 的设置，让 xmlrpc.php 不能用了。这要修改 .htaccess  让 xmlrpc.php 正常。</li>
 </ol>
 
 <h3 id="toc_3">增加发布到 新浪博客、cnblogs、oschina 的博客服务的服务</h3>
 
 <p>点 Metaweblog API 这个按钮，如下图，必填的只有 帐号、密码、Publish URL。Publish URL 这个一般支持 Metaweblog API 的服务都会提供的。</p>
 
-<p><img src="media/14292279084701/14292306829254.jpg" alt=""/>￼￼￼</p>
+<p><img src="media/14292279084701/14292306829254.jpg" alt=""/></p>
 
 <p>下面说一下新浪博客、cnblogs、oschina 的 Publish URL。</p>
 
@@ -177,10 +177,10 @@
 
 <p>如下图红框处，你可以在 MWeb 分享按钮（右上角的第三个按钮）中找到所增加的发布服务。名称会显示 <code>Blog Name</code> 中设定的名称。</p>
 
-<p><img src="media/14292279084701/14292318507812.jpg" alt=""/>￼￼￼</p>
+<p><img src="media/14292279084701/14292318507812.jpg" alt=""/></p>
 
 <p>比如说我要发布到我的 Wordpress 博客，点 <code>oulvhai 的 Wordpress 博客</code>，如下图：<br/>
-<img src="media/14292279084701/14292325545410.jpg" alt=""/>￼￼￼</p>
+<img src="media/14292279084701/14292325545410.jpg" alt=""/></p>
 
 <p>要注意的时，有些博客服务是不支持上边的一些设置的，比如说 <code>Custom URL</code>、<code>Publish Date</code>、<code>Status</code> 等。设定好后，点 <code>Publish</code> 按钮就可以发布了。</p>
 
