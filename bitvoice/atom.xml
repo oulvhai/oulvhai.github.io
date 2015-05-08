@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[播客和文章 Demo]]></title>
+  <link href="http://coderforart.com/bitvoice/atom.xml" rel="self"/>
+  <link href="http://coderforart.com/bitvoice/"/>
+  <updated>2015-05-08T10:53:04+08:00</updated>
+  <id>http://coderforart.com/bitvoice/</id>
+  <author>
+    <name><![CDATA[]]></name>
+    
+  </author>
+  <generator uri="http://www.coderforart.com/">CoderForArt</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[音乐《梁祝》及 MWeb 静态博客功能增强的使用体验]]></title>
+    <link href="http://coderforart.com/bitvoice/14310491519394.html"/>
+    <updated>2015-05-08T09:39:11+08:00</updated>
+    <id>http://coderforart.com/bitvoice/14310491519394.html</id>
+    <content type="html"><![CDATA[
+<p>发现可以传普通音频，然后不放在播客分类即可。这样就不会也归类到 Apple 的播客 RSS 中了。下面我就传个音频做演示。</p>
+
+<p>方法是直接拖音频到编辑器，复制音频路径，我这里是：<code>media/14310491519394/%E6%A2%81%E7%A5%9D.mp3</code>。也可以点右上角第一个按钮，在 <code>Media</code> 这个 Tab 里点 <code>Copy Path</code> 得到。然后切到 <code>Extension</code> 这个 Tab，填一下资料即可。有些资料可以用右键音频文档，选 <code>Get Info</code> 得到，如右图。pubDate 如果不是播客文章，则可以不用填的。</p>
+
+<p><img src="media/14310491519394/14310506500205.jpg" alt=""/></p>
+
+<p>同样可以想到发布新一期播客文章也是非常简单的，只需要填一下 <code>Extension</code> Tab 的相关项目就可以了。唯一比较麻烦一点的是 pubDate 的格式。这个 MWeb 应该是不会增加支持的，所以要自己算了。</p>
+
+<p>下面的图是梁祝这首歌自带的封面。得到这封面也很简单，在 iTunes 里右键歌曲，选 <code>Get Info</code> 再选 <code>Artwork</code> 这个 Tab，然后选择里面的图片 <code>CMD + C</code> 复制，再切到 MWeb <code>CMD + V</code> 粘贴即可。</p>
+
+<p><img src="media/14310491519394/14310492187792.jpg" alt=""/></p>
+
+<p>另外说一下：Apple 规格的 RSS 输出网址为：<a href="http://coderforart.com/bitvoice/podcast-atom.xml">http://coderforart.com/bitvoice/podcast-atom.xml</a>。</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[47. 你是如何去按 Ctrl 键的？]]></title>
+    <link href="http://coderforart.com/bitvoice/keyboard-ctrl.html"/>
+    <updated>2015-05-07T20:41:57+08:00</updated>
+    <id>http://coderforart.com/bitvoice/keyboard-ctrl.html</id>
+    <content type="html"><![CDATA[
+<h2 id="toc_0">本期要点</h2>
+
+<p>本期节目由郝海龙和特邀嘉宾叶小舟（Timothy “Tim” Ye）主持。Tim 是一位机械键盘的重度用户，和我们分享了一些关于键盘的事实和传说。</p>
+
+<ul>
+<li>机械键盘–维基百科</li>
+<li>Keyboard Technology: 英文维基百科页面。里面有各种键盘的介绍。</li>
+<li>静电容键盘 HHKB：Happy Hacking Keyboard 官网 / 维基百科</li>
+<li>机械键盘品牌 Cherry 官网</li>
+<li>机械键盘品牌 Filco 官网</li>
+<li>键帽 Keycap–维基百科</li>
+<li>为什么很少有蓝牙机械键盘？</li>
+<li>Cherry G80-3000</li>
+<li>Filco Minila Air</li>
+<li>我们大脑的思维是否能够跟上我们打字机的速度？</li>
+<li>Qwerty 与 Dvorak （德沃夏克）键盘的传说</li>
+<li>《离线·黑客》</li>
+<li>Vim: the editor</li>
+<li>matis keyboards</li>
+<li>现在的键盘相当于过去的笔</li>
+<li>为什么好像高级键盘都是给程序员设计的？</li>
+<li>专门为法国法语设计的 AZERTY 键盘</li>
+</ul>
+
+<h2 id="toc_1">人物简介</h2>
+
+<p>郝海龙，诗人，《比特新声》创始人，《动物庄园》译者。</p>
+
+<p>叶小舟（Timothy），八零后，工科男，大学主修计算机专业，毕业后一直从事软件开发工作，也就是传说中的程序员。低调安静的外表下掩藏着一颗躁动不安的心。喜欢折腾和DIY，机械键盘重度使用者。微博：@TimothyYe 博客：<a href="http://xiaozhou.net">http://xiaozhou.net</a></p>
+
+<p>官方网站及相关信息：www.bitvoice.xyz <br/>
+Music from Jim Guthrie</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[46. 「我白天是一个 iOS 开发者，晚上是一个 Mac 开发者。」]]></title>
+    <link href="http://coderforart.com/bitvoice/46-ios-mac-dev.html"/>
+    <updated>2015-05-07T20:17:55+08:00</updated>
+    <id>http://coderforart.com/bitvoice/46-ios-mac-dev.html</id>
+    <content type="html"><![CDATA[
+<h2 id="toc_0">本期要点</h2>
+
+<p>本期节目是主播郝海龙和特邀嘉宾柳毅的对谈。柳毅是一位 Mac / iOS 开发者，和我们分享了他的应用以及开发应用背后的一些故事。</p>
+
+<ul>
+<li>柳毅开发的四款应用：
+
+<ul>
+<li>SalesX: 方便开发者查看 App 每日下载量和收入的工具。</li>
+<li>Pinbox: 小而美的 Pinboard.in 第三方客户端。</li>
+<li>知了: 简洁的知乎日报客户端。</li>
+<li>BitNow（已下架）: 比特币行情查看工具。</li>
+</ul></li>
+<li>其他 Pinboard.in 第三方客户端：Shiori, Delibar, Spillo</li>
+<li>Reddit</li>
+<li>我们的生活是否需要 Pinboard</li>
+<li>柳毅为什么会开发一款比特币应用</li>
+<li>Sketch: 一款矢量图绘制应用</li>
+<li>Marked: Markdown 预览应用</li>
+<li>Brett Terpstra 的博客</li>
+<li>柳毅走上 Mac 开发道路的契机</li>
+<li>在国内做独立开发者很难养活自己</li>
+<li>MacUpdate: Mac App 第三方商店</li>
+<li>Product Hunt: 热门新应用风向标</li>
+<li>OS X 和 iOS 开发的区别</li>
+<li>GhostTile: Hide your running applications from Dock like a charm</li>
+<li>手表真是漂亮</li>
+</ul>
+
+<h2 id="toc_1">人物简介</h2>
+
+<p>郝海龙，诗人，《比特新声》创始人，《动物庄园》译者。 <br/>
+柳毅，一个 Mac / iOS 开发者，热爱给自己写各种 App 同时方便别人。微博：@im61，twitter：@liuyi0922。</p>
+
+<p>官方网站及相关信息：www.bitvoice.xyz <br/>
+Music from Jim Guthrie</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[MWeb 1.4 新功能介绍二：静态博客功能增强]]></title>
+    <link href="http://coderforart.com/bitvoice/mweb-1.4-static-blog-extension.html"/>
+    <updated>2015-05-07T14:46:52+08:00</updated>
+    <id>http://coderforart.com/bitvoice/mweb-1.4-static-blog-extension.html</id>
+    <content type="html"><![CDATA[
+<p>MWeb 比较有特色的是一键生成静态博客功能，然后从 MWeb 最开始规划要做静态博客生成功能时，我就希望 MWeb 的静态博客生成功能在易用的同时，还要有很强大的扩展性。</p>
+
+<p>比如说能自己增加网站公告，这个公告可以随时更换和取消。再比如说能自己为网站增加广告，而且可以增加多个广告位，google 的或者自定的广告都可以。这些之前都可以通过修改模板解决，但是有些是解决不了的：比如说把文章列表做成像 theverge <a href="http://www.theverge.com/reviews">http://www.theverge.com/reviews</a> 的页的效果，就是列表中有设定的特色图片，有自定的简介，有评分，有价格时会显示价格等。比如说设定 SEO 的一些信息，设定分享到 Facebook 的一些信息。又比如说播客类的网站，要生成 Apple 规格的 RSS。</p>
+
+<p>1.4 版的静态博客增强就是解决这些问题的。我一直考虑如何介绍这个功能，然后因为之前比特新声的主播之一 <a href="http://weibo.com/haohailong">郝海龙</a> 随意问了一下是否支持生成 Podcast 的 RSS。所以我想来想去，还是介绍用 MWeb 自带的 greyshade 网站模板做一个可以写博客又可以做为播客的新模板好了。</p>
+
+<p>这个新模板的 Demo 网址是：<a href="http://coderforart.com/bitvoice/">http://coderforart.com/bitvoice/</a>。一般情况下只要看这个网址体验一下，并看一下《音乐《梁祝》及 MWeb 静态博客功能增强的使用体验》这篇文章即可，因为下边的内容是跟自定模板有关。</p>
+
+<span id="more"></span><!-- more -->
+
+<p>下面正式开始做这个新模板。<br/>
+首先在 MWeb 中新增一个静态网站分类，名为比特新声。然后设置如下，我是想放在我的博客中做 Demo，所以网址为：<a href="http://coderforart.com/bitvoice/">http://coderforart.com/bitvoice/</a>。评论和分类代码、GA 代码都跟 coderforart 一样。</p>
+
+<p><img src="media/14309812124046/14309891268944.jpg" alt=""/></p>
+
+<p>点上图中最下边的 <code>Advanced Settings</code> 后会出来如下图的网站扩展设置。</p>
+
+<p><img src="media/14309812124046/14309896174085.jpg" alt=""/></p>
+
+<p>一开始打开时，<code>Site Setting</code> 这个 Tab 是没有内容的，可以看到 MWeb 支持整个网站的字段扩展（Site Extension）和网站所属文档的字段扩展（Document Extension）。</p>
+
+<p>如下图，我在 <code>Site Extension</code> 这个 Tab 根据 <a href="https://www.apple.com/itunes/podcasts/specs.html">Apple Podcast RSS</a> 自定了一些必要字段，然后切到 <code>Site Setting</code> 这个 Tab，就会看到按照自定的字段生成可以输入的文本框了。</p>
+
+<p><img src="media/14309812124046/14309917234549.jpg" alt=""/></p>
+
+<p>如右边，我可以填入相关文案。然后如果有图片怎么办，简单的办法是打开比特新声分类内的一个文档，直接把图拖入编辑器中，从生成的 Markdown 语法中取其地址贴上就好。如上图右边的图中的 <code>Fb Image</code> 字段。</p>
+
+<p>然后我也在 <code>Document Extension</code> 这个 Tab 也根据 <a href="https://www.apple.com/itunes/podcasts/specs.html">Apple Podcast RSS</a> 自定了一些必要字段，这些字段可以点软件右上角的设置按钮，并点第三个 Tab <code>Extension</code> 就能看到了按自定字段生成的可输入文本框了，如图。</p>
+
+<p><img src="media/14309812124046/14309923959577.jpg" alt=""/></p>
+
+<p>这样的话，如果想新增新一期播客，就点开第三个 <code>Extension</code> Tab，填入一些这一期播客的相关信息即可。如果新增的文档只是普通文章，则可以不用管扩展的信息。</p>
+
+<p>下图是关于 <code>Base</code> Tab 和 <code>Media</code> Tab 的情况。</p>
+
+<p><img src="media/14309812124046/14309931949625.jpg" alt=""/></p>
+
+<p><code>Media</code> Tab 会列出所有你引入到当前文档中的图片、附件等等。比如要增加一张某期的播客的封面图片，文章里用不到，但是 <code>Extension</code> Tab 里要填入，就可以先把图拖入编辑器内，然后删除，再点 <code>Media</code> Tab 就会看到所拖入的图了，点 <code>Copy Path</code> 然后贴到 <code>Extension</code> Tab 的某字段即可。</p>
+
+<p>字段设置好了，下面要开始修改 greyshade 网站模板了。目前看来只需要为属于播客的文章增加一个播放器，让它可以播放 MP3。然后修改 RSS，让 RSS 按 Apple 播客的格式即可。</p>
+
+<p>以下为修改模板的内容，建议先参考 <a href="http://zh.mweb.im/custom-site-theme-detail-zh.html">自定网站或博客主题简单说明</a>。</p>
+
+<p>首先增加播放器，我随便找了一下，看到 <a href="http://www.schillmania.com/projects/soundmanager2/demo/bar-ui/">http://www.schillmania.com/projects/soundmanager2/demo/bar-ui/</a> 这个播放器不错，所以就决定用这个了，首先复制 greyshade 模板，并重命名为：podcast-greyshade。把 soundmanager 的相关代码放到 asset/soundmanager 中。然后打开 header.html 文档，在上面增加 soundmanager2 播放器的代码，大概是这样：</p>
+
+<pre><code class="language-js">&lt;link href=&quot;asset/soundmanager/css/bar-ui.css&quot; media=&quot;screen, projection&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;asset/soundmanager/soundmanager2-jsmin.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;asset/soundmanager/bar-ui.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+soundManager.setup({
+  preferFlash: false,
+  onready: function() {
+
+  }
+});
+&lt;/script&gt;
+</code></pre>
+
+<p>因为我需要在文章列表和单篇文章都支持播放功能，所以为 category.html 和 post.html 增加播放支持。代码大概如下（我只选关键代码）。</p>
+
+<pre><code class="language-html">{% if post.ext_enclosureURL.length %}
+    &lt;div class=&quot;sm2-bar-ui compact full-width&quot;&gt;
+        ....
+        &lt;div class=&quot;sm2-inline-duration&quot;&gt;{{ post.ext_itunes_duration }}&lt;/div&gt;
+                      
+        &lt;div class=&quot;sm2-playlist-wrapper&quot;&gt;
+            &lt;ul class=&quot;sm2-playlist-bd&quot;&gt;
+             &lt;li&gt;&lt;a href=&quot;{{ post.ext_enclosureURL }}&quot;&gt;&lt;b&gt;{{ post.ext_itunes_author }}&lt;/b&gt; - {{ post.ext_title }}&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/div&gt;
+        ...
+        &lt;/div&gt;
+    {% /if %}
+</code></pre>
+
+<p>下面解释一下上面这段代码。<br/>
+MWeb 中 <code>Site Setting</code> 设置的所有值会传到所有模板页，比如说要输出上面设置的 SEO Des 的值，用 <code>{{ext_seo_des}}</code> 即可。可以看到，规则是： <code>ext_ + variable Name</code> 。然后用软件右上角第一个按钮设置的文档中的 <code>Extension</code> 的值，会传到所有 <code>文档对象变量</code> 中，如上面代码，文档对象变量为 <code>post</code>，访问规则为 <code>post.ext_ + variable Name</code>。 然后请注意 <code>{% if post.ext_enclosureURL.length %} {% /if %}</code> 这种写法，这是为了判断这文章是否有设置了播客的相关值，有设置，说明这文章为播客文章。</p>
+
+<p>下面介绍一下如何增加输出 Apple 支持的播客的 RSS 格式。 </p>
+
+<p>MWeb 一般情况下只生成全站文章的 RSS，名字为 atom.xml。然后 MWeb 为了满足扩展需要，增加了另外的规则，为：如果网站模板中存在有 <code>分类的 HTML File Name 的值 + -atom.xml</code> 这样的模板文档，则会为这个分类用 <code>分类的 HTML File Name 的值 + -atom.xml</code> 这个模板生成名为  <code>分类的 HTML File Name 的值 + -atom.xml</code> 的 RSS。</p>
+
+<p>如上面，我增加了两个子分类：文章和播客。然后我设置了播客子分类的 <code>HTML File Name</code> 为 <code>podcast</code>。然后我在网站模板中也增加了名为 <code>podcast-atom.xml</code> 的模板，下面是这个模板的内容。</p>
+
+<pre><code class="language-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;rss xmlns:itunes=&quot;http://www.itunes.com/dtds/podcast-1.0.dtd&quot; version=&quot;2.0&quot;&gt;
+    &lt;channel&gt;
+        &lt;title&gt;&lt;![CDATA[{{ siteName }}]]&gt;&lt;/title&gt;
+        &lt;link&gt;{{ siteURL }}&lt;/link&gt;
+        &lt;language&gt;zh-CN&lt;/language&gt;
+        {% if ext_copyright.length %}
+            &lt;copyright&gt;{{ ext_copyright }}&lt;/copyright&gt;
+        {% /if %}
+        {% if ext_itunes_subtitle.length %}
+            &lt;itunes:subtitle&gt;{{ ext_itunes_subtitle }}&lt;/itunes:subtitle&gt;
+        {% /if %}
+        {% if ext_itunes_author.length %}
+            &lt;itunes:author&gt;{{ ext_itunes_author }}&lt;/itunes:author&gt;
+        {% /if %}
+        {% if ext_itunes_summary.length %}
+            &lt;itunes:summary&gt;{{ ext_itunes_summary }}&lt;/itunes:summary&gt;
+        {% /if %}
+        {% if ext_itunes_description.length %}
+            &lt;description&gt; {{ ext_itunes_description }} &lt;/description&gt;
+        {% /if %}
+        &lt;itunes:owner&gt;
+            {% if ext_itunes_author.length %}&lt;itunes:name&gt;{{ ext_itunes_author }}&lt;/itunes:name&gt;{% /if %}
+            {% if ext_itunes_email.length %}&lt;itunes:email&gt;{{ ext_itunes_email }}&lt;/itunes:email&gt;{% /if %}
+        &lt;/itunes:owner&gt;
+        {% if ext_itunes_image.length %}
+            &lt;itunes:image href=&quot;{{ ext_itunes_image }}&quot; /&gt;
+        {% /if %}
+        {% if ext_itunes_category.length %}
+            &lt;itunes:category text=&quot;{{ ext_itunes_category }}&quot;/&gt;
+        {% /if %}
+        {% for p in posts %}
+            {% if p.ext_enclosureURL.length %}
+                &lt;item&gt;
+                    &lt;title&gt;{{ p.ext_title }}&lt;/title&gt;
+                    &lt;itunes:author&gt; {{ p.ext_itunes_author }}&lt;/itunes:author&gt;
+                    &lt;itunes:subtitle&gt; {{ p.ext_itunes_subtitle }} &lt;/itunes:subtitle&gt;
+                    &lt;itunes:summary&gt;&lt;![CDATA[ 
+                        {% if p.ext_itunes_summary.length %} 
+                            {{ p.ext_itunes_summary }} 
+                        {% else %}
+                            {{ p.content }}
+                        {% /if %} ]]&gt;
+                    &lt;/itunes:summary&gt;
+                    &lt;itunes:image href=&quot;{{ p.ext_itunes_image }}&quot; /&gt;
+                    &lt;enclosure url=&quot;{{ p.ext_enclosureURL }}&quot;  length=&quot;{{ p.ext_enclosure_length }}&quot;   type=&quot;{{ p.ext_enclosure_type }}&quot;  /&gt;
+                    &lt;guid&gt;{{ p.ext_guid }}&lt;/guid&gt;
+                    &lt;pubDate&gt;{{ p.ext_pubDate }}&lt;/pubDate&gt;
+                    &lt;itunes:duration&gt;{{ p.ext_itunes_duration }}&lt;/itunes:duration&gt;
+                &lt;/item&gt;
+            {% /if %}
+        {% /for %}
+    &lt;/channel&gt;
+&lt;/rss&gt;
+</code></pre>
+
+<p>至此，podcast-greyshade 这个新模板已经完成了，增加了播放器支持和把所有播客文章生成为 Apple 播客格式的 RSS。</p>
+
+<p>podcast-greyshade 这个网站模板已传到 github：<a href="https://github.com/oulvhai/MWeb-Themes/tree/master/podcast-greyshade">https://github.com/oulvhai/MWeb-Themes/tree/master/podcast-greyshade</a><br/>
+使用 podcast-greyshade 这个网站模板的 Demo 的网址：<a href="http://coderforart.com/bitvoice/">http://coderforart.com/bitvoice/</a>。我只增加了两篇播客文章。然后 Apple 规格的 RSS 输出网址为：<a href="http://coderforart.com/bitvoice/podcast-atom.xml">http://coderforart.com/bitvoice/podcast-atom.xml</a></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[MWeb 1.4 新功能介绍一：引入文件夹到 MWeb 中管理，支持 Octpress、Jekyll 等静态博客拖拽插入图片和实时预览]]></title>
+    <link href="http://coderforart.com/bitvoice/mweb-1.4-add-floder-octpress-support.html"/>
+    <updated>2015-05-07T09:56:51+08:00</updated>
+    <id>http://coderforart.com/bitvoice/mweb-1.4-add-floder-octpress-support.html</id>
+    <content type="html"><![CDATA[
+<p>之前在 MWeb 中打开非文档库中的 Markdown 文档，如果文档中有引用到本机图片，是没办法在 MWeb 中显示出来和预览的。这是因为 Apple 规定在 Mac App Store（MAS） 上的软件，都不能对软件自己的沙箱之外的文档进行任何操作，连读取都不能，除非用户明确授权。而用户授权的方式是使用打开、保存对话框。比如说你用 MWeb 打开一个 Markdown 文档，那么 MWeb 就能得到读写这个文档的权限。再比如说你用 MWeb 导出为 HTML 功能，在保存为对话框中选择一个要导出到的文件夹，那么 MWeb 就能得到读写这个文件夹的权限。</p>
+
+<p>正因为这个原因，所以，一般情况下，如果一个软件有 MAS 版，都建议用 MAS 版，特别是国内大厂的软件，即使功能上少了点。</p>
+
+<p>这次 1.4 版新增可以引入文件夹到 MWeb 中管理的功能，就是为了解决用 MWeb 打开非文档库中的 Markdown 文档无法用拖拽和粘贴插入图片，预览时无法显示引用的本机图片的问题。然后 1.4 版还对 Octpress、Jekyll 等静态博客进行了优化。在用 MWeb 编辑 Octpress、Jekyll 的 Markdown 文档时，也可以在编辑器中拖拽或粘贴插入图片并显示在编辑器中和进行实时预览了。</p>
+
+<p>特别说明的是：1.4 版的实时预览增加了同步滚动功能！然后我觉得目前同步滚动功能是相当好用了，所以在这里特别说明一下。</p>
+
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_0">MWeb 引入文件夹功能介绍</h2>
+
+<p>为了方便使用引入文件夹功能，MWeb 的外部模式新增了一个快捷键：<code>CMD + E</code>。任何情况下按 <code>CMD + E</code> 即可打开外部模式，在外部模式中就可以看到所有引入的文件夹了。同样提示一下 MWeb 的文档库模式的快捷键是：<code>CMD + L</code>。如果你不喜欢用快捷键，也可以用菜单： <code>View</code> - <code>Open External</code> 打开外部模式。</p>
+
+<p>点软件左下方的 <code>+</code> - <code>Add External Source...</code>，然后在对话框中选择要引入到 MWeb 的文件夹，再点 <code>Choose</code> 即可。还有更多的设置如下图。</p>
+
+<p><img src="media/14309638110247/14309679087614.png" alt=""/></p>
+
+<p>引入后，在最左边那栏选择文件夹，中间那栏则会显示该文件夹下的 Markdown 文档。如下图显示，引入后的文档可以方便地拖拽插入图片和附件，下图是增加了一个 MP3 和一张图。然后需要说一下的是，点击软件的标题栏可以修改文档名称和为文档增加 Tags，如下图。</p>
+
+<p><img src="media/14309638110247/14309690743597.png" alt=""/></p>
+
+<p>然后实时预览、导出为HTML/PDF、发布到 Wordpress 等文档库中可以用的一些功能在外部模式也是可以使用的。同样，发布到 Wordpress、新浪博客等支持 Metaweblog API 的服务时，文档中的图片也是会一起发布的。</p>
+
+<h2 id="toc_1">对 Octpress、Jekyll 等静态博客优化介绍</h2>
+
+<p>如上边所写，MWeb 引入的文件夹的 Markdown 文档插入图片的保存位置设置有两个选择：Relative 和 Absolute。</p>
+
+<p>Octpress、Jekyll 等静态博客因为可以自定像 <code>http://域名/2015/3/the-blog-post/</code> 这样的网址，所以在增加图片时，都是用 <code>/images/pic.jpg</code> 这样的绝对路径。然后图片要放在 <code>source/images</code> 文件夹下。</p>
+
+<p>正因为这个原因，引入 Octpress 等静态博客的文件夹到 MWeb 时，请引入 <code>source</code> 文件夹。引入后你可以修改 <code>Display Name</code> 来标识。<strong>最重要一点</strong>，<code>Media Save Path</code> 请选择 <code>Absolute</code>。<br/>
+Octpress 的文档一般都在 <code>_posts</code> 这个资料夹下，在 MWeb 最左边那栏选择 <code>_posts</code> 文件夹，在中间那栏选择要编辑的文档即可。这时的文档已经是支持拖拽插入图片和实时预览了。然后无论你编辑 <code>source</code> 下的那个文档，你所插入的图片都会保存在 <code>source</code> 下的你在 <code>Media Floder Name</code> 中设置的文件夹下。 </p>
+
+<p>如果要新增文档，你可以用 MWeb 中的新增文档功能（点软件中间那栏搜寻框右边的新增按钮），也可以用 Octpress 等所带的命令行新增文档（推荐）。你用命令行新增后，MWeb 会在列表中自动显示你新增的文档。然后删除文档、新增文件夹等，也会自动更新显示的，总之 MWeb 能侦测到你引入的文件夹的内容的变化而自动更新显示。所以 MWeb 没有做 <code>刷新</code> 这个功能。</p>
+
+<p>引入 Otcpress 的 <code>source</code> 文件夹的属性设置、新增附件、图片效果，如图：<br/>
+<img src="media/14309638110247/14309715741257.png" alt=""/></p>
+
+<p>在 MWeb 中实时预览，MWeb 会对 Otcpress Markdown 文档中的 Meta 设置转成代码，如图：<br/>
+<img src="media/14309638110247/14309717157125.png" alt=""/></p>
+
+<p>用 Octpress 的网站预览功能，在 Safari 中查看的效果，如图：<br/>
+<img src="media/14309638110247/14309719918323.png" alt=""/></p>
+
+<p>其他如 hexo、Farbox 等引入 MWeb 中进行管理我想也差不多，不再多介绍了。引入文件夹比用 MWeb 文档库模式好的地方是同步和协作都比较方便。然后说明一下 MWeb 1.4 版现在还没有提交到 MAS 的，我还要多测试几天才会提交。所以看到这篇文章的朋友，如果有什么的建议，可以跟我说，这样就可以及时在提交前改进了。</p>
+
+<p>然后 1.4 版还对 MWeb 静态博客功能进行了增强，我也正在考虑介绍文章怎么写，初步计划是写两篇，一篇是介绍功能，一篇是再做一个生成 Apple 播客 RSS 的例子。最晚的话，明天应该会把文章发出来。</p>
+
+]]></content>
+  </entry>
+  
+</feed>
