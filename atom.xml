@@ -4,7 +4,7 @@
   <title><![CDATA[Coder For Art]]></title>
   <link href="http://coderforart.com/atom.xml" rel="self"/>
   <link href="http://coderforart.com/"/>
-  <updated>2015-05-07T21:33:55+08:00</updated>
+  <updated>2015-05-08T10:55:09+08:00</updated>
   <id>http://coderforart.com/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -25,7 +25,7 @@
 
 <p>1.4 版的静态博客增强就是解决这些问题的。我一直考虑如何介绍这个功能，然后因为之前比特新声的主播之一 <a href="http://weibo.com/haohailong">郝海龙</a> 随意问了一下是否支持生成 Podcast 的 RSS。所以我想来想去，还是介绍用 MWeb 自带的 greyshade 网站模板做一个可以写博客又可以做为播客的新模板好了。</p>
 
-<p>这个新模板的 Demo 网址是：<a href="http://coderforart.com/bitvoice/">http://coderforart.com/bitvoice/</a>。一般情况下只要看这个网址体验一下，并看一下《音乐《梁祝》及 MWeb 静态博客功能增强的使用体验》这篇文章即可，因为下边的内容是跟自定模板有关。</p>
+<p>这个新模板的 Demo 网址是：<a href="http://coderforart.com/bitvoice/">http://coderforart.com/bitvoice/</a>，Podcast RSS 为：<a href="http://coderforart.com/bitvoice/podcast-atom.xml">http://coderforart.com/bitvoice/podcast-atom.xml</a>。 一般情况下只要到这个网址体验一下，并看一下《音乐《梁祝》及 MWeb 静态博客功能增强的使用体验》这篇文章即可，因为下边的内容是跟自定模板有关。</p>
 
 <span id="more"></span><!-- more -->
 
