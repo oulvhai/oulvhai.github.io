@@ -4,7 +4,7 @@
   <title><![CDATA[播客和文章 Demo]]></title>
   <link href="http://coderforart.com/bitvoice/atom.xml" rel="self"/>
   <link href="http://coderforart.com/bitvoice/"/>
-  <updated>2015-05-08T10:53:04+08:00</updated>
+  <updated>2015-05-08T11:11:31+08:00</updated>
   <id>http://coderforart.com/bitvoice/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -19,19 +19,21 @@
     <updated>2015-05-08T09:39:11+08:00</updated>
     <id>http://coderforart.com/bitvoice/14310491519394.html</id>
     <content type="html"><![CDATA[
-<p>发现可以传普通音频，然后不放在播客分类即可。这样就不会也归类到 Apple 的播客 RSS 中了。下面我就传个音频做演示。</p>
+<p>发现可以传普通音频，下面我就传个音频做演示。</p>
 
-<p>方法是直接拖音频到编辑器，复制音频路径，我这里是：<code>media/14310491519394/%E6%A2%81%E7%A5%9D.mp3</code>。也可以点右上角第一个按钮，在 <code>Media</code> 这个 Tab 里点 <code>Copy Path</code> 得到。然后切到 <code>Extension</code> 这个 Tab，填一下资料即可。有些资料可以用右键音频文档，选 <code>Get Info</code> 得到，如右图。pubDate 如果不是播客文章，则可以不用填的。</p>
+<p>方法是直接拖音频到编辑器，复制音频路径，我这里是：<code>media/14310491519394/%E6%A2%81%E7%A5%9D.mp3</code>。也可以点右上角第一个按钮，在 <code>Media</code> 这个 Tab 里点 <code>Copy Path</code> 得到。然后切到 <code>Extension</code> 这个 Tab，填一下资料即可。有些资料可以用右键音频文档，选 <code>Get Info</code> 得到，如右图。</p>
 
 <p><img src="media/14310491519394/14310506500205.jpg" alt=""/></p>
 
-<p>同样可以想到发布新一期播客文章也是非常简单的，只需要填一下 <code>Extension</code> Tab 的相关项目就可以了。唯一比较麻烦一点的是 pubDate 的格式。这个 MWeb 应该是不会增加支持的，所以要自己算了。</p>
+<p>可以到发布新一期播客文章也是非常简单的，只需要填一下 <code>Extension</code> Tab 的相关项目就可以了。唯一比较麻烦一点的是 pubDate 的格式。这个 MWeb 应该是不会增加支持的，所以要自己算了。</p>
+
+<p>另外说一下：Apple 规格的 RSS 输出网址为：<a href="http://coderforart.com/bitvoice/podcast-atom.xml">http://coderforart.com/bitvoice/podcast-atom.xml</a>。</p>
+
+<p><strong>重要更新：</strong> 我上传测试后发现原来 Apple RSS 的格式所填的图片、音频都必须用绝对地址，不能用相对的 <code>media/14310491519394/%E6%A2%81%E7%A5%9D.mp3</code> 这种，要填入 <code>http://coderforart.com/bitvoice/media/14310491519394/%E6%A2%81%E7%A5%9D.mp3</code> 完整才行。</p>
 
 <p>下面的图是梁祝这首歌自带的封面。得到这封面也很简单，在 iTunes 里右键歌曲，选 <code>Get Info</code> 再选 <code>Artwork</code> 这个 Tab，然后选择里面的图片 <code>CMD + C</code> 复制，再切到 MWeb <code>CMD + V</code> 粘贴即可。</p>
 
 <p><img src="media/14310491519394/14310492187792.jpg" alt=""/></p>
-
-<p>另外说一下：Apple 规格的 RSS 输出网址为：<a href="http://coderforart.com/bitvoice/podcast-atom.xml">http://coderforart.com/bitvoice/podcast-atom.xml</a>。</p>
 
 ]]></content>
   </entry>
