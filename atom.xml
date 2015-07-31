@@ -4,7 +4,7 @@
   <title><![CDATA[Coder For Art]]></title>
   <link href="http://coderforart.com/atom.xml" rel="self"/>
   <link href="http://coderforart.com/"/>
-  <updated>2015-07-24T10:39:39+08:00</updated>
+  <updated>2015-07-31T15:56:40+08:00</updated>
   <id>http://coderforart.com/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -12,6 +12,48 @@
   </author>
   <generator uri="http://www.coderforart.com/">CoderForArt</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[把 MWeb Lite 的文档库文档和数据搬到 MWeb 正式版中]]></title>
+    <link href="http://coderforart.com/move-lite-data-to-mweb.html"/>
+    <updated>2015-07-31T15:28:02+08:00</updated>
+    <id>http://coderforart.com/move-lite-data-to-mweb.html</id>
+    <content type="html"><![CDATA[
+<p>MWeb Lite 版的文档库中的文档要搬到 MWeb 正式版中，如果 Lite 版的文档中没有图片或者只有少量图片，可以用导入导出为 Markdown 的方法。</p>
+
+<p>否则的话请用以下方式（注意下面这个方法会将 MWeb 正式版的所有内容都换为 Lite 版）：</p>
+
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_0">1. 打开 Lite 版文档库文档所在的文件夹</h2>
+
+<p><img src="media/14383276824570/14383283373250.jpg" alt=""/></p>
+
+<p>如上图，选择 Lite 版文档库中的任何一篇文章，右键标题栏，从图中可以看到这个文档的保存位置，选择 <code>MWeb</code> 并点击，会打开 Lite 版文档库中的文档所保存的位置，会打开如下图的 Finder 窗口：<br/>
+<img src="media/14383276824570/14383286526093.jpg" alt=""/><br/>
+请注意上图中选中的 <code>LocalData</code> 文件夹，文档库中的所有数据都在这里。</p>
+
+<h2 id="toc_1">2. 打开 MWeb 正式版文档库文档所在的文件夹</h2>
+
+<p><img src="media/14383276824570/14383284793437.jpg" alt=""/></p>
+
+<p>如下图，同样选择 <code>MWeb</code> 并点击就可以了，会打开如下图的 Finder 窗口：<br/>
+<img src="media/14383276824570/14383287121781.jpg" alt=""/><br/>
+请注意上图中选中的 <code>LocalData</code> 文件夹，文档库中的所有数据都在这里。</p>
+
+<h2 id="toc_2">3. 搬移 Lite 版的数据到 MWeb 正式版中</h2>
+
+<p><strong>重要：</strong>下面的操作前，请一定要先备份好 MWeb 正式版的 <code>LocalData</code> 文件夹。</p>
+
+<ol>
+<li>退出 Lite 版和正式版 App，注意是退出 <code>CMD + Q</code>。 </li>
+<li>要搬移 Lite 版的数据到正式版中，非常简单，就是将 Lite 版的 <code>LocalData</code> 文件夹换到正式版中即可。所以就是删除正式版的 <code>LocalData</code> 文件夹，然后把 Lite 版的 <code>LocalData</code> 文件夹复制进来。</li>
+<li>重新启动 MWeb 正式版。</li>
+<li>搬移完成！</li>
+</ol>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[MWeb 1.6 发布！Dark Mode、全文搜寻、发布到Wordpress、Evernote 等支持更新、编辑/预览视图模式等]]></title>
@@ -2089,56 +2131,6 @@ git push -u origin master
 <p><strong>2/3更新</strong> FTP上传可以看看这篇 <a href="aliyun-net-cn-free-web-host-express.html">万网（阿里云）免费虚拟主机体验</a></p>
 
 <p><strong>2/27更新</strong> <a href="use-goodsync-sync-mweb-static-websites-zh.html">使用GoodSync把MWeb生成的静态网站自动同步到FTP、SFTP、WebDAV、Amazon S3等</a></p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[游戏制作之路：一个对我来说可实现的High-end的Mac/iOS游戏制作大概计划]]></title>
-    <link href="http://coderforart.com/make-a-simple-high-end-mac-ios-game.html"/>
-    <updated>2015-01-21T10:05:07+08:00</updated>
-    <id>http://coderforart.com/make-a-simple-high-end-mac-ios-game.html</id>
-    <content type="html"><![CDATA[
-<p>对于学习一些东西，我比较习惯任务驱动式的学习，也就是说，要事先订好一个目标，要做什么东西，达到什么效果，然后根据自己了解的知识作一个可以实现这个目标的计划。</p>
-
-<p>现在要学的是游戏制作，而且是High-end的3D游戏制作。如前文 <a href="http://coderforart.com/unrealengine4-windows-mac.html">游戏制作之路：游戏引擎选择、Mac下和Windows下UnrealEngine 4体验对比、文档及其他</a> 所说的，我已经选择了UE4这个画面最顶级的引擎，它即使是在iOS上，画面也是最高端的，可以参考 <a href="https://www.unrealengine.com/blog/unreal-engine-powered-zen-garden-released">Zen Garden</a> 这个Demo。然后我也大概确认了可行性，现在要解决的是玩法（游戏性）、内容创作、音效这些东西。</p>
-
-<span id="more"></span><!-- more -->
-
-<h2 id="toc_0">游戏的大概内容和玩法</h2>
-
-<p>为了让目标尽可能得以实现，游戏要尽可能简单。考虑到内容创作难度太大，所以我要使用尽可能少的元素。目前确认的有山、树、花草、水、岩石火山怪物、钢铁怪物、一两个造型复杂点的Boss、一两个女性人物角色。下面分开说明</p>
-
-<ul>
-<li>山：UE4对山地的制作支持的比较好，所以我要做的只有设计山地的外形和画山地材质了。这点内容创作我相信能做好，只要仔细研究山的画法，表现形式和树、花草的布局即可</li>
-<li>树：UE4有支持SpeedTree这样的简单可以做出各种外形的树的软件插件，但是这显然不是我的目标，在迫不得以的情况下才会用。我开始会从画画和3D建模去从头开始创作树，然后仔细研究树的材质和表现，从而真正掌握树的制作。</li>
-<li>花草：UE4好像内置花草的支持，不大清楚是如何，但是应该是很好的消息。不过估计也是要去画花的材质和表现，花草这部分也是我要仔细研究和全程掌握的。从开始创作花草外形到如何做3D建模，上材质并引入到UE4都要掌握。</li>
-<li>水：这部分在UE4中比较好实现，应该是只要设计位置和外形就好，任务比较简单。</li>
-<li>岩石火山怪物、钢铁怪物：怪物制作在游戏中是重点，难度很高。从开始设计到引入UE4，像树或花草那样流程即可。真正有挑战的是怪物AI了，这部分就关系到游戏玩法和游戏性了。这部分我了解不多，反正是要花大量时间研究就是了，初步方向是UE4中内置的AI的组件如何使用，然后读一些游戏AI的书等等。估计是可能会用到C++了，这也是要学习的。</li>
-<li>人物角色：人物角色是我学习的重点，我希望这部分在做完这个游戏后能真正掌握一些。这部分要研究的东西太多了，光是人物设计就是要花大量时间，人体结构，画法，服饰。还有是3D建模，人物皮肤材质，服饰材质等等。服饰部分东西太庞大，我只选一个小方向即可。还有比如说头发和衣服在游戏中的做法等等。再有就是角色动画，初步估计应该是在3D软件中调好，然后引入UE4中也是有大量工作要做的。这也只是在对角色动画比较了解的基础上，刚刚好我不了解，这也得学！不知道UE4能不能做到像下图那样的画出来的角色的质量？这也是我想研究的。
-<img src="media/14218059079784/5bf24facgw1eo0sjmlsiwj20uk0hoju2.jpg" alt="5bf24facgw1eo0sjmlsiwj20uk0hoju2"/>￼￼￼￼
-<img src="media/14218059079784/5bf24facgw1eo0sjsnjb6j20dw0cnta3.jpg" alt="5bf24facgw1eo0sjsnjb6j20dw0cnta3"/>￼￼￼￼</li>
-</ul>
-
-<p>游戏玩法部分，这部分需要我在学习中慢慢想了，这部分应该不难，只是做得好不好的问题，即使做得不好，也没关系了。我的方向不在这。</p>
-
-<h2 id="toc_1">内容创作工具</h2>
-
-<p>内容创作非工具部分花费时间最多，量最大，但是这部分我无法写更多的东西，只能说是边学边研究了。然后工具部分却有一些可写的。<br/>
-硬件部分要求不大，我目前有一台高性能的PC，两台MacBook Pro，现用的是2013版的15寸MacBook Pro，还有一台绘画板子 cintiq 13HD，足够用了。软件部分如下</p>
-
-<ul>
-<li>Photoshop：这个神器肯定是必须要的，不管是设计或画画还是做材质，他都是首选的工具。</li>
-<li>ZBrush：这个也属于易用性极好的神器，它大大降低了3D建模的难度。它也是我认为我可以掌握怪物和人物角色创作的理由。还有它的价格不贵，$795，在我可以接受范围。</li>
-<li>Maya LT：为什么是Maya而不是免费的Blender？最主要是Maya提供了官方的.FBX导出支持，而Blender是以插件的形式出现的，还有就是《游戏引擎架构》多次提到Maya，想来是不会错的。为什么是Maya LT，有写错？没有！因为Maya太贵了，全买\(3675，订阅\)185每月。Maya LT订阅\(30每月，年订\)240。而且autodesk的软件都可以很方便地申请3年的教育学习用途。</li>
-<li>我的另一款软件：这软件是要先做出来，当然不是什么强大的软件，这是我认为对内容创作和学习有用的小软件。</li>
-</ul>
-
-<p>软件部分除非以上的软件都不够用了，否则不会再引进新软件，因为评估和学习也是要成本的。当然，不用学的小软件是除外。</p>
-
-<h2 id="toc_2">游戏音效、背景故事</h2>
-
-<p>音效部分虽然也是属于非常重要的，但是我完全不懂音效，也没有兴趣深入研究它，大概来几个还算可以的音效就行了。背景故事部分在学习研究中跟游戏玩法一起慢慢考虑。</p>
 
 ]]></content>
   </entry>

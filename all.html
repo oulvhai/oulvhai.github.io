@@ -139,6 +139,35 @@
 	<article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
 		<div class="meta">
 			<div class="date">
+				<time datetime="2015-07-31T15:28:02+08:00" itemprop="datePublished">2015/7/31</time>
+			</div>
+			<div class="tags">posted in 
+			
+			    <a class='category' href='MWeb-cat.html'>MWeb</a>&nbsp;
+			 
+			</div>
+		</div>
+		<h1 class="title" itemprop="name"><a href="move-lite-data-to-mweb.html" itemprop="url">
+		把 MWeb Lite 的文档库文档和数据搬到 MWeb 正式版中</a></h1>
+		<div class="entry-content" itemprop="articleBody">
+			
+			<p>MWeb Lite 版的文档库中的文档要搬到 MWeb 正式版中，如果 Lite 版的文档中没有图片或者只有少量图片，可以用导入导出为 Markdown 的方法。</p>
+
+<p>否则的话请用以下方式（注意下面这个方法会将 MWeb 正式版的所有内容都换为 Lite 版）：</p>
+
+
+
+			 
+			<a href="move-lite-data-to-mweb.html#more" class="more-link">Read on &rarr;</a>
+    		
+			
+		</div>
+
+	</article>
+ 
+	<article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+		<div class="meta">
+			<div class="date">
 				<time datetime="2015-07-23T09:47:29+08:00" itemprop="datePublished">2015/7/23</time>
 			</div>
 			<div class="tags">posted in 
@@ -383,71 +412,6 @@ English: <a href="http://www.mweb.im">http://www.mweb.im</a></p>
 <li>footer.html add <code>{{ seqAndFlowChartSupport }}</code>, <code>{{ mathJaxSupport }}</code> code, please check this link: <a href="https://github.com/oulvhai/MWeb-Themes/blob/master/greyshade/footer.html">https://github.com/oulvhai/MWeb-Themes/blob/master/greyshade/footer.html</a></li>
 <li>post.html add <code>{{ commentAndShareCode }}</code> code, please check this link: <a href="https://github.com/oulvhai/MWeb-Themes/blob/master/greyshade/post.html">https://github.com/oulvhai/MWeb-Themes/blob/master/greyshade/post.html</a></li>
 </ol>
-
-
-			
-			
-		</div>
-
-	</article>
- 
-	<article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-		<div class="meta">
-			<div class="date">
-				<time datetime="2015-03-28T10:21:20+08:00" itemprop="datePublished">2015/3/28</time>
-			</div>
-			<div class="tags">posted in 
-			
-			    <a class='category' href='MWeb-cat.html'>MWeb</a>&nbsp;
-			 
-			</div>
-		</div>
-		<h1 class="title" itemprop="name"><a href="mweb1.3-release-zh.html" itemprop="url">
-		MWeb 1.3 版发布！半价促销，新官网，新图标，增加任务列表，顺序图和流程图，优化MathJax、PDF导出等</a></h1>
-		<div class="entry-content" itemprop="articleBody">
-			
-			<h2 id="toc_0">新官网</h2>
-
-<p>中文：<a href="http://zh.mweb.im">http://zh.mweb.im</a><br/>
-英文：<a href="http://www.mweb.im">http://www.mweb.im</a></p>
-
-<h2 id="toc_1">新增：</h2>
-
-<ul>
-<li>增加 <code>CMD+Shift+V</code> 粘贴 PNG 格式图片</li>
-<li>增加sequence图和flow图支持</li>
-<li>增加任务列表（Task lists）支持，列表后再加<code>[ ]</code>或<code>[x]</code></li>
-<li>增加把分类或文档导出为Markdown</li>
-<li>现在可以直接在设置中填入Disqus、多说等评论代码了，请参考：<a href="http://zh.mweb.im/mweb-comment-and-share-help.html">http://zh.mweb.im/mweb-comment-and-share-help.html</a></li>
-<li>优化MathJax支持并把MathJax库放本地以提高预览速度</li>
-<li>优化PDF导出</li>
-</ul>
-
-<h2 id="toc_2">修正</h2>
-
-<ul>
-<li>图标小调整，应该顺眼了点。</li>
-<li>修正了一些BUG和闪退问题</li>
-</ul>
-
-<h2 id="toc_3">1.3 以下的朋友请注意：</h2>
-
-<p>这次更新中，greyshade、octopress 博客主题模板有变动！由于增加了可设置评论和分类、勾选支持 MathJax 和顺序图、流程图，所以增加了以下三个变量：</p>
-
-<pre><code>{{ commentAndShareCode }}
-{{ seqAndFlowChartSupport }}
-{{ mathJaxSupport }}
-</code></pre>
-
-<p>greyshade、octopress 博客主题模板有更新到的页为 footer.html 和 post.html。</p>
-
-<p>footer.html 会在 <code>{{ siteOther }}</code> 上增加 <code>{{ seqAndFlowChartSupport }}</code> 和 <code>{{ mathJaxSupport }}</code>。</p>
-
-<p>可参考这个网址：<a href="https://github.com/oulvhai/MWeb-Themes/blob/master/greyshade/footer.html">https://github.com/oulvhai/MWeb-Themes/blob/master/greyshade/footer.html</a></p>
-
-<p>post.html 则在要放评论和分享的地方增加 <code>{{ commentAndShareCode }}</code>。</p>
-
-<p>可参考这个网址：<a href="https://github.com/oulvhai/MWeb-Themes/blob/master/greyshade/post.html">https://github.com/oulvhai/MWeb-Themes/blob/master/greyshade/post.html</a></p>
 
 
 			

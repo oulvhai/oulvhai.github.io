@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<title>  
 	  
-  	Coder For Art
+  	把 MWeb Lite 的文档库文档和数据搬到 MWeb 正式版中 - Coder For Art
   	
 	</title
 
@@ -133,141 +133,77 @@
 
 			
  <div id="content" class="inner">
-<div itemscope itemtype="http://schema.org/Blog">
 
-
-	<article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-		<div class="meta">
-			<div class="date">
-				<time datetime="2014-12-16T23:10:52+08:00" itemprop="datePublished">2014/12/16</time>
-			</div>
-			<div class="tags">posted in 
-			
-			    <a class='category' href='Introduction.html'>Introduction</a>&nbsp;
-			 
-			</div>
-		</div>
-		<h1 class="title" itemprop="name"><a href="insert-photos-and-display-in-editor-zh.html" itemprop="url">
-		插入图片并显示在编辑器内</a></h1>
+	<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+		<h1 class="title" itemprop="name">把 MWeb Lite 的文档库文档和数据搬到 MWeb 正式版中</h1>
 		<div class="entry-content" itemprop="articleBody">
-			
-			<p>拖拽图片（支持多张）到编辑器或者直接用粘贴即可插入图片，图片会直接显示在编辑器里（也可设定不显示），像这样：<br/>
-&lt;!-- more --&gt;<br/>
-<img src="media/14187874991645/716_max.jpg" alt="716_max"/>￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
+			<p>MWeb Lite 版的文档库中的文档要搬到 MWeb 正式版中，如果 Lite 版的文档中没有图片或者只有少量图片，可以用导入导出为 Markdown 的方法。</p>
 
+<p>否则的话请用以下方式（注意下面这个方法会将 MWeb 正式版的所有内容都换为 Lite 版）：</p>
 
-			
-			
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_0">1. 打开 Lite 版文档库文档所在的文件夹</h2>
+
+<p><img src="media/14383276824570/14383283373250.jpg" alt=""/></p>
+
+<p>如上图，选择 Lite 版文档库中的任何一篇文章，右键标题栏，从图中可以看到这个文档的保存位置，选择 <code>MWeb</code> 并点击，会打开 Lite 版文档库中的文档所保存的位置，会打开如下图的 Finder 窗口：<br/>
+<img src="media/14383276824570/14383286526093.jpg" alt=""/><br/>
+请注意上图中选中的 <code>LocalData</code> 文件夹，文档库中的所有数据都在这里。</p>
+
+<h2 id="toc_1">2. 打开 MWeb 正式版文档库文档所在的文件夹</h2>
+
+<p><img src="media/14383276824570/14383284793437.jpg" alt=""/></p>
+
+<p>如下图，同样选择 <code>MWeb</code> 并点击就可以了，会打开如下图的 Finder 窗口：<br/>
+<img src="media/14383276824570/14383287121781.jpg" alt=""/><br/>
+请注意上图中选中的 <code>LocalData</code> 文件夹，文档库中的所有数据都在这里。</p>
+
+<h2 id="toc_2">3. 搬移 Lite 版的数据到 MWeb 正式版中</h2>
+
+<p><strong>重要：</strong>下面的操作前，请一定要先备份好 MWeb 正式版的 <code>LocalData</code> 文件夹。</p>
+
+<ol>
+<li>退出 Lite 版和正式版 App，注意是退出 <code>CMD + Q</code>。 </li>
+<li>要搬移 Lite 版的数据到正式版中，非常简单，就是将 Lite 版的 <code>LocalData</code> 文件夹换到正式版中即可。所以就是删除正式版的 <code>LocalData</code> 文件夹，然后把 Lite 版的 <code>LocalData</code> 文件夹复制进来。</li>
+<li>重新启动 MWeb 正式版。</li>
+<li>搬移完成！</li>
+</ol>
+
 		</div>
-
 	</article>
- 
-	<article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-		<div class="meta">
-			<div class="date">
-				<time datetime="2014-12-16T21:40:44+08:00" itemprop="datePublished">2014/12/16</time>
-			</div>
-			<div class="tags">posted in 
-			
-			    <a class='category' href='Markdown.html'>Markdown</a>&nbsp;
-			 
-			</div>
-		</div>
-		<h1 class="title" itemprop="name"><a href="markdown-syntax-guide-full-version.html" itemprop="url">
-		Markdown syntax guide full version</a></h1>
-		<div class="entry-content" itemprop="articleBody">
-			
-			<ul>
-<li><a href="#overview">Overview</a>
-
-<ul>
-<li><a href="#philosophy">Philosophy</a></li>
-<li><a href="#html">Inline HTML</a></li>
-<li><a href="#autoescape">Automatic Escaping for Special Characters</a></li>
-</ul></li>
-<li><a href="#block">Block Elements</a>
-
-<ul>
-<li><a href="#p">Paragraphs and Line Breaks</a></li>
-<li><a href="#header">Headers</a></li>
-<li><a href="#blockquote">Blockquotes</a></li>
-<li><a href="#list">Lists</a></li>
-<li><a href="#precode">Code Blocks</a></li>
-<li><a href="#hr">Horizontal Rules</a></li>
-</ul></li>
-<li><a href="#span">Span Elements</a>
-
-<ul>
-<li><a href="#link">Links</a></li>
-<li><a href="#em">Emphasis</a></li>
-<li><a href="#code">Code</a></li>
-<li><a href="#img">Images</a></li>
-</ul></li>
-<li><a href="#misc">Miscellaneous</a>
-
-<ul>
-<li><a href="#backslash">Backslash Escapes</a></li>
-<li><a href="#autolink">Automatic Links</a></li>
-</ul></li>
-</ul>
-
-
-
-			 
-			<a href="markdown-syntax-guide-full-version.html#more" class="more-link">Read on &rarr;</a>
-    		
-			
-		</div>
-
-	</article>
- 
-	<article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-		<div class="meta">
-			<div class="date">
-				<time datetime="2014-12-16T21:26:32+08:00" itemprop="datePublished">2014/12/16</time>
-			</div>
-			<div class="tags">posted in 
-			
-			    <a class='category' href='Markdown.html'>Markdown</a>&nbsp;
-			 
-			</div>
-		</div>
-		<h1 class="title" itemprop="name"><a href="markdown-syntax-guide-full-version-zh.html" itemprop="url">
-		Markdown 語法官方說明繁體中文版</a></h1>
-		<div class="entry-content" itemprop="articleBody">
-			
-			<h2 id="toc_0">Markdown 文件</h2>
-
-<p><img src="http://markdown.tw/images/208x128.png" alt="Markdown"/></p>
-
-<p><strong>NOTE:</strong> This is Traditional Chinese Edition Document of<br/>
-Markdown Syntax. If you are seeking for English Edition <br/>
-Document. Please refer to <a href="http://daringfireball.net/projects/markdown/syntax">Markdown: Syntax</a>.</p>
-
-
-
-			 
-			<a href="markdown-syntax-guide-full-version-zh.html#more" class="more-link">Read on &rarr;</a>
-    		
-			
-		</div>
-
-	</article>
-  
-
+<div class="share-comment">
+<div style="height:26px;" class="share">
+<!-- JiaThis Button BEGIN -->
+<div class="jiathis_style_24x24">
+	<a class="jiathis_button_tsina"></a>
+	<a class="jiathis_button_tqq"></a>
+	<a class="jiathis_button_weixin"></a>
+	<a class="jiathis_button_qzone"></a>
+	<a class="jiathis_button_renren"></a>
+	<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	<a class="jiathis_counter_style"></a>
 </div>
-<nav id="pagenavi">
-	 <a class="prev" href="all_3.html">Prev</a>  
-	
-	<div class="center"><a href="archives.html">Blog Archives</a></div>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1406813199499778" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+	</div>
 
-</nav>
+	<div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'coderforart'; 
 
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
 </div>
 
 
-
-        </div>
+</div>        </div>
 			<footer id="footer" class="inner">Copyright &copy; 2014
 Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a> &nbsp;&nbsp; 
 Theme by <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank Mehta</a>
