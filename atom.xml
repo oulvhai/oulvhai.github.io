@@ -4,7 +4,7 @@
   <title><![CDATA[Coder For Art]]></title>
   <link href="http://coderforart.com/atom.xml" rel="self"/>
   <link href="http://coderforart.com/"/>
-  <updated>2015-06-05T09:12:59+08:00</updated>
+  <updated>2015-07-24T10:39:39+08:00</updated>
   <id>http://coderforart.com/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -12,6 +12,45 @@
   </author>
   <generator uri="http://www.coderforart.com/">CoderForArt</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[MWeb 1.6 发布！Dark Mode、全文搜寻、发布到Wordpress、Evernote 等支持更新、编辑/预览视图模式等]]></title>
+    <link href="http://coderforart.com/mweb-1.6.1-release.html"/>
+    <updated>2015-07-23T09:47:29+08:00</updated>
+    <id>http://coderforart.com/mweb-1.6.1-release.html</id>
+    <content type="html"><![CDATA[
+<h2 id="toc_0">Dark Mode</h2>
+
+<p><img src="media/14376160492620/14376218615706.jpg" alt=""/><br/>
+使用 <code>View</code> - <code>Dark Mode</code> 或快捷键 <code>CMD + Option + L</code> 开启或关闭 Dark Mode。可以在设置中设置 Dark Mode 状态下编辑器所使用的样式，如下图。<br/>
+<img src="media/14376160492620/14376165481845.jpg" alt=""/></p>
+
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_1">全文搜寻</h2>
+
+<p>文档库模式会搜寻文档库中的所有文档，外部模式只搜寻当前选择的文件夹下的文档。为方便全键盘使用，增加了 Focus Search Field（CMD + Shift + F） 和 Focus Editor（CMD + Shift + E） 两个快捷键。</p>
+
+<h2 id="toc_2">发布服务支持更新</h2>
+
+<p>发布到  Wordpress、Metaweblog API、Evernote、印象笔记、Wordpress.com、Blogger 现在支持<strong>更新</strong>操作了。如下图，发布过之后，再次发布，会出现红线中的是否更新的选项。<br/>
+<img src="media/14376160492620/14376173522487.jpg" alt=""/></p>
+
+<h2 id="toc_3">其他更新</h2>
+
+<ul>
+<li>增加 编辑器 &amp; 实时预览 视图模式，<code>CMD + 4</code> 可以切换到这个视图模式。</li>
+<li>增加可拖拽调整发布服务的顺序。</li>
+<li>增加双击在新窗口中打开文档。</li>
+<li>现在可以设置文档内容高度为多少时才激活打字机滚动 (Typewriter Scrolling) 功能。在 <code>Preferences</code> - <code>General</code> 中可以设置，默认为当文档内容达到编辑器的高度的 50% 时会激活。</li>
+<li>修正点击 Dock 无法显示窗口问题。</li>
+<li>undo 和 redo 改进。</li>
+<li>导出为 PDF 文档的边距有改进。</li>
+<li>一些 Bug 修正</li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[MWeb 1.5 发布！增加打字机滚动模式、发布到 Evernote、印象笔记、Wordpress.com、Blogger、编辑器内代码块语法高亮]]></title>
@@ -2100,65 +2139,6 @@ git push -u origin master
 <h2 id="toc_2">游戏音效、背景故事</h2>
 
 <p>音效部分虽然也是属于非常重要的，但是我完全不懂音效，也没有兴趣深入研究它，大概来几个还算可以的音效就行了。背景故事部分在学习研究中跟游戏玩法一起慢慢考虑。</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[MWeb Q & A]]></title>
-    <link href="http://coderforart.com/qa.html"/>
-    <updated>2015-01-20T10:04:01+08:00</updated>
-    <id>http://coderforart.com/qa.html</id>
-    <content type="html"><![CDATA[
-<p>Updated: 2015/3/25</p>
-
-<span id="more"></span><!-- more -->
-
-<p>Question list: </p>
-
-<ul>
-<li>
-<a href="#toc_0">What&#39;s difference between MWeb Lite and MWeb?</a>
-</li>
-<li>
-<a href="#toc_1">How to enable MathJax preview support?</a>
-</li>
-<li>
-<a href="#toc_2">How to enable blog MathJax support?</a>
-</li>
-<li>
-<a href="#toc_3">How to backup MWeb&#39;s documents library to Dropbox？</a>
-</li>
-<li>
-<a href="#toc_4">How to add Disqus support?</a>
-</li>
-</ul>
-
-
-<h2 id="toc_0">What&#39;s difference between MWeb Lite and MWeb?</h2>
-
-<p>MWeb design with two patterns: External Document pattern and Documents Library pattern. MWeb Lite&#39;s Documents Library limit to 10 documents.</p>
-
-<h2 id="toc_1">How to enable MathJax preview support?</h2>
-
-<p><code>CMD+,</code> open Preferences，<code>Themes</code> - <code>Enable MathJax</code>.</p>
-
-<h2 id="toc_2">How to enable blog MathJax support?</h2>
-
-<p><code>Right click blog setting</code> - <code>Edit</code> - <code>Enable MathJax</code></p>
-
-<!-- more -->
-
-<h2 id="toc_3">How to backup MWeb&#39;s documents library to Dropbox？</h2>
-
-<p>Please open Terminal ( Spotlight - enter <code>terminal</code> ) and enter the following command. </p>
-
-<pre><code>ln -s ~/Library/Containers/com.coderforart.MWeb/Data/Documents/MWeb ~/Dropbox/MWebBackup
-</code></pre>
-
-<h2 id="toc_4">How to add Disqus support?</h2>
-
-<p>Please check this post: <a href="mweb-comment-and-share-help.html">Add AddThis Share and Disqus Comment</a></p>
 
 ]]></content>
   </entry>
