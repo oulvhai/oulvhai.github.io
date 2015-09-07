@@ -732,7 +732,7 @@ padding: 8px 0px; margin: 0;
 #main-content .markdown-body .article .read-more .comments a:hover{text-decoration: underline;}
 #main-content .markdown-body .article .read-more .comments{ padding-left: 8px;}
 #main-content .markdown-body .article .read-more .date{padding-right: 8px;}
-#main-content .markdown-body .article .read-more .cats-detail{display: inline-block !important;}
+
 .article-wrap{ max-width: 640px;  padding: 0px 0px; }
 #main-content .article-wrap h1{border-bottom: solid 1px #eee; }
 #main-content .article-wrap h2{border-bottom: solid 1px #eee; }
