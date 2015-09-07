@@ -373,10 +373,16 @@ var duoshuoQuery = {short_name:'coderforart'};
     <script src="asset/js/foundation.min.js"></script>
     <script>
       $(document).foundation();
-      $(window).load(function(){
-          var w1 = $('.markdown-body').height();
+      function fixSidebarHeight(){
+        var w1 = $('.markdown-body').height();
           var w2 = $('#sidebar').height();
           if (w1 > w2) { $('#sidebar').height(w1); };
+      }
+      $(function(){
+        fixSidebarHeight();
+      })
+      $(window).load(function(){
+          fixSidebarHeight();
       });
      
     </script>
