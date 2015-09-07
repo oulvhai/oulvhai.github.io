@@ -4,14 +4,13 @@
   <title><![CDATA[Coder For Art]]></title>
   <link href="http://coderforart.com/atom.xml" rel="self"/>
   <link href="http://coderforart.com/"/>
-  <updated>2015-07-31T15:56:53+08:00</updated>
+  <updated>2015-09-07T08:34:32+08:00</updated>
   <id>http://coderforart.com/</id>
   <author>
     <name><![CDATA[]]></name>
     
   </author>
-  <generator uri="http://www.coderforart.com/">CoderForArt</generator>
-
+  <generator uri="http://www.mweb.im/">MWeb</generator>
   
   <entry>
     <title type="html"><![CDATA[把 MWeb Lite 的文档库文档和数据搬到 MWeb 正式版中]]></title>
@@ -27,18 +26,18 @@
 
 <h2 id="toc_0">1. 打开 Lite 版文档库文档所在的文件夹</h2>
 
-<p><img src="media/14383276824570/14383283373250.jpg" alt=""/></p>
+<p><img src="media/14383276824570/14383283373250.jpg" alt="" style="width:634px;"/></p>
 
 <p>如上图，选择 Lite 版文档库中的任何一篇文章，右键标题栏，从图中可以看到这个文档的保存位置，选择 <code>MWeb</code> 并点击，会打开 Lite 版文档库中的文档所保存的位置，会打开如下图的 Finder 窗口：<br/>
-<img src="media/14383276824570/14383286526093.jpg" alt=""/><br/>
+<img src="media/14383276824570/14383286526093.jpg" alt="" style="width:800px;"/><br/>
 请注意上图中选中的 <code>LocalData</code> 文件夹，文档库中的所有数据都在这里。</p>
 
 <h2 id="toc_1">2. 打开 MWeb 正式版文档库文档所在的文件夹</h2>
 
-<p><img src="media/14383276824570/14383284793437.jpg" alt=""/></p>
+<p><img src="media/14383276824570/14383284793437.jpg" alt="" style="width:670px;"/></p>
 
 <p>如下图，同样选择 <code>MWeb</code> 并点击就可以了，会打开如下图的 Finder 窗口：<br/>
-<img src="media/14383276824570/14383287121781.jpg" alt=""/><br/>
+<img src="media/14383276824570/14383287121781.jpg" alt="" style="width:800px;"/><br/>
 请注意上图中选中的 <code>LocalData</code> 文件夹，文档库中的所有数据都在这里。</p>
 
 <h2 id="toc_2">3. 搬移 Lite 版的数据到 MWeb 正式版中</h2>
@@ -63,7 +62,7 @@
     <content type="html"><![CDATA[
 <h2 id="toc_0">Dark Mode</h2>
 
-<p><img src="media/14376160492620/14376218615706.jpg" alt=""/><br/>
+<p><img src="media/14376160492620/14376218615706.jpg" alt="" style="width:993px;"/><br/>
 使用 <code>View</code> - <code>Dark Mode</code> 或快捷键 <code>CMD + Option + L</code> 开启或关闭 Dark Mode。可以在设置中设置 Dark Mode 状态下编辑器所使用的样式，如下图。<br/>
 <img src="media/14376160492620/14376165481845.jpg" alt=""/></p>
 
@@ -1533,9 +1532,6 @@ $$  x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
 </ul>
 
 
-<script src="asset/flow-sequence-chart/raphael-min.js"></script><script src="asset/flow-sequence-chart/underscore-min.js"></script><script src="asset/flow-sequence-chart/flowchart.min.js"></script><script src="asset/flow-sequence-chart/sequence-diagram-min.js"></script><script type="text/javascript">$(function(){    var mwebii=0;    var mwebChartEleId = 'mweb-chart-ele-';    $('pre>code').each(function(){        mwebii++;        var eleiid = mwebChartEleId+mwebii;        if($(this).hasClass('language-sequence')){            var ele = $(this).addClass('nohighlight').parent();            $('<div id="'+eleiid+'"><div>').insertAfter(ele);            ele.hide();            var diagram = Diagram.parse($(this).text());            diagram.drawSVG(eleiid,{theme: 'simple'});        }else if($(this).hasClass('language-flow')){            var ele = $(this).addClass('nohighlight').parent();            $('<div id="'+eleiid+'"><div>').insertAfter(ele);            ele.hide();            var diagram = flowchart.parse($(this).text());            diagram.drawSVG(eleiid);        }    });});</script>
-<script type="text/x-mathjax-config">if (typeof MathJaxListener !== 'undefined') { MathJax.Hub.Register.StartupHook('End', function () { MathJaxListener.invokeCallbackForKey_('End'); }); } </script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
 <div class="footnotes">
 <hr/>
 <ol>
@@ -1571,7 +1567,7 @@ $$  x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
 
 <p><code>CMD+N</code> to new PinPhoto document. Use Drag &amp; drop or <code>Import</code> button to add photos. You can also press <code>CMD+V</code> to paste photo when you copy a photo to pasteboard.</p>
 
-<p><img src="media/14255436714850/1.jpg" alt=""/>￼￼￼￼￼￼</p>
+<p><img src="media/14255436714850/1.jpg" alt=""/></p>
 
 <p>Tip: If you want to add some lovely photo from website to PinPhoto document, right click website&#39;s photo, choose <code>Copy Image</code>, and go to PinPhoto document press <code>CMD+V</code>.</p>
 
@@ -1579,7 +1575,7 @@ $$  x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
 
 <p>Click <code>Main Window</code> photos list&#39;s photo to open <code>Photo View</code>. Mouse moves to the top of <code>Photo View</code> and drag to change the position. You can use two finger zoom the photo. Use the right click context menu or main menu --&gt; view for more.</p>
 
-<p><img src="media/14255436714850/2.jpg" alt=""/>￼￼￼￼￼￼</p>
+<p><img src="media/14255436714850/2.jpg" alt=""/></p>
 
 <p><strong>Right click context menu:</strong></p>
 
@@ -1600,13 +1596,13 @@ $$  x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
 <li>Clear All Floating: <code>CMD+Option+T</code></li>
 <li>Prev Document: <code>⇤</code></li>
 <li>Next Document: <code>⇥</code></li>
-<li>Close Document: <code>CMD+Shift+W</code></li>
+<li>Close Document: <code>CMD+Shift+w</code></li>
 </ul>
 
 <p>Automatic placement selected photos:<br/>
 You can select some photos --&gt; right click --&gt; choose <code>Open &amp; Placement Selected Photos</code>. PinPhoto will placement selected photos on full screen automatically.</p>
 
-<p><img src="media/14255436714850/3.jpg" alt=""/>￼￼￼￼￼￼</p>
+<p><img src="media/14255436714850/3.jpg" alt=""/></p>
 
 <p><strong>Right click context menu:</strong></p>
 
@@ -1629,13 +1625,13 @@ You can select some photos --&gt; right click --&gt; choose <code>Open &amp; Pla
 
 <p><code>CMD+T</code> to toggle floating <code>Photo View</code>, <code>CMD+Shift+T</code> floating all <code>Photo View</code>, <code>CMD+Option+T</code> cancels floating all <code>Photo View</code>.</p>
 
-<p><img src="media/14255436714850/4.jpg" alt=""/>￼￼￼￼￼￼</p>
+<p><img src="media/14255436714850/4.jpg" alt=""/></p>
 
 <h3 id="toc_4">Hide/Show Main Window</h3>
 
 <p><code>CMD+D</code> toggle hide/show <code>Main Window</code>, <code>CMD+F</code> show <code>Main Window</code></p>
 
-<p><img src="media/14255436714850/5.jpg" alt=""/>￼￼￼￼￼￼</p>
+<p><img src="media/14255436714850/5.jpg" alt=""/></p>
 
 <h3 id="toc_5">Switch opened PinPhoto documents</h3>
 
@@ -1681,7 +1677,7 @@ You can select some photos --&gt; right click --&gt; choose <code>Open &amp; Pla
 
 <p><code>CMD+N</code>新建PinPhoto文档，使用拖拽或者点<code>Import</code>按钮增加要摆放的图片，如果你的剪切板上复制有图片，也可以直接用<code>CMD+V</code>粘贴进来。</p>
 
-<p><img src="media/14255236146194/1.jpg" alt=""/>￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
+<p><img src="media/14255236146194/1.jpg" alt=""/></p>
 
 <p>小技巧：在网页中看到喜欢的图片想增加到PinPhoto文档中，可以右键网页中的图片，在弹出的菜单中选择：复制图片(Copy Image) 然后切换到PinPhoto，用快捷键<code>CMD+V</code>粘贴以增加到PinPhoto的文档中。</p>
 
@@ -1689,7 +1685,7 @@ You can select some photos --&gt; right click --&gt; choose <code>Open &amp; Pla
 
 <p>点击列表中的图片即可打开该图片的图片视图，在打开的图片视图中，鼠标移到图片顶部的位置，会显示一条黑色的半透明长方形，拖动即可改变位置，你也可以用双指缩放、平移图片，更多的调节请用右键菜单、主菜单的View菜单或者快捷键。</p>
 
-<p><img src="media/14255236146194/2.jpg" alt=""/>￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
+<p><img src="media/14255236146194/2.jpg" alt=""/></p>
 
 <p><strong>右键菜单项目说明：</strong></p>
 
@@ -1715,7 +1711,7 @@ You can select some photos --&gt; right click --&gt; choose <code>Open &amp; Pla
 
 <p>另外也可以在主窗口中右键打开多张图片，有个实用的功能为：自动排列图片。选择要自动排列的图片，右键，并选<code>Open &amp; Placement Selected Photos</code>，则会把您选择的图片自动排满整个屏幕。如下图。</p>
 
-<p><img src="media/14255236146194/3.jpg" alt=""/>￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
+<p><img src="media/14255236146194/3.jpg" alt=""/></p>
 
 <p><strong>右键菜单项目说明：</strong></p>
 
@@ -1738,13 +1734,13 @@ You can select some photos --&gt; right click --&gt; choose <code>Open &amp; Pla
 
 <p>选中图片视图后，可以用<code>CMD+T</code>或者右键选择菜单来置顶图片，图片置顶后，当你切换到其它程序时，会一直显示。经典的使用场景是对着图片画画。再按<code>CMD+T</code>则会取消置顶。也可以用<code>CMD+Shift+T</code>来置顶当前文档中的所有图片视图。用<code>CMD+Option+T</code>来取消置顶所有图片视图</p>
 
-<p><img src="media/14255236146194/4.jpg" alt=""/>￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
+<p><img src="media/14255236146194/4.jpg" alt=""/></p>
 
 <h3 id="toc_6">隐藏主窗口</h3>
 
 <p>主窗口有时候非常影响观看摆好的图片，可以用<code>CMD+D</code>来显示/隐藏主窗口，<code>CMD+F</code>会直接显示主窗口。</p>
 
-<p><img src="media/14255236146194/5.jpg" alt=""/>￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
+<p><img src="media/14255236146194/5.jpg" alt=""/></p>
 
 <h3 id="toc_7">切换打开的PinPhoto文档</h3>
 
@@ -1768,9 +1764,11 @@ ourcoders:<a href="http://ourcoders.com/thread/show/5653/">http://ourcoders.com/
 
 <p>这个免费App是1月初MWeb发布后才有的点子，MWeb1.2提交后正式开始做，春节长假过后再小修了一下，终于到了差不多可以发布的时候。</p>
 
-<p>App的功能是：把经常要看的相关联的图片摆放到屏幕任何位置并存成文件，下次打开时恢复之前的状态。摆放时可以放大、缩小、移动图片，也可以改变视图窗口的位置、大小等，支持双指缩放、三指拖动。<br/>
-&lt;!-- more --&gt;<br/>
-名字一开始是想叫：Research Pro的，因为这个App最开始的目的就是Research。因为我喜欢并想学CG艺术，然后通常会在网上看到不错的图，就想把相关联的排起来对比看。有时候也会特意对找一些东西，比如说唐代古装的服饰、饰品、发型等，找到后想全部排起来一并查看和研究。所以流程为：收集资料--&gt;排好--&gt;保存成文档--&gt;下次打开恢复排好的状态。这大概是Research的流程，这软件我想同样也适用于设计师研究设计方案，屏幕越大，可以摆的图越多，很是YY iMac retina 27下的效果。</p>
+<p>App的功能是：把经常要看的相关联的图片摆放到屏幕任何位置并存成文件，下次打开时恢复之前的状态。摆放时可以放大、缩小、移动图片，也可以改变视图窗口的位置、大小等，支持双指缩放、三指拖动。</p>
+
+<span id="more"></span><!-- more -->
+
+<p>名字一开始是想叫：Research Pro的，因为这个App最开始的目的就是Research。因为我喜欢并想学CG艺术，然后通常会在网上看到不错的图，就想把相关联的排起来对比看。有时候也会特意对找一些东西，比如说唐代古装的服饰、饰品、发型等，找到后想全部排起来一并查看和研究。所以流程为：收集资料--&gt;排好--&gt;保存成文档--&gt;下次打开恢复排好的状态。这大概是Research的流程，这软件我想同样也适用于设计师研究设计方案，屏幕越大，可以摆的图越多，很是YY iMac retina 27下的效果。</p>
 
 <p>后来觉得Research Pro有点太高端，这是一个小软件，有点名不副其实，所以就改为PinPhoto，低调了一些。但是总觉得可能有更好的名字，或者这两个名字那个好？发上来求助万能的V友。</p>
 
@@ -1779,22 +1777,22 @@ ourcoders:<a href="http://ourcoders.com/thread/show/5653/">http://ourcoders.com/
 <p>当然也不排除这个奇葩的App没有多少人会用，这次发上来也看看有没有人关注。</p>
 
 <p>图一：基本的功能和用法：<br/>
-<img src="media/14252762205423/01.jpg" alt=""/>￼￼</p>
+<img src="media/14252762205423/01.jpg" alt=""/></p>
 
 <p>图二：色彩的知识，经常要看的类型，主窗口可以用 CMD+D 隐藏，这样就全屏观看了。<br/>
-<img src="media/14252762205423/02.jpg" alt="05"/>￼￼</p>
+<img src="media/14252762205423/02.jpg" alt="05"/></p>
 
 <p>图三：比较长的教程可以贴进来，摆好以方便查看（隐藏了主窗口）。<br/>
-<img src="media/14252762205423/03.jpg" alt="04"/>￼￼</p>
+<img src="media/14252762205423/03.jpg" alt="04"/></p>
 
 <p>图四：同一作者的线搞对比查看<br/>
-<img src="media/14252762205423/04.jpg" alt="03"/>￼￼</p>
+<img src="media/14252762205423/04.jpg" alt="03"/></p>
 
 <p>图五：收集到一些特别的蘑菇，画画时参考。<br/>
-<img src="media/14252762205423/05.jpg" alt="02"/>￼￼</p>
+<img src="media/14252762205423/05.jpg" alt="02"/></p>
 
 <p>图六：把一张图片顶置。对着图画画时有些用。<br/>
-<img src="media/14252762205423/06.jpg" alt="01"/>￼￼</p>
+<img src="media/14252762205423/06.jpg" alt="01"/></p>
 
 ]]></content>
   </entry>
