@@ -1,0 +1,411 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+    
+  更轻量的 View Controllers - objc 中国 Demo
+  
+  </title>
+ <meta name="description" content="">
+ <link href="atom.xml" rel="alternate" title="objc 中国 Demo" type="application/atom+xml">
+    <link rel="stylesheet" href="asset/css/foundation.min.css" />
+    <link rel="stylesheet" href="asset/css/docs.css" />
+
+    <script src="asset/js/vendor/modernizr.js"></script>
+    <script src="asset/js/vendor/jquery.js"></script>
+    <script src="asset/highlightjs/highlight.pack.js"></script>
+    <link href="asset/highlightjs/styles/github.css" media="screen, projection" rel="stylesheet" type="text/css">
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+  </head>
+  <body class="antialiased hide-extras">
+    
+    <div class="marketing off-canvas-wrap" data-offcanvas>
+      <div class="inner-wrap">
+
+
+<nav class="top-bar docs-bar hide-for-small" data-topbar>
+
+<div id="header">
+    <h1><a href="index.html">objc 中国 Demo</a></h1>
+</div>
+
+</nav>
+        <nav class="tab-bar show-for-small">
+  <a href="javascript:void(0)" class="left-off-canvas-toggle menu-icon">
+    <span> &nbsp; objc 中国 Demo</span>
+  </a>
+</nav>
+
+<aside class="left-off-canvas-menu">
+      <ul class="off-canvas-list">
+      <li><a href="index.html">Home</a></li>
+      
+        <li class="divider"></li>
+        <li><label>View Controllers</label></li>
+
+          
+            <li><a title="介绍" href="14415911095373.html">介绍</a></li>
+          
+            <li><a title="更轻量的 View Controllers" href="14415911095456.html">更轻量的 View Controllers</a></li>
+          
+            <li><a title="整洁的 Table View 代码" href="14415911095506.html">整洁的 Table View 代码</a></li>
+          
+            <li><a title="测试 View Controllers" href="14415911095558.html">测试 View Controllers</a></li>
+          
+            <li><a title="View Controller 容器" href="14415911095624.html">View Controller 容器</a></li>
+          
+
+      
+        <li class="divider"></li>
+        <li><label>并发编程</label></li>
+
+          
+            <li><a title="卷首语" href="14415912472419.html">卷首语</a></li>
+          
+            <li><a title="并发编程：API 及挑战" href="14415912472481.html">并发编程：API 及挑战</a></li>
+          
+            <li><a title="常见的后台实践" href="14415912472530.html">常见的后台实践</a></li>
+          
+            <li><a title="底层并发 API" href="14415912472585.html">底层并发 API</a></li>
+          
+            <li><a title="线程安全类的设计" href="14415912472649.html">线程安全类的设计</a></li>
+          
+            <li><a title="测试并发程序" href="14415912472718.html">测试并发程序</a></li>
+          
+
+      
+        <li class="divider"></li>
+        <li><label>Views</label></li>
+
+          
+            <li><a title="卷首语" href="14415913597229.html">卷首语</a></li>
+          
+            <li><a title="绘制像素到屏幕上" href="14415913597293.html">绘制像素到屏幕上</a></li>
+          
+            <li><a title="理解 Scroll Views" href="14415913597346.html">理解 Scroll Views</a></li>
+          
+            <li><a title="自定义 Collection View 布局" href="14415913597397.html">自定义 Collection View 布局</a></li>
+          
+            <li><a title="自定义控件" href="14415913597463.html">自定义控件</a></li>
+          
+
+      
+      </ul>
+    </aside>
+
+<a class="exit-off-canvas" href="#"></a>
+
+        <section id="main-content" role="main" class="scroll-container">
+
+          <div class="row">
+            <div class="large-3 medium-3 columns">
+              <div class="hide-for-small">
+                <div class="sidebar">
+                <nav>
+                  <ul id="side-nav" class="side-nav">
+
+                    
+                      <li class="side-title"><span>View Controllers</span></li>
+                        
+                          <li><a title="介绍" href="14415911095373.html">介绍</a></li>
+                        
+                          <li><a title="更轻量的 View Controllers" href="14415911095456.html">更轻量的 View Controllers</a></li>
+                        
+                          <li><a title="整洁的 Table View 代码" href="14415911095506.html">整洁的 Table View 代码</a></li>
+                        
+                          <li><a title="测试 View Controllers" href="14415911095558.html">测试 View Controllers</a></li>
+                        
+                          <li><a title="View Controller 容器" href="14415911095624.html">View Controller 容器</a></li>
+                        
+
+                    
+                      <li class="side-title"><span>并发编程</span></li>
+                        
+                          <li><a title="卷首语" href="14415912472419.html">卷首语</a></li>
+                        
+                          <li><a title="并发编程：API 及挑战" href="14415912472481.html">并发编程：API 及挑战</a></li>
+                        
+                          <li><a title="常见的后台实践" href="14415912472530.html">常见的后台实践</a></li>
+                        
+                          <li><a title="底层并发 API" href="14415912472585.html">底层并发 API</a></li>
+                        
+                          <li><a title="线程安全类的设计" href="14415912472649.html">线程安全类的设计</a></li>
+                        
+                          <li><a title="测试并发程序" href="14415912472718.html">测试并发程序</a></li>
+                        
+
+                    
+                      <li class="side-title"><span>Views</span></li>
+                        
+                          <li><a title="卷首语" href="14415913597229.html">卷首语</a></li>
+                        
+                          <li><a title="绘制像素到屏幕上" href="14415913597293.html">绘制像素到屏幕上</a></li>
+                        
+                          <li><a title="理解 Scroll Views" href="14415913597346.html">理解 Scroll Views</a></li>
+                        
+                          <li><a title="自定义 Collection View 布局" href="14415913597397.html">自定义 Collection View 布局</a></li>
+                        
+                          <li><a title="自定义控件" href="14415913597463.html">自定义控件</a></li>
+                        
+
+                    
+                  </ul>
+                </nav>
+                </div>
+              </div>
+            </div>
+            <div class="large-9 medium-9 columns">
+
+ <div class="markdown-body">
+<h1>更轻量的 View Controllers</h1>
+
+<p>View controllers 通常是 iOS 项目中最大的文件，并且它们包含了许多不必要的代码。所以 View controllers 中的代码几乎总是复用率最低的。我们将会看到给 view controllers 瘦身的技术，让代码变得可以复用，以及把代码移动到更合适的地方。</p>
+
+<p>你可以在 Github 上获取关于这个问题的<a href="https://github.com/objcio/issue-1-lighter-view-controllers">示例项目</a>。</p>
+
+<h2 id="toc_0">把 Data Source 和其他 Protocols 分离出来</h2>
+
+<p>把 <code>UITableViewDataSource</code> 的代码提取出来放到一个单独的类中，是为 view controller 瘦身的强大技术之一。当你多做几次，你就能总结出一些模式，并且创建出可复用的类。</p>
+
+<p>举个例，在示例项目中，有个 <code>PhotosViewController</code> 类，它有以下几个方法：</p>
+
+<pre><code># pragma mark Pragma
+
+- (Photo*)photoAtIndexPath:(NSIndexPath*)indexPath {
+    return photos[(NSUInteger)indexPath.row];
+}
+
+- (NSInteger)tableView:(UITableView*)tableView
+ numberOfRowsInSection:(NSInteger)section {
+    return photos.count;
+}
+
+- (UITableViewCell*)tableView:(UITableView*)tableView
+        cellForRowAtIndexPath:(NSIndexPath*)indexPath {
+    PhotoCell* cell = [tableView dequeueReusableCellWithIdentifier:PhotoCellIdentifier
+                                                      forIndexPath:indexPath];
+    Photo* photo = [self photoAtIndexPath:indexPath];
+    cell.label.text = photo.name;
+    return cell;
+}
+</code></pre>
+
+<p>这些代码基本都是围绕数组做一些事情，更针对地说，是围绕 view controller 所管理的 photos 数组做一些事情。我们可以尝试把数组相关的代码移到<a href="https://github.com/objcio/issue-1-lighter-view-controllers/blob/master/PhotoData/ArrayDataSource.h">单独的类</a>中。我们使用一个 block 来设置 cell，也可以用 delegate 来做这件事，这取决于你的习惯。</p>
+
+<pre><code>@implementation ArrayDataSource
+
+- (id)itemAtIndexPath:(NSIndexPath*)indexPath {
+    return items[(NSUInteger)indexPath.row];
+}
+
+- (NSInteger)tableView:(UITableView*)tableView
+ numberOfRowsInSection:(NSInteger)section {
+    return items.count;
+}
+
+- (UITableViewCell*)tableView:(UITableView*)tableView
+        cellForRowAtIndexPath:(NSIndexPath*)indexPath {
+    id cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier
+                                              forIndexPath:indexPath];
+    id item = [self itemAtIndexPath:indexPath];
+    configureCellBlock(cell,item);
+    return cell;
+}
+
+@end
+</code></pre>
+
+<p>现在，你可以把 view controller 中的这 3 个方法去掉了，取而代之，你可以创建一个 <code>ArrayDataSource</code> 类的实例作为 table view 的 data source。</p>
+
+<pre><code>void (^configureCell)(PhotoCell*, Photo*) = ^(PhotoCell* cell, Photo* photo) {
+   cell.label.text = photo.name;
+};
+photosArrayDataSource = [[ArrayDataSource alloc] initWithItems:photos
+                                                cellIdentifier:PhotoCellIdentifier
+                                            configureCellBlock:configureCell];
+self.tableView.dataSource = photosArrayDataSource;
+</code></pre>
+
+<p>现在你不用担心把一个 index path 映射到数组中的位置了，每次你想把这个数组显示到一个 table view 中时，你都可以复用这些代码。你也可以实现一些额外的方法，比如 <code>tableView:commitEditingStyle:forRowAtIndexPath:</code>，在 table view controllers 之间共享。</p>
+
+<p>这样的好处在于，你可以单独<a href="http://objccn.io/issue-1-3/">测试这个类</a>，再也不用写第二遍。该原则同样适用于数组之外的其他对象。</p>
+
+<p>在今年我们做的一个应用里面，我们大量使用了 Core Data。我们创建了相似的类，但和之前使用的数组不一样，它用一个 fetched results controller 来获取数据。它实现了所有动画更新、处理 section headers、删除操作等逻辑。你可以创建这个类的实例，然后赋予一个 fetch request 和用来设置 cell 的 block，剩下的它都会处理，不用你操心了。</p>
+
+<p>此外，这种方法也可以扩展到其他 protocols 上面。最明显的一个就是 <code>UICollectionViewDataSource</code>。这给了你极大的灵活性；如果，在开发的某个时候，你想用 <code>UICollectionView</code> 代替 <code>UITableView</code>，你几乎不需要对 view controller 作任何修改。你甚至可以让你的 data source 同时支持这两个协议。</p>
+
+<h2 id="toc_1">将业务逻辑移到 Model 中</h2>
+
+<p>下面是 view controller（来自其他项目）中的示例代码，用来查找一个用户的目前的优先事项的列表：</p>
+
+<pre><code>- (void)loadPriorities {
+    NSDate* now = [NSDate date];
+    NSString* formatString = @&quot;startDate = %@&quot;;
+    NSPredicate* predicate = [NSPredicate predicateWithFormat:formatString, now, now];
+    NSSet* priorities = [self.user.priorities filteredSetUsingPredicate:predicate];
+    self.priorities = [priorities allObjects];
+}
+</code></pre>
+
+<p>把这些代码移动到 <code>User</code> 类的 category 中会变得更加清晰，处理之后，在 <code>View Controller.m</code> 中看起来就是这样：</p>
+
+<pre><code>- (void)loadPriorities {
+    self.priorities = [user currentPriorities];
+}
+</code></pre>
+
+<p>在 <code>User+Extensions.m</code> 中：</p>
+
+<pre><code>- (NSArray*)currentPriorities {
+    NSDate* now = [NSDate date];
+    NSString* formatString = @&quot;startDate = %@&quot;;
+    NSPredicate* predicate = [NSPredicate predicateWithFormat:formatString, now, now];
+    return [[self.priorities filteredSetUsingPredicate:predicate] allObjects];
+}
+</code></pre>
+
+<p>有些代码不能被轻松地移动到 model 对象中，但明显和 model 代码紧密联系，对于这种情况，我们可以使用一个 <code>Store</code>：</p>
+
+<h2 id="toc_2">创建 Store 类</h2>
+
+<p>在我们第一版的示例程序的中，有些代码去加载文件并解析它。下面就是 view controller 中的代码：</p>
+
+<pre><code>- (void)readArchive {
+    NSBundle* bundle = [NSBundle bundleForClass:[self class]];
+    NSURL *archiveURL = [bundle URLForResource:@&quot;photodata&quot;
+                                 withExtension:@&quot;bin&quot;];
+    NSAssert(archiveURL != nil, @&quot;Unable to find archive in bundle.&quot;);
+    NSData *data = [NSData dataWithContentsOfURL:archiveURL
+                                         options:0
+                                           error:NULL];
+    NSKeyedUnarchiver *unarchiver = [[NSKeyedUnarchiver alloc] initForReadingWithData:data];
+    _users = [unarchiver decodeObjectOfClass:[NSArray class] forKey:@&quot;users&quot;];
+    _photos = [unarchiver decodeObjectOfClass:[NSArray class] forKey:@&quot;photos&quot;];
+    [unarchiver finishDecoding];
+}
+</code></pre>
+
+<p>但是 view controller 没必要知道这些，所以我们创建了一个 <em>Store</em> 对象来做这些事。通过分离，我们就可以复用这些代码，单独测试他们，并且让 view controller 保持小巧。Store 对象会关心数据加载、缓存和设置数据栈。它也经常被称为<em>服务层</em>或者<em>仓库</em>。</p>
+
+<h2 id="toc_3">把网络请求逻辑移到 Model 层</h2>
+
+<p>和上面的主题相似：不要在 view controller 中做网络请求的逻辑。取而代之，你应该将它们封装到另一个类中。这样，你的 view controller 就可以在之后通过使用带有回调（比如一个 completion 的 block）来请求网络了。这样的好处是，缓存和错误控制也可以在这个类里面完成。</p>
+
+<h2 id="toc_4">把 View 代码移到 View 层</h2>
+
+<p>不应该在 view controller 中构建复杂的 view 层次结构。你可以使用 Interface Builder 或者把 views 封装到一个 <code>UIView</code> 子类当中。例如，如果你要创建一个选择日期的控件，把它放到一个名为 <code>DatePickerView</code> 的类中会比把所有的事情都在 view controller 中做好好得多。再一次，这样增加了可复用性并保持了简单。</p>
+
+<p>如果你喜欢 Interface Builder，你也可以在 Interface Builder 中做。有些人认为 IB 只能和 view controllers 一起使用，但事实上你也可以加载单独的 nib 文件到自定义的 view 中。在示例程序中，我们创建了一个 <a href="https://github.com/objcio/issue-1-lighter-view-controllers/blob/master/PhotoData/PhotoCell.xib"><code>PhotoCell.xib</code></a>，包含了 photo cell 的布局：</p>
+
+<p><img src="http://img.objccn.io/issue-1/photocell.png" alt="PhotoCell.xib screenshot"/></p>
+
+<p>就像你看到的那样，我们在 view（我们没有在这个 nib 上使用 File&#39;s Owner 对象）上面创建了 properties，然后连接到指定的 subviews。这种技术同样适用于其他自定义的 views。</p>
+
+<h2 id="toc_5">通讯</h2>
+
+<p>其他在 view controllers 中经常发生的事是与其他 view controllers，model，和 views 之间进行通讯。这当然是 controller 应该做的，但我们还是希望以尽可能少的代码来完成它。</p>
+
+<p>关于 view controllers 和 model 对象之间的消息传递，已经有很多阐述得很好的技术（比如 KVO 和 fetched results controllers）。但是 view controllers 之间的消息传递稍微就不是那么清晰了。</p>
+
+<p>当一个 view controller 想把某个状态传递给多个其他 view controllers 时，就会出现这样的问题。较好的做法是把状态放到一个单独的对象里，然后把这个对象传递给其它 view controllers，它们观察和修改这个状态。这样的好处是消息传递都在一个地方（被观察的对象）进行，而且我们也不用纠结嵌套的 delegate 回调。这其实是一个复杂的主题，我们可能在未来用一个完整的话题来讨论这个主题。</p>
+
+<h2 id="toc_6">总结</h2>
+
+<p>我们已经看到一些用来创建更小巧的 view controllers 的技术。我们并不是想把这些技术应用到每一个可能的角落，只是我们有一个目标：写可维护的代码。知道这些模式后，我们就更有可能把那些笨重的 view controllers 变得更整洁。</p>
+
+<h3 id="toc_7">扩展阅读</h3>
+
+<ul>
+<li><a href="http://developer.apple.com/library/ios/#featuredarticles/ViewControllerPGforiPhoneOS/BasicViewControllers/BasicViewControllers.html">View Controller Programming Guide for iOS</a></li>
+<li><a href="http://developer.apple.com/library/mac/#documentation/General/Conceptual/DevPedia-CocoaCore/ControllerObject.html">Cocoa Core Competencies: Controller Object</a></li>
+<li><a href="http://subjective-objective-c.blogspot.de/2011/08/writing-high-quality-view-controller.html">Writing high quality view controllers</a></li>
+<li><a href="http://programmers.stackexchange.com/questions/184396/mvcs-model-view-controller-store">Stack Overflow: Model View Controller Store</a></li>
+<li><a href="https://speakerdeck.com/trianglecocoa/unburdened-viewcontrollers-by-jay-thrash">Unburdened View Controllers</a></li>
+<li><a href="http://programmers.stackexchange.com/questions/177668/how-to-avoid-big-and-clumsy-uitableviewcontroller-on-ios">Stack Overflow: How to avoid big and clumsy <code>UITableViewControllers</code> on iOS</a></li>
+</ul>
+
+<hr/>
+
+<p><a href="http://objccn.io/issue-1">话题 #1 下的更多文章</a></p>
+
+<p>原文 <a href="http://www.objc.io/issue-1/lighter-view-controllers.html">Lighter View Controllers</a></p>
+
+<p>译文 <a href="http://tang3w.com/translate/objective-c/objc.io/2013/10/22/%E6%9B%B4%E8%BD%BB%E9%87%8F%E7%9A%84-view-controllers.html">更轻量的 View Controllers - 言无不尽</a></p>
+
+
+</div>
+
+<br /><br />
+<hr />
+
+<div class="row clearfix">
+  <div class="large-6 columns">
+	<div class="text-left" style="padding:15px 0px;">
+		
+	        <a href="14415911095373.html"  title="Previous Post: 介绍">&laquo; 介绍</a>
+	    
+	</div>
+  </div>
+  <div class="large-6 columns">
+	<div class="text-right" style="padding:15px 0px;">
+		
+	        <a href="14415911095506.html" 
+	        title="Next Post: 整洁的 Table View 代码">整洁的 Table View 代码 &raquo;</a>
+	    
+	</div>
+  </div>
+</div>
+
+<div class="row">
+<div style="padding:0px 0.93em;" class="share-comments">
+
+</div>
+</div>
+<script type="text/javascript">
+	$(function(){
+		var currentURL = '14415911095456.html';
+		$('#side-nav a').each(function(){
+			if($(this).attr('href') == currentURL){
+				$(this).parent().addClass('active');
+			}
+		});
+	});
+</script>  
+</div></div>
+
+
+<div class="page-bottom">
+  <div class="row">
+  <hr />
+  <div class="small-9 columns">
+  <p class="copyright">Copyright &copy; 2015
+Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a>,&nbsp; 
+Theme used <a target="_blank" href="http://github.com">GitHub CSS</a>.</p>
+  </div>
+  <div class="small-3 columns">
+  <p class="copyright text-right"><a href="#header">TOP</a></p>
+  </div>
+   
+  </div>
+</div>
+
+        </section>
+      </div>
+    </div>
+    
+    
+    <script src="asset/js/foundation.min.js"></script>
+    <script src="asset/js/foundation/foundation.offcanvas.js"></script>
+    <script>
+      $(document).foundation();
+
+     
+    </script>
+    
+
+
+  </body>
+</html>
