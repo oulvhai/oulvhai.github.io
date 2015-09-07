@@ -198,10 +198,8 @@ padding: 8px 0px; margin: 0;
   -webkit-text-size-adjust: 100%;
   color: #333;
   overflow: hidden;
-  font-family: "freight-text-pro",Georgia,Cambria,"Times New Roman",Times,serif;
+  font-family: "SF UI Display", ".PingFang SC","PingFang SC", "Neue Haas Grotesk Text Pro", "Arial Nova", "Segoe UI", "Microsoft YaHei", "Microsoft JhengHei", "Helvetica Neue", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "Hiragino Sans GB", sans-serif;
 
-  /* chinese */
-  font-family: Lato,Helvetica Neue,Helvetica,Arial,sans-serif;
 
   font-size: 16px;
   line-height: 1.6;
@@ -437,8 +435,8 @@ padding: 8px 0px; margin: 0;
   margin-top: 1rem;
   margin-bottom: 16px;
   font-weight: bold;
-  font-family: "jaf-bernino-sans","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
     /* chinese */
+font-family: "PT Sans", "SF UI Display", ".PingFang SC","PingFang SC", "Neue Haas Grotesk Text Pro", "Arial Nova", "Segoe UI", "Microsoft YaHei", "Microsoft JhengHei", "Helvetica Neue", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "Hiragino Sans GB", sans-serif;
 
 }
 
