@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
     
-  MWeb Q & A - Coder For Art
+  MWeb mweb-medium-like 网站主题 - Coder For Art
   
 
   </title>
@@ -97,10 +97,12 @@
       <div class="markdown-body article-wrap">
        <div class="article">
           
-          <h1>MWeb Q & A</h1>
+              <div class="f-img"><img src="media/14418505549476/tt1.jpg" /></div>
+          
+          <h1>MWeb mweb-medium-like 网站主题</h1>
      
         <div class="read-more clearfix">
-          <span class="date">2015/1/20</span>
+          <span class="date">2015/9/10</span>
 
           <span>posted in&nbsp;</span> 
           
@@ -109,11 +111,11 @@
          
           <span class="comments">
             
-              <a href="http://coderforart.com/qa.html#disqus_thread">comments</a>
+              <a href="http://coderforart.com/mweb-medium-like-theme.html#disqus_thread">comments</a>
             
 
             
-              &nbsp;<a  class="ds-thread-count" data-thread-key="qa.html" data-count-type="comments" href="qa.html#ds-thread"></a>
+              &nbsp;<a  class="ds-thread-count" data-thread-key="mweb-medium-like-theme.html" data-count-type="comments" href="mweb-medium-like-theme.html#ds-thread"></a>
             
           </span>
 
@@ -121,55 +123,100 @@
       </div><!-- article -->
 
       <div class="article-content">
-      <p>Updated: 2015/3/25</p>
+      <p>MWeb 1.7 版制作了新的博客/网站主题 mweb-medium-like。这个主题是基于 Foundation 前端框架做的，对移动端非常友好！<br/>
+本博客的主题也是使用 mweb-medium-like。</p>
 
 <span id="more"></span><!-- more -->
 
-<p>Question list: </p>
+<h2 id="toc_0">使用方法</h2>
 
-<ul>
-<li>
-<a href="#toc_0">What&#39;s difference between MWeb Lite and MWeb?</a>
-</li>
-<li>
-<a href="#toc_1">How to enable MathJax preview support?</a>
-</li>
-<li>
-<a href="#toc_2">How to enable blog MathJax support?</a>
-</li>
-<li>
-<a href="#toc_3">How to backup MWeb&#39;s documents library to Dropbox？</a>
-</li>
-<li>
-<a href="#toc_4">How to add Disqus support?</a>
-</li>
+<h3 id="toc_1">设置网站为 mweb-medium-like 主题</h3>
+
+<p>MWeb 1.7 版会自带 mweb-medium-like 主题，所以先设置你的网站的主题为 mweb-medium-like。 mweb-medium-like 主题也上传到 github 了，你也可以去 <a href="https://github.com/oulvhai/mweb-medium-like">https://github.com/oulvhai/mweb-medium-like</a> 看看是否有修正或者提建议。如下图我选择的是 Coder For Art。<br/>
+<img src="media/14418505549476/14418512636784.jpg" alt="" style="width:688px;"/></p>
+
+<h3 id="toc_2">导入网站扩展文件和文档扩展文件</h3>
+
+<p>下载 <a href="media/14418505549476/Site%20Extension.json">Site Extension</a> 这个网站扩展设置文件，在 github 中这个文档在 <code>extensions/Site Extension.json</code> 里。</p>
+
+<p>再转到 <code>Perfernces</code> - <code>Extensions</code>，Setting Site 中选择刚刚设定了 mweb-medium-like 主题的 Coder For Art 网站，然后切换到 Site Extension 标签，点 <code>Import</code> 导入刚刚下载的 Site Extension.json 设置文档。如下图是导入后的效果。<br/>
+<img src="media/14418505549476/14418514048396.png" alt="" style="width:629px;"/><br/>
+同样也下载 <a href="media/14418505549476/Document%20Extension.json">Document Extension</a> 这个文档扩展设置文件，切换到 Document Extension 并导入。</p>
+
+<h3 id="toc_3">设置网站扩展</h3>
+
+<p>网站/博客中往往会有一些个人信息要设定，刚刚导入的网站扩展就是为了设定这些信息的。mweb-medium-like 主题目前可以设定的有：个人图片、weibo、github、facebook、email 等等信息，还可以为网站/博客增加 disqus 和 多说的评论支持。其中 <code>logo path</code> 就是设置个人图片的，你可以在任何属于该网站的文档中（通常可以用 about 或 index）拖入图片，然后复制图片的地址到 <code>logo path</code> 这个字段中，如下图是我的博客 Coder For Art 的设置：<br/>
+<img src="media/14418505549476/14418526095552.png" alt="" style="width:629px;"/><br/>
+设置 disqus 和多说评论支持只需要填入两者的 shortname 即可。在 disqus 或多说注册完成后都可以得到 shortname。如果你想要两者的评论都支持，两者都填入即可，比如说我的 Coder For Art 博客就是两者的评论都支持，如图：<br/>
+<img src="media/14418505549476/14418528119858.png" alt="" style="width:659px;"/></p>
+
+<h3 id="toc_4">文档扩展的使用</h3>
+
+<p>mweb-medium-like 主题设计了三个文档扩展：small img 用于文章列表时放在描述的左边，featured image 用于放在标题上面，excerpt 为描述，一般情况下 MWeb 是直接抓取文章内 read more 前的内容，如果有填入 excerpt 则会优先取 excerpt 为描述。<br/>
+<img src="media/14418505549476/14418531852840.jpg" alt="" style="width:464px;"/></p>
+
+<p>如下图第一篇演示文章为设置为 small image 的效果，第二篇文章为设置了 featured image 的效果：<br/>
+<img src="media/14418505549476/14418537443808.jpg" alt="" style="width:724px;"/></p>
+
+<h3 id="toc_5">设置 About 页面</h3>
+
+<p>mweb-medium-like 主题的主菜单加上了 about 页面，所以请设置一个 about 页面，否则点了主菜单的 about 连接后会出错。如下图是 Coder For Art 博客的 About 页的设置：<br/>
+<img src="media/14418505549476/14418540682024.jpg" alt="" style="width:766px;"/></p>
+
+<h2 id="toc_6">其他有意思的玩法</h2>
+
+<p>mweb-medium-like 主题是基于 Foundation 做的，然后因为 Markdown 支持 HML，所以如果你会 HTML，可以做出很有意思的效果，比如说：</p>
+
+<ul class="example-orbit" data-orbit>
+  <li>
+    <img src="media/14418505549476/tt1.jpg" alt="" />
+    <div class="orbit-caption">女天狗图 1</div>
+  </li>
+  <li>
+    <img src="media/14418505549476/tt2.jpg" alt="" />
+    <div class="orbit-caption">女天狗图 2</div>
+  </li>
+  <li>
+    <img src="media/14418505549476/tt3.jpg" alt="" />
+    <div class="orbit-caption">女天狗图 3</div>
+  </li>
 </ul>
 
+<p>上面的效果，把图拖拽进来后，再修改图片地址即可。全部 HTML 如下：</p>
 
-<h2 id="toc_0">What&#39;s difference between MWeb Lite and MWeb?</h2>
-
-<p>MWeb design with two patterns: External Document pattern and Documents Library pattern. MWeb Lite&#39;s Documents Library limit to 10 documents.</p>
-
-<h2 id="toc_1">How to enable MathJax preview support?</h2>
-
-<p><code>CMD+,</code> open Preferences，<code>Themes</code> - <code>Enable MathJax</code>.</p>
-
-<h2 id="toc_2">How to enable blog MathJax support?</h2>
-
-<p><code>Right click blog setting</code> - <code>Edit</code> - <code>Enable MathJax</code></p>
-
-<!-- more -->
-
-<h2 id="toc_3">How to backup MWeb&#39;s documents library to Dropbox？</h2>
-
-<p>Please open Terminal ( Spotlight - enter <code>terminal</code> ) and enter the following command. </p>
-
-<pre><code>ln -s ~/Library/Containers/com.coderforart.MWeb/Data/Documents/MWeb ~/Dropbox/MWebBackup
+<pre><code class="language-html">&lt;ul class=&quot;example-orbit&quot; data-orbit&gt;
+  &lt;li&gt;
+    &lt;img src=&quot;media/14418505549476/tt1.jpg&quot; alt=&quot;&quot; /&gt;
+    &lt;div class=&quot;orbit-caption&quot;&gt;女天狗图 1&lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;img src=&quot;media/14418505549476/tt2.jpg&quot; alt=&quot;&quot; /&gt;
+    &lt;div class=&quot;orbit-caption&quot;&gt;女天狗图 2&lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;img src=&quot;media/14418505549476/tt3.jpg&quot; alt=&quot;&quot; /&gt;
+    &lt;div class=&quot;orbit-caption&quot;&gt;女天狗图 3&lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 </code></pre>
 
-<h2 id="toc_4">How to add Disqus support?</h2>
+<p>缩略图效果，点小图看大图，如下：</p>
 
-<p>Please check this post: <a href="mweb-comment-and-share-help.html">Add AddThis Share and Disqus Comment</a></p>
+<ul class="clearing-thumbs small-block-grid-2" data-clearing>
+  <li><a href="media/14418505549476/tt4.jpg"><img data-caption="女天狗 4" src="media/14418505549476/tt4-s.jpg"></a></li>
+  <li><a href="media/14418505549476/tt5.jpg"><img data-caption="女天狗 5" src="media/14418505549476/tt5-s.jpg"></a></li>
+</ul>
+
+<p>上面的效果的全部 HTML 如下：</p>
+
+<pre><code class="language-html">&lt;ul class=&quot;clearing-thumbs small-block-grid-2&quot; data-clearing&gt;
+  &lt;li&gt;&lt;a href=&quot;media/14418505549476/tt4.jpg&quot;&gt;&lt;img data-caption=&quot;女天狗 4&quot; src=&quot;media/14418505549476/tt4-s.jpg&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;media/14418505549476/tt5.jpg&quot;&gt;&lt;img data-caption=&quot;女天狗 5&quot; src=&quot;media/14418505549476/tt5-s.jpg&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+
+<p>效果 1 的 Foundation 参考网址：<a href="http://foundation.zurb.com/docs/components/orbit.html">http://foundation.zurb.com/docs/components/orbit.html</a><br/>
+效果 2 的 Foundation 参考网址：<a href="http://foundation.zurb.com/docs/components/clearing.html">http://foundation.zurb.com/docs/components/clearing.html</a></p>
 
       </div>
 
@@ -177,16 +224,13 @@
         <div class="large-6 columns">
         <p class="text-left" style="padding:15px 0px;">
       
-          <a href="make-a-simple-high-end-mac-ios-game.html" 
-          title="Previous Post: 游戏制作之路：一个对我来说可实现的High-end的Mac/iOS游戏制作大概计划">&laquo; 游戏制作之路：一个对我来说可实现的High-end的Mac/iOS游戏制作大概计划</a>
-      
         </p>
         </div>
         <div class="large-6 columns">
       <p class="text-right" style="padding:15px 0px;">
       
-          <a  href="mweb-qa-zh.html" 
-          title="Next Post: MWeb 所有问题和回答收集">MWeb 所有问题和回答收集 &raquo;</a>
+          <a  href="move-lite-data-to-mweb.html" 
+          title="Next Post: 把 MWeb Lite 的文档库文档和数据搬到 MWeb 正式版中">把 MWeb Lite 的文档库文档和数据搬到 MWeb 正式版中 &raquo;</a>
       
       </p>
         </div>
@@ -213,7 +257,7 @@
           
 
           
-              <div class="ds-thread" data-thread-key="qa.html" data-url="http://coderforart.com/qa.html" data-title="MWeb Q & A"></div>
+              <div class="ds-thread" data-thread-key="mweb-medium-like-theme.html" data-url="http://coderforart.com/mweb-medium-like-theme.html" data-title="MWeb mweb-medium-like 网站主题"></div>
           
         </div>
       </div>
