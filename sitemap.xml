@@ -2,7 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
   <loc>http://coderforart.com/</loc>
-  <lastmod>2015-09-07T09:45:00+08:00</lastmod>
+  <lastmod>2015-09-10T11:27:50+08:00</lastmod>
+</url>
+
+<url>
+  <loc>http://coderforart.com/14418505549476.html</loc>
+  <lastmod>2015-09-10T10:02:34+08:00</lastmod>
 </url>
 
 <url>
@@ -207,11 +212,11 @@
 </url>
 
 <url>
-  <loc>http://coderforart.com/Introduction.html</loc>
+  <loc>http://coderforart.com/Markdown.html</loc>
 </url>
 
 <url>
-  <loc>http://coderforart.com/Markdown.html</loc>
+  <loc>http://coderforart.com/Introduction.html</loc>
 </url>
 
 <url>
