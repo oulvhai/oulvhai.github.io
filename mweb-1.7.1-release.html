@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
     
-  把 MWeb Lite 的文档库文档和数据搬到 MWeb 正式版中 - Coder For Art
+  MWeb 1.7.1 版发布！支持导出为 RTF 和 Docx、发布到 Evernote 带样式、文档库备份和新网站主题等大量改进！ - Coder For Art
   
 
   </title>
@@ -97,10 +97,10 @@
       <div class="markdown-body article-wrap">
        <div class="article">
           
-          <h1>把 MWeb Lite 的文档库文档和数据搬到 MWeb 正式版中</h1>
+          <h1>MWeb 1.7.1 版发布！支持导出为 RTF 和 Docx、发布到 Evernote 带样式、文档库备份和新网站主题等大量改进！</h1>
      
         <div class="read-more clearfix">
-          <span class="date">2015/7/31</span>
+          <span class="date">2015/9/14</span>
 
           <span>posted in&nbsp;</span> 
           
@@ -109,11 +109,11 @@
          
           <span class="comments">
             
-              <a href="http://coderforart.com/move-lite-data-to-mweb.html#disqus_thread">comments</a>
+              <a href="http://coderforart.com/mweb-1.7.1-release.html#disqus_thread">comments</a>
             
 
             
-              &nbsp;<a  class="ds-thread-count" data-thread-key="move-lite-data-to-mweb.html" data-count-type="comments" href="move-lite-data-to-mweb.html#ds-thread"></a>
+              &nbsp;<a  class="ds-thread-count" data-thread-key="mweb-1.7.1-release.html" data-count-type="comments" href="mweb-1.7.1-release.html#ds-thread"></a>
             
           </span>
 
@@ -121,38 +121,46 @@
       </div><!-- article -->
 
       <div class="article-content">
-      <p>MWeb Lite 版的文档库中的文档要搬到 MWeb 正式版中，如果 Lite 版的文档中没有图片或者只有少量图片，可以用导入导出为 Markdown 的方法。</p>
+      <h2 id="toc_0">编辑器及发布服务改进</h2>
 
-<p>否则的话请用以下方式（注意下面这个方法会将 MWeb 正式版的所有内容都换为 Lite 版）：</p>
+<p>增加设置图片宽度和居左、居右、居中的语法。<br/>
+如：<code>![图片说明-w450](pic.jpg)</code> 这样表示设置图片宽度为 450。其中 <code>-w450</code> 为设置语法，生成 HTML 时会自动移除。<code>w</code> 表示设置宽度，居左为：<code>-l400</code>，居右为 <code>-r400</code>，居中为 <code>-c400</code>，其中前面的 <code>-</code> 为可选，比如设置一图片宽度为 500 并居中：<code>![c500](pic.jpg)</code>。<br/>
+编辑器内显示的图片增加了右键菜单，右键图片即可查看图片大小、打开图片、复制图片。<br/>
+<img src="media/14421938311781/mweb-img-size.jpg" alt="mweb-img-size"/></p>
 
 <span id="more"></span><!-- more -->
 
-<h2 id="toc_0">1. 打开 Lite 版文档库文档所在的文件夹</h2>
+<p>增加导出为 RTF、Docx 和复制为富文本（Copy as Rich Text）功能。其中复制为富文本功能复制后，可以直接把格式化的内容粘贴到 mail 和 pages，带图片和格式。需要说明的是：导出为 Docx 功能目前并不带图片。<br/>
+<img src="media/14421938311781/mweb-docx-rtf.jpg" alt="mweb-docx-rtf"/></p>
 
-<p><img src="media/14383276824570/14383283373250.jpg" alt="" style="width:634px;"/></p>
+<p>发布到 Evernote、印象笔记现在自带漂亮的默认样式。<br/>
+<img src="media/14421938311781/mweb-evernote-format.jpg" alt="mweb-evernote-format"/></p>
 
-<p>如上图，选择 Lite 版文档库中的任何一篇文章，右键标题栏，从图中可以看到这个文档的保存位置，选择 <code>MWeb</code> 并点击，会打开 Lite 版文档库中的文档所保存的位置，会打开如下图的 Finder 窗口：<br/>
-<img src="media/14383276824570/14383286526093.jpg" alt="" style="width:800px;"/><br/>
-请注意上图中选中的 <code>LocalData</code> 文件夹，文档库中的所有数据都在这里。</p>
+<p>icon 有所调整，看上去更舒服了点，界面的颜值也有所提升。</p>
 
-<h2 id="toc_1">2. 打开 MWeb 正式版文档库文档所在的文件夹</h2>
+<p>MWeb 从 1.7 版开始将自带不可改动的预览 CSS，方便日后优化和更新。目前自带有 5 种，名称都是以 <code>mweb-</code> 开头。</p>
 
-<p><img src="media/14383276824570/14383284793437.jpg" alt="" style="width:670px;"/></p>
+<p>编辑器右键增加 Copy HTML 菜单项。</p>
 
-<p>如下图，同样选择 <code>MWeb</code> 并点击就可以了，会打开如下图的 Finder 窗口：<br/>
-<img src="media/14383276824570/14383287121781.jpg" alt="" style="width:800px;"/><br/>
-请注意上图中选中的 <code>LocalData</code> 文件夹，文档库中的所有数据都在这里。</p>
+<p>增加是否用空格替换 Tabs 选项（Insert spaces instead of tabs），在 <code>Preferences</code> - <code>General</code> 里可以设置。</p>
 
-<h2 id="toc_2">3. 搬移 Lite 版的数据到 MWeb 正式版中</h2>
+<p>增加编辑器行最大宽度设置（Editor Line Width），默认为 800，这个设置一般的 Markdown 编辑器都有，主要是全屏写作时，内容能居中，这样看上去会舒服点。 <code>Preferences</code> - <code>Themes</code>。</p>
 
-<p><strong>重要：</strong>下面的操作前，请一定要先备份好 MWeb 正式版的 <code>LocalData</code> 文件夹。</p>
+<p>搜寻改进：当搜寻时，如果打开搜寻结果中的文档，会直接以搜寻的关键字查找打开的文档并高亮显示搜寻的关键字的位置。</p>
 
-<ol>
-<li>退出 Lite 版和正式版 App，注意是退出 <code>CMD + Q</code>。 </li>
-<li>要搬移 Lite 版的数据到正式版中，非常简单，就是将 Lite 版的 <code>LocalData</code> 文件夹换到正式版中即可。所以就是删除正式版的 <code>LocalData</code> 文件夹，然后把 Lite 版的 <code>LocalData</code> 文件夹复制进来。</li>
-<li>重新启动 MWeb 正式版。</li>
-<li>搬移完成！</li>
-</ol>
+<h2 id="toc_1">文档库改进</h2>
+
+<p>文档库增加两个静态网站模版，分别为：mweb-medium-like 和 mweb-foundation-book。mweb-medium-like Demo 网址：<a href="http://coderforart.com/">http://coderforart.com/</a>，使用说明：<a href="http://coderforart.com/mweb-medium-like-theme.html">http://coderforart.com/mweb-medium-like-theme.html</a>。mweb-foundation-book Demo 网址和使用说明：<a href="http://coderforart.com/objccndemo/">http://coderforart.com/objccndemo/</a></p>
+
+<p>文档库增加备份功能，按狡兔三窟的原理，可以备份到三处地方，<code>Preferences</code> - <code>Backup</code>。<br/>
+<img src="media/14421938311781/mweb-backup.jpg" alt="mweb-backup"/></p>
+
+<p>文档库现在支持把列表中的文档拖拽到左边的分类中以设置文档的分类。需要说明的是，这个功能也支持移除分类。比如说 A 文档设置了属于 <code>MWeb</code> 分类，如果想移除，可以再拖拽到 <code>MWeb</code> 这个分类，则会进行移除操作。</p>
+
+<h2 id="toc_2">其他改进</h2>
+
+<p>外部模式现在支持拖拽移动子文件夹。<br/>
+其他的一些小修正</p>
 
       </div>
 
@@ -160,16 +168,13 @@
         <div class="large-6 columns">
         <p class="text-left" style="padding:15px 0px;">
       
-          <a href="mweb-medium-like-theme.html" 
-          title="Previous Post: MWeb mweb-medium-like 网站主题">&laquo; MWeb mweb-medium-like 网站主题</a>
-      
         </p>
         </div>
         <div class="large-6 columns">
       <p class="text-right" style="padding:15px 0px;">
       
-          <a  href="mweb-1.6.1-release.html" 
-          title="Next Post: MWeb 1.6 发布！Dark Mode、全文搜寻、发布到Wordpress、Evernote 等支持更新、编辑/预览视图模式等">MWeb 1.6 发布！Dark Mode、全文搜寻、发布到Wordpress、Evernote 等支持更新、编辑/预览视图模式等 &raquo;</a>
+          <a  href="mweb-medium-like-theme.html" 
+          title="Next Post: MWeb mweb-medium-like 网站主题">MWeb mweb-medium-like 网站主题 &raquo;</a>
       
       </p>
         </div>
@@ -196,7 +201,7 @@
           
 
           
-              <div class="ds-thread" data-thread-key="move-lite-data-to-mweb.html" data-url="http://coderforart.com/move-lite-data-to-mweb.html" data-title="把 MWeb Lite 的文档库文档和数据搬到 MWeb 正式版中"></div>
+              <div class="ds-thread" data-thread-key="mweb-1.7.1-release.html" data-url="http://coderforart.com/mweb-1.7.1-release.html" data-title="MWeb 1.7.1 版发布！支持导出为 RTF 和 Docx、发布到 Evernote 带样式、文档库备份和新网站主题等大量改进！"></div>
           
         </div>
       </div>
