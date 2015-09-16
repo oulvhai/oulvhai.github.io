@@ -4,13 +4,63 @@
   <title><![CDATA[Coder For Art]]></title>
   <link href="http://coderforart.com/atom.xml" rel="self"/>
   <link href="http://coderforart.com/"/>
-  <updated>2015-09-10T11:27:50+08:00</updated>
+  <updated>2015-09-14T10:44:19+08:00</updated>
   <id>http://coderforart.com/</id>
   <author>
     <name><![CDATA[]]></name>
     
   </author>
   <generator uri="http://www.mweb.im/">MWeb</generator>
+  
+  <entry>
+    <title type="html"><![CDATA[MWeb 1.7.1 版发布！支持导出为 RTF 和 Docx、发布到 Evernote 带样式、文档库备份和新网站主题等大量改进！]]></title>
+    <link href="http://coderforart.com/14421938311781.html"/>
+    <updated>2015-09-14T09:23:51+08:00</updated>
+    <id>http://coderforart.com/14421938311781.html</id>
+    <content type="html"><![CDATA[
+<h2 id="toc_0">编辑器及发布服务改进</h2>
+
+<p>增加设置图片宽度和居左、居右、居中的语法。<br/>
+如：<code>![图片说明-w450](pic.jpg)</code> 这样表示设置图片宽度为 450。其中 <code>-w450</code> 为设置语法，生成 HTML 时会自动移除。<code>w</code> 表示设置宽度，居左为：<code>-l400</code>，居右为 <code>-r400</code>，居中为 <code>-c400</code>，其中前面的 <code>-</code> 为可选，比如设置一图片宽度为 500 并居中：<code>![c500](pic.jpg)</code>。<br/>
+编辑器内显示的图片增加了右键菜单，右键图片即可查看图片大小、打开图片、复制图片。<br/>
+<img src="media/14421938311781/mweb-img-size.jpg" alt="mweb-img-size"/></p>
+
+<span id="more"></span><!-- more -->
+
+<p>增加导出为 RTF、Docx 和复制为富文本（Copy as Rich Text）功能。其中复制为富文本功能复制后，可以直接把格式化的内容粘贴到 mail 和 pages，带图片和格式。需要说明的是：导出为 Docx 功能目前并不带图片。<br/>
+<img src="media/14421938311781/mweb-docx-rtf.jpg" alt="mweb-docx-rtf"/></p>
+
+<p>发布到 Evernote、印象笔记现在自带漂亮的默认样式。<br/>
+<img src="media/14421938311781/mweb-evernote-format.jpg" alt="mweb-evernote-format"/></p>
+
+<p>icon 有所调整，看上去更舒服了点，界面的颜值也有所提升。</p>
+
+<p>MWeb 从 1.7 版开始将自带不可改动的预览 CSS，方便日后优化和更新。目前自带有 5 种，名称都是以 <code>mweb-</code> 开头。</p>
+
+<p>编辑器右键增加 Copy HTML 菜单项。</p>
+
+<p>增加是否用空格替换 Tabs 选项（Insert spaces instead of tabs），在 <code>Preferences</code> - <code>General</code> 里可以设置。</p>
+
+<p>增加编辑器行最大宽度设置（Editor Line Width），默认为 800，这个设置一般的 Markdown 编辑器都有，主要是全屏写作时，内容能居中，这样看上去会舒服点。 <code>Preferences</code> - <code>Themes</code>。</p>
+
+<p>搜寻改进：当搜寻时，如果打开搜寻结果中的文档，会直接以搜寻的关键字查找打开的文档并高亮显示搜寻的关键字的位置。</p>
+
+<h2 id="toc_1">文档库改进</h2>
+
+<p>文档库增加两个静态网站模版，分别为：mweb-medium-like 和 mweb-foundation-book。mweb-medium-like Demo 网址：<a href="http://coderforart.com/">http://coderforart.com/</a>，使用说明：<a href="http://coderforart.com/mweb-medium-like-theme.html">http://coderforart.com/mweb-medium-like-theme.html</a>。mweb-foundation-book Demo 网址和使用说明：<a href="http://coderforart.com/objccndemo/">http://coderforart.com/objccndemo/</a></p>
+
+<p>文档库增加备份功能，按狡兔三窟的原理，可以备份到三处地方，<code>Preferences</code> - <code>Backup</code>。<br/>
+<img src="media/14421938311781/mweb-backup.jpg" alt="mweb-backup"/></p>
+
+<p>文档库现在支持把列表中的文档拖拽到左边的分类中以设置文档的分类。需要说明的是，这个功能也支持移除分类。比如说 A 文档设置了属于 <code>MWeb</code> 分类，如果想移除，可以再拖拽到 <code>MWeb</code> 这个分类，则会进行移除操作。</p>
+
+<h2 id="toc_2">其他改进</h2>
+
+<p>外部模式现在支持拖拽移动子文件夹。<br/>
+其他的一些小修正</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[MWeb mweb-medium-like 网站主题]]></title>
@@ -2095,47 +2145,6 @@ A: You can have 3 or less jobs in free version and 100 or less files and folders
 
 <pre><code class="language-css">.hljs{overflow: visible; word-wrap: break-word;}
 </code></pre>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[万网（阿里云）免费虚拟主机体验]]></title>
-    <link href="http://coderforart.com/aliyun-net-cn-free-web-host-express.html"/>
-    <updated>2015-02-03T12:16:28+08:00</updated>
-    <id>http://coderforart.com/aliyun-net-cn-free-web-host-express.html</id>
-    <content type="html"><![CDATA[
-<p>之前在v2ex听说万网出了一款免费主机，申请即可以用二年。我当时去抢，并没有抢到，结果今天万网发邮件给我免费试用！这种好事当然要试一试！开通很顺利，没有遇到什么问题。</p>
-
-<p>我按步骤开通后，发现上传方式是FTP，因为买了ForkLift没怎么用过，现在正好试试他的同步功能如何。</p>
-
-<span id="more"></span><!-- more -->
-
-<p>我是用MWeb生成的静态网站并上传试试如何的。下图左边是我本机的用MWeb生成的静态网站的所在文件夹，然后右边是连上所给的FTP后，转到htdocs文件夹，在ForkLift中选择File--&gt;Sync to...</p>
-
-<p><img src="media/14229369882579/14229376408401.jpg" alt=""/>￼￼</p>
-
-<p>上传速度一般，我的宽带是电信20M。<br/>
-<img src="media/14229369882579/14229376940910.jpg" alt=""/>￼￼</p>
-
-<p>上传后就可以去预览看看速度如何了。进去一看，发现是要用自己的FTP密码登录才可以看。也就是说不备案是不能给别人看的，必须备案才可以。<br/>
-浏览一下图很多的页面。速度还可以，比放在github快很多！</p>
-
-<p>然后试试更新文章，看看ForkLift是否会自动同步！<br/>
-因为我现在是新写了一文章，所以在MWeb中 Build site 然后看看ForkLift会不会侦测到文件改变，然后自动同步更新到FTP。</p>
-
-<p>可惜的是：ForkLift不会自动同步，还是要你去点File--&gt;Sync to...才可以。如图，他会找出那些文档有改动，然后点Sync，才会更新到FTP。</p>
-
-<p><img src="media/14229369882579/14229393304301.jpg" alt=""/>￼￼</p>
-
-<p>下图是上传后预览的结果：<br/>
-<img src="media/14229369882579/14229395629085.jpg" alt=""/>￼￼</p>
-
-<h2 id="toc_0">备案和总结</h2>
-
-<p>有看到过v2ex上有朋友说备案也不大麻烦，弄好资料差不多五天就可以了。我当然不会将coderforart网站放到万网，所以肯定是不会去备案的。然后总的来说，万网的免费主机还是不错的，免费二年、速度也还行、备案也不麻烦。当然PHP和Mysql的功能我没去试，感觉免费主机还是应该只放静态HTML就好。</p>
-
-<p>MWeb用FTP的体验比github好很多，只要生成然后用FTP同步即可，非常简单，我想我开发MWeb的目的应该是达到了。虽然MWeb现在非常少人用，但是我还是会继续优化MWeb，让它能更简单。</p>
 
 ]]></content>
   </entry>

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
     
-  插入图片并显示在编辑器内 - Coder For Art
+  MWeb 1.7.1 版发布！支持导出为 RTF 和 Docx、发布到 Evernote 带样式、文档库备份和新网站主题等大量改进！ - Coder For Art
   
 
   </title>
@@ -97,23 +97,23 @@
       <div class="markdown-body article-wrap">
        <div class="article">
           
-          <h1>插入图片并显示在编辑器内</h1>
+          <h1>MWeb 1.7.1 版发布！支持导出为 RTF 和 Docx、发布到 Evernote 带样式、文档库备份和新网站主题等大量改进！</h1>
      
         <div class="read-more clearfix">
-          <span class="date">2014/12/16</span>
+          <span class="date">2015/9/14</span>
 
           <span>posted in&nbsp;</span> 
           
-              <span class="posted-in"><a href='Introduction.html'>Introduction</a></span>
+              <span class="posted-in"><a href='MWeb-cat.html'>MWeb</a></span>
            
          
           <span class="comments">
             
-              <a href="http://coderforart.com/insert-photos-and-display-in-editor-zh.html#disqus_thread">comments</a>
+              <a href="http://coderforart.com/14421938311781.html#disqus_thread">comments</a>
             
 
             
-              &nbsp;<a  class="ds-thread-count" data-thread-key="insert-photos-and-display-in-editor-zh.html" data-count-type="comments" href="insert-photos-and-display-in-editor-zh.html#ds-thread"></a>
+              &nbsp;<a  class="ds-thread-count" data-thread-key="14421938311781.html" data-count-type="comments" href="14421938311781.html#ds-thread"></a>
             
           </span>
 
@@ -121,9 +121,46 @@
       </div><!-- article -->
 
       <div class="article-content">
-      <p>拖拽图片（支持多张）到编辑器或者直接用粘贴即可插入图片，图片会直接显示在编辑器里（也可设定不显示），像这样：<br/>
-&lt;!-- more --&gt;<br/>
-<img src="media/14187874991645/716_max.jpg" alt="716_max"/>￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
+      <h2 id="toc_0">编辑器及发布服务改进</h2>
+
+<p>增加设置图片宽度和居左、居右、居中的语法。<br/>
+如：<code>![图片说明-w450](pic.jpg)</code> 这样表示设置图片宽度为 450。其中 <code>-w450</code> 为设置语法，生成 HTML 时会自动移除。<code>w</code> 表示设置宽度，居左为：<code>-l400</code>，居右为 <code>-r400</code>，居中为 <code>-c400</code>，其中前面的 <code>-</code> 为可选，比如设置一图片宽度为 500 并居中：<code>![c500](pic.jpg)</code>。<br/>
+编辑器内显示的图片增加了右键菜单，右键图片即可查看图片大小、打开图片、复制图片。<br/>
+<img src="media/14421938311781/mweb-img-size.jpg" alt="mweb-img-size"/></p>
+
+<span id="more"></span><!-- more -->
+
+<p>增加导出为 RTF、Docx 和复制为富文本（Copy as Rich Text）功能。其中复制为富文本功能复制后，可以直接把格式化的内容粘贴到 mail 和 pages，带图片和格式。需要说明的是：导出为 Docx 功能目前并不带图片。<br/>
+<img src="media/14421938311781/mweb-docx-rtf.jpg" alt="mweb-docx-rtf"/></p>
+
+<p>发布到 Evernote、印象笔记现在自带漂亮的默认样式。<br/>
+<img src="media/14421938311781/mweb-evernote-format.jpg" alt="mweb-evernote-format"/></p>
+
+<p>icon 有所调整，看上去更舒服了点，界面的颜值也有所提升。</p>
+
+<p>MWeb 从 1.7 版开始将自带不可改动的预览 CSS，方便日后优化和更新。目前自带有 5 种，名称都是以 <code>mweb-</code> 开头。</p>
+
+<p>编辑器右键增加 Copy HTML 菜单项。</p>
+
+<p>增加是否用空格替换 Tabs 选项（Insert spaces instead of tabs），在 <code>Preferences</code> - <code>General</code> 里可以设置。</p>
+
+<p>增加编辑器行最大宽度设置（Editor Line Width），默认为 800，这个设置一般的 Markdown 编辑器都有，主要是全屏写作时，内容能居中，这样看上去会舒服点。 <code>Preferences</code> - <code>Themes</code>。</p>
+
+<p>搜寻改进：当搜寻时，如果打开搜寻结果中的文档，会直接以搜寻的关键字查找打开的文档并高亮显示搜寻的关键字的位置。</p>
+
+<h2 id="toc_1">文档库改进</h2>
+
+<p>文档库增加两个静态网站模版，分别为：mweb-medium-like 和 mweb-foundation-book。mweb-medium-like Demo 网址：<a href="http://coderforart.com/">http://coderforart.com/</a>，使用说明：<a href="http://coderforart.com/mweb-medium-like-theme.html">http://coderforart.com/mweb-medium-like-theme.html</a>。mweb-foundation-book Demo 网址和使用说明：<a href="http://coderforart.com/objccndemo/">http://coderforart.com/objccndemo/</a></p>
+
+<p>文档库增加备份功能，按狡兔三窟的原理，可以备份到三处地方，<code>Preferences</code> - <code>Backup</code>。<br/>
+<img src="media/14421938311781/mweb-backup.jpg" alt="mweb-backup"/></p>
+
+<p>文档库现在支持把列表中的文档拖拽到左边的分类中以设置文档的分类。需要说明的是，这个功能也支持移除分类。比如说 A 文档设置了属于 <code>MWeb</code> 分类，如果想移除，可以再拖拽到 <code>MWeb</code> 这个分类，则会进行移除操作。</p>
+
+<h2 id="toc_2">其他改进</h2>
+
+<p>外部模式现在支持拖拽移动子文件夹。<br/>
+其他的一些小修正</p>
 
       </div>
 
@@ -131,16 +168,13 @@
         <div class="large-6 columns">
         <p class="text-left" style="padding:15px 0px;">
       
-          <a href="insert-photos-and-display-in-editor.html" 
-          title="Previous Post: Insert photos and display in editor">&laquo; Insert photos and display in editor</a>
-      
         </p>
         </div>
         <div class="large-6 columns">
       <p class="text-right" style="padding:15px 0px;">
       
-          <a  href="markdown-syntax-guide-full-version.html" 
-          title="Next Post: Markdown syntax guide full version">Markdown syntax guide full version &raquo;</a>
+          <a  href="mweb-medium-like-theme.html" 
+          title="Next Post: MWeb mweb-medium-like 网站主题">MWeb mweb-medium-like 网站主题 &raquo;</a>
       
       </p>
         </div>
@@ -167,7 +201,7 @@
           
 
           
-              <div class="ds-thread" data-thread-key="insert-photos-and-display-in-editor-zh.html" data-url="http://coderforart.com/insert-photos-and-display-in-editor-zh.html" data-title="插入图片并显示在编辑器内"></div>
+              <div class="ds-thread" data-thread-key="14421938311781.html" data-url="http://coderforart.com/14421938311781.html" data-title="MWeb 1.7.1 版发布！支持导出为 RTF 和 Docx、发布到 Evernote 带样式、文档库备份和新网站主题等大量改进！"></div>
           
         </div>
       </div>
