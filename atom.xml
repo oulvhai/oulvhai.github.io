@@ -4,13 +4,39 @@
   <title><![CDATA[Coder For Art]]></title>
   <link href="http://coderforart.com/atom.xml" rel="self"/>
   <link href="http://coderforart.com/"/>
-  <updated>2015-09-25T11:15:54+08:00</updated>
+  <updated>2015-10-24T17:06:01+08:00</updated>
   <id>http://coderforart.com/</id>
   <author>
     <name><![CDATA[]]></name>
     
   </author>
   <generator uri="http://www.mweb.im/">MWeb</generator>
+  
+  <entry>
+    <title type="html"><![CDATA[MWeb 1.8 发布！LaTex 语法高亮和编辑器内预览、EL Capitan 优化、Bug 修正等]]></title>
+    <link href="http://coderforart.com/mweb-1.8.1-release.html"/>
+    <updated>2015-10-24T16:57:41+08:00</updated>
+    <id>http://coderforart.com/mweb-1.8.1-release.html</id>
+    <content type="html"><![CDATA[
+<p><img src="media/14456770612819/cn-s-5-small.jpg" alt="" style="width:1280px;"/></p>
+
+<ul>
+<li>增加记忆文档滚动位置的功能，之前在切换文档时，会总是跳到顶部，现在会记住你之前滚动的位置，下次切换时会还原（Pro Only）。</li>
+<li>增加 LaTex 语法高亮和编辑器内实时预览。之前写 LaTex 想要预览的话，要打开预览窗口，而且不大好用，现在可以在编辑器内实时预览，已经非常好用了（Pro Only）。</li>
+<li>实时预览窗口工具栏上增加 Above 的选项，选中后会一直在编辑器上面。这个选项给切换文档时喜欢先看预览效果的朋友。</li>
+<li>增加支持 EL Capitan 的 Split View 模式，现在可以在 Split View 的左边放编辑器，右边放实时预览窗口了。</li>
+<li>如果取消 <code>Resize window when hide pane</code> 选项的话，在全屏模式下也支持 CMD + 1， CMD + 3 切换显示面板了。</li>
+<li>修正文档库分类拖动和排序问题</li>
+<li>修正文档列表拖动排序闪退问题</li>
+<li>修正打开某些文档 CPU 会 100%， 文档库文档点开后要选择才看到字体问题。</li>
+<li>修正文档库中文档列表输入标题前不能同步显示，直到写入内容才会同步显示的问题</li>
+<li>修正文档库新增分类直接 Build Site 闪退问题。</li>
+<li>修正 CMD + F 打开查找面板后，不能用 CMD + Option + F 切换为替换面板的问题。</li>
+<li>修正一些文档导出为 PDF 闪退问题。</li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[准备入坑 C++ 和 UE4，花了两天时间研究了一下，写些大概方向]]></title>
@@ -2066,60 +2092,6 @@ If you didn&#39;t change MWeb build site path,the default path is:</p>
 
 <p>All is OK!! <br/>
 When you click <q>Build site</q> button in MWeb, GoodSync will automatically synchronize your static website to FTP.</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[使用GoodSync把MWeb生成的静态网站自动同步到FTP、SFTP、WebDAV、Amazon S3等]]></title>
-    <link href="http://coderforart.com/use-goodsync-sync-mweb-static-websites-zh.html"/>
-    <updated>2015-02-27T10:55:50+08:00</updated>
-    <id>http://coderforart.com/use-goodsync-sync-mweb-static-websites-zh.html</id>
-    <content type="html"><![CDATA[
-<p>之前有写过如何用ForkLift这样的FTP软件自带的同步功能传到FTP，但是还是有点麻烦，昨天发现了一个非常好的软件GoodSync，它有非常强大的同步功能，而且还免费！</p>
-
-<span id="more"></span><!-- more -->
-
-<h2 id="toc_0">下载并安装GoodSync</h2>
-
-<p>去这个网址：<a href="http://www.goodsync.com/">http://www.goodsync.com/</a> 免费下载GoodSync并安装。安装时要选择是否设置GoodSync Connect时，我选择是否：Do not setup GoodSync Connect。完成后点新建任务，就会新增一个同步任务。</p>
-
-<h2 id="toc_1">选择要同步的文件夹</h2>
-
-<p>在左侧选择MWeb生成的静态网站所在的文件夹。如果您没有设置MWeb生成的静态网站的文件夹，默认在：</p>
-
-<pre><code>file:///Users/您的帐号/Library/Containers/com.coderforart.MWeb/Data/Documents/MWeb/LocalData/Site
-</code></pre>
-
-<p>这个位置，在GoodSync的选择位置的窗口中勾选：<code>Show hidden Files/Floders</code> 才能找到这个位置。</p>
-
-<h2 id="toc_2">选择要同步的目标位置</h2>
-
-<p>在右侧选择要同步的目标位置，我这里选择FTP，如下图，可以看到GoodSync还支持SFTP、WebDAV、Amazon S3等非常多的同步服务。<br/>
-<img src="media/14250057502319/14250078774218.jpg" alt=""/>￼￼￼￼</p>
-
-<p>点“连接”按钮，连上FTP后，选择FTP上要同步的文件夹，再点“选择”按钮。如果有跳出来提示，点“Yes”。</p>
-
-<h2 id="toc_3">设置自动同步</h2>
-
-<p>如下图：点“自动”按钮，设置当文件改变时就分析和同步。<br/>
-<img src="media/14250057502319/14250082156068.jpg" alt=""/>￼￼￼￼</p>
-
-<p>点“确定”后就会开始分析和同步了。</p>
-
-<p>之后当您每一次用MWeb “Build Site”时，如果有打开GoodSync，它就会自动同步了，非常方便，比Github还方便！</p>
-
-<h2 id="toc_4">总结</h2>
-
-<p>GoodSync的功能还有很多，比如说同步到SFTP、WebDAV、Amazon S3等等，非常强大而且还免费。</p>
-
-<p>因为有GoodSync这个同步软件，MWeb变得更方便好用了。我现在也在考虑是否把CoderForArt搬到有FTP功能的主机，这样在国内访问会快很多，写新文章时也不用打github命令手动去上传了。然后本来是有考虑为MWeb加上自动同步功能或者另做一软件，现在看来也没有必要了。</p>
-
-<p><strong>更新</strong>：GoodSync 免费版是有限定的，限定为：<br/>
-Q: What are free version limitations? <br/>
-A: You can have 3 or less jobs in free version and 100 or less files and folders in each job.</p>
-
-<p>虽然GoodSync不免费，但是非常好用。我也会关注是否有其他同步软件。</p>
 
 ]]></content>
   </entry>
