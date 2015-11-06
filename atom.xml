@@ -4,13 +4,51 @@
   <title><![CDATA[Coder For Art]]></title>
   <link href="http://coderforart.com/atom.xml" rel="self"/>
   <link href="http://coderforart.com/"/>
-  <updated>2015-10-31T11:57:37+08:00</updated>
+  <updated>2015-11-05T10:45:37+08:00</updated>
   <id>http://coderforart.com/</id>
   <author>
     <name><![CDATA[]]></name>
     
   </author>
   <generator uri="http://www.mweb.im/">MWeb</generator>
+  
+  <entry>
+    <title type="html"><![CDATA[MWeb 1.8.3 发布！增加发布到 Medium、LaTex 预览修正、编辑器优化等]]></title>
+    <link href="http://coderforart.com/mweb-1.8.3-release.html"/>
+    <updated>2015-11-05T09:36:32+08:00</updated>
+    <id>http://coderforart.com/mweb-1.8.3-release.html</id>
+    <content type="html"><![CDATA[
+<h2 id="toc_0">发布到 Medium 详细说明</h2>
+
+<p>在 <code>Preferences</code> - <code>Publishing</code> 可增加发布到 Medium 服务，点击后会出来以下画面：</p>
+
+<p><img src="media/14466873920420/14466881412766.jpg" alt="" class="mw_img_center" style="width:609px;display: block; clear:both; margin: 0 auto;"/></p>
+
+<span id="more"></span><!-- more -->
+
+<p>点 <a href="https://medium.com/me/settings">Settings page</a> （oops! 图中打错字！）进入 Medium 设置，拉到最下面，会发现 Intgration Tokens，填入想要的名称标识，并点 <code>Get integartion token</code> 按钮，就会得到一串字符，复制并返回 MWeb，粘贴到 Integration Token 字段，并点 <code>OK</code> 按钮即可，如下图为所说的字符串。</p>
+
+<p><img src="media/14466873920420/14466886017072.jpg" alt="" class="mw_img_center" style="width:774px;display: block; clear:both; margin: 0 auto;"/></p>
+
+<p>目前 Medium 的 API 还不支持更新，所以现在只支持发布，然后 Medium 的图片上传 API 也还没开放，所以正常情况下也不支持本地图片自动上传，但是如果你有增加了发布到 Blogger 的服务，可以勾选 Upload local image to Google Picasa 这个选项，这样就支持本地图片自动上传了。</p>
+
+<p>如下图左边是没有增加发布到 Blogger 服务的情况，可以看到选项是灰色的，右边是已经增加了发布到 Blogger 服务的情况，当勾选之后，MWeb 就会把本地图片自动上传至 Picasa，然后再发布到 Medium。发布到 Medium 之后，Medium 会自动把 Picasa 的图片保存到自己的服务器。</p>
+
+<p><img src="media/14466873920420/publish-to-medium.jpg" alt="publish-to-mediu" class="mw_img_center" style="width:1440px;display: block; clear:both; margin: 0 auto;"/></p>
+
+<p><strong>注意：</strong>发布到 Medium 的功能 Lite 版是没有的。</p>
+
+<h2 id="toc_1">其它更新</h2>
+
+<ul>
+<li>修正 LaTex 编辑器内预览卡死、$$ 语法不出现公式问题。</li>
+<li>修正脚注如果出现第二条引用会出错问题</li>
+<li>编辑器性能提升了点，现在编辑十万多字的文档比之前好了很多。也修正了编辑时有时候会跳动的 Bug。</li>
+<li>其他小修正。</li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[MWeb 1.8 发布！LaTex 语法高亮和编辑器内预览、EL Capitan 优化、Bug 修正等]]></title>
@@ -2050,48 +2088,6 @@ ourcoders:<a href="http://ourcoders.com/thread/show/5653/">http://ourcoders.com/
 
 <p>图六：把一张图片顶置。对着图画画时有些用。<br/>
 <img src="media/14252762205423/06.jpg" alt="01"/></p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Use GoodSync synchronize MWeb's static websites to FTP,SFTP,WebDAV,Amazon S3 automatically]]></title>
-    <link href="http://coderforart.com/use-goodsync-sync-mweb-static-websites.html"/>
-    <updated>2015-02-27T12:01:25+08:00</updated>
-    <id>http://coderforart.com/use-goodsync-sync-mweb-static-websites.html</id>
-    <content type="html"><![CDATA[
-<p>GoodSync syncs files between your computer, mobile devices, FTP, SFTP, Amazon S3, Google Drive, SkyDrive, WebDAV, Azure.</p>
-
-<span id="more"></span><!-- more -->
-
-<h2 id="toc_0">Download and install GoodSync</h2>
-
-<p>Go to <a href="http://www.goodsync.com/">http://www.goodsync.com/</a> download GoodSync and install. I checked <q>Do not setup GoodSync Connect</q> and finish install.</p>
-
-<p>Click <q>Create a New Job</q> button to create a new synchronize job. </p>
-
-<h2 id="toc_1">Select sync path</h2>
-
-<p>Select MWeb build site path for the left panel.<br/>
-If you didn&#39;t change MWeb build site path,the default path is:</p>
-
-<pre><code>file:///Users/You Account/Library/Containers/com.coderforart.MWeb/Data/Documents/MWeb/LocalData/Site
-</code></pre>
-
-<p>To find this path, you must checked <code>Show hidden Files/Floders</code>.</p>
-
-<h2 id="toc_2">Select sync to path</h2>
-
-<p>Select sync to path for the right panel.I choose sync to FTP.<br/>
-<img src="media/14250096857643/14250109782773.jpg" alt=""/>￼￼￼￼</p>
-
-<h2 id="toc_3">Enable automatically synchronize</h2>
-
-<p>Click <q>auto</q> button,enable On File Change: Analyze,Sync. Click <q>OK</q>.<br/>
-<img src="media/14250096857643/14250112704266.jpg" alt=""/>￼￼￼￼</p>
-
-<p>All is OK!! <br/>
-When you click <q>Build site</q> button in MWeb, GoodSync will automatically synchronize your static website to FTP.</p>
 
 ]]></content>
   </entry>
