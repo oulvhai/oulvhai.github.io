@@ -18,7 +18,13 @@
   <script src="asset/highlightjs/highlight.pack.js"></script>
   <link href="asset/highlightjs/styles/github.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script>hljs.initHighlightingOnLoad();</script>
-
+<script type="text/javascript">
+  function before_search(){
+    var searchVal = 'site:coderforart.com ' + document.getElementById('search_input').value;
+    document.getElementById('search_q').value = searchVal;
+    return true;
+  }
+</script>
   </head>
   <body class="antialiased hide-extras">
     
@@ -40,9 +46,9 @@
 
         <ul class="right" id="search-wrap">
           <li>
-<form target="_blank" action="http://google.com/search" method="get">
-    <input type="hidden" name="q" value="site:coderforart.com" />
-    <input tabindex="1" type="search" name="q"  placeholder="Search"/>
+<form target="_blank" onsubmit="return before_search();" action="http://google.com/search" method="get">
+    <input type="hidden" id="search_q" name="q" value="" />
+    <input tabindex="1" type="search" id="search_input"  placeholder="Search"/>
 </form>
 </li>
           </ul>
@@ -189,7 +195,7 @@ __这些文字会生成`&lt;strong&gt;`__
 
 <pre><code>* 项目一 无序列表 `* + 空格键`
 * 项目二
-    * 项目二的子项目一 无序列表 `* + TAB + 空格键`
+    * 项目二的子项目一 无序列表 `TAB + * + 空格键`
     * 项目二的子项目二
 </code></pre>
 
@@ -201,7 +207,7 @@ __这些文字会生成`&lt;strong&gt;`__
 <li>项目二
 
 <ul>
-<li>项目二的子项目一 无序列表 <code>* + TAB + 空格键</code></li>
+<li>项目二的子项目一 无序列表 <code>TAB + * + 空格键</code></li>
 <li>项目二的子项目二</li>
 </ul></li>
 </ul>
@@ -213,7 +219,7 @@ __这些文字会生成`&lt;strong&gt;`__
 <pre><code>1. 项目一 有序列表 `数字 + . + 空格键`
 2. 项目二 
 3. 项目三
-    1. 项目三的子项目一 有序列表 `数字 + . + TAB + 空格键`
+    1. 项目三的子项目一 有序列表 `TAB + 数字 + . + 空格键`
     2. 项目三的子项目二
 </code></pre>
 
@@ -225,7 +231,7 @@ __这些文字会生成`&lt;strong&gt;`__
 <li>项目三
 
 <ol>
-<li>项目三的子项目一 有序列表 <code>数字 + . + TAB + 空格键</code></li>
+<li>项目三的子项目一 有序列表 <code>TAB + 数字 + . + 空格键</code></li>
 <li>项目三的子项目二</li>
 </ol></li>
 </ol>
@@ -287,7 +293,7 @@ __这些文字会生成`&lt;strong&gt;`__
 &gt; 第二行费用文字
 </code></pre>
 
-<p><code>Control + B</code> 可插入Markdown语法。<br/>
+<p><code>CMD + Shift + B</code> 可插入Markdown语法。<br/>
 效果如下：</p>
 
 <p>某某说:</p>
@@ -714,6 +720,12 @@ $$  x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
 	      
 		      
 			      <li class="post">
+			        <a href="mweb-1.9.1-release.html">MWeb 1.9 发布！新图标、编辑器大改进、导出 PDF 改进、增加图床功能、中文版等！</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
 			        <a href="mweb-1.8.3-release.html">MWeb 1.8.3 发布！增加发布到 Medium、LaTex 预览修正、编辑器优化等</a>
 			      </li>
 		     
@@ -733,12 +745,6 @@ $$  x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
 		      
 			      <li class="post">
 			        <a href="mweb-1.7.3-release.html">MWeb 1.7.3 版已提交！兼容 EL Capitan、外部模式增强、Bug 修正等</a>
-			      </li>
-		     
-		  
-		      
-			      <li class="post">
-			        <a href="mweb-1.7.1-release.html">MWeb 1.7.1 版发布！支持导出为 RTF 和 Docx、发布到 Evernote 带样式、文档库备份和新网站主题等大量改进！</a>
 			      </li>
 		     
 		  

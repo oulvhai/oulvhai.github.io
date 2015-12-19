@@ -18,7 +18,13 @@
   <script src="asset/highlightjs/highlight.pack.js"></script>
   <link href="asset/highlightjs/styles/github.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script>hljs.initHighlightingOnLoad();</script>
-
+<script type="text/javascript">
+  function before_search(){
+    var searchVal = 'site:coderforart.com ' + document.getElementById('search_input').value;
+    document.getElementById('search_q').value = searchVal;
+    return true;
+  }
+</script>
   </head>
   <body class="antialiased hide-extras">
     
@@ -40,9 +46,9 @@
 
         <ul class="right" id="search-wrap">
           <li>
-<form target="_blank" action="http://google.com/search" method="get">
-    <input type="hidden" name="q" value="site:coderforart.com" />
-    <input tabindex="1" type="search" name="q"  placeholder="Search"/>
+<form target="_blank" onsubmit="return before_search();" action="http://google.com/search" method="get">
+    <input type="hidden" id="search_q" name="q" value="" />
+    <input tabindex="1" type="search" id="search_input"  placeholder="Search"/>
 </form>
 </li>
           </ul>
@@ -100,6 +106,76 @@
 	<div class="large-8 medium-8 columns">
 		<div class="markdown-body home-categories">
 		
+			<div class="article">
+                <a class="clearlink" href="markdown-syntax-guide-full-version.html">
+                
+                  <h1>Markdown syntax guide full version</h1>
+                  <div class="a-content">
+                      
+                      <div class="a-content-text">
+                        
+                        	<ul>
+<li><a href="#overview">Overview</a>
+
+<ul>
+<li><a href="#philosophy">Philosophy</a></li>
+<li><a href="#html">Inline HTML</a></li>
+<li><a href="#autoescape">Automatic Escaping for Special Characters</a></li>
+</ul></li>
+<li><a href="#block">Block Elements</a>
+
+<ul>
+<li><a href="#p">Paragraphs and Line Breaks</a></li>
+<li><a href="#header">Headers</a></li>
+<li><a href="#blockquote">Blockquotes</a></li>
+<li><a href="#list">Lists</a></li>
+<li><a href="#precode">Code Blocks</a></li>
+<li><a href="#hr">Horizontal Rules</a></li>
+</ul></li>
+<li><a href="#span">Span Elements</a>
+
+<ul>
+<li><a href="#link">Links</a></li>
+<li><a href="#em">Emphasis</a></li>
+<li><a href="#code">Code</a></li>
+<li><a href="#img">Images</a></li>
+</ul></li>
+<li><a href="#misc">Miscellaneous</a>
+
+<ul>
+<li><a href="#backslash">Backslash Escapes</a></li>
+<li><a href="#autolink">Automatic Links</a></li>
+</ul></li>
+</ul>
+
+
+                        
+                      </div>
+                  </div>
+                </a>
+                <div class="read-more clearfix">
+                  <div class="more-left left">
+                   <a href="markdown-syntax-guide-full-version.html">Read more</a>&nbsp;&nbsp; 
+                    <span class="date">2014/12/16</span>
+                    <span>posted in&nbsp;</span> 
+          				  
+          					    <span class="posted-in"><a href='Markdown.html'>Markdown</a></span>
+          				   
+                  </div>
+                  <div class="more-right right">
+                  <span class="comments">
+                      
+                        <a href="http://coderforart.com/markdown-syntax-guide-full-version.html#disqus_thread">comments</a>
+                      
+
+                      
+                        &nbsp;<a  class="ds-thread-count" data-thread-key="markdown-syntax-guide-full-version.html" data-count-type="comments" href="markdown-syntax-guide-full-version.html#ds-thread"></a>
+                       
+                  </span>
+                  </div>
+                </div>
+              </div><!-- article -->
+        
 			<div class="article">
                 <a class="clearlink" href="markdown-syntax-guide-full-version-zh.html">
                 
@@ -225,6 +301,12 @@ Document. Please refer to <a href="http://daringfireball.net/projects/markdown/s
 	      
 		      
 			      <li class="post">
+			        <a href="mweb-1.9.1-release.html">MWeb 1.9 发布！新图标、编辑器大改进、导出 PDF 改进、增加图床功能、中文版等！</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
 			        <a href="mweb-1.8.3-release.html">MWeb 1.8.3 发布！增加发布到 Medium、LaTex 预览修正、编辑器优化等</a>
 			      </li>
 		     
@@ -244,12 +326,6 @@ Document. Please refer to <a href="http://daringfireball.net/projects/markdown/s
 		      
 			      <li class="post">
 			        <a href="mweb-1.7.3-release.html">MWeb 1.7.3 版已提交！兼容 EL Capitan、外部模式增强、Bug 修正等</a>
-			      </li>
-		     
-		  
-		      
-			      <li class="post">
-			        <a href="mweb-1.7.1-release.html">MWeb 1.7.1 版发布！支持导出为 RTF 和 Docx、发布到 Evernote 带样式、文档库备份和新网站主题等大量改进！</a>
 			      </li>
 		     
 		  
