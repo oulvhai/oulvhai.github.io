@@ -149,8 +149,8 @@ padding: 8px 0px; margin: 0;
 
 #site-info .social a{-moz-border-radius:50%;-webkit-border-radius:50%;border-radius:50%;display:inline-block;vertical-align:middle;*vertical-align:auto;*zoom:1;*display:inline;text-indent:-9999px;margin:7px;opacity:0.5;width:28px;height:28px;-moz-transition:0.3s;-o-transition:0.3s;-webkit-transition:0.3s;transition:0.3s}
 #site-info .social a:hover{opacity:1}
-#site-info .social a.remail{background:url('../img/social/remail.png?1419407210') center no-repeat #050505;border:1px solid #050505}
-#site-info .social a.remail:hover{border:1px solid #000}
+#site-info .social a.email{background:url('../img/social/email.png?1419407210') center no-repeat #050505;border:1px solid #050505}
+#site-info .social a.email:hover{border:1px solid #000}
 #site-info .social a.facebook{background:url('../img/social/facebook.png?1419407210') center no-repeat #3B5998;border:1px solid #3B5998}
 #site-info .social a.facebook:hover{border:1px solid #2d4373}
 #site-info .social a.google{background:url('../img/social/google.png?1419407210') center no-repeat #C83D20;border:1px solid #C83D20}

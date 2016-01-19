@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
     
-  MWeb 1.3 release! 50% OFF, official site, new icon, task list support, optimized MathJax support etc... - Coder For Art
+  MWeb 1.9.3 发布！图床支持七牛、修正发布到 Wordpress https 问题、中文版不能发布到 Medium 问题等 - Coder For Art
   
   </title>
   
@@ -107,10 +107,10 @@
       <div class="markdown-body article-wrap">
        <div class="article">
           
-          <h1>MWeb 1.3 release! 50% OFF, official site, new icon, task list support, optimized MathJax support etc...</h1>
+          <h1>MWeb 1.9.3 发布！图床支持七牛、修正发布到 Wordpress https 问题、中文版不能发布到 Medium 问题等</h1>
      
         <div class="read-more clearfix">
-          <span class="date">2015/3/28</span>
+          <span class="date">2016/1/19</span>
 
           <span>posted in&nbsp;</span> 
           
@@ -119,11 +119,11 @@
          
           <span class="comments">
             
-              <a href="http://coderforart.com/mweb1.3-release.html#disqus_thread">comments</a>
+              <a href="http://coderforart.com/mweb-1.9.3-release.html#disqus_thread">comments</a>
             
 
             
-              &nbsp;<a  class="ds-thread-count" data-thread-key="mweb1.3-release.html" data-count-type="comments" href="mweb1.3-release.html#ds-thread"></a>
+              &nbsp;<a  class="ds-thread-count" data-thread-key="mweb-1.9.3-release.html" data-count-type="comments" href="mweb-1.9.3-release.html#ds-thread"></a>
             
           </span>
 
@@ -131,40 +131,52 @@
       </div><!-- article -->
 
       <div class="article-content">
-      <h2 id="toc_0">Official Site</h2>
+      <h2 id="toc_0">详细更新说明：</h2>
 
-<p>Chinese: <a href="http://zh.mweb.im">http://zh.mweb.im</a><br/>
-English: <a href="http://www.mweb.im">http://www.mweb.im</a></p>
-
-<h2 id="toc_1">Featrue</h2>
+<p>新增：</p>
 
 <ul>
-<li>Add <code>CMD+Shift+V</code> paste PNG pictrue.</li>
-<li>Add sequence and flow chart support</li>
-<li>Add task lists support. <code>- + space + [ ]</code>or <code>- + space + [x]</code></li>
-<li>Add Markdown export.</li>
-<li>Add setting Disqus Comment code support, more info: <a href="http://www.mweb.im/mweb-comment-and-share-help.html">http://www.mweb.im/mweb-comment-and-share-help.html</a></li>
-<li>Optimized MathJax support and add MathJax library to local.</li>
-<li>Optimized PDF export.</li>
+<li>图床功能现在支持七牛 (qiniu.com) 了</li>
+<li>文档库增加清倒废纸篓功能</li>
+<li>全屏快捷键：Control + CMD + F</li>
+<li>发布到印象笔记时会记住上一次选择的笔记本</li>
 </ul>
 
-<p>Fixed some crash.</p>
+<p>修正：</p>
 
-<h2 id="toc_2">For MWeb 1.2 users</h2>
+<ul>
+<li>发布到 Wordpress 和 MetaWeblog API 不支持 https 问题</li>
+<li>中文版不能发布到 Medium 问题</li>
+<li>导出 PDF 选择带目录时某些情况下目录结构不对问题</li>
+<li>特殊文档不能正确解析问题（CPU 100%，切换文档不能显示）</li>
+<li>像 wow_great_stuff 这种写法不会解析成下划线了</li>
+<li>其它一些 Bug 修正和细节改进。</li>
+</ul>
 
-<p>Site themes updated: greyshade, octopress themes updated for support setting Comment and Share code,MathJax ,sequence and flow chart. Three variables added like below:</p>
+<span id="more"></span><!-- more -->
 
-<pre><code>{{ commentAndShareCode }}
-{{ seqAndFlowChartSupport }}
-{{ mathJaxSupport }}
-</code></pre>
+<h2 id="toc_1">七牛图床设置详细说明</h2>
 
-<p>Updated template pages:</p>
+<p>如下图，进入 MWeb 的偏好设置 - 发布服务里，本地图片上传服务中，点右边的 <code>七牛云存储</code> 按钮，会跳出如下图的新增窗口：<br/>
+<img src="media/14531669957228/14531677609529.jpg" alt="" style="width:697px;"/></p>
 
-<ol>
-<li>footer.html add <code>{{ seqAndFlowChartSupport }}</code>, <code>{{ mathJaxSupport }}</code> code, please check this link: <a href="https://github.com/oulvhai/MWeb-Themes/blob/master/greyshade/footer.html">https://github.com/oulvhai/MWeb-Themes/blob/master/greyshade/footer.html</a></li>
-<li>post.html add <code>{{ commentAndShareCode }}</code> code, please check this link: <a href="https://github.com/oulvhai/MWeb-Themes/blob/master/greyshade/post.html">https://github.com/oulvhai/MWeb-Themes/blob/master/greyshade/post.html</a></li>
-</ol>
+<ul>
+<li>名称：填入自定的名称即可。</li>
+<li>API 地址：用默认这个即可，也可以用另外的，详细请参考：<a href="http://developer.qiniu.com/docs/v6/api/reference/up/upload.html">http://developer.qiniu.com/docs/v6/api/reference/up/upload.html</a> 请求头部中的 Host 那里。</li>
+<li>空间名称：你在七牛中新增的空间的名称。</li>
+<li>Access Key 和 Secret Key：在 七牛个人首页 - 帐号 - 密钥 中可以找到，网址通常为：<a href="https://portal.qiniu.com/setting/key">https://portal.qiniu.com/setting/key</a>。</li>
+<li>图片 URL 前缀：这个要去到空间，随便上传一张图，选中后就可以看到外链地址，这样就知道 URL 前缀了。</li>
+</ul>
+
+<p>设置完后可以点验证按钮，选择一张图片验证一下是否设置成功。设置成功后，打开要把本地图片上传到图床的文档，点软件右上角的 <code>分享</code> 按钮，在弹出的菜单中选择 <code>把本地图片上传至图床</code> ，如下图：<br/>
+<img src="media/14531669957228/14531685550447.jpg" alt=""/></p>
+
+<p>上面的下拉框可选择增加了的图床服务，中间会列出文档中的所有本地图片。选择刚刚新增的图床服务，点 <code>上传本地图片</code> 按钮即可。当文档中有新增的本地图片，重新调出这个界面，再点 <code>上传本地图片</code> 按钮即可把新增的图片上传。</p>
+
+<h2 id="toc_2">分享一个图床服务的使用小技巧</h2>
+
+<p>一般的博客、文章服务网站都支持查看 HTML 原码和直接填入 HTML 代码的，这种的话，点击本地图片上传至图床窗口中的 <code>复制 HTML</code> 按钮，然后粘贴即可。但是也有很多网站是不支持直接填入 HTML 代码的，比如说微薄中的发文章功能、微信公共号中的发文章功能等等。对于这些，可以点击 <code>新建文档</code> 按钮，这时 MWeb 会把文档中的本地图片地址替换为上传到图床后的地址并打开新建的文档。选择 视图菜单 - 实时预览 或者用快捷键 <code>CMD + R</code> 打开实时预览窗口，然后 <code>CMD + A</code> 全选预览中的文本和图片，<code>CMD + C</code> 复制。 然后再用 <code>CMD + V</code> 粘贴进不支持填入 HTML 代码的网站即可。下图为我粘贴到微薄文章中的效果。<br/>
+<img src="media/14531669957228/14531698229567.jpg" alt=""/></p>
 
       </div>
 
@@ -172,16 +184,13 @@ English: <a href="http://www.mweb.im">http://www.mweb.im</a></p>
         <div class="large-6 columns">
         <p class="text-left" style="padding:15px 0px;">
       
-          <a href="mweb-1.3.7-releases.html" 
-          title="Previous Post: MWeb 1.3.7 发布！增加发布到 Wordpress 等支持 Metaweblog API 的服务，如：Wordpress 博客、新浪博客、cnblogs、oschina。">&laquo; MWeb 1.3.7 发布！增加发布到 Wordpress 等支持 Metaweblog API 的服务，如：Wordpress 博客、新浪博客、cnblogs、oschina。</a>
-      
         </p>
         </div>
         <div class="large-6 columns">
       <p class="text-right" style="padding:15px 0px;">
       
-          <a  href="mweb1.3-release-zh.html" 
-          title="Next Post: MWeb 1.3 版发布！半价促销，新官网，新图标，增加任务列表，顺序图和流程图，优化MathJax、PDF导出等">MWeb 1.3 版发布！半价促销，新官网，新图标，增加任务列表，顺序图和流程图，优化MathJax、PDF导出等 &raquo;</a>
+          <a  href="mweb-1.9.1-release.html" 
+          title="Next Post: MWeb 1.9 发布！新图标、编辑器大改进、导出 PDF 改进、增加图床功能、中文版等！">MWeb 1.9 发布！新图标、编辑器大改进、导出 PDF 改进、增加图床功能、中文版等！ &raquo;</a>
       
       </p>
         </div>
@@ -208,7 +217,7 @@ English: <a href="http://www.mweb.im">http://www.mweb.im</a></p>
           
 
           
-              <div class="ds-thread" data-thread-key="mweb1.3-release.html" data-url="http://coderforart.com/mweb1.3-release.html" data-title="MWeb 1.3 release! 50% OFF, official site, new icon, task list support, optimized MathJax support etc..."></div>
+              <div class="ds-thread" data-thread-key="mweb-1.9.3-release.html" data-url="http://coderforart.com/mweb-1.9.3-release.html" data-title="MWeb 1.9.3 发布！图床支持七牛、修正发布到 Wordpress https 问题、中文版不能发布到 Medium 问题等"></div>
           
         </div>
       </div>
