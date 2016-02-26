@@ -4,13 +4,49 @@
   <title><![CDATA[Coder For Art]]></title>
   <link href="http://coderforart.com/atom.xml" rel="self"/>
   <link href="http://coderforart.com/"/>
-  <updated>2016-01-19T10:39:18+08:00</updated>
+  <updated>2016-02-26T12:09:27+08:00</updated>
   <id>http://coderforart.com/</id>
   <author>
     <name><![CDATA[]]></name>
     
   </author>
   <generator uri="http://www.mweb.im/">MWeb</generator>
+  
+  <entry>
+    <title type="html"><![CDATA[MWeb 1.9.7 发布！这次增加了一个有意思的改进，有必要说一下。]]></title>
+    <link href="http://coderforart.com/mweb-1.9.7-release.html"/>
+    <updated>2016-02-26T11:31:44+08:00</updated>
+    <id>http://coderforart.com/mweb-1.9.7-release.html</id>
+    <content type="html"><![CDATA[
+<h2 id="toc_0">有必要说明的预览方面的改进</h2>
+
+<p><img src="media/14564575040860/14564576891742.jpg" alt="" style="width:491px;"/></p>
+
+<p>这次的改进跟上图中的两个选项有关。</p>
+
+<span id="more"></span><!-- more -->
+
+<p>在之前的版本中，如果取消选中了 <code>Resize window when hide pane</code> 这个选项，就可以在全屏中使用 <code>CMD + 1/2/3</code> 来切换二三栏，但是选中后，就不能使用，同时 CMD + 4 切换边编辑边预览的模式时，不大好用，主要是窗口大小不好控制。在 1.9.7 版中，如果取消这个选项，边编辑边预览会变成下图所示（Mou、Macdown 方式），同时在全屏也支持 <code>CMD + 1/2/3/4</code> 切换，这样就好用了点。所以我就把这个方式设置为默认了，如果要用原来的使用方式（我个人比较喜欢的方式，我都没在用全屏），选中即可。</p>
+
+<p><img src="media/14564575040860/14564581431585.jpg" alt="" style="width:1066px;"/></p>
+
+<p>这次也修改了第二次按 <code>CMD + 1/2/3/4</code> 的行为，比如说按 <code>CMD + 4</code> 时变为边编辑边预览模式，这时再按 <code>CMD + 4</code> 则会变为三栏模式，所以现在只要用 <code>CMD + 4</code> 这个快捷键即可在两者切换。<code>CMD + 1/2/3</code> 则是在二栏/三栏和仅编辑器模式间切换，具体可以感受一下即知。</p>
+
+<p>另外顺手也增加了第二个选项：<code>Live Preview (CMD + R) open new window</code>。如果这个选项<strong>没有选中</strong>，则会以下图的方式显示预览，再 (CMD + R) 则会切换回编辑模式。如果选中，则为原来的方式，这个选项默认也是<strong>没选中</strong>的。<br/>
+<img src="media/14564575040860/14564584705796.jpg" alt="" style="width:1037px;"/></p>
+
+<h2 id="toc_1">其它改进和修正</h2>
+
+<ul>
+<li>图床功能中，七牛上传有时候会出现 401 错误的问题也修正了。</li>
+<li>发布到 Wordpress.com 现在支持 Latex 了。</li>
+<li>修正语法和拼写检查的设置不能保存的问题。</li>
+<li>文档库增加 未分类文档</li>
+<li>其他的一些 Bug 修正</li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[MWeb 1.9.3 发布！图床支持七牛、修正发布到 Wordpress https 问题、中文版不能发布到 Medium 问题等]]></title>
@@ -1984,104 +2020,6 @@ $$  x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
 
 </ol>
 </div>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[PinPhoto On OS X]]></title>
-    <link href="http://coderforart.com/pinphoto-en.html"/>
-    <updated>2015-03-05T16:21:11+08:00</updated>
-    <id>http://coderforart.com/pinphoto-en.html</id>
-    <content type="html"><![CDATA[
-<p>Placement your photos to anywhere on the screen and save as a document, PinPhoto will restore the state when you reopen.</p>
-
-<p style="text-align:center">
-<a target="_blank" onclick="ga('send','event','download-PinPhoto-Page-EN');" href="https://itunes.apple.com/us/app/pinphoto/id972438457?mt=12" target="_blank"><img src="media/14195170907881/icon_apple_store-download-small.png" width="180" /></a><br />
-<span style="color:#ff0000;">Free Download !</span>
-</p>
-
-<span id="more"></span><!-- more -->
-
-<h2 id="toc_0">Introduction PinPhoto</h2>
-
-<h3 id="toc_1">New PinPhoto document and import photos</h3>
-
-<p><code>CMD+N</code> to new PinPhoto document. Use Drag &amp; drop or <code>Import</code> button to add photos. You can also press <code>CMD+V</code> to paste photo when you copy a photo to pasteboard.</p>
-
-<p><img src="media/14255436714850/1.jpg" alt=""/></p>
-
-<p>Tip: If you want to add some lovely photo from website to PinPhoto document, right click website&#39;s photo, choose <code>Copy Image</code>, and go to PinPhoto document press <code>CMD+V</code>.</p>
-
-<h3 id="toc_2">Open and placement the photos</h3>
-
-<p>Click <code>Main Window</code> photos list&#39;s photo to open <code>Photo View</code>. Mouse moves to the top of <code>Photo View</code> and drag to change the position. You can use two finger zoom the photo. Use the right click context menu or main menu --&gt; view for more.</p>
-
-<p><img src="media/14255436714850/2.jpg" alt=""/></p>
-
-<p><strong>Right click context menu:</strong></p>
-
-<ul>
-<li>Zoom In: <code>CMD+=</code></li>
-<li>Zoom Out: <code>CMD+-</code></li>
-<li>Zoom to Fix: <code>CMD+9</code></li>
-<li>100%: actual size - <code>CMD+0</code></li>
-<li>200%: double&#39;s actual size - <code>CMD+8</code></li>
-<li>100% And Resize Window: actual size photo and view</li>
-<li>Duplicate View</li>
-<li>Colse View  - <code>CMD+W</code></li>
-<li>Close All View</li>
-<li>Show Main Window: <code>CMD+F</code></li>
-<li>Toggle Main Window: <code>CMD+D</code></li>
-<li>Toggle Floating: <code>CMD+T</code></li>
-<li>All Floating: <code>CMD+Shift+T</code></li>
-<li>Clear All Floating: <code>CMD+Option+T</code></li>
-<li>Prev Document: <code>⇤</code></li>
-<li>Next Document: <code>⇥</code></li>
-<li>Close Document: <code>CMD+Shift+w</code></li>
-</ul>
-
-<p>Automatic placement selected photos:<br/>
-You can select some photos --&gt; right click --&gt; choose <code>Open &amp; Placement Selected Photos</code>. PinPhoto will placement selected photos on full screen automatically.</p>
-
-<p><img src="media/14255436714850/3.jpg" alt=""/></p>
-
-<p><strong>Right click context menu:</strong></p>
-
-<ul>
-<li>Open Selected Photos View</li>
-<li>Open &amp; Placement Selected Photos</li>
-<li>Close Selected Photos View</li>
-<li>Close All View</li>
-<li>Deselect All</li>
-<li>Select All</li>
-<li>Delete: <code>CMD+Delete</code></li>
-<li>Hide Main Window</li>
-<li>All Floating: <code>CMD+Shift+T</code></li>
-<li>Clear All Floating: - <code>CMD+Option+T</code></li>
-<li>Prev Document: <code>⇤</code></li>
-<li>Next Document: <code>⇥</code></li>
-</ul>
-
-<h3 id="toc_3">Floating Photo View</h3>
-
-<p><code>CMD+T</code> to toggle floating <code>Photo View</code>, <code>CMD+Shift+T</code> floating all <code>Photo View</code>, <code>CMD+Option+T</code> cancels floating all <code>Photo View</code>.</p>
-
-<p><img src="media/14255436714850/4.jpg" alt=""/></p>
-
-<h3 id="toc_4">Hide/Show Main Window</h3>
-
-<p><code>CMD+D</code> toggle hide/show <code>Main Window</code>, <code>CMD+F</code> show <code>Main Window</code></p>
-
-<p><img src="media/14255436714850/5.jpg" alt=""/></p>
-
-<h3 id="toc_5">Switch opened PinPhoto documents</h3>
-
-<p>To switch prev document,please use <code>⇤</code> key. To switch next document,please use <code>⇥</code> key.</p>
-
-<h2 id="toc_6">Questions?</h2>
-
-<p>Please use Help --&gt; Send Feedback in PinPhoto or Twitter: <a href="https://twitter.com/oulvhai">@oulvhai</a></p>
 
 ]]></content>
   </entry>
