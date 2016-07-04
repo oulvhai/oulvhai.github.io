@@ -39,9 +39,13 @@
   <div class="row">
       <div style="position: relative;width:100%;"><div style="position: absolute; width:100%;">
         <ul id="main-menu" class="left">
-        <li id="menu_item_index"><a href="index.html">HOME</a></li>
-        <li id="menu_item_archives"><a href="archives.html">Archives</a></li>
-        <li id="menu_item_about"><a href="about.html">ABOUT</a></li>
+        
+        <li id="menu_item_index"><a target="_self" href="index.html">HOME</a></li>
+        
+        <li id="menu_item_archives"><a target="_self" href="archives.html">Archives</a></li>
+        
+        <li id="menu_item_about"><a target="_self" href="about.html">About</a></li>
+        
         </ul>
 
         <ul class="right" id="search-wrap">
@@ -178,6 +182,9 @@
 <p>一般的博客、文章服务网站都支持查看 HTML 原码和直接填入 HTML 代码的，这种的话，点击本地图片上传至图床窗口中的 <code>复制 HTML</code> 按钮，然后粘贴即可。但是也有很多网站是不支持直接填入 HTML 代码的，比如说微薄中的发文章功能、微信公共号中的发文章功能等等。对于这些，可以点击 <code>新建文档</code> 按钮，这时 MWeb 会把文档中的本地图片地址替换为上传到图床后的地址并打开新建的文档。选择 视图菜单 - 实时预览 或者用快捷键 <code>CMD + R</code> 打开实时预览窗口，然后 <code>CMD + A</code> 全选预览中的文本和图片，<code>CMD + C</code> 复制。 然后再用 <code>CMD + V</code> 粘贴进不支持填入 HTML 代码的网站即可。下图为我粘贴到微薄文章中的效果。<br/>
 <img src="media/14531669957228/14531698229567.jpg" alt=""/></p>
 
+
+    
+
       </div>
 
       <div class="row">
@@ -247,11 +254,11 @@
 
 
 
-<a class="weibo" target="_blank" href="http://weibo.com/oulvhai" title="weibo">Weibo</a>
-<a class="twitter" target="_blank" href="http://twitter.com/oulvhai" title="Twitter">Twitter</a>
-<a class="github" target="_blank" href="https://github.com/oulvhai" title="GitHub">GitHub</a>
+<a target="_blank" class="weibo" href="http://weibo.com/oulvhai" title="weibo">Weibo</a>
+<a target="_blank" class="twitter" target="_blank" href="http://twitter.com/oulvhai" title="Twitter">Twitter</a>
+<a target="_blank" class="github" target="_blank" href="https://github.com/oulvhai" title="GitHub">GitHub</a>
 
-  <a class="rss" href="atom.xml" title="RSS">RSS</a>
+  <a target="_blank" class="rss" href="atom.xml" title="RSS">RSS</a>
                 
               	 </div>
           	</div>
@@ -263,7 +270,7 @@
                 </div>
                 <div class="side-content">
                   <div style="color:#ff0000; text-align:center; padding:8px;" class="bg-info site_notice">
-                    <a style="color:#ff0000;"  onclick="ga('send','event','global_notice_click');"  href="http://sspai.com/topic/best-apps-2015/" target="_blank">「MWeb 获得少数派 2015 年度 Mac App」! </a>
+                    <a style="color:#ff0000;"  onclick="ga('send','event','global_notice_click');"  href="http://zh.mweb.im/mweb-2.0-beta.html" target="_blank">MWeb 2.0 测试版可以下载啦! </a>
                   </div>
                 </div>
             </div>
@@ -304,6 +311,12 @@
 	      
 		      
 			      <li class="post">
+			        <a href="mweb-2.0-beta.html">MWeb 2.0 测试版可以下载啦，这次是公开测试，感兴趣的朋友可以试试</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
 			        <a href="mweb-1.9.7-release.html">MWeb 1.9.7 发布！这次增加了一个有意思的改进，有必要说一下。</a>
 			      </li>
 		     
@@ -323,12 +336,6 @@
 		      
 			      <li class="post">
 			        <a href="mweb-1.8.3-release.html">MWeb 1.8.3 发布！增加发布到 Medium、LaTex 预览修正、编辑器优化等</a>
-			      </li>
-		     
-		  
-		      
-			      <li class="post">
-			        <a href="mweb-1.8.1-release.html">MWeb 1.8 发布！LaTex 语法高亮和编辑器内预览、EL Capitan 优化、Bug 修正等</a>
 			      </li>
 		     
 		  

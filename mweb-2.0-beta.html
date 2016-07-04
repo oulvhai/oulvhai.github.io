@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
     
-  MWeb 1.5 发布！增加打字机滚动模式、发布到 Evernote、印象笔记、Wordpress.com、Blogger、编辑器内代码块语法高亮 - Coder For Art
+  MWeb 2.0 测试版可以下载啦，这次是公开测试，感兴趣的朋友可以试试 - Coder For Art
   
   </title>
   
@@ -111,10 +111,10 @@
       <div class="markdown-body article-wrap">
        <div class="article">
           
-          <h1>MWeb 1.5 发布！增加打字机滚动模式、发布到 Evernote、印象笔记、Wordpress.com、Blogger、编辑器内代码块语法高亮</h1>
+          <h1>MWeb 2.0 测试版可以下载啦，这次是公开测试，感兴趣的朋友可以试试</h1>
      
         <div class="read-more clearfix">
-          <span class="date">2015/6/5</span>
+          <span class="date">2016/7/4</span>
 
           <span>posted in&nbsp;</span> 
           
@@ -123,11 +123,11 @@
          
           <span class="comments">
             
-              <a href="http://coderforart.com/mweb-1.5.1-release.html#disqus_thread">comments</a>
+              <a href="http://coderforart.com/mweb-2.0-beta.html#disqus_thread">comments</a>
             
 
             
-              &nbsp;<a  class="ds-thread-count" data-thread-key="mweb-1.5.1-release.html" data-count-type="comments" href="mweb-1.5.1-release.html#ds-thread"></a>
+              &nbsp;<a  class="ds-thread-count" data-thread-key="mweb-2.0-beta.html" data-count-type="comments" href="mweb-2.0-beta.html#ds-thread"></a>
             
           </span>
 
@@ -135,39 +135,52 @@
       </div><!-- article -->
 
       <div class="article-content">
-      <h2 id="toc_0">打字机滚动模式（Typewriter Scrolling）</h2>
+      <p>2.0 版是 MWeb 发布以来，最重要的一个版本。MWeb 自去年一月份发布以来，获得了很多朋友的建议，在此非常感谢！没有你们，2.0 版可能就不能出来！然后再次感谢 Producter: <a href="http://weibo.com/u/5642390620">http://weibo.com/u/5642390620</a> 为 MWeb 设计的图标！</p>
 
-<p>快捷键：<code>CMD + Option + T</code>，菜单：<code>View</code> - <code>Typewriter Scrolling</code> ，效果如下图：</p>
-
-<p><img src="media/14316499718847/mweb-typewriter-scrolling-demo.gif" alt="mweb-typewriter-scrolling-demo"/></p>
+<p>2.0 改动蛮多的，用写的可能表达不大好，我本想录个视频的，但是录起来效果更渣，只好再用写的了。。<br/>
+新版的 MWeb 界面如下，这个版本终于是可以自定义文档库的位置了，可以打开 <code>偏好设置</code> - <code>通用设置</code> 里设置文档库的位置。另外也增加了 Tabs 功能，MWeb 的 Tabs 的功能设计得跟 Sublime 相同，就是一个窗口中会有一个可替换的 Tab，用点击第二栏的列表时，会使用这个可替换的 Tab 显示点击的文档。如下图，如果用 <code>右键</code> - <code>在新标签中打开</code> 或者双击则会打开一个固定的新 Tab。<br/>
+<img src="media/14675942852243/14676035760371.jpg" alt=""/></p>
 
 <span id="more"></span><!-- more -->
 
-<h2 id="toc_1">发布到 Evernote、印象笔记、Wordpress.com、Blogger</h2>
+<p>这次也增加了工具栏，如上图中，工具栏最左边的第一个按钮为 <strong>三栏/仅编辑器视图</strong> 切换按钮，跟快捷键 <code>CMD + 1</code> 一样，第二个为 <strong>编辑器预览/仅编辑器视图</strong> 切换按钮，跟快捷键 <code>CMD + 4</code> 一样，第三个为 <strong>仅预览/仅编辑器视图</strong> 切换按钮，跟快捷键 <code>CMD + R</code> 一样。工具栏最右边的按钮为 <strong>分享和发布</strong> 按钮，图床、发布至 Wordpress、Blogger、Evernote 等都是用此按钮。最右边倒数第二个为 <strong>文档大纲视图、属性等</strong> 显示与隐藏按钮。<code>CMD + 7</code> 可以显示与隐藏大纲视图，如下图。<br/>
+<img src="media/14675942852243/14676045235788.jpg" alt=""/></p>
 
-<p>一如之前的发布到 Wordpress 博客和 Metaweblog API 服务的功能一样，如果文档内有图片，也会一并发布，其中发布到 Blogger 时图片会保存到 Picasa。然后 Evernote 和 印象笔记还支持发布附件，比如说你拖进来一个 MP3，发布时也会一并发布。</p>
+<p>值得一说的是，当切换为仅预览视图时（CMD + R），点击右侧大纲视图时会精准定位，以方便查看和预览 markdown 文档。</p>
 
-<p><img src="media/14334601963783/publish-evernote-ect.jpg" alt="publish-evernote-ect"/></p>
+<p>点击 <code>扳手</code> 按钮或者用快捷键 <code>CMD + 8</code> 可以显示与隐藏文档属性，在这个地方可以设置文档的标签、日期和勾选文档所属的分类，如下图：<br/>
+<img src="media/14675942852243/14676059966720.jpg" alt=""/></p>
 
-<h2 id="toc_2">编辑器内代码块语法高亮</h2>
+<p>另外的特性就不多做介绍了，感兴趣可以下载测试版试试（文档最后有下载网址）。</p>
 
-<p>支持大量常用代码，如图：<br/>
-<img src="media/14334601963783/MWeb-Editor-highlight-6-5-2.gif" alt="MWeb-Editor-highlight-6-5"/></p>
+<h2 id="toc_0">重点说明：</h2>
 
-<h2 id="toc_3">其他</h2>
+<p>旧用户打开后，会自动把 1.x 版的文档库升级到 2.x 版，这个升级是用复制的方式的，并不会影响到 1.x 的文档库（第一次打开因为要升级文档库，会有点慢，之后就不会了）。通常来说使用 2.x 并不会影响到 1.x 版，但是我并没有深入测试过，只是一般使用。还有就是这次的测试版会在 15 天后变成试用版，不喜的话，建议不要下载。</p>
 
-<ul>
-<li>增加 github issues <a href="https://github.com/oulvhai/MWeb-isssues/issues">https://github.com/oulvhai/MWeb-isssues/issues</a>，下个版本将放入 Help 菜单。</li>
-<li>增加改变当前行背景色选项，菜单：<code>View</code> - <code>Change Current Line Background Color</code>。</li>
-<li>外部模式右键增加 Expand All 和 Collapse All。</li>
-<li>一些 Bug 修正</li>
-</ul>
+<p>另外：目前发布的 2.0 测试版并没有包括 2.0 正式版的所有功能，未包括的功能有：</p>
 
-<h2 id="toc_4">MWeb 相关网址：</h2>
+<ol>
+<li>表格插入和编辑改进</li>
+<li>从命令行打开、用其它编辑器打开</li>
+<li>静态网站的一些小改进</li>
+<li>Wordpress 发布支持直接发布 markdown</li>
+<li>PlantUML 支持</li>
+<li>图床功能小改进</li>
+<li>1.9.9 版发布后收到的一些改进建议。</li>
+<li>Mavericks 支持（上次微薄上说大话了，支持 Mavericks 还要做不少工作）</li>
+</ol>
 
-<p>付费版仅售 $9.9, MAS 网址：<a href="https://itunes.apple.com/cn/app/mweb-pro-markdown-writing/id954188948?l=zh&amp;ls=1&amp;mt=12">https://itunes.apple.com/cn/app/mweb-pro-markdown-writing/id954188948?l=zh&amp;ls=1&amp;mt=12</a><br/>
-免费版 MAS 网址：<a href="https://itunes.apple.com/cn/app/mweb-lite-pro-markdown-writing/id979033429?l=zh&amp;ls=1&amp;mt=12">https://itunes.apple.com/cn/app/mweb-lite-pro-markdown-writing/id979033429?l=zh&amp;ls=1&amp;mt=12</a><br/>
-官网：<a href="http://zh.mweb.im/">http://zh.mweb.im/</a></p>
+<h2 id="toc_1">文档库结构说明</h2>
+
+<p>2.0 版的文档库由一个 sqlite 数据库文件 mainlib.db 和一个名为 docs 的文件夹组成。mainlib.db 保存的是分类信息、标签信息和静态网站生成的信息，docs 文件夹保存的是所有文档库的文档和图片、附件。docs 内除了所有 .md 文档外，还有一个 media 文件夹，media 文件夹内的文件夹名称都跟 docs 内的文档名对应，如果文档中带图片，则会在 media 内有一个对应的文件夹，里面放的是该文档的图片等附件。文档内是用相对地址进行引用。</p>
+
+<p>综上所述，这一版本的文档库设计得非常开放，文档库还可以保存在任何位置，不再像之前版本那样，固定一个不可见的位置。所以，有动手能力的朋友可以随意读取文档库信息，包括写自己的静态网站生成器，也包括写程序在 Windows 上读取和修改文档库，再回到 mac 上用 MWeb 继续，还可以自己写程序生成各种格式的书等等。</p>
+
+<h2 id="toc_2">iOS 版说明和测试版下载：</h2>
+
+<p>很多朋友可能更关注 iOS 版，这里说明一下。 iOS 版一定会有，事实上已经在开发了，但是<strong>发布时间并不能确定！</strong></p>
+
+<p>MWeb 2.0 测试版下载：<a href="https://dl.devmate.com/com.coderforart.MWeb/2.0.0/1467605197/MWeb-ProMarkdownwriting%2CnotetakingandstaticbloggeneratorApp-2.0.0.dmg">&gt;&gt;点此下载&lt;&lt;</a></p>
 
 
     
@@ -178,16 +191,13 @@
         <div class="large-6 columns">
         <p class="text-left" style="padding:15px 0px;">
       
-          <a href="mweb-1.6.1-release.html" 
-          title="Previous Post: MWeb 1.6 发布！Dark Mode、全文搜寻、发布到Wordpress、Evernote 等支持更新、编辑/预览视图模式等">&laquo; MWeb 1.6 发布！Dark Mode、全文搜寻、发布到Wordpress、Evernote 等支持更新、编辑/预览视图模式等</a>
-      
         </p>
         </div>
         <div class="large-6 columns">
       <p class="text-right" style="padding:15px 0px;">
       
-          <a  href="mweb-1.4.1-releases.html" 
-          title="Next Post: MWeb 1.4.1 发布！增加引入文件夹到 MWeb 中管理，支持拖拽插入图片和实时预览，静态博客功能增强">MWeb 1.4.1 发布！增加引入文件夹到 MWeb 中管理，支持拖拽插入图片和实时预览，静态博客功能增强 &raquo;</a>
+          <a  href="mweb-1.9.7-release.html" 
+          title="Next Post: MWeb 1.9.7 发布！这次增加了一个有意思的改进，有必要说一下。">MWeb 1.9.7 发布！这次增加了一个有意思的改进，有必要说一下。 &raquo;</a>
       
       </p>
         </div>
@@ -214,7 +224,7 @@
           
 
           
-              <div class="ds-thread" data-thread-key="mweb-1.5.1-release.html" data-url="http://coderforart.com/mweb-1.5.1-release.html" data-title="MWeb 1.5 发布！增加打字机滚动模式、发布到 Evernote、印象笔记、Wordpress.com、Blogger、编辑器内代码块语法高亮"></div>
+              <div class="ds-thread" data-thread-key="mweb-2.0-beta.html" data-url="http://coderforart.com/mweb-2.0-beta.html" data-title="MWeb 2.0 测试版可以下载啦，这次是公开测试，感兴趣的朋友可以试试"></div>
           
         </div>
       </div>

@@ -39,9 +39,13 @@
   <div class="row">
       <div style="position: relative;width:100%;"><div style="position: absolute; width:100%;">
         <ul id="main-menu" class="left">
-        <li id="menu_item_index"><a href="index.html">HOME</a></li>
-        <li id="menu_item_archives"><a href="archives.html">Archives</a></li>
-        <li id="menu_item_about"><a href="about.html">ABOUT</a></li>
+        
+        <li id="menu_item_index"><a target="_self" href="index.html">HOME</a></li>
+        
+        <li id="menu_item_archives"><a target="_self" href="archives.html">Archives</a></li>
+        
+        <li id="menu_item_about"><a target="_self" href="about.html">About</a></li>
+        
         </ul>
 
         <ul class="right" id="search-wrap">
@@ -143,7 +147,7 @@ Markdown 的語法有個主要的目的：用來作為一種網路內容的<em>�
 
 <h2 id="toc_1">本文约定</h2>
 
-<p>如果有写 <code>效果如下：</code>， 在 MWeb 编辑状态下只有用 <code>CMD + R</code> 预览才可以看效果。</p>
+<p>如果有写 <code>效果如下：</code>， 在 MWeb 编辑状态下只有用 <code>CMD + 4</code> 或 <code>CMD + R</code> 预览才可以看效果。</p>
 
 <h2 id="toc_2">标题</h2>
 
@@ -247,9 +251,9 @@ __这些文字会生成`&lt;strong&gt;`__
 <p>效果如下：</p>
 
 <ul>
-<li class="task-list-item"><input type="checkbox" /> 任务一 未做任务 <code>- + 空格 + [ ]</code>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" /> 任务一 未做任务 <code>- + 空格 + [ ]</code>
 </li>
-<li class="task-list-item"><input type="checkbox" checked /> 任务二 已做任务 <code>- + 空格 + [x]</code>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked /> 任务二 已做任务 <code>- + 空格 + [x]</code>
 </li>
 </ul>
 
@@ -266,6 +270,10 @@ __这些文字会生成`&lt;strong&gt;`__
 效果如下：</p>
 
 <p><img src="http://zh.mweb.im/asset/img/set-up-git.gif" alt="GitHub set up"/></p>
+
+<p>MWeb 引入的特别的语法来设置图片宽度，方法是在图片描述后加 <code>-w + 图片宽度</code> 即可，比如说要设置上面的图片的宽度为 140，语法如下：</p>
+
+<p><img src="http://zh.mweb.im/asset/img/set-up-git.gif" alt="GitHub set up" style="width:140px;"/></p>
 
 <h2 id="toc_13">链接</h2>
 
@@ -486,7 +494,7 @@ $$  x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
 <!-- more -->
 
 <p>Actions-&gt;Insert Read More Comment <em>或者</em> <code>Command + .</code><br/>
-<strong>注</strong> 阅读更多的功能只用在生成网站或博客时。</p>
+<strong>注</strong> 阅读更多的功能只用在生成网站或博客时，插入时注意要后空一行。</p>
 
 <h2 id="toc_24">TOC</h2>
 
@@ -594,6 +602,9 @@ $$  x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
 </ul>
 
 
+<script src="asset/flow-sequence-chart/raphael-min.js"></script><script src="asset/flow-sequence-chart/underscore-min.js"></script><script src="asset/flow-sequence-chart/flowchart.min.js"></script><script src="asset/flow-sequence-chart/sequence-diagram-min.js"></script><script type="text/javascript">$(function(){    var mwebii=0;    var mwebChartEleId = 'mweb-chart-ele-';    $('pre>code').each(function(){        mwebii++;        var eleiid = mwebChartEleId+mwebii;        if($(this).hasClass('language-sequence')){            var ele = $(this).addClass('nohighlight').parent();            $('<div id="'+eleiid+'"><div>').insertAfter(ele);            ele.hide();            var diagram = Diagram.parse($(this).text());            diagram.drawSVG(eleiid,{theme: 'simple'});        }else if($(this).hasClass('language-flow')){            var ele = $(this).addClass('nohighlight').parent();            $('<div id="'+eleiid+'"><div>').insertAfter(ele);            ele.hide();            var diagram = flowchart.parse($(this).text());            diagram.drawSVG(eleiid);        }    });});</script>
+<script type="text/x-mathjax-config">if (typeof MathJaxListener !== 'undefined') { MathJax.Hub.Register.StartupHook('End', function () { MathJaxListener.invokeCallbackForKey_('End'); }); } </script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
 <div class="footnotes">
 <hr/>
 <ol>
@@ -604,6 +615,9 @@ $$  x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
 
 </ol>
 </div>
+
+
+    
 
       </div>
 
@@ -674,11 +688,11 @@ $$  x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
 
 
 
-<a class="weibo" target="_blank" href="http://weibo.com/oulvhai" title="weibo">Weibo</a>
-<a class="twitter" target="_blank" href="http://twitter.com/oulvhai" title="Twitter">Twitter</a>
-<a class="github" target="_blank" href="https://github.com/oulvhai" title="GitHub">GitHub</a>
+<a target="_blank" class="weibo" href="http://weibo.com/oulvhai" title="weibo">Weibo</a>
+<a target="_blank" class="twitter" target="_blank" href="http://twitter.com/oulvhai" title="Twitter">Twitter</a>
+<a target="_blank" class="github" target="_blank" href="https://github.com/oulvhai" title="GitHub">GitHub</a>
 
-  <a class="rss" href="atom.xml" title="RSS">RSS</a>
+  <a target="_blank" class="rss" href="atom.xml" title="RSS">RSS</a>
                 
               	 </div>
           	</div>
@@ -690,7 +704,7 @@ $$  x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
                 </div>
                 <div class="side-content">
                   <div style="color:#ff0000; text-align:center; padding:8px;" class="bg-info site_notice">
-                    <a style="color:#ff0000;"  onclick="ga('send','event','global_notice_click');"  href="http://sspai.com/topic/best-apps-2015/" target="_blank">「MWeb 获得少数派 2015 年度 Mac App」! </a>
+                    <a style="color:#ff0000;"  onclick="ga('send','event','global_notice_click');"  href="http://zh.mweb.im/mweb-2.0-beta.html" target="_blank">MWeb 2.0 测试版可以下载啦! </a>
                   </div>
                 </div>
             </div>
@@ -731,6 +745,12 @@ $$  x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
 	      
 		      
 			      <li class="post">
+			        <a href="mweb-2.0-beta.html">MWeb 2.0 测试版可以下载啦，这次是公开测试，感兴趣的朋友可以试试</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
 			        <a href="mweb-1.9.7-release.html">MWeb 1.9.7 发布！这次增加了一个有意思的改进，有必要说一下。</a>
 			      </li>
 		     
@@ -750,12 +770,6 @@ $$  x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
 		      
 			      <li class="post">
 			        <a href="mweb-1.8.3-release.html">MWeb 1.8.3 发布！增加发布到 Medium、LaTex 预览修正、编辑器优化等</a>
-			      </li>
-		     
-		  
-		      
-			      <li class="post">
-			        <a href="mweb-1.8.1-release.html">MWeb 1.8 发布！LaTex 语法高亮和编辑器内预览、EL Capitan 优化、Bug 修正等</a>
 			      </li>
 		     
 		  

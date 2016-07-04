@@ -39,9 +39,13 @@
   <div class="row">
       <div style="position: relative;width:100%;"><div style="position: absolute; width:100%;">
         <ul id="main-menu" class="left">
-        <li id="menu_item_index"><a href="index.html">HOME</a></li>
-        <li id="menu_item_archives"><a href="archives.html">Archives</a></li>
-        <li id="menu_item_about"><a href="about.html">ABOUT</a></li>
+        
+        <li id="menu_item_index"><a target="_self" href="index.html">HOME</a></li>
+        
+        <li id="menu_item_archives"><a target="_self" href="archives.html">Archives</a></li>
+        
+        <li id="menu_item_about"><a target="_self" href="about.html">About</a></li>
+        
         </ul>
 
         <ul class="right" id="search-wrap">
@@ -114,9 +118,9 @@
 
           <span>posted in&nbsp;</span> 
           
-              <span class="posted-in"><a href='Game%20Engine.html'>Game Engine</a></span>
-          
               <span class="posted-in"><a href='CG%20Artist.html'>CG Artist</a></span>
+          
+              <span class="posted-in"><a href='Game%20Engine.html'>Game Engine</a></span>
            
          
           <span class="comments">
@@ -209,6 +213,9 @@ static bool GAllowApplePlatformSymbolication = false;
 
 <p>之前说UE4文档不如Unity3d好，但是我仔细看了，也是相当全面的，学会大概不成问题，更何况youtube上还有大量的视频可以看。C++也不成问题，按《游戏引擎架构》中说的，游戏中用到的C++不会太复杂，太复杂大不了不做那种特性就好。所以引擎部分应该不会对我产生大的难度了。但是做游戏引擎只是一小部分，最最重要部分：内容和玩法！首先说内容，这部分要学画画和3D了，而学3D软件对我来说也不成问题，只是画画目前还没有任何比较靠普的路子能成，至于动画随便弄一下然后买本《动画师生存手册》看看到底要如何了，也没有太大把握。。玩法部分，随便弄弄应该可以。因为时间不多只有一年，所以几个东西要并行学习，边学边加上引擎综合考虑。大概是这样想法先。</p>
 
+
+    
+
       </div>
 
       <div class="row">
@@ -278,11 +285,11 @@ static bool GAllowApplePlatformSymbolication = false;
 
 
 
-<a class="weibo" target="_blank" href="http://weibo.com/oulvhai" title="weibo">Weibo</a>
-<a class="twitter" target="_blank" href="http://twitter.com/oulvhai" title="Twitter">Twitter</a>
-<a class="github" target="_blank" href="https://github.com/oulvhai" title="GitHub">GitHub</a>
+<a target="_blank" class="weibo" href="http://weibo.com/oulvhai" title="weibo">Weibo</a>
+<a target="_blank" class="twitter" target="_blank" href="http://twitter.com/oulvhai" title="Twitter">Twitter</a>
+<a target="_blank" class="github" target="_blank" href="https://github.com/oulvhai" title="GitHub">GitHub</a>
 
-  <a class="rss" href="atom.xml" title="RSS">RSS</a>
+  <a target="_blank" class="rss" href="atom.xml" title="RSS">RSS</a>
                 
               	 </div>
           	</div>
@@ -294,7 +301,7 @@ static bool GAllowApplePlatformSymbolication = false;
                 </div>
                 <div class="side-content">
                   <div style="color:#ff0000; text-align:center; padding:8px;" class="bg-info site_notice">
-                    <a style="color:#ff0000;"  onclick="ga('send','event','global_notice_click');"  href="http://sspai.com/topic/best-apps-2015/" target="_blank">「MWeb 获得少数派 2015 年度 Mac App」! </a>
+                    <a style="color:#ff0000;"  onclick="ga('send','event','global_notice_click');"  href="http://zh.mweb.im/mweb-2.0-beta.html" target="_blank">MWeb 2.0 测试版可以下载啦! </a>
                   </div>
                 </div>
             </div>
@@ -335,6 +342,12 @@ static bool GAllowApplePlatformSymbolication = false;
 	      
 		      
 			      <li class="post">
+			        <a href="mweb-2.0-beta.html">MWeb 2.0 测试版可以下载啦，这次是公开测试，感兴趣的朋友可以试试</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
 			        <a href="mweb-1.9.7-release.html">MWeb 1.9.7 发布！这次增加了一个有意思的改进，有必要说一下。</a>
 			      </li>
 		     
@@ -354,12 +367,6 @@ static bool GAllowApplePlatformSymbolication = false;
 		      
 			      <li class="post">
 			        <a href="mweb-1.8.3-release.html">MWeb 1.8.3 发布！增加发布到 Medium、LaTex 预览修正、编辑器优化等</a>
-			      </li>
-		     
-		  
-		      
-			      <li class="post">
-			        <a href="mweb-1.8.1-release.html">MWeb 1.8 发布！LaTex 语法高亮和编辑器内预览、EL Capitan 优化、Bug 修正等</a>
 			      </li>
 		     
 		  

@@ -39,9 +39,13 @@
   <div class="row">
       <div style="position: relative;width:100%;"><div style="position: absolute; width:100%;">
         <ul id="main-menu" class="left">
-        <li id="menu_item_index"><a href="index.html">HOME</a></li>
-        <li id="menu_item_archives"><a href="archives.html">Archives</a></li>
-        <li id="menu_item_about"><a href="about.html">ABOUT</a></li>
+        
+        <li id="menu_item_index"><a target="_self" href="index.html">HOME</a></li>
+        
+        <li id="menu_item_archives"><a target="_self" href="archives.html">Archives</a></li>
+        
+        <li id="menu_item_about"><a target="_self" href="about.html">About</a></li>
+        
         </ul>
 
         <ul class="right" id="search-wrap">
@@ -160,11 +164,11 @@
 
 <h2 id="toc_2">Custom <code>Is page</code> enable document&#39;s template</h2>
 
-<p>Use <q>header.html+post.html+sidebar.html+footer.html</q> templates when the document <code>Is page</code> is disable; use <q>header.html+page.html+footer.html</q> templates when the document <code>Is page</code> is enable. You can add a page-{HTML file name}.html template for custom <code>Is page</code> enable document&#39;s template. MWeb will use <q>header.html+page-{HTML file name}.html+footer.html</q> when you add page-{HTML file name}.html template. For example:  <a href="http://coderforart.com">http://coderforart.com</a>&#39;s theme have page-index.html template for home page <a href="https://github.com/oulvhai/MWeb-Themes/blob/master/mweb-greyshade/page-index.html">https://github.com/oulvhai/MWeb-Themes/blob/master/mweb-greyshade/page-index.html</a> . </p>
+<p>Use &quot;header.html+post.html+sidebar.html+footer.html&quot; templates when the document <code>Is page</code> is disable; use &quot;header.html+page.html+footer.html&quot; templates when the document <code>Is page</code> is enable. You can add a page-{HTML file name}.html template for custom <code>Is page</code> enable document&#39;s template. MWeb will use &quot;header.html+page-{HTML file name}.html+footer.html&quot; when you add page-{HTML file name}.html template. For example:  <a href="http://coderforart.com">http://coderforart.com</a>&#39;s theme have page-index.html template for home page <a href="https://github.com/oulvhai/MWeb-Themes/blob/master/mweb-greyshade/page-index.html">https://github.com/oulvhai/MWeb-Themes/blob/master/mweb-greyshade/page-index.html</a> . </p>
 
 <h2 id="toc_3">Custom category page template</h2>
 
-<p>Use <q>header.html+category.html+sidebar.html+footer.html</q> by default. Use <q>header.html+category-{HTML file name}.html+sidebar.html+footer.html</q> when you add category-{HTML file name}.html template. For example: a category&#39;s HTML file name is <code>Cocoa</code> and the theme have category-Cocoa.html template, MWeb will use <q>header.html+category-Cocoa.html+sidebar.html</q>.</p>
+<p>Use &quot;header.html+category.html+sidebar.html+footer.html&quot; by default. Use &quot;header.html+category-{HTML file name}.html+sidebar.html+footer.html&quot; when you add category-{HTML file name}.html template. For example: a category&#39;s HTML file name is <code>Cocoa</code> and the theme have category-Cocoa.html template, MWeb will use &quot;header.html+category-Cocoa.html+sidebar.html&quot;.</p>
 
 <h2 id="toc_4">Common variables define</h2>
 
@@ -606,6 +610,9 @@ addition variables:</p>
 
 <p>Reference: <a href="https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/sitemap.xml">https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/sitemap.xml</a></p>
 
+
+    
+
       </div>
 
       <div class="row">
@@ -675,11 +682,11 @@ addition variables:</p>
 
 
 
-<a class="weibo" target="_blank" href="http://weibo.com/oulvhai" title="weibo">Weibo</a>
-<a class="twitter" target="_blank" href="http://twitter.com/oulvhai" title="Twitter">Twitter</a>
-<a class="github" target="_blank" href="https://github.com/oulvhai" title="GitHub">GitHub</a>
+<a target="_blank" class="weibo" href="http://weibo.com/oulvhai" title="weibo">Weibo</a>
+<a target="_blank" class="twitter" target="_blank" href="http://twitter.com/oulvhai" title="Twitter">Twitter</a>
+<a target="_blank" class="github" target="_blank" href="https://github.com/oulvhai" title="GitHub">GitHub</a>
 
-  <a class="rss" href="atom.xml" title="RSS">RSS</a>
+  <a target="_blank" class="rss" href="atom.xml" title="RSS">RSS</a>
                 
               	 </div>
           	</div>
@@ -691,7 +698,7 @@ addition variables:</p>
                 </div>
                 <div class="side-content">
                   <div style="color:#ff0000; text-align:center; padding:8px;" class="bg-info site_notice">
-                    <a style="color:#ff0000;"  onclick="ga('send','event','global_notice_click');"  href="http://sspai.com/topic/best-apps-2015/" target="_blank">「MWeb 获得少数派 2015 年度 Mac App」! </a>
+                    <a style="color:#ff0000;"  onclick="ga('send','event','global_notice_click');"  href="http://zh.mweb.im/mweb-2.0-beta.html" target="_blank">MWeb 2.0 测试版可以下载啦! </a>
                   </div>
                 </div>
             </div>
@@ -732,6 +739,12 @@ addition variables:</p>
 	      
 		      
 			      <li class="post">
+			        <a href="mweb-2.0-beta.html">MWeb 2.0 测试版可以下载啦，这次是公开测试，感兴趣的朋友可以试试</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
 			        <a href="mweb-1.9.7-release.html">MWeb 1.9.7 发布！这次增加了一个有意思的改进，有必要说一下。</a>
 			      </li>
 		     
@@ -751,12 +764,6 @@ addition variables:</p>
 		      
 			      <li class="post">
 			        <a href="mweb-1.8.3-release.html">MWeb 1.8.3 发布！增加发布到 Medium、LaTex 预览修正、编辑器优化等</a>
-			      </li>
-		     
-		  
-		      
-			      <li class="post">
-			        <a href="mweb-1.8.1-release.html">MWeb 1.8 发布！LaTex 语法高亮和编辑器内预览、EL Capitan 优化、Bug 修正等</a>
 			      </li>
 		     
 		  

@@ -39,9 +39,13 @@
   <div class="row">
       <div style="position: relative;width:100%;"><div style="position: absolute; width:100%;">
         <ul id="main-menu" class="left">
-        <li id="menu_item_index"><a href="index.html">HOME</a></li>
-        <li id="menu_item_archives"><a href="archives.html">Archives</a></li>
-        <li id="menu_item_about"><a href="about.html">ABOUT</a></li>
+        
+        <li id="menu_item_index"><a target="_self" href="index.html">HOME</a></li>
+        
+        <li id="menu_item_archives"><a target="_self" href="archives.html">Archives</a></li>
+        
+        <li id="menu_item_about"><a target="_self" href="about.html">About</a></li>
+        
         </ul>
 
         <ul class="right" id="search-wrap">
@@ -694,7 +698,7 @@ title attribute.&lt;/p&gt;
 [link text][A]
 </code></pre>
 
-<p><em>預設的連結標籤</em>功能讓你可以省略指定連結標籤，這種情形下，連結標籤和連結文字會視為相同，要用預設連結標籤只要在連結文字後面加上一個空的方括號，如果你要讓 <q>Google</q> 連結到 google.com，你可以簡化成：</p>
+<p><em>預設的連結標籤</em>功能讓你可以省略指定連結標籤，這種情形下，連結標籤和連結文字會視為相同，要用預設連結標籤只要在連結文字後面加上一個空的方括號，如果你要讓 &quot;Google&quot; 連結到 google.com，你可以簡化成：</p>
 
 <pre><code>[Google][]
 </code></pre>
@@ -958,6 +962,9 @@ _   底線
 
 <p>感謝 <a href="https://twitter.com/#!/leafy7382">leafy7382</a> 協助翻譯，<a href="http://iamhlb.com/">hlb</a>、<a href="http://twitter.com/randylien">Randylien</a> 幫忙潤稿，<a href="https://twitter.com/#!/ethantw">ethantw</a> 的<a href="http://ethantw.net/projects/han/">漢字標準格式・CSS Reset</a>， <a href="http://kidwm.net/">WM</a> 回報文字錯誤。</p>
 
+
+    
+
       </div>
 
       <div class="row">
@@ -1024,11 +1031,11 @@ _   底線
 
 
 
-<a class="weibo" target="_blank" href="http://weibo.com/oulvhai" title="weibo">Weibo</a>
-<a class="twitter" target="_blank" href="http://twitter.com/oulvhai" title="Twitter">Twitter</a>
-<a class="github" target="_blank" href="https://github.com/oulvhai" title="GitHub">GitHub</a>
+<a target="_blank" class="weibo" href="http://weibo.com/oulvhai" title="weibo">Weibo</a>
+<a target="_blank" class="twitter" target="_blank" href="http://twitter.com/oulvhai" title="Twitter">Twitter</a>
+<a target="_blank" class="github" target="_blank" href="https://github.com/oulvhai" title="GitHub">GitHub</a>
 
-  <a class="rss" href="atom.xml" title="RSS">RSS</a>
+  <a target="_blank" class="rss" href="atom.xml" title="RSS">RSS</a>
                 
               	 </div>
           	</div>
@@ -1040,7 +1047,7 @@ _   底線
                 </div>
                 <div class="side-content">
                   <div style="color:#ff0000; text-align:center; padding:8px;" class="bg-info site_notice">
-                    <a style="color:#ff0000;"  onclick="ga('send','event','global_notice_click');"  href="http://sspai.com/topic/best-apps-2015/" target="_blank">「MWeb 获得少数派 2015 年度 Mac App」! </a>
+                    <a style="color:#ff0000;"  onclick="ga('send','event','global_notice_click');"  href="http://zh.mweb.im/mweb-2.0-beta.html" target="_blank">MWeb 2.0 测试版可以下载啦! </a>
                   </div>
                 </div>
             </div>
@@ -1081,6 +1088,12 @@ _   底線
 	      
 		      
 			      <li class="post">
+			        <a href="mweb-2.0-beta.html">MWeb 2.0 测试版可以下载啦，这次是公开测试，感兴趣的朋友可以试试</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
 			        <a href="mweb-1.9.7-release.html">MWeb 1.9.7 发布！这次增加了一个有意思的改进，有必要说一下。</a>
 			      </li>
 		     
@@ -1100,12 +1113,6 @@ _   底線
 		      
 			      <li class="post">
 			        <a href="mweb-1.8.3-release.html">MWeb 1.8.3 发布！增加发布到 Medium、LaTex 预览修正、编辑器优化等</a>
-			      </li>
-		     
-		  
-		      
-			      <li class="post">
-			        <a href="mweb-1.8.1-release.html">MWeb 1.8 发布！LaTex 语法高亮和编辑器内预览、EL Capitan 优化、Bug 修正等</a>
 			      </li>
 		     
 		  

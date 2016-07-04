@@ -39,9 +39,13 @@
   <div class="row">
       <div style="position: relative;width:100%;"><div style="position: absolute; width:100%;">
         <ul id="main-menu" class="left">
-        <li id="menu_item_index"><a href="index.html">HOME</a></li>
-        <li id="menu_item_archives"><a href="archives.html">Archives</a></li>
-        <li id="menu_item_about"><a href="about.html">ABOUT</a></li>
+        
+        <li id="menu_item_index"><a target="_self" href="index.html">HOME</a></li>
+        
+        <li id="menu_item_archives"><a target="_self" href="archives.html">Archives</a></li>
+        
+        <li id="menu_item_about"><a target="_self" href="about.html">About</a></li>
+        
         </ul>
 
         <ul class="right" id="search-wrap">
@@ -106,6 +110,67 @@
 	<div class="large-8 medium-8 columns">
 		<div class="markdown-body home-categories">
 		
+			<div class="article">
+                <a class="clearlink" href="custom-site-theme-detail-zh.html">
+                
+                  <h1>自定网站或博客主题简单说明</h1>
+                  <div class="a-content">
+                      
+                      <div class="a-content-text">
+                        
+                        	<p>MWeb全部主题已上传到Github: <a href="https://github.com/oulvhai/MWeb-Themes">https://github.com/oulvhai/MWeb-Themes</a>.</p>
+
+<h2 id="toc_0">MWeb主题模板结构</h2>
+
+<p>MWeb所有网站主题模板都放在SiteThemes这个文件夹里，点击 <img src="media/14206135238767/14227577752365.jpg" alt=""/>￼￼￼￼ 这里可以直接显示SiteThemes文件夹，一个文件夹就表示一个主题。每个主题里包含的文档和文件夹的作用如下：</p>
+
+<ul>
+<li>asset -- 主题所有要用到的东西，图片、CSS、JS等等都放这里</li>
+<li>archives.html -- archives.html页所使用的模板</li>
+<li>atom.xml -- RSS所使用的模板</li>
+<li>category.html -- 分类所使用的模板</li>
+<li>footer.html -- 页面的底部</li>
+<li>header.html -- 页面的顶部</li>
+<li>page-index.html -- 自定首页模板</li>
+<li>page.html -- 文档选中<code>Is page</code>时所使用的模板</li>
+<li>post.html -- 文档不选中<code>Is page</code>所使用的模板</li>
+<li>sidebar.html -- 侧边栏的模板</li>
+<li>sitemap.xml -- 网站sitemap所使用的模板</li>
+</ul>
+
+<h2 id="toc_1">自定首页</h2>
+
+<p>如图，设定想要设置为首页的文档的 HTML file name 为 <code>index</code>, 选中 <code>Is page</code> 选项。<br/>
+<img src="media/14189904700669/14210659918568.jpg" alt=""/>￼￼￼￼￼￼￼￼￼￼￼￼￼</p>
+
+
+                        
+                      </div>
+                  </div>
+                </a>
+                <div class="read-more clearfix">
+                  <div class="more-left left">
+                   <a href="custom-site-theme-detail-zh.html">Read more</a>&nbsp;&nbsp; 
+                    <span class="date">2015/1/7</span>
+                    <span>posted in&nbsp;</span> 
+          				  
+          					    <span class="posted-in"><a href='Introduction.html'>Introduction</a></span>
+          				   
+                  </div>
+                  <div class="more-right right">
+                  <span class="comments">
+                      
+                        <a href="http://coderforart.com/custom-site-theme-detail-zh.html#disqus_thread">comments</a>
+                      
+
+                      
+                        &nbsp;<a  class="ds-thread-count" data-thread-key="custom-site-theme-detail-zh.html" data-count-type="comments" href="custom-site-theme-detail-zh.html#ds-thread"></a>
+                       
+                  </span>
+                  </div>
+                </div>
+              </div><!-- article -->
+        
 			<div class="article">
                 <a class="clearlink" href="mweb.html">
                 
@@ -472,11 +537,11 @@ Document. Please refer to <a href="http://daringfireball.net/projects/markdown/s
 
 
 
-<a class="weibo" target="_blank" href="http://weibo.com/oulvhai" title="weibo">Weibo</a>
-<a class="twitter" target="_blank" href="http://twitter.com/oulvhai" title="Twitter">Twitter</a>
-<a class="github" target="_blank" href="https://github.com/oulvhai" title="GitHub">GitHub</a>
+<a target="_blank" class="weibo" href="http://weibo.com/oulvhai" title="weibo">Weibo</a>
+<a target="_blank" class="twitter" target="_blank" href="http://twitter.com/oulvhai" title="Twitter">Twitter</a>
+<a target="_blank" class="github" target="_blank" href="https://github.com/oulvhai" title="GitHub">GitHub</a>
 
-  <a class="rss" href="atom.xml" title="RSS">RSS</a>
+  <a target="_blank" class="rss" href="atom.xml" title="RSS">RSS</a>
                 
               	 </div>
           	</div>
@@ -488,7 +553,7 @@ Document. Please refer to <a href="http://daringfireball.net/projects/markdown/s
                 </div>
                 <div class="side-content">
                   <div style="color:#ff0000; text-align:center; padding:8px;" class="bg-info site_notice">
-                    <a style="color:#ff0000;"  onclick="ga('send','event','global_notice_click');"  href="http://sspai.com/topic/best-apps-2015/" target="_blank">「MWeb 获得少数派 2015 年度 Mac App」! </a>
+                    <a style="color:#ff0000;"  onclick="ga('send','event','global_notice_click');"  href="http://zh.mweb.im/mweb-2.0-beta.html" target="_blank">MWeb 2.0 测试版可以下载啦! </a>
                   </div>
                 </div>
             </div>
@@ -529,6 +594,12 @@ Document. Please refer to <a href="http://daringfireball.net/projects/markdown/s
 	      
 		      
 			      <li class="post">
+			        <a href="mweb-2.0-beta.html">MWeb 2.0 测试版可以下载啦，这次是公开测试，感兴趣的朋友可以试试</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
 			        <a href="mweb-1.9.7-release.html">MWeb 1.9.7 发布！这次增加了一个有意思的改进，有必要说一下。</a>
 			      </li>
 		     
@@ -548,12 +619,6 @@ Document. Please refer to <a href="http://daringfireball.net/projects/markdown/s
 		      
 			      <li class="post">
 			        <a href="mweb-1.8.3-release.html">MWeb 1.8.3 发布！增加发布到 Medium、LaTex 预览修正、编辑器优化等</a>
-			      </li>
-		     
-		  
-		      
-			      <li class="post">
-			        <a href="mweb-1.8.1-release.html">MWeb 1.8 发布！LaTex 语法高亮和编辑器内预览、EL Capitan 优化、Bug 修正等</a>
 			      </li>
 		     
 		  

@@ -39,9 +39,13 @@
   <div class="row">
       <div style="position: relative;width:100%;"><div style="position: absolute; width:100%;">
         <ul id="main-menu" class="left">
-        <li id="menu_item_index"><a href="index.html">HOME</a></li>
-        <li id="menu_item_archives"><a href="archives.html">Archives</a></li>
-        <li id="menu_item_about"><a href="about.html">ABOUT</a></li>
+        
+        <li id="menu_item_index"><a target="_self" href="index.html">HOME</a></li>
+        
+        <li id="menu_item_archives"><a target="_self" href="archives.html">Archives</a></li>
+        
+        <li id="menu_item_about"><a target="_self" href="about.html">About</a></li>
+        
         </ul>
 
         <ul class="right" id="search-wrap">
@@ -143,7 +147,7 @@ Markdown&#39;s syntax is intended for one purpose: to be used as a format for <e
 
 <h2 id="toc_1">Notice</h2>
 
-<p>You can use  <code>CMD + R</code> to preview the result.</p>
+<p>You can use  <code>CMD + 4</code> or <code>CMD + R</code> to preview the result.</p>
 
 <h2 id="toc_2">Headers</h2>
 
@@ -251,9 +255,9 @@ Just typing enter to newline,please set：<code>Preferences</code> - <code>Theme
 <p><strong>Result:</strong></p>
 
 <ul>
-<li class="task-list-item"><input type="checkbox" /> task one not finish <code>- + SPACE + [ ]</code>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" /> task one not finish <code>- + SPACE + [ ]</code>
 </li>
-<li class="task-list-item"><input type="checkbox" checked /> task two finished <code>- + SPACE + [x]</code>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked /> task two finished <code>- + SPACE + [x]</code>
 </li>
 </ul>
 
@@ -270,6 +274,10 @@ The Library&#39;s document support drag &amp; drop or <code>CMD + V</code> paste
 <strong>Result:</strong></p>
 
 <p><img src="https://help.github.com/assets/images/site/set-up-git.gif" alt="GitHub set up"/></p>
+
+<p>In MWeb, you can use <code>-w + Number</code> to control image width, for example, set the image width 140px:</p>
+
+<p><img src="https://help.github.com/assets/images/site/set-up-git.gif" alt="GitHub set up" style="width:140px;"/></p>
 
 <h2 id="toc_13">Links</h2>
 
@@ -352,38 +360,46 @@ function fancyAlert(arg) {
 <p><strong>Example:</strong></p>
 
 <pre><code>```sequence
-张三-&gt;李四: 嘿，小四儿, 写博客了没?
-Note right of 李四: 李四愣了一下，说：
-李四--&gt;张三: 忙得吐血，哪有时间写。
+Andrew-&gt;China: Says Hello
+Note right of China: China thinks about it
+China--&gt;Andrew: How are you?
+Andrew-&gt;&gt;China: I am good thanks!
 ```
 
 ```flow
-st=&gt;start: 开始
-e=&gt;end: 结束
-op=&gt;operation: 我的操作
-cond=&gt;condition: 确认？
+st=&gt;start: Start:&gt;http://www.google.com[blank]
+e=&gt;end:&gt;http://www.google.com
+op1=&gt;operation: My Operation
+sub1=&gt;subroutine: My Subroutine
+cond=&gt;condition: Yes
+or No?:&gt;http://www.google.com
+io=&gt;inputoutput: catch something...
 
-st-&gt;op-&gt;cond
-cond(yes)-&gt;e
-cond(no)-&gt;op
+st-&gt;op1-&gt;cond
+cond(yes)-&gt;io-&gt;e
+cond(no)-&gt;sub1(right)-&gt;op1
 ```
 </code></pre>
 
 <p><strong>Result:</strong> ( Please enable  <code>Preferences</code> - <code>Themes</code> - <code>Enable sequence &amp; flow chart</code>, default is enable. )</p>
 
-<pre><code class="language-sequence">张三-&gt;李四: 嘿，小四儿, 写博客了没?
-Note right of 李四: 李四愣了一下，说：
-李四--&gt;张三: 忙得吐血，哪有时间写。
+<pre><code class="language-sequence">Andrew-&gt;China: Says Hello
+Note right of China: China thinks about it
+China--&gt;Andrew: How are you?
+Andrew-&gt;&gt;China: I am good thanks!
 </code></pre>
 
-<pre><code class="language-flow">st=&gt;start: 开始
-e=&gt;end: 结束
-op=&gt;operation: 我的操作
-cond=&gt;condition: 确认？
-
-st-&gt;op-&gt;cond
-cond(yes)-&gt;e
-cond(no)-&gt;op
+<pre><code class="language-flow">st=&gt;start: Start:&gt;http://www.google.com[blank]
+e=&gt;end:&gt;http://www.google.com
+op1=&gt;operation: My Operation
+sub1=&gt;subroutine: My Subroutine
+cond=&gt;condition: Yes
+or No?:&gt;http://www.google.com
+io=&gt;inputoutput: catch something...
+    
+st-&gt;op1-&gt;cond
+cond(yes)-&gt;io-&gt;e
+cond(no)-&gt;sub1(right)-&gt;op1
 </code></pre>
 
 <p>More info: <a href="http://bramp.github.io/js-sequence-diagrams/">http://bramp.github.io/js-sequence-diagrams/</a>, <a href="http://adrai.github.io/flowchart.js/">http://adrai.github.io/flowchart.js/</a></p>
@@ -611,6 +627,9 @@ Content in the first column | Content in the second column
 </ol>
 </div>
 
+
+    
+
       </div>
 
       <div class="row">
@@ -680,11 +699,11 @@ Content in the first column | Content in the second column
 
 
 
-<a class="weibo" target="_blank" href="http://weibo.com/oulvhai" title="weibo">Weibo</a>
-<a class="twitter" target="_blank" href="http://twitter.com/oulvhai" title="Twitter">Twitter</a>
-<a class="github" target="_blank" href="https://github.com/oulvhai" title="GitHub">GitHub</a>
+<a target="_blank" class="weibo" href="http://weibo.com/oulvhai" title="weibo">Weibo</a>
+<a target="_blank" class="twitter" target="_blank" href="http://twitter.com/oulvhai" title="Twitter">Twitter</a>
+<a target="_blank" class="github" target="_blank" href="https://github.com/oulvhai" title="GitHub">GitHub</a>
 
-  <a class="rss" href="atom.xml" title="RSS">RSS</a>
+  <a target="_blank" class="rss" href="atom.xml" title="RSS">RSS</a>
                 
               	 </div>
           	</div>
@@ -696,7 +715,7 @@ Content in the first column | Content in the second column
                 </div>
                 <div class="side-content">
                   <div style="color:#ff0000; text-align:center; padding:8px;" class="bg-info site_notice">
-                    <a style="color:#ff0000;"  onclick="ga('send','event','global_notice_click');"  href="http://sspai.com/topic/best-apps-2015/" target="_blank">「MWeb 获得少数派 2015 年度 Mac App」! </a>
+                    <a style="color:#ff0000;"  onclick="ga('send','event','global_notice_click');"  href="http://zh.mweb.im/mweb-2.0-beta.html" target="_blank">MWeb 2.0 测试版可以下载啦! </a>
                   </div>
                 </div>
             </div>
@@ -737,6 +756,12 @@ Content in the first column | Content in the second column
 	      
 		      
 			      <li class="post">
+			        <a href="mweb-2.0-beta.html">MWeb 2.0 测试版可以下载啦，这次是公开测试，感兴趣的朋友可以试试</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
 			        <a href="mweb-1.9.7-release.html">MWeb 1.9.7 发布！这次增加了一个有意思的改进，有必要说一下。</a>
 			      </li>
 		     
@@ -756,12 +781,6 @@ Content in the first column | Content in the second column
 		      
 			      <li class="post">
 			        <a href="mweb-1.8.3-release.html">MWeb 1.8.3 发布！增加发布到 Medium、LaTex 预览修正、编辑器优化等</a>
-			      </li>
-		     
-		  
-		      
-			      <li class="post">
-			        <a href="mweb-1.8.1-release.html">MWeb 1.8 发布！LaTex 语法高亮和编辑器内预览、EL Capitan 优化、Bug 修正等</a>
 			      </li>
 		     
 		  
