@@ -40,11 +40,13 @@
       <div style="position: relative;width:100%;"><div style="position: absolute; width:100%;">
         <ul id="main-menu" class="left">
         
-        <li id="menu_item_index"><a target="_self" href="index.html">HOME</a></li>
+        <li id="menu_item_index"><a target="_self" href="index.html">Home</a></li>
         
         <li id="menu_item_archives"><a target="_self" href="archives.html">Archives</a></li>
         
         <li id="menu_item_about"><a target="_self" href="about.html">About</a></li>
+        
+        <li id=""><a target="_self" href="welcome.html">Welcome</a></li>
         
         </ul>
 
@@ -110,6 +112,56 @@
 	<div class="large-8 medium-8 columns">
 		<div class="markdown-body home-categories">
 		
+			<div class="article">
+                <a class="clearlink" href="mweb-v1.2-release-zh.html">
+                
+                  <h1>MWeb 1.2 版更新说明和用 wkhtmltopdf 生成带目录的 PDF 和自定预览 CSS</h1>
+                  <div class="a-content">
+                      
+                      <div class="a-content-text">
+                        
+                        	<h2 id="toc_0">新增</h2>
+
+<ul>
+<li>可选择在输入时是否自动插入列表编号，可以在 Preferences --&gt; General --&gt; Auto insert list and blockquote prefix 开启和关闭。</li>
+<li>分享功能的 Copy as image、Save as image、Save as PDF 等现在统一都用HTML的样式了，另外还专门为分享到微薄等SNS生成的图片做了优化，比如说如果有代码，会强制换行。</li>
+<li>新增把文档库里的单个或多个文档导出为HTML或者PDF。使用方法为：选择要导出的文档（可多选） --&gt; 鼠标右键 --&gt; Export as HTML、PDF</li>
+<li>新增把整个分类导出为HTML或者PDF。使用方法为：右键要导出的分类 --&gt; Export as HTML、PDF。导出的PDF现在还没办法自动生成目录，下边的详细介绍会分享一个可以自动生成目录的方法，然后个人觉得生成的PDF非常好。</li>
+<li>新增MWeb自带的两个主题octopress、greyshade的即时预览CSS。现在可以不用 Build site 就可以即时预览文章的大概效果了。另外自定网站的预览CSS非常简单，请看下边的详细介绍。</li>
+<li>新增可以拖拽改变文档的顺序。使用方法为：鼠标右键父分类 --&gt; Edit --&gt; 把Order by设定为：Custom --&gt; 然后就可以用拖拽调节这个父分类下的文档顺序了。</li>
+<li>新增可以拖拽改变分类的顺序。</li>
+</ul>
+
+
+                        
+                      </div>
+                  </div>
+                </a>
+                <div class="read-more clearfix">
+                  <div class="more-left left">
+                   <a href="mweb-v1.2-release-zh.html">Read more</a>&nbsp;&nbsp; 
+                    <span class="date">2015/2/8</span>
+                    <span>posted in&nbsp;</span> 
+          				  
+          					    <span class="posted-in"><a href='MWeb-cat.html'>MWeb</a></span>
+          				  
+          					    <span class="posted-in"><a href='Introduction.html'>Introduction</a></span>
+          				   
+                  </div>
+                  <div class="more-right right">
+                  <span class="comments">
+                      
+                        <a href="http://coderforart.com/mweb-v1.2-release-zh.html#disqus_thread">comments</a>
+                      
+
+                      
+                        &nbsp;<a  class="ds-thread-count" data-thread-key="mweb-v1.2-release-zh.html" data-count-type="comments" href="mweb-v1.2-release-zh.html#ds-thread"></a>
+                       
+                  </span>
+                  </div>
+                </div>
+              </div><!-- article -->
+        
 			<div class="article">
                 <a class="clearlink" href="aliyun-net-cn-free-web-host-express.html">
                 
@@ -421,67 +473,6 @@
                 </div>
               </div><!-- article -->
         
-			<div class="article">
-                <a class="clearlink" href="custom-site-theme-detail.html">
-                
-                  <h1>Custom site theme or design you owner theme</h1>
-                  <div class="a-content">
-                      
-                      <div class="a-content-text">
-                        
-                        	<p>MWeb themes now add to github: <a href="https://github.com/oulvhai/MWeb-Themes">https://github.com/oulvhai/MWeb-Themes</a>.</p>
-
-<h2 id="toc_0">MWeb theme structure</h2>
-
-<p>Click <img src="media/14206135238767/14227577752365.jpg" alt=""/>￼￼, you will found a floder name is SiteThemes. MWeb all themes in this flodler,and a floder is a theme,it contains some documents and floders.</p>
-
-<ul>
-<li>asset -- floder, contains all theme&#39;s picture,CSS,JS etc..</li>
-<li>archives.html -- archives.html page template</li>
-<li>atom.xml -- RSS page template</li>
-<li>category.html -- all categiries pages template</li>
-<li>footer.html -- bottom of each page</li>
-<li>header.html -- top of each page</li>
-<li>page-index.html -- custom home page template</li>
-<li>page.html -- document when enable <code>Is page</code> use this template</li>
-<li>post.html -- document when disable <code>Is page</code> use this template</li>
-<li>sidebar.html -- sidebar template</li>
-<li>sitemap.xml -- google sitemap template</li>
-</ul>
-
-<h2 id="toc_1">Custom home page</h2>
-
-<p>Set a document&#39;s HTML file name value: <code>index</code> and enable <code>Is page</code>.<br/>
-<img src="media/14189904700669/14210659918568.jpg" alt=""/>￼￼￼￼￼￼￼￼￼￼</p>
-
-
-                        
-                      </div>
-                  </div>
-                </a>
-                <div class="read-more clearfix">
-                  <div class="more-left left">
-                   <a href="custom-site-theme-detail.html">Read more</a>&nbsp;&nbsp; 
-                    <span class="date">2015/1/7</span>
-                    <span>posted in&nbsp;</span> 
-          				  
-          					    <span class="posted-in"><a href='MWeb-cat.html'>MWeb</a></span>
-          				   
-                  </div>
-                  <div class="more-right right">
-                  <span class="comments">
-                      
-                        <a href="http://coderforart.com/custom-site-theme-detail.html#disqus_thread">comments</a>
-                      
-
-                      
-                        &nbsp;<a  class="ds-thread-count" data-thread-key="custom-site-theme-detail.html" data-count-type="comments" href="custom-site-theme-detail.html#ds-thread"></a>
-                       
-                  </span>
-                  </div>
-                </div>
-              </div><!-- article -->
-        
               
 
 
@@ -533,7 +524,7 @@
                 </div>
                 <div class="side-content">
                   <div style="color:#ff0000; text-align:center; padding:8px;" class="bg-info site_notice">
-                    <a style="color:#ff0000;"  onclick="ga('send','event','global_notice_click');"  href="http://zh.mweb.im/mweb-2.0-beta.html" target="_blank">MWeb 2.0 测试版可以下载啦! </a>
+                    <a style="color:#ff0000;"  onclick="ga('send','event','global_notice_click');"  href="http://zh.mweb.im/mweb-2.0-release.html">MWeb 2.0 版正式发布，￥50 促销一周，一周后将变为 ￥98！ </a>
                   </div>
                 </div>
             </div>
@@ -574,6 +565,12 @@
 	      
 		      
 			      <li class="post">
+			        <a href="mweb-2.0-release.html">MWeb 2.0 版正式发布，￥50 促销一周，一周后将变为 ￥98，所以也算 50% OFF 了！</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
 			        <a href="mweb-2.0-beta.html">MWeb 2.0 测试版可以下载啦，这次是公开测试，感兴趣的朋友可以试试</a>
 			      </li>
 		     
@@ -593,12 +590,6 @@
 		      
 			      <li class="post">
 			        <a href="mweb-1.9.1-release.html">MWeb 1.9 发布！新图标、编辑器大改进、导出 PDF 改进、增加图床功能、中文版等！</a>
-			      </li>
-		     
-		  
-		      
-			      <li class="post">
-			        <a href="mweb-1.8.3-release.html">MWeb 1.8.3 发布！增加发布到 Medium、LaTex 预览修正、编辑器优化等</a>
 			      </li>
 		     
 		  
