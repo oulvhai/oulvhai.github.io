@@ -4,7 +4,7 @@
   <title><![CDATA[Coder For Art]]></title>
   <link href="http://coderforart.com/atom.xml" rel="self"/>
   <link href="http://coderforart.com/"/>
-  <updated>2016-07-18T12:24:27+08:00</updated>
+  <updated>2016-07-19T21:50:51+08:00</updated>
   <id>http://coderforart.com/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -30,7 +30,7 @@
 
 <p>sample-all-charts 里有一个名为 asset 的文件夹，这个文件夹是放自定义预览样式所用 js、图片、css 等资源文件，还有两个 html 文件，一个名为 index.html，是 MWeb 自定义样式的模板 html，另一个为 demo.html 是制作预览样式时预览用的，并非必须的。</p>
 
-<p>先分别下载这三个 JS 画图库，下载地址分别为：<a href="http://echarts.baidu.com/download.html">http://echarts.baidu.com/download.html</a>、<a href="http://knsv.github.io/mermaid/">http://knsv.github.io/mermaid/</a>、<a href="http://zh.plantuml.com/download.html">http://zh.plantuml.com/download.html</a> 中选择下载的是 JQuery integration，另外还有 mermaid 要用到的 font-awesome。然后把相关文件放到 sample-all-charts 中的 asset 文件夹内，样式我直接是用 sample-css.css 这个样式，并改名为 style.css ，完成后整个文件夹如下图：</p>
+<p>先分别下载这三个 JS 画图库，下载地址分别为：<a href="http://echarts.baidu.com/download.html">http://echarts.baidu.com/download.html</a>、 <a href="http://knsv.github.io/mermaid/">http://knsv.github.io/mermaid/</a>、 <a href="http://zh.plantuml.com/download.html">http://zh.plantuml.com/download.html</a> 中选择下载的是 JQuery integration，另外还有 mermaid 要用到的 font-awesome。然后把相关文件放到 sample-all-charts 中的 asset 文件夹内，样式我直接是用 sample-css.css 这个样式，并改名为 style.css ，完成后整个文件夹如下图：</p>
 
 <p><img src="media/14689205256580/14689339545256.jpg" alt="" style="width:833px;"/></p>
 
