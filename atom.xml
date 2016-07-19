@@ -4,13 +4,56 @@
   <title><![CDATA[Coder For Art]]></title>
   <link href="http://coderforart.com/atom.xml" rel="self"/>
   <link href="http://coderforart.com/"/>
-  <updated>2016-07-18T00:52:42+08:00</updated>
+  <updated>2016-07-18T12:24:27+08:00</updated>
   <id>http://coderforart.com/</id>
   <author>
     <name><![CDATA[]]></name>
     
   </author>
   <generator uri="http://www.mweb.im/">MWeb</generator>
+  
+  <entry>
+    <title type="html"><![CDATA[自定义预览样式，让 MWeb 支持 ECharts、mermaid、PlantUML 等任何 JS 画图库]]></title>
+    <link href="http://coderforart.com/14689205256580.html"/>
+    <updated>2016-07-19T17:28:45+08:00</updated>
+    <id>http://coderforart.com/14689205256580.html</id>
+    <content type="html"><![CDATA[
+<p>之前 MWeb 2.0 说要支持 PlantUML，后来又否定了，因为我发现大部分朋友只需要自定义预览样式就可以做到的这种 PlantUML 支持，而早在 MWeb 1.2 版都支持了自我增加这功能了，介绍文章为：<a href="http://zh.mweb.im/mweb-v1.2-release-zh.html">自定预览 CSS</a>。2.0 中的自定预览功能有所变化，这也是今天要介绍的内容。</p>
+
+<p>今天要说的是一步到位，做一个支持 ECharts、mermaid、PlantUML 这三个常用的画图库的预览样式。如果你不想看到制作方法，只想使用，可以直接下载 (<a href="media/14689205256580/sample-all-charts.zip">&gt;&gt;点此下载&lt;&lt;</a>) 这个预览样式，解压后，把整个文件夹复制到 MWeb 的预览样式所在文件夹，然后点一下刷新按钮即可。 你可以在 <code>偏好设置</code> - <code>主题&amp;样式</code> 中点一下 <code>预览样式</code> 右边的编辑按钮来打开预览样式所以文件夹。这个预览样式中还包含了一个测试的 Markdown 文档，用 MWeb 打开这个文档，然后选择这个预览样式并预览就可以看到效果。</p>
+
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_0">自定义预览样式流程</h2>
+
+<p>在 MWeb 中自定义预览样式有两种方法，一种是简单地使用一个 CSS 样式文件即可，另一种是使用一个文件夹。MWeb 默认提供了两种方法的样例，就是预览样式中名为 sample-css 和 sample-custom-html 这两个样式。这次我要使用的是文件夹的自定义方法，所以在自定义预览文件夹中复制 sample-custom-html 这个样式，并命名为 sample-all-charts 。</p>
+
+<p>sample-all-charts 里有一个名为 asset 的文件夹，这个文件夹是放自定义预览样式所用 js、图片、css 等资源文件，还有两个 html 文件，一个名为 index.html，是 MWeb 自定义样式的模板 html，另一个为 demo.html 是制作预览样式时预览用的，并非必须的。</p>
+
+<p>先分别下载这三个 JS 画图库，下载地址分别为：<a href="http://echarts.baidu.com/download.html">http://echarts.baidu.com/download.html</a>、<a href="http://knsv.github.io/mermaid/">http://knsv.github.io/mermaid/</a>、<a href="http://zh.plantuml.com/download.html">http://zh.plantuml.com/download.html</a> 中选择下载的是 JQuery integration，另外还有 mermaid 要用到的 font-awesome。然后把相关文件放到 sample-all-charts 中的 asset 文件夹内，样式我直接是用 sample-css.css 这个样式，并改名为 style.css ，完成后整个文件夹如下图：</p>
+
+<p><img src="media/14689205256580/14689339545256.jpg" alt="" style="width:833px;"/></p>
+
+<p><strong>注意：</strong> jquery_plantuml 中的 encode64.js 是我从 jquery_plantuml.js 中提取的部分，由于 MWeb 的预览是本地预览，而  jquery_plantuml.js 中用到了 Worker，本地是不支持的，所以我就用了另外的写法。在 MWeb 中用边写边预览的方式用这个主题时，如果图表量很大的话，可能会比较卡。这里说一下 MWeb 2.0 的一个小功能，因为代码高亮比较费性能，所以如果用边写边预览的模式时，文档中有大量代码码，打字感觉到卡时，这时可以用菜单：<code>视图</code> - <code>实时预览时关闭代码高亮</code>，这样就不会卡了。</p>
+
+<h2 id="toc_1">实现原理</h2>
+
+<p>原理就是使用 Github-flavored Markdown 支持的代码块功能。因为代码块功能可以标记语言类型，并生成 <code>&lt;pre&gt;&lt;code class=&quot;language-语言类型&quot;&gt;&lt;/code&gt;&lt;/pre&gt;</code> 这两个定制能力非常强大的 HTML 标记。这使得可以用 JS 在生成的 HTML 中获取所有代码块，并准确识别出语言类型，还可以取得原来的代码内容。我们只要用 JS 隐藏掉或者移除掉原来的代码块，并用代码内容生成需要的图形即可。</p>
+
+<p>详细的代码在 index.html 这个文件里，感兴趣可以下载来看看，这里只简单说一下 index.html 这个文档里的一些比较重要的字符串。</p>
+
+<p>index.html 中有三个比较重要的字符串，这三个字符串是自定义样式必须要有的，它们是 {{title}}、{{head}} 和 {{content}}。{{title}} 是导出为 HTML 功能会用到的，会正确替换标题；{{head}} 是 MWeb 内置的代码高亮、LaTeX 渲染等用到的；{{content}} 是为 Markdown 输出的 HTML 内容。</p>
+
+<p>最后再放一次这次自定义的预览样式下载：(<a href="media/14689205256580/sample-all-charts.zip">&gt;&gt;点此下载&lt;&lt;</a>) </p>
+
+<h2 id="toc_2">相关截图：</h2>
+
+<p><img src="media/14689205256580/14689360516577.jpg" alt="" style="width:1041px;"/><br/>
+<img src="media/14689205256580/14689360789050.jpg" alt="" style="width:1044px;"/><br/>
+<img src="media/14689205256580/14689361426921.jpg" alt="" style="width:1042px;"/></p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[MWeb 2.0 版正式发布，￥50 促销一周，一周后将变为 ￥98，所以也算 50% OFF 了！]]></title>
@@ -1112,58 +1155,6 @@ English: <a href="http://www.mweb.im">http://www.mweb.im</a></p>
 <li>footer.html add <code>{{ seqAndFlowChartSupport }}</code>, <code>{{ mathJaxSupport }}</code> code, please check this link: <a href="https://github.com/oulvhai/MWeb-Themes/blob/master/greyshade/footer.html">https://github.com/oulvhai/MWeb-Themes/blob/master/greyshade/footer.html</a></li>
 <li>post.html add <code>{{ commentAndShareCode }}</code> code, please check this link: <a href="https://github.com/oulvhai/MWeb-Themes/blob/master/greyshade/post.html">https://github.com/oulvhai/MWeb-Themes/blob/master/greyshade/post.html</a></li>
 </ol>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[MWeb 1.3 版发布！半价促销，新官网，新图标，增加任务列表，顺序图和流程图，优化MathJax、PDF导出等]]></title>
-    <link href="http://coderforart.com/mweb1.3-release-zh.html"/>
-    <updated>2015-03-28T10:21:20+08:00</updated>
-    <id>http://coderforart.com/mweb1.3-release-zh.html</id>
-    <content type="html"><![CDATA[
-<h2 id="toc_0">新官网</h2>
-
-<p>中文：<a href="http://zh.mweb.im">http://zh.mweb.im</a><br/>
-英文：<a href="http://www.mweb.im">http://www.mweb.im</a></p>
-
-<h2 id="toc_1">新增：</h2>
-
-<ul>
-<li>增加 <code>CMD+Shift+V</code> 粘贴 PNG 格式图片</li>
-<li>增加sequence图和flow图支持</li>
-<li>增加任务列表（Task lists）支持，列表后再加<code>[ ]</code>或<code>[x]</code></li>
-<li>增加把分类或文档导出为Markdown</li>
-<li>现在可以直接在设置中填入Disqus、多说等评论代码了，请参考：<a href="http://zh.mweb.im/mweb-comment-and-share-help.html">http://zh.mweb.im/mweb-comment-and-share-help.html</a></li>
-<li>优化MathJax支持并把MathJax库放本地以提高预览速度</li>
-<li>优化PDF导出</li>
-</ul>
-
-<h2 id="toc_2">修正</h2>
-
-<ul>
-<li>图标小调整，应该顺眼了点。</li>
-<li>修正了一些BUG和闪退问题</li>
-</ul>
-
-<h2 id="toc_3">1.3 以下的朋友请注意：</h2>
-
-<p>这次更新中，greyshade、octopress 博客主题模板有变动！由于增加了可设置评论和分类、勾选支持 MathJax 和顺序图、流程图，所以增加了以下三个变量：</p>
-
-<pre><code>{{ commentAndShareCode }}
-{{ seqAndFlowChartSupport }}
-{{ mathJaxSupport }}
-</code></pre>
-
-<p>greyshade、octopress 博客主题模板有更新到的页为 footer.html 和 post.html。</p>
-
-<p>footer.html 会在 <code>{{ siteOther }}</code> 上增加 <code>{{ seqAndFlowChartSupport }}</code> 和 <code>{{ mathJaxSupport }}</code>。</p>
-
-<p>可参考这个网址：<a href="https://github.com/oulvhai/MWeb-Themes/blob/master/greyshade/footer.html">https://github.com/oulvhai/MWeb-Themes/blob/master/greyshade/footer.html</a></p>
-
-<p>post.html 则在要放评论和分享的地方增加 <code>{{ commentAndShareCode }}</code>。</p>
-
-<p>可参考这个网址：<a href="https://github.com/oulvhai/MWeb-Themes/blob/master/greyshade/post.html">https://github.com/oulvhai/MWeb-Themes/blob/master/greyshade/post.html</a></p>
 
 ]]></content>
   </entry>
