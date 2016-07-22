@@ -70,10 +70,13 @@
 
 <aside class="left-off-canvas-menu">
       <ul class="off-canvas-list">
-       
-       <li><a href="index.html">HOME</a></li>
-    <li><a href="archives.html">Archives</a></li>
-    <li><a href="about.html">ABOUT</a></li>
+        
+        <li><a target="_self" href="index.html">Home</a></li>
+        
+        <li><a target="_self" href="archives.html">Archives</a></li>
+        
+        <li><a target="_self" href="about.html">About</a></li>
+        
 
     <li><label>Categories</label></li>
 
@@ -151,6 +154,8 @@
 
 <h3 id="toc_2">导入网站扩展文件和文档扩展文件</h3>
 
+<p><strong>注意：</strong>2.0 版已经不用做这个步骤了！！</p>
+
 <p>下载 <a href="media/14418505549476/Site%20Extension.json">Site Extension</a> 这个网站扩展设置文件，在 github 中这个文档在 <code>extensions/Site Extension.json</code> 里。</p>
 
 <p>再转到 <code>Perfernces</code> - <code>Extensions</code>，Setting Site 中选择刚刚设定了 mweb-medium-like 主题的 Coder For Art 网站，然后切换到 Site Extension 标签，点 <code>Import</code> 导入刚刚下载的 Site Extension.json 设置文档。如下图是导入后的效果。<br/>
@@ -174,7 +179,13 @@
 
 <h3 id="toc_5">设置 About 页面</h3>
 
-<p>mweb-medium-like 主题的主菜单加上了 about 页面，所以请设置一个 about 页面，否则点了主菜单的 about 连接后会出错。如下图是 Coder For Art 博客的 About 页的设置：<br/>
+<p>mweb-medium-like 主题的主菜单加上了 about 页面，所以请设置一个 about 页面，否则点了主菜单的 about 连接后会出错。</p>
+
+<p><strong>注意：</strong>2.0 版默认已经去掉了 about 页面，如果要增加 about 页面，打开 <code>偏好设置</code> - <code>扩展</code>，然后切换到 <code>网站菜单</code> 这个标签，在里面新增自定义的页面。在这个地方新增，一切都是自定义的，也就是说你还要先增加 Home 和 Archives 页。<br/>
+另外 2.0 版这个主题在自定菜单时有一个小 bug，就是我忘记处理移动端的了，解决<br/>
+办法是使用 <a href="https://github.com/oulvhai/mweb-medium-like/blob/master/header.html">https://github.com/oulvhai/mweb-medium-like/blob/master/header.html</a> 这个位置的 header.html，或者把最新的 <a href="https://github.com/oulvhai/mweb-medium-like">https://github.com/oulvhai/mweb-medium-like</a> 下载下来换掉原来的也行。</p>
+
+<p>如下图是 Coder For Art 博客的 About 页的设置：<br/>
 <img src="media/14418505549476/14418540682024.jpg" alt="" style="width:766px;"/></p>
 
 <h2 id="toc_6">其他有意思的玩法</h2>
