@@ -4,13 +4,45 @@
   <title><![CDATA[Coder For Art]]></title>
   <link href="http://coderforart.com/atom.xml" rel="self"/>
   <link href="http://coderforart.com/"/>
-  <updated>2016-07-25T09:54:15+08:00</updated>
+  <updated>2016-07-27T18:18:39+08:00</updated>
   <id>http://coderforart.com/</id>
   <author>
     <name><![CDATA[]]></name>
     
   </author>
   <generator uri="http://www.mweb.im/">MWeb</generator>
+  
+  <entry>
+    <title type="html"><![CDATA[MWeb 2.0.7 版发布！]]></title>
+    <link href="http://coderforart.com/mweb-2.0.7-release.html"/>
+    <updated>2016-07-27T18:08:45+08:00</updated>
+    <id>http://coderforart.com/mweb-2.0.7-release.html</id>
+    <content type="html"><![CDATA[
+<p>更新前针对 MAS 上的评论重点说一下：MWeb 是支持直接对本地文件夹操作的，不用导入到文档库！请使用外部模式！请使用外部模式！！请使用外部模式！！!重要的话讲三次！使用方法是 CMD + E 打开外部模式并把文件夹拖进左侧即可。</p>
+
+<p><strong>重要说明：</strong> Mac App Store 版已提交审核，还没正式发布，想必明天应该是能通过。官网版已经可以更新了。</p>
+
+<p>这次的更新主要是修正一些 bug, 详细为：</p>
+
+<ul>
+<li>增加把 HTML 粘贴为 Markdown 的功能，在菜单： 编辑 - 把 HTML 粘贴为 Markdown。提示：此功能可以快速把网页上的内容保存为 markdown，下面有 gif 演示。</li>
+<li>增加支持打开所有扩展名的文档。</li>
+<li>增加重新加载文档库的功能，菜单：文件 - 重新加载文档库。</li>
+<li>增加：当当前视图模式为仅预览模式时，用 CMD + P 会打印当前预览的结果。</li>
+<li>修正 CMD + Shift + S 复制文件的 bug</li>
+<li>修正预览可能会变空白的问题</li>
+<li>修正在表格编辑中，如果有 LaTex 公式，再编辑时公式会出问题的 bug。</li>
+<li>其它的一些 Bug 修正和性能提高。</li>
+</ul>
+
+<h2 id="toc_0">把 HTML 粘贴为 Markdown 功能演示：</h2>
+
+<p>这个功能默认会把远程的图片保存到本地，如果你不想保存图片，可以使用 CMD + Shift + N 新建文档再用此功能。</p>
+
+<p><img src="media/14696141258529/demoHtmlToMarkdown.gif" alt=""/></p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[自定义预览样式，让 MWeb 支持 ECharts、mermaid、PlantUML 等任何 JS 画图库]]></title>
@@ -1129,50 +1161,6 @@ Octpress 的文档一般都在 <code>_posts</code> 这个资料夹下，在 MWeb
 <p>这里说一下用 MWeb 生成的静态博客的好处：可直接打开所生成的 HTML 文档就能预览！这个是不同于 otcpress 等静态博客生成方式的。otcpress 等生成的 HTML 直接打开预览是没办法看到效果的，必须上传或者用 otcpress 来预览。MWeb 的静态博客功能没有 otcpress 这么强大，但是对于简单只想写一下博客的朋友来说，我觉得足够了。当然，下一版也会增强静态博客功能的。</p>
 
 <p>另外发布到 Wordpress.com、bloger、evernote 功能也是会有的，这几个要在 1.4 版发布后才会开始弄。</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[MWeb 1.3 release! 50% OFF, official site, new icon, task list support, optimized MathJax support etc...]]></title>
-    <link href="http://coderforart.com/mweb1.3-release.html"/>
-    <updated>2015-03-28T11:13:42+08:00</updated>
-    <id>http://coderforart.com/mweb1.3-release.html</id>
-    <content type="html"><![CDATA[
-<h2 id="toc_0">Official Site</h2>
-
-<p>Chinese: <a href="http://zh.mweb.im">http://zh.mweb.im</a><br/>
-English: <a href="http://www.mweb.im">http://www.mweb.im</a></p>
-
-<h2 id="toc_1">Featrue</h2>
-
-<ul>
-<li>Add <code>CMD+Shift+V</code> paste PNG pictrue.</li>
-<li>Add sequence and flow chart support</li>
-<li>Add task lists support. <code>- + space + [ ]</code>or <code>- + space + [x]</code></li>
-<li>Add Markdown export.</li>
-<li>Add setting Disqus Comment code support, more info: <a href="http://www.mweb.im/mweb-comment-and-share-help.html">http://www.mweb.im/mweb-comment-and-share-help.html</a></li>
-<li>Optimized MathJax support and add MathJax library to local.</li>
-<li>Optimized PDF export.</li>
-</ul>
-
-<p>Fixed some crash.</p>
-
-<h2 id="toc_2">For MWeb 1.2 users</h2>
-
-<p>Site themes updated: greyshade, octopress themes updated for support setting Comment and Share code,MathJax ,sequence and flow chart. Three variables added like below:</p>
-
-<pre><code>{{ commentAndShareCode }}
-{{ seqAndFlowChartSupport }}
-{{ mathJaxSupport }}
-</code></pre>
-
-<p>Updated template pages:</p>
-
-<ol>
-<li>footer.html add <code>{{ seqAndFlowChartSupport }}</code>, <code>{{ mathJaxSupport }}</code> code, please check this link: <a href="https://github.com/oulvhai/MWeb-Themes/blob/master/greyshade/footer.html">https://github.com/oulvhai/MWeb-Themes/blob/master/greyshade/footer.html</a></li>
-<li>post.html add <code>{{ commentAndShareCode }}</code> code, please check this link: <a href="https://github.com/oulvhai/MWeb-Themes/blob/master/greyshade/post.html">https://github.com/oulvhai/MWeb-Themes/blob/master/greyshade/post.html</a></li>
-</ol>
 
 ]]></content>
   </entry>
