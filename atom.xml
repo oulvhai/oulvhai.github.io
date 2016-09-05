@@ -4,13 +4,55 @@
   <title><![CDATA[Coder For Art]]></title>
   <link href="http://coderforart.com/atom.xml" rel="self"/>
   <link href="http://coderforart.com/"/>
-  <updated>2016-09-05T08:56:51+08:00</updated>
+  <updated>2016-09-05T08:59:16+08:00</updated>
   <id>http://coderforart.com/</id>
   <author>
     <name><![CDATA[]]></name>
     
   </author>
   <generator uri="http://www.mweb.im/">MWeb</generator>
+  
+  <entry>
+    <title type="html"><![CDATA[分享一个把 HTML 转换成印象笔记格式的库，支持代码高亮和把 ECharts、mermaid 转成印象笔记支持的图片，另外：MWeb 半价促销一周。]]></title>
+    <link href="http://coderforart.com/14730440789266.html"/>
+    <updated>2016-09-05T10:54:38+08:00</updated>
+    <id>http://coderforart.com/14730440789266.html</id>
+    <content type="html"><![CDATA[
+<p>先说说 html2enml 这个库，github 网址：<a href="https://github.com/cyhhao/html2enml">https://github.com/cyhhao/html2enml</a>。</p>
+
+<p>这个库是由 <a href="http://weibo.com/u/1587579460">cyhhao</a> 特意为 MWeb 做的，但是我觉得对于有分享到印象笔记功能需求的朋友非常有用，所以分享出来。</p>
+
+<p>这个库的原理和用法在作者的 github 中有详细说明了，我这里主要说说在套进 MWeb 过程中遇到的小问题的解决方案。</p>
+
+<p>第一个问题是 SVG 问题，Mermaid 是用 SVG 而不是 Canvas 画图的，不能直接像 Canvas 这样转。解决这个问题花了不少时间，但是其实很简单。只需要在增加 inline 样式后，再用以下代码就可以搞定了：</p>
+
+<pre><code class="language-js">$(&#39;svg&#39;).each(function(){
+    var ele = $(this);
+    var w = ele.width();
+    var serializer = new XMLSerializer();
+    var source = serializer.serializeToString(this);
+    $(&#39;&lt;img src=&quot;data:image/svg+xml;charset=utf8,&#39;+encodeURIComponent(source) +&#39;&quot; /&gt;&#39;).whith(w).insertAfter(ele);
+    ele.parent().removeAttr(&#39;data-processed&#39;);
+    ele.remove();
+});
+</code></pre>
+
+<p>另外就是，印象笔记的 enml 格式实际上是一个 xml，但是一般的 html 都不会严格按照 xml 格式，这就要转化为 xml 格式，测试下来，我发现以下代码的方法非常合适而且好用，代码如下：</p>
+
+<pre><code class="language-js">var html = $(&#39;body&#39;).html();
+var bodyStyle = $(&#39;body&#39;).attr(&#39;style&#39;); if(!bodyStyle) bodyStyle = &#39;&#39;;
+var htmlString = &quot;&lt;div style=\&quot;&quot; + bodyStyle + &quot;\&quot;&gt;&quot; + html + &quot;&lt;/div&gt;&quot;;
+var doc = new DOMParser().parseFromString(htmlString, &#39;text/html&#39;);
+var result = new XMLSerializer().serializeToString(doc);
+</code></pre>
+
+<p>最后做一下广告：MWeb 半价促销一周 (9/5~9/11)，￥98 --&gt; ￥50！这次应该是今年最后一次促销了，需要的朋友不要错过了！</p>
+
+<p>MWeb 官网：<a href="http://zh.mweb.im/">http://zh.mweb.im/</a><br/>
+MAS ：<a href="https://itunes.apple.com/cn/app/mweb-pro-markdown-writing/id954188948?l=zh&amp;ls=1&amp;mt=12">https://itunes.apple.com/cn/app/mweb-pro-markdown-writing/id954188948?l=zh&amp;ls=1&amp;mt=12</a></p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[MWeb 2.0.7 版发布！]]></title>
@@ -1072,97 +1114,6 @@ Octpress 的文档一般都在 <code>_posts</code> 这个资料夹下，在 MWeb
 <p>其他如 hexo、Farbox 等引入 MWeb 中进行管理我想也差不多，不再多介绍了。引入文件夹比用 MWeb 文档库模式好的地方是同步和协作都比较方便。然后说明一下 MWeb 1.4 版现在还没有提交到 MAS 的，我还要多测试几天才会提交。所以看到这篇文章的朋友，如果有什么的建议，可以跟我说，这样就可以及时在提交前改进了。</p>
 
 <p>然后 1.4 版还对 MWeb 静态博客功能进行了增强，我也正在考虑介绍文章怎么写，初步计划是写两篇，一篇是介绍功能，一篇是再做一个生成 Apple 播客 RSS 的例子。最晚的话，明天应该会把文章发出来。</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[MWeb 1.3.7 发布！增加发布到 Wordpress 等支持 Metaweblog API 的服务，如：Wordpress 博客、新浪博客、cnblogs、oschina。]]></title>
-    <link href="http://coderforart.com/mweb-1.3.7-releases.html"/>
-    <updated>2015-04-17T07:45:08+08:00</updated>
-    <id>http://coderforart.com/mweb-1.3.7-releases.html</id>
-    <content type="html"><![CDATA[
-<h2 id="toc_0">MWeb 1.3.7 版的新功能</h2>
-
-<ul>
-<li>增加发布到 Wordpress 等支持 Metaweblog API 的服务，目前经测试过的有： Wordpress 博客、新浪博客、cnblogs、oschina。</li>
-<li>增加发布到 Tumblr 和 Scriptogr.am </li>
-<li>即时预览改进，原来会闪动，现在拿掉了同步滚动功能后不会了。</li>
-<li>编辑器和三栏切换也有小改进。</li>
-</ul>
-
-<span id="more"></span><!-- more -->
-
-<h2 id="toc_1">下边介绍一下发布到 Wordpress 等支持 Metaweblog API 的博客服务的功能</h2>
-
-<p>我所知，Mac 下支持这一功能的 Native 的 Markdown 编辑器就只有 MWeb 了。之前用过 Live Writer 的朋友都知道这功能非常好用，因为加图片非常方便！然后是离线写作，不用担心内容丢失，还可以方便地发布到多处地方。我之前用 Live Writer 时还会时不时要切到 HTML 代码下去修正一下格式问题，有点难用，现在用 Markdown 的话，就不会有这情况了。可以说：Markdown 和 Metaweblog API 才是真正的完美结合！</p>
-
-<p>在 MWeb 中点菜单：<code>MWeb</code> - <code>Preferences</code> - <code>Publishing</code> 即可进入发布设置界面，如下：</p>
-
-<p><img src="media/14292279084701/14292295737706.jpg" alt=""/></p>
-
-<h3 id="toc_2">增加发布到 Wordpress 的服务</h3>
-
-<p>点 Wordpress.org 这个按钮，如下图，由于 Wordpress 的远程发布网址可以由博客网址得知，所以只需要填入博客网址、帐号、密码即可。密码是存到 Keychain，所以可无需担心。<br/>
-<img src="media/14292279084701/14292301869922.jpg" alt=""/></p>
-
-<p><strong>注意：</strong> 如果遇到 <code>validate</code> 不通过并提示 404 错误的话，目前有两个可能（感谢 <a href="http://weibo.com/u/1862562001">@iamliunian</a>）：</p>
-
-<ol>
-<li>可以查看 Wordpress 的设置里是否开启远程发布。位置是 <code>设置</code> - <code>撰写</code> - <code>远程发布</code> 并开启 <code>XML-RPC</code></li>
-<li>检查 你的博客网址 + xmlrpc.php，看看是否正常，比如说我的 Wordpress 博客的是 <a href="http://appbk.sinaapp.com/xmlrpc.php">http://appbk.sinaapp.com/xmlrpc.php</a>，打开会显示 <code>XML-RPC server accepts POST requests only.</code> 是为正常，否则就有可能是 url rewrite 的设置，让 xmlrpc.php 不能用了。这要修改 .htaccess  让 xmlrpc.php 正常。</li>
-</ol>
-
-<h3 id="toc_3">增加发布到 新浪博客、cnblogs、oschina 的博客服务的服务</h3>
-
-<p>点 Metaweblog API 这个按钮，如下图，必填的只有 帐号、密码、Publish URL。Publish URL 这个一般支持 Metaweblog API 的服务都会提供的。</p>
-
-<p><img src="media/14292279084701/14292306829254.jpg" alt=""/></p>
-
-<p>下面说一下新浪博客、cnblogs、oschina 的 Publish URL。</p>
-
-<ul>
-<li>新浪博客的 Publish URL：<a href="http://upload.move.blog.sina.com.cn/blog_rebuild/blog/xmlrpc.php">http://upload.move.blog.sina.com.cn/blog_rebuild/blog/xmlrpc.php</a></li>
-<li>cnblogs 的 Publish URL：<a href="http://www.cnblogs.com/Blog%E5%90%8D/services/metaweblog.aspx">http://www.cnblogs.com/Blog名/services/metaweblog.aspx</a>。其中 <strong>Blog 名</strong> 请换为您的博客名。cnblogs 的博客后台设置，拉到最下面，也可以找到这个网址。比如说我的是  <a href="http://rpc.cnblogs.com/metaweblog/OtisBlog">http://rpc.cnblogs.com/metaweblog/OtisBlog</a> 两者网址不同，但是效果一样。</li>
-<li>oschina 的 Publish URL：<a href="http://my.oschina.net/action/xmlrpc">http://my.oschina.net/action/xmlrpc</a></li>
-</ul>
-
-<h3 id="toc_4">发布</h3>
-
-<p>如下图红框处，你可以在 MWeb 分享按钮（右上角的第三个按钮）中找到所增加的发布服务。名称会显示 <code>Blog Name</code> 中设定的名称。</p>
-
-<p><img src="media/14292279084701/14292318507812.jpg" alt=""/></p>
-
-<p>比如说我要发布到我的 Wordpress 博客，点 <code>oulvhai 的 Wordpress 博客</code>，如下图：<br/>
-<img src="media/14292279084701/14292325545410.jpg" alt=""/></p>
-
-<p>要注意的时，有些博客服务是不支持上边的一些设置的，比如说 <code>Custom URL</code>、<code>Publish Date</code>、<code>Status</code> 等。设定好后，点 <code>Publish</code> 按钮就可以发布了。</p>
-
-<p>要说明的是：Metaweblog API 有自动上传图片的功能，有看到我现在这文章的图片都是在本地的，发布时就会自动把图片上传到所发布的博客服务。所以就不用找图床了。我这文章会发布到以下几个地方：</p>
-
-<ul>
-<li>我的用 MWeb 静态网站功能生成的个人博客：<a href="http://coderforart.com">http://coderforart.com</a></li>
-<li>同样用 MWeb 静态网站功能生成的 MWeb 中文官网：<a href="http://zh.mweb.im">http://zh.mweb.im</a></li>
-<li>我的 Wordpress 测试博客：<a href="http://appbk.sinaapp.com/">http://appbk.sinaapp.com/</a></li>
-<li>我的新浪博客：<a href="http://blog.sina.com.cn/oulvhai">http://blog.sina.com.cn/oulvhai</a></li>
-<li>我在 cnblogs 的博客：<a href="http://www.cnblogs.com/OtisBlog">http://www.cnblogs.com/OtisBlog</a></li>
-<li>我在 oschina 的博客：<a href="http://my.oschina.net/oulvhai">http://my.oschina.net/oulvhai</a></li>
-</ul>
-
-<h2 id="toc_5">关于 MWeb Lite</h2>
-
-<p>MWeb Lite 的定位是 Markdown 编辑器和一些 MWeb 正式版的功能的体验。对于轻度使用 Markdown 的朋友来说， MWeb Lite 已足够了，MWeb 正式版的功能大部分用不到。MWeb Lite 的 Markdown 编辑器功能是跟 MWeb 正式版一样的。这个功能会随着 MWeb 这个产品的不断打磨而得到更好的体验。目前 MWeb Lite 对于正式版不同的地方有：</p>
-
-<ol>
-<li>文档库 MWeb Lite 限定为 10 个文档</li>
-<li>发布服务只能增加 1 个。</li>
-</ol>
-
-<h2 id="toc_6">其他</h2>
-
-<p>这里说一下用 MWeb 生成的静态博客的好处：可直接打开所生成的 HTML 文档就能预览！这个是不同于 otcpress 等静态博客生成方式的。otcpress 等生成的 HTML 直接打开预览是没办法看到效果的，必须上传或者用 otcpress 来预览。MWeb 的静态博客功能没有 otcpress 这么强大，但是对于简单只想写一下博客的朋友来说，我觉得足够了。当然，下一版也会增强静态博客功能的。</p>
-
-<p>另外发布到 Wordpress.com、bloger、evernote 功能也是会有的，这几个要在 1.4 版发布后才会开始弄。</p>
 
 ]]></content>
   </entry>

@@ -114,6 +114,74 @@
 		<div class="markdown-body home-categories">
 		
 			<div class="article">
+                <a class="clearlink" href="14730440789266.html">
+                
+                  <h1>分享一个把 HTML 转换成印象笔记格式的库，支持代码高亮和把 ECharts、mermaid 转成印象笔记支持的图片，另外：MWeb 半价促销一周。</h1>
+                  <div class="a-content">
+                      
+                      <div class="a-content-text">
+                        
+                        	<p>先说说 html2enml 这个库，github 网址：<a href="https://github.com/cyhhao/html2enml">https://github.com/cyhhao/html2enml</a>。</p>
+
+<p>这个库是由 <a href="http://weibo.com/u/1587579460">cyhhao</a> 特意为 MWeb 做的，但是我觉得对于有分享到印象笔记功能需求的朋友非常有用，所以分享出来。</p>
+
+<p>这个库的原理和用法在作者的 github 中有详细说明了，我这里主要说说在套进 MWeb 过程中遇到的小问题的解决方案。</p>
+
+<p>第一个问题是 SVG 问题，Mermaid 是用 SVG 而不是 Canvas 画图的，不能直接像 Canvas 这样转。解决这个问题花了不少时间，但是其实很简单。只需要在增加 inline 样式后，再用以下代码就可以搞定了：</p>
+
+<pre><code class="language-js">$(&#39;svg&#39;).each(function(){
+    var ele = $(this);
+    var w = ele.width();
+    var serializer = new XMLSerializer();
+    var source = serializer.serializeToString(this);
+    $(&#39;&lt;img src=&quot;data:image/svg+xml;charset=utf8,&#39;+encodeURIComponent(source) +&#39;&quot; /&gt;&#39;).whith(w).insertAfter(ele);
+    ele.parent().removeAttr(&#39;data-processed&#39;);
+    ele.remove();
+});
+</code></pre>
+
+<p>另外就是，印象笔记的 enml 格式实际上是一个 xml，但是一般的 html 都不会严格按照 xml 格式，这就要转化为 xml 格式，测试下来，我发现以下代码的方法非常合适而且好用，代码如下：</p>
+
+<pre><code class="language-js">var html = $(&#39;body&#39;).html();
+var bodyStyle = $(&#39;body&#39;).attr(&#39;style&#39;); if(!bodyStyle) bodyStyle = &#39;&#39;;
+var htmlString = &quot;&lt;div style=\&quot;&quot; + bodyStyle + &quot;\&quot;&gt;&quot; + html + &quot;&lt;/div&gt;&quot;;
+var doc = new DOMParser().parseFromString(htmlString, &#39;text/html&#39;);
+var result = new XMLSerializer().serializeToString(doc);
+</code></pre>
+
+<p>最后做一下广告：MWeb 半价促销一周 (9/5~9/11)，￥98 --&gt; ￥50！这次应该是今年最后一次促销了，需要的朋友不要错过了！</p>
+
+<p>MWeb 官网：<a href="http://zh.mweb.im/">http://zh.mweb.im/</a><br/>
+MAS ：<a href="https://itunes.apple.com/cn/app/mweb-pro-markdown-writing/id954188948?l=zh&amp;ls=1&amp;mt=12">https://itunes.apple.com/cn/app/mweb-pro-markdown-writing/id954188948?l=zh&amp;ls=1&amp;mt=12</a></p>
+
+                        
+                      </div>
+                  </div>
+                </a>
+                <div class="read-more clearfix">
+                  <div class="more-left left">
+                  
+                    <span class="date">2016/9/5</span>
+                    <span>posted in&nbsp;</span> 
+          				  
+          					    <span class="posted-in"><a href='MWeb-cat.html'>MWeb</a></span>
+          				   
+                  </div>
+                  <div class="more-right right">
+                  <span class="comments">
+                      
+                        <a href="http://coderforart.com/14730440789266.html#disqus_thread">comments</a>
+                      
+
+                      
+                        &nbsp;<a  class="ds-thread-count" data-thread-key="14730440789266.html" data-count-type="comments" href="14730440789266.html#ds-thread"></a>
+                       
+                  </span>
+                  </div>
+                </div>
+              </div><!-- article -->
+        
+			<div class="article">
                 <a class="clearlink" href="mweb-2.0.7-release.html">
                 
                   <h1>MWeb 2.0.7 版发布！</h1>
@@ -456,44 +524,6 @@
                 </div>
               </div><!-- article -->
         
-			<div class="article">
-                <a class="clearlink" href="mweb-1.8.3-release.html">
-                
-                  <div class="f-img"><img src="media/14466873920420/publish-to-medium.jpg" /></div>
-                
-                  <h1>MWeb 1.8.3 发布！增加发布到 Medium、LaTex 预览修正、编辑器优化等</h1>
-                  <div class="a-content">
-                      
-                      <div class="a-content-text">
-                        
-                        	发布到 Medium 详细说明...
-                        
-                      </div>
-                  </div>
-                </a>
-                <div class="read-more clearfix">
-                  <div class="more-left left">
-                   <a href="mweb-1.8.3-release.html">Read more</a>&nbsp;&nbsp; 
-                    <span class="date">2015/11/5</span>
-                    <span>posted in&nbsp;</span> 
-          				  
-          					    <span class="posted-in"><a href='MWeb-cat.html'>MWeb</a></span>
-          				   
-                  </div>
-                  <div class="more-right right">
-                  <span class="comments">
-                      
-                        <a href="http://coderforart.com/mweb-1.8.3-release.html#disqus_thread">comments</a>
-                      
-
-                      
-                        &nbsp;<a  class="ds-thread-count" data-thread-key="mweb-1.8.3-release.html" data-count-type="comments" href="mweb-1.8.3-release.html#ds-thread"></a>
-                       
-                  </span>
-                  </div>
-                </div>
-              </div><!-- article -->
-        
               
 
 
@@ -586,6 +616,12 @@
 	      
 		      
 			      <li class="post">
+			        <a href="14730440789266.html">分享一个把 HTML 转换成印象笔记格式的库，支持代码高亮和把 ECharts、mermaid 转成印象笔记支持的图片，另外：MWeb 半价促销一周。</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
 			        <a href="mweb-2.0.7-release.html">MWeb 2.0.7 版发布！</a>
 			      </li>
 		     
@@ -605,12 +641,6 @@
 		      
 			      <li class="post">
 			        <a href="mweb-2.0-beta.html">MWeb 2.0 测试版可以下载啦，这次是公开测试，感兴趣的朋友可以试试</a>
-			      </li>
-		     
-		  
-		      
-			      <li class="post">
-			        <a href="mweb-1.9.7-release.html">MWeb 1.9.7 发布！这次增加了一个有意思的改进，有必要说一下。</a>
 			      </li>
 		     
 		  
