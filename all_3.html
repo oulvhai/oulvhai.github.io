@@ -70,13 +70,10 @@
 
 <aside class="left-off-canvas-menu">
       <ul class="off-canvas-list">
-        
-        <li><a target="_self" href="index.html">Home</a></li>
-        
-        <li><a target="_self" href="archives.html">Archives</a></li>
-        
-        <li><a target="_self" href="about.html">About</a></li>
-        
+       
+       <li><a href="index.html">HOME</a></li>
+    <li><a href="archives.html">Archives</a></li>
+    <li><a href="about.html">ABOUT</a></li>
 
     <li><label>Categories</label></li>
 
@@ -113,6 +110,128 @@
 	<div class="large-8 medium-8 columns">
 		<div class="markdown-body home-categories">
 		
+			<div class="article">
+                <a class="clearlink" href="mweb1.3-release-zh.html">
+                
+                  <h1>MWeb 1.3 版发布！半价促销，新官网，新图标，增加任务列表，顺序图和流程图，优化MathJax、PDF导出等</h1>
+                  <div class="a-content">
+                      
+                      <div class="a-content-text">
+                        
+                        	<h2 id="toc_0">新官网</h2>
+
+<p>中文：<a href="http://zh.mweb.im">http://zh.mweb.im</a><br/>
+英文：<a href="http://www.mweb.im">http://www.mweb.im</a></p>
+
+<h2 id="toc_1">新增：</h2>
+
+<ul>
+<li>增加 <code>CMD+Shift+V</code> 粘贴 PNG 格式图片</li>
+<li>增加sequence图和flow图支持</li>
+<li>增加任务列表（Task lists）支持，列表后再加<code>[ ]</code>或<code>[x]</code></li>
+<li>增加把分类或文档导出为Markdown</li>
+<li>现在可以直接在设置中填入Disqus、多说等评论代码了，请参考：<a href="http://zh.mweb.im/mweb-comment-and-share-help.html">http://zh.mweb.im/mweb-comment-and-share-help.html</a></li>
+<li>优化MathJax支持并把MathJax库放本地以提高预览速度</li>
+<li>优化PDF导出</li>
+</ul>
+
+<h2 id="toc_2">修正</h2>
+
+<ul>
+<li>图标小调整，应该顺眼了点。</li>
+<li>修正了一些BUG和闪退问题</li>
+</ul>
+
+<h2 id="toc_3">1.3 以下的朋友请注意：</h2>
+
+<p>这次更新中，greyshade、octopress 博客主题模板有变动！由于增加了可设置评论和分类、勾选支持 MathJax 和顺序图、流程图，所以增加了以下三个变量：</p>
+
+<pre><code>{{ commentAndShareCode }}
+{{ seqAndFlowChartSupport }}
+{{ mathJaxSupport }}
+</code></pre>
+
+<p>greyshade、octopress 博客主题模板有更新到的页为 footer.html 和 post.html。</p>
+
+<p>footer.html 会在 <code>{{ siteOther }}</code> 上增加 <code>{{ seqAndFlowChartSupport }}</code> 和 <code>{{ mathJaxSupport }}</code>。</p>
+
+<p>可参考这个网址：<a href="https://github.com/oulvhai/MWeb-Themes/blob/master/greyshade/footer.html">https://github.com/oulvhai/MWeb-Themes/blob/master/greyshade/footer.html</a></p>
+
+<p>post.html 则在要放评论和分享的地方增加 <code>{{ commentAndShareCode }}</code>。</p>
+
+<p>可参考这个网址：<a href="https://github.com/oulvhai/MWeb-Themes/blob/master/greyshade/post.html">https://github.com/oulvhai/MWeb-Themes/blob/master/greyshade/post.html</a></p>
+
+                        
+                      </div>
+                  </div>
+                </a>
+                <div class="read-more clearfix">
+                  <div class="more-left left">
+                  
+                    <span class="date">2015/3/28</span>
+                    <span>posted in&nbsp;</span> 
+          				  
+          					    <span class="posted-in"><a href='MWeb-cat.html'>MWeb</a></span>
+          				   
+                  </div>
+                  <div class="more-right right">
+                  <span class="comments">
+                      
+                        <a href="http://coderforart.com/mweb1.3-release-zh.html#disqus_thread">comments</a>
+                      
+
+                      
+                        &nbsp;<a  class="ds-thread-count" data-thread-key="mweb1.3-release-zh.html" data-count-type="comments" href="mweb1.3-release-zh.html#ds-thread"></a>
+                       
+                  </span>
+                  </div>
+                </div>
+              </div><!-- article -->
+        
+			<div class="article">
+                <a class="clearlink" href="markdown-syntax-guide-suggest-version.html">
+                
+                  <h1>Markdown syntax guide and writing on MWeb</h1>
+                  <div class="a-content">
+                      
+                      <div class="a-content-text">
+                        
+                        	<h2 id="toc_0">Philosophy</h2>
+
+<blockquote>
+<p>Markdown is intended to be as easy-to-read and easy-to-write as is feasible.<br/>
+Readability, however, is emphasized above all else. A Markdown-formatted document should be publishable as-is, as plain text, without looking like it&#39;s been marked up with tags or formatting instructions.<br/>
+Markdown&#39;s syntax is intended for one purpose: to be used as a format for <em>writing</em> for the web. </p>
+</blockquote>
+
+
+                        
+                      </div>
+                  </div>
+                </a>
+                <div class="read-more clearfix">
+                  <div class="more-left left">
+                   <a href="markdown-syntax-guide-suggest-version.html">Read more</a>&nbsp;&nbsp; 
+                    <span class="date">2015/3/21</span>
+                    <span>posted in&nbsp;</span> 
+          				  
+          					    <span class="posted-in"><a href='Markdown.html'>Markdown</a></span>
+          				   
+                  </div>
+                  <div class="more-right right">
+                  <span class="comments">
+                      
+                        <a href="http://coderforart.com/markdown-syntax-guide-suggest-version.html#disqus_thread">comments</a>
+                      
+
+                      
+                        &nbsp;<a  class="ds-thread-count" data-thread-key="markdown-syntax-guide-suggest-version.html" data-count-type="comments" href="markdown-syntax-guide-suggest-version.html#ds-thread"></a>
+                       
+                  </span>
+                  </div>
+                </div>
+              </div><!-- article -->
+        
 			<div class="article">
                 <a class="clearlink" href="markdown-syntax-guide-suggest-version-zh.html">
                 
@@ -380,112 +499,6 @@ ourcoders:<a href="http://ourcoders.com/thread/show/5653/">http://ourcoders.com/
                 </div>
               </div><!-- article -->
         
-			<div class="article">
-                <a class="clearlink" href="mweb-v1.2-release.html">
-                
-                  <h1>MWeb 1.2 release</h1>
-                  <div class="a-content">
-                      
-                      <div class="a-content-text">
-                        
-                        	<h2 id="toc_0">New feature</h2>
-
-<ul>
-<li>Add auto insert list and blockquote prefix: Preferences --&gt; General --&gt; Auto insert list and blockquote prefix</li>
-<li>In Editor share: Copy as image,Save as image,Save as PDF etc... now change to HTML style.</li>
-<li>Add HTML or PDF export suport for documents. You can selected documents --&gt; Right Mouse Button Click(RMB) --&gt; Export as HTML or PDF.</li>
-<li>Add HTML or PDF export suport for category. You can selected category --&gt; RMB --&gt; Export as HTML or PDF.</li>
-<li>Add new preview css: octopress,greyshade.</li>
-<li>Add drag &amp; drop to sort documents. RMB parent category --&gt; Edit --&gt; set Order by to Custom --&gt; you can drag &amp; drop to sort</li>
-<li>Add drag &amp; drop to sort categories.</li>
-</ul>
-
-<h2 id="toc_1">Fixed</h2>
-
-<ul>
-<li>Build site crash some time</li>
-<li>Preview site not work some time</li>
-</ul>
-
-                        
-                      </div>
-                  </div>
-                </a>
-                <div class="read-more clearfix">
-                  <div class="more-left left">
-                  
-                    <span class="date">2015/2/8</span>
-                    <span>posted in&nbsp;</span> 
-          				  
-          					    <span class="posted-in"><a href='MWeb-cat.html'>MWeb</a></span>
-          				  
-          					    <span class="posted-in"><a href='Introduction.html'>Introduction</a></span>
-          				   
-                  </div>
-                  <div class="more-right right">
-                  <span class="comments">
-                      
-                        <a href="http://coderforart.com/mweb-v1.2-release.html#disqus_thread">comments</a>
-                      
-
-                      
-                        &nbsp;<a  class="ds-thread-count" data-thread-key="mweb-v1.2-release.html" data-count-type="comments" href="mweb-v1.2-release.html#ds-thread"></a>
-                       
-                  </span>
-                  </div>
-                </div>
-              </div><!-- article -->
-        
-			<div class="article">
-                <a class="clearlink" href="mweb-v1.2-release-zh.html">
-                
-                  <h1>MWeb 1.2 版更新说明和用 wkhtmltopdf 生成带目录的 PDF 和自定预览 CSS</h1>
-                  <div class="a-content">
-                      
-                      <div class="a-content-text">
-                        
-                        	<h2 id="toc_0">新增</h2>
-
-<ul>
-<li>可选择在输入时是否自动插入列表编号，可以在 Preferences --&gt; General --&gt; Auto insert list and blockquote prefix 开启和关闭。</li>
-<li>分享功能的 Copy as image、Save as image、Save as PDF 等现在统一都用HTML的样式了，另外还专门为分享到微薄等SNS生成的图片做了优化，比如说如果有代码，会强制换行。</li>
-<li>新增把文档库里的单个或多个文档导出为HTML或者PDF。使用方法为：选择要导出的文档（可多选） --&gt; 鼠标右键 --&gt; Export as HTML、PDF</li>
-<li>新增把整个分类导出为HTML或者PDF。使用方法为：右键要导出的分类 --&gt; Export as HTML、PDF。导出的PDF现在还没办法自动生成目录，下边的详细介绍会分享一个可以自动生成目录的方法，然后个人觉得生成的PDF非常好。</li>
-<li>新增MWeb自带的两个主题octopress、greyshade的即时预览CSS。现在可以不用 Build site 就可以即时预览文章的大概效果了。另外自定网站的预览CSS非常简单，请看下边的详细介绍。</li>
-<li>新增可以拖拽改变文档的顺序。使用方法为：鼠标右键父分类 --&gt; Edit --&gt; 把Order by设定为：Custom --&gt; 然后就可以用拖拽调节这个父分类下的文档顺序了。</li>
-<li>新增可以拖拽改变分类的顺序。</li>
-</ul>
-
-
-                        
-                      </div>
-                  </div>
-                </a>
-                <div class="read-more clearfix">
-                  <div class="more-left left">
-                   <a href="mweb-v1.2-release-zh.html">Read more</a>&nbsp;&nbsp; 
-                    <span class="date">2015/2/8</span>
-                    <span>posted in&nbsp;</span> 
-          				  
-          					    <span class="posted-in"><a href='MWeb-cat.html'>MWeb</a></span>
-          				  
-          					    <span class="posted-in"><a href='Introduction.html'>Introduction</a></span>
-          				   
-                  </div>
-                  <div class="more-right right">
-                  <span class="comments">
-                      
-                        <a href="http://coderforart.com/mweb-v1.2-release-zh.html#disqus_thread">comments</a>
-                      
-
-                      
-                        &nbsp;<a  class="ds-thread-count" data-thread-key="mweb-v1.2-release-zh.html" data-count-type="comments" href="mweb-v1.2-release-zh.html#ds-thread"></a>
-                       
-                  </span>
-                  </div>
-                </div>
-              </div><!-- article -->
-        
               
 
 
@@ -530,7 +543,18 @@ ourcoders:<a href="http://ourcoders.com/thread/show/5653/">http://ourcoders.com/
               	 </div>
           	</div>
 
-             
+               
+             <div id="site-categories" class="side-item ">
+                <div class="side-header">
+                  <h2>Important</h2>
+                </div>
+                <div class="side-content">
+                  <div style="color:#ff0000; text-align:center; padding:8px;" class="bg-info site_notice">
+                    <a style="color:#ff0000;"  onclick="ga('send','event','global_notice_click');" href="introducing-mweb-for-ios.html"  >iOS 版 MWeb 正式发布及简介！</a>&nbsp;&nbsp;<a style="color:#ff0000;"  onclick="ga('send','event','global_notice_click-mac');" href="https://itunes.apple.com/cn/app/mweb-pro-markdown-writing/id954188948?l=zh&ls=1&mt=12" target="_blank" > Mac 版半价促销中！</a>
+                  </div>
+                </div>
+            </div>
+    
 
               <div id="site-categories" class="side-item ">
                 <div class="side-header">
@@ -567,6 +591,18 @@ ourcoders:<a href="http://ourcoders.com/thread/show/5653/">http://ourcoders.com/
 	      
 		      
 			      <li class="post">
+			        <a href="introducing-mweb-for-ios.html">iOS 版 MWeb 正式发布及简介</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="mweb-for-ios-test.html">MWeb for iOS 测试版介绍</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
 			        <a href="14730440789266.html">分享一个把 HTML 转换成印象笔记格式的库，支持代码高亮和把 ECharts、mermaid 转成印象笔记支持的图片，另外：MWeb 半价促销一周。</a>
 			      </li>
 		     
@@ -580,18 +616,6 @@ ourcoders:<a href="http://ourcoders.com/thread/show/5653/">http://ourcoders.com/
 		      
 			      <li class="post">
 			        <a href="14689205256580.html">自定义预览样式，让 MWeb 支持 ECharts、mermaid、PlantUML 等任何 JS 画图库</a>
-			      </li>
-		     
-		  
-		      
-			      <li class="post">
-			        <a href="mweb-2.0-release.html">MWeb 2.0 版正式发布，￥50 促销一周，一周后将变为 ￥98，所以也算 50% OFF 了！</a>
-			      </li>
-		     
-		  
-		      
-			      <li class="post">
-			        <a href="mweb-2.0-beta.html">MWeb 2.0 测试版可以下载啦，这次是公开测试，感兴趣的朋友可以试试</a>
 			      </li>
 		     
 		  

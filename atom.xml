@@ -4,13 +4,401 @@
   <title><![CDATA[Coder For Art]]></title>
   <link href="http://coderforart.com/atom.xml" rel="self"/>
   <link href="http://coderforart.com/"/>
-  <updated>2016-09-06T17:59:59+08:00</updated>
+  <updated>2017-01-07T08:48:24+08:00</updated>
   <id>http://coderforart.com/</id>
   <author>
     <name><![CDATA[]]></name>
     
   </author>
   <generator uri="http://www.mweb.im/">MWeb</generator>
+  
+  <entry>
+    <title type="html"><![CDATA[iOS 版 MWeb 正式发布及简介]]></title>
+    <link href="http://coderforart.com/introducing-mweb-for-ios.html"/>
+    <updated>2017-01-05T10:01:15+08:00</updated>
+    <id>http://coderforart.com/introducing-mweb-for-ios.html</id>
+    <content type="html"><![CDATA[
+<p>MWeb 首先是一个 Markdown 编辑器，所使用的 Markdown 语法为 Github Flavored Markdown，简称 GFM，这是一种最为广泛使用的 Markdown 语法之一。如果你不知道什么是 Markdown，建议看一下附带的 <a href="markdown-syntax-guide-full-version-zh.html">Markdown 语法官方说明</a> 文档。GFM 除了支持官方的语法外，还扩展了不少语法，具体情况会在本文后说明。这里先介绍一下 iOS 版 MWeb 的基本使用方法。</p>
+
+<h2 id="toc_0">iOS 版 MWeb 的编辑器介绍</h2>
+
+<h3 id="toc_1">自定义键盘</h3>
+
+<p><img src="media/14835816759891/mweb-x0.png" alt="" style="width:760px;"/></p>
+
+<p>如上图所示，iOS 版 MWeb 为方便输入 Markdown 语法，自定义了一些按钮，点击上图左边的图中的 (M) 按钮，可以切换至右图的效果，再按可以切换回来。有些不用先选中文字即可使用，比如说如果当前行是任务列表，点击任务列表按钮，会把当前行的任务标记为完成，再点则标记为未做。</p>
+
+<span id="more"></span><!-- more -->
+
+<h3 id="toc_2">编辑器样式、预览样式、大纲视图</h3>
+
+<p><img src="media/14835816759891/mweb-x1.png" alt="mweb-x1" style="width:760px;"/></p>
+
+<p>如上图左边的图所示，右上角的按钮可以快速设置编辑器的字体大小和行高，更换编辑器样式和预览样式。还有一个 “编辑器全屏模式” 的选项，开启后，编辑和查看时，编辑器会全屏显示。底部有五个按钮，分别为：文档大纲、收藏、切换预览模式和编辑模式、新增、分享，如上图右边的图是点击文档大纲按钮的效果。</p>
+
+<h3 id="toc_3">导出为图片和 PDF、发布服务、图床功能</h3>
+
+<p><img src="media/14835816759891/mweb-x2.png" alt="mweb-x2" style="width:760px;"/></p>
+
+<p>iOS 版 MWeb 跟 Mac 版一样，也支持把文档发布到 Wordpress、Metaweblog API 、Evernote、Blogger 和 Medium。除了发布到 Medium 外，其他都支持<strong>更新</strong>已发布的文档，发布时，如果文档中有图片，也会自动上传。如上图左边的图所示，点击分享按钮即可使用此功能。另外，iOS 版 MWeb 还支持图床，要使用这些功能，要先到设置页面增加相关服务，如上图右边的图所示。更详细的使用说明，可参考以下三篇文章：</p>
+
+<ul>
+<li><a href="http://zh.mweb.im/how_to_use_wordpress_url.html">iOS 版 MWeb 发布到自建 Wordpress 和 Metaweblog API 使用指南</a></li>
+<li><a href="http://zh.mweb.im/how_to_use_qiniu_url.html">iOS 版 MWeb 图床功能及七牛图床使用指南</a></li>
+<li><a href="http://zh.mweb.im/how_to_use_custom_image_upload_url.html">iOS 版 MWeb 图床功能中自定义图床的使用指南</a></li>
+</ul>
+
+<h2 id="toc_4">iOS 版 MWeb 首页及文档管理介绍</h2>
+
+<h3 id="toc_5">首页和打开外部文档</h3>
+
+<p><img src="media/14835816759891/mweb-x3.png" alt="mweb-x3" style="width:760px;"/></p>
+
+<p>上图中，左边的是首页，首页有最近使用的文档和收藏内容这两大块。</p>
+
+<p>最近使用只会显示最近使用的 5 个文档，包括文档库的文档、iCloud 中的文档、在手机本地的文档，可以看边上的图标来识别文档类型。<br/>
+而收藏不只可以收藏文档，还可以收藏文件夹、文档库的分类，只要是底加的工具栏中有 ✭ 的按钮的项目，都可以收藏，基本上，除了首页，都会有 ✭ 这个按钮，如右边的图所示。</p>
+
+<p>首页底下的按钮，分别为：首页、文档库、iCloud 文档、手机本地文档、新增文档。 其中，文档库按钮要先在设置里启用文档库，然后再在 Mac 端配置后，同步完后，才会显示，配置方法后面会有说明。iCloud 文档按钮在 iCloud 启用时才会显示。</p>
+
+<p>点击首页的新增文档按钮，可以打开 iCloud Drive 和其他 App 中的 Markdown 文档，如上图右边的图所示。要注意的时，打开的文档不会出现在首页的最近使用中，也不能收藏。点击手机本地文档按钮，会显示如下图左边的图所示的本机文档。</p>
+
+<h3 id="toc_6">文档管理</h3>
+
+<p><img src="media/14835816759891/mweb-x4.png" alt="mweb-x4" style="width:760px;"/></p>
+
+<p>在本机文档中，如果要重命名或者删除文件或文件夹，请<strong>左滑</strong>相关文件或文件夹，在出来的按钮中选择重命名或删除即可，要注意的是，目前并不支持<strong>移动</strong>功能，这个功能将在 2.3.x 中支持，和 Dropbox 和 WebDAV 功能一并发布。</p>
+
+<p>界面底部也有五个按钮，分别是：回首页、收藏、排序、新增文件夹、新增文档。Mac 版的外部模式中，每个引入的文件夹都会有自己的设置，比如说设置新增文档的默认扩展名、插入的图片的保存文件夹名等，iOS 版也是有这个功能。区别是，iOS 版不用引入，默认为最顶层的文件夹可以设置。如右图，点击 demo folder 文件夹中的 (i) 这个按钮即可进入设置，如上图右边的图。</p>
+
+<p>上图右边的图中，可以设置插入的图片保存的位置，默认是在当前文档下的 media 文件夹里。文件夹名设置为空白，则会保存到当前文档所在的文件夹下。如果把保存路径设置为绝对路径，则会把插入的图片保存到最顶层的文件夹下的 media 文件夹内，而不管当前文档的位置是在何处。</p>
+
+<h2 id="toc_7">配置让 iOS 版 MWeb 支持 Mac 版的文档库</h2>
+
+<p>首先说明一下，iOS 版 MWeb 仅支持查看、编辑、新增文档库的文档，管理分类、删除等等都不支持。这个是因为文档库用到了数据库，非常不利于同步。</p>
+
+<p>要支持文档库，首先在设置页面中启用 iCloud（默认已开启），然后再启用 MWeb for Mac 文档库。启用文档库时，如果文档库没有同步好，会跳出以下文字的提示：</p>
+
+<blockquote>
+<p>请看看你 Mac 中的 iCloud Drive 里的 MWeb 所属的文件夹内是否有名为 &quot;mweb_documents_library&quot; 的文件夹，如果有，请在 MWeb for Mac 中，打开 偏好设置 - 通用设置 - 文档库位置，把文档库另存到这个位置即可；如果没有，只能耐心等待 iCloud 同步了。当你把 Mac 中的文档库另存好后，在 iOS 端也要同步完成才会看到文档库的文档。</p>
+</blockquote>
+
+<p>照着以上的说明做即可。另外，如果你一天后仍然没有在 Mac 中的 iCloud  Drive 中看到 MWeb 所属的文件夹，可以试试在 iOS 的 系统设置 - iCloud - iCloud Drive 中关闭 MWeb，然后再打开看看。如果这种方法无效果，只能再等几天了。如果都不能同步，请点设置页面底部的 “邮件反馈” 按钮反馈给我。也可以等支持 Dropbox 和 WebDAV 的版本发布。</p>
+
+<h2 id="toc_8">GFM 语法简介和 MWeb 所支持的扩展语法</h2>
+
+<h3 id="toc_9">回车转为换行</h3>
+
+<p>官方的语法规定结尾加 2 个以上空格加换行才会转成换行，也就是 <code>&lt;br /&gt;</code> 标签。MWeb 中有个选项可以直接把换行转成 <code>&lt;br /&gt;</code>，不用加上 2 个以上空格，这个选项默认是开启的。如果要关闭，请在设置页面关闭。</p>
+
+<h3 id="toc_10">任务列表（Task lists）</h3>
+
+<p>Markdown 语法：</p>
+
+<pre><code>- [ ] 任务一 未做任务 `- + 空格 + [ ]`
+- [x] 任务二 已做任务 `- + 空格 + [x]`
+</code></pre>
+
+<p>效果如下：</p>
+
+<ul>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" /> 任务一 未做任务 <code>- + 空格 + [ ]</code>
+</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked /> 任务二 已做任务 <code>- + 空格 + [x]</code>
+</li>
+</ul>
+
+<h3 id="toc_11">图片大小及对齐</h3>
+
+<p>官方和 GFM 都不支持图片大小控制及对齐设置，MWeb 引入的特别的语法来设置图片宽度和居左、居右、居中。如：<code>![图片说明-w450](pic.jpg)</code> 这样表示设置图片宽度为 450。其中 -w450 为设置语法，生成 HTML 时会自动移除。w 表示设置宽度，居左为：-l400，居右为 -r400，居中为 -c400，比如设置一图片宽度为 500 并居中：<code>![-c500](pic.jpg)</code>。 可以看出，MWeb 引入的语法的特点是兼容原来的语法和仅支持设置宽度。</p>
+
+<h3 id="toc_12">多行或者一段代码</h3>
+
+<p>Markdown 语法：</p>
+
+<pre><code>```js
+function fancyAlert(arg) {
+  if(arg) {
+    $.facebox({div:&#39;#foo&#39;})
+  }
+
+}
+```
+</code></pre>
+
+<p>效果如下：</p>
+
+<pre><code class="language-js">function fancyAlert(arg) {
+    if(arg) {
+        $.facebox({div:&#39;#foo&#39;})
+    }
+
+}
+</code></pre>
+
+<p>这个语法目前在 MWeb 中使用，必须前后空一行，才会正确解析。我觉得，在写 Markdown 文档过程中，运用空行很有必要，基本上，块级元素（标题、列表、引用、代码块、表格、段落等），都建议前后空一行。</p>
+
+<h3 id="toc_13">表格</h3>
+
+<p>Markdown 语法：</p>
+
+<pre><code>第一格表头 | 第二格表头
+--------- | -------------
+内容单元格 第一列第一格 | 内容单元格第二列第一格
+内容单元格 第一列第二格 多加文字 | 内容单元格第二列第二格
+</code></pre>
+
+<p>效果如下：</p>
+
+<table>
+<thead>
+<tr>
+<th>第一格表头</th>
+<th>第二格表头</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>内容单元格 第一列第一格</td>
+<td>内容单元格第二列第一格</td>
+</tr>
+<tr>
+<td>内容单元格 第一列第二格 多加文字</td>
+<td>内容单元格第二列第二格</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="toc_14">删除线</h3>
+
+<p>Markdown 语法：</p>
+
+<pre><code>加删除线像这样用： ~~删除这些~~
+</code></pre>
+
+<p>效果如下：</p>
+
+<p>加删除线像这样用： <del>删除这些</del></p>
+
+<h3 id="toc_15">LaTeX</h3>
+
+<p>Markdown 语法：</p>
+
+<pre><code>块级公式：
+$$  x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
+
+\\[ \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} =
+1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}}
+{1+\frac{e^{-8\pi}} {1+\ldots} } } } \\]
+
+行内公式： $\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$
+</code></pre>
+
+<p>效果如下（在设置页面中启用 LaTeX 才会看到效果，默认为启用）：</p>
+
+<p>块级公式：<br/>
+\[  x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} \]</p>
+
+<p>\[ \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} =<br/>
+1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}}<br/>
+{1+\frac{e^{-8\pi}} {1+\ldots} } } } \]</p>
+
+<p>行内公式： \(\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N\)</p>
+
+<h3 id="toc_16">脚注（Footnote）</h3>
+
+<p>Markdown 语法：</p>
+
+<pre><code>这是一个脚注：[^sample_footnote]
+</code></pre>
+
+<p>效果如下：</p>
+
+<p>这是一个脚注：<sup id="fnref1"><a href="#fn1" rel="footnote">1</a></sup></p>
+
+<h3 id="toc_17">注释和阅读更多</h3>
+
+<!-- comment -->
+
+<!-- more -->
+
+<p><strong>注</strong> 阅读更多的功能只用在文档库生成静态网站或发布到 Wordpress 博客时，插入时注意要后空一行。</p>
+
+<h3 id="toc_18">TOC</h3>
+
+<p>Markdown 语法：</p>
+
+<pre><code>[TOC]
+</code></pre>
+
+<p>效果如下：</p>
+
+<ul>
+<li>
+<a href="#toc_0">iOS 版 MWeb 的编辑器介绍</a>
+<ul>
+<li>
+<a href="#toc_1">自定义键盘</a>
+</li>
+<li>
+<a href="#toc_2">编辑器样式、预览样式、大纲视图</a>
+</li>
+<li>
+<a href="#toc_3">导出为图片和 PDF、发布服务、图床功能</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_4">iOS 版 MWeb 首页及文档管理介绍</a>
+<ul>
+<li>
+<a href="#toc_5">首页和打开外部文档</a>
+</li>
+<li>
+<a href="#toc_6">文档管理</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_7">配置让 iOS 版 MWeb 支持 Mac 版的文档库</a>
+</li>
+<li>
+<a href="#toc_8">GFM 语法简介和 MWeb 所支持的扩展语法</a>
+<ul>
+<li>
+<a href="#toc_9">回车转为换行</a>
+</li>
+<li>
+<a href="#toc_10">任务列表（Task lists）</a>
+</li>
+<li>
+<a href="#toc_11">图片大小及对齐</a>
+</li>
+<li>
+<a href="#toc_12">多行或者一段代码</a>
+</li>
+<li>
+<a href="#toc_13">表格</a>
+</li>
+<li>
+<a href="#toc_14">删除线</a>
+</li>
+<li>
+<a href="#toc_15">LaTeX</a>
+</li>
+<li>
+<a href="#toc_16">脚注（Footnote）</a>
+</li>
+<li>
+<a href="#toc_17">注释和阅读更多</a>
+</li>
+<li>
+<a href="#toc_18">TOC</a>
+</li>
+</ul>
+</li>
+</ul>
+
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<div class="footnotes">
+<hr/>
+<ol>
+
+<li id="fn1">
+<p>这里是脚注信息&nbsp;<a href="#fnref1" rev="footnote">&#8617;</a></p>
+</li>
+
+</ol>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[MWeb for iOS 测试版介绍]]></title>
+    <link href="http://coderforart.com/mweb-for-ios-test.html"/>
+    <updated>2016-12-08T10:25:18+08:00</updated>
+    <id>http://coderforart.com/mweb-for-ios-test.html</id>
+    <content type="html"><![CDATA[
+<p>目前已开始第五次测试：<a href="mweb-ios-test-v2.html">MWeb for iOS 版本发布说明，更新至第五次测试版本</a></p>
+
+<p><img src="media/14811639181399/512.png" alt="512" class="mw_img_center" style="width:256px;display: block; clear:both; margin: 0 auto;"/></p>
+
+<p>上图为 MWeb for iOS 的图标，再次感谢 @Producter <a href="http://weibo.com/u/5642390620">http://weibo.com/u/5642390620</a> 设计的图标</p>
+
+<p>这个是来晚了，本来不应该这么晚的，但是做做停停的，加上还有其他各种事，最长一次长达两个多月没有一点进度。不过今天终于可以拿出来测试了，所以就不多说了，下边介绍一下大概情况。</p>
+
+<span id="more"></span><!-- more -->
+
+<p>一开始决定做 iOS 版时，我想像中的 MWeb iOS 版的功能至少有：</p>
+
+<ol>
+<li>Markdown 支持上要和 Mac 版完全兼容，全面支持 Github Flavored Markdown 语法如 TOC、Table、Fenced code block、LaTex、Task lists、Footnote 等。</li>
+<li>Markdown 编辑上，Mac 版有的特性比如说粘贴插入图片，图片存于本地，外部模式的图片路径设置等也是要有。另外针对手机的特性，自定义一个 Markdown 所用的键盘以方便使用。</li>
+<li>要支持 Mac 版上所支持的发布服务如 Wordpress、Metaweblog API 、Evernote、Blogger、Medium。</li>
+<li>Mac 版的图床也是要支持。</li>
+<li>文档库由于使用了数据库，同步不是很灵活，但是至少要支持查看、编辑、新增文档。</li>
+</ol>
+
+<p>目前的测试版，以上所说的 5 点基本上已实现了，所以才敢拿出来请大家测试，请看下图。</p>
+
+<p><img src="media/14811639181399/mweb-for-iOS-1.png" alt="mweb-for-iOS-1" style="width:760px;"/></p>
+
+<p>上图中，左边的是首页，首页有最近使用的文档和收藏内容这两大块。</p>
+
+<p>最近使用只会显示最近使用的 5 个文档，包括文档库的文档、iCloud 中的文档、在手机本地的文档，可以看边上的图标来识别文档类型。<br/>
+而收藏不只可以收藏文档，还可以收藏文件夹、文档库的分类，只要是底加的工具栏中有 ✭ 的按钮的项目，都可以收藏，基本上，除了首页，都会有 ✭ 这个按钮，如右边的图所示。</p>
+
+<p>说到右图，请看看左图首页底下的按钮，分别为：首页、文档库、iCloud 文档、手机本地文档、新增文档。 iCloud 文档和手机本地文档都对应为 Mac 版的外部模式的使用方法。</p>
+
+<p>点 iCloud 文档按钮会进入右图界面，左滑可以删除或重命名项目，底下的按钮分别为：回首页、收藏、排序、新增文件夹、新增文档。Mac 版的外部模式中，每个引入的文件夹都会有自己的设置，比如说设置新增文档的默认扩展名、插入的图片的保存文件夹名等，iOS 版也是有这个功能。区别是，iOS 版不用引入，默认为最顶层的文件夹可以设置。如右图，点击 (i) 这个按钮即可进入设置，如下图左边的图。</p>
+
+<p><img src="media/14811639181399/mweb-for-iOS-2.png" alt="mweb-for-iOS-2" style="width:760px;"/></p>
+
+<p>上图左边为文件夹设置，右边则是打开一篇文档后，右上角的设置按钮，在这里可以快速设置字体大小，切换编辑器样式和预览样式。另外说明一下，Editor Full Screen 这个开关，这个开关打开后，在向上滚动文档时，会像 Safari 的阅读模式下的效果，喜欢全屏查看文档的朋友可以试试。</p>
+
+<p><img src="media/14811639181399/mweb-for-iOS-3.png" alt="mweb-for-iOS-3" style="width:760px;"/></p>
+
+<p>上图是 MWeb iOS 版的自定 Markdown 的输入键盘的效果，我觉得这个输入模式还算方便，所以就做成这样，右图的键盘还可以增加一些，我也在研究中。</p>
+
+<p><img src="media/14811639181399/mweb-for-iOS-4.png" alt="mweb-for-iOS-4" style="width:760px;"/></p>
+
+<p>上图是文档大纲和导出、发布功能。底下还有三个按 钮分别是：收藏、预览、增加文档。</p>
+
+<p><img src="media/14811639181399/mweb-for-iOS-5.png" alt="mweb-for-iOS-5" style="width:760px;"/></p>
+
+<p>上图左边是设置中的增加发布服务和图床上传服务，进入设置页面后，往下拉就能看到了，目前支持的发布服务为：自建 Wordpress、Metaweblog API、Wordpress.com、Evernote、Blogger、Medium。除了 Medium 外，其他服务都支持发布和更新。另外 iOS 版发布到 自建 Wordpress 的时间问题的 Bug 好像是解决了，感兴趣的朋友可以测试一下看看。<br/>
+图床的支持情况为：Google Photos、Imgur、七牛、自定义，跟 Mac 版一样。</p>
+
+<p>上图右边是文档库的界面，文档库中，直接点击分类会进入该分类下的文档列表，要进入该下的子分类，请点右边的 。。。 按钮。</p>
+
+<p><img src="media/14811639181399/mweb-for-iOS-6.png" alt="mweb-for-iOS-6" style="width:760px;"/></p>
+
+<p>在，上图左边是图床功能中，选择七牛的效果，右边是点击某项时，可以选择的操作。图床功能暂时只有这 Copy Markdown 和 Copy HTML 这两个功能，iOS 做图床，实在没有什么好想法，如果你有什么建议，欢迎来信。<br/>
+这里再说明一下 MWeb 中图床的用法，跟一般用法有些不一样。<br/>
+MWeb 中编辑文档时插入的图片，会复制一份到文档相关的位置，并在文档中进行相对引用。这个位置看设置，这个设置在本文第二张图中有说到。如果设置中的文件夹名称为空，则会直接复制图片到文档所在的文件夹内。所以 MWeb 中插入的图片都会本地图片。当在文档编辑界面，点分享按钮（本文第四张右边的图），选择图床后，会出现上图的界面，界面中会列出文档中的<strong>本地图片</strong>，当点右上角的上传按钮，会把<strong>本地图片</strong>上传到图床中。使用底部的 Copy Markdown 和 Copy HTML 都会把文档中的本地图片地址替换成当前图床上传后的图片地址，并复制到剪切板中。MWeb 并暂时没有考虑做<strong>删除本地图片并替换原文档中的本地图片地址为图床</strong>的功能，需要这个的话，可以用 Copy Markdown，然后再新建文档，再粘贴。</p>
+
+<p>当编辑了文档，比如说插入了新图片，只需要再次调出上图左边的界面，再点一下上传即可，已上传的图片不会再上传，只会上传新图片。</p>
+
+<p>暂时就介绍到这里了，感兴趣的朋友可以申请参加 TestFlight 测试，想参加的话，请按以下格式把你的信息发到 coderforart[at]gmail 即可。</p>
+
+<pre><code>你的姓,你的名字,你的 Email
+</code></pre>
+
+<p>比如说小明的 Email 为 <a href="mailto:xxx@xm.com">xxx@xm.com</a> ，发送的样式为： 小,明,<a href="mailto:xxx@xm.com">xxx@xm.com</a><br/>
+注意 “,” 为英文半角。</p>
+
+<p><strong>重要说明：</strong><br/>
+iPad 版未测试，请不要用在 iPad 上。</p>
+
+<p><strong>特别说明：</strong><br/>
+文档库现在 Mac 版和 iOS 版处理还不是很好，Mac 版要执行菜单：文件 - 重新加载未分类文档 后，iOS 端增加的文档才会包括在 Mac 版的文档库中，另外同步也有一些问题，Mac 下必须退出后才会同步，这些问题会在几天后 Mac 的更新版修正。</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[分享一个把 HTML 转换成印象笔记格式的库，支持代码高亮和把 ECharts、mermaid 转成印象笔记支持的图片，另外：MWeb 半价促销一周。]]></title>
@@ -905,217 +1293,6 @@ MAS ：<a href="https://itunes.apple.com/cn/app/mweb-pro-markdown-writing/id9541
 <p><img src="media/14316499718847/mweb-typewriter-scrolling-demo.gif" alt="mweb-typewriter-scrolling-demo"/></p>
 
 <p>另外会有的功能为发布到 evernote、wordpress.com、blogger。1.4.3 版会在下周某天提交，所以在月底应该能用上了。</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[MWeb 1.4 新功能介绍二：静态博客功能增强]]></title>
-    <link href="http://coderforart.com/mweb-1.4-static-blog-extension.html"/>
-    <updated>2015-05-07T14:46:52+08:00</updated>
-    <id>http://coderforart.com/mweb-1.4-static-blog-extension.html</id>
-    <content type="html"><![CDATA[
-<p>MWeb 比较有特色的是一键生成静态博客功能，然后从 MWeb 最开始规划要做静态博客生成功能时，我就希望 MWeb 的静态博客生成功能在易用的同时，还要有很强大的扩展性。</p>
-
-<p>比如说能自己增加网站公告，这个公告可以随时更换和取消。再比如说能自己为网站增加广告，而且可以增加多个广告位，google 的或者自定的广告都可以。这些之前都可以通过修改模板解决，但是有些是解决不了的：比如说把文章列表做成像 theverge <a href="http://www.theverge.com/reviews">http://www.theverge.com/reviews</a> 的页的效果，就是列表中有设定的特色图片，有自定的简介，有评分，有价格时会显示价格等。比如说设定 SEO 的一些信息，设定分享到 Facebook 的一些信息。又比如说播客类的网站，要生成 Apple 规格的 RSS。</p>
-
-<p>1.4 版的静态博客增强就是解决这些问题的。我一直考虑如何介绍这个功能，然后因为之前比特新声的主播之一 <a href="http://weibo.com/haohailong">郝海龙</a> 随意问了一下是否支持生成 Podcast 的 RSS。所以我想来想去，还是介绍用 MWeb 自带的 greyshade 网站模板做一个可以写博客又可以做为播客的新模板好了。</p>
-
-<p>这个新模板的 Demo 网址是：<a href="http://coderforart.com/bitvoice/">http://coderforart.com/bitvoice/</a>，Podcast RSS 为：<a href="http://coderforart.com/bitvoice/podcast-atom.xml">http://coderforart.com/bitvoice/podcast-atom.xml</a>。 一般情况下只要到这个网址体验一下，并看一下《音乐《梁祝》及 MWeb 静态博客功能增强的使用体验》这篇文章即可，因为下边的内容是跟自定模板有关。</p>
-
-<span id="more"></span><!-- more -->
-
-<p>下面正式开始做这个新模板。<br/>
-首先在 MWeb 中新增一个静态网站分类，名为比特新声。然后设置如下，我是想放在我的博客中做 Demo，所以网址为：<a href="http://coderforart.com/bitvoice/">http://coderforart.com/bitvoice/</a>。评论和分类代码、GA 代码都跟 coderforart 一样。</p>
-
-<p><img src="media/14309812124046/14309891268944.jpg" alt=""/></p>
-
-<p>点上图中最下边的 <code>Advanced Settings</code> 后会出来如下图的网站扩展设置。</p>
-
-<p><img src="media/14309812124046/14309896174085.jpg" alt=""/></p>
-
-<p>一开始打开时，<code>Site Setting</code> 这个 Tab 是没有内容的，可以看到 MWeb 支持整个网站的字段扩展（Site Extension）和网站所属文档的字段扩展（Document Extension）。</p>
-
-<p>如下图，我在 <code>Site Extension</code> 这个 Tab 根据 <a href="https://www.apple.com/itunes/podcasts/specs.html">Apple Podcast RSS</a> 自定了一些必要字段，然后切到 <code>Site Setting</code> 这个 Tab，就会看到按照自定的字段生成可以输入的文本框了。</p>
-
-<p><img src="media/14309812124046/14309917234549.jpg" alt=""/></p>
-
-<p>如右边，我可以填入相关文案。然后如果有图片怎么办，简单的办法是打开比特新声分类内的一个文档，直接把图拖入编辑器中，从生成的 Markdown 语法中取其地址贴上就好。如上图右边的图中的 <code>Fb Image</code> 字段。</p>
-
-<p>然后我也在 <code>Document Extension</code> 这个 Tab 也根据 <a href="https://www.apple.com/itunes/podcasts/specs.html">Apple Podcast RSS</a> 自定了一些必要字段，这些字段可以点软件右上角的设置按钮，并点第三个 Tab <code>Extension</code> 就能看到了按自定字段生成的可输入文本框了，如图。</p>
-
-<p><img src="media/14309812124046/14309923959577.jpg" alt=""/></p>
-
-<p>这样的话，如果想新增新一期播客，就点开第三个 <code>Extension</code> Tab，填入一些这一期播客的相关信息即可。如果新增的文档只是普通文章，则可以不用管扩展的信息。</p>
-
-<p>下图是关于 <code>Base</code> Tab 和 <code>Media</code> Tab 的情况。</p>
-
-<p><img src="media/14309812124046/14309931949625.jpg" alt=""/></p>
-
-<p><code>Media</code> Tab 会列出所有你引入到当前文档中的图片、附件等等。比如要增加一张某期的播客的封面图片，文章里用不到，但是 <code>Extension</code> Tab 里要填入，就可以先把图拖入编辑器内，然后删除，再点 <code>Media</code> Tab 就会看到所拖入的图了，点 <code>Copy Path</code> 然后贴到 <code>Extension</code> Tab 的某字段即可。</p>
-
-<p>字段设置好了，下面要开始修改 greyshade 网站模板了。目前看来只需要为属于播客的文章增加一个播放器，让它可以播放 MP3。然后修改 RSS，让 RSS 按 Apple 播客的格式即可。</p>
-
-<p>以下为修改模板的内容，建议先参考 <a href="http://zh.mweb.im/custom-site-theme-detail-zh.html">自定网站或博客主题简单说明</a>。</p>
-
-<p>首先增加播放器，我随便找了一下，看到 <a href="http://www.schillmania.com/projects/soundmanager2/demo/bar-ui/">http://www.schillmania.com/projects/soundmanager2/demo/bar-ui/</a> 这个播放器不错，所以就决定用这个了，首先复制 greyshade 模板，并重命名为：podcast-greyshade。把 soundmanager 的相关代码放到 asset/soundmanager 中。然后打开 header.html 文档，在上面增加 soundmanager2 播放器的代码，大概是这样：</p>
-
-<pre><code class="language-js">&lt;link href=&quot;asset/soundmanager/css/bar-ui.css&quot; media=&quot;screen, projection&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;asset/soundmanager/soundmanager2-jsmin.js&quot;&gt;&lt;/script&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;asset/soundmanager/bar-ui.js&quot;&gt;&lt;/script&gt;
-&lt;script&gt;
-soundManager.setup({
-  preferFlash: false,
-  onready: function() {
-
-  }
-});
-&lt;/script&gt;
-</code></pre>
-
-<p>因为我需要在文章列表和单篇文章都支持播放功能，所以为 category.html 和 post.html 增加播放支持。代码大概如下（我只选关键代码）。</p>
-
-<pre><code class="language-html">{% if post.ext_enclosureURL.length %}
-    &lt;div class=&quot;sm2-bar-ui compact full-width&quot;&gt;
-        ....
-        &lt;div class=&quot;sm2-inline-duration&quot;&gt;{{ post.ext_itunes_duration }}&lt;/div&gt;
-                      
-        &lt;div class=&quot;sm2-playlist-wrapper&quot;&gt;
-            &lt;ul class=&quot;sm2-playlist-bd&quot;&gt;
-             &lt;li&gt;&lt;a href=&quot;{{ post.ext_enclosureURL }}&quot;&gt;&lt;b&gt;{{ post.ext_itunes_author }}&lt;/b&gt; - {{ post.ext_title }}&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/div&gt;
-        ...
-        &lt;/div&gt;
-    {% /if %}
-</code></pre>
-
-<p>下面解释一下上面这段代码。<br/>
-MWeb 中 <code>Site Setting</code> 设置的所有值会传到所有模板页，比如说要输出上面设置的 SEO Des 的值，用 <code>{{ext_seo_des}}</code> 即可。可以看到，规则是： <code>ext_ + variable Name</code> 。然后用软件右上角第一个按钮设置的文档中的 <code>Extension</code> 的值，会传到所有 <code>文档对象变量</code> 中，如上面代码，文档对象变量为 <code>post</code>，访问规则为 <code>post.ext_ + variable Name</code>。 然后请注意 <code>{% if post.ext_enclosureURL.length %} {% /if %}</code> 这种写法，这是为了判断这文章是否有设置了播客的相关值，有设置，说明这文章为播客文章。</p>
-
-<p>下面介绍一下如何增加输出 Apple 支持的播客的 RSS 格式。 </p>
-
-<p>MWeb 一般情况下只生成全站文章的 RSS，名字为 atom.xml。然后 MWeb 为了满足扩展需要，增加了另外的规则，为：如果网站模板中存在有 <code>分类的 HTML File Name 的值 + -atom.xml</code> 这样的模板文档，则会为这个分类用 <code>分类的 HTML File Name 的值 + -atom.xml</code> 这个模板生成名为  <code>分类的 HTML File Name 的值 + -atom.xml</code> 的 RSS。</p>
-
-<p>如上面，我增加了两个子分类：文章和播客。然后我设置了播客子分类的 <code>HTML File Name</code> 为 <code>podcast</code>。然后我在网站模板中也增加了名为 <code>podcast-atom.xml</code> 的模板，下面是这个模板的内容。</p>
-
-<pre><code class="language-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt;rss xmlns:itunes=&quot;http://www.itunes.com/dtds/podcast-1.0.dtd&quot; version=&quot;2.0&quot;&gt;
-    &lt;channel&gt;
-        &lt;title&gt;&lt;![CDATA[{{ siteName }}]]&gt;&lt;/title&gt;
-        &lt;link&gt;{{ siteURL }}&lt;/link&gt;
-        &lt;language&gt;zh-CN&lt;/language&gt;
-        {% if ext_copyright.length %}
-            &lt;copyright&gt;{{ ext_copyright }}&lt;/copyright&gt;
-        {% /if %}
-        {% if ext_itunes_subtitle.length %}
-            &lt;itunes:subtitle&gt;{{ ext_itunes_subtitle }}&lt;/itunes:subtitle&gt;
-        {% /if %}
-        {% if ext_itunes_author.length %}
-            &lt;itunes:author&gt;{{ ext_itunes_author }}&lt;/itunes:author&gt;
-        {% /if %}
-        {% if ext_itunes_summary.length %}
-            &lt;itunes:summary&gt;{{ ext_itunes_summary }}&lt;/itunes:summary&gt;
-        {% /if %}
-        {% if ext_itunes_description.length %}
-            &lt;description&gt; {{ ext_itunes_description }} &lt;/description&gt;
-        {% /if %}
-        &lt;itunes:owner&gt;
-            {% if ext_itunes_author.length %}&lt;itunes:name&gt;{{ ext_itunes_author }}&lt;/itunes:name&gt;{% /if %}
-            {% if ext_itunes_email.length %}&lt;itunes:email&gt;{{ ext_itunes_email }}&lt;/itunes:email&gt;{% /if %}
-        &lt;/itunes:owner&gt;
-        {% if ext_itunes_image.length %}
-            &lt;itunes:image href=&quot;{{ ext_itunes_image }}&quot; /&gt;
-        {% /if %}
-        {% if ext_itunes_category.length %}
-            &lt;itunes:category text=&quot;{{ ext_itunes_category }}&quot;/&gt;
-        {% /if %}
-        {% for p in posts %}
-            {% if p.ext_enclosureURL.length %}
-                &lt;item&gt;
-                    &lt;title&gt;{{ p.ext_title }}&lt;/title&gt;
-                    &lt;itunes:author&gt; {{ p.ext_itunes_author }}&lt;/itunes:author&gt;
-                    &lt;itunes:subtitle&gt; {{ p.ext_itunes_subtitle }} &lt;/itunes:subtitle&gt;
-                    &lt;itunes:summary&gt;&lt;![CDATA[ 
-                        {% if p.ext_itunes_summary.length %} 
-                            {{ p.ext_itunes_summary }} 
-                        {% else %}
-                            {{ p.content }}
-                        {% /if %} ]]&gt;
-                    &lt;/itunes:summary&gt;
-                    &lt;itunes:image href=&quot;{{ p.ext_itunes_image }}&quot; /&gt;
-                    &lt;enclosure url=&quot;{{ p.ext_enclosureURL }}&quot;  length=&quot;{{ p.ext_enclosure_length }}&quot;   type=&quot;{{ p.ext_enclosure_type }}&quot;  /&gt;
-                    &lt;guid&gt;{{ p.ext_guid }}&lt;/guid&gt;
-                    &lt;pubDate&gt;{{ p.ext_pubDate }}&lt;/pubDate&gt;
-                    &lt;itunes:duration&gt;{{ p.ext_itunes_duration }}&lt;/itunes:duration&gt;
-                &lt;/item&gt;
-            {% /if %}
-        {% /for %}
-    &lt;/channel&gt;
-&lt;/rss&gt;
-</code></pre>
-
-<p>至此，podcast-greyshade 这个新模板已经完成了，增加了播放器支持和把所有播客文章生成为 Apple 播客格式的 RSS。</p>
-
-<p>podcast-greyshade 这个网站模板已传到 github：<a href="https://github.com/oulvhai/MWeb-Themes/tree/master/podcast-greyshade">https://github.com/oulvhai/MWeb-Themes/tree/master/podcast-greyshade</a><br/>
-使用 podcast-greyshade 这个网站模板的 Demo 的网址：<a href="http://coderforart.com/bitvoice/">http://coderforart.com/bitvoice/</a>。我只增加了两篇播客文章。然后 Apple 规格的 RSS 输出网址为：<a href="http://coderforart.com/bitvoice/podcast-atom.xml">http://coderforart.com/bitvoice/podcast-atom.xml</a></p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[MWeb 1.4 新功能介绍一：引入文件夹到 MWeb 中管理，支持 Octpress、Jekyll 等静态博客拖拽插入图片和实时预览]]></title>
-    <link href="http://coderforart.com/mweb-1.4-add-floder-octpress-support.html"/>
-    <updated>2015-05-07T09:56:51+08:00</updated>
-    <id>http://coderforart.com/mweb-1.4-add-floder-octpress-support.html</id>
-    <content type="html"><![CDATA[
-<p>之前在 MWeb 中打开非文档库中的 Markdown 文档，如果文档中有引用到本机图片，是没办法在 MWeb 中显示出来和预览的。这是因为 Apple 规定在 Mac App Store（MAS） 上的软件，都不能对软件自己的沙箱之外的文档进行任何操作，连读取都不能，除非用户明确授权。而用户授权的方式是使用打开、保存对话框。比如说你用 MWeb 打开一个 Markdown 文档，那么 MWeb 就能得到读写这个文档的权限。再比如说你用 MWeb 导出为 HTML 功能，在保存为对话框中选择一个要导出到的文件夹，那么 MWeb 就能得到读写这个文件夹的权限。</p>
-
-<p>正因为这个原因，所以，一般情况下，如果一个软件有 MAS 版，都建议用 MAS 版，特别是国内大厂的软件，即使功能上少了点。</p>
-
-<p>这次 1.4 版新增可以引入文件夹到 MWeb 中管理的功能，就是为了解决用 MWeb 打开非文档库中的 Markdown 文档无法用拖拽和粘贴插入图片，预览时无法显示引用的本机图片的问题。然后 1.4 版还对 Octpress、Jekyll 等静态博客进行了优化。在用 MWeb 编辑 Octpress、Jekyll 的 Markdown 文档时，也可以在编辑器中拖拽或粘贴插入图片并显示在编辑器中和进行实时预览了。</p>
-
-<p>特别说明的是：1.4 版的实时预览增加了同步滚动功能！然后我觉得目前同步滚动功能是相当好用了，所以在这里特别说明一下。</p>
-
-<span id="more"></span><!-- more -->
-
-<h2 id="toc_0">MWeb 引入文件夹功能介绍</h2>
-
-<p>为了方便使用引入文件夹功能，MWeb 的外部模式新增了一个快捷键：<code>CMD + E</code>。任何情况下按 <code>CMD + E</code> 即可打开外部模式，在外部模式中就可以看到所有引入的文件夹了。同样提示一下 MWeb 的文档库模式的快捷键是：<code>CMD + L</code>。如果你不喜欢用快捷键，也可以用菜单： <code>View</code> - <code>Open External</code> 打开外部模式。</p>
-
-<p>点软件左下方的 <code>+</code> - <code>Add External Source...</code>，然后在对话框中选择要引入到 MWeb 的文件夹，再点 <code>Choose</code> 即可。还有更多的设置如下图。</p>
-
-<p><img src="media/14309638110247/14309679087614.png" alt=""/></p>
-
-<p>引入后，在最左边那栏选择文件夹，中间那栏则会显示该文件夹下的 Markdown 文档。如下图显示，引入后的文档可以方便地拖拽插入图片和附件，下图是增加了一个 MP3 和一张图。然后需要说一下的是，点击软件的标题栏可以修改文档名称和为文档增加 Tags，如下图。</p>
-
-<p><img src="media/14309638110247/14309690743597.png" alt=""/></p>
-
-<p>然后实时预览、导出为HTML/PDF、发布到 Wordpress 等文档库中可以用的一些功能在外部模式也是可以使用的。同样，发布到 Wordpress、新浪博客等支持 Metaweblog API 的服务时，文档中的图片也是会一起发布的。</p>
-
-<h2 id="toc_1">对 Octpress、Jekyll 等静态博客优化介绍</h2>
-
-<p>如上边所写，MWeb 引入的文件夹的 Markdown 文档插入图片的保存位置设置有两个选择：Relative 和 Absolute。</p>
-
-<p>Octpress、Jekyll 等静态博客因为可以自定像 <code>http://域名/2015/3/the-blog-post/</code> 这样的网址，所以在增加图片时，都是用 <code>/images/pic.jpg</code> 这样的绝对路径。然后图片要放在 <code>source/images</code> 文件夹下。</p>
-
-<p>正因为这个原因，引入 Octpress 等静态博客的文件夹到 MWeb 时，请引入 <code>source</code> 文件夹。引入后你可以修改 <code>Display Name</code> 来标识。<strong>最重要一点</strong>，<code>Media Save Path</code> 请选择 <code>Absolute</code>。<br/>
-Octpress 的文档一般都在 <code>_posts</code> 这个资料夹下，在 MWeb 最左边那栏选择 <code>_posts</code> 文件夹，在中间那栏选择要编辑的文档即可。这时的文档已经是支持拖拽插入图片和实时预览了。然后无论你编辑 <code>source</code> 下的那个文档，你所插入的图片都会保存在 <code>source</code> 下的你在 <code>Media Floder Name</code> 中设置的文件夹下。 </p>
-
-<p>如果要新增文档，你可以用 MWeb 中的新增文档功能（点软件中间那栏搜寻框右边的新增按钮），也可以用 Octpress 等所带的命令行新增文档（推荐）。你用命令行新增后，MWeb 会在列表中自动显示你新增的文档。然后删除文档、新增文件夹等，也会自动更新显示的，总之 MWeb 能侦测到你引入的文件夹的内容的变化而自动更新显示。所以 MWeb 没有做 <code>刷新</code> 这个功能。</p>
-
-<p>引入 Otcpress 的 <code>source</code> 文件夹的属性设置、新增附件、图片效果，如图：<br/>
-<img src="media/14309638110247/14309715741257.png" alt=""/></p>
-
-<p>在 MWeb 中实时预览，MWeb 会对 Otcpress Markdown 文档中的 Meta 设置转成代码，如图：<br/>
-<img src="media/14309638110247/14309717157125.png" alt=""/></p>
-
-<p>用 Octpress 的网站预览功能，在 Safari 中查看的效果，如图：<br/>
-<img src="media/14309638110247/14309719918323.png" alt=""/></p>
-
-<p>其他如 hexo、Farbox 等引入 MWeb 中进行管理我想也差不多，不再多介绍了。引入文件夹比用 MWeb 文档库模式好的地方是同步和协作都比较方便。然后说明一下 MWeb 1.4 版现在还没有提交到 MAS 的，我还要多测试几天才会提交。所以看到这篇文章的朋友，如果有什么的建议，可以跟我说，这样就可以及时在提交前改进了。</p>
-
-<p>然后 1.4 版还对 MWeb 静态博客功能进行了增强，我也正在考虑介绍文章怎么写，初步计划是写两篇，一篇是介绍功能，一篇是再做一个生成 Apple 播客 RSS 的例子。最晚的话，明天应该会把文章发出来。</p>
 
 ]]></content>
   </entry>

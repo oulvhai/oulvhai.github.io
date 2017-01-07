@@ -1,0 +1,488 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+    
+  MWeb for iOS 测试版介绍 - Coder For Art
+  
+  </title>
+  
+  
+  <link href="atom.xml" rel="alternate" title="Coder For Art" type="application/atom+xml">
+    <link rel="stylesheet" href="asset/css/foundation.min.css" />
+    <link rel="stylesheet" href="asset/css/docs.css" />
+    <script src="asset/js/vendor/modernizr.js"></script>
+    <script src="asset/js/vendor/jquery.js"></script>
+  <script src="asset/highlightjs/highlight.pack.js"></script>
+  <link href="asset/highlightjs/styles/github.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script>hljs.initHighlightingOnLoad();</script>
+<script type="text/javascript">
+  function before_search(){
+    var searchVal = 'site:coderforart.com ' + document.getElementById('search_input').value;
+    document.getElementById('search_q').value = searchVal;
+    return true;
+  }
+</script>
+  </head>
+  <body class="antialiased hide-extras">
+    
+    <div class="marketing off-canvas-wrap" data-offcanvas>
+      <div class="inner-wrap">
+
+
+<nav class="top-bar docs-bar hide-for-small" data-topbar>
+
+
+  <section class="top-bar-section">
+  <div class="row">
+      <div style="position: relative;width:100%;"><div style="position: absolute; width:100%;">
+        <ul id="main-menu" class="left">
+        
+        <li id="menu_item_index"><a target="_self" href="index.html">Home</a></li>
+        
+        <li id="menu_item_archives"><a target="_self" href="archives.html">Archives</a></li>
+        
+        <li id="menu_item_about"><a target="_self" href="about.html">About</a></li>
+        
+        </ul>
+
+        <ul class="right" id="search-wrap">
+          <li>
+<form target="_blank" onsubmit="return before_search();" action="http://google.com/search" method="get">
+    <input type="hidden" id="search_q" name="q" value="" />
+    <input tabindex="1" type="search" id="search_input"  placeholder="Search"/>
+</form>
+</li>
+          </ul>
+      </div></div>
+  </div>
+  </section>
+
+</nav>
+
+        <nav class="tab-bar show-for-small">
+  <a href="javascript:void(0)" class="left-off-canvas-toggle menu-icon">
+    <span> &nbsp; Coder For Art</span>
+  </a>
+</nav>
+
+<aside class="left-off-canvas-menu">
+      <ul class="off-canvas-list">
+       
+       <li><a href="index.html">HOME</a></li>
+    <li><a href="archives.html">Archives</a></li>
+    <li><a href="about.html">ABOUT</a></li>
+
+    <li><label>Categories</label></li>
+
+        
+            <li><a href="Cocoa.html">Cocoa</a></li>
+        
+            <li><a href="CG%20Artist.html">CG Artist</a></li>
+        
+            <li><a href="Game%20Engine.html">Game Engine</a></li>
+        
+            <li><a href="MWeb-cat.html">MWeb</a></li>
+        
+            <li><a href="PinPhoto-cat.html">PinPhoto</a></li>
+        
+            <li><a href="Other.html">Other</a></li>
+         
+
+      </ul>
+    </aside>
+
+<a class="exit-off-canvas" href="#"></a>
+
+
+        <section id="main-content" role="main" class="scroll-container">
+        
+       
+
+ <script type="text/javascript">
+  $(function(){
+    $('#menu_item_index').addClass('is_active');
+  });
+</script>
+<div class="row">
+  <div class="large-8 medium-8 columns">
+      <div class="markdown-body article-wrap">
+       <div class="article">
+          
+          <h1>MWeb for iOS 测试版介绍</h1>
+     
+        <div class="read-more clearfix">
+          <span class="date">2016/12/8</span>
+
+          <span>posted in&nbsp;</span> 
+          
+              <span class="posted-in"><a href='MWeb-cat.html'>MWeb</a></span>
+           
+         
+          <span class="comments">
+            
+              <a href="http://coderforart.com/mweb-for-ios-test.html#disqus_thread">comments</a>
+            
+
+            
+              &nbsp;<a  class="ds-thread-count" data-thread-key="mweb-for-ios-test.html" data-count-type="comments" href="mweb-for-ios-test.html#ds-thread"></a>
+            
+          </span>
+
+        </div>
+      </div><!-- article -->
+
+      <div class="article-content">
+      <p>目前已开始第五次测试：<a href="mweb-ios-test-v2.html">MWeb for iOS 版本发布说明，更新至第五次测试版本</a></p>
+
+<p><img src="media/14811639181399/512.png" alt="512" class="mw_img_center" style="width:256px;display: block; clear:both; margin: 0 auto;"/></p>
+
+<p>上图为 MWeb for iOS 的图标，再次感谢 @Producter <a href="http://weibo.com/u/5642390620">http://weibo.com/u/5642390620</a> 设计的图标</p>
+
+<p>这个是来晚了，本来不应该这么晚的，但是做做停停的，加上还有其他各种事，最长一次长达两个多月没有一点进度。不过今天终于可以拿出来测试了，所以就不多说了，下边介绍一下大概情况。</p>
+
+<span id="more"></span><!-- more -->
+
+<p>一开始决定做 iOS 版时，我想像中的 MWeb iOS 版的功能至少有：</p>
+
+<ol>
+<li>Markdown 支持上要和 Mac 版完全兼容，全面支持 Github Flavored Markdown 语法如 TOC、Table、Fenced code block、LaTex、Task lists、Footnote 等。</li>
+<li>Markdown 编辑上，Mac 版有的特性比如说粘贴插入图片，图片存于本地，外部模式的图片路径设置等也是要有。另外针对手机的特性，自定义一个 Markdown 所用的键盘以方便使用。</li>
+<li>要支持 Mac 版上所支持的发布服务如 Wordpress、Metaweblog API 、Evernote、Blogger、Medium。</li>
+<li>Mac 版的图床也是要支持。</li>
+<li>文档库由于使用了数据库，同步不是很灵活，但是至少要支持查看、编辑、新增文档。</li>
+</ol>
+
+<p>目前的测试版，以上所说的 5 点基本上已实现了，所以才敢拿出来请大家测试，请看下图。</p>
+
+<p><img src="media/14811639181399/mweb-for-iOS-1.png" alt="mweb-for-iOS-1" style="width:760px;"/></p>
+
+<p>上图中，左边的是首页，首页有最近使用的文档和收藏内容这两大块。</p>
+
+<p>最近使用只会显示最近使用的 5 个文档，包括文档库的文档、iCloud 中的文档、在手机本地的文档，可以看边上的图标来识别文档类型。<br/>
+而收藏不只可以收藏文档，还可以收藏文件夹、文档库的分类，只要是底加的工具栏中有 ✭ 的按钮的项目，都可以收藏，基本上，除了首页，都会有 ✭ 这个按钮，如右边的图所示。</p>
+
+<p>说到右图，请看看左图首页底下的按钮，分别为：首页、文档库、iCloud 文档、手机本地文档、新增文档。 iCloud 文档和手机本地文档都对应为 Mac 版的外部模式的使用方法。</p>
+
+<p>点 iCloud 文档按钮会进入右图界面，左滑可以删除或重命名项目，底下的按钮分别为：回首页、收藏、排序、新增文件夹、新增文档。Mac 版的外部模式中，每个引入的文件夹都会有自己的设置，比如说设置新增文档的默认扩展名、插入的图片的保存文件夹名等，iOS 版也是有这个功能。区别是，iOS 版不用引入，默认为最顶层的文件夹可以设置。如右图，点击 (i) 这个按钮即可进入设置，如下图左边的图。</p>
+
+<p><img src="media/14811639181399/mweb-for-iOS-2.png" alt="mweb-for-iOS-2" style="width:760px;"/></p>
+
+<p>上图左边为文件夹设置，右边则是打开一篇文档后，右上角的设置按钮，在这里可以快速设置字体大小，切换编辑器样式和预览样式。另外说明一下，Editor Full Screen 这个开关，这个开关打开后，在向上滚动文档时，会像 Safari 的阅读模式下的效果，喜欢全屏查看文档的朋友可以试试。</p>
+
+<p><img src="media/14811639181399/mweb-for-iOS-3.png" alt="mweb-for-iOS-3" style="width:760px;"/></p>
+
+<p>上图是 MWeb iOS 版的自定 Markdown 的输入键盘的效果，我觉得这个输入模式还算方便，所以就做成这样，右图的键盘还可以增加一些，我也在研究中。</p>
+
+<p><img src="media/14811639181399/mweb-for-iOS-4.png" alt="mweb-for-iOS-4" style="width:760px;"/></p>
+
+<p>上图是文档大纲和导出、发布功能。底下还有三个按 钮分别是：收藏、预览、增加文档。</p>
+
+<p><img src="media/14811639181399/mweb-for-iOS-5.png" alt="mweb-for-iOS-5" style="width:760px;"/></p>
+
+<p>上图左边是设置中的增加发布服务和图床上传服务，进入设置页面后，往下拉就能看到了，目前支持的发布服务为：自建 Wordpress、Metaweblog API、Wordpress.com、Evernote、Blogger、Medium。除了 Medium 外，其他服务都支持发布和更新。另外 iOS 版发布到 自建 Wordpress 的时间问题的 Bug 好像是解决了，感兴趣的朋友可以测试一下看看。<br/>
+图床的支持情况为：Google Photos、Imgur、七牛、自定义，跟 Mac 版一样。</p>
+
+<p>上图右边是文档库的界面，文档库中，直接点击分类会进入该分类下的文档列表，要进入该下的子分类，请点右边的 。。。 按钮。</p>
+
+<p><img src="media/14811639181399/mweb-for-iOS-6.png" alt="mweb-for-iOS-6" style="width:760px;"/></p>
+
+<p>在，上图左边是图床功能中，选择七牛的效果，右边是点击某项时，可以选择的操作。图床功能暂时只有这 Copy Markdown 和 Copy HTML 这两个功能，iOS 做图床，实在没有什么好想法，如果你有什么建议，欢迎来信。<br/>
+这里再说明一下 MWeb 中图床的用法，跟一般用法有些不一样。<br/>
+MWeb 中编辑文档时插入的图片，会复制一份到文档相关的位置，并在文档中进行相对引用。这个位置看设置，这个设置在本文第二张图中有说到。如果设置中的文件夹名称为空，则会直接复制图片到文档所在的文件夹内。所以 MWeb 中插入的图片都会本地图片。当在文档编辑界面，点分享按钮（本文第四张右边的图），选择图床后，会出现上图的界面，界面中会列出文档中的<strong>本地图片</strong>，当点右上角的上传按钮，会把<strong>本地图片</strong>上传到图床中。使用底部的 Copy Markdown 和 Copy HTML 都会把文档中的本地图片地址替换成当前图床上传后的图片地址，并复制到剪切板中。MWeb 并暂时没有考虑做<strong>删除本地图片并替换原文档中的本地图片地址为图床</strong>的功能，需要这个的话，可以用 Copy Markdown，然后再新建文档，再粘贴。</p>
+
+<p>当编辑了文档，比如说插入了新图片，只需要再次调出上图左边的界面，再点一下上传即可，已上传的图片不会再上传，只会上传新图片。</p>
+
+<p>暂时就介绍到这里了，感兴趣的朋友可以申请参加 TestFlight 测试，想参加的话，请按以下格式把你的信息发到 coderforart[at]gmail 即可。</p>
+
+<pre><code>你的姓,你的名字,你的 Email
+</code></pre>
+
+<p>比如说小明的 Email 为 <a href="mailto:xxx@xm.com">xxx@xm.com</a> ，发送的样式为： 小,明,<a href="mailto:xxx@xm.com">xxx@xm.com</a><br/>
+注意 “,” 为英文半角。</p>
+
+<p><strong>重要说明：</strong><br/>
+iPad 版未测试，请不要用在 iPad 上。</p>
+
+<p><strong>特别说明：</strong><br/>
+文档库现在 Mac 版和 iOS 版处理还不是很好，Mac 版要执行菜单：文件 - 重新加载未分类文档 后，iOS 端增加的文档才会包括在 Mac 版的文档库中，另外同步也有一些问题，Mac 下必须退出后才会同步，这些问题会在几天后 Mac 的更新版修正。</p>
+
+
+    
+
+      </div>
+
+      <div class="row">
+        <div class="large-6 columns">
+        <p class="text-left" style="padding:15px 0px;">
+      
+          <a href="introducing-mweb-for-ios.html" 
+          title="Previous Post: iOS 版 MWeb 正式发布及简介">&laquo; iOS 版 MWeb 正式发布及简介</a>
+      
+        </p>
+        </div>
+        <div class="large-6 columns">
+      <p class="text-right" style="padding:15px 0px;">
+      
+          <a  href="14730440789266.html" 
+          title="Next Post: 分享一个把 HTML 转换成印象笔记格式的库，支持代码高亮和把 ECharts、mermaid 转成印象笔记支持的图片，另外：MWeb 半价促销一周。">分享一个把 HTML 转换成印象笔记格式的库，支持代码高亮和把 ECharts、mermaid 转成印象笔记支持的图片，另外：MWeb 半价促销一周。 &raquo;</a>
+      
+      </p>
+        </div>
+      </div>
+      <div class="comments-wrap">
+        <div class="share-comments">
+          <div style="height:26px;" class="share">
+<!-- JiaThis Button BEGIN -->
+<div class="jiathis_style_24x24">
+	<a class="jiathis_button_tsina"></a>
+	<a class="jiathis_button_tqq"></a>
+	<a class="jiathis_button_weixin"></a>
+	<a class="jiathis_button_qzone"></a>
+	<a class="jiathis_button_renren"></a>
+	<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1406813199499778" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+	</div>
+
+          
+            <div id="disqus_thread"></div>
+          
+
+          
+              <div class="ds-thread" data-thread-key="mweb-for-ios-test.html" data-url="http://coderforart.com/mweb-for-ios-test.html" data-title="MWeb for iOS 测试版介绍"></div>
+          
+        </div>
+      </div>
+    </div><!-- article-wrap -->
+  </div><!-- large 8 -->
+
+
+
+
+ <div class="large-4 medium-4 columns">
+  <div class="hide-for-small">
+    <div id="sidebar" class="sidebar">
+          <div id="site-info" class="site-info">
+            
+                <div class="site-a-logo"><img src="asset/img/icon.jpg" /></div>
+            
+                <h1>Coder For Art</h1>
+                <div class="site-des">I'm an indie Mac/iOS developer, also want to be a CG artist</div>
+                <div class="social">
+
+
+
+
+
+
+
+<a target="_blank" class="weibo" href="http://weibo.com/oulvhai" title="weibo">Weibo</a>
+<a target="_blank" class="twitter" target="_blank" href="http://twitter.com/oulvhai" title="Twitter">Twitter</a>
+<a target="_blank" class="github" target="_blank" href="https://github.com/oulvhai" title="GitHub">GitHub</a>
+
+  <a target="_blank" class="rss" href="atom.xml" title="RSS">RSS</a>
+                
+              	 </div>
+          	</div>
+
+               
+             <div id="site-categories" class="side-item ">
+                <div class="side-header">
+                  <h2>Important</h2>
+                </div>
+                <div class="side-content">
+                  <div style="color:#ff0000; text-align:center; padding:8px;" class="bg-info site_notice">
+                    <a style="color:#ff0000;"  onclick="ga('send','event','global_notice_click');" href="introducing-mweb-for-ios.html"  >iOS 版 MWeb 正式发布及简介！</a>&nbsp;&nbsp;<a style="color:#ff0000;"  onclick="ga('send','event','global_notice_click-mac');" href="https://itunes.apple.com/cn/app/mweb-pro-markdown-writing/id954188948?l=zh&ls=1&mt=12" target="_blank" > Mac 版半价促销中！</a>
+                  </div>
+                </div>
+            </div>
+    
+
+              <div id="site-categories" class="side-item ">
+                <div class="side-header">
+                  <h2>Categories</h2>
+                </div>
+                <div class="side-content">
+
+      	<p class="cat-list">
+        
+            <a href="Cocoa.html"><strong>Cocoa</strong></a>
+        
+            <a href="CG%20Artist.html"><strong>CG Artist</strong></a>
+        
+            <a href="Game%20Engine.html"><strong>Game Engine</strong></a>
+        
+            <a href="MWeb-cat.html"><strong>MWeb</strong></a>
+        
+            <a href="PinPhoto-cat.html"><strong>PinPhoto</strong></a>
+        
+            <a href="Other.html"><strong>Other</strong></a>
+         
+        </p>
+
+
+                </div>
+              </div>
+
+              <div id="site-categories" class="side-item">
+                <div class="side-header">
+                  <h2>Recent Posts</h2>
+                </div>
+                <div class="side-content">
+                <ul class="posts-list">
+	      
+		      
+			      <li class="post">
+			        <a href="introducing-mweb-for-ios.html">iOS 版 MWeb 正式发布及简介</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="mweb-for-ios-test.html">MWeb for iOS 测试版介绍</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="14730440789266.html">分享一个把 HTML 转换成印象笔记格式的库，支持代码高亮和把 ECharts、mermaid 转成印象笔记支持的图片，另外：MWeb 半价促销一周。</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="mweb-2.0.7-release.html">MWeb 2.0.7 版发布！</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="14689205256580.html">自定义预览样式，让 MWeb 支持 ECharts、mermaid、PlantUML 等任何 JS 画图库</a>
+			      </li>
+		     
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		   
+		  		</ul>
+                </div>
+              </div>
+        </div><!-- sidebar -->
+      </div><!-- hide for small -->
+</div><!-- large 4 -->
+
+</div><!-- row -->
+
+ <div class="page-bottom clearfix">
+  <div class="row">
+   <p class="copyright">Copyright &copy; 2015
+Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a>,&nbsp; 
+Theme used <a target="_blank" href="http://github.com">GitHub CSS</a>.</p>
+  </div>
+</div>
+
+        </section>
+      </div>
+    </div>
+
+
+<script type="text/javascript">
+    var disqus_shortname = 'coderforart'; 
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+
+<script type="text/javascript">
+var disqus_shortname = 'coderforart'; 
+
+(function () {
+var s = document.createElement('script'); s.async = true;
+s.type = 'text/javascript';
+s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>
+  
+
+
+<script type="text/javascript">
+var duoshuoQuery = {short_name:'coderforart'};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+     || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+  </script>
+    
+
+    <script src="asset/js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+      function fixSidebarHeight(){
+        var w1 = $('.markdown-body').height();
+          var w2 = $('#sidebar').height();
+          if (w1 > w2) { $('#sidebar').height(w1); };
+      }
+      $(function(){
+        fixSidebarHeight();
+      })
+      $(window).load(function(){
+          fixSidebarHeight();
+      });
+     
+    </script>
+
+    
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-58735702-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+  </body>
+</html>
