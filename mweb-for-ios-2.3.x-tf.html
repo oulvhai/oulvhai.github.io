@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
     
-  MWeb 1.9.7 发布！这次增加了一个有意思的改进，有必要说一下。 - Coder For Art
+  MWeb for iOS 2.3.x 版测试说明 - Coder For Art
   
   </title>
   
@@ -111,10 +111,10 @@
       <div class="markdown-body article-wrap">
        <div class="article">
           
-          <h1>MWeb 1.9.7 发布！这次增加了一个有意思的改进，有必要说一下。</h1>
+          <h1>MWeb for iOS 2.3.x 版测试说明</h1>
      
         <div class="read-more clearfix">
-          <span class="date">2016/2/26</span>
+          <span class="date">2017/6/2</span>
 
           <span>posted in&nbsp;</span> 
           
@@ -123,11 +123,11 @@
          
           <span class="comments">
             
-              <a href="http://coderforart.com/mweb-1.9.7-release.html#disqus_thread">comments</a>
+              <a href="http://coderforart.com/mweb-for-ios-2.3.x-tf.html#disqus_thread">comments</a>
             
 
             
-              &nbsp;<a  class="ds-thread-count" data-thread-key="mweb-1.9.7-release.html" data-count-type="comments" href="mweb-1.9.7-release.html#ds-thread"></a>
+              &nbsp;<a  class="ds-thread-count" data-thread-key="mweb-for-ios-2.3.x-tf.html" data-count-type="comments" href="mweb-for-ios-2.3.x-tf.html#ds-thread"></a>
             
           </span>
 
@@ -135,32 +135,43 @@
       </div><!-- article -->
 
       <div class="article-content">
-      <h2 id="toc_0">有必要说明的预览方面的改进</h2>
-
-<p><img src="media/14564575040860/14564576891742.jpg" alt="" style="width:491px;"/></p>
-
-<p>这次的改进跟上图中的两个选项有关。</p>
+      <p>2.3.x 版的目标是增加 Dropbox 和 WebDAV 同步，测试重点也是这两个，然后这个版本还未来得及修正 2.2.7 之前反馈的一些 bug 和改进，这些改进会在 2.3.x 测试时顺便修正，非常感谢反馈的朋友！</p>
 
 <span id="more"></span><!-- more -->
 
-<p>在之前的版本中，如果取消选中了 <code>Resize window when hide pane</code> 这个选项，就可以在全屏中使用 <code>CMD + 1/2/3</code> 来切换二三栏，但是选中后，就不能使用，同时 CMD + 4 切换边编辑边预览的模式时，不大好用，主要是窗口大小不好控制。在 1.9.7 版中，如果取消这个选项，边编辑边预览会变成下图所示（Mou、Macdown 方式），同时在全屏也支持 <code>CMD + 1/2/3/4</code> 切换，这样就好用了点。所以我就把这个方式设置为默认了，如果要用原来的使用方式（我个人比较喜欢的方式，我都没在用全屏），选中即可。</p>
+<h2 id="toc_0">iOS 版 MWeb 2.3.x 版网盘文档使用说明</h2>
 
-<p><img src="media/14564575040860/14564581431585.jpg" alt="" style="width:1066px;"/></p>
+<p>iOS 版 MWeb 在 2.2.x 版首页底部工具栏中有一个名为 “iCloud 文档” 的按钮，现在这个按钮改成了 “网盘文档”，也就是 iCloud Drive、Dropbox、WebDAV 同步的文档都在此。这个网盘文档等于是 Mac 版 MWeb 的外部模式，如下图所示。</p>
 
-<p>这次也修改了第二次按 <code>CMD + 1/2/3/4</code> 的行为，比如说按 <code>CMD + 4</code> 时变为边编辑边预览模式，这时再按 <code>CMD + 4</code> 则会变为三栏模式，所以现在只要用 <code>CMD + 4</code> 这个快捷键即可在两者切换。<code>CMD + 1/2/3</code> 则是在二栏/三栏和仅编辑器模式间切换，具体可以感受一下即知。</p>
+<p><img src="media/14963837146939/mweb-ios-231-1.png" alt="mweb-ios-231-1" style="width:770px;"/></p>
 
-<p>另外顺手也增加了第二个选项：<code>Live Preview (CMD + R) open new window</code>。如果这个选项<strong>没有选中</strong>，则会以下图的方式显示预览，再 (CMD + R) 则会切换回编辑模式。如果选中，则为原来的方式，这个选项默认也是<strong>没选中</strong>的。<br/>
-<img src="media/14564575040860/14564584705796.jpg" alt="" style="width:1037px;"/></p>
+<p>如下图所示，在 “网盘文档” 中，可以增加 Dropbox、WebDAV 的文件夹以同步，相当于 Mac 版的引入文件夹。增加的文件夹都会有 (i) 的按钮，点击后会如出现右边的设置页面，相当于 Mac 版引入的文件夹的设置，可设置新建文档时默认扩展名、图片文件夹和插入图片时是否自动上传至图床。</p>
 
-<h2 id="toc_1">其它改进和修正</h2>
+<p><img src="media/14963837146939/mweb-ios-231-2.png" alt="mweb-ios-231-2" style="width:770px;"/></p>
 
-<ul>
-<li>图床功能中，七牛上传有时候会出现 401 错误的问题也修正了。</li>
-<li>发布到 Wordpress.com 现在支持 Latex 了。</li>
-<li>修正语法和拼写检查的设置不能保存的问题。</li>
-<li>文档库增加 未分类文档</li>
-<li>其他的一些 Bug 修正</li>
-</ul>
+<p>以上就是网盘文档的简单说明，我使用下来，发现 Dropbox 是相当稳定可靠的，WebDAV 用的是免费版的坚果云，有时会出现超时，然后同步的话，一般是要 WebDAV 支持 etag 才好做，但是坚果云不支持，所以目前同步是用 “修改时间” 来判定，我测试下来的结果是基本可用，还要继续优化。<br/>
+目前的测试版中，网盘文档还没有提供 “移动” 这个功能，不过正式版会有这功能。</p>
+
+<p>重点说明是：<strong>目前是测试版本，建议先测试看看再决定是否用于正式文档，WebDAV 功能暂时不要用于正式文档！</strong></p>
+
+<h2 id="toc_1">文档库功能使用说明</h2>
+
+<p>之前的版本由于只支持 iCloud Drive，所以不支持自行设置文档库位置。2.3.x 版的文档库已支持自行设置文档库的位置。<br/>
+使用文档库功能，首先要在 MWeb for Mac 的偏好设置 - 通用设置 - 文档库位置 中，用 “另存为” 按钮，把文档库另存到 iCloud Drive、Dropbox 或 WebDAV 的某个文件夹中。当文档库同步好之后，再回到 iOS 的设置页面，选择你之前另存到的网盘的文件夹。如下图，我在 Mac 中是把文档库保存到 Dropbox 下的 mweb_documents_library 文件夹中，所以我下图选择的是一样的位置。要注意的是，如果你选择另存到 iCloud Drive，必须另存到 iCloud Drive 下 MWeb 所属的文件夹内才可以，不然在 iOS 中会选取不到文档库。</p>
+
+<p><img src="media/14963837146939/mweb-ios-231-3.png" alt="mweb-ios-231-3" style="width:770px;"/></p>
+
+<p>设置完成后，回到首页，点文档库按钮，即可进入文档库，一开始时会自动同步，之后是的频率是 12 小时。当然，你也可以下拉，手动进行同步，如上图右边所示。要注意的是，如果使用的是 iCloud Drive，是不能进行手动同步的，因为 iCloud Drive 的同步是 iOS 系统决定的。</p>
+
+<p>还要注意的是，目前 iOS 版文档库还是只有查看、增加文档和编辑现有文档功能，删除和归类等等都不支持。然后新增的文档只能在 “所有文档” 和 “未分类文档” 中找到。</p>
+
+<p>重点说明：<strong>目前是测试版本，建议先测试看看再决定是否用于正式文档，WebDAV 功能暂时不要用于正式文档！</strong> 所以建议的做法是：把文档库复制一份到 Dropbox 或 WebDAV 的文件夹中，在 Mac 版 MWeb 中用 偏好设置 - 通用设置 - 文档库位置 中的 “选择现有文档库” 按钮，选择这个位置。在 iOS 中也选择这个位置。这样的话，测试时就不会影响原来的文档库，如果不想测试，再用 “选择现有文档库” 按钮，选择回原来的文档库即可。</p>
+
+<h2 id="toc_2">编辑文档时的同步说明</h2>
+
+<p>一开始我的想法是文档自动保存时就同步一下当前文档，这个做法使用 Dropbox 时是没有问题的，但是在用坚果的 WebDAV 时，频繁出现超时问题。奇怪的是同步全部文档时却不会出现这个问题。超时目前还会影响性能，原因我还在排查中。目前的做法是退出编辑文档，回到文件列表时才会同步一下当前文档，这样就不会因为超时的性能问题而影响文档编辑。要注意的是，同步当前文档时如果出现超时错误，目前不会提示，因为随时可以用下拉同步来手动同步所有文档。</p>
+
+<p>PS：如果想申请 TF 测试，可以按 姓,名,邮箱 的格式发到 coderforart[at]gmail。比如： 王,小明,<a href="mailto:xiaoming@gmail.com">xiaoming@gmail.com</a> 。直接只标题发这个即可，我就知道是申请 TF 测试的了。</p>
 
 
     
@@ -171,16 +182,13 @@
         <div class="large-6 columns">
         <p class="text-left" style="padding:15px 0px;">
       
-          <a href="mweb-2.0-beta.html" 
-          title="Previous Post: MWeb 2.0 测试版可以下载啦，这次是公开测试，感兴趣的朋友可以试试">&laquo; MWeb 2.0 测试版可以下载啦，这次是公开测试，感兴趣的朋友可以试试</a>
-      
         </p>
         </div>
         <div class="large-6 columns">
       <p class="text-right" style="padding:15px 0px;">
       
-          <a  href="mweb-1.9.3-release.html" 
-          title="Next Post: MWeb 1.9.3 发布！图床支持七牛、修正发布到 Wordpress https 问题、中文版不能发布到 Medium 问题等">MWeb 1.9.3 发布！图床支持七牛、修正发布到 Wordpress https 问题、中文版不能发布到 Medium 问题等 &raquo;</a>
+          <a  href="introducing-mweb-for-ios.html" 
+          title="Next Post: iOS 版 MWeb 正式发布及简介">iOS 版 MWeb 正式发布及简介 &raquo;</a>
       
       </p>
         </div>
@@ -207,7 +215,7 @@
           
 
           
-              <div class="ds-thread" data-thread-key="mweb-1.9.7-release.html" data-url="http://coderforart.com/mweb-1.9.7-release.html" data-title="MWeb 1.9.7 发布！这次增加了一个有意思的改进，有必要说一下。"></div>
+              <div class="ds-thread" data-thread-key="mweb-for-ios-2.3.x-tf.html" data-url="http://coderforart.com/mweb-for-ios-2.3.x-tf.html" data-title="MWeb for iOS 2.3.x 版测试说明"></div>
           
         </div>
       </div>
