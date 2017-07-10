@@ -4,7 +4,7 @@
   <title><![CDATA[Coder For Art]]></title>
   <link href="http://coderforart.com/atom.xml" rel="self"/>
   <link href="http://coderforart.com/"/>
-  <updated>2017-06-28T09:22:32+08:00</updated>
+  <updated>2017-07-10T22:48:13+08:00</updated>
   <id>http://coderforart.com/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -21,7 +21,7 @@
 <p>这次是比较大的更新，主要有：</p>
 
 <ul>
-<li>新图标！感谢 @Red5Sign <a href="http://weibo.com/u/6264169884">http://weibo.com/u/6264169884</a>，@泰米啊 <a href="http://weibo.com/313612326">http://weibo.com/313612326</a> </li>
+<li>新图标！感谢 @Red5Sign <a href="http://weibo.com/u/6264169884">http://weibo.com/u/6264169884</a>，@泰米啊 <a href="http://weibo.com/313612326">http://weibo.com/313612326</a> 。</li>
 <li>增加 Dropbox 同步支持。</li>
 <li>增加移动文档功能。</li>
 <li>增加 mweb-solarized-dark，mweb-solarized-light，mweb-Tomorrow Blue，mweb-Tomorrow 四种预览样式，另外，现在切换编辑器样式时，整个界面都会改变，之前只限于编辑器改变。</li>
