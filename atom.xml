@@ -4,7 +4,7 @@
   <title><![CDATA[Coder For Art]]></title>
   <link href="http://coderforart.com/atom.xml" rel="self"/>
   <link href="http://coderforart.com/"/>
-  <updated>2017-06-21T15:02:25+08:00</updated>
+  <updated>2017-06-28T09:22:32+08:00</updated>
   <id>http://coderforart.com/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -477,7 +477,7 @@ $$  x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
 </ul>
 
 
-<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 <div class="footnotes">
 <hr/>
@@ -831,7 +831,7 @@ MAS ：<a href="https://itunes.apple.com/cn/app/mweb-pro-markdown-writing/id9541
     <content type="html"><![CDATA[
 <h2 id="toc_0">有必要说明的预览方面的改进</h2>
 
-<p><img src="media/14564575040860/14564576891742.jpg" alt="" style="width:491px;"/></p>
+<p><img src="media/14564575040860/14564576891742.jpg" alt="w491"/></p>
 
 <p>这次的改进跟上图中的两个选项有关。</p>
 
@@ -839,12 +839,12 @@ MAS ：<a href="https://itunes.apple.com/cn/app/mweb-pro-markdown-writing/id9541
 
 <p>在之前的版本中，如果取消选中了 <code>Resize window when hide pane</code> 这个选项，就可以在全屏中使用 <code>CMD + 1/2/3</code> 来切换二三栏，但是选中后，就不能使用，同时 CMD + 4 切换边编辑边预览的模式时，不大好用，主要是窗口大小不好控制。在 1.9.7 版中，如果取消这个选项，边编辑边预览会变成下图所示（Mou、Macdown 方式），同时在全屏也支持 <code>CMD + 1/2/3/4</code> 切换，这样就好用了点。所以我就把这个方式设置为默认了，如果要用原来的使用方式（我个人比较喜欢的方式，我都没在用全屏），选中即可。</p>
 
-<p><img src="media/14564575040860/14564581431585.jpg" alt="" style="width:1066px;"/></p>
+<p><img src="media/14564575040860/14564581431585.jpg" alt="w1066"/></p>
 
 <p>这次也修改了第二次按 <code>CMD + 1/2/3/4</code> 的行为，比如说按 <code>CMD + 4</code> 时变为边编辑边预览模式，这时再按 <code>CMD + 4</code> 则会变为三栏模式，所以现在只要用 <code>CMD + 4</code> 这个快捷键即可在两者切换。<code>CMD + 1/2/3</code> 则是在二栏/三栏和仅编辑器模式间切换，具体可以感受一下即知。</p>
 
 <p>另外顺手也增加了第二个选项：<code>Live Preview (CMD + R) open new window</code>。如果这个选项<strong>没有选中</strong>，则会以下图的方式显示预览，再 (CMD + R) 则会切换回编辑模式。如果选中，则为原来的方式，这个选项默认也是<strong>没选中</strong>的。<br/>
-<img src="media/14564575040860/14564584705796.jpg" alt="" style="width:1037px;"/></p>
+<img src="media/14564575040860/14564584705796.jpg" alt="w1037"/></p>
 
 <h2 id="toc_1">其它改进和修正</h2>
 
@@ -892,7 +892,7 @@ MAS ：<a href="https://itunes.apple.com/cn/app/mweb-pro-markdown-writing/id9541
 <h2 id="toc_1">七牛图床设置详细说明</h2>
 
 <p>如下图，进入 MWeb 的偏好设置 - 发布服务里，本地图片上传服务中，点右边的 <code>七牛云存储</code> 按钮，会跳出如下图的新增窗口：<br/>
-<img src="media/14531669957228/14531677609529.jpg" alt="" style="width:697px;"/></p>
+<img src="media/14531669957228/14531677609529.jpg" alt="w697"/></p>
 
 <ul>
 <li>名称：填入自定的名称即可。</li>
@@ -923,7 +923,7 @@ MAS ：<a href="https://itunes.apple.com/cn/app/mweb-pro-markdown-writing/id9541
     <content type="html"><![CDATA[
 <h2 id="toc_0">新图标</h2>
 
-<p><img src="media/14504051456811/1024.png" alt="" style="width:256px;"/><br/>
+<p><img src="media/14504051456811/1024.png" alt="w256"/><br/>
 换了一个新的图标，新图标是由 Producter <a href="http://weibo.com/u/5642390620">http://weibo.com/u/5642390620</a> 设计的，MWeb 终于有了一个高大上的图标了！非常感谢 Producter！</p>
 
 <span id="more"></span><!-- more -->
@@ -935,7 +935,7 @@ MAS ：<a href="https://itunes.apple.com/cn/app/mweb-pro-markdown-writing/id9541
 <h2 id="toc_2">导出为 PDF 改进</h2>
 
 <p>之前导出的 PDF 中，如果有 TOC 和 footnote，在 PDF 中点击时，是不正常的，不会跳到想要的位置。1.9 版修正了这个问题！另外 1.9 版在导出时还可以选择是否为 PDF 生成大纲视图（目录）。要注意的是这两个功能在 Lite 版中是没有的。现在开始慢慢加强和改进付费版了，希望能有多一点人购买，然后购买了的朋友也能觉得值，另外图床功能也是只支持付费版的。下图是为 PDF 增加目录后的效果。<br/>
-<img src="media/14504051456811/14504125781979.jpg" alt="" style="width:847px;"/></p>
+<img src="media/14504051456811/14504125781979.jpg" alt="w847"/></p>
 
 <h2 id="toc_3">增加图床功能</h2>
 
@@ -948,10 +948,10 @@ MAS ：<a href="https://itunes.apple.com/cn/app/mweb-pro-markdown-writing/id9541
 <h3 id="toc_4">增加图床服务</h3>
 
 <p>像发布服务那样，首先要增加图床服务，在 偏好设置 - 发布服务 里，目前可以增加三种图床服务：Google Photos、imgur、自定义。前两种不用多说，点击然后用所属帐号登入即可，注意先翻墙就没问题了。主要要介绍的是<strong>自定义</strong>，如下图：<br/>
-<img src="media/14504051456811/14504079331389.jpg" alt="" style="width:605px;"/></p>
+<img src="media/14504051456811/14504079331389.jpg" alt="w605"/></p>
 
 <p>我会使用 <a href="https://sm.ms/doc/">https://sm.ms/doc/</a> 这个图床做介绍，主要是它的 API 最简单，按 API 说明填入相关信息如下：<br/>
-<img src="media/14504051456811/14504081770612.jpg" alt="" style="width:605px;"/></p>
+<img src="media/14504051456811/14504081770612.jpg" alt="w605"/></p>
 
 <p>需要说明的有： <br/>
 <code>POST File Name</code>：这个是指表单的图片上传的名称<br/>
@@ -977,20 +977,20 @@ MAS ：<a href="https://itunes.apple.com/cn/app/mweb-pro-markdown-writing/id9541
 <p>可以看到它返回的图片的网址是 data 下的 url 字段的值，所以就填入 data/url，要注意的是，只支持 JSON 返回结果。</p>
 
 <p><code>图片 URL 前缀</code>：这个是由于有些 API 可能只返回图片的保存位置，比如说七牛（只返回 key 和 hash），它还要在前面加上一个固定的网址才能得到真正的图片网址，可以参考下图的设置。下图是填好后并点验证按钮测试后的结果。点验证按钮，会让你选择一张图片，选择好会直接用填入的设置上传图片，如果上传成功，则会跳出如下图的提示。<br/>
-<img src="media/14504051456811/14504094805560.jpg" alt="" style="width:621px;"/></p>
+<img src="media/14504051456811/14504094805560.jpg" alt="w621"/></p>
 
 <p><strong>重要提示</strong>：目前还不支持七牛，因为七牛的 token 好像最多 12 个小时内就会无效了，也暂时不能生成长久 token （是否这样？）。连官方的 objc SDK 都是直接说从服务器获取 token 的。然后也不支持像 Google Photos 或 imgur 那样的 OAuth 2.0 的方式。貌似可以用官方文档说明的算法生成 token，但是 objc SDK 却不带这个，我暂时也懒得研究了。折中的方法是用官方提供的 php SDK，另外写一个  <a href="https://sm.ms/doc/">https://sm.ms/doc/</a> 这种类型的 API 自用。</p>
 
 <h3 id="toc_5">上传本地图片至图床</h3>
 
-<p><img src="media/14504051456811/14504103924368.jpg" alt="" style="width:456px;"/></p>
+<p><img src="media/14504051456811/14504103924368.jpg" alt="w456"/></p>
 
 <p>图床服务增加后，如上图选择右上角的分享按钮下的 把本地图片传至图床 菜单，会出来如下图的窗口：<br/>
-<img src="media/14504051456811/14504106293732.jpg" alt="" style="width:771px;"/></p>
+<img src="media/14504051456811/14504106293732.jpg" alt="w771"/></p>
 
 <p>选择要上传到的图床后，点 <code>上传本地图片</code> 按钮即可。图片会自动上传并在<code>远程：</code> 右方显示上传后的网址。点右边的三个按钮可以删除、查看和复制网址。当你删除远程图片或者在文档中有新增本地图片时，只要再点一次 <code>上传本地图片</code> 按钮即可，未上传的图片会自动上传。 下图是点 <code>上传本地图片</code> 按钮后的结果。另外三个按钮不用介绍应该会用了。</p>
 
-<p><img src="media/14504051456811/14504111413111.jpg" alt="" style="width:757px;"/></p>
+<p><img src="media/14504051456811/14504111413111.jpg" alt="w757"/></p>
 
 <p>再发一张传到七牛的效果：<br/>
 <img src="media/14504051456811/14504112138619.jpg" alt=""/></p>
@@ -1136,11 +1136,11 @@ MAS ：<a href="https://itunes.apple.com/cn/app/mweb-pro-markdown-writing/id9541
 
 <p>另外 mweb-medium-like 主题有修正文章列表的 CSS 问题和增加文章可填入 SEO。都放到 github 了：<a href="https://github.com/oulvhai/mweb-medium-like">https://github.com/oulvhai/mweb-medium-like</a>，要更新的话，除了覆盖原来的主题外，还要在 <code>Preferences</code> - <code>Extension</code> 中，选择网站，选择 <code>Document Extension</code>，导入 <code>extensions/Document Extension.json</code> 这个档。如图是填入 SEO 的位置效果图。</p>
 
-<p><img src="media/14429703655514/14429725606405.jpg" alt="" style="width:859px;"/></p>
+<p><img src="media/14429703655514/14429725606405.jpg" alt="w859"/></p>
 
 <p>最后附上外部模式列出子文件夹的文档的效果图</p>
 
-<p><img src="media/14429703655514/14429712479034.jpg" alt="" style="width:1226px;"/></p>
+<p><img src="media/14429703655514/14429712479034.jpg" alt="w1226"/></p>
 
 ]]></content>
   </entry>
@@ -1213,7 +1213,7 @@ MAS ：<a href="https://itunes.apple.com/cn/app/mweb-pro-markdown-writing/id9541
 <h3 id="toc_1">设置网站为 mweb-medium-like 主题</h3>
 
 <p>MWeb 1.7 版会自带 mweb-medium-like 主题，所以先设置你的网站的主题为 mweb-medium-like。 mweb-medium-like 主题也上传到 github 了，你也可以去 <a href="https://github.com/oulvhai/mweb-medium-like">https://github.com/oulvhai/mweb-medium-like</a> 看看是否有修正或者提建议。如下图我选择的是 Coder For Art。<br/>
-<img src="media/14418505549476/14418512636784.jpg" alt="" style="width:688px;"/></p>
+<img src="media/14418505549476/14418512636784.jpg" alt="w688"/></p>
 
 <h3 id="toc_2">导入网站扩展文件和文档扩展文件</h3>
 
@@ -1222,23 +1222,23 @@ MAS ：<a href="https://itunes.apple.com/cn/app/mweb-pro-markdown-writing/id9541
 <p>下载 <a href="media/14418505549476/Site%20Extension.json">Site Extension</a> 这个网站扩展设置文件，在 github 中这个文档在 <code>extensions/Site Extension.json</code> 里。</p>
 
 <p>再转到 <code>Perfernces</code> - <code>Extensions</code>，Setting Site 中选择刚刚设定了 mweb-medium-like 主题的 Coder For Art 网站，然后切换到 Site Extension 标签，点 <code>Import</code> 导入刚刚下载的 Site Extension.json 设置文档。如下图是导入后的效果。<br/>
-<img src="media/14418505549476/14418514048396.png" alt="" style="width:629px;"/><br/>
+<img src="media/14418505549476/14418514048396.png" alt="w629"/><br/>
 同样也下载 <a href="media/14418505549476/Document%20Extension.json">Document Extension</a> 这个文档扩展设置文件，切换到 Document Extension 并导入。</p>
 
 <h3 id="toc_3">设置网站扩展</h3>
 
 <p>网站/博客中往往会有一些个人信息要设定，刚刚导入的网站扩展就是为了设定这些信息的。mweb-medium-like 主题目前可以设定的有：个人图片、weibo、github、facebook、email 等等信息，还可以为网站/博客增加 disqus 和 多说的评论支持。其中 <code>logo path</code> 就是设置个人图片的，你可以在任何属于该网站的文档中（通常可以用 about 或 index）拖入图片，然后复制图片的地址到 <code>logo path</code> 这个字段中，如下图是我的博客 Coder For Art 的设置：<br/>
-<img src="media/14418505549476/14418526095552.png" alt="" style="width:629px;"/><br/>
+<img src="media/14418505549476/14418526095552.png" alt="w629"/><br/>
 设置 disqus 和多说评论支持只需要填入两者的 shortname 即可。在 disqus 或多说注册完成后都可以得到 shortname。如果你想要两者的评论都支持，两者都填入即可，比如说我的 Coder For Art 博客就是两者的评论都支持，如图：<br/>
-<img src="media/14418505549476/14418528119858.png" alt="" style="width:659px;"/></p>
+<img src="media/14418505549476/14418528119858.png" alt="w659"/></p>
 
 <h3 id="toc_4">文档扩展的使用</h3>
 
 <p>mweb-medium-like 主题设计了三个文档扩展：small img 用于文章列表时放在描述的左边，featured image 用于放在标题上面，excerpt 为描述，一般情况下 MWeb 是直接抓取文章内 read more 前的内容，如果有填入 excerpt 则会优先取 excerpt 为描述。<br/>
-<img src="media/14418505549476/14418531852840.jpg" alt="" style="width:464px;"/></p>
+<img src="media/14418505549476/14418531852840.jpg" alt="w464"/></p>
 
 <p>如下图第一篇演示文章为设置为 small image 的效果，第二篇文章为设置了 featured image 的效果：<br/>
-<img src="media/14418505549476/14418537443808.jpg" alt="" style="width:724px;"/></p>
+<img src="media/14418505549476/14418537443808.jpg" alt="w724"/></p>
 
 <h3 id="toc_5">设置 About 页面</h3>
 
@@ -1249,7 +1249,7 @@ MAS ：<a href="https://itunes.apple.com/cn/app/mweb-pro-markdown-writing/id9541
 办法是使用 <a href="https://github.com/oulvhai/mweb-medium-like/blob/master/header.html">https://github.com/oulvhai/mweb-medium-like/blob/master/header.html</a> 这个位置的 header.html，或者把最新的 <a href="https://github.com/oulvhai/mweb-medium-like">https://github.com/oulvhai/mweb-medium-like</a> 下载下来换掉原来的也行。</p>
 
 <p>如下图是 Coder For Art 博客的 About 页的设置：<br/>
-<img src="media/14418505549476/14418540682024.jpg" alt="" style="width:766px;"/></p>
+<img src="media/14418505549476/14418540682024.jpg" alt="w766"/></p>
 
 <h2 id="toc_6">其他有意思的玩法</h2>
 
