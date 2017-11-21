@@ -4,7 +4,7 @@
   <title><![CDATA[Coder For Art]]></title>
   <link href="http://coderforart.com/atom.xml" rel="self"/>
   <link href="http://coderforart.com/"/>
-  <updated>2017-07-26T15:11:52+08:00</updated>
+  <updated>2017-11-21T22:31:51+08:00</updated>
   <id>http://coderforart.com/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -114,7 +114,7 @@
 
 <h2 id="toc_0">1. 在 Mac 中把文档库保存到 iCloud Drive 或 Dropbox</h2>
 
-<p>首先打开 MWeb for Mac 的偏好设置 - 通用设置（可以用 <code>CMD + ,</code> 快捷），在通用设置 - 文档库位置中，点 “另存为...” 按钮，把文档库位置移到 iCloud Drive 的 MWeb 所属的文件夹内或者是 Dropbox 中，如下图我是放到 iCloud Drive 中的 MWeb 文件夹内的 mweb_documents_library 文件夹中。如果在你的 Mac 的 iCloud Drive 中看不到 MWeb 所属的文件夹，可以试试在 iOS 的 系统设置 - iCloud - 关闭 iCloud Drive，然后再重新打开。如果等一段时间后还是无法看到，建议使用 Dropbox。</p>
+<p>首先打开 MWeb for Mac 的偏好设置 - 通用设置（可以用 <code>CMD + ,</code> 快捷），在通用设置 - 文档库位置中，点 “另存为...” 按钮，把文档库位置移到 iCloud Drive 的 MWeb 所属的文件夹内或者是 Dropbox 中，如下图我是放到 iCloud Drive 中的 MWeb 文件夹内的 mweb_documents_library 文件夹中。如果在你的 Mac 的 iCloud Drive 中看不到 MWeb 所属的文件夹，可以试试在 iOS 的 系统设置 - iCloud - 关闭 iCloud Drive，然后再重新打开。如果等一段时间后还是无法看到，建议使用 Dropbox。😄 </p>
 
 <p><img src="media/14964028153927/14980099891001.jpg" alt="" style="width:470px;"/></p>
 
