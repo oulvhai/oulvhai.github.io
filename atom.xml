@@ -4,13 +4,92 @@
   <title><![CDATA[Coder For Art]]></title>
   <link href="http://coderforart.com/atom.xml" rel="self"/>
   <link href="http://coderforart.com/"/>
-  <updated>2017-11-21T22:31:51+08:00</updated>
+  <updated>2017-11-22T13:09:30+08:00</updated>
   <id>http://coderforart.com/</id>
   <author>
     <name><![CDATA[]]></name>
     
   </author>
   <generator uri="http://www.mweb.im/">MWeb</generator>
+  
+  <entry>
+    <title type="html"><![CDATA[MWeb for Mac, iOS 黑五半价促销一周，写个大概介绍。]]></title>
+    <link href="http://coderforart.com/15113184658847.html"/>
+    <updated>2017-11-22T10:41:05+08:00</updated>
+    <id>http://coderforart.com/15113184658847.html</id>
+    <content type="html"><![CDATA[
+<p>不知不觉 MWeb for Mac 差不多三周年了，iOS 版也差不多一周年了，时间过得飞快。记得当时离职入坑 Mac/iOS 开发，我一并注册了 coderforart.com 这个域名，并做为自己的博客，我所做的软件的标识也是用 coderforart。这么多年过去了，Mac/iOS 学了个皮毛，博客也没更新文章，然后 coder for <strong>art</strong>，当时想法很好，然而在 <strong>art</strong> 方面却是啥也没学，目前已经定性为：我不适合 <strong>art</strong>。 我心中对 <strong>art</strong> 的执念也是越发淡薄了。</p>
+
+<p>MWeb 倒是坚持不断小更新一下，但这很大一部分原因在于用户的建议和需求，非常感谢你们。有很多需求我看了，但是没实现，这其中有的是技术的原因，有的是我认为没必要做的。虽然我可以做得更好，比如说花精力反馈给每个提需求的朋友没实现的原因，但是我没这样做，因为还不如直接花在改进产品上。总之，给 MWeb 反馈的朋友，非常感谢你们，然后有些情况，请见谅了！</p>
+
+<p>还有很多需要感谢的，比如说推荐 MWeb 的媒体和朋友，非常感谢你们！我文笔太渣，就不多说了，下面选几个 MWeb 代表性的功能介绍一下。</p>
+
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_0">1. MWeb 对 Markdown 编辑上的一些小改进</h2>
+
+<h3 id="toc_1">1.1 对插入图片的改进</h3>
+
+<p>MWeb 对插入图片支持非常全面，可以直接把图片拖拽进编辑器来插入图片，截图时可以直接用 <code>CMD + V</code> 来插入剪切板中的图片，插入的图片会直接显示在编辑器中，方便查看。另外还支持图床功能，是文档完成后把图片上传还是插入图片时自动上传都支持，详细的情况可以看一下 <a href="http://zh.mweb.im/how_to_use_images_in_mweb.html">MWeb Mac 版和 iOS 版图片及图床使用完全指南</a> 这篇文章。</p>
+
+<p>另外 MWeb 还支持图片大小和对齐的语法。<br/>
+官方 Markdown 和 GFM 都不支持图片大小控制及对齐设置，MWeb 引入的特别的语法来设置图片宽度和居左、居右、居中。如：<code>![图片说明-w450](pic.jpg)</code> 这样表示设置图片宽度为 450。其中 -w450 为设置语法，生成 HTML 时会自动移除。w 表示设置宽度，居左为：-l400，居右为 -r400，居中为 -c400，比如设置一图片宽度为 500 并居中：<code>![-c500](pic.jpg)</code>。可以看出，MWeb 引入的语法的特点是兼容原来的语法和仅支持设置宽度。</p>
+
+<h3 id="toc_2">1.2 对表格插入及编辑的改进</h3>
+
+<p>首先要说的是 MWeb 对表格编辑的小改进，点工具栏的插入表格按钮或者用 <code>Ctrl + Shift + T</code>，即可弹出如下图的插入表格窗口：</p>
+
+<p><img src="media/15113184658847/15113205424429.jpg" alt="" style="width:624px;"/><br/>
+<strong>其它说明：</strong>这个功能也支持对已有 Markdown 表格的编辑，方法就是光标移动到要编辑的表格文本中，点插入表格或者 <code>Ctrl + Shift + T</code>。</p>
+
+<h3 id="toc_3">1.3 对 LaTeX 的改进</h3>
+
+<p>如下图，当光标在 LaTeX 语法中时，会自动弹出预览窗口来预览 LaTeX 公式来辅助 LaTeX 输入和预览。<br/>
+<img src="media/15113184658847/15113209274707.jpg" alt="" style="width:460px;"/></p>
+
+<h3 id="toc_4">1.4 把 HTML 粘贴为 Markdown</h3>
+
+<p>这个功能使用方法是：在网页中选中你需要复制的那部分，比如说选择整个网页中的文章部分，然后 <code>CMD + C</code> 复制，再回到 MWeb 中，用菜单：<code>编辑 - 把 HTML 粘贴为 Markdown</code>，这样就会把选中的文章转为 Markdown 并粘贴，如果是在文档库中或者外部模式引入的文件夹内的文档，还会把文章中的图片自动下载到本地。这个功能一般情况下还是非常有用的，当然，由于 HTML 比较复杂，有时候会出问题。</p>
+
+<h2 id="toc_5">2. MWeb 外部模式的一些用法</h2>
+
+<p>MWeb 有两种模式，文档库模式和外部模式，一般情况下，使用外部模式就可以满足大部分需求了。外部模式是要先引入文件夹，然后再编辑文件夹内的文档，这样就比较好的解决了 Markdown 插入图片的问题，另外 Octopress, JekyII, Hexo 等静态博客也能非常方便地插入图片。详细可以看 <a href="http://zh.mweb.im/mweb-1.4-add-floder-octpress-support.html">MWeb 1.4 新功能介绍一：引入文件夹到 MWeb 中管理，支持 Octpress、Jekyll 等静态博客拖拽插入图片和实时预览</a> 这篇文章，按这个办法，其实也很好地支持 gitbook。目前 MWeb 到了 2.2.8 版，对外部模式也只是增加支持了配置引入的文件夹内的文档插入图片时自动上传至图床。</p>
+
+<h2 id="toc_6">3. MWeb 的标签（Tab）功能</h2>
+
+<p>MWeb 从 2.0 开始支持多 Tab，Tab 的设计比较像 Sublime，我觉得这种设计非常好。我觉得可以直接用下图说明。<br/>
+<img src="media/15113184658847/15113234008577.jpg" alt="" style="width:1039px;"/></p>
+
+<h2 id="toc_7">4. 发布到 Wordress、印象笔记等流行平台的功能</h2>
+
+<p>MWeb 支持把 Markdown 图文发布到多个平台，支持的平台如下图：<br/>
+<img src="media/15113184658847/15113237903444.jpg" alt="" style="width:597px;"/></p>
+
+<h2 id="toc_8">5. 文档库功能</h2>
+
+<p>文档库的功能算是 MWeb 最强大的功能。MWeb 的文档库其实就是把文档和文档相关图片等资源保存到固定一处地方，并提供分类树和 Tags 这两种方式来管理你的 Markdown 文档。而 MWeb 的副标题：专业的 Markdown 写作、记笔记、静态博客生成软件，非常恰当地说明了文档库的用途。关于文档库的详细使用，就不多做说明了。然后静态博客生成功能，好像用的朋友不多，需要说的是，<a href="http://zh.mweb.im/">MWeb 中官网</a>，<a href="http://www.mweb.im/">英文官网</a>，<a href="http://coderforart.com/">coderforart 博客</a>，都是用 MWeb 静态博客功能做的，目前静态博客增加了“发布脚本”功能，发布起来还算方便，详细可以看一下 <a href="http://zh.mweb.im/how_to_use_shell_script.html">如何使用“发布脚本”功能发布静态网站</a> 这文章。下面的截图是我的文档库中这三个网站的情况：</p>
+
+<p><img src="media/15113184658847/15113249082167.jpg" alt="" style="width:1067px;"/></p>
+
+<p>其实还要说一下，关于 MWeb 文档库的结构。点击 <code>MWeb 偏好设置 - 通用设置 - 文档库 - 在 Finder 中显示</code> 可以查看 MWeb 文档库的结构。<br/>
+它是由 mainlib.db 文件，docs 和 metadata 文件夹这三项组成，其中 docs 文件夹保存了每篇笔记的信息，一篇笔记一个 markdown 文档，markdown 文档内的图片等资源则保存在 docs 下的 media 文件夹内。mainlib.db 文件则保存了笔记的分类和 Tags 信息。我认为这种结构可以避免文档库丢失，因为不太可能一下删除这么多文件。更保险的办法是，使用 <code>MWeb 偏好设置 - 备份</code> 功能，把文档库备份到有<strong>历史记录</strong>的网盘中。</p>
+
+<p>关于MWeb 文档库的同步，非常简单，就是在 <code>MWeb 偏好设置 - 通用设置 - 文档库</code> 中，把文档库 <code>另存为</code> 到网盘中即可。如果你要在 iOS 中使用文档库，可以参考：<a href="http://zh.mweb.im/how_to_use_library_in_ios.html">在 iOS 中如何使用 MWeb for Mac 文档库</a> 这文章。然后 MWeb 每天会把 mainlib.db 文件备份到 ~/Library/Containers/com.coderforart.MWeb/Data/Library/Caches 这个位置，以避免同步时出现损坏的情况。</p>
+
+<h2 id="toc_9">6. iOS 版 MWeb 说明</h2>
+
+<p>iOS 版 MWeb 有 Mac 版 MWeb 外部模式的所有功能。文档库模式的话，目前仅可以查看，编辑和新增文档，而且新增的文档只会在 <code>未分类文档</code> 中，暂不支持在 iOS 中归类文档并加 Tag。更详细可以查看：<a href="http://zh.mweb.im/how_to_use_home.html">http://zh.mweb.im/how_to_use_home.html</a> 这个网址。</p>
+
+<h2 id="toc_10">其它</h2>
+
+<p>MWeb for Mac 和 iOS 目前都在半价促销中！活动结束时间为：11/29。</p>
+
+<p>官网：<a href="http://zh.mweb.im/">http://zh.mweb.im/</a><br/>
+Mac 版：<a href="https://itunes.apple.com/cn/app/mweb-pro-markdown-writing/id954188948?l=zh&amp;ls=1&amp;mt=12">https://itunes.apple.com/cn/app/mweb-pro-markdown-writing/id954188948?l=zh&amp;ls=1&amp;mt=12</a><br/>
+iOS 版：<a href="https://itunes.apple.com/cn/app/mweb-pro-markdown-writing/id1183407767?l=cn&amp;mt=8">https://itunes.apple.com/cn/app/mweb-pro-markdown-writing/id1183407767?l=cn&amp;mt=8</a></p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[MWeb for iOS 2.3.2 发布！]]></title>
@@ -1193,118 +1272,6 @@ MAS ：<a href="https://itunes.apple.com/cn/app/mweb-pro-markdown-writing/id9541
 
 <p>外部模式现在支持拖拽移动子文件夹。<br/>
 其他的一些小修正</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[MWeb mweb-medium-like 网站主题]]></title>
-    <link href="http://coderforart.com/mweb-medium-like-theme.html"/>
-    <updated>2015-09-10T10:02:34+08:00</updated>
-    <id>http://coderforart.com/mweb-medium-like-theme.html</id>
-    <content type="html"><![CDATA[
-<p>MWeb 1.7 版制作了新的博客/网站主题 mweb-medium-like。这个主题是基于 Foundation 前端框架做的，对移动端非常友好！<br/>
-本博客的主题也是使用 mweb-medium-like。</p>
-
-<span id="more"></span><!-- more -->
-
-<h2 id="toc_0">使用方法</h2>
-
-<h3 id="toc_1">设置网站为 mweb-medium-like 主题</h3>
-
-<p>MWeb 1.7 版会自带 mweb-medium-like 主题，所以先设置你的网站的主题为 mweb-medium-like。 mweb-medium-like 主题也上传到 github 了，你也可以去 <a href="https://github.com/oulvhai/mweb-medium-like">https://github.com/oulvhai/mweb-medium-like</a> 看看是否有修正或者提建议。如下图我选择的是 Coder For Art。<br/>
-<img src="media/14418505549476/14418512636784.jpg" alt="w688"/></p>
-
-<h3 id="toc_2">导入网站扩展文件和文档扩展文件</h3>
-
-<p><strong>注意：</strong>2.0 版已经不用做这个步骤了！！</p>
-
-<p>下载 <a href="media/14418505549476/Site%20Extension.json">Site Extension</a> 这个网站扩展设置文件，在 github 中这个文档在 <code>extensions/Site Extension.json</code> 里。</p>
-
-<p>再转到 <code>Perfernces</code> - <code>Extensions</code>，Setting Site 中选择刚刚设定了 mweb-medium-like 主题的 Coder For Art 网站，然后切换到 Site Extension 标签，点 <code>Import</code> 导入刚刚下载的 Site Extension.json 设置文档。如下图是导入后的效果。<br/>
-<img src="media/14418505549476/14418514048396.png" alt="w629"/><br/>
-同样也下载 <a href="media/14418505549476/Document%20Extension.json">Document Extension</a> 这个文档扩展设置文件，切换到 Document Extension 并导入。</p>
-
-<h3 id="toc_3">设置网站扩展</h3>
-
-<p>网站/博客中往往会有一些个人信息要设定，刚刚导入的网站扩展就是为了设定这些信息的。mweb-medium-like 主题目前可以设定的有：个人图片、weibo、github、facebook、email 等等信息，还可以为网站/博客增加 disqus 和 多说的评论支持。其中 <code>logo path</code> 就是设置个人图片的，你可以在任何属于该网站的文档中（通常可以用 about 或 index）拖入图片，然后复制图片的地址到 <code>logo path</code> 这个字段中，如下图是我的博客 Coder For Art 的设置：<br/>
-<img src="media/14418505549476/14418526095552.png" alt="w629"/><br/>
-设置 disqus 和多说评论支持只需要填入两者的 shortname 即可。在 disqus 或多说注册完成后都可以得到 shortname。如果你想要两者的评论都支持，两者都填入即可，比如说我的 Coder For Art 博客就是两者的评论都支持，如图：<br/>
-<img src="media/14418505549476/14418528119858.png" alt="w659"/></p>
-
-<h3 id="toc_4">文档扩展的使用</h3>
-
-<p>mweb-medium-like 主题设计了三个文档扩展：small img 用于文章列表时放在描述的左边，featured image 用于放在标题上面，excerpt 为描述，一般情况下 MWeb 是直接抓取文章内 read more 前的内容，如果有填入 excerpt 则会优先取 excerpt 为描述。<br/>
-<img src="media/14418505549476/14418531852840.jpg" alt="w464"/></p>
-
-<p>如下图第一篇演示文章为设置为 small image 的效果，第二篇文章为设置了 featured image 的效果：<br/>
-<img src="media/14418505549476/14418537443808.jpg" alt="w724"/></p>
-
-<h3 id="toc_5">设置 About 页面</h3>
-
-<p>mweb-medium-like 主题的主菜单加上了 about 页面，所以请设置一个 about 页面，否则点了主菜单的 about 连接后会出错。</p>
-
-<p><strong>注意：</strong>2.0 版默认已经去掉了 about 页面，如果要增加 about 页面，打开 <code>偏好设置</code> - <code>扩展</code>，然后切换到 <code>网站菜单</code> 这个标签，在里面新增自定义的页面。在这个地方新增，一切都是自定义的，也就是说你还要先增加 Home 和 Archives 页。<br/>
-另外 2.0 版这个主题在自定菜单时有一个小 bug，就是我忘记处理移动端的了，解决<br/>
-办法是使用 <a href="https://github.com/oulvhai/mweb-medium-like/blob/master/header.html">https://github.com/oulvhai/mweb-medium-like/blob/master/header.html</a> 这个位置的 header.html，或者把最新的 <a href="https://github.com/oulvhai/mweb-medium-like">https://github.com/oulvhai/mweb-medium-like</a> 下载下来换掉原来的也行。</p>
-
-<p>如下图是 Coder For Art 博客的 About 页的设置：<br/>
-<img src="media/14418505549476/14418540682024.jpg" alt="w766"/></p>
-
-<h2 id="toc_6">其他有意思的玩法</h2>
-
-<p>mweb-medium-like 主题是基于 Foundation 做的，然后因为 Markdown 支持 HML，所以如果你会 HTML，可以做出很有意思的效果，比如说：</p>
-
-<ul class="example-orbit" data-orbit>
-  <li>
-    <img src="media/14418505549476/tt1.jpg" alt="" />
-    <div class="orbit-caption">女天狗图 1</div>
-  </li>
-  <li>
-    <img src="media/14418505549476/tt2.jpg" alt="" />
-    <div class="orbit-caption">女天狗图 2</div>
-  </li>
-  <li>
-    <img src="media/14418505549476/tt3.jpg" alt="" />
-    <div class="orbit-caption">女天狗图 3</div>
-  </li>
-</ul>
-
-<p>上面的效果，把图拖拽进来后，再修改图片地址即可。全部 HTML 如下：</p>
-
-<pre><code class="language-html">&lt;ul class=&quot;example-orbit&quot; data-orbit&gt;
-  &lt;li&gt;
-    &lt;img src=&quot;media/14418505549476/tt1.jpg&quot; alt=&quot;&quot; /&gt;
-    &lt;div class=&quot;orbit-caption&quot;&gt;女天狗图 1&lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;img src=&quot;media/14418505549476/tt2.jpg&quot; alt=&quot;&quot; /&gt;
-    &lt;div class=&quot;orbit-caption&quot;&gt;女天狗图 2&lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;img src=&quot;media/14418505549476/tt3.jpg&quot; alt=&quot;&quot; /&gt;
-    &lt;div class=&quot;orbit-caption&quot;&gt;女天狗图 3&lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-</code></pre>
-
-<p>缩略图效果，点小图看大图，如下：</p>
-
-<ul class="clearing-thumbs small-block-grid-2" data-clearing>
-  <li><a href="media/14418505549476/tt4.jpg"><img data-caption="女天狗 4" src="media/14418505549476/tt4-s.jpg"></a></li>
-  <li><a href="media/14418505549476/tt5.jpg"><img data-caption="女天狗 5" src="media/14418505549476/tt5-s.jpg"></a></li>
-</ul>
-
-<p>上面的效果的全部 HTML 如下：</p>
-
-<pre><code class="language-html">&lt;ul class=&quot;clearing-thumbs small-block-grid-2&quot; data-clearing&gt;
-  &lt;li&gt;&lt;a href=&quot;media/14418505549476/tt4.jpg&quot;&gt;&lt;img data-caption=&quot;女天狗 4&quot; src=&quot;media/14418505549476/tt4-s.jpg&quot;&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;media/14418505549476/tt5.jpg&quot;&gt;&lt;img data-caption=&quot;女天狗 5&quot; src=&quot;media/14418505549476/tt5-s.jpg&quot;&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</code></pre>
-
-<p>效果 1 的 Foundation 参考网址：<a href="http://foundation.zurb.com/docs/components/orbit.html">http://foundation.zurb.com/docs/components/orbit.html</a><br/>
-效果 2 的 Foundation 参考网址：<a href="http://foundation.zurb.com/docs/components/clearing.html">http://foundation.zurb.com/docs/components/clearing.html</a></p>
 
 ]]></content>
   </entry>
