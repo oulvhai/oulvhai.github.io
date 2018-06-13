@@ -150,7 +150,7 @@
 
 <p><img src="media/14689205256580/14689339545256.jpg" alt="" style="width:833px;"/></p>
 
-<p><strong>注意：</strong> jquery_plantuml 中的 encode64.js 是我从 jquery_plantuml.js 中提取的部分，由于 MWeb 的预览是本地预览，而  jquery_plantuml.js 中用到了 Worker，本地是不支持的，所以我就用了另外的写法。在 MWeb 中用边写边预览的方式用这个主题时，如果图表量很大的话，可能会比较卡。这里说一下 MWeb 2.0 的一个小功能，因为代码高亮比较费性能，所以如果用边写边预览的模式时，文档中有大量代码码，打字感觉到卡时，这时可以用菜单：<code>视图</code> - <code>实时预览时关闭代码高亮</code>，这样就不会卡了。</p>
+<p><strong>注意：</strong> jquery<u>plantuml 中的 encode64.js 是我从 jquery</u>plantuml.js 中提取的部分，由于 MWeb 的预览是本地预览，而  jquery_plantuml.js 中用到了 Worker，本地是不支持的，所以我就用了另外的写法。在 MWeb 中用边写边预览的方式用这个主题时，如果图表量很大的话，可能会比较卡。这里说一下 MWeb 2.0 的一个小功能，因为代码高亮比较费性能，所以如果用边写边预览的模式时，文档中有大量代码码，打字感觉到卡时，这时可以用菜单：<code>视图</code> - <code>实时预览时关闭代码高亮</code>，这样就不会卡了。</p>
 
 <h2 id="toc_1">实现原理</h2>
 
@@ -165,7 +165,7 @@
 <p><strong>7/20 Update：</strong>经 @chang 提醒，PlantUML 改成 SVG 样式，这样对中文支持更好。<br/>
 <strong>7/21 Update：</strong>经 <a href="http://weibo.com/n/FTD_Liaoer">@FTD_Liaoer</a> 提醒，ECharts 在导出 PDF 和生成图片时会有问题。这个问题可以在 option 中加 <code>animation:false</code> 解决，大概为：</p>
 
-<pre><code class="language-js">option = {
+<pre class="line-numbers"><code class="language-javascript">option = {
     animation:false,
     title : {
     ....

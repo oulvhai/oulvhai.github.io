@@ -146,13 +146,13 @@
 
 <p>UE4在github中有三个版本，我直接下载release版本的.zip（因为我用git clone太慢了）。我下载的是4.6.1版。下载完成解压后右键setup.command打开，然后还会要下载大概2G左右的东西，这个下载的速度不错。然后再右键GenerateProjectFiles.command打开。等一会儿后就生成UE4.xcodeproj了。打开UE4.xcodeproj后，选择UE4Editor-Mac，然后build，发现我下载这个版本会出错。出错是这行：</p>
 
-<pre><code class="language-cpp">static bool GAllowApplePlatformSymbolication = PLATFORM_MAC &amp;&amp; IS_PROGRAM;
+<pre class="line-numbers"><code class="language-cpp">static bool GAllowApplePlatformSymbolication = PLATFORM_MAC &amp;&amp; IS_PROGRAM;
 </code></pre>
 
 <p>错误信息是：<code>Use of logical &#39;&amp;&amp;&#39; with constant operand</code>。<br/>
 我看不大懂，实在是找不到好办法，看意思他肯定是<code>true</code>，就改成：</p>
 
-<pre><code class="language-cpp">static bool GAllowApplePlatformSymbolication = true;//PLATFORM_MAC &amp;&amp; IS_PROGRAM;
+<pre class="line-numbers"><code class="language-cpp">static bool GAllowApplePlatformSymbolication = true;//PLATFORM_MAC &amp;&amp; IS_PROGRAM;
 </code></pre>
 
 <p>然后就编译通过了。</p>
@@ -163,7 +163,7 @@
 
 <p>伤心了，还是一样错误，变成以下这样看看。。</p>
 
-<pre><code class="language-cpp">#if PLATFORM_MAC &amp;&amp; IS_PROGRAM
+<pre class="line-numbers"><code class="language-cpp">#if PLATFORM_MAC &amp;&amp; IS_PROGRAM
 static bool GAllowApplePlatformSymbolication = true;
 #else
 static bool GAllowApplePlatformSymbolication = false;

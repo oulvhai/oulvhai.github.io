@@ -144,12 +144,12 @@
 
 <p>请打开终端工具(Terminal),并执行以下命令：</p>
 
-<pre><code>ln -s ~/Library/Containers/com.coderforart.MWeb/Data/Documents/MWeb ~/Dropbox/MWebBackup
+<pre class="line-numbers"><code class="language-text">ln -s ~/Library/Containers/com.coderforart.MWeb/Data/Documents/MWeb ~/Dropbox/MWebBackup
 </code></pre>
 
 <p>可以看出来大概语法是：</p>
 
-<pre><code>ln -s ~/Library/Containers/com.coderforart.MWeb/Data/Documents/MWeb + 网盘同步的位置
+<pre class="line-numbers"><code class="language-text">ln -s ~/Library/Containers/com.coderforart.MWeb/Data/Documents/MWeb + 网盘同步的位置
 </code></pre>
 
 <p>这样就可以备份到任何网盘了。</p>
@@ -177,7 +177,7 @@
 
 <p>然后再分别打入上边github提示的命令样本，注意我这边有改动到喔。再注意，如果你先前没有在MWeb中<code>Build site</code>，要先生成一下。</p>
 
-<pre><code>echo &quot;# oimotis.github.io&quot; &gt;&gt; README.md
+<pre class="line-numbers"><code class="language-text">echo &quot;# oimotis.github.io&quot; &gt;&gt; README.md
 git init
 git add .
 git commit -m &quot;first commit&quot;
@@ -194,7 +194,7 @@ git push -u origin master
 <p>下面就要自定域名了。<br/>
 依次执行以下命令即可：</p>
 
-<pre><code>echo &#39;blog.coderforart.com&#39; &gt;&gt; CNAME
+<pre class="line-numbers"><code class="language-text">echo &#39;blog.coderforart.com&#39; &gt;&gt; CNAME
 git add --ignore-removal .
 git commit -m &quot;cname&quot;
 git push -u origin master
@@ -211,7 +211,7 @@ git push -u origin master
 
 <p>以后发新文章要更新，就执行以下命令即可：</p>
 
-<pre><code>git add --ignore-removal .
+<pre class="line-numbers"><code class="language-text">git add --ignore-removal .
 git commit -m &quot;cname&quot;
 git push -u origin master
 </code></pre>
