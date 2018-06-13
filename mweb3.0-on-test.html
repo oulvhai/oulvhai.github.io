@@ -141,7 +141,6 @@
 
 <ul>
 <li>Bilibili：<a href="https://www.bilibili.com/video/av24789660/">https://www.bilibili.com/video/av24789660/</a></li>
-<li>Youtube：<a href="https://youtu.be/vwStR6LgMZs">https://youtu.be/vwStR6LgMZs</a></li>
 </ul>
 
 <p>MWeb 3.0 的情况都在视频里有说，这里就不详细介绍了，下面放几张截图。需要重点说明的是：现在的版本是英文混合少量中文的，这个情况会在未来几个测试版中得到改进。</p>
@@ -165,7 +164,43 @@
 <p>快速搜索，也算是新功能。视频演示里不出来，应该是由于我把文档库放在 MWeb 专属的位置的原因，之后会改进一下。<br/>
 <img src="media/15288584426434/mweb3-5.jpg" alt="mweb3-5" style="width:1074px;"/></p>
 
-<h2 id="toc_1">MWeb 3.0 版下载地址</h2>
+<h2 id="toc_1">这次 3.0 版本，有位朋友帮忙改进了 MWeb 的 Markdown 解析器</h2>
+
+<p>github 地址：<a href="https://github.com/randomatom/hoedown-mweb/">https://github.com/randomatom/hoedown-mweb/</a>，非常非常感谢！！然后以下是这位朋友的原话：</p>
+
+<h3 id="toc_2">缘起</h3>
+
+<p>近期使用markdown做笔记。希望找一款软件，取代 evernote 笔记功能。<br><br/>
+evernote转为「资料收集库」。<br><br/>
+而 markdown 软件，用于后续深入的 <strong>整理、总结、输出</strong>。</p>
+
+<p>按这个需要出发，大概需要几个特点：<br/>
+1. 同时支持 mac和IOS;<br/>
+2. 文档库管理，多级目录、tag、检索等等；<br/>
+3. 对markdown扩展支持比较丰富，比如代码、表格、TOC等等；</p>
+
+<p>最后选择了 <strong>mweb</strong>。</p>
+
+<p>使用过程中，对一些语法解析不太满意。<br><br/>
+和作者 @oulvhai 联系之后，得知 MWeb 使用的解析库 是 Hoedown，自告奋勇修改该库。</p>
+
+<p>Hoedown 的原始代码地址：<a href="https://github.com/hoedown/hoedown">https://github.com/hoedown/hoedown</a></p>
+
+<p>mweb的问题列表： issue：<a href="https://github.com/oulvhai/MWeb-issues">https://github.com/oulvhai/MWeb-issues</a></p>
+
+<p>主要修改几个新的功能：<br/>
+- 列表之前语法之前，不需要强制 <strong>空行</strong>；<br/>
+- 列表里面，自然换行，也可以解析为&lt;br&gt;<br/>
+- bug修复：代码块中的 语法，被误以为 footnote；</p>
+
+<p>其实更好的办法是换库：<strong>github的cmark库</strong>。目前活跃度很高，代码质量也很高。<br><br/>
+<a href="https://github.com/github/cmark/tree/master/src">https://github.com/github/cmark/tree/master/src</a></p>
+
+<p>Hoedown 本身解析的过程，是「一行行硬解析」，没有使用AST。<br><br/>
+还好 Markdwowm 不算复杂，这个框架勉强还能应付的过去。<br><br/>
+后面的扩展和维护，潜力小，比较麻烦。如果要做的完全符合标准，估计还需要加一堆「补丁」。</p>
+
+<h2 id="toc_3">MWeb 3.0 版下载地址</h2>
 
 <p>官网地址：<a href="https://dl.devmate.com/com.coderforart.MWeb3/3.0.1/1528839131/MWeb3-ProMarkdownwriting%2CnotetakingandstaticbloggeneratorApp-3.0.1.dmg">点此下载</a><br/>
 Coding.NET 分流量：<a href="https://coding.net/api/share/download/98ca6ba7-8eab-4b93-9c7e-9b5d7ba54bd0">点此下载</a></p>
