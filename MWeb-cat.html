@@ -112,6 +112,52 @@
 		<div class="markdown-body home-categories">
 		
 			<div class="article">
+                <a class="clearlink" href="mweb3.0-on-test.html">
+                
+                  <h1>MWeb 3.0 测试版终于发布了！欢迎大家试用！</h1>
+                  <div class="a-content">
+                      
+                      <div class="a-content-text">
+                        
+                        	<p>MWeb 转眼间已经快四岁了，如果从开始写第一行代码那时起，已经四周岁了，我做独立开发者的道路也变得坚定了！MWeb 3.0 版本是一个蛮重要的版本，这个版本是 MWeb 的第一个付费升级的版本。这个版本支持的最低系统是 ELCapitan，废除的代码很多，UI 几乎是重写了，所以才需要先行测试再发布。</p>
+
+<p>为了方便了解新版本的功能，我录制了一个视频，这也是我第一次录制有声音的视频，录制后才发现这视频竟然这么长！！<br/>
+关于 MWeb 和这次测试的详细，强烈建议您先看完下面的 MWeb 3.0 测试介绍视频！视频的网址如下：</p>
+
+<ul>
+<li>Bilibili：<a href="https://www.bilibili.com/video/av24789660/">https://www.bilibili.com/video/av24789660/</a></li>
+<li>Youtube：<a href="https://youtu.be/vwStR6LgMZs">https://youtu.be/vwStR6LgMZs</a></li>
+</ul>
+
+<p>MWeb 3.0 的情况都在视频里有说，这里就不详细介绍了，下面放几张截图。需要重点说明的是：现在的版本是英文混合少量中文的，这个情况会在未来几个测试版中得到改进。</p>
+
+
+                        
+                      </div>
+                  </div>
+                </a>
+                <div class="read-more clearfix">
+                  <div class="more-left left">
+                   <a href="mweb3.0-on-test.html">Read more</a>&nbsp;&nbsp; 
+                    <span class="date">2018/6/13</span>
+                    <span>posted in&nbsp;</span> 
+          				  
+          					    <span class="posted-in"><a href='MWeb-cat.html'>MWeb</a></span>
+          				   
+                  </div>
+                  <div class="more-right right">
+                  <span class="comments">
+                      
+                        <a href="http://coderforart.com/mweb3.0-on-test.html#disqus_thread">comments</a>
+                      
+
+                       
+                  </span>
+                  </div>
+                </div>
+              </div><!-- article -->
+        
+			<div class="article">
                 <a class="clearlink" href="15113184658847.html">
                 
                   <h1>MWeb for Mac, iOS 黑五半价促销一周，写个大概介绍。</h1>
@@ -390,72 +436,6 @@
                 </div>
               </div><!-- article -->
         
-			<div class="article">
-                <a class="clearlink" href="14730440789266.html">
-                
-                  <h1>分享一个把 HTML 转换成印象笔记格式的库，支持代码高亮和把 ECharts、mermaid 转成印象笔记支持的图片，另外：MWeb 半价促销一周。</h1>
-                  <div class="a-content">
-                      
-                      <div class="a-content-text">
-                        
-                        	<p>先说说 html2enml 这个库，github 网址：<a href="https://github.com/cyhhao/html2enml">https://github.com/cyhhao/html2enml</a>。</p>
-
-<p>这个库是由 <a href="http://weibo.com/u/1587579460">cyhhao</a> 特意为 MWeb 做的，但是我觉得对于有分享到印象笔记功能需求的朋友非常有用，所以分享出来。</p>
-
-<p>这个库的原理和用法在作者的 github 中有详细说明了，我这里主要说说在套进 MWeb 过程中遇到的小问题的解决方案。</p>
-
-<p>第一个问题是 SVG 问题，Mermaid 是用 SVG 而不是 Canvas 画图的，不能直接像 Canvas 这样转。解决这个问题花了不少时间，但是其实很简单。只需要在增加 inline 样式后，再用以下代码就可以搞定了：</p>
-
-<pre><code class="language-js">$(&#39;svg&#39;).each(function(){
-    var ele = $(this);
-    var w = ele.width();
-    var serializer = new XMLSerializer();
-    var source = serializer.serializeToString(this);
-    $(&#39;&lt;img src=&quot;data:image/svg+xml;charset=utf8,&#39;+encodeURIComponent(source) +&#39;&quot; /&gt;&#39;).whith(w).insertAfter(ele);
-    ele.parent().removeAttr(&#39;data-processed&#39;);
-    ele.remove();
-});
-</code></pre>
-
-<p>另外就是，印象笔记的 enml 格式实际上是一个 xml，但是一般的 html 都不会严格按照 xml 格式，这就要转化为 xml 格式，测试下来，我发现以下代码的方法非常合适而且好用，代码如下：</p>
-
-<pre><code class="language-js">var html = $(&#39;body&#39;).html();
-var bodyStyle = $(&#39;body&#39;).attr(&#39;style&#39;); if(!bodyStyle) bodyStyle = &#39;&#39;;
-var htmlString = &quot;&lt;div style=\&quot;&quot; + bodyStyle + &quot;\&quot;&gt;&quot; + html + &quot;&lt;/div&gt;&quot;;
-var doc = new DOMParser().parseFromString(htmlString, &#39;text/html&#39;);
-var result = new XMLSerializer().serializeToString(doc);
-</code></pre>
-
-<p>最后做一下广告：MWeb 半价促销一周 (9/5~9/11)，￥98 --&gt; ￥50！这次应该是今年最后一次促销了，需要的朋友不要错过了！</p>
-
-<p>MWeb 官网：<a href="http://zh.mweb.im/">http://zh.mweb.im/</a><br/>
-MAS ：<a href="https://itunes.apple.com/cn/app/mweb-pro-markdown-writing/id954188948?l=zh&amp;ls=1&amp;mt=12">https://itunes.apple.com/cn/app/mweb-pro-markdown-writing/id954188948?l=zh&amp;ls=1&amp;mt=12</a></p>
-
-                        
-                      </div>
-                  </div>
-                </a>
-                <div class="read-more clearfix">
-                  <div class="more-left left">
-                  
-                    <span class="date">2016/9/5</span>
-                    <span>posted in&nbsp;</span> 
-          				  
-          					    <span class="posted-in"><a href='MWeb-cat.html'>MWeb</a></span>
-          				   
-                  </div>
-                  <div class="more-right right">
-                  <span class="comments">
-                      
-                        <a href="http://coderforart.com/14730440789266.html#disqus_thread">comments</a>
-                      
-
-                       
-                  </span>
-                  </div>
-                </div>
-              </div><!-- article -->
-        
               
 
 
@@ -500,7 +480,19 @@ MAS ：<a href="https://itunes.apple.com/cn/app/mweb-pro-markdown-writing/id9541
               	 </div>
           	</div>
 
-             
+               
+             <div id="site-categories" class="side-item ">
+                <div class="side-header">
+                  <h2>Important</h2>
+                </div>
+                <div class="side-content">
+                  <div style="color:#ff0000; text-align:center; padding:8px;" class="bg-info site_notice">
+                    
+<a style="color:#ff0000;"  onclick="ga('send','event','global_notice_click');" href="mweb3.0-on-test.html" target="_blank" >MWeb 3.0 测试版终于发布了！欢迎大家试用！</a>
+                  </div>
+                </div>
+            </div>
+    
 
               <div id="site-categories" class="side-item ">
                 <div class="side-header">
@@ -537,6 +529,12 @@ MAS ：<a href="https://itunes.apple.com/cn/app/mweb-pro-markdown-writing/id9541
 	      
 		      
 			      <li class="post">
+			        <a href="mweb3.0-on-test.html">MWeb 3.0 测试版终于发布了！欢迎大家试用！</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
 			        <a href="15113184658847.html">MWeb for Mac, iOS 黑五半价促销一周，写个大概介绍。</a>
 			      </li>
 		     
@@ -556,12 +554,6 @@ MAS ：<a href="https://itunes.apple.com/cn/app/mweb-pro-markdown-writing/id9541
 		      
 			      <li class="post">
 			        <a href="how_to_use_library_in_ios.html">在 iOS 中如何使用 MWeb for Mac 文档库</a>
-			      </li>
-		     
-		  
-		      
-			      <li class="post">
-			        <a href="mweb-for-ios-2.3.x-tf.html">MWeb for iOS 2.3.x 版测试说明</a>
 			      </li>
 		     
 		  
