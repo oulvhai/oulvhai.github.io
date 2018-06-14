@@ -112,6 +112,59 @@
 		<div class="markdown-body home-categories">
 		
 			<div class="article">
+                <a class="clearlink" href="mweb-qa-zh.html">
+                
+                  <h1>MWeb 所有问题和回答收集</h1>
+                  <div class="a-content">
+                      
+                      <div class="a-content-text">
+                        
+                        	<h2 id="toc_0">如何导出HTML样式的PDF？（1.2版已改进这个问题。）</h2>
+
+<p><code>CMD+R</code>打开Live Preview窗口，点右边的分享按钮，选择<code>Save as PDF</code>即可。</p>
+
+<h2 id="toc_1">如何开启MathJax预览支持？如何让网站支持MathJax？</h2>
+
+<p><code>CMD+,</code>打开设置面板，切到Themes，勾选Enable Math选项。<br/>
+如果要让网站支持MathJax，最简单的方法是在网站分类设置中的：Site other:的文本框中填入以下代码：</p>
+
+<pre class="line-numbers"><code class="language-javascript">&lt;script type=&quot;text/x-mathjax-config&quot;&gt;
+  MathJax.Hub.Config({tex2jax: {inlineMath: [[&#39;$&#39;,&#39;$&#39;], [&#39;\\(&#39;,&#39;\\)&#39;]]}});
+&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;
+  src=&quot;http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&quot;&gt;
+&lt;/script&gt;
+</code></pre>
+
+<p>如果您的网站是要用HTTPS，请把：<code>http://cdn.mathjax.org...</code>改为：<code>https://cdn.mathjax.org...</code></p>
+
+
+                        
+                      </div>
+                  </div>
+                </a>
+                <div class="read-more clearfix">
+                  <div class="more-left left">
+                   <a href="mweb-qa-zh.html">Read more</a>&nbsp;&nbsp; 
+                    <span class="date">2015/1/20</span>
+                    <span>posted in&nbsp;</span> 
+          				  
+          					    <span class="posted-in"><a href='MWeb-cat.html'>MWeb</a></span>
+          				   
+                  </div>
+                  <div class="more-right right">
+                  <span class="comments">
+                      
+                        <a href="http://coderforart.com/mweb-qa-zh.html#disqus_thread">comments</a>
+                      
+
+                       
+                  </span>
+                  </div>
+                </div>
+              </div><!-- article -->
+        
+			<div class="article">
                 <a class="clearlink" href="mweb-v1.1-release.html">
                 
                   <h1>MWeb 1.1 release</h1>
@@ -492,41 +545,6 @@ English：<a href="http://www.mweb.im">http://www.mweb.im</a></p>
                 </div>
               </div><!-- article -->
         
-			<div class="article">
-                <a class="clearlink" href="insert-photos-and-display-in-editor.html">
-                
-                  <h1>Insert photos and display in editor</h1>
-                  <div class="a-content">
-                      
-                      <div class="a-content-text">
-                        
-                        	<p>Drag &amp; drop photo or paste to the editor, the markdown code will add automatically and the photo will display in editor.<br/>
-
-                        
-                      </div>
-                  </div>
-                </a>
-                <div class="read-more clearfix">
-                  <div class="more-left left">
-                   <a href="insert-photos-and-display-in-editor.html">Read more</a>&nbsp;&nbsp; 
-                    <span class="date">2014/12/16</span>
-                    <span>posted in&nbsp;</span> 
-          				  
-          					    <span class="posted-in"><a href='Introduction.html'>Introduction</a></span>
-          				   
-                  </div>
-                  <div class="more-right right">
-                  <span class="comments">
-                      
-                        <a href="http://coderforart.com/insert-photos-and-display-in-editor.html#disqus_thread">comments</a>
-                      
-
-                       
-                  </span>
-                  </div>
-                </div>
-              </div><!-- article -->
-        
               
 
 
@@ -620,6 +638,12 @@ English：<a href="http://www.mweb.im">http://www.mweb.im</a></p>
 	      
 		      
 			      <li class="post">
+			        <a href="mweb3-release-note.html">MWeb 3.0 测试版更新情况</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
 			        <a href="mweb3.0-on-test.html">MWeb 3.0 测试版终于发布了！欢迎大家试用！</a>
 			      </li>
 		     
@@ -639,12 +663,6 @@ English：<a href="http://www.mweb.im">http://www.mweb.im</a></p>
 		      
 			      <li class="post">
 			        <a href="how_to_use_images_in_mweb.html">MWeb Mac 版和 iOS 版图片及图床使用完全指南</a>
-			      </li>
-		     
-		  
-		      
-			      <li class="post">
-			        <a href="how_to_use_library_in_ios.html">在 iOS 中如何使用 MWeb for Mac 文档库</a>
 			      </li>
 		     
 		  

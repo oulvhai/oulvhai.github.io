@@ -4,13 +4,35 @@
   <title><![CDATA[Coder For Art]]></title>
   <link href="http://coderforart.com/atom.xml" rel="self"/>
   <link href="http://coderforart.com/"/>
-  <updated>2018-06-13T11:52:10+08:00</updated>
+  <updated>2018-06-13T19:28:47+08:00</updated>
   <id>http://coderforart.com/</id>
   <author>
     <name><![CDATA[]]></name>
     
   </author>
   <generator uri="http://www.mweb.im/">MWeb</generator>
+  
+  <entry>
+    <title type="html"><![CDATA[MWeb 3.0 测试版更新情况]]></title>
+    <link href="http://coderforart.com/mweb3-release-note.html"/>
+    <updated>2018-06-14T15:49:36+08:00</updated>
+    <id>http://coderforart.com/mweb3-release-note.html</id>
+    <content type="html"><![CDATA[
+<h2 id="toc_0">6/14 MWeb 3.0.2 版更新</h2>
+
+<ul>
+<li>修正表格编辑问题</li>
+<li>修正外部模式插入图片时不能自动上传至图床的 bug</li>
+<li>修正外部模式树形导航增加文件不自动刷新问题。</li>
+<li>优化文档库键盘导航设置：在分类区 按 Tab，焦点会跳到 中间的搜索框。而在中间的搜索框中：上下键为文章导航；左键切换到分类区 右键 切换到编辑区</li>
+<li>Markdown 解析库有更新</li>
+<li>修正选择文本并按 Tab 键缩进时闪退的 bug。</li>
+</ul>
+
+<p>PS: 如果你无法更新，或者更新有问题，请直接下载：<a href="https://dl.devmate.com/com.coderforart.MWeb3/MWeb3-ProMarkdownwriting,notetakingandstaticbloggeneratorApp.dmg">下载网址</a></p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[MWeb 3.0 测试版终于发布了！欢迎大家试用！]]></title>
@@ -93,7 +115,7 @@ evernote转为「资料收集库」。<br><br/>
 
 <h2 id="toc_3">MWeb 3.0 版下载地址</h2>
 
-<p>官网地址：<a href="https://dl.devmate.com/com.coderforart.MWeb3/3.0.1/1528839131/MWeb3-ProMarkdownwriting%2CnotetakingandstaticbloggeneratorApp-3.0.1.dmg">点此下载</a><br/>
+<p>官网地址：<a href="https://dl.devmate.com/com.coderforart.MWeb3/MWeb3-ProMarkdownwriting,notetakingandstaticbloggeneratorApp.dmg">点此下载</a><br/>
 度盘分流量：<a href="https://pan.baidu.com/s/1HWPFlQGENRPn8KX_wKChyQ">点此下载</a></p>
 
 <p>另外如果有谁知道那有不用备案的优质 CDN 购买吗？如果有，希望能联系我，非常感谢！！</p>
@@ -1276,41 +1298,6 @@ MAS ：<a href="https://itunes.apple.com/cn/app/mweb-pro-markdown-writing/id9541
 </ul>
 
 <p>以上的东西搞完后，就试试做一个简单的游戏看看能否做出来。在过程中如果有任何知识问题随时补。</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[MWeb 1.7.3 版已提交！兼容 EL Capitan、外部模式增强、Bug 修正等]]></title>
-    <link href="http://coderforart.com/mweb-1.7.3-release.html"/>
-    <updated>2015-09-23T09:06:05+08:00</updated>
-    <id>http://coderforart.com/mweb-1.7.3-release.html</id>
-    <content type="html"><![CDATA[
-<p>这一版主要是修正 EL Capitan 的问题。</p>
-
-<p>由于很快就中秋了，到时候博主要回乡下过中秋，加上 EL Capitan GM 版非常稳定好用，所以就不等 EL Capitan 正式版发布，先提交到 MAS 了。顺便介绍文章也一并发了，也不等审核通过了。</p>
-
-<p>主要改进有：</p>
-
-<span id="more"></span><!-- more -->
-
-<ul>
-<li>兼容 EL Capitan</li>
-<li>外部模式增加是否列出子文件夹的文档（Load Sub Folder Documents）的选项。右键引入的文件夹 - Edit - Load Sub Folder Documents。注意：这个功能 Lite 版是没有的。</li>
-<li>图片居左、居中、居右的语法现在可以不用写宽度了，比如说：<code>![-c](pic.jpg)</code> 就会为居中了。居左：<code>-l</code>，居右：<code>-r</code>。</li>
-<li>字数统计和大纲视图增加快捷键：CMD + 8</li>
-<li>文档设置增加快捷键：CMD + 7</li>
-<li>发布到 Wordpress 的 Custom URL 栏会按标题自动转换为合适的 URL</li>
-<li>修正打开 Preferences 的 Bug。</li>
-</ul>
-
-<p>另外 mweb-medium-like 主题有修正文章列表的 CSS 问题和增加文章可填入 SEO。都放到 github 了：<a href="https://github.com/oulvhai/mweb-medium-like">https://github.com/oulvhai/mweb-medium-like</a>，要更新的话，除了覆盖原来的主题外，还要在 <code>Preferences</code> - <code>Extension</code> 中，选择网站，选择 <code>Document Extension</code>，导入 <code>extensions/Document Extension.json</code> 这个档。如图是填入 SEO 的位置效果图。</p>
-
-<p><img src="media/14429703655514/14429725606405.jpg" alt="w859"/></p>
-
-<p>最后附上外部模式列出子文件夹的文档的效果图</p>
-
-<p><img src="media/14429703655514/14429712479034.jpg" alt="w1226"/></p>
 
 ]]></content>
   </entry>
