@@ -142,7 +142,7 @@
 
 <p>第一个问题是 SVG 问题，Mermaid 是用 SVG 而不是 Canvas 画图的，不能直接像 Canvas 这样转。解决这个问题花了不少时间，但是其实很简单。只需要在增加 inline 样式后，再用以下代码就可以搞定了：</p>
 
-<pre class="line-numbers"><code class="language-javascript">$(&#39;svg&#39;).each(function(){
+<pre><code class="language-javascript">$(&#39;svg&#39;).each(function(){
     var ele = $(this);
     var w = ele.width();
     var serializer = new XMLSerializer();
@@ -155,7 +155,7 @@
 
 <p>另外就是，印象笔记的 enml 格式实际上是一个 xml，但是一般的 html 都不会严格按照 xml 格式，这就要转化为 xml 格式，测试下来，我发现以下代码的方法非常合适而且好用，代码如下：</p>
 
-<pre class="line-numbers"><code class="language-javascript">var html = $(&#39;body&#39;).html();
+<pre><code class="language-javascript">var html = $(&#39;body&#39;).html();
 var bodyStyle = $(&#39;body&#39;).attr(&#39;style&#39;); if(!bodyStyle) bodyStyle = &#39;&#39;;
 var htmlString = &quot;&lt;div style=\&quot;&quot; + bodyStyle + &quot;\&quot;&gt;&quot; + html + &quot;&lt;/div&gt;&quot;;
 var doc = new DOMParser().parseFromString(htmlString, &#39;text/html&#39;);

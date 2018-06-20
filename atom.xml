@@ -4,7 +4,7 @@
   <title><![CDATA[Coder For Art]]></title>
   <link href="http://coderforart.com/atom.xml" rel="self"/>
   <link href="http://coderforart.com/"/>
-  <updated>2018-06-13T19:28:47+08:00</updated>
+  <updated>2018-06-21T00:15:14+08:00</updated>
   <id>http://coderforart.com/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -18,7 +18,28 @@
     <updated>2018-06-14T15:49:36+08:00</updated>
     <id>http://coderforart.com/mweb3-release-note.html</id>
     <content type="html"><![CDATA[
-<h2 id="toc_0">6/14 MWeb 3.0.2 版更新</h2>
+<h2 id="toc_0">6/20 MWeb 3.0.3 版更新</h2>
+
+<ul>
+<li><strong>重要：</strong>这个版本改成非 Sandbox 的了，非 Sandbox 的 App 有很多好处。目前 3.0.1 和 3.0.2 版本的都要重新设置一下文档库位置，这个按说明设置就好。</li>
+<li>外部模式支持拖拽文件夹来引入，也支持拖拽文件夹到 App 图标来引入。</li>
+<li>增加 mweb-default 样式，目前发布到印象笔记只会用这个样式。修正发布到印象笔记无代码高亮问题。</li>
+<li>修正文档大纲显示不全的问题。</li>
+<li>文档库的键盘导航改为：
+
+<ol>
+<li>如果焦点在列表： 左键可以切到 目录， 右键可以切到 编辑器；如果选中第一个，再按 向上键，会切到搜索框；如果选中的是最后一个，再按向下键，会切到 搜索框。</li>
+<li>如果焦点在目录：右键可以切到列表；Tab 键可以切到 搜索框。</li>
+<li>如果焦点在搜索框： 向下键可以切到列表并选中第一个，向上键可以切到列表并选中最后一个。</li>
+</ol></li>
+<li>url Scheme： mweblib://15287918142886 这种外部连接点击后可以调用 MWeb 打开了。</li>
+<li>其它 Bug 修正。</li>
+<li>预告：下个更新会有纯中文版。</li>
+</ul>
+
+<p>PS: 如果你无法更新，或者更新有问题，请直接下载：<a href="https://dl.devmate.com/com.coderforart.MWeb3/MWeb3-ProMarkdownwriting,notetakingandstaticbloggeneratorApp.dmg">下载网址</a></p>
+
+<h2 id="toc_1">6/14 MWeb 3.0.2 版更新</h2>
 
 <ul>
 <li>修正表格编辑问题</li>
@@ -28,8 +49,6 @@
 <li>Markdown 解析库有更新</li>
 <li>修正选择文本并按 Tab 键缩进时闪退的 bug。</li>
 </ul>
-
-<p>PS: 如果你无法更新，或者更新有问题，请直接下载：<a href="https://dl.devmate.com/com.coderforart.MWeb3/MWeb3-ProMarkdownwriting,notetakingandstaticbloggeneratorApp.dmg">下载网址</a></p>
 
 ]]></content>
   </entry>
@@ -306,7 +325,7 @@ iOS 版：<a href="https://itunes.apple.com/cn/app/mweb-pro-markdown-writing/id1
 
 <h2 id="toc_0">1. 在 Mac 中把文档库保存到 iCloud Drive 或 Dropbox</h2>
 
-<p>首先打开 MWeb for Mac 的偏好设置 - 通用设置（可以用 <code>CMD + ,</code> 快捷），在通用设置 - 文档库位置中，点 “另存为...” 按钮，把文档库位置移到 iCloud Drive 的 MWeb 所属的文件夹内或者是 Dropbox 中，如下图我是放到 iCloud Drive 中的 MWeb 文件夹内的 mweb<u>documents</u>library 文件夹中。如果在你的 Mac 的 iCloud Drive 中看不到 MWeb 所属的文件夹，可以试试在 iOS 的 系统设置 - iCloud - 关闭 iCloud Drive，然后再重新打开。如果等一段时间后还是无法看到，建议使用 Dropbox。😄 </p>
+<p>首先打开 MWeb for Mac 的偏好设置 - 通用设置（可以用 <code>CMD + ,</code> 快捷），在通用设置 - 文档库位置中，点 “另存为...” 按钮，把文档库位置移到 iCloud Drive 的 MWeb 所属的文件夹内或者是 Dropbox 中，如下图我是放到 iCloud Drive 中的 MWeb 文件夹内的 mweb_documents_library 文件夹中。如果在你的 Mac 的 iCloud Drive 中看不到 MWeb 所属的文件夹，可以试试在 iOS 的 系统设置 - iCloud - 关闭 iCloud Drive，然后再重新打开。如果等一段时间后还是无法看到，建议使用 Dropbox。😄 </p>
 
 <p><img src="media/14964028153927/14980099891001.jpg" alt="" style="width:470px;"/></p>
 
@@ -316,7 +335,7 @@ iOS 版：<a href="https://itunes.apple.com/cn/app/mweb-pro-markdown-writing/id1
 
 <h2 id="toc_1">2. 在 iOS 中配置 MWeb for Mac 文档库的位置</h2>
 
-<p>当你按上面的步骤，把文档库另存到 iCloud Drive 或 Dropbox 中并确认文档库同步完成后，打开 iOS 版 MWeb 的设置页面，转到 “网盘文档、文档库” 这里，然后先启用 MWeb for Mac 的文档库，再点 “设置文档库位置” 按钮，并选择你上一步另存到的位置，我这里的 iCloud Drive 的 mweb<u>documents</u>library 文件夹中，如下图。</p>
+<p>当你按上面的步骤，把文档库另存到 iCloud Drive 或 Dropbox 中并确认文档库同步完成后，打开 iOS 版 MWeb 的设置页面，转到 “网盘文档、文档库” 这里，然后先启用 MWeb for Mac 的文档库，再点 “设置文档库位置” 按钮，并选择你上一步另存到的位置，我这里的 iCloud Drive 的 mweb_documents_library 文件夹中，如下图。</p>
 
 <p><img src="media/14964028153927/choose-library-in-iOS.png" alt="choose-library-in-iOS" style="width:780px;"/></p>
 
@@ -357,7 +376,7 @@ iOS 版：<a href="https://itunes.apple.com/cn/app/mweb-pro-markdown-writing/id1
 <h2 id="toc_1">文档库功能使用说明</h2>
 
 <p>之前的版本由于只支持 iCloud Drive，所以不支持自行设置文档库位置。2.3.x 版的文档库已支持自行设置文档库的位置。<br/>
-使用文档库功能，首先要在 MWeb for Mac 的偏好设置 - 通用设置 - 文档库位置 中，用 “另存为” 按钮，把文档库另存到 iCloud Drive、Dropbox 或 WebDAV 的某个文件夹中。当文档库同步好之后，再回到 iOS 的设置页面，选择你之前另存到的网盘的文件夹。如下图，我在 Mac 中是把文档库保存到 Dropbox 下的 mweb<u>documents</u>library 文件夹中，所以我下图选择的是一样的位置。要注意的是，如果你选择另存到 iCloud Drive，必须另存到 iCloud Drive 下 MWeb 所属的文件夹内才可以，不然在 iOS 中会选取不到文档库。</p>
+使用文档库功能，首先要在 MWeb for Mac 的偏好设置 - 通用设置 - 文档库位置 中，用 “另存为” 按钮，把文档库另存到 iCloud Drive、Dropbox 或 WebDAV 的某个文件夹中。当文档库同步好之后，再回到 iOS 的设置页面，选择你之前另存到的网盘的文件夹。如下图，我在 Mac 中是把文档库保存到 Dropbox 下的 mweb_documents_library 文件夹中，所以我下图选择的是一样的位置。要注意的是，如果你选择另存到 iCloud Drive，必须另存到 iCloud Drive 下 MWeb 所属的文件夹内才可以，不然在 iOS 中会选取不到文档库。</p>
 
 <p><img src="media/14963837146939/mweb-ios-231-3.png" alt="mweb-ios-231-3" style="width:770px;"/></p>
 
@@ -482,7 +501,7 @@ iOS 版：<a href="https://itunes.apple.com/cn/app/mweb-pro-markdown-writing/id1
 
 <p>Markdown 语法：</p>
 
-<pre class="line-numbers"><code class="language-text">- [ ] 任务一 未做任务 `- + 空格 + [ ]`
+<pre><code class="language-text">- [ ] 任务一 未做任务 `- + 空格 + [ ]`
 - [x] 任务二 已做任务 `- + 空格 + [x]`
 </code></pre>
 
@@ -503,7 +522,7 @@ iOS 版：<a href="https://itunes.apple.com/cn/app/mweb-pro-markdown-writing/id1
 
 <p>Markdown 语法：</p>
 
-<pre class="line-numbers"><code class="language-text">```js
+<pre><code class="language-text">```js
 function fancyAlert(arg) {
   if(arg) {
     $.facebox({div:&#39;#foo&#39;})
@@ -515,7 +534,7 @@ function fancyAlert(arg) {
 
 <p>效果如下：</p>
 
-<pre class="line-numbers"><code class="language-javascript">function fancyAlert(arg) {
+<pre><code class="language-javascript">function fancyAlert(arg) {
     if(arg) {
         $.facebox({div:&#39;#foo&#39;})
     }
@@ -529,7 +548,7 @@ function fancyAlert(arg) {
 
 <p>Markdown 语法：</p>
 
-<pre class="line-numbers"><code class="language-text">第一格表头 | 第二格表头
+<pre><code class="language-text">第一格表头 | 第二格表头
 --------- | -------------
 内容单元格 第一列第一格 | 内容单元格第二列第一格
 内容单元格 第一列第二格 多加文字 | 内容单元格第二列第二格
@@ -561,7 +580,7 @@ function fancyAlert(arg) {
 
 <p>Markdown 语法：</p>
 
-<pre class="line-numbers"><code class="language-text">加删除线像这样用： ~~删除这些~~
+<pre><code class="language-text">加删除线像这样用： ~~删除这些~~
 </code></pre>
 
 <p>效果如下：</p>
@@ -572,7 +591,7 @@ function fancyAlert(arg) {
 
 <p>Markdown 语法：</p>
 
-<pre class="line-numbers"><code class="language-text">块级公式：
+<pre><code class="language-text">块级公式：
 $$  x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
 
 \\[ \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} =
@@ -597,7 +616,7 @@ $$  x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
 
 <p>Markdown 语法：</p>
 
-<pre class="line-numbers"><code class="language-text">这是一个脚注：[^sample_footnote]
+<pre><code class="language-text">这是一个脚注：[^sample_footnote]
 </code></pre>
 
 <p>效果如下：</p>
@@ -616,7 +635,7 @@ $$  x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
 
 <p>Markdown 语法：</p>
 
-<pre class="line-numbers"><code class="language-text">[TOC]
+<pre><code class="language-text">[TOC]
 </code></pre>
 
 <p>效果如下：</p>
@@ -753,7 +772,7 @@ MWeb 中编辑文档时插入的图片，会复制一份到文档相关的位置
 
 <p>暂时就介绍到这里了，感兴趣的朋友可以申请参加 TestFlight 测试，想参加的话，请按以下格式把你的信息发到 coderforart[at]gmail 即可。</p>
 
-<pre class="line-numbers"><code class="language-text">你的姓,你的名字,你的 Email
+<pre><code class="language-text">你的姓,你的名字,你的 Email
 </code></pre>
 
 <p>比如说小明的 Email 为 <a href="mailto:xxx@xm.com">xxx@xm.com</a> ，发送的样式为： 小,明,<a href="mailto:xxx@xm.com">xxx@xm.com</a><br/>
@@ -782,7 +801,7 @@ iPad 版未测试，请不要用在 iPad 上。</p>
 
 <p>第一个问题是 SVG 问题，Mermaid 是用 SVG 而不是 Canvas 画图的，不能直接像 Canvas 这样转。解决这个问题花了不少时间，但是其实很简单。只需要在增加 inline 样式后，再用以下代码就可以搞定了：</p>
 
-<pre class="line-numbers"><code class="language-javascript">$(&#39;svg&#39;).each(function(){
+<pre><code class="language-javascript">$(&#39;svg&#39;).each(function(){
     var ele = $(this);
     var w = ele.width();
     var serializer = new XMLSerializer();
@@ -795,7 +814,7 @@ iPad 版未测试，请不要用在 iPad 上。</p>
 
 <p>另外就是，印象笔记的 enml 格式实际上是一个 xml，但是一般的 html 都不会严格按照 xml 格式，这就要转化为 xml 格式，测试下来，我发现以下代码的方法非常合适而且好用，代码如下：</p>
 
-<pre class="line-numbers"><code class="language-javascript">var html = $(&#39;body&#39;).html();
+<pre><code class="language-javascript">var html = $(&#39;body&#39;).html();
 var bodyStyle = $(&#39;body&#39;).attr(&#39;style&#39;); if(!bodyStyle) bodyStyle = &#39;&#39;;
 var htmlString = &quot;&lt;div style=\&quot;&quot; + bodyStyle + &quot;\&quot;&gt;&quot; + html + &quot;&lt;/div&gt;&quot;;
 var doc = new DOMParser().parseFromString(htmlString, &#39;text/html&#39;);
@@ -864,7 +883,7 @@ MAS ：<a href="https://itunes.apple.com/cn/app/mweb-pro-markdown-writing/id9541
 
 <p><img src="media/14689205256580/14689339545256.jpg" alt="" style="width:833px;"/></p>
 
-<p><strong>注意：</strong> jquery<u>plantuml 中的 encode64.js 是我从 jquery</u>plantuml.js 中提取的部分，由于 MWeb 的预览是本地预览，而  jquery_plantuml.js 中用到了 Worker，本地是不支持的，所以我就用了另外的写法。在 MWeb 中用边写边预览的方式用这个主题时，如果图表量很大的话，可能会比较卡。这里说一下 MWeb 2.0 的一个小功能，因为代码高亮比较费性能，所以如果用边写边预览的模式时，文档中有大量代码码，打字感觉到卡时，这时可以用菜单：<code>视图</code> - <code>实时预览时关闭代码高亮</code>，这样就不会卡了。</p>
+<p><strong>注意：</strong> jquery_plantuml 中的 encode64.js 是我从 jquery_plantuml.js 中提取的部分，由于 MWeb 的预览是本地预览，而  jquery_plantuml.js 中用到了 Worker，本地是不支持的，所以我就用了另外的写法。在 MWeb 中用边写边预览的方式用这个主题时，如果图表量很大的话，可能会比较卡。这里说一下 MWeb 2.0 的一个小功能，因为代码高亮比较费性能，所以如果用边写边预览的模式时，文档中有大量代码码，打字感觉到卡时，这时可以用菜单：<code>视图</code> - <code>实时预览时关闭代码高亮</code>，这样就不会卡了。</p>
 
 <h2 id="toc_1">实现原理</h2>
 
@@ -879,7 +898,7 @@ MAS ：<a href="https://itunes.apple.com/cn/app/mweb-pro-markdown-writing/id9541
 <p><strong>7/20 Update：</strong>经 @chang 提醒，PlantUML 改成 SVG 样式，这样对中文支持更好。<br/>
 <strong>7/21 Update：</strong>经 <a href="http://weibo.com/n/FTD_Liaoer">@FTD_Liaoer</a> 提醒，ECharts 在导出 PDF 和生成图片时会有问题。这个问题可以在 option 中加 <code>animation:false</code> 解决，大概为：</p>
 
-<pre class="line-numbers"><code class="language-javascript">option = {
+<pre><code class="language-javascript">option = {
     animation:false,
     title : {
     ....
@@ -936,12 +955,12 @@ MAS ：<a href="https://itunes.apple.com/cn/app/mweb-pro-markdown-writing/id9541
 
 <p>这次更新，自带的静态网站模板有所改动，如果你改动过自带的模板，生成时跟预料的不一样，可以在 </p>
 
-<pre class="line-numbers"><code class="language-text">~/Library/Containers/com.coderforart.MWeb/Data/Documents/MWeb/LocalData/SiteThemes
+<pre><code class="language-text">~/Library/Containers/com.coderforart.MWeb/Data/Documents/MWeb/LocalData/SiteThemes
 </code></pre>
 
 <p>这个位置找到你原来的模板，并替换到新位置即可。第一次打开后会自动升级文档库为 2.0 版，旧的文档库并没有删除，你可以在 </p>
 
-<pre class="line-numbers"><code class="language-text">~/Library/Containers/com.coderforart.MWeb/Data/Documents/MWeb/LocalData/
+<pre><code class="language-text">~/Library/Containers/com.coderforart.MWeb/Data/Documents/MWeb/LocalData/
 </code></pre>
 
 <p>处找到。</p>
@@ -1075,7 +1094,7 @@ MAS ：<a href="https://itunes.apple.com/cn/app/mweb-pro-markdown-writing/id9541
 <li>中文版不能发布到 Medium 问题</li>
 <li>导出 PDF 选择带目录时某些情况下目录结构不对问题</li>
 <li>特殊文档不能正确解析问题（CPU 100%，切换文档不能显示）</li>
-<li>像 wow<u>great</u>stuff 这种写法不会解析成下划线了</li>
+<li>像 wow_great_stuff 这种写法不会解析成下划线了</li>
 <li>其它一些 Bug 修正和细节改进。</li>
 </ul>
 
@@ -1149,7 +1168,7 @@ MAS ：<a href="https://itunes.apple.com/cn/app/mweb-pro-markdown-writing/id9541
 <code>POST File Name</code>：这个是指表单的图片上传的名称<br/>
 <code>图片 URL 路径</code>：是指返回的 JSON 结果中的图片网址值的路径。比如说 sm.ms 说明文档中，返回的 JSON 结果如下：</p>
 
-<pre class="line-numbers"><code class="language-javascript">{
+<pre><code class="language-javascript">{
     &quot;code&quot;: &quot;success&quot;,
     &quot;data&quot;: {
         width: 1157,

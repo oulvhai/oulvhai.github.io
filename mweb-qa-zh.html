@@ -143,7 +143,7 @@
 <p><code>CMD+,</code>打开设置面板，切到Themes，勾选Enable Math选项。<br/>
 如果要让网站支持MathJax，最简单的方法是在网站分类设置中的：Site other:的文本框中填入以下代码：</p>
 
-<pre class="line-numbers"><code class="language-javascript">&lt;script type=&quot;text/x-mathjax-config&quot;&gt;
+<pre><code class="language-javascript">&lt;script type=&quot;text/x-mathjax-config&quot;&gt;
   MathJax.Hub.Config({tex2jax: {inlineMath: [[&#39;$&#39;,&#39;$&#39;], [&#39;\\(&#39;,&#39;\\)&#39;]]}});
 &lt;/script&gt;
 &lt;script type=&quot;text/javascript&quot;
@@ -159,14 +159,14 @@
 
 <p>请打开终端工具(Terminal),并执行以下命令：</p>
 
-<pre class="line-numbers"><code class="language-text">ln -s ~/Library/Containers/com.coderforart.MWeb/Data/Documents/MWeb ~/Dropbox/MWebBackup
+<pre><code class="language-text">ln -s ~/Library/Containers/com.coderforart.MWeb/Data/Documents/MWeb ~/Dropbox/MWebBackup
 </code></pre>
 
 <h2 id="toc_3">如何为文章增加Disqus或者多说等评论？</h2>
 
 <p>Disqus的话，去<a href="https://disqus.com/">https://disqus.com/</a>，然后会得到像以下这样的代码，点到主题模板的post.html页的合适的位置即可。</p>
 
-<pre class="line-numbers"><code class="language-javascript">&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
+<pre><code class="language-javascript">&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
 &lt;script type=&quot;text/javascript&quot;&gt;
    var disqus_shortname = &#39;这个会不一样&#39;; 
 

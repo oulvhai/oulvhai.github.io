@@ -152,7 +152,7 @@ Markdown 的語法有個主要的目的：用來作為一種網路內容的<em>�
 
 <p>Markdown 语法：</p>
 
-<pre class="line-numbers"><code class="language-text"># 第一级标题 `&lt;h1&gt;` 
+<pre><code class="language-text"># 第一级标题 `&lt;h1&gt;` 
 ## 第二级标题 `&lt;h2&gt;` 
 ###### 第六级标题 `&lt;h6&gt;` 
 </code></pre>
@@ -169,7 +169,7 @@ Markdown 的語法有個主要的目的：用來作為一種網路內容的<em>�
 
 <p>Markdown 语法：</p>
 
-<pre class="line-numbers"><code class="language-text">*这些文字会生成`&lt;em&gt;`*
+<pre><code class="language-text">*这些文字会生成`&lt;em&gt;`*
 _这些文字会生成`&lt;u&gt;`_
 
 **这些文字会生成`&lt;strong&gt;`**
@@ -196,7 +196,7 @@ __这些文字会生成`&lt;strong&gt;`__
 
 <p>Markdown 语法：</p>
 
-<pre class="line-numbers"><code class="language-text">* 项目一 无序列表 `* + 空格键`
+<pre><code class="language-text">* 项目一 无序列表 `* + 空格键`
 * 项目二
     * 项目二的子项目一 无序列表 `TAB + * + 空格键`
     * 项目二的子项目二
@@ -219,7 +219,7 @@ __这些文字会生成`&lt;strong&gt;`__
 
 <p>Markdown 语法：</p>
 
-<pre class="line-numbers"><code class="language-text">1. 项目一 有序列表 `数字 + . + 空格键`
+<pre><code class="language-text">1. 项目一 有序列表 `数字 + . + 空格键`
 2. 项目二 
 3. 项目三
     1. 项目三的子项目一 有序列表 `TAB + 数字 + . + 空格键`
@@ -243,7 +243,7 @@ __这些文字会生成`&lt;strong&gt;`__
 
 <p>Markdown 语法：</p>
 
-<pre class="line-numbers"><code class="language-text">- [ ] 任务一 未做任务 `- + 空格 + [ ]`
+<pre><code class="language-text">- [ ] 任务一 未做任务 `- + 空格 + [ ]`
 - [x] 任务二 已做任务 `- + 空格 + [x]`
 </code></pre>
 
@@ -260,7 +260,7 @@ __这些文字会生成`&lt;strong&gt;`__
 
 <p>Markdown 语法：</p>
 
-<pre class="line-numbers"><code class="language-text">![GitHub set up](http://zh.mweb.im/asset/img/set-up-git.gif)
+<pre><code class="language-text">![GitHub set up](http://zh.mweb.im/asset/img/set-up-git.gif)
 格式: ![Alt Text](url)
 </code></pre>
 
@@ -278,7 +278,7 @@ __这些文字会生成`&lt;strong&gt;`__
 
 <p>Markdown 语法：</p>
 
-<pre class="line-numbers"><code class="language-text">email &lt;example@example.com&gt;
+<pre><code class="language-text">email &lt;example@example.com&gt;
 [GitHub](http://github.com)
 自动生成连接  &lt;http://www.github.com/&gt;
 </code></pre>
@@ -295,7 +295,7 @@ __这些文字会生成`&lt;strong&gt;`__
 
 <p>Markdown 语法：</p>
 
-<pre class="line-numbers"><code class="language-text">某某说:
+<pre><code class="language-text">某某说:
 &gt; 第一行引用
 &gt; 第二行费用文字
 </code></pre>
@@ -314,7 +314,7 @@ __这些文字会生成`&lt;strong&gt;`__
 
 <p>Markdown 语法：</p>
 
-<pre class="line-numbers"><code class="language-text">像这样即可：`&lt;addr&gt;` `code`
+<pre><code class="language-text">像这样即可：`&lt;addr&gt;` `code`
 </code></pre>
 
 <p><code>CMD + K</code> 可插入Markdown语法。<br/>
@@ -326,7 +326,7 @@ __这些文字会生成`&lt;strong&gt;`__
 
 <p>Markdown 语法：</p>
 
-<pre class="line-numbers"><code class="language-text">```js
+<pre><code class="language-text">```js
 function fancyAlert(arg) {
   if(arg) {
     $.facebox({div:&#39;#foo&#39;})
@@ -339,7 +339,7 @@ function fancyAlert(arg) {
 <p><code>CMD + Shift + K</code> 可插入Markdown语法。<br/>
 效果如下：</p>
 
-<pre class="line-numbers"><code class="language-javascript">function fancyAlert(arg) {
+<pre><code class="language-javascript">function fancyAlert(arg) {
     if(arg) {
         $.facebox({div:&#39;#foo&#39;})
     }
@@ -351,7 +351,7 @@ function fancyAlert(arg) {
 
 <p>Markdown 语法：</p>
 
-<pre class="line-numbers"><code class="language-text">```sequence
+<pre><code class="language-text">```sequence
 张三-&gt;李四: 嘿，小四儿, 写博客了没?
 Note right of 李四: 李四愣了一下，说：
 李四--&gt;张三: 忙得吐血，哪有时间写。
@@ -371,12 +371,12 @@ cond(no)-&gt;op
 
 <p>效果如下（ <code>Preferences</code> - <code>Themes</code> - <code>Enable sequence &amp; flow chart</code> 才会看到效果 ）：</p>
 
-<pre class="line-numbers"><code class="language-sequence">张三-&gt;李四: 嘿，小四儿, 写博客了没?
+<pre><code class="language-sequence">张三-&gt;李四: 嘿，小四儿, 写博客了没?
 Note right of 李四: 李四愣了一下，说：
 李四--&gt;张三: 忙得吐血，哪有时间写。
 </code></pre>
 
-<pre class="line-numbers"><code class="language-flow">st=&gt;start: 开始
+<pre><code class="language-flow">st=&gt;start: 开始
 e=&gt;end: 结束
 op=&gt;operation: 我的操作
 cond=&gt;condition: 确认？
@@ -392,7 +392,7 @@ cond(no)-&gt;op
 
 <p>Markdown 语法：</p>
 
-<pre class="line-numbers"><code class="language-text">第一格表头 | 第二格表头
+<pre><code class="language-text">第一格表头 | 第二格表头
 --------- | -------------
 内容单元格 第一列第一格 | 内容单元格第二列第一格
 内容单元格 第一列第二格 多加文字 | 内容单元格第二列第二格
@@ -424,7 +424,7 @@ cond(no)-&gt;op
 
 <p>Markdown 语法：</p>
 
-<pre class="line-numbers"><code class="language-text">加删除线像这样用： ~~删除这些~~
+<pre><code class="language-text">加删除线像这样用： ~~删除这些~~
 </code></pre>
 
 <p>效果如下：</p>
@@ -435,7 +435,7 @@ cond(no)-&gt;op
 
 <p>以下三种方式都可以生成分隔线：</p>
 
-<pre class="line-numbers"><code class="language-text">***
+<pre><code class="language-text">***
 
 *****
 
@@ -454,7 +454,7 @@ cond(no)-&gt;op
 
 <p>Markdown 语法：</p>
 
-<pre class="line-numbers"><code class="language-text">块级公式：
+<pre><code class="language-text">块级公式：
 $$  x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
 
 \\[ \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} =
@@ -479,7 +479,7 @@ $$  x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
 
 <p>Markdown 语法：</p>
 
-<pre class="line-numbers"><code class="language-text">这是一个脚注：[^sample_footnote]
+<pre><code class="language-text">这是一个脚注：[^sample_footnote]
 </code></pre>
 
 <p>效果如下：</p>
@@ -499,7 +499,7 @@ $$  x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
 
 <p>Markdown 语法：</p>
 
-<pre class="line-numbers"><code class="language-text">[TOC]
+<pre><code class="language-text">[TOC]
 </code></pre>
 
 <p>效果如下：</p>
