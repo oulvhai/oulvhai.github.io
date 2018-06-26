@@ -4,7 +4,7 @@
   <title><![CDATA[Coder For Art]]></title>
   <link href="http://coderforart.com/atom.xml" rel="self"/>
   <link href="http://coderforart.com/"/>
-  <updated>2018-06-22T11:52:46+08:00</updated>
+  <updated>2018-06-22T16:51:32+08:00</updated>
   <id>http://coderforart.com/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -18,7 +18,28 @@
     <updated>2018-06-14T15:49:36+08:00</updated>
     <id>http://coderforart.com/mweb3-release-note.html</id>
     <content type="html"><![CDATA[
-<h2 id="toc_0">6/22 MWeb 3.0.5 版更新</h2>
+<h2 id="toc_0">6/26 3.0.7 版</h2>
+
+<ul>
+<li>改进 About MWeb，增加贡献和感谢列表。</li>
+<li>增加导入和导出发布服务。2.x 版 非 MAS 也已经发布并有这个功能了，所以说现在你可以把 2.x 版的发布服务导出，然后在 3.x 版中导入了。</li>
+<li>修正 Markdown 解析任务列表时的 Bug。</li>
+<li>修正工具栏按钮功能不匹配问题。</li>
+</ul>
+
+<p>PS: 如果你无法更新，或者更新有问题，请直接下载：<a href="https://dl.devmate.com/com.coderforart.MWeb3/MWeb3-ProMarkdownwriting,notetakingandstaticbloggeneratorApp.dmg">下载网址</a></p>
+
+<h2 id="toc_1">6/26 3.0.6 版</h2>
+
+<ul>
+<li>编辑器内显示图片的性能大幅提高，快速滑动不会卡了。</li>
+<li>在 Retina 屏中用系统截屏再粘贴图片时，自动加上 Retina 宽度设定。</li>
+<li>修正切换 tab 时焦点不在编辑器上的问题。</li>
+<li>全键盘操作改进：增加焦点切换至搜索框（外部模式切换到目录树）快捷键：CMD + Shift + F，只记这一个，基本就可以在 “目录树 - 列表 - 编辑器” 这三处随意切换了。因为，在搜索框按 “Tab 键” 可以切换到编辑器，按 “向左键” 可以切换到目录树，按 “向下键” 可以切换到列表。加上焦点在列表可以按 “向左键” 切换到目录树，“向右键” 切换到编辑器；焦点在目录树可以按 “向右键” 切换到列表。另外切换 Tabs 可以使用 Ctrl + Tab 键，CMD + Shift + [或] 键，切换 Tab 时焦点会切到编辑器。还有快速搜索是 CMD + O。</li>
+<li>全部中文化完成！</li>
+</ul>
+
+<h2 id="toc_2">6/22 MWeb 3.0.5 版更新</h2>
 
 <ul>
 <li>新界面，由 @Funpee ：<a href="https://armgod.com">https://armgod.com</a>  设计，感谢 @Funpee ！！</li>
@@ -26,9 +47,7 @@
 <li>解析库有更新，支持如图的写法的正确解析，感谢 @randomatom ：<a href="https://github.com/randomatom/hoedown-mweb">https://github.com/randomatom/hoedown-mweb</a>。<img src="media/15289625761658/15296574326235.jpg" alt="" style="width:380px;"/></li>
 </ul>
 
-<p>PS: 如果你无法更新，或者更新有问题，请直接下载：<a href="https://dl.devmate.com/com.coderforart.MWeb3/MWeb3-ProMarkdownwriting,notetakingandstaticbloggeneratorApp.dmg">下载网址</a></p>
-
-<h2 id="toc_1">6/20 MWeb 3.0.3 版更新</h2>
+<h2 id="toc_3">6/20 MWeb 3.0.3 版更新</h2>
 
 <ul>
 <li><strong>重要：</strong>这个版本改成非 Sandbox 的了，非 Sandbox 的 App 有很多好处。目前 3.0.1 和 3.0.2 版本的都要重新设置一下文档库位置，这个按说明设置就好。</li>
@@ -46,7 +65,7 @@
 <li>预告：下个更新会有纯中文版。</li>
 </ul>
 
-<h2 id="toc_2">6/14 MWeb 3.0.2 版更新</h2>
+<h2 id="toc_4">6/14 MWeb 3.0.2 版更新</h2>
 
 <ul>
 <li>修正表格编辑问题</li>
@@ -408,7 +427,7 @@ iOS 版：<a href="https://itunes.apple.com/cn/app/mweb-pro-markdown-writing/id1
     <updated>2017-01-05T10:01:15+08:00</updated>
     <id>http://coderforart.com/introducing-mweb-for-ios.html</id>
     <content type="html"><![CDATA[
-<p>MWeb 首先是一个 Markdown 编辑器，所使用的 Markdown 语法为 Github Flavored Markdown，简称 GFM，这是一种最为广泛使用的 Markdown 语法之一。如果你不知道什么是 Markdown，建议看一下 <a href="markdown-syntax-guide-full-version-zh.html">Markdown 語法官方說明繁體中文版</a>。GFM 除了支持官方的语法外，还扩展了不少语法，具体情况会在本文后说明。这里先介绍一下 iOS 版 MWeb 的基本使用方法。</p>
+<p>MWeb 首先是一个 Markdown 编辑器，所使用的 Markdown 语法为 Github Flavored Markdown，简称 GFM，这是一种最为广泛使用的 Markdown 语法之一。如果你不知道什么是 Markdown，建议看一下 <a href="markdown-syntax-guide-full-version-zh.html">Markdown 語法官方說明繁體中文版</a>。GFM 除了支持官方的语法外，还扩展了不少语法，具体情况会在本文后说明。这里先介绍一下 iOS 版 MWeb 的基本使用方法。 </p>
 
 <span id="more"></span><!-- more -->
 
