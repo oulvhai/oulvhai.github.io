@@ -4,7 +4,7 @@
   <title><![CDATA[Coder For Art]]></title>
   <link href="http://coderforart.com/atom.xml" rel="self"/>
   <link href="http://coderforart.com/"/>
-  <updated>2018-06-28T09:14:40+08:00</updated>
+  <updated>2018-06-28T09:14:55+08:00</updated>
   <id>http://coderforart.com/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -18,7 +18,18 @@
     <updated>2018-06-14T15:49:36+08:00</updated>
     <id>http://coderforart.com/mweb3-release-note.html</id>
     <content type="html"><![CDATA[
-<h2 id="toc_0">6/27 3.0.8 ～ 3.0.9 版</h2>
+<h2 id="toc_0">MWeb 3.0 版升级及 2.x 版处理说明：</h2>
+
+<p>由于昨天把 Mac App Store 的 MWeb 改名为：MWeb （旧版），然后蛮多人问，现在关于 MWeb 3.0 版的升级情况统一说明如下：</p>
+
+<ol>
+<li>新版首发半价 60 块，无意外的话，将在下周，具体日期还是没定（PS:我以为今天能定的）。</li>
+<li>老用户也需要重新购买，都是统一半价，这个是由于 Mac App Store 对这种情况不友好。非 Mac App Store 购买的用户，如果是在 2018年5月1号 之后购买的，可以直接发邮件联系我更换为 3.0 版，注意是<strong>更换</strong>。</li>
+<li>MWeb 更新无法避免，买断的软件也不可能会免费更新，加上 MWeb 不贵，为了维持，必然要重新收费的。订阅方式的确是更合适，但是 MWeb 转成订阅至少会 10 块每月，所以新版用买断其实更优惠一点。反正不管怎么样，MWeb 3.0 版是买断制已成定局。</li>
+<li>关于 MWeb 2.x 版，维护一般是兼容新系统。计划是会做简单维护，但是如果某天遇到兼容新系统难度太大，会直接下架。也就是说，现在还是可以购买旧版本的，而且一直可以。价格同样不变。</li>
+</ol>
+
+<h2 id="toc_1">6/27 3.0.8 ～ 3.0.9 版</h2>
 
 <ul>
 <li>改进外部模式搜索，比如说按文件名搜索不到，全文搜索不到等。文档库的搜索也有改进。 PS: 搜索功能其实是还没做好的，但是，正式版上了之后再改进了。顺便说一句，编辑器改进也是，总之先上正式版。</li>
@@ -28,7 +39,7 @@
 
 <p>PS: 如果你无法更新，或者更新有问题，请直接下载：<a href="https://dl.devmate.com/com.coderforart.MWeb3/MWeb3-ProMarkdownwriting,notetakingandstaticbloggeneratorApp.dmg">下载网址</a></p>
 
-<h2 id="toc_1">6/26 3.0.7 版</h2>
+<h2 id="toc_2">6/26 3.0.7 版</h2>
 
 <ul>
 <li>改进 About MWeb，增加贡献和感谢列表。</li>
@@ -37,7 +48,7 @@
 <li>修正工具栏按钮功能不匹配问题。</li>
 </ul>
 
-<h2 id="toc_2">6/26 3.0.6 版</h2>
+<h2 id="toc_3">6/26 3.0.6 版</h2>
 
 <ul>
 <li>编辑器内显示图片的性能大幅提高，快速滑动不会卡了。</li>
@@ -47,7 +58,7 @@
 <li>全部中文化完成！</li>
 </ul>
 
-<h2 id="toc_3">6/22 MWeb 3.0.5 版更新</h2>
+<h2 id="toc_4">6/22 MWeb 3.0.5 版更新</h2>
 
 <ul>
 <li>新界面，由 @Funpee ：<a href="https://armgod.com">https://armgod.com</a>  设计，感谢 @Funpee ！！</li>
@@ -55,7 +66,7 @@
 <li>解析库有更新，支持如图的写法的正确解析，感谢 @randomatom ：<a href="https://github.com/randomatom/hoedown-mweb">https://github.com/randomatom/hoedown-mweb</a>。<img src="media/15289625761658/15296574326235.jpg" alt="" style="width:380px;"/></li>
 </ul>
 
-<h2 id="toc_4">6/20 MWeb 3.0.3 版更新</h2>
+<h2 id="toc_5">6/20 MWeb 3.0.3 版更新</h2>
 
 <ul>
 <li><strong>重要：</strong>这个版本改成非 Sandbox 的了，非 Sandbox 的 App 有很多好处。目前 3.0.1 和 3.0.2 版本的都要重新设置一下文档库位置，这个按说明设置就好。</li>
@@ -73,7 +84,7 @@
 <li>预告：下个更新会有纯中文版。</li>
 </ul>
 
-<h2 id="toc_5">6/14 MWeb 3.0.2 版更新</h2>
+<h2 id="toc_6">6/14 MWeb 3.0.2 版更新</h2>
 
 <ul>
 <li>修正表格编辑问题</li>
