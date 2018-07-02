@@ -4,33 +4,13 @@
   <title><![CDATA[Coder For Art]]></title>
   <link href="http://coderforart.com/atom.xml" rel="self"/>
   <link href="http://coderforart.com/"/>
-  <updated>2018-07-02T13:23:29+08:00</updated>
+  <updated>2018-07-02T17:26:41+08:00</updated>
   <id>http://coderforart.com/</id>
   <author>
     <name><![CDATA[]]></name>
     
   </author>
   <generator uri="http://www.mweb.im/">MWeb</generator>
-  
-  <entry>
-    <title type="html"><![CDATA[测试文章修改]]></title>
-    <link href="http://coderforart.com/15305088241681.html"/>
-    <updated>2018-07-02T13:20:24+08:00</updated>
-    <id>http://coderforart.com/15305088241681.html</id>
-    <content type="html"><![CDATA[
-<p>修改内容</p>
-
-<p>内容<br/>
-<img src="media/15305088241681/test2.jpg" alt="test2"/></p>
-
-<span id="more"></span><!-- more -->
-
-<p>内容22</p>
-
-<p><img src="media/15305088241681/test2.jpg" alt="test2"/></p>
-
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[MWeb 3.0 测试版更新情况]]></title>
@@ -1342,6 +1322,46 @@ MAS ：<a href="https://itunes.apple.com/cn/app/mweb-pro-markdown-writing/id9541
 <li>修正 CMD + F 打开查找面板后，不能用 CMD + Option + F 切换为替换面板的问题。</li>
 <li>修正一些文档导出为 PDF 闪退问题。</li>
 </ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[准备入坑 C++ 和 UE4，花了两天时间研究了一下，写些大概方向]]></title>
+    <link href="http://coderforart.com/14431468507612.html"/>
+    <updated>2015-09-25T10:07:30+08:00</updated>
+    <id>http://coderforart.com/14431468507612.html</id>
+    <content type="html"><![CDATA[
+<h2 id="toc_0">C++ 学习</h2>
+
+<p>C++ 博大精深，用途广泛，虽然现在新语言不断，好语言不少，但是 C++ 的王者地位就从来没有被撼动过，然后我认为，计算机软件方面的东西，并不是越新越好，而是历史越久的，现在也还在广泛使用的东西，通常都是成熟稳定的，都是经得起现实世界考验的！</p>
+
+<p>C++ 太难学了，但是如果只针对特定领域，只学习跟特定领域相关的，我想应该会容易入门一点。我学习 C++ 的目的是为了用 UE4，所以就只针对 UE4 做优化学习了。</p>
+
+<span id="more"></span><!-- more -->
+
+<p>首先是 UE4 所使用的 C++ 版本。从 <a href="https://docs.unrealengine.com/latest/INT/Programming/Development/CodingStandard/index.html">Epic Games Coding Standard</a> 了解到 UE4 是使用 C++ 11。然后由于我已经有了一些编程经验，所以一开始只要了解 C++ 11 的语法就好。</p>
+
+<p>学习 C++，我认为只要参考皓子哥的<a href="http://coolshell.cn/articles/4119.html">如何学好 C++ 语言</a>就可以了。可以看到开始学的建议的书是《C++ Primer》和《C++程序设计语言》。两本书我其实都了解了一下，我觉得《C++ Primer》比较合适我。然后了解了一下这本书的中文翻译的作者，普遍觉得第三版（潘爱民翻译）比较不错，然后就决定用这一版了。唯一的问题是第三过于古老，所以是没有 C++ 11 的新特性的介绍的。然而这关系不大，再找一本书看即可。调查得知，Wikipedia 的 C++ 11 词条已经差不多可以了，网址为：<a href="https://zh.wikipedia.org/wiki/C%2B%2B11">https://zh.wikipedia.org/wiki/C%2B%2B11</a>。如果还要深入一点，也找到一本：《深入理解C++11:C++11新特性解析与应用》。另外皓子哥也写了一篇 C++ 11 的博文，值得一读：<a href="http://coolshell.cn/articles/5265.html">http://coolshell.cn/articles/5265.html</a></p>
+
+<p>其实我昨天和前天就是看上面所说的资料，对 C++ 11 的语法已经有了模糊的了解了。我觉得下一步应该是简单粗爆：直接撸代码！我是决定直接看 UE4 的文档开撸的。为什么不对着书里的代码撸一遍，然后才是 UE4 的文档？主要是觉得既然是针对特定领域，那么越早上手越好，然后当再回过来再看以上的资料时，就很有目的性了。如果觉得困难，或者有些语法不大清晰，再查回来就好。这样做应该也会有趣些。</p>
+
+<p><strong>注：</strong>在找资料的过程中，发现一本好书，然后竟然是公开的，大讚作者！！也在这里记一下，书名为：《C++并发编程》，作者：陈晓伟，gitbook 地址：<a href="https://www.gitbook.com/book/chenxiaowei/cpp_concurrency_in_action/details">https://www.gitbook.com/book/chenxiaowei/cpp_concurrency_in_action/details</a>。</p>
+
+<h2 id="toc_1">UE4 文档</h2>
+
+<p>这个我大概研究了一下，我发现现在的 UE4 文档真是越来越完善了。我之前也有写过两篇文章，所以是了解过的。然后这次入坑，其实也是为了继续之前的想法。这里就随便写一下大概，当是笔记就好。</p>
+
+<p>UE4 C++ 部分的文档全部都在：<a href="https://docs.unrealengine.com/latest/INT/Programming/index.html">https://docs.unrealengine.com/latest/INT/Programming/index.html</a> 这里了。我的计划是：</p>
+
+<ul>
+<li>看 <a href="https://docs.unrealengine.com/latest/INT/GettingStarted/Terminology/index.html">https://docs.unrealengine.com/latest/INT/GettingStarted/Terminology/index.html</a> 了解个大概。</li>
+<li>看并做完 <a href="https://docs.unrealengine.com/latest/INT/Engine/QuickStart/index.html">https://docs.unrealengine.com/latest/INT/Engine/QuickStart/index.html</a> 了解一下 Unreal Editor 的大概使用。</li>
+<li>看 <a href="https://docs.unrealengine.com/latest/INT/Programming/Introduction/index.html">https://docs.unrealengine.com/latest/INT/Programming/Introduction/index.html</a> 了解 C++ 在 UE4 的情况。再看上面所说的 Epic Game Coding Standard。</li>
+<li>按顺序看完和撸完：<a href="https://docs.unrealengine.com/latest/INT/Programming/Tutorials/index.html">https://docs.unrealengine.com/latest/INT/Programming/Tutorials/index.html</a> 里的 Beginner 和 Intermediate。</li>
+</ul>
+
+<p>以上的东西搞完后，就试试做一个简单的游戏看看能否做出来。在过程中如果有任何知识问题随时补。</p>
 
 ]]></content>
   </entry>
