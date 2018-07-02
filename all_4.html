@@ -112,6 +112,82 @@
 		<div class="markdown-body home-categories">
 		
 			<div class="article">
+                <a class="clearlink" href="mweb1.3-release-zh.html">
+                
+                  <h1>MWeb 1.3 版发布！半价促销，新官网，新图标，增加任务列表，顺序图和流程图，优化MathJax、PDF导出等</h1>
+                  <div class="a-content">
+                      
+                      <div class="a-content-text">
+                        
+                        	<h2 id="toc_0">新官网</h2>
+
+<p>中文：<a href="http://zh.mweb.im">http://zh.mweb.im</a><br/>
+英文：<a href="http://www.mweb.im">http://www.mweb.im</a></p>
+
+<h2 id="toc_1">新增：</h2>
+
+<ul>
+<li>增加 <code>CMD+Shift+V</code> 粘贴 PNG 格式图片</li>
+<li>增加sequence图和flow图支持</li>
+<li>增加任务列表（Task lists）支持，列表后再加<code>[ ]</code>或<code>[x]</code></li>
+<li>增加把分类或文档导出为Markdown</li>
+<li>现在可以直接在设置中填入Disqus、多说等评论代码了，请参考：<a href="http://zh.mweb.im/mweb-comment-and-share-help.html">http://zh.mweb.im/mweb-comment-and-share-help.html</a></li>
+<li>优化MathJax支持并把MathJax库放本地以提高预览速度</li>
+<li>优化PDF导出</li>
+</ul>
+
+<h2 id="toc_2">修正</h2>
+
+<ul>
+<li>图标小调整，应该顺眼了点。</li>
+<li>修正了一些BUG和闪退问题</li>
+</ul>
+
+<h2 id="toc_3">1.3 以下的朋友请注意：</h2>
+
+<p>这次更新中，greyshade、octopress 博客主题模板有变动！由于增加了可设置评论和分类、勾选支持 MathJax 和顺序图、流程图，所以增加了以下三个变量：</p>
+
+<pre class="line-numbers"><code class="language-text">{{ commentAndShareCode }}
+{{ seqAndFlowChartSupport }}
+{{ mathJaxSupport }}
+</code></pre>
+
+<p>greyshade、octopress 博客主题模板有更新到的页为 footer.html 和 post.html。</p>
+
+<p>footer.html 会在 <code>{{ siteOther }}</code> 上增加 <code>{{ seqAndFlowChartSupport }}</code> 和 <code>{{ mathJaxSupport }}</code>。</p>
+
+<p>可参考这个网址：<a href="https://github.com/oulvhai/MWeb-Themes/blob/master/greyshade/footer.html">https://github.com/oulvhai/MWeb-Themes/blob/master/greyshade/footer.html</a></p>
+
+<p>post.html 则在要放评论和分享的地方增加 <code>{{ commentAndShareCode }}</code>。</p>
+
+<p>可参考这个网址：<a href="https://github.com/oulvhai/MWeb-Themes/blob/master/greyshade/post.html">https://github.com/oulvhai/MWeb-Themes/blob/master/greyshade/post.html</a></p>
+
+                        
+                      </div>
+                  </div>
+                </a>
+                <div class="read-more clearfix">
+                  <div class="more-left left">
+                  
+                    <span class="date">2015/3/28</span>
+                    <span>posted in&nbsp;</span> 
+          				  
+          					    <span class="posted-in"><a href='MWeb-cat.html'>MWeb</a></span>
+          				   
+                  </div>
+                  <div class="more-right right">
+                  <span class="comments">
+                      
+                        <a href="http://coderforart.com/mweb1.3-release-zh.html#disqus_thread">comments</a>
+                      
+
+                       
+                  </span>
+                  </div>
+                </div>
+              </div><!-- article -->
+        
+			<div class="article">
                 <a class="clearlink" href="markdown-syntax-guide-suggest-version.html">
                 
                   <h1>Markdown syntax guide and writing on MWeb</h1>
@@ -408,60 +484,6 @@ ourcoders:<a href="http://ourcoders.com/thread/show/5653/">http://ourcoders.com/
                 </div>
               </div><!-- article -->
         
-			<div class="article">
-                <a class="clearlink" href="mweb-v1.2-release.html">
-                
-                  <h1>MWeb 1.2 release</h1>
-                  <div class="a-content">
-                      
-                      <div class="a-content-text">
-                        
-                        	<h2 id="toc_0">New feature</h2>
-
-<ul>
-<li>Add auto insert list and blockquote prefix: Preferences --&gt; General --&gt; Auto insert list and blockquote prefix</li>
-<li>In Editor share: Copy as image,Save as image,Save as PDF etc... now change to HTML style.</li>
-<li>Add HTML or PDF export suport for documents. You can selected documents --&gt; Right Mouse Button Click(RMB) --&gt; Export as HTML or PDF.</li>
-<li>Add HTML or PDF export suport for category. You can selected category --&gt; RMB --&gt; Export as HTML or PDF.</li>
-<li>Add new preview css: octopress,greyshade.</li>
-<li>Add drag &amp; drop to sort documents. RMB parent category --&gt; Edit --&gt; set Order by to Custom --&gt; you can drag &amp; drop to sort</li>
-<li>Add drag &amp; drop to sort categories.</li>
-</ul>
-
-<h2 id="toc_1">Fixed</h2>
-
-<ul>
-<li>Build site crash some time</li>
-<li>Preview site not work some time</li>
-</ul>
-
-                        
-                      </div>
-                  </div>
-                </a>
-                <div class="read-more clearfix">
-                  <div class="more-left left">
-                  
-                    <span class="date">2015/2/8</span>
-                    <span>posted in&nbsp;</span> 
-          				  
-          					    <span class="posted-in"><a href='MWeb-cat.html'>MWeb</a></span>
-          				  
-          					    <span class="posted-in"><a href='Introduction.html'>Introduction</a></span>
-          				   
-                  </div>
-                  <div class="more-right right">
-                  <span class="comments">
-                      
-                        <a href="http://coderforart.com/mweb-v1.2-release.html#disqus_thread">comments</a>
-                      
-
-                       
-                  </span>
-                  </div>
-                </div>
-              </div><!-- article -->
-        
               
 
 
@@ -555,6 +577,12 @@ ourcoders:<a href="http://ourcoders.com/thread/show/5653/">http://ourcoders.com/
 	      
 		      
 			      <li class="post">
+			        <a href="15305035372038.html">新文章</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
 			        <a href="mweb3-release-note.html">MWeb 3.0 测试版更新情况</a>
 			      </li>
 		     
@@ -574,12 +602,6 @@ ourcoders:<a href="http://ourcoders.com/thread/show/5653/">http://ourcoders.com/
 		      
 			      <li class="post">
 			        <a href="mweb-ios-2.3.2-release.html">MWeb for iOS 2.3.2 发布！</a>
-			      </li>
-		     
-		  
-		      
-			      <li class="post">
-			        <a href="how_to_use_images_in_mweb.html">MWeb Mac 版和 iOS 版图片及图床使用完全指南</a>
 			      </li>
 		     
 		  

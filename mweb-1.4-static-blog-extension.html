@@ -179,7 +179,7 @@
 
 <p>首先增加播放器，我随便找了一下，看到 <a href="http://www.schillmania.com/projects/soundmanager2/demo/bar-ui/">http://www.schillmania.com/projects/soundmanager2/demo/bar-ui/</a> 这个播放器不错，所以就决定用这个了，首先复制 greyshade 模板，并重命名为：podcast-greyshade。把 soundmanager 的相关代码放到 asset/soundmanager 中。然后打开 header.html 文档，在上面增加 soundmanager2 播放器的代码，大概是这样：</p>
 
-<pre><code class="language-javascript">&lt;link href=&quot;asset/soundmanager/css/bar-ui.css&quot; media=&quot;screen, projection&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
+<pre class="line-numbers"><code class="language-javascript">&lt;link href=&quot;asset/soundmanager/css/bar-ui.css&quot; media=&quot;screen, projection&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
 &lt;script type=&quot;text/javascript&quot; src=&quot;asset/soundmanager/soundmanager2-jsmin.js&quot;&gt;&lt;/script&gt;
 &lt;script type=&quot;text/javascript&quot; src=&quot;asset/soundmanager/bar-ui.js&quot;&gt;&lt;/script&gt;
 &lt;script&gt;
@@ -194,7 +194,7 @@ soundManager.setup({
 
 <p>因为我需要在文章列表和单篇文章都支持播放功能，所以为 category.html 和 post.html 增加播放支持。代码大概如下（我只选关键代码）。</p>
 
-<pre><code class="language-markup">{% if post.ext_enclosureURL.length %}
+<pre class="line-numbers"><code class="language-markup">{% if post.ext_enclosureURL.length %}
     &lt;div class=&quot;sm2-bar-ui compact full-width&quot;&gt;
         ....
         &lt;div class=&quot;sm2-inline-duration&quot;&gt;{{ post.ext_itunes_duration }}&lt;/div&gt;
@@ -218,7 +218,7 @@ MWeb 中 <code>Site Setting</code> 设置的所有值会传到所有模板页，
 
 <p>如上面，我增加了两个子分类：文章和播客。然后我设置了播客子分类的 <code>HTML File Name</code> 为 <code>podcast</code>。然后我在网站模板中也增加了名为 <code>podcast-atom.xml</code> 的模板，下面是这个模板的内容。</p>
 
-<pre><code class="language-markup">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+<pre class="line-numbers"><code class="language-markup">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;rss xmlns:itunes=&quot;http://www.itunes.com/dtds/podcast-1.0.dtd&quot; version=&quot;2.0&quot;&gt;
     &lt;channel&gt;
         &lt;title&gt;&lt;![CDATA[{{ siteName }}]]&gt;&lt;/title&gt;
@@ -407,6 +407,12 @@ MWeb 中 <code>Site Setting</code> 设置的所有值会传到所有模板页，
 	      
 		      
 			      <li class="post">
+			        <a href="15305035372038.html">新文章</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
 			        <a href="mweb3-release-note.html">MWeb 3.0 测试版更新情况</a>
 			      </li>
 		     
@@ -426,12 +432,6 @@ MWeb 中 <code>Site Setting</code> 设置的所有值会传到所有模板页，
 		      
 			      <li class="post">
 			        <a href="mweb-ios-2.3.2-release.html">MWeb for iOS 2.3.2 发布！</a>
-			      </li>
-		     
-		  
-		      
-			      <li class="post">
-			        <a href="how_to_use_images_in_mweb.html">MWeb Mac 版和 iOS 版图片及图床使用完全指南</a>
 			      </li>
 		     
 		  

@@ -148,7 +148,7 @@ Set the document&#39;s HTML file name is <code>index</code>, and make it <code>I
 
 <h4 id="toc_4">the post object detail:</h4>
 
-<pre><code class="language-text">@{@&quot;title&quot;: titleClear,
+<pre class="line-numbers"><code class="language-text">@{@&quot;title&quot;: titleClear,
 @&quot;desContent&quot;:desContentHtml,
 @&quot;desContentTextOnly&quot;:desContentTextOnly,
 @&quot;content&quot;:fullContentHtml,
@@ -163,13 +163,13 @@ Set the document&#39;s HTML file name is <code>index</code>, and make it <code>I
 
 <p><code>cats</code> --&gt; array, the object detail:</p>
 
-<pre><code class="language-text">@{@&quot;name&quot;:tArtCat.name,
+<pre class="line-numbers"><code class="language-text">@{@&quot;name&quot;:tArtCat.name,
 @&quot;url&quot;:catEncodeDocName}
 </code></pre>
 
 <h3 id="toc_5">All page variables:</h3>
 
-<pre><code class="language-text">@{
+<pre class="line-numbers"><code class="language-text">@{
  @&quot;siteURL&quot;:siteURL,
  @&quot;siteDomain&quot;:siteDomain,
  @&quot;siteName&quot;: siteName,
@@ -195,7 +195,7 @@ Set the document&#39;s HTML file name is <code>index</code>, and make it <code>I
 
 <p><code>posts</code> --&gt; array, the object detail:</p>
 
-<pre><code class="language-text">@{@&quot;year&quot;:setDateYearString,
+<pre class="line-numbers"><code class="language-text">@{@&quot;year&quot;:setDateYearString,
 @&quot;title&quot;:[self clearArticleTitleMark:art.title],
 @&quot;url&quot;:[self createPostURLByArticles:art  isEscapes:YES],
 @&quot;cats&quot;:catsArr,
@@ -210,7 +210,7 @@ Set the document&#39;s HTML file name is <code>index</code>, and make it <code>I
 
 <p><code>cats</code> --&gt; array, the object detail:</p>
 
-<pre><code class="language-text">@{@&quot;name&quot;:tArtCat.name,
+<pre class="line-numbers"><code class="language-text">@{@&quot;name&quot;:tArtCat.name,
 @&quot;url&quot;:catEncodeDocName}
 </code></pre>
 
@@ -253,7 +253,7 @@ Set the document&#39;s HTML file name is <code>index</code>, and make it <code>I
 <p><code>post</code> --&gt; object, the object detail is <code>the post object detail</code><br/>
 <code>postNav</code> --&gt; Dictionary, the object detail:</p>
 
-<pre><code class="language-text">dic[@&quot;next&quot;] = @{@&quot;title&quot;: nextArt.title, @&quot;url&quot;:urlVar};
+<pre class="line-numbers"><code class="language-text">dic[@&quot;next&quot;] = @{@&quot;title&quot;: nextArt.title, @&quot;url&quot;:urlVar};
 dic[@&quot;prev&quot;] = @{@&quot;title&quot;: prevArt.title, @&quot;url&quot;:urlVar};
 </code></pre>
 
