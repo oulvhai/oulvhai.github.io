@@ -4,7 +4,7 @@
   <title><![CDATA[Coder For Art]]></title>
   <link href="http://coderforart.com/atom.xml" rel="self"/>
   <link href="http://coderforart.com/"/>
-  <updated>2018-07-02T13:22:39+08:00</updated>
+  <updated>2018-07-02T13:23:29+08:00</updated>
   <id>http://coderforart.com/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -13,11 +13,13 @@
   <generator uri="http://www.mweb.im/">MWeb</generator>
   
   <entry>
-    <title type="html"><![CDATA[测试文章]]></title>
+    <title type="html"><![CDATA[测试文章修改]]></title>
     <link href="http://coderforart.com/15305088241681.html"/>
     <updated>2018-07-02T13:20:24+08:00</updated>
     <id>http://coderforart.com/15305088241681.html</id>
     <content type="html"><![CDATA[
+<p>修改内容</p>
+
 <p>内容<br/>
 <img src="media/15305088241681/test2.jpg" alt="test2"/></p>
 
