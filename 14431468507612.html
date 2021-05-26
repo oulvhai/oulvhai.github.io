@@ -1,0 +1,619 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+    
+  准备入坑 C++ 和 UE4，花了两天时间研究了一下，写些大概方向 - Coder For Art
+  
+  </title>
+  
+  
+  <link href="atom.xml" rel="alternate" title="Coder For Art" type="application/atom+xml">
+    <link rel="stylesheet" href="asset/css/foundation.min.css" />
+    <link rel="stylesheet" href="asset/css/docs.css" />
+    <script src="asset/js/vendor/modernizr.js"></script>
+    <script src="asset/js/vendor/jquery.js"></script>
+ 
+<script type="text/javascript">
+  function before_search(){
+    var searchVal = 'site:coderforart.com ' + document.getElementById('search_input').value;
+    document.getElementById('search_q').value = searchVal;
+    return true;
+  }
+</script>
+  </head>
+  <body class="antialiased hide-extras">
+    
+    <div class="marketing off-canvas-wrap" data-offcanvas>
+      <div class="inner-wrap">
+
+
+<nav class="top-bar docs-bar hide-for-small" data-topbar>
+
+
+  <section class="top-bar-section">
+  <div class="row">
+      <div style="position: relative;width:100%;"><div style="position: absolute; width:100%;">
+        <ul id="main-menu" class="left">
+        
+        <li id="menu_item_index"><a target="_self" href="index.html">Home</a></li>
+        
+        <li id="menu_item_archives"><a target="_self" href="archives.html">Archives</a></li>
+        
+        <li id="menu_item_about"><a target="_self" href="about.html">About</a></li>
+        
+        </ul>
+
+        <ul class="right" id="search-wrap">
+          <li>
+<form target="_blank" onsubmit="return before_search();" action="https://google.com/search" method="get">
+    <input type="hidden" id="search_q" name="q" value="" />
+    <input tabindex="1" type="search" id="search_input"  placeholder="Search"/>
+</form>
+</li>
+          </ul>
+      </div></div>
+  </div>
+  </section>
+
+</nav>
+
+        <nav class="tab-bar show-for-small">
+  <a href="javascript:void(0)" class="left-off-canvas-toggle menu-icon">
+    <span> &nbsp; Coder For Art</span>
+  </a>
+</nav>
+
+<aside class="left-off-canvas-menu">
+      <ul class="off-canvas-list">
+        
+        <li><a target="_self" href="index.html">Home</a></li>
+        
+        <li><a target="_self" href="archives.html">Archives</a></li>
+        
+        <li><a target="_self" href="about.html">About</a></li>
+        
+
+    <li><label>Categories</label></li>
+
+        
+            <li><a href="Cocoa.html">Cocoa</a></li>
+        
+            <li><a href="CG%20Artist.html">CG Artist</a></li>
+        
+            <li><a href="Game%20Engine.html">Game Engine</a></li>
+        
+            <li><a href="MWeb-cat.html">MWeb</a></li>
+        
+            <li><a href="PinPhoto-cat.html">PinPhoto</a></li>
+         
+
+      </ul>
+    </aside>
+
+<a class="exit-off-canvas" href="#"></a>
+
+
+        <section id="main-content" role="main" class="scroll-container">
+        
+       
+
+ <script type="text/javascript">
+  $(function(){
+    $('#menu_item_index').addClass('is_active');
+  });
+</script>
+<div class="row">
+  <div class="large-8 medium-8 columns">
+      <div class="markdown-body article-wrap">
+       <div class="article">
+          
+              <div class="f-img"><img src="media/14431468507612/14431509029859.jpg" /></div>
+          
+          <h1>准备入坑 C++ 和 UE4，花了两天时间研究了一下，写些大概方向</h1>
+     
+        <div class="read-more clearfix">
+          <span class="date">2015/09/25</span>
+
+          <span>posted in&nbsp;</span> 
+          
+              <span class="posted-in"><a href='Game%20Engine.html'>Game Engine</a></span>
+           
+         
+          <span class="comments">
+            
+              <a href="http://coderforart.com/14431468507612.html#disqus_thread">comments</a>
+            
+
+            
+          </span>
+
+        </div>
+      </div><!-- article -->
+
+      <div class="article-content">
+      <h2 id="toc_0">C++ 学习</h2>
+
+<p>C++ 博大精深，用途广泛，虽然现在新语言不断，好语言不少，但是 C++ 的王者地位就从来没有被撼动过，然后我认为，计算机软件方面的东西，并不是越新越好，而是历史越久的，现在也还在广泛使用的东西，通常都是成熟稳定的，都是经得起现实世界考验的！</p>
+
+<p>C++ 太难学了，但是如果只针对特定领域，只学习跟特定领域相关的，我想应该会容易入门一点。我学习 C++ 的目的是为了用 UE4，所以就只针对 UE4 做优化学习了。</p>
+
+<span id="more"></span><!-- more -->
+
+<p>首先是 UE4 所使用的 C++ 版本。从 <a href="https://docs.unrealengine.com/latest/INT/Programming/Development/CodingStandard/index.html">Epic Games Coding Standard</a> 了解到 UE4 是使用 C++ 11。然后由于我已经有了一些编程经验，所以一开始只要了解 C++ 11 的语法就好。</p>
+
+<p>学习 C++，我认为只要参考皓子哥的<a href="http://coolshell.cn/articles/4119.html">如何学好 C++ 语言</a>就可以了。可以看到开始学的建议的书是《C++ Primer》和《C++程序设计语言》。两本书我其实都了解了一下，我觉得《C++ Primer》比较合适我。然后了解了一下这本书的中文翻译的作者，普遍觉得第三版（潘爱民翻译）比较不错，然后就决定用这一版了。唯一的问题是第三过于古老，所以是没有 C++ 11 的新特性的介绍的。然而这关系不大，再找一本书看即可。调查得知，Wikipedia 的 C++ 11 词条已经差不多可以了，网址为：<a href="https://zh.wikipedia.org/wiki/C%2B%2B11">https://zh.wikipedia.org/wiki/C%2B%2B11</a>。如果还要深入一点，也找到一本：《深入理解C++11:C++11新特性解析与应用》。另外皓子哥也写了一篇 C++ 11 的博文，值得一读：<a href="http://coolshell.cn/articles/5265.html">http://coolshell.cn/articles/5265.html</a></p>
+
+<p>其实我昨天和前天就是看上面所说的资料，对 C++ 11 的语法已经有了模糊的了解了。我觉得下一步应该是简单粗爆：直接撸代码！我是决定直接看 UE4 的文档开撸的。为什么不对着书里的代码撸一遍，然后才是 UE4 的文档？主要是觉得既然是针对特定领域，那么越早上手越好，然后当再回过来再看以上的资料时，就很有目的性了。如果觉得困难，或者有些语法不大清晰，再查回来就好。这样做应该也会有趣些。</p>
+
+<p><strong>注：</strong>在找资料的过程中，发现一本好书，然后竟然是公开的，大讚作者！！也在这里记一下，书名为：《C++并发编程》，作者：陈晓伟，gitbook 地址：<a href="https://www.gitbook.com/book/chenxiaowei/cpp_concurrency_in_action/details">https://www.gitbook.com/book/chenxiaowei/cpp_concurrency_in_action/details</a>。</p>
+
+<h2 id="toc_1">UE4 文档</h2>
+
+<p>这个我大概研究了一下，我发现现在的 UE4 文档真是越来越完善了。我之前也有写过两篇文章，所以是了解过的。然后这次入坑，其实也是为了继续之前的想法。这里就随便写一下大概，当是笔记就好。</p>
+
+<p>UE4 C++ 部分的文档全部都在：<a href="https://docs.unrealengine.com/latest/INT/Programming/index.html">https://docs.unrealengine.com/latest/INT/Programming/index.html</a> 这里了。我的计划是：</p>
+
+<ul>
+<li>看 <a href="https://docs.unrealengine.com/latest/INT/GettingStarted/Terminology/index.html">https://docs.unrealengine.com/latest/INT/GettingStarted/Terminology/index.html</a> 了解个大概。</li>
+<li>看并做完 <a href="https://docs.unrealengine.com/latest/INT/Engine/QuickStart/index.html">https://docs.unrealengine.com/latest/INT/Engine/QuickStart/index.html</a> 了解一下 Unreal Editor 的大概使用。</li>
+<li>看 <a href="https://docs.unrealengine.com/latest/INT/Programming/Introduction/index.html">https://docs.unrealengine.com/latest/INT/Programming/Introduction/index.html</a> 了解 C++ 在 UE4 的情况。再看上面所说的 Epic Game Coding Standard。</li>
+<li>按顺序看完和撸完：<a href="https://docs.unrealengine.com/latest/INT/Programming/Tutorials/index.html">https://docs.unrealengine.com/latest/INT/Programming/Tutorials/index.html</a> 里的 Beginner 和 Intermediate。</li>
+</ul>
+
+<p>以上的东西搞完后，就试试做一个简单的游戏看看能否做出来。在过程中如果有任何知识问题随时补。</p>
+
+
+    
+
+      </div>
+
+      <div class="row">
+        <div class="large-6 columns">
+        <p class="text-left" style="padding:15px 0px;">
+      
+          <a href="mweb-1.8.1-release.html" 
+          title="Previous Post: MWeb 1.8 发布！LaTex 语法高亮和编辑器内预览、EL Capitan 优化、Bug 修正等">&laquo; MWeb 1.8 发布！LaTex 语法高亮和编辑器内预览、EL Capitan 优化、Bug 修正等</a>
+      
+        </p>
+        </div>
+        <div class="large-6 columns">
+      <p class="text-right" style="padding:15px 0px;">
+      
+          <a  href="mweb-1.7.3-release.html" 
+          title="Next Post: MWeb 1.7.3 版已提交！兼容 EL Capitan、外部模式增强、Bug 修正等">MWeb 1.7.3 版已提交！兼容 EL Capitan、外部模式增强、Bug 修正等 &raquo;</a>
+      
+      </p>
+        </div>
+      </div>
+      <div class="comments-wrap">
+        <div class="share-comments">
+          
+
+          
+            <div id="disqus_thread"></div>
+          
+
+          
+        </div>
+      </div>
+    </div><!-- article-wrap -->
+  </div><!-- large 8 -->
+
+
+
+
+ <div class="large-4 medium-4 columns">
+  <div class="hide-for-small">
+    <div id="sidebar" class="sidebar">
+          <div id="site-info" class="site-info">
+            
+                <div class="site-a-logo"><img src="media/14195170907881/icon.jpg" /></div>
+            
+                <h1>Coder For Art</h1>
+                <div class="site-des">I'm an indie Mac/iOS developer, also want to be a CG artist</div>
+                <div class="social">
+
+
+
+
+
+
+
+<a target="_blank" class="weibo" href="http://weibo.com/oulvhai" title="weibo">Weibo</a>
+<a target="_blank" class="twitter" target="_blank" href="http://twitter.com/oulvhai" title="Twitter">Twitter</a>
+<a target="_blank" class="github" target="_blank" href="https://github.com/oulvhai" title="GitHub">GitHub</a>
+
+  <a target="_blank" class="rss" href="atom.xml" title="RSS">RSS</a>
+                
+              	 </div>
+          	</div>
+
+               
+             <div id="site-categories" class="side-item ">
+                <div class="side-header">
+                  <h2>Important</h2>
+                </div>
+                <div class="side-content">
+                  <div style="color:#ff0000; text-align:center; padding:8px;" class="bg-info site_notice">
+                    <a style="color:#ff0000;"  onclick="ga('send','event','global_notice_click');" href="https://zh.mweb.im/mweb3x-release-note.html" >MWeb 3 发布后 2.x 版维护说明及两者之间的功能对比！</a>
+                  </div>
+                </div>
+            </div>
+    
+
+              <div id="site-categories" class="side-item ">
+                <div class="side-header">
+                  <h2>Categories</h2>
+                </div>
+                <div class="side-content">
+
+      	<p class="cat-list">
+        
+            <a href="Cocoa.html"><strong>Cocoa</strong></a>
+        
+            <a href="CG%20Artist.html"><strong>CG Artist</strong></a>
+        
+            <a href="Game%20Engine.html"><strong>Game Engine</strong></a>
+        
+            <a href="MWeb-cat.html"><strong>MWeb</strong></a>
+        
+            <a href="PinPhoto-cat.html"><strong>PinPhoto</strong></a>
+         
+        </p>
+
+
+                </div>
+              </div>
+
+              <div id="site-categories" class="side-item">
+                <div class="side-header">
+                  <h2>Recent Posts</h2>
+                </div>
+                <div class="side-content">
+                <ul class="posts-list">
+	      
+		      
+			      <li class="post">
+			        <a href="mweb3-release-note.html">MWeb 3.0 测试版更新情况</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="mweb3.0-on-test.html">MWeb 3.0 测试版终于发布了！欢迎大家试用！</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="15113184658847.html">MWeb for Mac, iOS 黑五半价促销一周，写个大概介绍。</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="mweb-ios-2.3.2-release.html">MWeb for iOS 2.3.2 发布！</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="how_to_use_images_in_mweb.html">MWeb Mac 版和 iOS 版图片及图床使用完全指南</a>
+			      </li>
+		     
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		   
+		  		</ul>
+                </div>
+              </div>
+        </div><!-- sidebar -->
+      </div><!-- hide for small -->
+</div><!-- large 4 -->
+
+</div><!-- row -->
+
+ <div class="page-bottom clearfix">
+  <div class="row">
+   <p class="copyright">Copyright &copy; 2015
+Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a>,&nbsp; 
+Theme used <a target="_blank" href="http://github.com">GitHub CSS</a>.</p>
+  </div>
+</div>
+
+        </section>
+      </div>
+    </div>
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+figure{margin: 0;padding: 0;}
+figcaption{text-align:center;}
+
+/* PrismJS 1.14.0
+ http://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript */
+/**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+    color: black;
+    background: none;
+    text-shadow: 0 1px white;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+    
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+    text-shadow: none;
+    background:#b3d4fc;
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+    text-shadow: none;
+    background: #b3d4fc;
+}
+
+@media print {
+    code[class*="language-"],
+    pre[class*="language-"] {
+        text-shadow: none;
+    }
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+    padding: 1em;
+    margin: .5em 0;
+    overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+    background: #F7F7F7;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+    padding: .1em;
+    border-radius: .3em;
+    white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+    color: slategray;
+}
+
+.token.punctuation {
+    color: #999;
+}
+
+.namespace {
+    opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+    color: #905;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+    color: #690;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+    color: #9a6e3a;
+    background: hsla(0, 0%, 100%, .5);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+    color: #07a;
+}
+
+.token.function,
+.token.class-name {
+    color: #DD4A68;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+    color: #e90;
+}
+
+.token.important,
+.token.bold {
+    font-weight: bold;
+}
+.token.italic {
+    font-style: italic;
+}
+
+.token.entity {
+    cursor: help;
+}
+
+
+pre[class*="language-"].line-numbers {
+    position: relative;
+    padding-left: 3.8em;
+    counter-reset: linenumber;
+}
+
+pre[class*="language-"].line-numbers > code {
+    position: relative;
+    white-space: inherit;
+}
+
+.line-numbers .line-numbers-rows {
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    font-size: 100%;
+    left: -3.8em;
+    width: 3em; /* works for line-numbers below 1000 lines */
+    letter-spacing: -1px;
+    border-right: 1px solid #999;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+    .line-numbers-rows > span {
+        pointer-events: none;
+        display: block;
+        counter-increment: linenumber;
+    }
+
+        .line-numbers-rows > span:before {
+            content: counter(linenumber);
+            color: #999;
+            display: block;
+            padding-right: 0.8em;
+            text-align: right;
+        }
+
+</style>
+
+
+<script type="text/javascript">
+    var disqus_shortname = 'coderforart'; 
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+
+<script type="text/javascript">
+var disqus_shortname = 'coderforart'; 
+
+(function () {
+var s = document.createElement('script'); s.async = true;
+s.type = 'text/javascript';
+s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>
+  
+    
+
+    <script src="asset/js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+      function fixSidebarHeight(){
+        var w1 = $('.markdown-body').height();
+          var w2 = $('#sidebar').height();
+          if (w1 > w2) { $('#sidebar').height(w1); };
+      }
+      $(function(){
+        fixSidebarHeight();
+      })
+      $(window).load(function(){
+          fixSidebarHeight();
+      });
+     
+    </script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-58735702-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+  </body>
+</html>

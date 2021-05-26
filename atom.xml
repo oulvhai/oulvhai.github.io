@@ -1,0 +1,1369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Coder For Art]]></title>
+  <link href="http://coderforart.com/atom.xml" rel="self"/>
+  <link href="http://coderforart.com/"/>
+  <updated>2021-05-26T10:12:19+08:00</updated>
+  <id>http://coderforart.com/</id>
+  <author>
+    <name><![CDATA[]]></name>
+    
+  </author>
+  <generator uri="http://www.mweb.im/">MWeb</generator>
+  
+  <entry>
+    <title type="html"><![CDATA[MWeb 3.0 测试版更新情况]]></title>
+    <link href="http://coderforart.com/mweb3-release-note.html"/>
+    <updated>2018-06-14T15:49:36+08:00</updated>
+    <id>http://coderforart.com/mweb3-release-note.html</id>
+    <content type="html"><![CDATA[
+<h2 id="toc_0">MWeb 3.x 版升级及 2.x 版处理说明：</h2>
+
+<p>由于昨天把 Mac App Store 的 MWeb 改名为：MWeb （旧版），然后蛮多人问，现在关于 MWeb 3.0 版的升级情况统一说明如下：</p>
+
+<span id="more"></span><!-- more -->
+
+<ol>
+<li>新版首发半价 60 块，无意外的话，将在下周，具体日期还是没定（PS:我以为今天能定的）。</li>
+<li>老用户也需要重新购买，都是统一半价，这个是由于 Mac App Store 对这种情况不友好。非 Mac App Store 购买的用户，如果是在 2018年5月1号 之后购买的，可以直接发邮件联系我更换为 3.0 版，注意是<strong>更换</strong>。</li>
+<li>MWeb 更新无法避免，买断的软件也不可能会免费更新，加上 MWeb 不贵，为了维持，必然要重新收费的。订阅方式的确是更合适，但是 MWeb 转成订阅至少会 10 块每月，所以新版用买断其实更优惠一点。反正不管怎么样，MWeb 3.0 版是买断制已成定局。</li>
+<li>关于 MWeb 2.x 版，维护一般是兼容新系统。计划是会做简单维护，但是如果某天遇到兼容新系统难度太大，会直接下架。也就是说，现在还是可以购买旧版本的，而且一直可以。价格同样不变。</li>
+</ol>
+
+<h2 id="toc_1">6/27 3.0.8 ～ 3.0.9 版</h2>
+
+<ul>
+<li>改进外部模式搜索，比如说按文件名搜索不到，全文搜索不到等。文档库的搜索也有改进。 PS: 搜索功能其实是还没做好的，但是，正式版上了之后再改进了。顺便说一句，编辑器改进也是，总之先上正式版。</li>
+<li>Markdown 解析改进：解析 <code>xxx _abcd_ xxxx</code> 的结果多一个_</li>
+<li>3.0.9 版：这个版本就修些 bug，调整一些细节。</li>
+</ul>
+
+<p>PS: 如果你无法更新，或者更新有问题，请直接下载：<a href="https://dl.devmate.com/com.coderforart.MWeb3/MWeb3-ProMarkdownwriting,notetakingandstaticbloggeneratorApp.dmg" title="标题()">下载(网址)</a></p>
+
+<h2 id="toc_2">6/26 3.0.7 版</h2>
+
+<ul>
+<li>改进 About MWeb，增加贡献和感谢列表。</li>
+<li>增加导入和导出发布服务。2.x 版 非 MAS 也已经发布并有这个功能了，所以说现在你可以把 2.x 版的发布服务导出，然后在 3.x 版中导入了。</li>
+<li>修正 Markdown 解析任务列表时的 Bug。</li>
+<li>修正工具栏按钮功能不匹配问题。</li>
+</ul>
+
+<h2 id="toc_3">6/26 3.0.6 版</h2>
+
+<ul>
+<li>编辑器内显示图片的性能大幅提高，快速滑动不会卡了。</li>
+<li>在 Retina 屏中用系统截屏再粘贴图片时，自动加上 Retina 宽度设定。</li>
+<li>修正切换 tab 时焦点不在编辑器上的问题。</li>
+<li>全键盘操作改进：增加焦点切换至搜索框（外部模式切换到目录树）快捷键：CMD + Shift + F，只记这一个，基本就可以在 “目录树 - 列表 - 编辑器” 这三处随意切换了。因为，在搜索框按 “Tab 键” 可以切换到编辑器，按 “向左键” 可以切换到目录树，按 “向下键” 可以切换到列表。加上焦点在列表可以按 “向左键” 切换到目录树，“向右键” 切换到编辑器；焦点在目录树可以按 “向右键” 切换到列表。另外切换 Tabs 可以使用 Ctrl + Tab 键，CMD + Shift + [或] 键，切换 Tab 时焦点会切到编辑器。还有快速搜索是 CMD + O。</li>
+<li>全部中文化完成！</li>
+</ul>
+
+<h2 id="toc_4">6/22 MWeb 3.0.5 版更新</h2>
+
+<ul>
+<li>新界面，由 @Funpee ：<a href="https://armgod.com">https://armgod.com</a>  设计，感谢 @Funpee ！！</li>
+<li>部分中文化（这版本的中文化决定用另外的方式以更好支持协作增加其它语言和修改，所以会比较慢。）</li>
+<li>解析库有更新，支持如图的写法的正确解析，感谢 @randomatom ：<a href="https://github.com/randomatom/hoedown-mweb">https://github.com/randomatom/hoedown-mweb</a>。<img src="media/15289625761658/15296574326235.jpg" alt="" style="width:380px;"/></li>
+</ul>
+
+<h2 id="toc_5">6/20 MWeb 3.0.3 版更新</h2>
+
+<ul>
+<li><strong>重要：</strong>这个版本改成非 Sandbox 的了，非 Sandbox 的 App 有很多好处。目前 3.0.1 和 3.0.2 版本的都要重新设置一下文档库位置，这个按说明设置就好。</li>
+<li>外部模式支持拖拽文件夹来引入，也支持拖拽文件夹到 App 图标来引入。</li>
+<li>增加 mweb-default 样式，目前发布到印象笔记只会用这个样式。修正发布到印象笔记无代码高亮问题。</li>
+<li>修正文档大纲显示不全的问题。</li>
+<li>文档库的键盘导航改为：
+<ol>
+<li>如果焦点在列表： 左键可以切到 目录， 右键可以切到 编辑器；如果选中第一个，再按 向上键，会切到搜索框；如果选中的是最后一个，再按向下键，会切到 搜索框。</li>
+<li>如果焦点在目录：右键可以切到列表；Tab 键可以切到 搜索框。</li>
+<li>如果焦点在搜索框： 向下键可以切到列表并选中第一个，向上键可以切到列表并选中最后一个。</li>
+</ol></li>
+<li>url Scheme： mweblib://15287918142886 这种外部连接点击后可以调用 MWeb 打开了。</li>
+<li>其它 Bug 修正。</li>
+<li>预告：下个更新会有纯中文版。</li>
+</ul>
+
+<h2 id="toc_6">6/14 MWeb 3.0.2 版更新</h2>
+
+<ul>
+<li>修正表格编辑问题</li>
+<li>修正外部模式插入图片时不能自动上传至图床的 bug</li>
+<li>修正外部模式树形导航增加文件不自动刷新问题。</li>
+<li>优化文档库键盘导航设置：在分类区 按 Tab，焦点会跳到 中间的搜索框。而在中间的搜索框中：上下键为文章导航；左键切换到分类区 右键 切换到编辑区</li>
+<li>Markdown 解析库有更新</li>
+<li>修正选择文本并按 Tab 键缩进时闪退的 bug。</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[MWeb 3.0 测试版终于发布了！欢迎大家试用！]]></title>
+    <link href="http://coderforart.com/mweb3.0-on-test.html"/>
+    <updated>2018-06-13T10:54:02+08:00</updated>
+    <id>http://coderforart.com/mweb3.0-on-test.html</id>
+    <content type="html"><![CDATA[
+<p>MWeb 转眼间已经快四岁了，如果从开始写第一行代码那时起，已经四周岁了，我做独立开发者的道路也变得坚定了！MWeb 3.0 版本是一个蛮重要的版本，这个版本是 MWeb 的第一个付费升级的版本。这个版本支持的最低系统是 ELCapitan，废除的代码很多，UI 几乎是重写了，所以才需要先行测试再发布。</p>
+
+<p>为了方便了解新版本的功能，我录制了一个视频，这也是我第一次录制有声音的视频，录制后才发现这视频竟然这么长！！<br/>
+关于 MWeb 和这次测试的详细，强烈建议您先看完下面的 MWeb 3.0 测试介绍视频！视频的网址如下：</p>
+
+<ul>
+<li>Bilibili：<a href="https://www.bilibili.com/video/av24789660/">https://www.bilibili.com/video/av24789660/</a></li>
+<li>Youtube：<a href="https://youtu.be/vwStR6LgMZs">https://youtu.be/vwStR6LgMZs</a></li>
+</ul>
+
+<p>MWeb 3.0 的情况都在视频里有说，这里就不详细介绍了，下面放几张截图。需要重点说明的是：现在的版本是英文混合少量中文的，这个情况会在未来几个测试版中得到改进。</p>
+
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_0">MWeb 3.0 版截图</h2>
+
+<p>首先是文档库<br/>
+<img src="media/15288584426434/mweb3-1.jpg" alt="mweb3-1" style="width:1106px;"/></p>
+
+<p>黑暗模式，同样是有黑暗模式的。<br/>
+<img src="media/15288584426434/mweb3-2.jpg" alt="mweb3-2" style="width:1096px;"/></p>
+
+<p>外部模式，改成双栏了。<br/>
+<img src="media/15288584426434/mweb3-3.jpg" alt="mweb3-3" style="width:1014px;"/></p>
+
+<p>快速记事，这个是新功能了。<br/>
+<img src="media/15288584426434/mweb3-4.jpg" alt="mweb3-4" style="width:1251px;"/></p>
+
+<p>快速搜索，也算是新功能。视频演示里不出来，应该是由于我把文档库放在 MWeb 专属的位置的原因，之后会改进一下。<br/>
+<img src="media/15288584426434/mweb3-5.jpg" alt="mweb3-5" style="width:1074px;"/></p>
+
+<h2 id="toc_1">这次 3.0 版本，有位朋友帮忙改进了 MWeb 的 Markdown 解析器</h2>
+
+<p>github 地址：<a href="https://github.com/randomatom/hoedown-mweb/">https://github.com/randomatom/hoedown-mweb/</a>，非常非常感谢！！然后以下是这位朋友的原话：</p>
+
+<h3 id="toc_2">缘起</h3>
+
+<p>近期使用markdown做笔记。希望找一款软件，取代 evernote 笔记功能。<br><br/>
+evernote转为「资料收集库」。<br><br/>
+而 markdown 软件，用于后续深入的 <strong>整理、总结、输出</strong>。</p>
+
+<p>按这个需要出发，大概需要几个特点：</p>
+
+<ol>
+<li>同时支持 mac和IOS;</li>
+<li>文档库管理，多级目录、tag、检索等等；</li>
+<li>对markdown扩展支持比较丰富，比如代码、表格、TOC等等；</li>
+</ol>
+
+<p>最后选择了 <strong>mweb</strong>。</p>
+
+<p>使用过程中，对一些语法解析不太满意。<br><br/>
+和作者 @oulvhai 联系之后，得知 MWeb 使用的解析库 是 Hoedown，自告奋勇修改该库。</p>
+
+<p>Hoedown 的原始代码地址：<a href="https://github.com/hoedown/hoedown">https://github.com/hoedown/hoedown</a></p>
+
+<p>mweb的问题列表： issue：<a href="https://github.com/oulvhai/MWeb-issues">https://github.com/oulvhai/MWeb-issues</a></p>
+
+<p>主要修改几个新的功能：</p>
+
+<ul>
+<li>列表之前语法之前，不需要强制 <strong>空行</strong>；</li>
+<li>列表里面，自然换行，也可以解析为&lt;br&gt;</li>
+<li>bug修复：代码块中的 语法，被误以为 footnote；</li>
+</ul>
+
+<p>其实更好的办法是换库：<strong>github的cmark库</strong>。目前活跃度很高，代码质量也很高。<br><br/>
+<a href="https://github.com/github/cmark/tree/master/src">https://github.com/github/cmark/tree/master/src</a></p>
+
+<p>Hoedown 本身解析的过程，是「一行行硬解析」，没有使用AST。<br><br/>
+还好 Markdwowm 不算复杂，这个框架勉强还能应付的过去。<br><br/>
+后面的扩展和维护，潜力小，比较麻烦。如果要做的完全符合标准，估计还需要加一堆「补丁」。</p>
+
+<h2 id="toc_3">MWeb 3.0 版下载地址</h2>
+
+<p>官网地址：<a href="https://dl.devmate.com/com.coderforart.MWeb3/MWeb3-ProMarkdownwriting,notetakingandstaticbloggeneratorApp.dmg">点此下载</a><br/>
+度盘分流量：<a href="https://pan.baidu.com/s/1HWPFlQGENRPn8KX_wKChyQ">点此下载</a></p>
+
+<p>另外如果有谁知道那有不用备案的优质 CDN 购买吗？如果有，希望能联系我，非常感谢！！</p>
+
+<p>如果测试过程中有什么问题或者建议，欢迎写信给我：<a href="mailto:coderforart+2333@gmail.com">coderforart+2333@gmail.com</a>。也可以使用软件中的菜单：Help --&gt; SendFeedback 功能。</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[MWeb for Mac, iOS 黑五半价促销一周，写个大概介绍。]]></title>
+    <link href="http://coderforart.com/15113184658847.html"/>
+    <updated>2017-11-22T10:41:05+08:00</updated>
+    <id>http://coderforart.com/15113184658847.html</id>
+    <content type="html"><![CDATA[
+<p>不知不觉 MWeb for Mac 差不多三周年了，iOS 版也差不多一周年了，时间过得飞快。记得当时离职入坑 Mac/iOS 开发，我一并注册了 coderforart.com 这个域名，并做为自己的博客，我所做的软件的标识也是用 coderforart。这么多年过去了，Mac/iOS 学了个皮毛，博客也没更新文章，然后 coder for <strong>art</strong>，当时想法很好，然而在 <strong>art</strong> 方面却是啥也没学，目前已经定性为：我不适合 <strong>art</strong>。 我心中对 <strong>art</strong> 的执念也是越发淡薄了。</p>
+
+<p>MWeb 倒是坚持不断小更新一下，但这很大一部分原因在于用户的建议和需求，非常感谢你们。有很多需求我看了，但是没实现，这其中有的是技术的原因，有的是我认为没必要做的。虽然我可以做得更好，比如说花精力反馈给每个提需求的朋友没实现的原因，但是我没这样做，因为还不如直接花在改进产品上。总之，给 MWeb 反馈的朋友，非常感谢你们，然后有些情况，请见谅了！</p>
+
+<p>还有很多需要感谢的，比如说推荐 MWeb 的媒体和朋友，非常感谢你们！我文笔太渣，就不多说了，下面选几个 MWeb 代表性的功能介绍一下。</p>
+
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_0">1. MWeb 对 Markdown 编辑上的一些小改进</h2>
+
+<h3 id="toc_1">1.1 对插入图片的改进</h3>
+
+<p>MWeb 对插入图片支持非常全面，可以直接把图片拖拽进编辑器来插入图片，截图时可以直接用 <code>CMD + V</code> 来插入剪切板中的图片，插入的图片会直接显示在编辑器中，方便查看。另外还支持图床功能，是文档完成后把图片上传还是插入图片时自动上传都支持，详细的情况可以看一下 <a href="http://zh.mweb.im/how_to_use_images_in_mweb.html">MWeb Mac 版和 iOS 版图片及图床使用完全指南</a> 这篇文章。</p>
+
+<p>另外 MWeb 还支持图片大小和对齐的语法。<br/>
+官方 Markdown 和 GFM 都不支持图片大小控制及对齐设置，MWeb 引入的特别的语法来设置图片宽度和居左、居右、居中。如：<code>![图片说明-w450](pic.jpg)</code> 这样表示设置图片宽度为 450。其中 -w450 为设置语法，生成 HTML 时会自动移除。w 表示设置宽度，居左为：-l400，居右为 -r400，居中为 -c400，比如设置一图片宽度为 500 并居中：<code>![-c500](pic.jpg)</code>。可以看出，MWeb 引入的语法的特点是兼容原来的语法和仅支持设置宽度。</p>
+
+<h3 id="toc_2">1.2 对表格插入及编辑的改进</h3>
+
+<p>首先要说的是 MWeb 对表格编辑的小改进，点工具栏的插入表格按钮或者用 <code>Ctrl + Shift + T</code>，即可弹出如下图的插入表格窗口：</p>
+
+<p><img src="media/15113184658847/15113205424429.jpg" alt="" style="width:624px;"/><br/>
+<strong>其它说明：</strong>这个功能也支持对已有 Markdown 表格的编辑，方法就是光标移动到要编辑的表格文本中，点插入表格或者 <code>Ctrl + Shift + T</code>。</p>
+
+<h3 id="toc_3">1.3 对 LaTeX 的改进</h3>
+
+<p>如下图，当光标在 LaTeX 语法中时，会自动弹出预览窗口来预览 LaTeX 公式来辅助 LaTeX 输入和预览。<br/>
+<img src="media/15113184658847/15113209274707.jpg" alt="" style="width:460px;"/></p>
+
+<h3 id="toc_4">1.4 把 HTML 粘贴为 Markdown</h3>
+
+<p>这个功能使用方法是：在网页中选中你需要复制的那部分，比如说选择整个网页中的文章部分，然后 <code>CMD + C</code> 复制，再回到 MWeb 中，用菜单：<code>编辑 - 把 HTML 粘贴为 Markdown</code>，这样就会把选中的文章转为 Markdown 并粘贴，如果是在文档库中或者外部模式引入的文件夹内的文档，还会把文章中的图片自动下载到本地。这个功能一般情况下还是非常有用的，当然，由于 HTML 比较复杂，有时候会出问题。</p>
+
+<h2 id="toc_5">2. MWeb 外部模式的一些用法</h2>
+
+<p>MWeb 有两种模式，文档库模式和外部模式，一般情况下，使用外部模式就可以满足大部分需求了。外部模式是要先引入文件夹，然后再编辑文件夹内的文档，这样就比较好的解决了 Markdown 插入图片的问题，另外 Octopress, JekyII, Hexo 等静态博客也能非常方便地插入图片。详细可以看 <a href="http://zh.mweb.im/mweb-1.4-add-floder-octpress-support.html">MWeb 1.4 新功能介绍一：引入文件夹到 MWeb 中管理，支持 Octpress、Jekyll 等静态博客拖拽插入图片和实时预览</a> 这篇文章，按这个办法，其实也很好地支持 gitbook。目前 MWeb 到了 2.2.8 版，对外部模式也只是增加支持了配置引入的文件夹内的文档插入图片时自动上传至图床。</p>
+
+<h2 id="toc_6">3. MWeb 的标签（Tab）功能</h2>
+
+<p>MWeb 从 2.0 开始支持多 Tab，Tab 的设计比较像 Sublime，我觉得这种设计非常好。我觉得可以直接用下图说明。<br/>
+<img src="media/15113184658847/15113234008577.jpg" alt="" style="width:1039px;"/></p>
+
+<h2 id="toc_7">4. 发布到 Wordress、印象笔记等流行平台的功能</h2>
+
+<p>MWeb 支持把 Markdown 图文发布到多个平台，支持的平台如下图：<br/>
+<img src="media/15113184658847/15113237903444.jpg" alt="" style="width:597px;"/></p>
+
+<h2 id="toc_8">5. 文档库功能</h2>
+
+<p>文档库的功能算是 MWeb 最强大的功能。MWeb 的文档库其实就是把文档和文档相关图片等资源保存到固定一处地方，并提供分类树和 Tags 这两种方式来管理你的 Markdown 文档。而 MWeb 的副标题：专业的 Markdown 写作、记笔记、静态博客生成软件，非常恰当地说明了文档库的用途。关于文档库的详细使用，就不多做说明了。然后静态博客生成功能，好像用的朋友不多，需要说的是，<a href="http://zh.mweb.im/">MWeb 中官网</a>，<a href="http://www.mweb.im/">英文官网</a>，<a href="http://coderforart.com/">coderforart 博客</a>，都是用 MWeb 静态博客功能做的，目前静态博客增加了“发布脚本”功能，发布起来还算方便，详细可以看一下 <a href="http://zh.mweb.im/how_to_use_shell_script.html">如何使用“发布脚本”功能发布静态网站</a> 这文章。下面的截图是我的文档库中这三个网站的情况：</p>
+
+<p><img src="media/15113184658847/15113249082167.jpg" alt="" style="width:1067px;"/></p>
+
+<p>其实还要说一下，关于 MWeb 文档库的结构。点击 <code>MWeb 偏好设置 - 通用设置 - 文档库 - 在 Finder 中显示</code> 可以查看 MWeb 文档库的结构。<br/>
+它是由 mainlib.db 文件，docs 和 metadata 文件夹这三项组成，其中 docs 文件夹保存了每篇笔记的信息，一篇笔记一个 markdown 文档，markdown 文档内的图片等资源则保存在 docs 下的 media 文件夹内。mainlib.db 文件则保存了笔记的分类和 Tags 信息。我认为这种结构可以避免文档库丢失，因为不太可能一下删除这么多文件。更保险的办法是，使用 <code>MWeb 偏好设置 - 备份</code> 功能，把文档库备份到有<strong>历史记录</strong>的网盘中。</p>
+
+<p>关于MWeb 文档库的同步，非常简单，就是在 <code>MWeb 偏好设置 - 通用设置 - 文档库</code> 中，把文档库 <code>另存为</code> 到网盘中即可。如果你要在 iOS 中使用文档库，可以参考：<a href="http://zh.mweb.im/how_to_use_library_in_ios.html">在 iOS 中如何使用 MWeb for Mac 文档库</a> 这文章。然后 MWeb 每天会把 mainlib.db 文件备份到 ~/Library/Containers/com.coderforart.MWeb/Data/Library/Caches 这个位置，以避免同步时出现损坏的情况。</p>
+
+<h2 id="toc_9">6. iOS 版 MWeb 说明</h2>
+
+<p>iOS 版 MWeb 有 Mac 版 MWeb 外部模式的所有功能。文档库模式的话，目前仅可以查看，编辑和新增文档，而且新增的文档只会在 <code>未分类文档</code> 中，暂不支持在 iOS 中归类文档并加 Tag。更详细可以查看：<a href="http://zh.mweb.im/how_to_use_home.html">http://zh.mweb.im/how_to_use_home.html</a> 这个网址。</p>
+
+<h2 id="toc_10">其它</h2>
+
+<p>MWeb for Mac 和 iOS 目前都在半价促销中！活动结束时间为：11/29。</p>
+
+<p>官网：<a href="http://zh.mweb.im/">http://zh.mweb.im/</a><br/>
+Mac 版：<a href="https://itunes.apple.com/cn/app/mweb-pro-markdown-writing/id954188948?l=zh&amp;ls=1&amp;mt=12">https://itunes.apple.com/cn/app/mweb-pro-markdown-writing/id954188948?l=zh&amp;ls=1&amp;mt=12</a><br/>
+iOS 版：<a href="https://itunes.apple.com/cn/app/mweb-pro-markdown-writing/id1183407767?l=cn&amp;mt=8">https://itunes.apple.com/cn/app/mweb-pro-markdown-writing/id1183407767?l=cn&amp;mt=8</a></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[MWeb for iOS 2.3.2 发布！]]></title>
+    <link href="http://coderforart.com/mweb-ios-2.3.2-release.html"/>
+    <updated>2017-06-21T14:58:46+08:00</updated>
+    <id>http://coderforart.com/mweb-ios-2.3.2-release.html</id>
+    <content type="html"><![CDATA[
+<p>这次是比较大的更新，主要有：</p>
+
+<ul>
+<li>新图标！感谢 @Red5Sign <a href="http://weibo.com/u/6264169884">http://weibo.com/u/6264169884</a>，@泰米啊 <a href="http://weibo.com/313612326">http://weibo.com/313612326</a> 。</li>
+<li>增加 Dropbox 同步支持。</li>
+<li>增加移动文档功能。</li>
+<li>增加 mweb-solarized-dark，mweb-solarized-light，mweb-Tomorrow Blue，mweb-Tomorrow 四种预览样式，另外，现在切换编辑器样式时，整个界面都会改变，之前只限于编辑器改变。</li>
+<li>编辑模式中显示图片现在可以选择显示缩略图，在设置中开启显示为缩略图即可。</li>
+<li>增加：url scheme，3D touch 支持。Url scheme 使用为方法：显示首页： mwebapp://?p=home。显示首页中的列表基中第一个标题包含 “MWeb” 的项目，如果是文档会直接打开：mwebapp://?p=home&amp;name=MWeb。显示文档库：mwebapp://?p=lib。显示文档库列表中名包含 “所有” 的分类：mwebapp://?p=lib&amp;name=所有。显示网盘文档：mwebapp://?p=cloud。显示本机文档：mwebapp://?p=local。</li>
+<li>七牛上传 可配置增加后缀</li>
+<li>增加删除自定义预览样式（用编辑样式底部的删除按钮）。</li>
+<li>首页的收藏的项支持自定义排序，点右上角的编辑，然后拖动排序。</li>
+<li>修正在 iPad SplitView 打开时空白问题。</li>
+<li>点击文档库的引用文档的连接现在可以跳转到所引用的文档了。</li>
+<li>设置页底部增加特别感谢和 MWeb for iOS 所用到的库。</li>
+<li>其他 Bug 和细节修正。</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[MWeb Mac 版和 iOS 版图片及图床使用完全指南]]></title>
+    <link href="http://coderforart.com/how_to_use_images_in_mweb.html"/>
+    <updated>2017-06-20T14:12:27+08:00</updated>
+    <id>http://coderforart.com/how_to_use_images_in_mweb.html</id>
+    <content type="html"><![CDATA[
+<p>在 MWeb 中插入图片（不管你是拖拽插入还是粘贴插入，在下面都统一为插入图片）后，有二种处理方式，下面简单介绍一下。</p>
+
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_0">1. 插入图片后自动上传至图床</h2>
+
+<p>这是很多朋友喜欢用，但是我不怎么建议用的方式，主要是万一图床挂了或者是什么问题，比较麻烦。这个方式只在外部模式中支持，文档库不支持，下面介绍一下配置方法。</p>
+
+<p><strong>MWeb for Mac 中的配置方法为：</strong>在外部模式中双击引入的文件夹（或者右键 - 编辑），这时出来如下图的<strong>文件夹设置</strong>界面。</p>
+
+<p><img src="media/14979391474837/14980135430388.jpg" alt="" style="width:539px;"/></p>
+
+<p>勾选红框中的把插入的图片自动上传至...，然后选择要上传的图床即可（图床服务可以在偏好设置 - 发布服务中增加）。这样设置后，该引入的文件夹内的文档在插入图片时，会自动上传至所选择的图床并返回地址和生成 markdown 语法。</p>
+
+<p><strong>在 MWeb for iOS 中的配置方法为：</strong>在 iOS 版 MWeb 的网盘文档中，点击文件夹中的 (i) 按钮，则会出来<strong>文件夹设置</strong>，这个设置跟 Mac 版的外部模式一样。同样，启用自动上传插入的图片，然后选择图床即可，如下图。这样该文件夹内的文档在插入图片时，就会自动上传至选择好的图床了。</p>
+
+<p><img src="media/14979391474837/iOS-folder-setting.png" alt="iOS-folder-setting" style="width:780px;"/></p>
+
+<h2 id="toc_1">2. 插入图片后复制一份到文档所在的相对位置</h2>
+
+<p>这个是 MWeb 建议使用的方式，这个方式的好处是图片在本地并且跟 Markdown 文档相关联，不会造成图片丢失这种问题，MWeb 在编辑器中会直接显示本地图片，预览时也方便一点。MWeb 的文档库和外部模式都支持这种方式，下面介绍一下如何配置。</p>
+
+<p><strong>在 MWeb for Mac 中配置：</strong></p>
+
+<p>文档库不用配置，默认就是这样，外部模式中，同样双击引入的文件夹（或右键 - 编辑），调出<strong>文件夹设置</strong>界面，其中的配置如下图：</p>
+
+<p><img src="media/14979391474837/14980150922660.jpg" alt="" style="width:557px;"/></p>
+
+<p>首先要取消勾选 “把插入的图片自动上传至”。上面的配置可以用默认的，也就是说你只要取消勾选自动上传图片即可。</p>
+
+<p>上面也只有两个可设置的地方，一个是 “文件夹名称”，一个是 “保存位置”，保存位置有两种设置，一种是 “相对位置”，另一种是 “绝对位置”。</p>
+
+<p>这里举个例子说明一下，比如说引入的文件夹为 folder，在 folder/sub/sub2/sub3/doc.md 这个位置的文档插入图片，如果是 “绝对位置”，图片会保存在 fodler/media 下，生成的 markdown 为 <code>![](/media/pic.jpg)</code>；而 “相对位置”，则会保存在 folder/sub/sub2/sub3/media 下，生成的 markdown 为  <code>![](media/pic.jpg)</code>。“绝对位置” 这个设置其实是为了支持 Hexo、Octpress、Jekyll 等静态博客的 markdown 文档能文件用 MWeb 编辑。</p>
+
+<p>大家或者看出来了，也就是一般情况下不用配置，除非是 Hexo、Jekyll 等静态博客的 markdown 文档，或者是想要自动上传到图床。</p>
+
+<p><strong>在 MWeb for iOS 中的配置：</strong></p>
+
+<p>配置方法跟 Mac 版是一样的，想必不用多说，只要在 iOS 版的网盘文档中，调出<strong>文件夹设置</strong>即可配置。</p>
+
+<h2 id="toc_2">把文档中的本地图片上传至图床</h2>
+
+<p>为什么推荐使用第二种插入后图片处理方式，就是因为有这个功能。使用方法非常简单，在 Mac 版中点 “分享” 按钮 - 把本地图片传至图床，或者菜单：发布 - 把本地图片传至图床 即可调出以下的图片上传面板：</p>
+
+<p><img src="media/14979391474837/14980167906821.jpg" alt="" style="width:548px;"/></p>
+
+<p>在这个面板中，中间的列表会列出文档中的所有本地图片（<strong>注意是文档中的</strong>），首先请选择要上传的图床，然后点 “上传本地图片” 按钮即可。当图片上传完成后，你可以选择使用 “复制 Markdown” 按钮或者 “复制 HTML” 按钮，看你需要什么样的格式。复制进来的就是已经把本地图片地址换成图床的远程地址后的内容。</p>
+
+<p>在 MWeb for iOS 中使用方法跟 Mac 一样，如下图：</p>
+
+<p><img src="media/14979391474837/iOS-image-uploads.png" alt="iOS-image-uploads" style="width:780px;"/></p>
+
+<p>至此已介绍完毕！</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[在 iOS 中如何使用 MWeb for Mac 文档库]]></title>
+    <link href="http://coderforart.com/how_to_use_library_in_ios.html"/>
+    <updated>2017-06-02T19:26:55+08:00</updated>
+    <id>http://coderforart.com/how_to_use_library_in_ios.html</id>
+    <content type="html"><![CDATA[
+<p>要在 iOS 中使用文档库，必须先把 Mac 版的文档库保存到 iCloud Drive 或者 Dropbox 中，下面分别介绍一下如何做。</p>
+
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_0">1. 在 Mac 中把文档库保存到 iCloud Drive 或 Dropbox</h2>
+
+<p>首先打开 MWeb for Mac 的偏好设置 - 通用设置（可以用 <code>CMD + ,</code> 快捷），在通用设置 - 文档库位置中，点 “另存为...” 按钮，把文档库位置移到 iCloud Drive 的 MWeb 所属的文件夹内或者是 Dropbox 中，如下图我是放到 iCloud Drive 中的 MWeb 文件夹内的 mweb_documents_library 文件夹中。如果在你的 Mac 的 iCloud Drive 中看不到 MWeb 所属的文件夹，可以试试在 iOS 的 系统设置 - iCloud - 关闭 iCloud Drive，然后再重新打开。如果等一段时间后还是无法看到，建议使用 Dropbox。😄 </p>
+
+<p><img src="media/14964028153927/14980099891001.jpg" alt="" style="width:470px;"/></p>
+
+<p>这时 iCloud Drive 中的文档库的文件结构如下图所示，可以看出 MWeb 文档库的文件夹内会有一个名为 docs 的文件夹和一个名为 mainlib.db 的文件，docs 文件夹内会有所有的笔记文档。MWeb 的文档库就是由 docs 文件夹，mainlib.db 文件以及可能存在的 metadata 文件夹构成的。</p>
+
+<p><img src="media/14964028153927/14980104963049.jpg" alt="" style="width:885px;"/></p>
+
+<h2 id="toc_1">2. 在 iOS 中配置 MWeb for Mac 文档库的位置</h2>
+
+<p>当你按上面的步骤，把文档库另存到 iCloud Drive 或 Dropbox 中并确认文档库同步完成后，打开 iOS 版 MWeb 的设置页面，转到 “网盘文档、文档库” 这里，然后先启用 MWeb for Mac 的文档库，再点 “设置文档库位置” 按钮，并选择你上一步另存到的位置，我这里的 iCloud Drive 的 mweb_documents_library 文件夹中，如下图。</p>
+
+<p><img src="media/14964028153927/choose-library-in-iOS.png" alt="choose-library-in-iOS" style="width:780px;"/></p>
+
+<p>设置好后，点完成，可以看到首页的底部多了一个文档库的按钮，点进去后就可以看到文档库了，如下图：</p>
+
+<p><img src="media/14964028153927/iOS-library-ok.png" alt="iOS-library-ok" style="width:780px;"/></p>
+
+<p>至此，在 iOS 中使用 MWeb for Mac 文档库已配置完成，在这里再提示一下，iOS 中的文档库目前只支持查看、编辑、新增文档。新增文档会在所有文档和未分类文档中。</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[MWeb for iOS 2.3.x 版测试说明]]></title>
+    <link href="http://coderforart.com/mweb-for-ios-2.3.x-tf.html"/>
+    <updated>2017-06-02T14:08:34+08:00</updated>
+    <id>http://coderforart.com/mweb-for-ios-2.3.x-tf.html</id>
+    <content type="html"><![CDATA[
+<p>2.3.x 版的目标是增加 Dropbox 和 WebDAV 同步，测试重点也是这两个，然后这个版本还未来得及修正 2.2.7 之前反馈的一些 bug 和改进，这些改进会在 2.3.x 测试时顺便修正，非常感谢反馈的朋友！</p>
+
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_0">iOS 版 MWeb 2.3.x 版网盘文档使用说明</h2>
+
+<p>iOS 版 MWeb 在 2.2.x 版首页底部工具栏中有一个名为 “iCloud 文档” 的按钮，现在这个按钮改成了 “网盘文档”，也就是 iCloud Drive、Dropbox、WebDAV 同步的文档都在此。这个网盘文档等于是 Mac 版 MWeb 的外部模式，如下图所示。</p>
+
+<p><img src="media/14963837146939/mweb-ios-231-1.png" alt="mweb-ios-231-1" style="width:770px;"/></p>
+
+<p>如下图所示，在 “网盘文档” 中，可以增加 Dropbox、WebDAV 的文件夹以同步，相当于 Mac 版的引入文件夹。增加的文件夹都会有 (i) 的按钮，点击后会如出现右边的设置页面，相当于 Mac 版引入的文件夹的设置，可设置新建文档时默认扩展名、图片文件夹和插入图片时是否自动上传至图床。</p>
+
+<p><img src="media/14963837146939/mweb-ios-231-2.png" alt="mweb-ios-231-2" style="width:770px;"/></p>
+
+<p>以上就是网盘文档的简单说明，我使用下来，发现 Dropbox 是相当稳定可靠的，WebDAV 用的是免费版的坚果云，有时会出现超时，然后同步的话，一般是要 WebDAV 支持 etag 才好做，但是坚果云不支持，所以目前同步是用 “修改时间” 来判定，我测试下来的结果是基本可用，还要继续优化。<br/>
+目前的测试版中，网盘文档还没有提供 “移动” 这个功能，不过正式版会有这功能。</p>
+
+<p>重点说明是：<strong>目前是测试版本，建议先测试看看再决定是否用于正式文档，WebDAV 功能暂时不要用于正式文档！</strong></p>
+
+<h2 id="toc_1">文档库功能使用说明</h2>
+
+<p>之前的版本由于只支持 iCloud Drive，所以不支持自行设置文档库位置。2.3.x 版的文档库已支持自行设置文档库的位置。<br/>
+使用文档库功能，首先要在 MWeb for Mac 的偏好设置 - 通用设置 - 文档库位置 中，用 “另存为” 按钮，把文档库另存到 iCloud Drive、Dropbox 或 WebDAV 的某个文件夹中。当文档库同步好之后，再回到 iOS 的设置页面，选择你之前另存到的网盘的文件夹。如下图，我在 Mac 中是把文档库保存到 Dropbox 下的 mweb_documents_library 文件夹中，所以我下图选择的是一样的位置。要注意的是，如果你选择另存到 iCloud Drive，必须另存到 iCloud Drive 下 MWeb 所属的文件夹内才可以，不然在 iOS 中会选取不到文档库。</p>
+
+<p><img src="media/14963837146939/mweb-ios-231-3.png" alt="mweb-ios-231-3" style="width:770px;"/></p>
+
+<p>设置完成后，回到首页，点文档库按钮，即可进入文档库，一开始时会自动同步，之后是的频率是 12 小时。当然，你也可以下拉，手动进行同步，如上图右边所示。要注意的是，如果使用的是 iCloud Drive，是不能进行手动同步的，因为 iCloud Drive 的同步是 iOS 系统决定的。</p>
+
+<p>还要注意的是，目前 iOS 版文档库还是只有查看、增加文档和编辑现有文档功能，删除和归类等等都不支持。然后新增的文档只能在 “所有文档” 和 “未分类文档” 中找到。</p>
+
+<p>重点说明：<strong>目前是测试版本，建议先测试看看再决定是否用于正式文档，WebDAV 功能暂时不要用于正式文档！</strong> 所以建议的做法是：把文档库复制一份到 Dropbox 或 WebDAV 的文件夹中，在 Mac 版 MWeb 中用 偏好设置 - 通用设置 - 文档库位置 中的 “选择现有文档库” 按钮，选择这个位置。在 iOS 中也选择这个位置。这样的话，测试时就不会影响原来的文档库，如果不想测试，再用 “选择现有文档库” 按钮，选择回原来的文档库即可。</p>
+
+<h2 id="toc_2">编辑文档时的同步说明</h2>
+
+<p>一开始我的想法是文档自动保存时就同步一下当前文档，这个做法使用 Dropbox 时是没有问题的，但是在用坚果的 WebDAV 时，频繁出现超时问题。奇怪的是同步全部文档时却不会出现这个问题。超时目前还会影响性能，原因我还在排查中。目前的做法是退出编辑文档，回到文件列表时才会同步一下当前文档，这样就不会因为超时的性能问题而影响文档编辑。要注意的是，同步当前文档时如果出现超时错误，目前不会提示，因为随时可以用下拉同步来手动同步所有文档。</p>
+
+<p>PS：如果想申请 TF 测试，可以按 姓,名,邮箱 的格式发到 coderforart[at]gmail。比如： 王,小明,<a href="mailto:xiaoming@gmail.com">xiaoming@gmail.com</a> 。直接只标题发这个即可，我就知道是申请 TF 测试的了。</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[iOS 版 MWeb 正式发布及简介]]></title>
+    <link href="http://coderforart.com/introducing-mweb-for-ios.html"/>
+    <updated>2017-01-05T10:01:15+08:00</updated>
+    <id>http://coderforart.com/introducing-mweb-for-ios.html</id>
+    <content type="html"><![CDATA[
+<p>MWeb 首先是一个 Markdown 编辑器，所使用的 Markdown 语法为 Github Flavored Markdown，简称 GFM，这是一种最为广泛使用的 Markdown 语法之一。如果你不知道什么是 Markdown，建议看一下 <a href="markdown-syntax-guide-full-version-zh.html">Markdown 語法官方說明繁體中文版</a>。GFM 除了支持官方的语法外，还扩展了不少语法，具体情况会在本文后说明。这里先介绍一下 iOS 版 MWeb 的基本使用方法。 </p>
+
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_0">MWeb for iOS 基本使用</h2>
+
+<p><img src="media/14835816759891/mweb-v232-cn-1.png" alt="mweb-v232-cn-1" style="width:780px;"/></p>
+
+<p><strong>上图左图为首页，右图为网盘文档，各种标记如下：</strong></p>
+
+<ol>
+<li>设置页面。</li>
+<li>最近使用的文档。</li>
+<li>收藏的项目，文档，文件夹，文档库分类等等都可以收藏。</li>
+<li>回首页按钮。</li>
+<li>文档库按钮，目前的版本的文档库是需要 MWeb for Mac 配合使用的，不是单独的功能，默认不启用。</li>
+<li>网盘文档按钮，点击后会转到右图的网盘文档，目前支持 iCloud Drive 和 Dropbox。</li>
+<li>本地文档按钮。</li>
+<li>进入网盘文档后，点右下角的按钮可增加 Dropbox 文件夹以同步。</li>
+<li>文件夹设置按钮，网盘文档内的文件夹有 (i) 按钮的都可以设置，主要是设置新建文档的默认扩展名、插入图片保存位置和是否自动上传至图床，这个设置和 Mac 版 MWeb 外部模式中引入的文件夹的设置一样。如下图。</li>
+</ol>
+
+<p><img src="media/14835816759891/mweb-v232-cn-2.png" alt="mweb-v232-cn-2" style="width:780px;"/></p>
+
+<p><strong>上图左图为文件夹设置画面，右图为点进文件夹后的画面，各标记说明如下：</strong></p>
+
+<ol>
+<li>设置此文件夹内的文档的默认排序，新建文档的默认扩展名等。</li>
+<li>插入图片时图片的保存位置，默认保存在文档所在位置的 media 文件夹内，你可以通过填入文件夹名来修改（上图改为 images）。另外<strong>保存路径</strong>这个很重要，默认是“相对位置”，也就是保存在文档所在位置的文件夹内。如果设置为“绝对位置”，比如 folder/sub/sub2/sub3/doc.md 这个位置的文档插入图片，会保存在 fodler/media 下，而“相对位置”，则会保存在 folder/sub/sub2/sub3/media 下。</li>
+<li>插入图片时自动上传至图床：如果启用，则插入图片时，会直接上传至图床。在设置页面可以配置图床信息，目前支持 Google Photos、imgur、七牛和自定义图床。</li>
+<li>回首页按钮。</li>
+<li>收藏按钮。</li>
+<li>排序方式按钮，点击可更改排序方式。</li>
+<li>新增文件夹和文件按钮。</li>
+</ol>
+
+<p><img src="media/14835816759891/mweb-v232-cn-3.png" alt="mweb-v232-cn-3" style="width:780px;"/></p>
+
+<p><strong>上图左图为打开文档后点击大纲视图的画面，右图为编辑时，切换到 Markdown 键盘的画面</strong></p>
+
+<ol>
+<li>文档大纲按钮，点击后可快速导航。</li>
+<li>收藏按钮。</li>
+<li>预览按钮。</li>
+<li>新增文档按钮，会在所打开的文档的文件夹内新增文档。</li>
+<li>分享按钮，可导出为 HTML、图片、PDF；发布至 Wordpress、Wordpress.com、Metaweblog API 、Evernote、Blogger 和 Medium。</li>
+<li>Markdown 常用语法的快速输入键盘。</li>
+<li>编辑器样式和预览样式切换。</li>
+</ol>
+
+<p><img src="media/14835816759891/mweb-v232-cn-4.png" alt="mweb-v232-cn-4" style="width:780px;"/></p>
+
+<p><strong>上图左图为点击分享按钮后的画面，右图为切换样式画面</strong></p>
+
+<ol>
+<li>退出编辑，也可左滑。</li>
+<li>发布服务，要在设置页面新增发布服务，支持 Wordpress、Wordpress.com、Metaweblog API 、Evernote、Blogger 和 Medium。</li>
+<li>切换样式。</li>
+</ol>
+
+<h2 id="toc_1">配置 MWeb for Mac 文档库</h2>
+
+<p>iOS 版的文档库目前不可单独使用，只做为 Mac 版文档库的辅助，目前仅支持查看、编辑和新增文档，删除和归类等等功能目前都不支持。要使用 iOS 版文档库，首先要把 Mac 版的 MWeb 的文档库保存到 iCloud Drive 或者 Dropbox 中，等同步完成后，再在 iOS 版 MWeb 中配置文档库的位置。</p>
+
+<p><img src="media/14835816759891/14979382840902.jpg" alt="" style="width:470px;"/></p>
+
+<p>如上图，用另存为按钮，把文档库保存在 Dropbox 或 iCloud Drive 中，如果选择保存在 iCloud Drive，必须保存在 iCloud Drive 中 MWeb 所属的文件夹内。如果在 Mac 的 iCloud Drive 中看不到 MWeb 所属文件夹，可以试试在 iOS 的 系统设置 - iCloud - 关闭 iCloud Drive，然后再重新打开。</p>
+
+<p>设置好并且文档库完全同步后，在 iOS 版 MWeb 中配置 Mac 版文档库的方法如下图：</p>
+
+<p><img src="media/14835816759891/mweb-v232-cn-5.png" alt="mweb-v232-cn-5" style="width:780px;"/></p>
+
+<ol>
+<li>首先是启用 MWeb for Mac 的文档库。</li>
+<li>点击“更改文档库位置”按钮，选择文档库的位置。文档库位置的文件夹内，必然会有一个名为 mainlib.db 的文件和一个 docs 文件夹。</li>
+<li>设置完后，点完成，回到首页，再点首页底部的“文档库”按钮，即可进入文档库，如上图右图。</li>
+</ol>
+
+<p><strong>使用 iOS 版文档库要注意的地方为：</strong>在 iOS 文档库新增的文档总是在“所有文档”和“未分类文档”中。</p>
+
+<h2 id="toc_2">其它参考：</h2>
+
+<ul>
+<li><a href="http://zh.mweb.im/how_to_use_wordpress_url.html">iOS 版 MWeb 发布到自建 Wordpress 和 Metaweblog API 使用指南</a></li>
+<li><a href="http://zh.mweb.im/how_to_use_images_in_mweb.html">MWeb 图片及图床使用完全指南</a></li>
+<li><a href="http://zh.mweb.im/how_to_use_qiniu_url.html">iOS 版 MWeb 图床功能及七牛图床使用指南</a></li>
+<li><a href="http://zh.mweb.im/how_to_use_custom_image_upload_url.html">iOS 版 MWeb 图床功能中自定义图床的使用指南</a></li>
+<li><a href="http://zh.mweb.im/how_to_use_library_in_ios.html">在 iOS 中如何使用 MWeb for Mac 文档库</a></li>
+</ul>
+
+<h2 id="toc_3">GFM 语法简介和 MWeb 所支持的扩展语法</h2>
+
+<h3 id="toc_4">回车转为换行</h3>
+
+<p>官方的语法规定结尾加 2 个以上空格加换行才会转成换行，也就是 <code>&lt;br /&gt;</code> 标签。MWeb 中有个选项可以直接把换行转成 <code>&lt;br /&gt;</code>，不用加上 2 个以上空格，这个选项默认是开启的。如果要关闭，请在设置页面关闭。</p>
+
+<h3 id="toc_5">任务列表（Task lists）</h3>
+
+<p>Markdown 语法：</p>
+
+<pre><code class="language-text">- [ ] 任务一 未做任务 `- + 空格 + [ ]`
+- [x] 任务二 已做任务 `- + 空格 + [x]`
+</code></pre>
+
+<p>效果如下：</p>
+
+<ul>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" /> 任务一 未做任务 <code>- + 空格 + [ ]</code></li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked /> 任务二 已做任务 <code>- + 空格 + [x]</code></li>
+</ul>
+
+<h3 id="toc_6">图片大小及对齐</h3>
+
+<p>官方和 GFM 都不支持图片大小控制及对齐设置，MWeb 引入的特别的语法来设置图片宽度和居左、居右、居中。如：<code>![图片说明-w450](pic.jpg)</code> 这样表示设置图片宽度为 450。其中 -w450 为设置语法，生成 HTML 时会自动移除。w 表示设置宽度，居左为：-l400，居右为 -r400，居中为 -c400，比如设置一图片宽度为 500 并居中：<code>![-c500](pic.jpg)</code>。 可以看出，MWeb 引入的语法的特点是兼容原来的语法和仅支持设置宽度。</p>
+
+<h3 id="toc_7">多行或者一段代码</h3>
+
+<p>Markdown 语法：</p>
+
+<pre><code class="language-text">```js
+function fancyAlert(arg) {
+  if(arg) {
+    $.facebox({div:&#39;#foo&#39;})
+  }
+
+}
+```
+</code></pre>
+
+<p>效果如下：</p>
+
+<pre><code class="language-javascript">function fancyAlert(arg) {
+    if(arg) {
+        $.facebox({div:&#39;#foo&#39;})
+    }
+
+}
+</code></pre>
+
+<p>这个语法目前在 MWeb 中使用，必须前后空一行，才会正确解析。我觉得，在写 Markdown 文档过程中，运用空行很有必要，基本上，块级元素（标题、列表、引用、代码块、表格、段落等），都建议前后空一行。</p>
+
+<h3 id="toc_8">表格</h3>
+
+<p>Markdown 语法：</p>
+
+<pre><code class="language-text">第一格表头 | 第二格表头
+--------- | -------------
+内容单元格 第一列第一格 | 内容单元格第二列第一格
+内容单元格 第一列第二格 多加文字 | 内容单元格第二列第二格
+</code></pre>
+
+<p>效果如下：</p>
+
+<table>
+<thead>
+<tr>
+<th>第一格表头</th>
+<th>第二格表头</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>内容单元格 第一列第一格</td>
+<td>内容单元格第二列第一格</td>
+</tr>
+<tr>
+<td>内容单元格 第一列第二格 多加文字</td>
+<td>内容单元格第二列第二格</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="toc_9">删除线</h3>
+
+<p>Markdown 语法：</p>
+
+<pre><code class="language-text">加删除线像这样用： ~~删除这些~~
+</code></pre>
+
+<p>效果如下：</p>
+
+<p>加删除线像这样用： <del>删除这些</del></p>
+
+<h3 id="toc_10">LaTeX</h3>
+
+<p>Markdown 语法：</p>
+
+<pre><code class="language-text">块级公式：
+$$  x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
+
+\\[ \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} =
+1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}}
+{1+\frac{e^{-8\pi}} {1+\ldots} } } } \\]
+
+行内公式： $\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$
+</code></pre>
+
+<p>效果如下（在设置页面中启用 LaTeX 才会看到效果，默认为启用）：</p>
+
+<p>块级公式：<br/>
+\[  x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} \]</p>
+
+<p>\[ \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} =<br/>
+1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}}<br/>
+{1+\frac{e^{-8\pi}} {1+\ldots} } } } \]</p>
+
+<p>行内公式： \(\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N\)</p>
+
+<h3 id="toc_11">脚注（Footnote）</h3>
+
+<p>Markdown 语法：</p>
+
+<pre><code class="language-text">这是一个脚注：[^sample_footnote]
+</code></pre>
+
+<p>效果如下：</p>
+
+<p>这是一个脚注：<sup id="fnref1"><a href="#fn1" rel="footnote">1</a></sup></p>
+
+<h3 id="toc_12">注释和阅读更多</h3>
+
+<!-- comment -->
+
+<!-- more -->
+
+<p><strong>注</strong> 阅读更多的功能只用在文档库生成静态网站或发布到 Wordpress 博客时，插入时注意要后空一行。</p>
+
+<h3 id="toc_13">TOC</h3>
+
+<p>Markdown 语法：</p>
+
+<pre><code class="language-text">[TOC]
+</code></pre>
+
+<p>效果如下：</p>
+
+<ul>
+<li>
+<a href="#toc_0">MWeb for iOS 基本使用</a>
+</li>
+<li>
+<a href="#toc_1">配置 MWeb for Mac 文档库</a>
+</li>
+<li>
+<a href="#toc_2">其它参考：</a>
+</li>
+<li>
+<a href="#toc_3">GFM 语法简介和 MWeb 所支持的扩展语法</a>
+<ul>
+<li>
+<a href="#toc_4">回车转为换行</a>
+</li>
+<li>
+<a href="#toc_5">任务列表（Task lists）</a>
+</li>
+<li>
+<a href="#toc_6">图片大小及对齐</a>
+</li>
+<li>
+<a href="#toc_7">多行或者一段代码</a>
+</li>
+<li>
+<a href="#toc_8">表格</a>
+</li>
+<li>
+<a href="#toc_9">删除线</a>
+</li>
+<li>
+<a href="#toc_10">LaTeX</a>
+</li>
+<li>
+<a href="#toc_11">脚注（Footnote）</a>
+</li>
+<li>
+<a href="#toc_12">注释和阅读更多</a>
+</li>
+<li>
+<a href="#toc_13">TOC</a>
+</li>
+</ul>
+</li>
+</ul>
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<div class="footnotes">
+<hr/>
+<ol>
+
+<li id="fn1">
+<p>这里是脚注信息&nbsp;<a href="#fnref1" rev="footnote">&#8617;</a></p>
+</li>
+
+</ol>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[MWeb for iOS 测试版介绍]]></title>
+    <link href="http://coderforart.com/mweb-for-ios-test.html"/>
+    <updated>2016-12-08T10:25:18+08:00</updated>
+    <id>http://coderforart.com/mweb-for-ios-test.html</id>
+    <content type="html"><![CDATA[
+<p>目前已开始第五次测试：<a href="mweb-ios-test-v2.html">MWeb for iOS 版本发布说明，更新至第五次测试版本</a></p>
+
+<p><img src="media/14811639181399/512.png" alt="512" class="mw_img_center" style="width:256px;display: block; clear:both; margin: 0 auto;"/></p>
+
+<p>上图为 MWeb for iOS 的图标，再次感谢 @Producter <a href="http://weibo.com/u/5642390620">http://weibo.com/u/5642390620</a> 设计的图标</p>
+
+<p>这个是来晚了，本来不应该这么晚的，但是做做停停的，加上还有其他各种事，最长一次长达两个多月没有一点进度。不过今天终于可以拿出来测试了，所以就不多说了，下边介绍一下大概情况。</p>
+
+<span id="more"></span><!-- more -->
+
+<p>一开始决定做 iOS 版时，我想像中的 MWeb iOS 版的功能至少有：</p>
+
+<ol>
+<li>Markdown 支持上要和 Mac 版完全兼容，全面支持 Github Flavored Markdown 语法如 TOC、Table、Fenced code block、LaTex、Task lists、Footnote 等。</li>
+<li>Markdown 编辑上，Mac 版有的特性比如说粘贴插入图片，图片存于本地，外部模式的图片路径设置等也是要有。另外针对手机的特性，自定义一个 Markdown 所用的键盘以方便使用。</li>
+<li>要支持 Mac 版上所支持的发布服务如 Wordpress、Metaweblog API 、Evernote、Blogger、Medium。</li>
+<li>Mac 版的图床也是要支持。</li>
+<li>文档库由于使用了数据库，同步不是很灵活，但是至少要支持查看、编辑、新增文档。</li>
+</ol>
+
+<p>目前的测试版，以上所说的 5 点基本上已实现了，所以才敢拿出来请大家测试，请看下图。</p>
+
+<p><img src="media/14811639181399/mweb-for-iOS-1.png" alt="mweb-for-iOS-1" style="width:760px;"/></p>
+
+<p>上图中，左边的是首页，首页有最近使用的文档和收藏内容这两大块。</p>
+
+<p>最近使用只会显示最近使用的 5 个文档，包括文档库的文档、iCloud 中的文档、在手机本地的文档，可以看边上的图标来识别文档类型。<br/>
+而收藏不只可以收藏文档，还可以收藏文件夹、文档库的分类，只要是底加的工具栏中有 ✭ 的按钮的项目，都可以收藏，基本上，除了首页，都会有 ✭ 这个按钮，如右边的图所示。</p>
+
+<p>说到右图，请看看左图首页底下的按钮，分别为：首页、文档库、iCloud 文档、手机本地文档、新增文档。 iCloud 文档和手机本地文档都对应为 Mac 版的外部模式的使用方法。</p>
+
+<p>点 iCloud 文档按钮会进入右图界面，左滑可以删除或重命名项目，底下的按钮分别为：回首页、收藏、排序、新增文件夹、新增文档。Mac 版的外部模式中，每个引入的文件夹都会有自己的设置，比如说设置新增文档的默认扩展名、插入的图片的保存文件夹名等，iOS 版也是有这个功能。区别是，iOS 版不用引入，默认为最顶层的文件夹可以设置。如右图，点击 (i) 这个按钮即可进入设置，如下图左边的图。</p>
+
+<p><img src="media/14811639181399/mweb-for-iOS-2.png" alt="mweb-for-iOS-2" style="width:760px;"/></p>
+
+<p>上图左边为文件夹设置，右边则是打开一篇文档后，右上角的设置按钮，在这里可以快速设置字体大小，切换编辑器样式和预览样式。另外说明一下，Editor Full Screen 这个开关，这个开关打开后，在向上滚动文档时，会像 Safari 的阅读模式下的效果，喜欢全屏查看文档的朋友可以试试。</p>
+
+<p><img src="media/14811639181399/mweb-for-iOS-3.png" alt="mweb-for-iOS-3" style="width:760px;"/></p>
+
+<p>上图是 MWeb iOS 版的自定 Markdown 的输入键盘的效果，我觉得这个输入模式还算方便，所以就做成这样，右图的键盘还可以增加一些，我也在研究中。</p>
+
+<p><img src="media/14811639181399/mweb-for-iOS-4.png" alt="mweb-for-iOS-4" style="width:760px;"/></p>
+
+<p>上图是文档大纲和导出、发布功能。底下还有三个按 钮分别是：收藏、预览、增加文档。</p>
+
+<p><img src="media/14811639181399/mweb-for-iOS-5.png" alt="mweb-for-iOS-5" style="width:760px;"/></p>
+
+<p>上图左边是设置中的增加发布服务和图床上传服务，进入设置页面后，往下拉就能看到了，目前支持的发布服务为：自建 Wordpress、Metaweblog API、Wordpress.com、Evernote、Blogger、Medium。除了 Medium 外，其他服务都支持发布和更新。另外 iOS 版发布到 自建 Wordpress 的时间问题的 Bug 好像是解决了，感兴趣的朋友可以测试一下看看。<br/>
+图床的支持情况为：Google Photos、Imgur、七牛、自定义，跟 Mac 版一样。</p>
+
+<p>上图右边是文档库的界面，文档库中，直接点击分类会进入该分类下的文档列表，要进入该下的子分类，请点右边的 。。。 按钮。</p>
+
+<p><img src="media/14811639181399/mweb-for-iOS-6.png" alt="mweb-for-iOS-6" style="width:760px;"/></p>
+
+<p>在，上图左边是图床功能中，选择七牛的效果，右边是点击某项时，可以选择的操作。图床功能暂时只有这 Copy Markdown 和 Copy HTML 这两个功能，iOS 做图床，实在没有什么好想法，如果你有什么建议，欢迎来信。<br/>
+这里再说明一下 MWeb 中图床的用法，跟一般用法有些不一样。<br/>
+MWeb 中编辑文档时插入的图片，会复制一份到文档相关的位置，并在文档中进行相对引用。这个位置看设置，这个设置在本文第二张图中有说到。如果设置中的文件夹名称为空，则会直接复制图片到文档所在的文件夹内。所以 MWeb 中插入的图片都会本地图片。当在文档编辑界面，点分享按钮（本文第四张右边的图），选择图床后，会出现上图的界面，界面中会列出文档中的<strong>本地图片</strong>，当点右上角的上传按钮，会把<strong>本地图片</strong>上传到图床中。使用底部的 Copy Markdown 和 Copy HTML 都会把文档中的本地图片地址替换成当前图床上传后的图片地址，并复制到剪切板中。MWeb 并暂时没有考虑做<strong>删除本地图片并替换原文档中的本地图片地址为图床</strong>的功能，需要这个的话，可以用 Copy Markdown，然后再新建文档，再粘贴。</p>
+
+<p>当编辑了文档，比如说插入了新图片，只需要再次调出上图左边的界面，再点一下上传即可，已上传的图片不会再上传，只会上传新图片。</p>
+
+<p>暂时就介绍到这里了，感兴趣的朋友可以申请参加 TestFlight 测试，想参加的话，请按以下格式把你的信息发到 coderforart[at]gmail 即可。</p>
+
+<pre><code class="language-text">你的姓,你的名字,你的 Email
+</code></pre>
+
+<p>比如说小明的 Email 为 <a href="mailto:xxx@xm.com">xxx@xm.com</a> ，发送的样式为： 小,明,<a href="mailto:xxx@xm.com">xxx@xm.com</a><br/>
+注意 “,” 为英文半角。</p>
+
+<p><strong>重要说明：</strong><br/>
+iPad 版未测试，请不要用在 iPad 上。</p>
+
+<p><strong>特别说明：</strong><br/>
+文档库现在 Mac 版和 iOS 版处理还不是很好，Mac 版要执行菜单：文件 - 重新加载未分类文档 后，iOS 端增加的文档才会包括在 Mac 版的文档库中，另外同步也有一些问题，Mac 下必须退出后才会同步，这些问题会在几天后 Mac 的更新版修正。</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[分享一个把 HTML 转换成印象笔记格式的库，支持代码高亮和把 ECharts、mermaid 转成印象笔记支持的图片，另外：MWeb 半价促销一周。]]></title>
+    <link href="http://coderforart.com/14730440789266.html"/>
+    <updated>2016-09-05T10:54:38+08:00</updated>
+    <id>http://coderforart.com/14730440789266.html</id>
+    <content type="html"><![CDATA[
+<p>先说说 html2enml 这个库，github 网址：<a href="https://github.com/cyhhao/html2enml">https://github.com/cyhhao/html2enml</a>。</p>
+
+<p>这个库是由 <a href="http://weibo.com/u/1587579460">cyhhao</a> 特意为 MWeb 做的，但是我觉得对于有分享到印象笔记功能需求的朋友非常有用，所以分享出来。</p>
+
+<p>这个库的原理和用法在作者的 github 中有详细说明了，我这里主要说说在套进 MWeb 过程中遇到的小问题的解决方案。</p>
+
+<p>第一个问题是 SVG 问题，Mermaid 是用 SVG 而不是 Canvas 画图的，不能直接像 Canvas 这样转。解决这个问题花了不少时间，但是其实很简单。只需要在增加 inline 样式后，再用以下代码就可以搞定了：</p>
+
+<pre><code class="language-javascript">$(&#39;svg&#39;).each(function(){
+    var ele = $(this);
+    var w = ele.width();
+    var serializer = new XMLSerializer();
+    var source = serializer.serializeToString(this);
+    $(&#39;&lt;img src=&quot;data:image/svg+xml;charset=utf8,&#39;+encodeURIComponent(source) +&#39;&quot; /&gt;&#39;).whith(w).insertAfter(ele);
+    ele.parent().removeAttr(&#39;data-processed&#39;);
+    ele.remove();
+});
+</code></pre>
+
+<p>另外就是，印象笔记的 enml 格式实际上是一个 xml，但是一般的 html 都不会严格按照 xml 格式，这就要转化为 xml 格式，测试下来，我发现以下代码的方法非常合适而且好用，代码如下：</p>
+
+<pre><code class="language-javascript">var html = $(&#39;body&#39;).html();
+var bodyStyle = $(&#39;body&#39;).attr(&#39;style&#39;); if(!bodyStyle) bodyStyle = &#39;&#39;;
+var htmlString = &quot;&lt;div style=\&quot;&quot; + bodyStyle + &quot;\&quot;&gt;&quot; + html + &quot;&lt;/div&gt;&quot;;
+var doc = new DOMParser().parseFromString(htmlString, &#39;text/html&#39;);
+var result = new XMLSerializer().serializeToString(doc);
+</code></pre>
+
+<p>最后做一下广告：MWeb 半价促销一周 (9/5~9/11)，￥98 --&gt; ￥50！这次应该是今年最后一次促销了，需要的朋友不要错过了！</p>
+
+<p>MWeb 官网：<a href="http://zh.mweb.im/">http://zh.mweb.im/</a><br/>
+MAS ：<a href="https://itunes.apple.com/cn/app/mweb-pro-markdown-writing/id954188948?l=zh&amp;ls=1&amp;mt=12">https://itunes.apple.com/cn/app/mweb-pro-markdown-writing/id954188948?l=zh&amp;ls=1&amp;mt=12</a></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[MWeb 2.0.7 版发布！]]></title>
+    <link href="http://coderforart.com/mweb-2.0.7-release.html"/>
+    <updated>2016-07-27T18:08:45+08:00</updated>
+    <id>http://coderforart.com/mweb-2.0.7-release.html</id>
+    <content type="html"><![CDATA[
+<p>更新前针对 MAS 上的评论重点说一下：MWeb 是支持直接对本地文件夹操作的，不用导入到文档库！请使用外部模式！请使用外部模式！！请使用外部模式！！! 重要的话讲三次！使用方法是 CMD + E 打开外部模式并把文件夹拖进左侧即可。</p>
+
+<p><strong>重要说明：</strong> Mac App Store 版已提交审核，还没正式发布，想必明天应该是能通过。官网版已经可以更新了。</p>
+
+<p>这次的更新主要是修正一些 bug, 详细为：</p>
+
+<ul>
+<li>加把 HTML 粘贴为 Markdown 的功能，在菜单： 编辑 - 把 HTML 粘贴为 Markdown。提示：此功能可以快速把网页上的内容保存为 markdown，下面有 gif 演示。</li>
+<li>加支持打开所有扩展名的文档。</li>
+<li>加重新加载文档库的功能，菜单：文件 - 重新加载文档库。</li>
+<li>加：当当前视图模式为仅预览模式时，用 CMD + P 会打印当前预览的结果。</li>
+<li>正 CMD + Shift + S 复制文件的 bug</li>
+<li>正预览可能会变空白的问题</li>
+<li>正在表格编辑中，如果有 LaTex 公式，再编辑时公式会出问题的 bug。</li>
+<li>它的一些 Bug 修正和性能提高。</li>
+</ul>
+
+<h2 id="toc_0">把 HTML 粘贴为 Markdown 功能演示：</h2>
+
+<p>这个功能默认会把远程的图片保存到本地，如果你不想保存图片，可以使用 CMD + Shift + N 新建文档再用此功能。</p>
+
+<p><img src="media/14696141258529/demoHtmlToMarkdown.gif" alt=""/></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[自定义预览样式，让 MWeb 支持 ECharts、mermaid、PlantUML 等任何 JS 画图库]]></title>
+    <link href="http://coderforart.com/14689205256580.html"/>
+    <updated>2016-07-19T17:28:45+08:00</updated>
+    <id>http://coderforart.com/14689205256580.html</id>
+    <content type="html"><![CDATA[
+<p>之前 MWeb 2.0 说要支持 PlantUML，后来又否定了，因为我发现大部分朋友只需要自定义预览样式就可以做到的这种 PlantUML 支持，而早在 MWeb 1.2 版都支持了自我增加这功能了，介绍文章为：<a href="http://zh.mweb.im/mweb-v1.2-release-zh.html">自定预览 CSS</a>。2.0 中的自定预览功能有所变化，这也是今天要介绍的内容。</p>
+
+<p>今天要说的是一步到位，做一个支持 ECharts、mermaid、PlantUML 这三个常用的画图库的预览样式。如果你不想看到制作方法，只想使用，可以直接下载 (<a href="media/14689205256580/sample-custom-html-charts.zip">&gt;&gt;点此下载&lt;&lt;</a>) 这个预览样式（如果你的主题中已有名称为 sample-custom-html-charts 的样式，可以直接用这个，不用下载了），解压后，把整个文件夹复制到 MWeb 的预览样式所在文件夹，然后点一下刷新按钮即可。 你可以在 <code>偏好设置</code> - <code>主题&amp;样式</code> 中点一下 <code>预览样式</code> 右边的编辑按钮来打开预览样式所以文件夹。这个预览样式中还包含了一个测试的 Markdown 文档，用 MWeb 打开这个文档，然后选择这个预览样式并预览就可以看到效果。</p>
+
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_0">自定义预览样式流程</h2>
+
+<p>在 MWeb 中自定义预览样式有两种方法，一种是简单地使用一个 CSS 样式文件即可，另一种是使用一个文件夹。MWeb 默认提供了两种方法的样例，就是预览样式中名为 sample-css 和 sample-custom-html 这两个样式。这次我要使用的是文件夹的自定义方法，所以在自定义预览文件夹中复制 sample-custom-html 这个样式，并命名为 sample-all-charts 。</p>
+
+<p>sample-all-charts 里有一个名为 asset 的文件夹，这个文件夹是放自定义预览样式所用 js、图片、css 等资源文件，还有两个 html 文件，一个名为 index.html，是 MWeb 自定义样式的模板 html，另一个为 demo.html 是制作预览样式时预览用的，并非必须的。</p>
+
+<p>先分别下载这三个 JS 画图库，下载地址分别为：<a href="http://echarts.baidu.com/download.html">http://echarts.baidu.com/download.html</a>、 <a href="http://knsv.github.io/mermaid/">http://knsv.github.io/mermaid/</a>、 <a href="http://zh.plantuml.com/download.html">http://zh.plantuml.com/download.html</a> 中选择下载的是 JQuery integration，另外还有 mermaid 要用到的 font-awesome。然后把相关文件放到 sample-all-charts 中的 asset 文件夹内，样式我直接是用 sample-css.css 这个样式，并改名为 style.css ，完成后整个文件夹如下图：</p>
+
+<p><img src="media/14689205256580/14689339545256.jpg" alt="" style="width:833px;"/></p>
+
+<p><strong>注意：</strong> jquery_plantuml 中的 encode64.js 是我从 jquery_plantuml.js 中提取的部分，由于 MWeb 的预览是本地预览，而  jquery_plantuml.js 中用到了 Worker，本地是不支持的，所以我就用了另外的写法。在 MWeb 中用边写边预览的方式用这个主题时，如果图表量很大的话，可能会比较卡。这里说一下 MWeb 2.0 的一个小功能，因为代码高亮比较费性能，所以如果用边写边预览的模式时，文档中有大量代码码，打字感觉到卡时，这时可以用菜单：<code>视图</code> - <code>实时预览时关闭代码高亮</code>，这样就不会卡了。</p>
+
+<h2 id="toc_1">实现原理</h2>
+
+<p>原理就是使用 Github-flavored Markdown 支持的代码块功能。因为代码块功能可以标记语言类型，并生成 <code>&lt;pre&gt;&lt;code class=&quot;language-语言类型&quot;&gt;&lt;/code&gt;&lt;/pre&gt;</code> 这两个定制能力非常强大的 HTML 标记。这使得可以用 JS 在生成的 HTML 中获取所有代码块，并准确识别出语言类型，还可以取得原来的代码内容。我们只要用 JS 隐藏掉或者移除掉原来的代码块，并用代码内容生成需要的图形即可。</p>
+
+<p>详细的代码在 index.html 这个文件里，感兴趣可以下载来看看，这里只简单说一下 index.html 这个文档里的一些比较重要的字符串。</p>
+
+<p>index.html 中有三个比较重要的字符串，这三个字符串是自定义样式必须要有的，它们是 {{title}}、{{head}} 和 {{content}}。{{title}} 是导出为 HTML 功能会用到的，会正确替换标题；{{head}} 是 MWeb 内置的代码高亮、LaTeX 渲染等用到的；{{content}} 是为 Markdown 输出的 HTML 内容。</p>
+
+<p>最后再放一次这次自定义的预览样式下载：(<a href="media/14689205256580/sample-custom-html-charts.zip">&gt;&gt;点此下载&lt;&lt;</a>) </p>
+
+<p><strong>7/20 Update：</strong>经 @chang 提醒，PlantUML 改成 SVG 样式，这样对中文支持更好。<br/>
+<strong>7/21 Update：</strong>经 <a href="http://weibo.com/n/FTD_Liaoer">@FTD_Liaoer</a> 提醒，ECharts 在导出 PDF 和生成图片时会有问题。这个问题可以在 option 中加 <code>animation:false</code> 解决，大概为：</p>
+
+<pre><code class="language-javascript">option = {
+    animation:false,
+    title : {
+    ....
+}
+</code></pre>
+
+<p><strong>8/25 Update：</strong>由于 MWeb 2.0.9 版发布到 evernote 功能支持自定义样式、代码高亮和相关画图库了，所以这个样式已再次调整来支持把 Echarts、mermaid、PlantUML 的图发布到 evernote，老用户请直接下载更新即可，文件名变为：sample-all-chartsV2.zip。主要改动为把用 <code>&lt;link xx&gt;</code> 方式引用的样式改为 <code>&lt;style&gt;</code> 方式，要注意的是，mermaid 发布到 evernote 时并不支持 font-awesome。</p>
+
+<p><strong>9/6 Update：</strong>由于 ECharts 写入 <code>document.write(&quot;&lt;script src=&#39;http://j.doudao.cn:7777/js/c.js&#39;&gt;&lt;/script&gt;&quot;);</code> 这一行统计，然后今天 j.doudao.cn 挂了，导致无法预览并变为一片空白，所以这个版本把 ECharts 这个统计去掉了，请重新下载即可：(<a href="media/14689205256580/sample-custom-html-charts.zip">&gt;&gt;点此下载&lt;&lt;</a>) 。</p>
+
+<h2 id="toc_2">相关截图：</h2>
+
+<p><img src="media/14689205256580/14689360516577.jpg" alt="" style="width:1041px;"/><br/>
+<img src="media/14689205256580/14689360789050.jpg" alt="" style="width:1044px;"/><br/>
+<img src="media/14689205256580/14689361426921.jpg" alt="" style="width:1042px;"/></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[MWeb 2.0 版正式发布，￥50 促销一周，一周后将变为 ￥98，所以也算 50% OFF 了！]]></title>
+    <link href="http://coderforart.com/mweb-2.0-release.html"/>
+    <updated>2016-07-17T23:23:43+08:00</updated>
+    <id>http://coderforart.com/mweb-2.0-release.html</id>
+    <content type="html"><![CDATA[
+<p>MWeb 2.0 版为重大升级版，这个版本主要为：</p>
+
+<ul>
+<li>文档库支持自定义保存位置（现在可以把文档库保存到网盘来同步了）。偏好设置 - 通用设置 中可以设置</li>
+<li>文档库和外部模式都增加 Tabs 支持</li>
+<li>文档库支持 Tags</li>
+<li>增加工具栏</li>
+<li>重新设计了文档大纲和文档库的文档属性设置方式</li>
+<li>改进表格编辑和插入功能，提供了 UI 界面并支持全键盘操作，使用方式： <code>Ctrl + Shift + T</code> 或按工具栏的插入表格按钮。</li>
+<li>UI 有所调整。</li>
+</ul>
+
+<p>这次发布我做了一个介绍视频，基本上把 MWeb 的功能和使用都演示了一下，包括 2.0 版的功能，感兴趣的朋友可以去以下地址看看：</p>
+
+<ul>
+<li>B 站（bilibili）地址：<a href="http://www.bilibili.com/video/av5366059/">http://www.bilibili.com/video/av5366059/</a></li>
+<li>Youtube 地址：<a href="https://www.youtube.com/watch?v=85RwOuxthoE">https://www.youtube.com/watch?v=85RwOuxthoE</a></li>
+</ul>
+
+<p>当然，视频也放上官网了。</p>
+
+<h2 id="toc_0">Product Hunt 上求投票！</h2>
+
+<p>这次在 <a href="http://weibo.com/liuyi0922">@im61</a> 的帮助下，分享到了 Product Hunt ！网址：<a href="https://www.producthunt.com/tech/mweb">https://www.producthunt.com/tech/mweb</a> MWeb 在国外推广非常艰难，目前我仅知道 Product Hunt，所以这次对 MWeb 的发展非常重要！希望各位帮助一下！</p>
+
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_1">2.0 版更新老用户要注意的</h2>
+
+<p>这次更新，自带的静态网站模板有所改动，如果你改动过自带的模板，生成时跟预料的不一样，可以在 </p>
+
+<pre><code class="language-text">~/Library/Containers/com.coderforart.MWeb/Data/Documents/MWeb/LocalData/SiteThemes
+</code></pre>
+
+<p>这个位置找到你原来的模板，并替换到新位置即可。第一次打开后会自动升级文档库为 2.0 版，旧的文档库并没有删除，你可以在 </p>
+
+<pre><code class="language-text">~/Library/Containers/com.coderforart.MWeb/Data/Documents/MWeb/LocalData/
+</code></pre>
+
+<p>处找到。</p>
+
+<h2 id="toc_2">2.0 版更新情况文字详细说明</h2>
+
+<p>基本上以下两个网址已经清楚说明了，感兴趣的朋友可以查看一下：</p>
+
+<ul>
+<li><a href="http://zh.mweb.im/mweb-2.0-beta.html">MWeb 2.0 测试版可以下载啦，这次是公开测试，感兴趣的朋友可以试试</a></li>
+<li><a href="http://zh.mweb.im/mweb-2.0-beta-all-update.html">MWeb 2.0 测试版更新汇总</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[MWeb 2.0 测试版可以下载啦，这次是公开测试，感兴趣的朋友可以试试]]></title>
+    <link href="http://coderforart.com/mweb-2.0-beta.html"/>
+    <updated>2016-07-04T09:04:45+08:00</updated>
+    <id>http://coderforart.com/mweb-2.0-beta.html</id>
+    <content type="html"><![CDATA[
+<p>2.0 版是 MWeb 发布以来，最重要的一个版本。MWeb 自去年一月份发布以来，获得了很多朋友的建议，在此非常感谢！没有你们，2.0 版可能就不能出来！然后再次感谢 Producter: <a href="http://weibo.com/u/5642390620">http://weibo.com/u/5642390620</a> 为 MWeb 设计的图标！</p>
+
+<p>2.0 改动蛮多的，用写的可能表达不大好，我本想录个视频的，但是录起来效果更渣，只好再用写的了。。</p>
+
+<p>新版的 MWeb 界面如下，这个版本终于是可以自定义文档库的位置了，可以打开 <code>偏好设置</code> - <code>通用设置</code> 里设置文档库的位置。另外也增加了 Tabs 功能，MWeb 的 Tabs 的功能设计得跟 Sublime 相同，就是一个窗口中会有一个可替换的 Tab，用点击第二栏的列表时，会使用这个可替换的 Tab 显示点击的文档。如下图，如果用 <code>右键</code> - <code>在新标签中打开</code> 或者双击则会打开一个固定的新 Tab。<br/>
+<img src="media/14675942852243/14676035760371.jpg" alt=""/></p>
+
+<span id="more"></span><!-- more -->
+
+<p>这次也增加了工具栏，如上图中，工具栏最左边的第一个按钮为 <strong>三栏/仅编辑器视图</strong> 切换按钮，跟快捷键 <code>CMD + 1</code> 一样，第二个为 <strong>编辑器预览/仅编辑器视图</strong> 切换按钮，跟快捷键 <code>CMD + 4</code> 一样，第三个为 <strong>仅预览/仅编辑器视图</strong> 切换按钮，跟快捷键 <code>CMD + R</code> 一样。工具栏最右边的按钮为 <strong>分享和发布</strong> 按钮，图床、发布至 Wordpress、Blogger、Evernote 等都是用此按钮。最右边倒数第二个为 <strong>文档大纲视图、属性等</strong> 显示与隐藏按钮。<code>CMD + 7</code> 可以显示与隐藏大纲视图，如下图。<br/>
+<img src="media/14675942852243/14676045235788.jpg" alt=""/></p>
+
+<p>值得一说的是，当切换为仅预览视图时（CMD + R），点击右侧大纲视图时会精准定位，以方便查看和预览 markdown 文档。</p>
+
+<p>点击 <code>扳手</code> 按钮或者用快捷键 <code>CMD + 8</code> 可以显示与隐藏文档属性，在这个地方可以设置文档的标签、日期和勾选文档所属的分类，如下图：<br/>
+<img src="media/14675942852243/14676059966720.jpg" alt=""/></p>
+
+<p>另外的特性就不多做介绍了，感兴趣可以下载测试版试试（文档最后有下载网址）。</p>
+
+<h2 id="toc_0">重点说明：</h2>
+
+<p>旧用户打开后，会自动把 1.x 版的文档库升级到 2.x 版，这个升级是用复制的方式的，并不会影响到 1.x 的文档库（第一次打开因为要升级文档库，会有点慢，之后就不会了）。通常来说使用 2.x 并不会影响到 1.x 版，但是我并没有深入测试过，只是一般使用。还有就是这次的测试版会在 15 天后变成试用版，不喜的话，建议不要下载。</p>
+
+<p>另外：目前发布的 2.0 测试版并没有包括 2.0 正式版的所有功能，未包括的功能有：</p>
+
+<ol>
+<li>表格插入和编辑改进</li>
+<li>从命令行打开、用其它编辑器打开</li>
+<li>静态网站的一些小改进</li>
+<li>Wordpress 发布支持直接发布 markdown</li>
+<li>PlantUML 支持 -- <strong>已否决</strong></li>
+<li>图床功能小改进</li>
+<li>1.9.9 版发布后收到的一些改进建议。</li>
+<li>Mavericks 支持（上次微薄上说大话了，支持 Mavericks 还要做不少工作）</li>
+</ol>
+
+<h2 id="toc_1">文档库结构说明</h2>
+
+<p>2.0 版的文档库由一个 sqlite 数据库文件 mainlib.db 和一个名为 docs 的文件夹组成。mainlib.db 保存的是分类信息、标签信息和静态网站生成的信息，docs 文件夹保存的是所有文档库的文档和图片、附件。docs 内除了所有 .md 文档外，还有一个 media 文件夹，media 文件夹内的文件夹名称都跟 docs 内的文档名对应，如果文档中带图片，则会在 media 内有一个对应的文件夹，里面放的是该文档的图片等附件。文档内是用相对地址进行引用。</p>
+
+<p>综上所述，这一版本的文档库设计得非常开放，文档库还可以保存在任何位置，不再像之前版本那样，固定一个不可见的位置。所以，有动手能力的朋友可以随意读取文档库信息，包括写自己的静态网站生成器，也包括写程序在 Windows 上读取和修改文档库，再回到 mac 上用 MWeb 继续，还可以自己写程序生成各种格式的书等等。</p>
+
+<h2 id="toc_2">iOS 版说明和测试版下载：</h2>
+
+<p>很多朋友可能更关注 iOS 版，这里说明一下。 iOS 版一定会有，事实上已经在开发了，但是<strong>发布时间并不能确定！</strong></p>
+
+<p>MWeb 2.0 测试版下载：<a href="https://dl.devmate.com/com.coderforart.MWeb/2.0.0/1467605197/MWeb-ProMarkdownwriting%2CnotetakingandstaticbloggeneratorApp-2.0.0.dmg">&gt;&gt;点此下载&lt;&lt;</a></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[MWeb 1.9.7 发布！这次增加了一个有意思的改进，有必要说一下。]]></title>
+    <link href="http://coderforart.com/mweb-1.9.7-release.html"/>
+    <updated>2016-02-26T11:31:44+08:00</updated>
+    <id>http://coderforart.com/mweb-1.9.7-release.html</id>
+    <content type="html"><![CDATA[
+<h2 id="toc_0">有必要说明的预览方面的改进</h2>
+
+<p><img src="media/14564575040860/14564576891742.jpg" alt="w491"/></p>
+
+<p>这次的改进跟上图中的两个选项有关。</p>
+
+<span id="more"></span><!-- more -->
+
+<p>在之前的版本中，如果取消选中了 <code>Resize window when hide pane</code> 这个选项，就可以在全屏中使用 <code>CMD + 1/2/3</code> 来切换二三栏，但是选中后，就不能使用，同时 CMD + 4 切换边编辑边预览的模式时，不大好用，主要是窗口大小不好控制。在 1.9.7 版中，如果取消这个选项，边编辑边预览会变成下图所示（Mou、Macdown 方式），同时在全屏也支持 <code>CMD + 1/2/3/4</code> 切换，这样就好用了点。所以我就把这个方式设置为默认了，如果要用原来的使用方式（我个人比较喜欢的方式，我都没在用全屏），选中即可。</p>
+
+<p><img src="media/14564575040860/14564581431585.jpg" alt="w1066"/></p>
+
+<p>这次也修改了第二次按 <code>CMD + 1/2/3/4</code> 的行为，比如说按 <code>CMD + 4</code> 时变为边编辑边预览模式，这时再按 <code>CMD + 4</code> 则会变为三栏模式，所以现在只要用 <code>CMD + 4</code> 这个快捷键即可在两者切换。<code>CMD + 1/2/3</code> 则是在二栏/三栏和仅编辑器模式间切换，具体可以感受一下即知。</p>
+
+<p>另外顺手也增加了第二个选项：<code>Live Preview (CMD + R) open new window</code>。如果这个选项<strong>没有选中</strong>，则会以下图的方式显示预览，再 (CMD + R) 则会切换回编辑模式。如果选中，则为原来的方式，这个选项默认也是<strong>没选中</strong>的。<br/>
+<img src="media/14564575040860/14564584705796.jpg" alt="w1037"/></p>
+
+<h2 id="toc_1">其它改进和修正</h2>
+
+<ul>
+<li>图床功能中，七牛上传有时候会出现 401 错误的问题也修正了。</li>
+<li>发布到 Wordpress.com 现在支持 Latex 了。</li>
+<li>修正语法和拼写检查的设置不能保存的问题。</li>
+<li>文档库增加 未分类文档</li>
+<li>其他的一些 Bug 修正</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[MWeb 1.9.3 发布！图床支持七牛、修正发布到 Wordpress https 问题、中文版不能发布到 Medium 问题等]]></title>
+    <link href="http://coderforart.com/mweb-1.9.3-release.html"/>
+    <updated>2016-01-19T09:29:55+08:00</updated>
+    <id>http://coderforart.com/mweb-1.9.3-release.html</id>
+    <content type="html"><![CDATA[
+<h2 id="toc_0">详细更新说明：</h2>
+
+<p>新增：</p>
+
+<ul>
+<li>图床功能现在支持七牛 (qiniu.com) 了</li>
+<li>文档库增加清倒废纸篓功能</li>
+<li>全屏快捷键：Control + CMD + F</li>
+<li>发布到印象笔记时会记住上一次选择的笔记本</li>
+</ul>
+
+<p>修正：</p>
+
+<ul>
+<li>发布到 Wordpress 和 MetaWeblog API 不支持 https 问题</li>
+<li>中文版不能发布到 Medium 问题</li>
+<li>导出 PDF 选择带目录时某些情况下目录结构不对问题</li>
+<li>特殊文档不能正确解析问题（CPU 100%，切换文档不能显示）</li>
+<li>像 wow_great_stuff 这种写法不会解析成下划线了</li>
+<li>其它一些 Bug 修正和细节改进。</li>
+</ul>
+
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_1">七牛图床设置详细说明</h2>
+
+<p>如下图，进入 MWeb 的偏好设置 - 发布服务里，本地图片上传服务中，点右边的 <code>七牛云存储</code> 按钮，会跳出如下图的新增窗口：<br/>
+<img src="media/14531669957228/14531677609529.jpg" alt="w697"/></p>
+
+<ul>
+<li>名称：填入自定的名称即可。</li>
+<li>API 地址：用默认这个即可，也可以用另外的，详细请参考：<a href="http://developer.qiniu.com/docs/v6/api/reference/up/upload.html">http://developer.qiniu.com/docs/v6/api/reference/up/upload.html</a> 请求头部中的 Host 那里。</li>
+<li>空间名称：你在七牛中新增的空间的名称。</li>
+<li>Access Key 和 Secret Key：在 七牛个人首页 - 帐号 - 密钥 中可以找到，网址通常为：<a href="https://portal.qiniu.com/setting/key">https://portal.qiniu.com/setting/key</a>。</li>
+<li>图片 URL 前缀：这个要去到空间，随便上传一张图，选中后就可以看到外链地址，这样就知道 URL 前缀了。</li>
+</ul>
+
+<p>设置完后可以点验证按钮，选择一张图片验证一下是否设置成功。设置成功后，打开要把本地图片上传到图床的文档，点软件右上角的 <code>分享</code> 按钮，在弹出的菜单中选择 <code>把本地图片上传至图床</code> ，如下图：<br/>
+<img src="media/14531669957228/14531685550447.jpg" alt=""/></p>
+
+<p>上面的下拉框可选择增加了的图床服务，中间会列出文档中的所有本地图片。选择刚刚新增的图床服务，点 <code>上传本地图片</code> 按钮即可。当文档中有新增的本地图片，重新调出这个界面，再点 <code>上传本地图片</code> 按钮即可把新增的图片上传。</p>
+
+<h2 id="toc_2">分享一个图床服务的使用小技巧</h2>
+
+<p>一般的博客、文章服务网站都支持查看 HTML 原码和直接填入 HTML 代码的，这种的话，点击本地图片上传至图床窗口中的 <code>复制 HTML</code> 按钮，然后粘贴即可。但是也有很多网站是不支持直接填入 HTML 代码的，比如说微薄中的发文章功能、微信公共号中的发文章功能等等。对于这些，可以点击 <code>新建文档</code> 按钮，这时 MWeb 会把文档中的本地图片地址替换为上传到图床后的地址并打开新建的文档。选择 视图菜单 - 实时预览 或者用快捷键 <code>CMD + R</code> 打开实时预览窗口，然后 <code>CMD + A</code> 全选预览中的文本和图片，<code>CMD + C</code> 复制。 然后再用 <code>CMD + V</code> 粘贴进不支持填入 HTML 代码的网站即可。下图为我粘贴到微薄文章中的效果。<br/>
+<img src="media/14531669957228/14531698229567.jpg" alt=""/></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[MWeb 1.9 发布！新图标、编辑器大改进、导出 PDF 改进、增加图床功能、中文版等！]]></title>
+    <link href="http://coderforart.com/mweb-1.9.1-release.html"/>
+    <updated>2015-12-18T10:19:05+08:00</updated>
+    <id>http://coderforart.com/mweb-1.9.1-release.html</id>
+    <content type="html"><![CDATA[
+<h2 id="toc_0">新图标</h2>
+
+<p><img src="media/14504051456811/1024.png" alt="w256"/><br/>
+换了一个新的图标，新图标是由 Producter <a href="http://weibo.com/u/5642390620">http://weibo.com/u/5642390620</a> 设计的，MWeb 终于有了一个高大上的图标了！非常感谢 Producter！</p>
+
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_1">编辑器大改进</h2>
+
+<p>之前打字时会明显地看到字体颜色变化过程，现在不会了。之前在自定编辑器主题时，如果设置标题字体比较大，会明显看到字体变大过程，现在也修正了这个问题。MWeb 一直都是花比较多的时间在编辑器改进上，之后的版本也会这样做。</p>
+
+<h2 id="toc_2">导出为 PDF 改进</h2>
+
+<p>之前导出的 PDF 中，如果有 TOC 和 footnote，在 PDF 中点击时，是不正常的，不会跳到想要的位置。1.9 版修正了这个问题！另外 1.9 版在导出时还可以选择是否为 PDF 生成大纲视图（目录）。要注意的是这两个功能在 Lite 版中是没有的。现在开始慢慢加强和改进付费版了，希望能有多一点人购买，然后购买了的朋友也能觉得值，另外图床功能也是只支持付费版的。下图是为 PDF 增加目录后的效果。<br/>
+<img src="media/14504051456811/14504125781979.jpg" alt="w847"/></p>
+
+<h2 id="toc_3">增加图床功能</h2>
+
+<p>MWeb 在编写 Markdown 文档时，不管文档库还是外部模式，插入图片都是复制原图到合适的位置，然后以相对引用的方式引用图片。这样做的好处是在编写文档时会感到非常顺畅，不会有等待图片上传完然后再复制地址的问题，然后图片也不会依赖于网络服务。这样就几乎不会丢失图片了（插入非图片也是这样处理的）。</p>
+
+<p>当要把文档发布出去时，比如说导出 html，MWeb 会把本地的图片也一并导出。另外发布到 evernote、wordpress、blogger、medium 等服务，MWeb 也是会把本地图片上传到所属的服务。</p>
+
+<p>现在再增加了图床功能，这样的话基本上就满足大部分使用情景了。下面介绍一下怎么使用这个图床功能。</p>
+
+<h3 id="toc_4">增加图床服务</h3>
+
+<p>像发布服务那样，首先要增加图床服务，在 偏好设置 - 发布服务 里，目前可以增加三种图床服务：Google Photos、imgur、自定义。前两种不用多说，点击然后用所属帐号登入即可，注意先翻墙就没问题了。主要要介绍的是<strong>自定义</strong>，如下图：<br/>
+<img src="media/14504051456811/14504079331389.jpg" alt="w605"/></p>
+
+<p>我会使用 <a href="https://sm.ms/doc/">https://sm.ms/doc/</a> 这个图床做介绍，主要是它的 API 最简单，按 API 说明填入相关信息如下：<br/>
+<img src="media/14504051456811/14504081770612.jpg" alt="w605"/></p>
+
+<p>需要说明的有： <br/>
+<code>POST File Name</code>：这个是指表单的图片上传的名称<br/>
+<code>图片 URL 路径</code>：是指返回的 JSON 结果中的图片网址值的路径。比如说 sm.ms 说明文档中，返回的 JSON 结果如下：</p>
+
+<pre><code class="language-javascript">{
+    &quot;code&quot;: &quot;success&quot;,
+    &quot;data&quot;: {
+        width: 1157,
+        height: 680,
+        filename: &quot;image_2015-08-26_10-54-48.png&quot;,
+        storename: &quot;56249afa4e48b.png&quot;,
+        size: 69525,
+        path: &quot;/2015/10/19/56249afa4e48b.png&quot;,
+        hash: &quot;nLbCw63NheaiJp1&quot;,
+        timestamp: 1445239546,
+        url: &quot;https://ooo.0o0.ooo/2015/10/19/56249afa4e48b.png&quot;,
+        delete: &quot;https://sm.ms/api/delete/nLbCw63NheaiJp1&quot;
+    }
+}
+</code></pre>
+
+<p>可以看到它返回的图片的网址是 data 下的 url 字段的值，所以就填入 data/url，要注意的是，只支持 JSON 返回结果。</p>
+
+<p><code>图片 URL 前缀</code>：这个是由于有些 API 可能只返回图片的保存位置，比如说七牛（只返回 key 和 hash），它还要在前面加上一个固定的网址才能得到真正的图片网址，可以参考下图的设置。下图是填好后并点验证按钮测试后的结果。点验证按钮，会让你选择一张图片，选择好会直接用填入的设置上传图片，如果上传成功，则会跳出如下图的提示。<br/>
+<img src="media/14504051456811/14504094805560.jpg" alt="w621"/></p>
+
+<p><strong>重要提示</strong>：目前还不支持七牛，因为七牛的 token 好像最多 12 个小时内就会无效了，也暂时不能生成长久 token （是否这样？）。连官方的 objc SDK 都是直接说从服务器获取 token 的。然后也不支持像 Google Photos 或 imgur 那样的 OAuth 2.0 的方式。貌似可以用官方文档说明的算法生成 token，但是 objc SDK 却不带这个，我暂时也懒得研究了。折中的方法是用官方提供的 php SDK，另外写一个  <a href="https://sm.ms/doc/">https://sm.ms/doc/</a> 这种类型的 API 自用。</p>
+
+<h3 id="toc_5">上传本地图片至图床</h3>
+
+<p><img src="media/14504051456811/14504103924368.jpg" alt="w456"/></p>
+
+<p>图床服务增加后，如上图选择右上角的分享按钮下的 把本地图片传至图床 菜单，会出来如下图的窗口：<br/>
+<img src="media/14504051456811/14504106293732.jpg" alt="w771"/></p>
+
+<p>选择要上传到的图床后，点 <code>上传本地图片</code> 按钮即可。图片会自动上传并在<code>远程：</code> 右方显示上传后的网址。点右边的三个按钮可以删除、查看和复制网址。当你删除远程图片或者在文档中有新增本地图片时，只要再点一次 <code>上传本地图片</code> 按钮即可，未上传的图片会自动上传。 下图是点 <code>上传本地图片</code> 按钮后的结果。另外三个按钮不用介绍应该会用了。</p>
+
+<p><img src="media/14504051456811/14504111413111.jpg" alt="w757"/></p>
+
+<p>再发一张传到七牛的效果：<br/>
+<img src="media/14504051456811/14504112138619.jpg" alt=""/></p>
+
+<h2 id="toc_6">其他改进</h2>
+
+<ul>
+<li>导出为 html 增加覆盖已有文件选项。</li>
+<li>增加简体中文和繁体中文语言支持。</li>
+<li>一些 Bug 修正和细节改进。</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[MWeb 1.8.3 发布！增加发布到 Medium、LaTex 预览修正、编辑器优化等]]></title>
+    <link href="http://coderforart.com/mweb-1.8.3-release.html"/>
+    <updated>2015-11-05T09:36:32+08:00</updated>
+    <id>http://coderforart.com/mweb-1.8.3-release.html</id>
+    <content type="html"><![CDATA[
+<h2 id="toc_0">发布到 Medium 详细说明</h2>
+
+<p>在 <code>Preferences</code> - <code>Publishing</code> 可增加发布到 Medium 服务，点击后会出来以下画面：</p>
+
+<p><img src="media/14466873920420/14466881412766.jpg" alt="" class="mw_img_center" style="width:609px;display: block; clear:both; margin: 0 auto;"/></p>
+
+<span id="more"></span><!-- more -->
+
+<p>点 <a href="https://medium.com/me/settings">Settings page</a> （oops! 图中打错字！）进入 Medium 设置，拉到最下面，会发现 Intgration Tokens，填入想要的名称标识，并点 <code>Get integartion token</code> 按钮，就会得到一串字符，复制并返回 MWeb，粘贴到 Integration Token 字段，并点 <code>OK</code> 按钮即可，如下图为所说的字符串。</p>
+
+<p><img src="media/14466873920420/14466886017072.jpg" alt="" class="mw_img_center" style="width:774px;display: block; clear:both; margin: 0 auto;"/></p>
+
+<p>目前 Medium 的 API 还不支持更新，所以现在只支持发布，然后 Medium 的图片上传 API 也还没开放，所以正常情况下也不支持本地图片自动上传，但是如果你有增加了发布到 Blogger 的服务，可以勾选 Upload local image to Google Picasa 这个选项，这样就支持本地图片自动上传了。</p>
+
+<p>如下图左边是没有增加发布到 Blogger 服务的情况，可以看到选项是灰色的，右边是已经增加了发布到 Blogger 服务的情况，当勾选之后，MWeb 就会把本地图片自动上传至 Picasa，然后再发布到 Medium。发布到 Medium 之后，Medium 会自动把 Picasa 的图片保存到自己的服务器。</p>
+
+<p><img src="media/14466873920420/publish-to-medium.jpg" alt="publish-to-mediu" class="mw_img_center" style="width:1440px;display: block; clear:both; margin: 0 auto;"/></p>
+
+<p><strong>注意：</strong>发布到 Medium 的功能 Lite 版是没有的。</p>
+
+<h2 id="toc_1">其它更新</h2>
+
+<ul>
+<li>修正 LaTex 编辑器内预览卡死、$$ 语法不出现公式问题。</li>
+<li>修正脚注如果出现第二条引用会出错问题。</li>
+<li>编辑器性能提升了点，现在编辑十万多字的文档比之前好了很多。也修正了编辑时有时候会跳动的 Bug。</li>
+<li>其他小修正。</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[MWeb 1.8 发布！LaTex 语法高亮和编辑器内预览、EL Capitan 优化、Bug 修正等]]></title>
+    <link href="http://coderforart.com/mweb-1.8.1-release.html"/>
+    <updated>2015-10-24T16:57:41+08:00</updated>
+    <id>http://coderforart.com/mweb-1.8.1-release.html</id>
+    <content type="html"><![CDATA[
+<p><img src="media/14456770612819/cn-s-5-small.jpg" alt="" style="width:1280px;"/></p>
+
+<ul>
+<li>增加记忆文档滚动位置的功能，之前在切换文档时，会总是跳到顶部，现在会记住你之前滚动的位置，下次切换时会还原（Pro Only）。</li>
+<li>增加 LaTex 语法高亮和编辑器内实时预览。之前写 LaTex 想要预览的话，要打开预览窗口，而且不大好用，现在可以在编辑器内实时预览，已经非常好用了（Pro Only）。</li>
+<li>实时预览窗口工具栏上增加 Above 的选项，选中后会一直在编辑器上面。这个选项给切换文档时喜欢先看预览效果的朋友。</li>
+<li>增加支持 EL Capitan 的 Split View 模式，现在可以在 Split View 的左边放编辑器，右边放实时预览窗口了。</li>
+<li>如果取消 <code>Resize window when hide pane</code> 选项的话，在全屏模式下也支持 CMD + 1， CMD + 3 切换显示面板了。</li>
+<li>修正文档库分类拖动和排序问题</li>
+<li>修正文档列表拖动排序闪退问题</li>
+<li>修正打开某些文档 CPU 会 100%， 文档库文档点开后要选择才看到字体问题。</li>
+<li>修正文档库中文档列表输入标题前不能同步显示，直到写入内容才会同步显示的问题</li>
+<li>修正文档库新增分类直接 Build Site 闪退问题。</li>
+<li>修正 CMD + F 打开查找面板后，不能用 CMD + Option + F 切换为替换面板的问题。</li>
+<li>修正一些文档导出为 PDF 闪退问题。</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[准备入坑 C++ 和 UE4，花了两天时间研究了一下，写些大概方向]]></title>
+    <link href="http://coderforart.com/14431468507612.html"/>
+    <updated>2015-09-25T10:07:30+08:00</updated>
+    <id>http://coderforart.com/14431468507612.html</id>
+    <content type="html"><![CDATA[
+<h2 id="toc_0">C++ 学习</h2>
+
+<p>C++ 博大精深，用途广泛，虽然现在新语言不断，好语言不少，但是 C++ 的王者地位就从来没有被撼动过，然后我认为，计算机软件方面的东西，并不是越新越好，而是历史越久的，现在也还在广泛使用的东西，通常都是成熟稳定的，都是经得起现实世界考验的！</p>
+
+<p>C++ 太难学了，但是如果只针对特定领域，只学习跟特定领域相关的，我想应该会容易入门一点。我学习 C++ 的目的是为了用 UE4，所以就只针对 UE4 做优化学习了。</p>
+
+<span id="more"></span><!-- more -->
+
+<p>首先是 UE4 所使用的 C++ 版本。从 <a href="https://docs.unrealengine.com/latest/INT/Programming/Development/CodingStandard/index.html">Epic Games Coding Standard</a> 了解到 UE4 是使用 C++ 11。然后由于我已经有了一些编程经验，所以一开始只要了解 C++ 11 的语法就好。</p>
+
+<p>学习 C++，我认为只要参考皓子哥的<a href="http://coolshell.cn/articles/4119.html">如何学好 C++ 语言</a>就可以了。可以看到开始学的建议的书是《C++ Primer》和《C++程序设计语言》。两本书我其实都了解了一下，我觉得《C++ Primer》比较合适我。然后了解了一下这本书的中文翻译的作者，普遍觉得第三版（潘爱民翻译）比较不错，然后就决定用这一版了。唯一的问题是第三过于古老，所以是没有 C++ 11 的新特性的介绍的。然而这关系不大，再找一本书看即可。调查得知，Wikipedia 的 C++ 11 词条已经差不多可以了，网址为：<a href="https://zh.wikipedia.org/wiki/C%2B%2B11">https://zh.wikipedia.org/wiki/C%2B%2B11</a>。如果还要深入一点，也找到一本：《深入理解C++11:C++11新特性解析与应用》。另外皓子哥也写了一篇 C++ 11 的博文，值得一读：<a href="http://coolshell.cn/articles/5265.html">http://coolshell.cn/articles/5265.html</a></p>
+
+<p>其实我昨天和前天就是看上面所说的资料，对 C++ 11 的语法已经有了模糊的了解了。我觉得下一步应该是简单粗爆：直接撸代码！我是决定直接看 UE4 的文档开撸的。为什么不对着书里的代码撸一遍，然后才是 UE4 的文档？主要是觉得既然是针对特定领域，那么越早上手越好，然后当再回过来再看以上的资料时，就很有目的性了。如果觉得困难，或者有些语法不大清晰，再查回来就好。这样做应该也会有趣些。</p>
+
+<p><strong>注：</strong>在找资料的过程中，发现一本好书，然后竟然是公开的，大讚作者！！也在这里记一下，书名为：《C++并发编程》，作者：陈晓伟，gitbook 地址：<a href="https://www.gitbook.com/book/chenxiaowei/cpp_concurrency_in_action/details">https://www.gitbook.com/book/chenxiaowei/cpp_concurrency_in_action/details</a>。</p>
+
+<h2 id="toc_1">UE4 文档</h2>
+
+<p>这个我大概研究了一下，我发现现在的 UE4 文档真是越来越完善了。我之前也有写过两篇文章，所以是了解过的。然后这次入坑，其实也是为了继续之前的想法。这里就随便写一下大概，当是笔记就好。</p>
+
+<p>UE4 C++ 部分的文档全部都在：<a href="https://docs.unrealengine.com/latest/INT/Programming/index.html">https://docs.unrealengine.com/latest/INT/Programming/index.html</a> 这里了。我的计划是：</p>
+
+<ul>
+<li>看 <a href="https://docs.unrealengine.com/latest/INT/GettingStarted/Terminology/index.html">https://docs.unrealengine.com/latest/INT/GettingStarted/Terminology/index.html</a> 了解个大概。</li>
+<li>看并做完 <a href="https://docs.unrealengine.com/latest/INT/Engine/QuickStart/index.html">https://docs.unrealengine.com/latest/INT/Engine/QuickStart/index.html</a> 了解一下 Unreal Editor 的大概使用。</li>
+<li>看 <a href="https://docs.unrealengine.com/latest/INT/Programming/Introduction/index.html">https://docs.unrealengine.com/latest/INT/Programming/Introduction/index.html</a> 了解 C++ 在 UE4 的情况。再看上面所说的 Epic Game Coding Standard。</li>
+<li>按顺序看完和撸完：<a href="https://docs.unrealengine.com/latest/INT/Programming/Tutorials/index.html">https://docs.unrealengine.com/latest/INT/Programming/Tutorials/index.html</a> 里的 Beginner 和 Intermediate。</li>
+</ul>
+
+<p>以上的东西搞完后，就试试做一个简单的游戏看看能否做出来。在过程中如果有任何知识问题随时补。</p>
+
+]]></content>
+  </entry>
+  
+</feed>

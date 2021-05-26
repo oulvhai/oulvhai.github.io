@@ -1,0 +1,666 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+    
+  游戏制作之路：游戏引擎选择、Mac下和Windows下UnrealEngine 4体验对比、文档及其他 - Coder For Art
+  
+  </title>
+  
+  
+  <link href="atom.xml" rel="alternate" title="Coder For Art" type="application/atom+xml">
+    <link rel="stylesheet" href="asset/css/foundation.min.css" />
+    <link rel="stylesheet" href="asset/css/docs.css" />
+    <script src="asset/js/vendor/modernizr.js"></script>
+    <script src="asset/js/vendor/jquery.js"></script>
+ 
+<script type="text/javascript">
+  function before_search(){
+    var searchVal = 'site:coderforart.com ' + document.getElementById('search_input').value;
+    document.getElementById('search_q').value = searchVal;
+    return true;
+  }
+</script>
+  </head>
+  <body class="antialiased hide-extras">
+    
+    <div class="marketing off-canvas-wrap" data-offcanvas>
+      <div class="inner-wrap">
+
+
+<nav class="top-bar docs-bar hide-for-small" data-topbar>
+
+
+  <section class="top-bar-section">
+  <div class="row">
+      <div style="position: relative;width:100%;"><div style="position: absolute; width:100%;">
+        <ul id="main-menu" class="left">
+        
+        <li id="menu_item_index"><a target="_self" href="index.html">Home</a></li>
+        
+        <li id="menu_item_archives"><a target="_self" href="archives.html">Archives</a></li>
+        
+        <li id="menu_item_about"><a target="_self" href="about.html">About</a></li>
+        
+        </ul>
+
+        <ul class="right" id="search-wrap">
+          <li>
+<form target="_blank" onsubmit="return before_search();" action="https://google.com/search" method="get">
+    <input type="hidden" id="search_q" name="q" value="" />
+    <input tabindex="1" type="search" id="search_input"  placeholder="Search"/>
+</form>
+</li>
+          </ul>
+      </div></div>
+  </div>
+  </section>
+
+</nav>
+
+        <nav class="tab-bar show-for-small">
+  <a href="javascript:void(0)" class="left-off-canvas-toggle menu-icon">
+    <span> &nbsp; Coder For Art</span>
+  </a>
+</nav>
+
+<aside class="left-off-canvas-menu">
+      <ul class="off-canvas-list">
+        
+        <li><a target="_self" href="index.html">Home</a></li>
+        
+        <li><a target="_self" href="archives.html">Archives</a></li>
+        
+        <li><a target="_self" href="about.html">About</a></li>
+        
+
+    <li><label>Categories</label></li>
+
+        
+            <li><a href="Cocoa.html">Cocoa</a></li>
+        
+            <li><a href="CG%20Artist.html">CG Artist</a></li>
+        
+            <li><a href="Game%20Engine.html">Game Engine</a></li>
+        
+            <li><a href="MWeb-cat.html">MWeb</a></li>
+        
+            <li><a href="PinPhoto-cat.html">PinPhoto</a></li>
+         
+
+      </ul>
+    </aside>
+
+<a class="exit-off-canvas" href="#"></a>
+
+
+        <section id="main-content" role="main" class="scroll-container">
+        
+       
+
+ <script type="text/javascript">
+  $(function(){
+    $('#menu_item_index').addClass('is_active');
+  });
+</script>
+<div class="row">
+  <div class="large-8 medium-8 columns">
+      <div class="markdown-body article-wrap">
+       <div class="article">
+          
+          <h1>游戏制作之路：游戏引擎选择、Mac下和Windows下UnrealEngine 4体验对比、文档及其他</h1>
+     
+        <div class="read-more clearfix">
+          <span class="date">2015/01/16</span>
+
+          <span>posted in&nbsp;</span> 
+          
+              <span class="posted-in"><a href='CG%20Artist.html'>CG Artist</a></span>
+          
+              <span class="posted-in"><a href='Game%20Engine.html'>Game Engine</a></span>
+           
+         
+          <span class="comments">
+            
+              <a href="http://coderforart.com/unrealengine4-windows-mac.html#disqus_thread">comments</a>
+            
+
+            
+          </span>
+
+        </div>
+      </div><!-- article -->
+
+      <div class="article-content">
+      <h2 id="toc_0">UnrealEngine 4和Unity3d的选择</h2>
+
+<p>订阅了UrealEngine4（UE4）开发者。我开始做网站用的是ASP.NET和C#，之后做网站虽然换用更方便的PHP（因为做的都是小网站）。我想说，做了长达7年的小网站就算我再水，但是C#我还是懂一些的，而Unity3d刚刚好最建议用的就是C#。C++我不懂，只在高中毕业后看了C++编程思想并把大部分例子都手打入电脑并运行。不极是在肖极Unity3d在移动端有大量成功的案例，文档非常好，视频教程也很全，研究的人也非常多，有问题很容易找到文案等等等等，简直是好得不能再好了！但是：UE4是开源的，《游戏引擎架构》里说游戏一般都用C++，我这次学是认真的！！作为一个有追求的人也必须选UE4等等！！最后我要说的是，这些都不是我选UE4的主要原因，真相是：Unity3D好贵！月付400多，不付就马上没有全功能的，全买更贵！UE4如果你不用最新的，你只要买一个月，之后都是免费的，全功能的。虽然这点钱对于真正做产品来说，不算什么，但是对于学习了说，不一样。反正做游戏也不单单是引擎的事，然后学会了一个引擎，再学另一个，或者也就是几天的事。</p>
+
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_1">Mac OS X下下载和编译UnrealEngine 4</h2>
+
+<p>UE4在github中有三个版本，我直接下载release版本的.zip（因为我用git clone太慢了）。我下载的是4.6.1版。下载完成解压后右键setup.command打开，然后还会要下载大概2G左右的东西，这个下载的速度不错。然后再右键GenerateProjectFiles.command打开。等一会儿后就生成UE4.xcodeproj了。打开UE4.xcodeproj后，选择UE4Editor-Mac，然后build，发现我下载这个版本会出错。出错是这行：</p>
+
+<pre><code class="language-cpp">static bool GAllowApplePlatformSymbolication = PLATFORM_MAC &amp;&amp; IS_PROGRAM;
+</code></pre>
+
+<p>错误信息是：<code>Use of logical &#39;&amp;&amp;&#39; with constant operand</code>。<br/>
+我看不大懂，实在是找不到好办法，看意思他肯定是<code>true</code>，就改成：</p>
+
+<pre><code class="language-cpp">static bool GAllowApplePlatformSymbolication = true;//PLATFORM_MAC &amp;&amp; IS_PROGRAM;
+</code></pre>
+
+<p>然后就编译通过了。</p>
+
+<p>但是，我运行的时候，好慢好慢，然后xcode下打出来一堆东西，然后就挂掉了，没办法运行。。</p>
+
+<p>我去Epic打包好的地方下载一包试试。</p>
+
+<p>伤心了，还是一样错误，变成以下这样看看。。</p>
+
+<pre><code class="language-cpp">#if PLATFORM_MAC &amp;&amp; IS_PROGRAM
+static bool GAllowApplePlatformSymbolication = true;
+#else
+static bool GAllowApplePlatformSymbolication = false;
+#endif
+
+</code></pre>
+
+<p>编译过了，但是一样还是没办法运行。</p>
+
+<p>没办法了，试试4.5.1版本看看。<br/>
+下载后编译（方法跟4.6.1不大一样）。这次可以成功编译了。然后运行也没问题，但是好慢好慢好慢，好像我的rmbp15寸高配根本不大合适做这样的任务似的。新建项目xcode提示又出bug，我懒得管了，直接生成release版本的UE4Editor。应该会比debug版本的UE4Editor快很多吧。<del>先熟悉UE4Editor和学学Blueprints先了。C++什么的先不管先，因为太麻烦了，按照我编译后运行一下得要好久好久，估计10来分钟，如果全部编译，要大半个钟吧。。 如果改一下C++代码，还要编译后才能看到结果，那还得了。。 我直接不用学得了。（虽然可能不是这样，虽然Win下可能会快很多很多）</del> <strong>后来证明不是这样，然后如果用不到C++，UE4比想像中方便</strong></p>
+
+<p>话说我都编译好Release版后，然后去看 Getting Started，看到这页：<a href="https://docs.unrealengine.com/latest/INT/Engine/QuickStart/4/index.html">https://docs.unrealengine.com/latest/INT/Engine/QuickStart/4/index.html</a>，发现我编译这版没有Geometry！不得已我又下载了4.1版，又编译了，然后终于可以学习了。有图有真相！左边是4.1版！<br/>
+<img src="media/14213891828854/14214041748379.jpg" alt=""/>￼￼￼￼￼￼￼￼</p>
+
+<p>不得不说我耐心真好，编译好花时间 ╮(╯▽╰)╭  </p>
+
+<p><strong>注</strong> 后来发现4.5.1版只是换了名字，BSP 就是Geometry！╮(╯▽╰)╭  </p>
+
+<h2 id="toc_2">Windows下编译UnrealEngine 4</h2>
+
+<p>周未有点空，就开Windows挂着下载UE4，想试一下Window下的体验如何，因为UE4好像是Windows下优化极好的。</p>
+
+<p>先说一下我的机器供参考：CPU:e3-1230v2  GPU:gtx660 内存:8G SSD:128G。</p>
+
+<p>下载编译跟Mac差不多，时间上也差不多。Windows下编译4.6.1 完全没有任何出错。非常顺利！然后启动Debug版的Unreal Editor，比Mac下快很多，打开大场景也很快，很顺。试运行，很好，好得不能再好了！！但是好占空间，我随便试一下，下载三个Demo的游戏或场景，30多G空间就没了。 Mac下因为是512G所以没注意。</p>
+
+<h2 id="toc_3">Windows、Mac下UnrealEngine 4使用C++项目对比</h2>
+
+<p>再试了一下新建C++的项目看看。按 <a href="https://docs.unrealengine.com/latest/INT/Programming/QuickStart/index.html">https://docs.unrealengine.com/latest/INT/Programming/QuickStart/index.html</a> 这个文档加了几行C++代码，然后从开始编译到编译成功并打开Unreal Editor，大概1分钟左右。这并非不能接受。当然，这不能跟Unity3D用C#比，那才真正快。</p>
+
+<p>然后好奇再在Mac上试了一下（版本是4.5.1，因为4.6.1我编译不成功），新建C++项目，然后也按 <a href="https://docs.unrealengine.com/latest/INT/Programming/QuickStart/index.html">https://docs.unrealengine.com/latest/INT/Programming/QuickStart/index.html</a> 这个文档加了几行C++代码，想不到却出错了！版本不一样的原因，修正了一下，让他结果一样，然后从开始编译到编译成功并打开Unreal Editor，也是大概1分钟左右！这个结果让我惊喜了，看来是如果做场景小些的游戏，Mac下用UE4完全没问题！而我大概也是也只能是做场景小些的游戏（场景小，但是画面质量可以超高，UE4的画面比Unity3d好太多了），因为目标是丢上iPad、iPhone上玩的。上一张Mac下的图吧：</p>
+
+<p><img src="media/14213891828854/14215892261441.jpg" alt=""/>￼￼￼￼￼￼</p>
+
+<h2 id="toc_4">如果用不到C++，只用Blueprints使用UnrealEngine 4的简单方法</h2>
+
+<p>去 <a href="https://www.unrealengine.com/">https://www.unrealengine.com/</a> 登入后下载红线这个：<br/>
+<img src="media/14213891828854/14215898337076.jpg" alt=""/>￼￼￼￼￼</p>
+
+<p>下载后运行并登入，会自动下载4.6.1版的Unreal Editor，如下图，点Launch就可以了，还可以下载旧版本的Unreal Editor，如右边我就下载了4.5.1版的。╮(╯▽╰)╭  ，如果我是用不到C++我花这些时间到底在折腾什么？！！！</p>
+
+<p><img src="media/14213891828854/Snip20150118_4.png" alt="Snip20150118_4"/>￼￼￼￼￼</p>
+
+<h2 id="toc_5">关于UnrealEngine 4的文档和其他</h2>
+
+<p>之前说UE4文档不如Unity3d好，但是我仔细看了，也是相当全面的，学会大概不成问题，更何况youtube上还有大量的视频可以看。C++也不成问题，按《游戏引擎架构》中说的，游戏中用到的C++不会太复杂，太复杂大不了不做那种特性就好。所以引擎部分应该不会对我产生大的难度了。但是做游戏引擎只是一小部分，最最重要部分：内容和玩法！首先说内容，这部分要学画画和3D了，而学3D软件对我来说也不成问题，只是画画目前还没有任何比较靠普的路子能成，至于动画随便弄一下然后买本《动画师生存手册》看看到底要如何了，也没有太大把握。。玩法部分，随便弄弄应该可以。因为时间不多只有一年，所以几个东西要并行学习，边学边加上引擎综合考虑。大概是这样想法先。</p>
+
+
+    
+
+      </div>
+
+      <div class="row">
+        <div class="large-6 columns">
+        <p class="text-left" style="padding:15px 0px;">
+      
+          <a href="mweb-v1.1-release-zh.html" 
+          title="Previous Post: MWeb 1.1 版更新说明">&laquo; MWeb 1.1 版更新说明</a>
+      
+        </p>
+        </div>
+        <div class="large-6 columns">
+      <p class="text-right" style="padding:15px 0px;">
+      
+          <a  href="me-screenshot-and-in-yosemite.html" 
+          title="Next Post: MWeb Screenshot and in Yosemite">MWeb Screenshot and in Yosemite &raquo;</a>
+      
+      </p>
+        </div>
+      </div>
+      <div class="comments-wrap">
+        <div class="share-comments">
+          
+
+          
+            <div id="disqus_thread"></div>
+          
+
+          
+        </div>
+      </div>
+    </div><!-- article-wrap -->
+  </div><!-- large 8 -->
+
+
+
+
+ <div class="large-4 medium-4 columns">
+  <div class="hide-for-small">
+    <div id="sidebar" class="sidebar">
+          <div id="site-info" class="site-info">
+            
+                <div class="site-a-logo"><img src="media/14195170907881/icon.jpg" /></div>
+            
+                <h1>Coder For Art</h1>
+                <div class="site-des">I'm an indie Mac/iOS developer, also want to be a CG artist</div>
+                <div class="social">
+
+
+
+
+
+
+
+<a target="_blank" class="weibo" href="http://weibo.com/oulvhai" title="weibo">Weibo</a>
+<a target="_blank" class="twitter" target="_blank" href="http://twitter.com/oulvhai" title="Twitter">Twitter</a>
+<a target="_blank" class="github" target="_blank" href="https://github.com/oulvhai" title="GitHub">GitHub</a>
+
+  <a target="_blank" class="rss" href="atom.xml" title="RSS">RSS</a>
+                
+              	 </div>
+          	</div>
+
+               
+             <div id="site-categories" class="side-item ">
+                <div class="side-header">
+                  <h2>Important</h2>
+                </div>
+                <div class="side-content">
+                  <div style="color:#ff0000; text-align:center; padding:8px;" class="bg-info site_notice">
+                    <a style="color:#ff0000;"  onclick="ga('send','event','global_notice_click');" href="https://zh.mweb.im/mweb3x-release-note.html" >MWeb 3 发布后 2.x 版维护说明及两者之间的功能对比！</a>
+                  </div>
+                </div>
+            </div>
+    
+
+              <div id="site-categories" class="side-item ">
+                <div class="side-header">
+                  <h2>Categories</h2>
+                </div>
+                <div class="side-content">
+
+      	<p class="cat-list">
+        
+            <a href="Cocoa.html"><strong>Cocoa</strong></a>
+        
+            <a href="CG%20Artist.html"><strong>CG Artist</strong></a>
+        
+            <a href="Game%20Engine.html"><strong>Game Engine</strong></a>
+        
+            <a href="MWeb-cat.html"><strong>MWeb</strong></a>
+        
+            <a href="PinPhoto-cat.html"><strong>PinPhoto</strong></a>
+         
+        </p>
+
+
+                </div>
+              </div>
+
+              <div id="site-categories" class="side-item">
+                <div class="side-header">
+                  <h2>Recent Posts</h2>
+                </div>
+                <div class="side-content">
+                <ul class="posts-list">
+	      
+		      
+			      <li class="post">
+			        <a href="mweb3-release-note.html">MWeb 3.0 测试版更新情况</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="mweb3.0-on-test.html">MWeb 3.0 测试版终于发布了！欢迎大家试用！</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="15113184658847.html">MWeb for Mac, iOS 黑五半价促销一周，写个大概介绍。</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="mweb-ios-2.3.2-release.html">MWeb for iOS 2.3.2 发布！</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="how_to_use_images_in_mweb.html">MWeb Mac 版和 iOS 版图片及图床使用完全指南</a>
+			      </li>
+		     
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		   
+		  		</ul>
+                </div>
+              </div>
+        </div><!-- sidebar -->
+      </div><!-- hide for small -->
+</div><!-- large 4 -->
+
+</div><!-- row -->
+
+ <div class="page-bottom clearfix">
+  <div class="row">
+   <p class="copyright">Copyright &copy; 2015
+Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a>,&nbsp; 
+Theme used <a target="_blank" href="http://github.com">GitHub CSS</a>.</p>
+  </div>
+</div>
+
+        </section>
+      </div>
+    </div>
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="asset/prism.js"></script>
+
+
+<style type="text/css">
+figure{margin: 0;padding: 0;}
+figcaption{text-align:center;}
+
+/* PrismJS 1.14.0
+ http://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript */
+/**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+    color: black;
+    background: none;
+    text-shadow: 0 1px white;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+    
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+    text-shadow: none;
+    background:#b3d4fc;
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+    text-shadow: none;
+    background: #b3d4fc;
+}
+
+@media print {
+    code[class*="language-"],
+    pre[class*="language-"] {
+        text-shadow: none;
+    }
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+    padding: 1em;
+    margin: .5em 0;
+    overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+    background: #F7F7F7;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+    padding: .1em;
+    border-radius: .3em;
+    white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+    color: slategray;
+}
+
+.token.punctuation {
+    color: #999;
+}
+
+.namespace {
+    opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+    color: #905;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+    color: #690;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+    color: #9a6e3a;
+    background: hsla(0, 0%, 100%, .5);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+    color: #07a;
+}
+
+.token.function,
+.token.class-name {
+    color: #DD4A68;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+    color: #e90;
+}
+
+.token.important,
+.token.bold {
+    font-weight: bold;
+}
+.token.italic {
+    font-style: italic;
+}
+
+.token.entity {
+    cursor: help;
+}
+
+
+pre[class*="language-"].line-numbers {
+    position: relative;
+    padding-left: 3.8em;
+    counter-reset: linenumber;
+}
+
+pre[class*="language-"].line-numbers > code {
+    position: relative;
+    white-space: inherit;
+}
+
+.line-numbers .line-numbers-rows {
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    font-size: 100%;
+    left: -3.8em;
+    width: 3em; /* works for line-numbers below 1000 lines */
+    letter-spacing: -1px;
+    border-right: 1px solid #999;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+    .line-numbers-rows > span {
+        pointer-events: none;
+        display: block;
+        counter-increment: linenumber;
+    }
+
+        .line-numbers-rows > span:before {
+            content: counter(linenumber);
+            color: #999;
+            display: block;
+            padding-right: 0.8em;
+            text-align: right;
+        }
+
+</style>
+
+
+<script type="text/javascript">
+    var disqus_shortname = 'coderforart'; 
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+
+<script type="text/javascript">
+var disqus_shortname = 'coderforart'; 
+
+(function () {
+var s = document.createElement('script'); s.async = true;
+s.type = 'text/javascript';
+s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>
+  
+    
+
+    <script src="asset/js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+      function fixSidebarHeight(){
+        var w1 = $('.markdown-body').height();
+          var w2 = $('#sidebar').height();
+          if (w1 > w2) { $('#sidebar').height(w1); };
+      }
+      $(function(){
+        fixSidebarHeight();
+      })
+      $(window).load(function(){
+          fixSidebarHeight();
+      });
+     
+    </script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-58735702-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+  </body>
+</html>

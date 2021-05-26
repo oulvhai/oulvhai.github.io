@@ -1,0 +1,632 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+    
+  游戏制作之路：一个对我来说可实现的High-end的Mac/iOS游戏制作大概计划 - Coder For Art
+  
+  </title>
+  
+  
+  <link href="atom.xml" rel="alternate" title="Coder For Art" type="application/atom+xml">
+    <link rel="stylesheet" href="asset/css/foundation.min.css" />
+    <link rel="stylesheet" href="asset/css/docs.css" />
+    <script src="asset/js/vendor/modernizr.js"></script>
+    <script src="asset/js/vendor/jquery.js"></script>
+ 
+<script type="text/javascript">
+  function before_search(){
+    var searchVal = 'site:coderforart.com ' + document.getElementById('search_input').value;
+    document.getElementById('search_q').value = searchVal;
+    return true;
+  }
+</script>
+  </head>
+  <body class="antialiased hide-extras">
+    
+    <div class="marketing off-canvas-wrap" data-offcanvas>
+      <div class="inner-wrap">
+
+
+<nav class="top-bar docs-bar hide-for-small" data-topbar>
+
+
+  <section class="top-bar-section">
+  <div class="row">
+      <div style="position: relative;width:100%;"><div style="position: absolute; width:100%;">
+        <ul id="main-menu" class="left">
+        
+        <li id="menu_item_index"><a target="_self" href="index.html">Home</a></li>
+        
+        <li id="menu_item_archives"><a target="_self" href="archives.html">Archives</a></li>
+        
+        <li id="menu_item_about"><a target="_self" href="about.html">About</a></li>
+        
+        </ul>
+
+        <ul class="right" id="search-wrap">
+          <li>
+<form target="_blank" onsubmit="return before_search();" action="https://google.com/search" method="get">
+    <input type="hidden" id="search_q" name="q" value="" />
+    <input tabindex="1" type="search" id="search_input"  placeholder="Search"/>
+</form>
+</li>
+          </ul>
+      </div></div>
+  </div>
+  </section>
+
+</nav>
+
+        <nav class="tab-bar show-for-small">
+  <a href="javascript:void(0)" class="left-off-canvas-toggle menu-icon">
+    <span> &nbsp; Coder For Art</span>
+  </a>
+</nav>
+
+<aside class="left-off-canvas-menu">
+      <ul class="off-canvas-list">
+        
+        <li><a target="_self" href="index.html">Home</a></li>
+        
+        <li><a target="_self" href="archives.html">Archives</a></li>
+        
+        <li><a target="_self" href="about.html">About</a></li>
+        
+
+    <li><label>Categories</label></li>
+
+        
+            <li><a href="Cocoa.html">Cocoa</a></li>
+        
+            <li><a href="CG%20Artist.html">CG Artist</a></li>
+        
+            <li><a href="Game%20Engine.html">Game Engine</a></li>
+        
+            <li><a href="MWeb-cat.html">MWeb</a></li>
+        
+            <li><a href="PinPhoto-cat.html">PinPhoto</a></li>
+         
+
+      </ul>
+    </aside>
+
+<a class="exit-off-canvas" href="#"></a>
+
+
+        <section id="main-content" role="main" class="scroll-container">
+        
+       
+
+ <script type="text/javascript">
+  $(function(){
+    $('#menu_item_index').addClass('is_active');
+  });
+</script>
+<div class="row">
+  <div class="large-8 medium-8 columns">
+      <div class="markdown-body article-wrap">
+       <div class="article">
+          
+          <h1>游戏制作之路：一个对我来说可实现的High-end的Mac/iOS游戏制作大概计划</h1>
+     
+        <div class="read-more clearfix">
+          <span class="date">2015/01/21</span>
+
+          <span>posted in&nbsp;</span> 
+          
+              <span class="posted-in"><a href='CG%20Artist.html'>CG Artist</a></span>
+          
+              <span class="posted-in"><a href='Game%20Engine.html'>Game Engine</a></span>
+           
+         
+          <span class="comments">
+            
+              <a href="http://coderforart.com/make-a-simple-high-end-mac-ios-game.html#disqus_thread">comments</a>
+            
+
+            
+          </span>
+
+        </div>
+      </div><!-- article -->
+
+      <div class="article-content">
+      <p>对于学习一些东西，我比较习惯任务驱动式的学习，也就是说，要事先订好一个目标，要做什么东西，达到什么效果，然后根据自己了解的知识作一个可以实现这个目标的计划。</p>
+
+<p>现在要学的是游戏制作，而且是High-end的3D游戏制作。如前文 <a href="http://coderforart.com/unrealengine4-windows-mac.html">游戏制作之路：游戏引擎选择、Mac下和Windows下UnrealEngine 4体验对比、文档及其他</a> 所说的，我已经选择了UE4这个画面最顶级的引擎，它即使是在iOS上，画面也是最高端的，可以参考 <a href="https://www.unrealengine.com/blog/unreal-engine-powered-zen-garden-released">Zen Garden</a> 这个Demo。然后我也大概确认了可行性，现在要解决的是玩法（游戏性）、内容创作、音效这些东西。</p>
+
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_0">游戏的大概内容和玩法</h2>
+
+<p>为了让目标尽可能得以实现，游戏要尽可能简单。考虑到内容创作难度太大，所以我要使用尽可能少的元素。目前确认的有山、树、花草、水、岩石火山怪物、钢铁怪物、一两个造型复杂点的Boss、一两个女性人物角色。下面分开说明</p>
+
+<ul>
+<li>山：UE4对山地的制作支持的比较好，所以我要做的只有设计山地的外形和画山地材质了。这点内容创作我相信能做好，只要仔细研究山的画法，表现形式和树、花草的布局即可</li>
+<li>树：UE4有支持SpeedTree这样的简单可以做出各种外形的树的软件插件，但是这显然不是我的目标，在迫不得以的情况下才会用。我开始会从画画和3D建模去从头开始创作树，然后仔细研究树的材质和表现，从而真正掌握树的制作。</li>
+<li>花草：UE4好像内置花草的支持，不大清楚是如何，但是应该是很好的消息。不过估计也是要去画花的材质和表现，花草这部分也是我要仔细研究和全程掌握的。从开始创作花草外形到如何做3D建模，上材质并引入到UE4都要掌握。</li>
+<li>水：这部分在UE4中比较好实现，应该是只要设计位置和外形就好，任务比较简单。</li>
+<li>岩石火山怪物、钢铁怪物：怪物制作在游戏中是重点，难度很高。从开始设计到引入UE4，像树或花草那样流程即可。真正有挑战的是怪物AI了，这部分就关系到游戏玩法和游戏性了。这部分我了解不多，反正是要花大量时间研究就是了，初步方向是UE4中内置的AI的组件如何使用，然后读一些游戏AI的书等等。估计是可能会用到C++了，这也是要学习的。</li>
+<li>人物角色：人物角色是我学习的重点，我希望这部分在做完这个游戏后能真正掌握一些。这部分要研究的东西太多了，光是人物设计就是要花大量时间，人体结构，画法，服饰。还有是3D建模，人物皮肤材质，服饰材质等等。服饰部分东西太庞大，我只选一个小方向即可。还有比如说头发和衣服在游戏中的做法等等。再有就是角色动画，初步估计应该是在3D软件中调好，然后引入UE4中也是有大量工作要做的。这也只是在对角色动画比较了解的基础上，刚刚好我不了解，这也得学！不知道UE4能不能做到像下图那样的画出来的角色的质量？这也是我想研究的。
+<img src="media/14218059079784/5bf24facgw1eo0sjmlsiwj20uk0hoju2.jpg" alt="5bf24facgw1eo0sjmlsiwj20uk0hoju2"/>￼￼￼￼
+<img src="media/14218059079784/5bf24facgw1eo0sjsnjb6j20dw0cnta3.jpg" alt="5bf24facgw1eo0sjsnjb6j20dw0cnta3"/>￼￼￼￼</li>
+</ul>
+
+<p>游戏玩法部分，这部分需要我在学习中慢慢想了，这部分应该不难，只是做得好不好的问题，即使做得不好，也没关系了。我的方向不在这。</p>
+
+<h2 id="toc_1">内容创作工具</h2>
+
+<p>内容创作非工具部分花费时间最多，量最大，但是这部分我无法写更多的东西，只能说是边学边研究了。然后工具部分却有一些可写的。<br/>
+硬件部分要求不大，我目前有一台高性能的PC，两台MacBook Pro，现用的是2013版的15寸MacBook Pro，还有一台绘画板子 cintiq 13HD，足够用了。软件部分如下</p>
+
+<ul>
+<li>Photoshop：这个神器肯定是必须要的，不管是设计或画画还是做材质，他都是首选的工具。</li>
+<li>ZBrush：这个也属于易用性极好的神器，它大大降低了3D建模的难度。它也是我认为我可以掌握怪物和人物角色创作的理由。还有它的价格不贵，$795，在我可以接受范围。</li>
+<li>Maya LT：为什么是Maya而不是免费的Blender？最主要是Maya提供了官方的.FBX导出支持，而Blender是以插件的形式出现的，还有就是《游戏引擎架构》多次提到Maya，想来是不会错的。为什么是Maya LT，有写错？没有！因为Maya太贵了，全买\(3675，订阅\)185每月。Maya LT订阅\(30每月，年订\)240。而且autodesk的软件都可以很方便地申请3年的教育学习用途。</li>
+<li>我的另一款软件：这软件是要先做出来，当然不是什么强大的软件，这是我认为对内容创作和学习有用的小软件。</li>
+</ul>
+
+<p>软件部分除非以上的软件都不够用了，否则不会再引进新软件，因为评估和学习也是要成本的。当然，不用学的小软件是除外。</p>
+
+<h2 id="toc_2">游戏音效、背景故事</h2>
+
+<p>音效部分虽然也是属于非常重要的，但是我完全不懂音效，也没有兴趣深入研究它，大概来几个还算可以的音效就行了。背景故事部分在学习研究中跟游戏玩法一起慢慢考虑。</p>
+
+
+    
+
+      </div>
+
+      <div class="row">
+        <div class="large-6 columns">
+        <p class="text-left" style="padding:15px 0px;">
+      
+          <a href="sync-webistes-to-github-or-ftp-zh.html" 
+          title="Previous Post: 把生成的静态网站发布到github或FTP">&laquo; 把生成的静态网站发布到github或FTP</a>
+      
+        </p>
+        </div>
+        <div class="large-6 columns">
+      <p class="text-right" style="padding:15px 0px;">
+      
+          <a  href="qa.html" 
+          title="Next Post: MWeb Q & A">MWeb Q & A &raquo;</a>
+      
+      </p>
+        </div>
+      </div>
+      <div class="comments-wrap">
+        <div class="share-comments">
+          
+
+          
+            <div id="disqus_thread"></div>
+          
+
+          
+        </div>
+      </div>
+    </div><!-- article-wrap -->
+  </div><!-- large 8 -->
+
+
+
+
+ <div class="large-4 medium-4 columns">
+  <div class="hide-for-small">
+    <div id="sidebar" class="sidebar">
+          <div id="site-info" class="site-info">
+            
+                <div class="site-a-logo"><img src="media/14195170907881/icon.jpg" /></div>
+            
+                <h1>Coder For Art</h1>
+                <div class="site-des">I'm an indie Mac/iOS developer, also want to be a CG artist</div>
+                <div class="social">
+
+
+
+
+
+
+
+<a target="_blank" class="weibo" href="http://weibo.com/oulvhai" title="weibo">Weibo</a>
+<a target="_blank" class="twitter" target="_blank" href="http://twitter.com/oulvhai" title="Twitter">Twitter</a>
+<a target="_blank" class="github" target="_blank" href="https://github.com/oulvhai" title="GitHub">GitHub</a>
+
+  <a target="_blank" class="rss" href="atom.xml" title="RSS">RSS</a>
+                
+              	 </div>
+          	</div>
+
+               
+             <div id="site-categories" class="side-item ">
+                <div class="side-header">
+                  <h2>Important</h2>
+                </div>
+                <div class="side-content">
+                  <div style="color:#ff0000; text-align:center; padding:8px;" class="bg-info site_notice">
+                    <a style="color:#ff0000;"  onclick="ga('send','event','global_notice_click');" href="https://zh.mweb.im/mweb3x-release-note.html" >MWeb 3 发布后 2.x 版维护说明及两者之间的功能对比！</a>
+                  </div>
+                </div>
+            </div>
+    
+
+              <div id="site-categories" class="side-item ">
+                <div class="side-header">
+                  <h2>Categories</h2>
+                </div>
+                <div class="side-content">
+
+      	<p class="cat-list">
+        
+            <a href="Cocoa.html"><strong>Cocoa</strong></a>
+        
+            <a href="CG%20Artist.html"><strong>CG Artist</strong></a>
+        
+            <a href="Game%20Engine.html"><strong>Game Engine</strong></a>
+        
+            <a href="MWeb-cat.html"><strong>MWeb</strong></a>
+        
+            <a href="PinPhoto-cat.html"><strong>PinPhoto</strong></a>
+         
+        </p>
+
+
+                </div>
+              </div>
+
+              <div id="site-categories" class="side-item">
+                <div class="side-header">
+                  <h2>Recent Posts</h2>
+                </div>
+                <div class="side-content">
+                <ul class="posts-list">
+	      
+		      
+			      <li class="post">
+			        <a href="mweb3-release-note.html">MWeb 3.0 测试版更新情况</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="mweb3.0-on-test.html">MWeb 3.0 测试版终于发布了！欢迎大家试用！</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="15113184658847.html">MWeb for Mac, iOS 黑五半价促销一周，写个大概介绍。</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="mweb-ios-2.3.2-release.html">MWeb for iOS 2.3.2 发布！</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="how_to_use_images_in_mweb.html">MWeb Mac 版和 iOS 版图片及图床使用完全指南</a>
+			      </li>
+		     
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		   
+		  		</ul>
+                </div>
+              </div>
+        </div><!-- sidebar -->
+      </div><!-- hide for small -->
+</div><!-- large 4 -->
+
+</div><!-- row -->
+
+ <div class="page-bottom clearfix">
+  <div class="row">
+   <p class="copyright">Copyright &copy; 2015
+Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a>,&nbsp; 
+Theme used <a target="_blank" href="http://github.com">GitHub CSS</a>.</p>
+  </div>
+</div>
+
+        </section>
+      </div>
+    </div>
+
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">MathJax.Hub.Config({TeX: { equationNumbers: { autoNumber: "AMS" } }});</script>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+figure{margin: 0;padding: 0;}
+figcaption{text-align:center;}
+
+/* PrismJS 1.14.0
+ http://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript */
+/**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+    color: black;
+    background: none;
+    text-shadow: 0 1px white;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+    
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+    text-shadow: none;
+    background:#b3d4fc;
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+    text-shadow: none;
+    background: #b3d4fc;
+}
+
+@media print {
+    code[class*="language-"],
+    pre[class*="language-"] {
+        text-shadow: none;
+    }
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+    padding: 1em;
+    margin: .5em 0;
+    overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+    background: #F7F7F7;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+    padding: .1em;
+    border-radius: .3em;
+    white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+    color: slategray;
+}
+
+.token.punctuation {
+    color: #999;
+}
+
+.namespace {
+    opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+    color: #905;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+    color: #690;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+    color: #9a6e3a;
+    background: hsla(0, 0%, 100%, .5);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+    color: #07a;
+}
+
+.token.function,
+.token.class-name {
+    color: #DD4A68;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+    color: #e90;
+}
+
+.token.important,
+.token.bold {
+    font-weight: bold;
+}
+.token.italic {
+    font-style: italic;
+}
+
+.token.entity {
+    cursor: help;
+}
+
+
+pre[class*="language-"].line-numbers {
+    position: relative;
+    padding-left: 3.8em;
+    counter-reset: linenumber;
+}
+
+pre[class*="language-"].line-numbers > code {
+    position: relative;
+    white-space: inherit;
+}
+
+.line-numbers .line-numbers-rows {
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    font-size: 100%;
+    left: -3.8em;
+    width: 3em; /* works for line-numbers below 1000 lines */
+    letter-spacing: -1px;
+    border-right: 1px solid #999;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+    .line-numbers-rows > span {
+        pointer-events: none;
+        display: block;
+        counter-increment: linenumber;
+    }
+
+        .line-numbers-rows > span:before {
+            content: counter(linenumber);
+            color: #999;
+            display: block;
+            padding-right: 0.8em;
+            text-align: right;
+        }
+
+</style>
+
+
+<script type="text/javascript">
+    var disqus_shortname = 'coderforart'; 
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+
+<script type="text/javascript">
+var disqus_shortname = 'coderforart'; 
+
+(function () {
+var s = document.createElement('script'); s.async = true;
+s.type = 'text/javascript';
+s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>
+  
+    
+
+    <script src="asset/js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+      function fixSidebarHeight(){
+        var w1 = $('.markdown-body').height();
+          var w2 = $('#sidebar').height();
+          if (w1 > w2) { $('#sidebar').height(w1); };
+      }
+      $(function(){
+        fixSidebarHeight();
+      })
+      $(window).load(function(){
+          fixSidebarHeight();
+      });
+     
+    </script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-58735702-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+  </body>
+</html>
