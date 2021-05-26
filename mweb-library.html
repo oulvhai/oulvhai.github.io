@@ -1,0 +1,265 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="atom.xml" rel="alternate" title="MWeb" type="application/atom+xml">
+    <title> 
+	  
+  	MWeb 文档库详细介绍 - MWeb
+  	
+  	</title>
+    <link rel="icon" sizes="192x192" href="asset/icon_192.png" />
+    <link rel="shortcut icon" href="asset/icon_64.png" type="image/png" />
+
+    <link href="asset/css/bootstrap.min.css" rel="stylesheet">
+    <link href="asset/css/style.css" rel="stylesheet">
+    <script src="asset/js/jquery.min.js"></script>
+    <script src="asset/js/bootstrap.min.js"></script>
+    <script src="asset/js/docs.js"></script>
+    <script src="asset/highlightjs/highlight.pack.js"></script>
+	<link href="asset/highlightjs/styles/github.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<script>hljs.initHighlightingOnLoad();</script>
+    <!--[if lt IE 9]>
+      <script src="asset/js/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="blog-nav">
+           
+        <a class="menu-index blog-nav-item" target="_self" href="index.html">首页</a>
+        
+        <a class="menu-help blog-nav-item" target="_self" href="help.html">文档</a>
+        
+        <a class="menu-themes blog-nav-item" target="_self" href="themes.html">主题</a>
+        
+        <a class="blog-nav-item menu-blog" target="_self" href="download.html">下载</a>
+        
+        <a class="menu-about blog-nav-item" target="_self" href="about.html">关于</a>
+        
+        <a class="menu-lang blog-nav-item" target="_self" href="https://www.mweb.im/">English</a>
+        
+        
+        </nav>
+      </div>
+    </div>
+      
+      <div style="color:#ff0000; text-align:center; padding:8px;" class="bg-info site_notice">
+        <a style="color:#ff0000;"  onclick="ga('send','event','global_notice_click');" href="https://t.me/mwebapp" target="_blank" >MWeb 官方 Telegram 群已建立，点击可查看</a><br /><a style="color:#ff0000;" href="mweb4-macOS-beta.html">MWeb 4.0.0 for macOS 测试版已发布，欢迎下载测试。</a>
+      </div>
+    
+    
+ <div class="container" id="content-wrap">
+ 
+
+	<div class="row">
+		<div class="col-sm-10 blog-main">
+			<h1 style="padding-left: 20px;">
+				<a href="help.html">文档</a> - MWeb 文档库详细介绍</h1>
+		</div>
+	</div>
+	<hr style="margin-bottom: 20px;" />
+
+
+      <div class="row">
+
+        <div class="col-sm-10 blog-main">
+			<div class="blog-content-wrap">
+				<div class="blog-post">
+		            <div class="content-responsive">
+		            <p>此文章介绍文档库的详细使用，如果你没看过 <a href="15303606797118.html">MWeb 的基本使用</a>，建议你先去看一下。</p>
+
+<h2 id="toc_0">文档库结构及存储位置</h2>
+
+<p>MWeb 的文档库是保存在一个你开始使用 MWeb 时设置好的文件夹内，由 docs 文件夹，mainlib.db 文件和 metadata 文件夹组成。其中 docs 文件夹里保存的是每一篇笔记及笔记的相关素材。mainlib.db 文件保存的是分类和 Tag 信息以及笔记所属于的分类信息。metadata 文件夹只有在使用到发布服务时才会有，保存的是发布服务相关信息。下图就是一个典型的文档库。<br/>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303762803232.jpg" alt="" style="width:624px;"/></p>
+
+<p>这种结构可以很好的备份和用于 git，同时也避免误删除，因为不可能会无故删除这么多文档。</p>
+
+<h2 id="toc_1">保证文档库数据安全</h2>
+
+<p>下图为 MWeb 中文档库的设置和备份，设计好好的备份策略，有利于保证文档库永远不会丢失。MWeb 的文档库就是一个文件夹，你可以直接使用 <code>在 Finder 中显示</code> 按钮，找到文档库的位置，直接复制到其它地方进行备份。还可以利用下面的备份文档库功能进行定时备份。</p>
+
+<p><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303764804498.jpg" alt="" style="width:680px;"/></p>
+
+<p>关于备份位置为什么要设置三处，是觉得可能有一些用户会需要，但是我认为，通常两处就不会有问题了。只要把一处设置在有历史记录的网盘中，另一处设置在其它硬盘的位置，或者不设置，也是可以的。但是建议务必设置一个位置在有历史记录功能的网盘中，或者是像时间机器这种设备中，因为文档库总是与备份位置同步的。</p>
+
+<p>如果你要恢复已备份的文档库，请先把备份的文档库复制到一个你想要的位置，然后再使用 <code>选择现有文档库</code> 选择这个位置。这样你的文档库就恢复过来并使用所选择的位置做文档库的位置了，如下图：<br/>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303770611706.jpg" alt="" style="width:522px;"/></p>
+
+<h2 id="toc_2">分类树的使用方法</h2>
+
+<p>MWeb 的分类有两种，一种是普通的分类，如下图：<br/>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303773079972.jpg" alt="" style="width:481px;"/></p>
+
+<p>一种是静态网站分类，这个分类可以生成静态网站，如下图：<br/>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303773879197.jpg" alt="" style="width:690px;"/></p>
+
+<p>MWeb 提供一个非常简单的方法再把分类下的文档生成一个静态网站，比如 MWeb 中文官网就是用 MWeb 的静态网站功能生成的。</p>
+
+<p>界面左边的分类树配合 <code>右键</code> 及拖拽就可以完成相关的管理操作。中间的文档列表栏可以把文档拖拽至左边的分类以进行文档分类的管理。这种拖拽有三种情况，以下都假定拖拽到<strong>分类A</strong>：</p>
+
+<ol>
+<li>直接拖拽当前文档到<strong>分类A</strong>。这种情况下，如果列表中的文档属于当前选中的分类，则会移动到<strong>分类A</strong>，否则的话，则为拖拽的文档增加到<strong>分类A</strong>。</li>
+<li>按住 <code>CMD</code> 键拖拽当前文档到<strong>分类A</strong>。这种情况下，会为拖拽的文档增加增加到<strong>分类A</strong>。</li>
+<li>按住 <code>Option</code> 键拖拽当前文档到<strong>分类A</strong>，这种情况下，如果所拖拽的文档属于<strong>分类A</strong>，则取消文档属于<strong>分类A</strong>，如果不属于<strong>分类A</strong>，则不做任何操作。</li>
+</ol>
+
+<p>这种操作方法的地方是可以多选，也就是可以批量管理。如果是单个文档，有更好的办法，就是点击编辑器最上面的信息条，然后进行勾选，如下图：<br/>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303782515887.jpg" alt="" style="width:590px;"/></p>
+
+<p>这个地方也是唯一可以设置文档标签（tag）的地方，下面介绍的标签，设置是用这个办法。你也可以使用快捷键 <code>CMD + 8</code> 来打开这个界面。</p>
+
+<h2 id="toc_3">文档间的引用</h2>
+
+<p>在 MWeb 中引用其它文档非常简单，在文档列表中，右键要引用的文档，选择 <code>复制</code>，如下图所示。<br/>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15304655581752.jpg" alt="" style="width:342px;"/><br/>
+然后在要引用的文档的位置 <code>CMD + V</code> 粘贴即可，MWeb 会生成 <code>[如何使用“发布脚本”功能发布静态网站](how_to_use_shell_script.html)</code> 这种语法。如果你按住 <code>CMD</code> 键并点击，则会打开这个引用的文档。</p>
+
+<h2 id="toc_4">文档排序</h2>
+
+<p>文档库支持多种排序方式，而且每个顶层分类还可以单独设置自己的排序方式。修改排序方式的办法有两种，一种是如下图所示：<br/>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303807570789.jpg" alt="" style="width:463px;"/></p>
+
+<p>另一种是，选中要修改排序的顶层分类或者顶层分类下的某一子分类，然后在文档列表中右键，如下图所示:<br/>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303808791421.jpg" alt="" style="width:450px;"/></p>
+
+<p>在各种排序中，自定义拖拽排序比较特殊，需要特别说明。在说明之前，我先说明一个全局选项：<code>按分类分组显示</code>。在文档列表中右键，就可以看到这个功能的菜单，如果在启用状态，则表示列表中的文档都在以分类分组显示的状态，不管是什么排序设置。<br/>
+这个用处其实也是查找和整理文档。但是如果这个全局选项不是启用状态，那么，如果排序设置为自定义拖拽排序，则这个顶层分类也会按分类分组显示的。也就是说，只要是自定义拖拽排序，文档列表栏必定是分组显示的。<br/>
+这个是由于一个文档可以属于多个分类造成的规则设定，不然会比较乱。<br/>
+如果你在一个不是自定义排序的分类尝试拖拽，MWeb 会提示你先设置为自定义拖拽排序，然后才能拖拽。自定义拖拽排序分类下的文档，建议保证只属于一个分类，这样拖拽排序才不会乱。</p>
+
+<h2 id="toc_5">标签的使用方法</h2>
+
+<p>MWeb 中标签（tag）的功能还非常简单，设置标签的方法，上面有说到了，另外就是按标签查看文档了，这个功能如下图所示：</p>
+
+<p><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/16042935393203.jpg" alt="" style="width:263px;"/></p>
+
+<p>可以看出 MWeb 会列出整个文档库的标签，选择后即可按标签查看文档。</p>
+
+<h2 id="toc_6">文档大纲视图</h2>
+
+<p>如下图所示，文档大纲视图会列出当前文档的标题和插入的图片及附件，当然还有可以设置静态网站用的扩展项目（如果当前的文档属于某个静态网站分类的话）。下图是把大纲视图拖拽出来后固定的效果。<br/>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303793181537.jpg" alt="" style="width:293px;"/></p>
+
+<h2 id="toc_7">文档库的导入和导出</h2>
+
+<p>如下图所示，文档库支持导入 Markdown 文档到文档库中。如果导入的时候你选择的是一个文件夹，MWeb 会把文件夹内的所有 Markdown 文档导入到当前所选择的分类。如果文件夹的 Markdown 文档中有本地图片，也会一并导入并修改为文档库格式的图片地址。这个是 3.x 版才有的，2.x 版只会导入 Markdown 文本，不会导入图片。需要说明的是，要导入图片，请一定要选择整个文件夹。<br/>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303786026066.jpg" alt="" style="width:490px;"/></p>
+
+<p>另外还可以把整个分类导出为 Markdown，导出后的 Markdown 文档会按分类的结构建立文件夹。按分类结构建立文件夹这个也是 3.x 才有的功能。</p>
+
+<p>剩下的两个就是导出为 Epub 和 PDF 了，没错，可以把整个分类都导出为 Epub 或 PDF！</p>
+
+<h2 id="toc_8">全键盘导航</h2>
+
+<p>任何时候，可以快捷键 <code>CMD + Shift + F</code> 把焦点切换至搜索框（外部模式切换到目录树）。只记这一个，基本就可以在 <code>目录树 - 列表 - 编辑器</code> 这三处随意切换了。<br/>
+这是因为，在搜索框按 <code>Tab 键</code> 可以切换到编辑器，按 <code>向下键</code> 可以切换到列表。焦点在列表时，按 <code>向左键</code> 切换到目录树，<code>向右键</code> 切换到编辑器；焦点在目录树时，可以按 <code>向右键</code> 切换到列表。另外切换 Tabs 可以使用 <code>Ctrl + Tab</code> 键，<code>CMD + Shift + [或]</code> 键，切换 Tab 时焦点会切到编辑器。<br/>
+另外还有快速搜索是 <code>CMD + O</code>，外部模式没有搜索框时，可以使用这个来进行搜索。</p>
+
+<p><a id="end"></a></p>
+
+<h2 id="toc_9">文档库相关问题</h2>
+
+<p>文档库一般情况下不会有问题的，这里讨论的是假如发生意外的方案。<br/>
+上面的文档库结构有说到，MWeb 的文档库是一个文件夹，由文件夹里的 docs 文件夹和 mainlib.db 文件组成。其中 docs 文件夹包括了所有笔记，一篇笔记一个文档，以数字 + .md 的形式保存。如果文档库有问题，通常是以下几种情况：</p>
+
+<h3 id="toc_10">1. 文档库位置不正确。</h3>
+
+<p>在 MWeb 3.1.4 及之上的版本，文档库位置不正确，会自动打开 <code>偏好设置</code> - <code>文档库&amp;备份</code> 并在 <code>文档库位置</code> 中会有红字提示，如下图这样：<br/>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15313702907218.jpg" alt="" style="width:659px;"/></p>
+
+<p>这种情况的话，你可以按以下几种方法解决：</p>
+
+<ol>
+<li>如果提示的那个位置不是你原来的文档库，可以使用 使用 <code>修改文档库到其它位置</code> - <code>选择现有文档库</code> 选择回原来的文档库，MWeb 的文档库是一个文件夹，里面包含有一个 <code>docs</code> 文件夹和一个 <code>mainlib.db</code> 文件。</li>
+<li>如果你的文档库是保存在 iCloud Drive 上的，请确认你当前的 iCloud 帐号是否是原来的，或者是否已注销。</li>
+<li>如果不知道的话，可以搜索整个 mac 中的 mainlib.db 文件，找到原来的文档库的位置。然后用 <code>选择现有文档库</code> 选择那个位置恢复。</li>
+<li>如果你有按照上面的 <strong>保证文档库数据安全</strong> 部分把文档库备份到了一个有历史记录的网盘中，还可以把文档库从历史记录从恢复，然后复制到你想设置 MWeb 文档库的位置，再使用 <code>选择现有文档库</code> 按钮进行恢复。</li>
+</ol>
+
+<h3 id="toc_11">2. mainlib.db 有问题或同步时损坏</h3>
+
+<p>mainlib.db 这个文件是保存所有分类及标签，以及分类及标签下所属于的文档的信息的。如果你遇到分类结构没有了，就是这个问题。由于 mainlib.db 文件比较重要，所以 MWeb 每天都有自动备份一份 mainlib.db 文件，备份位置在 <code>~/Library/Containers/com.coderforart.MWeb3/Data/Library/Caches</code>，你可以先关闭 MWeb，然后选择一个备份的 mainlib.db 文件，然后复制到原来的位置，再启动 MWeb。</p>
+
+<h3 id="toc_12">3. 想初始化 MWeb 文档库</h3>
+
+<p>如果你想初始化 MWeb 的文档库，办法有：</p>
+
+<ol>
+<li>下载 <a href="https://cdn.mwebapp.cn/MWebInitLibrary.zip">https://cdn.mwebapp.cn/MWebInitLibrary.zip</a> 并解压，再用 <code>选择现有文档库</code> 选择解压后那个位置即可。</li>
+<li>在命令行中运行命令：<code>defaults delete com.coderforart.MWeb3</code>，此操作会删除 MWeb 的所有偏好设置，一切重新开始。</li>
+</ol>
+
+		            </div>
+				</div><!-- /.blog-post -->
+			</div>
+			<div class="share-comment">
+			
+
+<div class="jiathis_style_24x24">
+	<a class="jiathis_button_tsina"></a>
+	<a class="jiathis_button_qzone"></a>
+	<a class="jiathis_button_tqq"></a>
+	<a class="jiathis_button_weixin"></a>
+	<a class="jiathis_button_renren"></a>
+	<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+			</div>
+
+        </div><!-- /.blog-main -->
+	</div>
+</div>   <footer class="blog-footer">
+      <p>Copyright &copy; 2019
+Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a> &nbsp;&nbsp; 
+ <a href="reseller.html">Official Reseller</a>&nbsp;&nbsp; host on <a target="_blank" href="https://coding.net/">Coding.net Pages</a>
+.</p>
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+    </footer>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="asset/js/ie10-viewport-bug-workaround.js"></script>
+    
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-58735702-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </body>
+</html>

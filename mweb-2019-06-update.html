@@ -1,0 +1,305 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="atom.xml" rel="alternate" title="MWeb" type="application/atom+xml">
+    <title> 
+	  
+  	MWeb 最近更新及现状分享，然后今天（5/29）开始进行全平台 (macOS 和 iOS) 半价促销，持续一周。 - MWeb
+  	
+  	</title>
+    <link rel="icon" sizes="192x192" href="asset/icon_192.png" />
+    <link rel="shortcut icon" href="asset/icon_64.png" type="image/png" />
+
+    <link href="asset/css/bootstrap.min.css" rel="stylesheet">
+    <link href="asset/css/style.css" rel="stylesheet">
+    <script src="asset/js/jquery.min.js"></script>
+    <script src="asset/js/bootstrap.min.js"></script>
+    <script src="asset/js/docs.js"></script>
+    <script src="asset/highlightjs/highlight.pack.js"></script>
+	<link href="asset/highlightjs/styles/github.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<script>hljs.initHighlightingOnLoad();</script>
+    <!--[if lt IE 9]>
+      <script src="asset/js/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="blog-nav">
+           
+        <a class="menu-index blog-nav-item" target="_self" href="index.html">首页</a>
+        
+        <a class="menu-help blog-nav-item" target="_self" href="help.html">文档</a>
+        
+        <a class="menu-themes blog-nav-item" target="_self" href="themes.html">主题</a>
+        
+        <a class="blog-nav-item menu-blog" target="_self" href="download.html">下载</a>
+        
+        <a class="menu-about blog-nav-item" target="_self" href="about.html">关于</a>
+        
+        <a class="menu-lang blog-nav-item" target="_self" href="https://www.mweb.im/">English</a>
+        
+        
+        </nav>
+      </div>
+    </div>
+      
+      <div style="color:#ff0000; text-align:center; padding:8px;" class="bg-info site_notice">
+        <a style="color:#ff0000;"  onclick="ga('send','event','global_notice_click');" href="https://t.me/mwebapp" target="_blank" >MWeb 官方 Telegram 群已建立，点击可查看</a><br /><a style="color:#ff0000;" href="mweb4-macOS-beta.html">MWeb 4.0.0 for macOS 测试版已发布，欢迎下载测试。</a>
+      </div>
+    
+    
+ <div class="container" id="content-wrap">
+ 
+ 
+    
+     
+   <script type="text/javascript">
+      $(function(){
+        $('a.menu-blog').addClass('active');
+      });
+      </script>
+
+    
+      <script type="text/javascript">
+    $(function(){
+      var url = window.location.pathname;
+    var filename = url.substring(url.lastIndexOf('/')+1);
+    if (filename.length > 5) {
+      $('.blog-cats a').each(function(){
+        var href = $(this).attr('href');
+        if(href.length>5){
+          href = href.substring(0,href.length-5);
+          if (filename.startsWith(href)) { $(this).parent().addClass('active'); }
+        }
+      });
+    }
+    });
+  </script>
+   <div class="row">
+        <div class="col-sm-12">
+
+          <div class="blog-categories" style="padding-top: 0em; padding-bottom: 0em;">
+
+        <ul class="blog-cats">
+
+  
+    
+
+  
+      <li><a href="blog.html">所有分类</a></li> 
+        
+              <li><a href="docsV2.html">使用文档</a></li>
+        
+              <li><a href="tips.html">使用技巧</a></li>
+        
+              <li><a href="releases.html">版本发布</a></li>
+        
+    
+
+        </ul>
+        <div class="rss"><a href="atom.xml">RSS</a></div>
+          </div>
+       </div>
+     </div>
+     <hr style="margin-bottom: 60px;" />
+
+      <div class="row">
+
+        <div class="col-sm-10 blog-main">
+			<div class="blog-content-wrap">
+				<div class="blog-post">
+		            <h2 class="blog-post-title">MWeb 最近更新及现状分享，然后今天（5/29）开始进行全平台 (macOS 和 iOS) 半价促销，持续一周。</h2>
+		            <p class="blog-post-meta">2019/05/29 
+			            &nbsp;posted in 
+						
+						    <a class='category' href='blog.html'>博客</a>&nbsp;
+						
+						    <a class='category' href='releases.html'>版本发布</a>&nbsp;
+						 
+						 
+		            </p>
+		            <div class="content-responsive">
+		            <p>MWeb for macOS 版本的促销除了在 Mac App Store 外，还联合了官方授权的合作伙伴： @少数派 、@Price Tag 和 @数码荔枝，你可以选择你喜欢的方式购买，购买网址：<a href="https://zh.mweb.im/buy.html">https://zh.mweb.im/buy.html</a>。</p>
+
+<p>MWeb for iOS 版本是内购促销，可以在 MWeb for iOS 的设置页面购买。</p>
+
+<h2 id="toc_0">MWeb for macOS 最近的一些更新</h2>
+
+<h3 id="toc_1">版本 3.2.1</h3>
+
+<ul>
+<li>增加：发布服务增加自定义脚本和 Pandoc 生成 docx 文档等功能。</li>
+<li>增加：发布服务增加发布到语雀 <a href="https://www.yuque.com/">https://www.yuque.com/</a> 。</li>
+<li>增加：以复制/粘贴的方式发布到微信公众号、知乎等等。使用菜单：“发布 - 把本地图片传至图床，发布至微信、知乎等...” 即可。要注意的是，目前粘贴到微信公众号时，很大可能会出现图片粘贴不成功的问题。这个目前还没有好的解决办法。</li>
+<li>增加：预览增加 CMD + F 搜索功能。</li>
+<li>增加：外部模式增加清理文件夹中的文档未引用的图片功能（右键文件夹 - 清理文档未引用的图片...）。</li>
+<li>改进：上传到七牛时可以填入路径，支持 {year} {mon} {day} {random} {filename} {.suffix} 这几种变量。</li>
+<li>改进：外部模式搜索改进：1. 优化搜索速度。 2. 右下角增加搜索所有引入的文件夹按钮。 3. 文件夹的右键增加搜索此文件夹的菜单项。 4. CMD + O 快捷键的搜索修改为搜索当前打开的文档的引入文件夹。</li>
+<li>改进：导入到文档库时，如果选择文件夹，会把文件夹中的文档及文档相关的附件一并导入（之前仅会导入相关的图片）</li>
+<li>改进：mermaid 库更新至 8.0.0</li>
+<li>修正：修正又拍云图床处理代码没有生效问题（只对新上传的图片有效）。</li>
+<li>修正：修正导出为 epub 的一些问题。</li>
+<li>其它 Bug 修正及改进。</li>
+</ul>
+
+<h3 id="toc_2">版本 3.2.2</h3>
+
+<ul>
+<li>修正外部模式导出的 Epub 文件错误问题。</li>
+<li>修正外接打印机时，导出 PDF 可以选择的纸张变少的问题。</li>
+<li>发布到语雀支持自定义语雀网址。</li>
+</ul>
+
+<h3 id="toc_3">版本 3.2.3</h3>
+
+<ul>
+<li>图床增加支持腾讯云 COS。</li>
+<li>发布到语雀不再需要图床，图片会自动上传到语雀上（需要重新增加语雀发布服务）。</li>
+</ul>
+
+<h2 id="toc_4">MWeb for iOS 最近的一些更新</h2>
+
+<h3 id="toc_5">版本 3.0.0</h3>
+
+<ul>
+<li>新界面和交互。</li>
+<li>快速笔记。</li>
+<li>新增 Url Schemes 1. 新增文档库文档: mwebapp://?p=newlibdoc 2. 快速笔记: mwebapp://?p=quicknote 。</li>
+<li>全文搜索。</li>
+<li>Bug 修正和稳定性改进。</li>
+</ul>
+
+<p>详细介绍请看：<a href="https://zh.mweb.im/mweb-ios-3.0-release.html">https://zh.mweb.im/mweb-ios-3.0-release.html</a></p>
+
+<h3 id="toc_6">版本 3.0.3 ：</h3>
+
+<ul>
+<li>增加：现在可以引入 Working Copy 或 Files 应用内的文件夹到 MWeb 了，在 “网盘文档 - 新增文件夹(底部的按钮) - 增加第三方应用的文件夹” 即可增加。</li>
+<li>增加：发布服务增加发布至少数派 Matrix。</li>
+<li>增加：导出功能增加“分享此文档”功能。</li>
+<li>增加：手动点同步至 Dropbox 按钮或者正在同步时点同步按钮，会显示同步的详细情况。</li>
+<li>优化：Dropbox 文件同步顺序改为按文件大小从小到大。</li>
+<li>优化：现在预览时可以显示 MWeb for Mac 的 mermaid, viz, echarts, plantuml, sequence 和 flow 图了。</li>
+<li>优化：导出为 HTML 现在会把本地图片编码成 base64 然后一并导出了。</li>
+<li>优化：修正按文件名排序时，数字名称的文件名顺序不按预期的问题。</li>
+<li>优化：代码高亮由于换了高亮库，速度提高了不少，改为总是启用代码高亮了。</li>
+<li>优化：设置中去掉了“启用代码高亮”和“启用顺序图和流程图”的选项，改为总是启用。</li>
+<li>修正：iPad 下不能关闭侧边栏及 CMD + R 不能预览问题。</li>
+</ul>
+
+<h3 id="toc_7">版本 3.0.4:</h3>
+
+<ul>
+<li>增加：是否显示代码行号、是否启用 Autolink、是否把 img 解析成 figure 标签这三个选项。</li>
+<li>修正：文档库分类顺序跟 mac 版本不一至的问题。</li>
+<li>优化：发布到印象笔记时会记下所选的笔记本。</li>
+<li>优化：输入和修改有序列表时，会自动更正有序列表的数字。</li>
+<li>优化：Google Photos 目前确认无法做为图床，然后原来所用可以做为图床的 picasa-web API 已确认要关掉了，Google 的公告为：<a href="https://developers.google.com/picasa-web/">https://developers.google.com/picasa-web/</a> 。MWeb 已移除 Google Photos 图床功能。</li>
+<li>优化：由于 Google 图床已移除，发布至 Bloger 增加图床支持。</li>
+</ul>
+
+<h3 id="toc_8">版本 3.1.1:</h3>
+
+<ul>
+<li>增加：发布服务增加发布到语雀。</li>
+<li>增加：图床支持腾讯云 COS。</li>
+<li>改进：上传到七牛时可以填入路径，支持 {year} {mon} {day} {random} {filename} {.suffix} 这几种变量。</li>
+<li>改进：点击编辑器的本地图片后可以放大、分享等等。</li>
+<li>修正 Dropbox 重命名文件闪退问题。</li>
+<li>修正无法插入相册中的 gif 文件的问题。</li>
+<li>修正快速笔记时间计算误差问题。</li>
+</ul>
+
+<h3 id="toc_9">版本 3.1.2</h3>
+
+<ul>
+<li>发布到语雀不再需要图床，图片会自动上传到语雀上（需要重新增加语雀发布服务）。</li>
+</ul>
+
+<h2 id="toc_10">MWeb 的一些现状分享</h2>
+
+<p>看到上面的更新，大家可能已经知道了，MWeb 目前已经进入了缓慢更新阶段，基本上是两个月左右一个版本。之前说的解决 macOS 版本和 iOS 版本的文档库同步问题，至现在还没有比较好的办法解决。主要是文档库用到了数据库，不能很好的解决冲突问题。</p>
+
+<p><strong>未来的 MWeb 的方向目前决定是：</strong></p>
+
+<ol>
+<li>细节上优化使用体验，重新组织和编写使用文档，让 MWeb 更易用一点。</li>
+<li>有计划增加一些好看的预览样式，软件界面上，也有一个小的优化计划。</li>
+<li>静态博客功能，主要会优化扩展的使用，增加两种网站模板。</li>
+<li>继续尝试解决文档库同步问题。</li>
+<li>Github 上的 issue 会缓慢解决，这个反馈方式目前几乎不再使用了，如果要反馈，目前推荐用 Email : <a href="mailto:coderforart+233@gmail.com">coderforart+233@gmail.com</a>，或者加入 <a href="https://t.me/mwebapp">MWeb 官方 Telegram 群</a></li>
+</ol>
+
+		            </div>
+				</div><!-- /.blog-post -->
+			</div>
+			<div class="share-comment">
+			
+
+<div class="jiathis_style_24x24">
+	<a class="jiathis_button_tsina"></a>
+	<a class="jiathis_button_qzone"></a>
+	<a class="jiathis_button_tqq"></a>
+	<a class="jiathis_button_weixin"></a>
+	<a class="jiathis_button_renren"></a>
+	<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+			</div>
+
+        </div><!-- /.blog-main -->
+	</div>
+</div>   <footer class="blog-footer">
+      <p>Copyright &copy; 2019
+Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a> &nbsp;&nbsp; 
+ <a href="reseller.html">Official Reseller</a>&nbsp;&nbsp; host on <a target="_blank" href="https://coding.net/">Coding.net Pages</a>
+.</p>
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+    </footer>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="asset/js/ie10-viewport-bug-workaround.js"></script>
+    
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-58735702-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </body>
+</html>

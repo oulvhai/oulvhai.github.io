@@ -1,0 +1,458 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="atom.xml" rel="alternate" title="MWeb" type="application/atom+xml">
+    <title> 
+	  
+  	博客 - MWeb
+  	
+  	</title>
+    <link rel="icon" sizes="192x192" href="asset/icon_192.png" />
+    <link rel="shortcut icon" href="asset/icon_64.png" type="image/png" />
+
+    <link href="asset/css/bootstrap.min.css" rel="stylesheet">
+    <link href="asset/css/style.css" rel="stylesheet">
+    <script src="asset/js/jquery.min.js"></script>
+    <script src="asset/js/bootstrap.min.js"></script>
+    <script src="asset/js/docs.js"></script>
+    <script src="asset/highlightjs/highlight.pack.js"></script>
+	<link href="asset/highlightjs/styles/github.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<script>hljs.initHighlightingOnLoad();</script>
+    <!--[if lt IE 9]>
+      <script src="asset/js/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="blog-nav">
+           
+        <a class="menu-index blog-nav-item" target="_self" href="index.html">首页</a>
+        
+        <a class="menu-help blog-nav-item" target="_self" href="help.html">文档</a>
+        
+        <a class="menu-themes blog-nav-item" target="_self" href="themes.html">主题</a>
+        
+        <a class="blog-nav-item menu-blog" target="_self" href="download.html">下载</a>
+        
+        <a class="menu-about blog-nav-item" target="_self" href="about.html">关于</a>
+        
+        <a class="menu-lang blog-nav-item" target="_self" href="https://www.mweb.im/">English</a>
+        
+        
+        </nav>
+      </div>
+    </div>
+      
+      <div style="color:#ff0000; text-align:center; padding:8px;" class="bg-info site_notice">
+        <a style="color:#ff0000;"  onclick="ga('send','event','global_notice_click');" href="https://t.me/mwebapp" target="_blank" >MWeb 官方 Telegram 群已建立，点击可查看</a><br /><a style="color:#ff0000;" href="mweb4-macOS-beta.html">MWeb 4.0.0 for macOS 测试版已发布，欢迎下载测试。</a>
+      </div>
+    
+    
+  <div class="container" id="content-wrap">
+
+ 
+    
+     
+   <script type="text/javascript">
+      $(function(){
+        $('a.menu-blog').addClass('active');
+      });
+      </script>
+
+    
+      <script type="text/javascript">
+    $(function(){
+      var url = window.location.pathname;
+    var filename = url.substring(url.lastIndexOf('/')+1);
+    if (filename.length > 5) {
+      $('.blog-cats a').each(function(){
+        var href = $(this).attr('href');
+        if(href.length>5){
+          href = href.substring(0,href.length-5);
+          if (filename.startsWith(href)) { $(this).parent().addClass('active'); }
+        }
+      });
+    }
+    });
+  </script>
+   <div class="row">
+        <div class="col-sm-12">
+
+          <div class="blog-categories" style="padding-top: 0em; padding-bottom: 0em;">
+
+        <ul class="blog-cats">
+
+  
+    
+
+  
+      <li><a href="blog.html">所有分类</a></li> 
+        
+              <li><a href="docsV2.html">使用文档</a></li>
+        
+              <li><a href="tips.html">使用技巧</a></li>
+        
+              <li><a href="releases.html">版本发布</a></li>
+        
+    
+
+        </ul>
+        <div class="rss"><a href="atom.xml">RSS</a></div>
+          </div>
+       </div>
+     </div>
+     <hr style="margin-bottom: 60px;" />
+      <div class="row">
+
+        <div class="col-sm-10 blog-main">
+
+        	<div class="blog-content-wrap">
+			
+				<div class="blog-post">
+		            <h2 class="blog-post-title"><a href="mweb-1.7.1-release.html">MWeb 1.7.1 版发布！支持导出为 RTF 和 Docx、发布到 Evernote 带样式、文档库备份和新网站主题等大量改进！</a></h2>
+		            <p class="blog-post-meta">2015/09/14 
+						&nbsp;posted in 
+						
+						    <a class='category' href='docsV2.html'>使用文档</a>&nbsp;
+						
+						    <a class='category' href='tips.html'>使用技巧</a>&nbsp;
+						
+						    <a class='category' href='releases.html'>版本发布</a>&nbsp;
+						 
+						 
+					 
+		            </p>
+		          </div><!-- /.blog-post -->
+			 
+				<div class="blog-post">
+		            <h2 class="blog-post-title"><a href="move-lite-data-to-mweb.html">把 MWeb Lite 的文档库文档和数据搬到 MWeb 正式版中</a></h2>
+		            <p class="blog-post-meta">2015/07/31 
+						&nbsp;posted in 
+						
+						    <a class='category' href='docsV2.html'>使用文档</a>&nbsp;
+						
+						    <a class='category' href='tips.html'>使用技巧</a>&nbsp;
+						 
+						 
+					 
+		            </p>
+		          </div><!-- /.blog-post -->
+			 
+				<div class="blog-post">
+		            <h2 class="blog-post-title"><a href="mweb-1.6.1-release.html">MWeb 1.6 发布！Dark Mode、全文搜寻、发布到Wordpress、Evernote 等支持更新、编辑/预览视图模式等</a></h2>
+		            <p class="blog-post-meta">2015/07/23 
+						&nbsp;posted in 
+						
+						    <a class='category' href='docsV2.html'>使用文档</a>&nbsp;
+						
+						    <a class='category' href='releases.html'>版本发布</a>&nbsp;
+						 
+						 
+					 
+		            </p>
+		          </div><!-- /.blog-post -->
+			 
+				<div class="blog-post">
+		            <h2 class="blog-post-title"><a href="mweb-1.5.1-release.html">MWeb 1.5 发布！增加打字机滚动模式、发布到 Evernote、印象笔记、Wordpress.com、Blogger、编辑器内代码块语法高亮</a></h2>
+		            <p class="blog-post-meta">2015/06/05 
+						&nbsp;posted in 
+						
+						    <a class='category' href='docsV2.html'>使用文档</a>&nbsp;
+						
+						    <a class='category' href='releases.html'>版本发布</a>&nbsp;
+						 
+						 
+					 
+		            </p>
+		          </div><!-- /.blog-post -->
+			 
+				<div class="blog-post">
+		            <h2 class="blog-post-title"><a href="mweb-1.4.1-releases.html">MWeb 1.4.1 发布！增加引入文件夹到 MWeb 中管理，支持拖拽插入图片和实时预览，静态博客功能增强</a></h2>
+		            <p class="blog-post-meta">2015/05/15 
+						&nbsp;posted in 
+						
+						    <a class='category' href='releases.html'>版本发布</a>&nbsp;
+						 
+						 
+					 
+		            </p>
+		          </div><!-- /.blog-post -->
+			 
+				<div class="blog-post">
+		            <h2 class="blog-post-title"><a href="mweb-1.3.7-releases.html">MWeb 1.3.7 发布！增加发布到 Wordpress 等支持 Metaweblog API 的服务，如：Wordpress 博客、新浪博客、cnblogs、oschina。</a></h2>
+		            <p class="blog-post-meta">2015/04/17 
+						&nbsp;posted in 
+						
+						    <a class='category' href='docsV2.html'>使用文档</a>&nbsp;
+						
+						    <a class='category' href='tips.html'>使用技巧</a>&nbsp;
+						
+						    <a class='category' href='releases.html'>版本发布</a>&nbsp;
+						 
+						 
+					 
+		            </p>
+		          </div><!-- /.blog-post -->
+			 
+				<div class="blog-post">
+		            <h2 class="blog-post-title"><a href="mweb-in-yosemite.html">MWeb 在 Yosemite 下的一些截图</a></h2>
+		            <p class="blog-post-meta">2015/03/28 
+						&nbsp;posted in 
+						
+						    <a class='category' href='tips.html'>使用技巧</a>&nbsp;
+						 
+						 
+					 
+		            </p>
+		          </div><!-- /.blog-post -->
+			 
+				<div class="blog-post">
+		            <h2 class="blog-post-title"><a href="mweb1.3-release-zh.html">MWeb 1.3 版发布！半价促销，新官网，新图标，增加任务列表，顺序图和流程图，优化MathJax、PDF导出等</a></h2>
+		            <p class="blog-post-meta">2015/03/28 
+						&nbsp;posted in 
+						
+						    <a class='category' href='releases.html'>版本发布</a>&nbsp;
+						 
+						 
+					 
+		            </p>
+		          </div><!-- /.blog-post -->
+			 
+				<div class="blog-post">
+		            <h2 class="blog-post-title"><a href="mweb-comment-and-share-help.html">给MWeb生成的静态博客增加分享和评论</a></h2>
+		            <p class="blog-post-meta">2015/03/21 
+						&nbsp;posted in 
+						
+						    <a class='category' href='docsV2.html'>使用文档</a>&nbsp;
+						 
+						 
+					 
+		            </p>
+		          </div><!-- /.blog-post -->
+			 
+				<div class="blog-post">
+		            <h2 class="blog-post-title"><a href="mweb-static-blog-generator.html">MWeb 生成静态博客详细说明</a></h2>
+		            <p class="blog-post-meta">2015/03/21 
+						&nbsp;posted in 
+						
+						    <a class='category' href='docsV2.html'>使用文档</a>&nbsp;
+						 
+						 
+					 
+		            </p>
+		          </div><!-- /.blog-post -->
+			 
+				<div class="blog-post">
+		            <h2 class="blog-post-title"><a href="mweb-document-library.html">MWeb 文档库模式详细说明</a></h2>
+		            <p class="blog-post-meta">2015/03/21 
+						&nbsp;posted in 
+						
+						    <a class='category' href='docsV2.html'>使用文档</a>&nbsp;
+						 
+						 
+					 
+		            </p>
+		          </div><!-- /.blog-post -->
+			 
+				<div class="blog-post">
+		            <h2 class="blog-post-title"><a href="markdown-syntax-guide-suggest-version-zh.html">Markdown 语法和 MWeb 写作使用说明</a></h2>
+		            <p class="blog-post-meta">2015/03/21 
+						&nbsp;posted in 
+						
+						    <a class='category' href='markdown-cat.html'>Markdown</a>&nbsp;
+						
+						    <a class='category' href='docsV2.html'>使用文档</a>&nbsp;
+						 
+						 
+					 
+		            </p>
+		          </div><!-- /.blog-post -->
+			 
+				<div class="blog-post">
+		            <h2 class="blog-post-title"><a href="qa.html">MWeb 所有问题和回答收集</a></h2>
+		            <p class="blog-post-meta">2015/03/20 
+						&nbsp;posted in 
+						
+						    <a class='category' href='tips.html'>使用技巧</a>&nbsp;
+						 
+						 
+					 
+		            </p>
+		          </div><!-- /.blog-post -->
+			 
+				<div class="blog-post">
+		            <h2 class="blog-post-title"><a href="use-goodsync-sync-mweb-static-websites-zh.html">使用GoodSync把MWeb生成的静态网站自动同步到FTP、SFTP、WebDAV、Amazon S3等</a></h2>
+		            <p class="blog-post-meta">2015/02/27 
+						&nbsp;posted in 
+						
+						    <a class='category' href='docsV2.html'>使用文档</a>&nbsp;
+						
+						    <a class='category' href='tips.html'>使用技巧</a>&nbsp;
+						 
+						 
+					 
+		            </p>
+		          </div><!-- /.blog-post -->
+			 
+				<div class="blog-post">
+		            <h2 class="blog-post-title"><a href="mweb-v1.2-release-zh.html">MWeb 1.2 版更新说明和用 wkhtmltopdf 生成带目录的 PDF 和自定预览 CSS</a></h2>
+		            <p class="blog-post-meta">2015/02/08 
+						&nbsp;posted in 
+						
+						    <a class='category' href='tips.html'>使用技巧</a>&nbsp;
+						
+						    <a class='category' href='releases.html'>版本发布</a>&nbsp;
+						 
+						 
+					 
+		            </p>
+		          </div><!-- /.blog-post -->
+			 
+				<div class="blog-post">
+		            <h2 class="blog-post-title"><a href="aliyun-net-cn-free-web-host-express.html">万网（阿里云）免费虚拟主机体验</a></h2>
+		            <p class="blog-post-meta">2015/02/03 
+						&nbsp;posted in 
+						
+						    <a class='category' href='tips.html'>使用技巧</a>&nbsp;
+						 
+						 
+					 
+		            </p>
+		          </div><!-- /.blog-post -->
+			 
+				<div class="blog-post">
+		            <h2 class="blog-post-title"><a href="sync-webistes-to-github-or-ftp-zh.html">把生成的静态网站发布到github或FTP</a></h2>
+		            <p class="blog-post-meta">2015/01/28 
+						&nbsp;posted in 
+						
+						    <a class='category' href='docsV2.html'>使用文档</a>&nbsp;
+						
+						    <a class='category' href='tips.html'>使用技巧</a>&nbsp;
+						 
+						 
+					 
+		            </p>
+		          </div><!-- /.blog-post -->
+			 
+				<div class="blog-post">
+		            <h2 class="blog-post-title"><a href="mweb-qa-zh.html">MWeb 所有问题和回答收集</a></h2>
+		            <p class="blog-post-meta">2015/01/20 
+						&nbsp;posted in 
+						
+						    <a class='category' href='tips.html'>使用技巧</a>&nbsp;
+						 
+						 
+					 
+		            </p>
+		          </div><!-- /.blog-post -->
+			 
+				<div class="blog-post">
+		            <h2 class="blog-post-title"><a href="mweb-v1.1-release-zh.html">MWeb 1.1 版更新说明</a></h2>
+		            <p class="blog-post-meta">2015/01/19 
+						&nbsp;posted in 
+						
+						    <a class='category' href='releases.html'>版本发布</a>&nbsp;
+						 
+						 
+					 
+		            </p>
+		          </div><!-- /.blog-post -->
+			 
+				<div class="blog-post">
+		            <h2 class="blog-post-title"><a href="custom-site-theme-detail-zh.html">自定网站或博客主题简单说明</a></h2>
+		            <p class="blog-post-meta">2015/01/07 
+						&nbsp;posted in 
+						
+						    <a class='category' href='docsV2.html'>使用文档</a>&nbsp;
+						
+						    <a class='category' href='tips.html'>使用技巧</a>&nbsp;
+						 
+						 
+					 
+		            </p>
+		          </div><!-- /.blog-post -->
+			 
+				<div class="blog-post">
+		            <h2 class="blog-post-title"><a href="markdown-syntax-guide-full-version-zh.html">Markdown 語法官方說明繁體中文版</a></h2>
+		            <p class="blog-post-meta">2014/12/16 
+						&nbsp;posted in 
+						
+						    <a class='category' href='markdown-cat.html'>Markdown</a>&nbsp;
+						 
+						 
+					 
+		            </p>
+		          </div><!-- /.blog-post -->
+			           
+
+
+	          <nav>
+	            <ul class="pager">
+	            
+	            	<li class=""><a href="blog.html"><span aria-hidden="true">&larr;</span> 上一页</a></li>
+	            
+
+					<li class=""><a href="archives.html">归档</a></li>
+
+				
+	            	<li class=" disabled "><a href="#index">下一页 <span aria-hidden="true">&rarr;</span></a></li>
+	            
+	            </ul>
+	          </nav>
+
+        	</div><!-- /.blog-main -->
+		</div>
+	</div>
+
+</div>
+   <footer class="blog-footer">
+      <p>Copyright &copy; 2019
+Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a> &nbsp;&nbsp; 
+ <a href="reseller.html">Official Reseller</a>&nbsp;&nbsp; host on <a target="_blank" href="https://coding.net/">Coding.net Pages</a>
+.</p>
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+    </footer>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="asset/js/ie10-viewport-bug-workaround.js"></script>
+    
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-58735702-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </body>
+</html>

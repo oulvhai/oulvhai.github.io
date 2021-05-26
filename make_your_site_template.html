@@ -1,0 +1,682 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="atom.xml" rel="alternate" title="MWeb" type="application/atom+xml">
+    <title> 
+	  
+  	自定义或制作自己的静态网站模板 - MWeb
+  	
+  	</title>
+    <link rel="icon" sizes="192x192" href="asset/icon_192.png" />
+    <link rel="shortcut icon" href="asset/icon_64.png" type="image/png" />
+
+    <link href="asset/css/bootstrap.min.css" rel="stylesheet">
+    <link href="asset/css/style.css" rel="stylesheet">
+    <script src="asset/js/jquery.min.js"></script>
+    <script src="asset/js/bootstrap.min.js"></script>
+    <script src="asset/js/docs.js"></script>
+    <script src="asset/highlightjs/highlight.pack.js"></script>
+	<link href="asset/highlightjs/styles/github.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<script>hljs.initHighlightingOnLoad();</script>
+    <!--[if lt IE 9]>
+      <script src="asset/js/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="blog-nav">
+           
+        <a class="menu-index blog-nav-item" target="_self" href="index.html">首页</a>
+        
+        <a class="menu-help blog-nav-item" target="_self" href="help.html">文档</a>
+        
+        <a class="menu-themes blog-nav-item" target="_self" href="themes.html">主题</a>
+        
+        <a class="blog-nav-item menu-blog" target="_self" href="download.html">下载</a>
+        
+        <a class="menu-about blog-nav-item" target="_self" href="about.html">关于</a>
+        
+        <a class="menu-lang blog-nav-item" target="_self" href="https://www.mweb.im/">English</a>
+        
+        
+        </nav>
+      </div>
+    </div>
+      
+      <div style="color:#ff0000; text-align:center; padding:8px;" class="bg-info site_notice">
+        <a style="color:#ff0000;"  onclick="ga('send','event','global_notice_click');" href="https://t.me/mwebapp" target="_blank" >MWeb 官方 Telegram 群已建立，点击可查看</a><br /><a style="color:#ff0000;" href="mweb4-macOS-beta.html">MWeb 4.0.0 for macOS 测试版已发布，欢迎下载测试。</a>
+      </div>
+    
+    
+ <div class="container" id="content-wrap">
+ 
+
+	<div class="row">
+		<div class="col-sm-10 blog-main">
+			<h1 style="padding-left: 20px;">
+				<a href="help.html">文档</a> - 自定义或制作自己的静态网站模板</h1>
+		</div>
+	</div>
+	<hr style="margin-bottom: 20px;" />
+
+
+      <div class="row">
+
+        <div class="col-sm-10 blog-main">
+			<div class="blog-content-wrap">
+				<div class="blog-post">
+		            <div class="content-responsive">
+		            <p>如果当前使用的网站模板无法满足自己的需求，则可以做一些自定义，或者完全重新制作自己喜欢的网站模板。不管是重新制作还是自定义，都是有一定的技术要求的，首先必须要懂 HTML、CSS，然后，再懂 javascript 就更好了。继续阅读前，请确保你已看过<a href="mweb-static-blog.html">MWeb 生成静态网站 &amp; 博客</a>这篇文章。</p>
+
+<h2 id="toc_0">MWeb 静态网站模板生成过程</h2>
+
+<p>不管是自定义还是制作，都要了解 MWeb 静态网站的生成过程。要明白生成过程，首先可以看一下 MWeb 常规的网站模板的文件结构，结构如下：</p>
+
+<ul>
+<li>asset -- 文件夹，主题所有要用到的东西，图片、CSS、JS 等等都放这里</li>
+<li>header.html -- 页面的头部</li>
+<li>footer.html -- 页面的底部</li>
+<li>sidebar.html -- 页面的侧边栏</li>
+<li>category.html -- 分类页所使用的模板</li>
+<li>tags.html -- 标签页所使用的模板</li>
+<li>archives.html -- 归档页所使用的模板</li>
+<li>post.html -- 文档不选中 <code>是否页面（Is Page）</code> 所使用的模板</li>
+<li>page.html -- 文档选中 <code>是否页面（Is Page）</code> 时所使用的模板</li>
+<li>page-index.html -- 自定首页模板</li>
+<li>atom.xml -- RSS 所使用的模板</li>
+<li>sitemap.xml -- 网站地图所使用的模板</li>
+</ul>
+
+<p>你可以随便查看内置的网站模板的结构，右键<code>网站分类</code>，选择<code>编辑</code>，在模板那里，点<code>编辑...</code> 按钮，如果是 MWeb 自带的模板，请选择<code>复制当前的模板到自定义模板文件夹...</code>，复制出来，再选择 <code>打开自定义模板所在的文件夹...</code> 则可。<strong>注意：</strong>如果要修改 MWeb 自带模板，首先要先使用<code>复制当前的模板到自定义模板文件夹...</code>复制到自定义模板的位置，才能修改，如下图。<br/>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761566606148.jpg" alt="" style="width:591px;"/></p>
+
+<h3 id="toc_1">文章页的生成过程</h3>
+
+<p>不选<code>是否页面（Is Page）</code>选项时，生成文章页的顺序为：header.html + post.html + sidebar.html + footer.html。</p>
+
+<p>选中了 <code>是否页面（Is Page）</code> 选项后，生成文章页的顺序为： header.html + page.html + footer.html。</p>
+
+<p><strong>更高级的用法：</strong></p>
+
+<p>做网站经常要定制一些页面，在文档中，选中了 <code>是否页面（Is Page）</code> 选项后，如果要自定这页，可以新增一个名称为：page-{HTML 文件名}.html 的模板页面，这样生成文章页的顺序会变为：header.html + page-{HTML 文件名}.html + footer.html。<code>{HTML 文件名}</code> 说的就是下图的 <code>HTML 文件名：</code> 所填入的名字。<br/>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761556545753.jpg" alt="" style="width:595px;"/></p>
+
+<h3 id="toc_2">自定义首页例子</h3>
+
+<p>在 MWeb 的静态网站生成中，可以自由指定一个文档为首页，方法非常简单，在 <code>HTML 文件名：</code> 中填入 <code>index</code> 即可，这样生成时，就会生成 <code>index.html</code> 页了，如下图。<br/>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761386523278.jpg" alt="" style="width:682px;"/></p>
+
+<p>如果要自定义，比如说像 MWeb 官网 <a href="https://zh.mweb.im/index.html">https://zh.mweb.im/index.html</a> 这样的首页，则是要自定义了，方法很简单，在主题文件夹里新增一个名为：page-index.html 的页面即可。如上面所说，当生成 index.html 这个 页面时，模板顺序会变成：header.html + page-index.html + footer.html。</p>
+
+<h3 id="toc_3">各分类的文章列表页的生成过程</h3>
+
+<p>分类页生成的顺序为：header.html + category.html + sidebar.html + footer.html。 其中，可以自定义任何一个分类的 category.html 模板。如下图，在网站的任何一个子分类中，<code>右键</code> - <code>编辑</code>，都可以设置 <code>HTML 文件名</code>，下图为 <code>help</code>，则会生成 help.html。<br/>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761391754516.jpg" alt="" style="width:391px;"/></p>
+
+<p>而 MWeb 在生成分类页的 HTML 时，会判定是否存在：category-{HTML 文件名}.html 的模板文件，如果存在，则会优先使用 category-{HTML 文件名}.html 模板文件。上图就是定制了一个 category-help.html 的模板文件，这样生成的顺序变为：header.html + category-help.html + sidebar.html + footer.html。最终效果如：<a href="https://zh.mweb.im/help.html">https://zh.mweb.im/help.html</a>，这就跟一般的分类不一样了。</p>
+
+<h3 id="toc_4">其它页的生成过程</h3>
+
+<p>其它页面生成没有像文章页和分类页的自定模板规则，下面列出一下：</p>
+
+<ul>
+<li>归档页（archives.html）： header.html + archives.html + footer.html</li>
+<li>标签页： header.html + tags.html + sidebar.html + footer.html</li>
+<li>网站地图：sitemap.xml</li>
+<li>网站 RSS：atom.xml</li>
+</ul>
+
+<h2 id="toc_5">自定义网站模板</h2>
+
+<p>上面已经介绍了网站的生成过程，了解之后就可以做一些小的自定义了，在这之前，要先了解 MWeb 所使用的模板语言，这个语言非常简单，你可以参考 MWeb 自带的网站模板，一般就能看懂了。之后可以参考所有用法例子，请看：<a href="media/15761362919139/sample_template.txt" target="_blank">模板语言例子.txt</a> 。</p>
+
+<p><strong>重要：</strong>在 3.3.9 及以上版本，当在模板中直接输出数组或者字典变量时，会直接变成 json 输出。大概用法为 <code>&lt;script&gt;var postsArr = {{posts}}; var catsArr = {{p.cats}};&lt;/script&gt;</code> 。这个是为了解决模板语言描述能力不足问题，遇到这个问题，直接把变量变成 js 对象，这样就可以直接使用 js 输出了。</p>
+
+<p>一般可以直接修改模板文件来做小的自定义，因为模板文件都是 HTML，懂 HTML 即可。或者修改样式，同样，懂 CSS 即可。<br/>
+如果要做更方便一点的自定义，比如说为网站模板增加一个广告位，这个广告经常换，但是我不想总是修改模板。这种需求可以用 MWeb 的网站扩展来解决。如下图为网站扩展设置界面，这里其实是变量，这些变量，在所有模板页都可以访问到。下页以增加 global_notice 这个变成为例子说明。<br/>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761405788732.jpg" alt="" style="width:610px;"/></p>
+
+<p>点<code>增加</code>按钮，然后设置如下图：<br/>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761407661736.jpg" alt="" style="width:607px;"/></p>
+
+<p>增加了 global_notice 变量后，可以在 <code>网站扩展设置</code> 中设置这个变量的值，如下图：<br/>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15761409322231.jpg" alt="" style="width:610px;"/></p>
+
+<p>这样，就可以在所有模板页中以 <code>{{ext_global_notice}}</code> 这个语法，输出设置了的值。</p>
+
+<p><strong>特别注意：</strong>在修改了网站模板之后，要生成网站时，请使用<code>清除并重新生成网站</code>这个功能，这样才会生效。</p>
+
+<p>同样，可以看到还有<code>文档扩展</code>，文档扩展用法一样，但是只针对文档，设置是在文档的<code>大纲视图</code>最底下。</p>
+
+<p>你们可否注意到，有些变量前面有个锁，这个是表示这个变量是网站模板自带的变量，不可以编辑的。意思是，扩展变量除了在上面增加外，还可以在网站模板中增加。增加方法是修改相关的 .json 文件。请参考：site-mweb-bulma 这个模板，在这个模板里，有一个名为 extensions 的文件夹，这里面有三个 .json 文件，其中，<code>网站扩展</code> 的变量，使用的是 site.json 文件，<code>文档扩展</code> 的变量，使用的是 document.json 文件。</p>
+
+<h2 id="toc_6">制作自己的静态网站模板</h2>
+
+<p>了解了 MWeb 的静态网站生成过程，也了解了模板变量的使用和网站扩展、文档扩展的使用方式，就可以制作自己的静态网站模板了。建议的方法是，参考 MWeb 自带的三个模板：site-mweb-bulma、site-mweb-simple 和 site-foundation-book。找到想要的功能，然后查看相关写法即可。下面介绍一下这三个模板。</p>
+
+<ul>
+<li>site-mweb-bulma 这个模板包括了比较完整的 MWeb 网站模板的功能，比如说文章列表中显示自定义的图片和提要，列出所有分类，所有标签。</li>
+<li>site-mweb-simple 这个是极简的模板，不使用标签功能。</li>
+<li>site-foundation-book 这个是制作帮助文档类型的网站。</li>
+</ul>
+
+<p>制作网站模板之前，还要了解 extensions 文件夹中的三个配置文件的作用，这里分开说明：</p>
+
+<ul>
+<li>config.json 这个是配置是否生成相关页面用的，有四个变量设置。
+<ol>
+<li>isCreateCategoriesPages 如果设置为 true，则会生成分类列表页面，否则不会生成。这个一般要设置为 true，除非是极极简的模板。</li>
+<li>isCreateTagsPages 如果设置为 true，则会生成标签列表页。这个看需要，比如说 site-mweb-simple 不使用标签功能，所以设置为 false。</li>
+<li>isCreateTreeVars 这个一般是像 site-foundation-book 这种模板才会设置为 true，这个设置为 true 后，会在每个分类变量中，附带这个分类的所有文章的变量。</li>
+<li>isCreateArchivesVarsToIndex 这个如果设置为 true 的话，会把归档页的所有文章的变量传到 首页中，归档页的特点是有所有文章列表的变量。这个仅用在自定义首页并且要求在首页显示所有文章的需求。</li>
+</ol></li>
+<li>site.json <code>网站扩展</code> 的变量。</li>
+<li>document.json <code>文档扩展</code> 的变量。</li>
+</ul>
+
+<p>在介绍 MWeb 静态网站的所有变量之后，还要说说另一个，就是 MWeb 的LaTeX、代码高亮和画图功能。在制作自己网站模板时，建议顺手增加支持这些。方法非常简单，每一个 MWeb 自带的网站模板，都有一个 <code>section-chart-support.html</code> 文件，复制这个文件到你的模板中，然后在 footer.html 中使用 <code>&lt;!-- include(section-chart-support.html) --&gt;</code> 引入即可。另外，代码高亮使用的是 prism.js，这个模板只引入了在 asset 中的 prism.js 文件（所以还要保证 asset 中有  prism.js），并没有相关的 css 样式，这个需要自己去 <a href="https://prismjs.com">https://prismjs.com</a> 选择相应的样式，由于都是 CSS，所以可以直接加到模板中。具体可以参考系统自带的模板。</p>
+
+<h2 id="toc_7">MWeb 静态网站所有变量参考</h2>
+
+<h3 id="toc_8">所有模板页面都会传入的变量</h3>
+
+<table>
+<thead>
+<tr>
+<th>变量名称</th>
+<th>说明</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>siteURL</td>
+<td>网站设置中的网站网址</td>
+</tr>
+<tr>
+<td>siteDomain</td>
+<td>网站的域名</td>
+</tr>
+<tr>
+<td>siteName</td>
+<td>网站的名称</td>
+</tr>
+<tr>
+<td>pageTitle</td>
+<td>网站的标题</td>
+</tr>
+<tr>
+<td>siteDes</td>
+<td>网站的描述</td>
+</tr>
+<tr>
+<td>lastBuildDate</td>
+<td>网站最后生成时间</td>
+</tr>
+<tr>
+<td>siteOther</td>
+<td>网站设置中的 <code>网站其它代码</code></td>
+</tr>
+<tr>
+<td>siteMenu</td>
+<td>网站菜单，数组，数组对象例如：{name: &quot;Home&quot;, url: &quot;index.html&quot;, className: &quot;&quot;, target: &quot;self&quot;}</td>
+</tr>
+<tr>
+<td>recentPosts</td>
+<td>数组，数组的对象例如：{title: &quot;标题&quot;, url: &quot;post_url.html&quot;}</td>
+</tr>
+<tr>
+<td>allCategories</td>
+<td>数组，数组的对象例如： {name:&quot;分类&quot;,url:&quot;cat.html&quot;,count:2}</td>
+</tr>
+<tr>
+<td>allTags</td>
+<td>数组，数组的对象例如： {name:&quot;标签&quot;,url:&quot;tag_lable.html&quot;,count:2}</td>
+</tr>
+<tr>
+<td>categoriesTree</td>
+<td>二层分类树，数组，数组的对象为 {name:&quot;分类&quot;, url:&quot;cat.html&quot;, count:2, children:[ {name:&quot;&quot;,url:&quot;&quot;,count:3} ... ]}。请参<a href="https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/sidebar.html">这个网址</a></td>
+</tr>
+</tbody>
+</table>
+
+<p>以上的变量只是固定的变量，此外，还要加上<code>网站扩展</code>的自定义变量。文档扩展的变量使用为 <code>ext_ + 扩展变量名</code>，使用方式，请参考<a href="https://github.com/oulvhai/MWeb-Themes/blob/master/site-mweb-bulma/header.html">这个网址</a>。</p>
+
+<h3 id="toc_9">文档对象变量</h3>
+
+<p>这个文档对象变量，下面说明会用到，如果提到<code>文档对象变量</code>，说的就是这个。</p>
+
+<table>
+<thead>
+<tr>
+<th>变量名称</th>
+<th>说明</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>title</td>
+<td>文章的标题，通常为第一行</td>
+</tr>
+<tr>
+<td>desContent</td>
+<td>文章的HTML格式的描述，如果文档中没有 <code>&lt;!-- more --&gt;</code> 则跟 content 一样</td>
+</tr>
+<tr>
+<td>desContentTextOnly</td>
+<td>文章的纯文字描述，不带 HTML</td>
+</tr>
+<tr>
+<td>content</td>
+<td>文章的内容</td>
+</tr>
+<tr>
+<td>date</td>
+<td>文章的时间，格式按网站设定，默认为：2014/10/24</td>
+</tr>
+<tr>
+<td>dateGTM</td>
+<td>文章的时间，格式为 2014-10-24T13:54:03GMT+08:00</td>
+</tr>
+<tr>
+<td>artDate</td>
+<td>文章新增的时间，格式按网站设定，默认为：2014/10/24</td>
+</tr>
+<tr>
+<td>cats</td>
+<td>文章分类的数组，数组的对象例如： {name:&quot;分类&quot;,url:&quot;cat.html&quot;}</td>
+</tr>
+<tr>
+<td>tags</td>
+<td>文章标签的数组，数组的对象例如： {name:&quot;标签&quot;,url:&quot;tag_name.html&quot;}</td>
+</tr>
+<tr>
+<td>readMore</td>
+<td>文章中是否有 <code>&lt;!-- more --&gt;</code></td>
+</tr>
+<tr>
+<td>url</td>
+<td>文章的网址</td>
+</tr>
+<tr>
+<td>chart_flowSeq</td>
+<td>文档中是否带 flow 或者 sequence 画图，有值并为 &quot;y&quot; 是为带。</td>
+</tr>
+<tr>
+<td>chart_VIZ</td>
+<td>文档中是否带 VIZ 画图，有值并为 &quot;y&quot; 是为带。</td>
+</tr>
+<tr>
+<td>chart_ECharts</td>
+<td>文档中是否带 ECharts 画图，有值并为 &quot;y&quot; 是为带。</td>
+</tr>
+<tr>
+<td>chart_mermaid</td>
+<td>文档中是否带 mermaid 画图，有值并为 &quot;y&quot; 是为带。</td>
+</tr>
+<tr>
+<td>chart_codeblock</td>
+<td>文档中是否带代码块，有值并为 &quot;y&quot; 是为带。</td>
+</tr>
+<tr>
+<td>chart_LaTeX</td>
+<td>文档中是否带 LaTeX 数学公式，有值并为 &quot;y&quot; 是为带。</td>
+</tr>
+<tr>
+<td>chart_scripts</td>
+<td>文档中画图的支持脚本。</td>
+</tr>
+</tbody>
+</table>
+
+<ol>
+<li>以上 chart_flowSeq，chart_VIZ 等等的使用方式，请参考自带模板的 <code>section-chart-support.html</code> 文件，线上查看<a href="https://github.com/oulvhai/MWeb-Themes/blob/master/site-mweb-bulma/section-chart-support.html">请点此</a>。</li>
+<li>以上的变量只是固定的变量，此外，还要加上<code>文档扩展</code>的自定义变量。文档扩展的变量使用为 <code>ext_ + 扩展变量名</code>，请参考<a href="https://github.com/oulvhai/MWeb-Themes/blob/master/site-mweb-bulma/post.html">这个网址</a>。</li>
+</ol>
+
+<h3 id="toc_10">生成单篇文章的页面传入的变量</h3>
+
+<table>
+<thead>
+<tr>
+<th>变量名称</th>
+<th>说明</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>post</td>
+<td>对象为<code>文档对象变量</code></td>
+</tr>
+<tr>
+<td>postNav</td>
+<td>字典，带有<code>next</code>，<code>prev</code>两个对象，对象例如：{title: &quot;标题&quot;, url: &quot;post_url.html&quot;}</td>
+</tr>
+</tbody>
+</table>
+
+<p>参考模板：<a href="https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/post.html">https://github.com/oulvhai/MWeb-Themes/blob/master/octopress/post.html</a></p>
+
+<h3 id="toc_11">生成单篇文章选中 <code>Is page</code> 的页面传入的变量</h3>
+
+<table>
+<thead>
+<tr>
+<th>变量名称</th>
+<th>说明</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>posts</td>
+<td>数组，数组的对象为<code>文档对象变量</code></td>
+</tr>
+<tr>
+<td>post</td>
+<td>对象为<code>文档对象变量</code></td>
+</tr>
+</tbody>
+</table>
+
+<p>参考模板：<a href="https://github.com/oulvhai/MWeb-Themes/blob/master/mweb-greyshade/page-index.html">https://github.com/oulvhai/MWeb-Themes/blob/master/mweb-greyshade/page-index.html</a></p>
+
+<h3 id="toc_12">分类页面的变量</h3>
+
+<table>
+<thead>
+<tr>
+<th>变量名称</th>
+<th>说明</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>posts</td>
+<td>数组，数组的对象为<code>文档对象变量</code></td>
+</tr>
+<tr>
+<td>currentCat</td>
+<td>当前分类，对象例如：{name: &quot;分类名&quot;, url: &quot;cat_url.html&quot;}</td>
+</tr>
+<tr>
+<td>prevPageUrl</td>
+<td>上一页的网址</td>
+</tr>
+<tr>
+<td>nextPageUrl</td>
+<td>下一页的网址</td>
+</tr>
+</tbody>
+</table>
+
+<p>参考模板：<a href="https://github.com/oulvhai/MWeb-Themes/blob/master/site-mweb-bulma/category.html">https://github.com/oulvhai/MWeb-Themes/blob/master/site-mweb-bulma/category.html</a></p>
+
+<h3 id="toc_13">标签页面的变量</h3>
+
+<table>
+<thead>
+<tr>
+<th>变量名称</th>
+<th>说明</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>posts</td>
+<td>数组，数组的对象为<code>文档对象变量</code></td>
+</tr>
+<tr>
+<td>currentTag</td>
+<td>当前分类，对象例如：{name: &quot;标签名&quot;, url: &quot;tag_url.html&quot;}</td>
+</tr>
+<tr>
+<td>prevPageUrl</td>
+<td>上一页的网址</td>
+</tr>
+<tr>
+<td>nextPageUrl</td>
+<td>下一页的网址</td>
+</tr>
+</tbody>
+</table>
+
+<p>参考模板：<a href="https://github.com/oulvhai/MWeb-Themes/blob/master/site-mweb-bulma/tags.html">https://github.com/oulvhai/MWeb-Themes/blob/master/site-mweb-bulma/tags.html</a></p>
+
+<h3 id="toc_14">归档页 archives.html 的变量</h3>
+
+<p>传入的变量：</p>
+
+<table>
+<thead>
+<tr>
+<th>变量名称</th>
+<th>说明</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>posts</td>
+<td>数组，数组对象请参考下表</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th>变量名称</th>
+<th>说明</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>year</td>
+<td>文章年份</td>
+</tr>
+<tr>
+<td>title</td>
+<td>文章标题</td>
+</tr>
+<tr>
+<td>url</td>
+<td>文章网址</td>
+</tr>
+<tr>
+<td>cats</td>
+<td>文章分类的数组，数组的对象为<code>文档分类对象变量</code></td>
+</tr>
+<tr>
+<td>date</td>
+<td>文章的时间，格式按网站设定，默认为：2014/10/24</td>
+</tr>
+<tr>
+<td>dateMonth</td>
+<td>文章月份</td>
+</tr>
+<tr>
+<td>dateDay</td>
+<td>文章日期</td>
+</tr>
+<tr>
+<td>dateYear</td>
+<td>文章年份</td>
+</tr>
+<tr>
+<td>dateGTM</td>
+<td>文章的时间，格式为 2014-10-24T13:54:03GMT+08:00</td>
+</tr>
+<tr>
+<td>artDate</td>
+<td>文章新增的时间，格式按网站设定，默认为：2014/10/24</td>
+</tr>
+</tbody>
+</table>
+
+<p>此外，还会传入<code>文档扩展</code>的变量。<br/>
+参考模板：<a href="https://github.com/oulvhai/MWeb-Themes/blob/master/site-mweb-bulma/archives.html">https://github.com/oulvhai/MWeb-Themes/blob/master/site-mweb-bulma/archives.html</a></p>
+
+<h3 id="toc_15">sitemap.xml 的变量</h3>
+
+<p>传入的变量：</p>
+
+<table>
+<thead>
+<tr>
+<th>变量名称</th>
+<th>说明</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>archives</td>
+<td>数组，数组对象请参考下表</td>
+</tr>
+<tr>
+<td>pages</td>
+<td>数组，数组对象请参考下表</td>
+</tr>
+<tr>
+<td>nowDateGTM</td>
+<td>当前时间</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th>变量名称</th>
+<th>说明</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>title</td>
+<td>文章标题</td>
+</tr>
+<tr>
+<td>url</td>
+<td>文章网址</td>
+</tr>
+<tr>
+<td>date</td>
+<td>文章的时间，格式按网站设定，默认为：2014/10/24</td>
+</tr>
+<tr>
+<td>dateGTM</td>
+<td>文章的时间，格式为 2014-10-24T13:54:03GMT+08:00</td>
+</tr>
+<tr>
+<td>artDate</td>
+<td>文章新增的时间，格式按网站设定，默认为：2014/10/24</td>
+</tr>
+</tbody>
+</table>
+
+<p>参考模板：<a href="https://github.com/oulvhai/MWeb-Themes/blob/master/site-mweb-bulma/sitemap.xml">https://github.com/oulvhai/MWeb-Themes/blob/master/site-mweb-bulma/sitemap.xml</a></p>
+
+<h3 id="toc_16">atom.xml 的变量</h3>
+
+<p>读取的模板：atom.xml<br/>
+传入的变量：</p>
+
+<table>
+<thead>
+<tr>
+<th>变量名称</th>
+<th>说明</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>posts</td>
+<td>数组，数组对象为<code>文档对象变量</code></td>
+</tr>
+</tbody>
+</table>
+
+<p>参考模板：<a href="https://github.com/oulvhai/MWeb-Themes/blob/master/site-mweb-bulma/atom.xml">https://github.com/oulvhai/MWeb-Themes/blob/master/site-mweb-bulma/atom.xml</a></p>
+
+		            </div>
+				</div><!-- /.blog-post -->
+			</div>
+			<div class="share-comment">
+			
+
+<div class="jiathis_style_24x24">
+	<a class="jiathis_button_tsina"></a>
+	<a class="jiathis_button_qzone"></a>
+	<a class="jiathis_button_tqq"></a>
+	<a class="jiathis_button_weixin"></a>
+	<a class="jiathis_button_renren"></a>
+	<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+			</div>
+
+        </div><!-- /.blog-main -->
+	</div>
+</div>   <footer class="blog-footer">
+      <p>Copyright &copy; 2019
+Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a> &nbsp;&nbsp; 
+ <a href="reseller.html">Official Reseller</a>&nbsp;&nbsp; host on <a target="_blank" href="https://coding.net/">Coding.net Pages</a>
+.</p>
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+    </footer>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="asset/js/ie10-viewport-bug-workaround.js"></script>
+    
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-58735702-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </body>
+</html>

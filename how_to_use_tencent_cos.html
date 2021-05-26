@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="atom.xml" rel="alternate" title="MWeb" type="application/atom+xml">
+    <title> 
+	  
+  	如何使用腾讯云 COS 图床 - MWeb
+  	
+  	</title>
+    <link rel="icon" sizes="192x192" href="asset/icon_192.png" />
+    <link rel="shortcut icon" href="asset/icon_64.png" type="image/png" />
+
+    <link href="asset/css/bootstrap.min.css" rel="stylesheet">
+    <link href="asset/css/style.css" rel="stylesheet">
+    <script src="asset/js/jquery.min.js"></script>
+    <script src="asset/js/bootstrap.min.js"></script>
+    <script src="asset/js/docs.js"></script>
+    <script src="asset/highlightjs/highlight.pack.js"></script>
+	<link href="asset/highlightjs/styles/github.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<script>hljs.initHighlightingOnLoad();</script>
+    <!--[if lt IE 9]>
+      <script src="asset/js/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="blog-nav">
+           
+        <a class="menu-index blog-nav-item" target="_self" href="index.html">首页</a>
+        
+        <a class="menu-help blog-nav-item" target="_self" href="help.html">文档</a>
+        
+        <a class="menu-themes blog-nav-item" target="_self" href="themes.html">主题</a>
+        
+        <a class="blog-nav-item menu-blog" target="_self" href="download.html">下载</a>
+        
+        <a class="menu-about blog-nav-item" target="_self" href="about.html">关于</a>
+        
+        <a class="menu-lang blog-nav-item" target="_self" href="https://www.mweb.im/">English</a>
+        
+        
+        </nav>
+      </div>
+    </div>
+      
+      <div style="color:#ff0000; text-align:center; padding:8px;" class="bg-info site_notice">
+        <a style="color:#ff0000;"  onclick="ga('send','event','global_notice_click');" href="https://t.me/mwebapp" target="_blank" >MWeb 官方 Telegram 群已建立，点击可查看</a><br /><a style="color:#ff0000;" href="mweb4-macOS-beta.html">MWeb 4.0.0 for macOS 测试版已发布，欢迎下载测试。</a>
+      </div>
+    
+    
+ <div class="container" id="content-wrap">
+ 
+ 
+    
+     
+   <script type="text/javascript">
+      $(function(){
+        $('a.menu-blog').addClass('active');
+      });
+      </script>
+
+    
+      <script type="text/javascript">
+    $(function(){
+      var url = window.location.pathname;
+    var filename = url.substring(url.lastIndexOf('/')+1);
+    if (filename.length > 5) {
+      $('.blog-cats a').each(function(){
+        var href = $(this).attr('href');
+        if(href.length>5){
+          href = href.substring(0,href.length-5);
+          if (filename.startsWith(href)) { $(this).parent().addClass('active'); }
+        }
+      });
+    }
+    });
+  </script>
+   <div class="row">
+        <div class="col-sm-12">
+
+          <div class="blog-categories" style="padding-top: 0em; padding-bottom: 0em;">
+
+        <ul class="blog-cats">
+
+  
+    
+
+  
+      <li><a href="blog.html">所有分类</a></li> 
+        
+              <li><a href="docsV2.html">使用文档</a></li>
+        
+              <li><a href="tips.html">使用技巧</a></li>
+        
+              <li><a href="releases.html">版本发布</a></li>
+        
+    
+
+        </ul>
+        <div class="rss"><a href="atom.xml">RSS</a></div>
+          </div>
+       </div>
+     </div>
+     <hr style="margin-bottom: 60px;" />
+
+      <div class="row">
+
+        <div class="col-sm-10 blog-main">
+			<div class="blog-content-wrap">
+				<div class="blog-post">
+		            <h2 class="blog-post-title">如何使用腾讯云 COS 图床</h2>
+		            <p class="blog-post-meta">2019/04/12 
+			            &nbsp;posted in 
+						
+						    <a class='category' href='blog.html'>博客</a>&nbsp;
+						
+						    <a class='category' href='docsV2.html'>使用文档</a>&nbsp;
+						 
+						 
+		            </p>
+		            <div class="content-responsive">
+		            <p>如下图，在 MWeb 的设置页面中，滑动到 “增加本地图片上传服务” 那里，点击后，选择 “腾讯云 COS”，来增加腾讯云 COS 图床服务。如下图的右边为腾讯云 COS 图床的设置界面。<br/>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/cos1.jpg" alt="cos2"/></p>
+
+<p>下面详细说明各项设置，首先是 “名称：” 这个，你可以随便取一个名称，用来标记这个上传服务。剩下的项目都要按腾讯云 COS 中的相关项来填写，下面仔细说明。</p>
+
+<h2 id="toc_0">1. 存储地域、空间名称、域名地址的填写：</h2>
+
+<p>进入到腾讯云 COS （对象存储）的存储桶列表中，新增一个存储桶后，点进去并切换到 “基础配置” 这一页，如下图，我的存储桶的名称是为：“test”。<br/>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15550727428079.jpg" alt="" style="width:822px;"/><br/>
+按上图，<strong>存储地域</strong>就选择对应的，我这里是上海金融；<strong>空间名称</strong>我这里是填入 test，不用填写后边的 “-数字”；<strong>域名地址</strong>，可以填入访问域名，如果你有绑定自己的域名，请填入自己绑定的域名即可。</p>
+
+<h2 id="toc_1">2. App ID、SecretId、SecretKey 和文件保存路径的填写：</h2>
+
+<p>进入腾讯云的 “API密钥管理” 中，即可找到 <strong>App ID、SecretId、SecretKey</strong> 这三个要填写的项目，如下图所示，分别填入即可。<br/>
+<strong>请注意：</strong> App ID 也可以使用空间名称后面那串数字，这串数字是跟 “API密钥管理” 中的 App ID 一样的。这个 App ID <strong>不是</strong>子帐号的帐号 ID。<br/>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15550737662425.jpg" alt="" style="width:740px;"/></p>
+
+<p>关于<strong>文件保存路径</strong>这个，设置为 &quot;/{year}/{mon}/{day}/{filename}{.suffix}&quot; 时，上传 filename.jpg 图片会保存在: &quot;/2019/02/02/filename.jpg&quot;。另外可以用 {random} 这个变量，是一个随机数字。</p>
+
+<h2 id="toc_2">3. 填写完成后的效果</h2>
+
+<p>如下图左边，是填写完成后的界面，右边为使用腾讯云上传本地图片的界面。<br/>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/cos2.jpg" alt="cos1"/><br/>
+图片上传后，点 “复制 Markdown” 或者是 “复制 HTML” 时，就会把本地的图片地址替换为图床的地址并复制到剪切板中。</p>
+
+		            </div>
+				</div><!-- /.blog-post -->
+			</div>
+			<div class="share-comment">
+			
+
+<div class="jiathis_style_24x24">
+	<a class="jiathis_button_tsina"></a>
+	<a class="jiathis_button_qzone"></a>
+	<a class="jiathis_button_tqq"></a>
+	<a class="jiathis_button_weixin"></a>
+	<a class="jiathis_button_renren"></a>
+	<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+			</div>
+
+        </div><!-- /.blog-main -->
+	</div>
+</div>   <footer class="blog-footer">
+      <p>Copyright &copy; 2019
+Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a> &nbsp;&nbsp; 
+ <a href="reseller.html">Official Reseller</a>&nbsp;&nbsp; host on <a target="_blank" href="https://coding.net/">Coding.net Pages</a>
+.</p>
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+    </footer>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="asset/js/ie10-viewport-bug-workaround.js"></script>
+    
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-58735702-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </body>
+</html>

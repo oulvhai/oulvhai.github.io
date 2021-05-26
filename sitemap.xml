@@ -1,352 +1,474 @@
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-  <loc>http://coderforart.com/</loc>
-  <lastmod>2018-07-14T10:43:56+08:00</lastmod>
+  <loc>http://zh.mweb.im/</loc>
+  <lastmod>2021-05-26T09:41:43+08:00</lastmod>
 </url>
 
 <url>
-  <loc>http://coderforart.com/mweb3-release-note.html</loc>
+  <loc>http://zh.mweb.im/mweb4-macOS-beta.html</loc>
+  <lastmod>2021-04-06T15:17:46+08:00</lastmod>
+</url>
+
+<url>
+  <loc>http://zh.mweb.im/16101924428280.html</loc>
+  <lastmod>2021-01-09T19:40:42+08:00</lastmod>
+</url>
+
+<url>
+  <loc>http://zh.mweb.im/make_your_site_template.html</loc>
+  <lastmod>2019-12-12T15:38:11+08:00</lastmod>
+</url>
+
+<url>
+  <loc>http://zh.mweb.im/version-3.2.8-to-3.3.1-release-note.html</loc>
+  <lastmod>2019-09-21T11:39:27+08:00</lastmod>
+</url>
+
+<url>
+  <loc>http://zh.mweb.im/how_to_use_aliyun_cos.html</loc>
+  <lastmod>2019-09-05T12:40:04+08:00</lastmod>
+</url>
+
+<url>
+  <loc>http://zh.mweb.im/mweb-2019-06-update.html</loc>
+  <lastmod>2019-05-29T09:29:00+08:00</lastmod>
+</url>
+
+<url>
+  <loc>http://zh.mweb.im/how_to_use_tencent_cos.html</loc>
+  <lastmod>2019-04-12T19:45:54+08:00</lastmod>
+</url>
+
+<url>
+  <loc>http://zh.mweb.im/mweb-ios-3.0-release.html</loc>
+  <lastmod>2019-01-03T14:31:45+08:00</lastmod>
+</url>
+
+<url>
+  <loc>http://zh.mweb.im/how_to_use_quicknote_in_ios.html</loc>
+  <lastmod>2019-01-03T13:35:50+08:00</lastmod>
+</url>
+
+<url>
+  <loc>http://zh.mweb.im/mweb3x-release-note.html</loc>
+  <lastmod>2018-07-02T20:45:33+08:00</lastmod>
+</url>
+
+<url>
+  <loc>http://zh.mweb.im/mweb-static-blog.html</loc>
+  <lastmod>2018-07-02T00:50:51+08:00</lastmod>
+</url>
+
+<url>
+  <loc>http://zh.mweb.im/15304187309476.html</loc>
+  <lastmod>2018-07-01T12:18:50+08:00</lastmod>
+</url>
+
+<url>
+  <loc>http://zh.mweb.im/15303804636963.html</loc>
+  <lastmod>2018-07-01T01:41:03+08:00</lastmod>
+</url>
+
+<url>
+  <loc>http://zh.mweb.im/15303794142935.html</loc>
+  <lastmod>2018-07-01T01:23:34+08:00</lastmod>
+</url>
+
+<url>
+  <loc>http://zh.mweb.im/mweb-library.html</loc>
+  <lastmod>2018-07-01T00:18:57+08:00</lastmod>
+</url>
+
+<url>
+  <loc>http://zh.mweb.im/15303740497765.html</loc>
+  <lastmod>2018-06-30T23:54:09+08:00</lastmod>
+</url>
+
+<url>
+  <loc>http://zh.mweb.im/15303685987267.html</loc>
+  <lastmod>2018-06-30T22:23:18+08:00</lastmod>
+</url>
+
+<url>
+  <loc>http://zh.mweb.im/15303673435460.html</loc>
+  <lastmod>2018-06-30T22:02:23+08:00</lastmod>
+</url>
+
+<url>
+  <loc>http://zh.mweb.im/15303597337753.html</loc>
+  <lastmod>2018-06-30T19:55:33+08:00</lastmod>
+</url>
+
+<url>
+  <loc>http://zh.mweb.im/markdown.html</loc>
+  <lastmod>2018-06-29T23:13:33+08:00</lastmod>
+</url>
+
+<url>
+  <loc>http://zh.mweb.im/15303606797118.html</loc>
+  <lastmod>2018-06-28T20:11:19+08:00</lastmod>
+</url>
+
+<url>
+  <loc>http://zh.mweb.im/mweb3-release-note.html</loc>
   <lastmod>2018-06-14T15:49:36+08:00</lastmod>
 </url>
 
 <url>
-  <loc>http://coderforart.com/mweb3.0-on-test.html</loc>
+  <loc>http://zh.mweb.im/mweb3.0-on-test.html</loc>
   <lastmod>2018-06-13T10:54:02+08:00</lastmod>
 </url>
 
 <url>
-  <loc>http://coderforart.com/15113184658847.html</loc>
+  <loc>http://zh.mweb.im/15113184658847.html</loc>
   <lastmod>2017-11-22T10:41:05+08:00</lastmod>
 </url>
 
 <url>
-  <loc>http://coderforart.com/mweb-ios-2.3.2-release.html</loc>
+  <loc>http://zh.mweb.im/mweb-ios-2.3.4-release.html</loc>
+  <lastmod>2017-09-29T20:26:38+08:00</lastmod>
+</url>
+
+<url>
+  <loc>http://zh.mweb.im/mweb-for-mac-223-release.html</loc>
+  <lastmod>2017-07-13T09:48:56+08:00</lastmod>
+</url>
+
+<url>
+  <loc>http://zh.mweb.im/how_to_use_shell_script.html</loc>
+  <lastmod>2017-07-11T11:34:59+08:00</lastmod>
+</url>
+
+<url>
+  <loc>http://zh.mweb.im/mweb-for-mac-221-release.html</loc>
+  <lastmod>2017-07-02T08:13:16+08:00</lastmod>
+</url>
+
+<url>
+  <loc>http://zh.mweb.im/mweb-ios-2.3.2-release.html</loc>
   <lastmod>2017-06-21T14:58:46+08:00</lastmod>
 </url>
 
 <url>
-  <loc>http://coderforart.com/how_to_use_images_in_mweb.html</loc>
+  <loc>http://zh.mweb.im/how_to_use_images_in_mweb.html</loc>
   <lastmod>2017-06-20T14:12:27+08:00</lastmod>
 </url>
 
 <url>
-  <loc>http://coderforart.com/how_to_use_library_in_ios.html</loc>
+  <loc>http://zh.mweb.im/how_to_use_library_in_ios.html</loc>
   <lastmod>2017-06-02T19:26:55+08:00</lastmod>
 </url>
 
 <url>
-  <loc>http://coderforart.com/mweb-for-ios-2.3.x-tf.html</loc>
+  <loc>http://zh.mweb.im/mweb-for-ios-2.3.x-tf.html</loc>
   <lastmod>2017-06-02T14:08:34+08:00</lastmod>
 </url>
 
 <url>
-  <loc>http://coderforart.com/introducing-mweb-for-ios.html</loc>
+  <loc>http://zh.mweb.im/14840154051727.html</loc>
+  <lastmod>2017-01-10T10:30:05+08:00</lastmod>
+</url>
+
+<url>
+  <loc>http://zh.mweb.im/introducing-mweb-for-ios.html</loc>
   <lastmod>2017-01-05T10:01:15+08:00</lastmod>
 </url>
 
 <url>
-  <loc>http://coderforart.com/mweb-for-ios-test.html</loc>
+  <loc>http://zh.mweb.im/how_to_use_custom_image_upload_url.html</loc>
+  <lastmod>2016-12-21T12:10:39+08:00</lastmod>
+</url>
+
+<url>
+  <loc>http://zh.mweb.im/how_to_use_qiniu_url.html</loc>
+  <lastmod>2016-12-21T10:45:56+08:00</lastmod>
+</url>
+
+<url>
+  <loc>http://zh.mweb.im/how_to_use_wordpress_url.html</loc>
+  <lastmod>2016-12-21T09:41:45+08:00</lastmod>
+</url>
+
+<url>
+  <loc>http://zh.mweb.im/mweb-ios-test-v2.html</loc>
+  <lastmod>2016-12-12T13:29:01+08:00</lastmod>
+</url>
+
+<url>
+  <loc>http://zh.mweb.im/mweb-for-ios-test.html</loc>
   <lastmod>2016-12-08T10:25:18+08:00</lastmod>
 </url>
 
 <url>
-  <loc>http://coderforart.com/14730440789266.html</loc>
-  <lastmod>2016-09-05T10:54:38+08:00</lastmod>
+  <loc>http://zh.mweb.im/mweb-2.0.9-release.html</loc>
+  <lastmod>2016-08-25T13:51:31+08:00</lastmod>
 </url>
 
 <url>
-  <loc>http://coderforart.com/mweb-2.0.7-release.html</loc>
+  <loc>http://zh.mweb.im/mweb-2.0.7-release.html</loc>
   <lastmod>2016-07-27T18:08:45+08:00</lastmod>
 </url>
 
 <url>
-  <loc>http://coderforart.com/14689205256580.html</loc>
+  <loc>http://zh.mweb.im/14689205256580.html</loc>
   <lastmod>2016-07-19T17:28:45+08:00</lastmod>
 </url>
 
 <url>
-  <loc>http://coderforart.com/mweb-2.0-release.html</loc>
+  <loc>http://zh.mweb.im/mweb-2.0-release.html</loc>
   <lastmod>2016-07-17T23:23:43+08:00</lastmod>
 </url>
 
 <url>
-  <loc>http://coderforart.com/mweb-2.0-beta.html</loc>
+  <loc>http://zh.mweb.im/mweb-2.0-beta-all-update.html</loc>
+  <lastmod>2016-07-06T12:41:52+08:00</lastmod>
+</url>
+
+<url>
+  <loc>http://zh.mweb.im/mweb-2.0-beta.html</loc>
   <lastmod>2016-07-04T09:04:45+08:00</lastmod>
 </url>
 
 <url>
-  <loc>http://coderforart.com/mweb-1.9.7-release.html</loc>
+  <loc>http://zh.mweb.im/mweb-1.9.8-release.html</loc>
+  <lastmod>2016-03-18T08:55:00+08:00</lastmod>
+</url>
+
+<url>
+  <loc>http://zh.mweb.im/mweb-1.9.7-release.html</loc>
   <lastmod>2016-02-26T11:31:44+08:00</lastmod>
 </url>
 
 <url>
-  <loc>http://coderforart.com/mweb-1.9.3-release.html</loc>
+  <loc>http://zh.mweb.im/mweb-1.9.3-release.html</loc>
   <lastmod>2016-01-19T09:29:55+08:00</lastmod>
 </url>
 
 <url>
-  <loc>http://coderforart.com/mweb-1.9.1-release.html</loc>
+  <loc>http://zh.mweb.im/mweb-1.9.1-release.html</loc>
   <lastmod>2015-12-18T10:19:05+08:00</lastmod>
 </url>
 
 <url>
-  <loc>http://coderforart.com/mweb-1.8.3-release.html</loc>
+  <loc>http://zh.mweb.im/mweb-1.8.3-release.html</loc>
   <lastmod>2015-11-05T09:36:32+08:00</lastmod>
 </url>
 
 <url>
-  <loc>http://coderforart.com/mweb-1.8.1-release.html</loc>
+  <loc>http://zh.mweb.im/mweb-1.8.1-release.html</loc>
   <lastmod>2015-10-24T16:57:41+08:00</lastmod>
 </url>
 
 <url>
-  <loc>http://coderforart.com/14431468507612.html</loc>
-  <lastmod>2015-09-25T10:07:30+08:00</lastmod>
-</url>
-
-<url>
-  <loc>http://coderforart.com/mweb-1.7.3-release.html</loc>
+  <loc>http://zh.mweb.im/mweb-1.7.3-release.html</loc>
   <lastmod>2015-09-23T09:06:05+08:00</lastmod>
 </url>
 
 <url>
-  <loc>http://coderforart.com/mweb-1.7.1-release.html</loc>
+  <loc>http://zh.mweb.im/mweb-1.7.1-release.html</loc>
   <lastmod>2015-09-14T09:23:51+08:00</lastmod>
 </url>
 
 <url>
-  <loc>http://coderforart.com/mweb-medium-like-theme.html</loc>
-  <lastmod>2015-09-10T10:02:34+08:00</lastmod>
-</url>
-
-<url>
-  <loc>http://coderforart.com/move-lite-data-to-mweb.html</loc>
+  <loc>http://zh.mweb.im/move-lite-data-to-mweb.html</loc>
   <lastmod>2015-07-31T15:28:02+08:00</lastmod>
 </url>
 
 <url>
-  <loc>http://coderforart.com/mweb-1.6.1-release.html</loc>
+  <loc>http://zh.mweb.im/mweb-1.6.1-release.html</loc>
   <lastmod>2015-07-23T09:47:29+08:00</lastmod>
 </url>
 
 <url>
-  <loc>http://coderforart.com/mweb-1.5.1-release.html</loc>
+  <loc>http://zh.mweb.im/mweb-1.5.1-release.html</loc>
   <lastmod>2015-06-05T07:23:16+08:00</lastmod>
 </url>
 
 <url>
-  <loc>http://coderforart.com/mweb-1.4.1-releases.html</loc>
+  <loc>http://zh.mweb.im/mweb-1.4.1-releases.html</loc>
   <lastmod>2015-05-15T08:32:51+08:00</lastmod>
 </url>
 
 <url>
-  <loc>http://coderforart.com/mweb-1.4-static-blog-extension.html</loc>
-  <lastmod>2015-05-07T14:46:52+08:00</lastmod>
-</url>
-
-<url>
-  <loc>http://coderforart.com/mweb-1.4-add-floder-octpress-support.html</loc>
-  <lastmod>2015-05-07T09:56:51+08:00</lastmod>
-</url>
-
-<url>
-  <loc>http://coderforart.com/mweb-1.3.7-releases.html</loc>
+  <loc>http://zh.mweb.im/mweb-1.3.7-releases.html</loc>
   <lastmod>2015-04-17T07:45:08+08:00</lastmod>
 </url>
 
 <url>
-  <loc>http://coderforart.com/mweb1.3-release.html</loc>
-  <lastmod>2015-03-28T11:13:42+08:00</lastmod>
+  <loc>http://zh.mweb.im/mweb-in-yosemite.html</loc>
+  <lastmod>2015-03-28T10:30:45+08:00</lastmod>
 </url>
 
 <url>
-  <loc>http://coderforart.com/mweb1.3-release-zh.html</loc>
+  <loc>http://zh.mweb.im/mweb1.3-release-zh.html</loc>
   <lastmod>2015-03-28T10:21:20+08:00</lastmod>
 </url>
 
 <url>
-  <loc>http://coderforart.com/markdown-old.html</loc>
-  <lastmod>2015-03-21T09:56:31+08:00</lastmod>
+  <loc>http://zh.mweb.im/mweb-comment-and-share-help.html</loc>
+  <lastmod>2015-03-21T13:26:58+08:00</lastmod>
 </url>
 
 <url>
-  <loc>http://coderforart.com/markdown-syntax-guide-suggest-version-zh.html</loc>
+  <loc>http://zh.mweb.im/mweb-static-blog-generator.html</loc>
+  <lastmod>2015-03-21T13:10:16+08:00</lastmod>
+</url>
+
+<url>
+  <loc>http://zh.mweb.im/mweb-document-library.html</loc>
+  <lastmod>2015-03-21T13:09:57+08:00</lastmod>
+</url>
+
+<url>
+  <loc>http://zh.mweb.im/markdown-syntax-guide-suggest-version-zh.html</loc>
   <lastmod>2015-03-21T09:52:10+08:00</lastmod>
 </url>
 
 <url>
-  <loc>http://coderforart.com/pinphoto-en.html</loc>
-  <lastmod>2015-03-05T16:21:11+08:00</lastmod>
+  <loc>http://zh.mweb.im/qa.html</loc>
+  <lastmod>2015-03-20T21:25:50+08:00</lastmod>
 </url>
 
 <url>
-  <loc>http://coderforart.com/pinphoto.html</loc>
-  <lastmod>2015-03-05T10:46:54+08:00</lastmod>
-</url>
-
-<url>
-  <loc>http://coderforart.com/my-sec-mac-app-request-name.html</loc>
-  <lastmod>2015-03-02T14:03:40+08:00</lastmod>
-</url>
-
-<url>
-  <loc>http://coderforart.com/use-goodsync-sync-mweb-static-websites.html</loc>
-  <lastmod>2015-02-27T12:01:25+08:00</lastmod>
-</url>
-
-<url>
-  <loc>http://coderforart.com/use-goodsync-sync-mweb-static-websites-zh.html</loc>
+  <loc>http://zh.mweb.im/use-goodsync-sync-mweb-static-websites-zh.html</loc>
   <lastmod>2015-02-27T10:55:50+08:00</lastmod>
 </url>
 
 <url>
-  <loc>http://coderforart.com/mweb-v1.2-release.html</loc>
-  <lastmod>2015-02-08T23:50:28+08:00</lastmod>
-</url>
-
-<url>
-  <loc>http://coderforart.com/mweb-v1.2-release-zh.html</loc>
+  <loc>http://zh.mweb.im/mweb-v1.2-release-zh.html</loc>
   <lastmod>2015-02-08T17:47:38+08:00</lastmod>
 </url>
 
 <url>
-  <loc>http://coderforart.com/aliyun-net-cn-free-web-host-express.html</loc>
+  <loc>http://zh.mweb.im/aliyun-net-cn-free-web-host-express.html</loc>
   <lastmod>2015-02-03T12:16:28+08:00</lastmod>
 </url>
 
 <url>
-  <loc>http://coderforart.com/sync-webistes-to-github-or-ftp-zh.html</loc>
+  <loc>http://zh.mweb.im/sync-webistes-to-github-or-ftp-zh.html</loc>
   <lastmod>2015-01-28T11:23:05+08:00</lastmod>
 </url>
 
 <url>
-  <loc>http://coderforart.com/make-a-simple-high-end-mac-ios-game.html</loc>
-  <lastmod>2015-01-21T10:05:07+08:00</lastmod>
-</url>
-
-<url>
-  <loc>http://coderforart.com/qa.html</loc>
-  <lastmod>2015-01-20T10:04:01+08:00</lastmod>
-</url>
-
-<url>
-  <loc>http://coderforart.com/mweb-qa-zh.html</loc>
+  <loc>http://zh.mweb.im/mweb-qa-zh.html</loc>
   <lastmod>2015-01-20T10:03:00+08:00</lastmod>
 </url>
 
 <url>
-  <loc>http://coderforart.com/mweb-v1.1-release.html</loc>
-  <lastmod>2015-01-19T15:02:30+08:00</lastmod>
-</url>
-
-<url>
-  <loc>http://coderforart.com/mweb-v1.1-release-zh.html</loc>
+  <loc>http://zh.mweb.im/mweb-v1.1-release-zh.html</loc>
   <lastmod>2015-01-19T14:29:02+08:00</lastmod>
 </url>
 
 <url>
-  <loc>http://coderforart.com/unrealengine4-windows-mac.html</loc>
-  <lastmod>2015-01-16T14:19:42+08:00</lastmod>
-</url>
-
-<url>
-  <loc>http://coderforart.com/me-screenshot-and-in-yosemite.html</loc>
-  <lastmod>2015-01-07T13:58:07+08:00</lastmod>
-</url>
-
-<url>
-  <loc>http://coderforart.com/custom-site-theme-detail.html</loc>
-  <lastmod>2015-01-07T13:54:03+08:00</lastmod>
-</url>
-
-<url>
-  <loc>http://coderforart.com/custom-site-theme-detail-zh.html</loc>
+  <loc>http://zh.mweb.im/custom-site-theme-detail-zh.html</loc>
   <lastmod>2015-01-07T01:48:59+08:00</lastmod>
 </url>
 
 <url>
-  <loc>http://coderforart.com/mweb.html</loc>
-  <lastmod>2014-12-17T16:50:02+08:00</lastmod>
-</url>
-
-<url>
-  <loc>http://coderforart.com/mweb-zh.html</loc>
-  <lastmod>2014-12-17T10:38:19+08:00</lastmod>
-</url>
-
-<url>
-  <loc>http://coderforart.com/insert-photos-and-display-in-editor.html</loc>
-  <lastmod>2014-12-16T23:15:39+08:00</lastmod>
-</url>
-
-<url>
-  <loc>http://coderforart.com/insert-photos-and-display-in-editor-zh.html</loc>
-  <lastmod>2014-12-16T23:10:52+08:00</lastmod>
-</url>
-
-<url>
-  <loc>http://coderforart.com/markdown-syntax-guide-full-version.html</loc>
-  <lastmod>2014-12-16T21:40:44+08:00</lastmod>
-</url>
-
-<url>
-  <loc>http://coderforart.com/markdown-syntax-guide-full-version-zh.html</loc>
+  <loc>http://zh.mweb.im/markdown-syntax-guide-full-version-zh.html</loc>
   <lastmod>2014-12-16T21:26:32+08:00</lastmod>
 </url>
 
 
 <url>
-  <loc>http://coderforart.com/custom-site-theme-detail-temp.html</loc>
-  <lastmod>2015-03-21T13:42:19+08:00</lastmod>
+  <loc>http://zh.mweb.im/about.html</loc>
+  <lastmod>2019-12-10T11:28:22+08:00</lastmod>
 </url>
 
 <url>
-  <loc>http://coderforart.com/about.html</loc>
-  <lastmod>2017-07-12T17:04:43+08:00</lastmod>
+  <loc>http://zh.mweb.im/help-old.html</loc>
+  <lastmod>2016-01-19T10:28:44+08:00</lastmod>
 </url>
 
 <url>
-  <loc>http://coderforart.com/introduction-mweb.html</loc>
-  <lastmod>2015-04-27T16:24:49+08:00</lastmod>
+  <loc>http://zh.mweb.im/mweb-1.4-add-floder-octpress-support.html</loc>
+  <lastmod>2020-10-27T11:57:13+08:00</lastmod>
 </url>
 
 <url>
-  <loc>http://coderforart.com/introduction-mweb-zh.html</loc>
-  <lastmod>2015-12-01T15:43:43+08:00</lastmod>
+  <loc>http://zh.mweb.im/mweb-1.4-static-blog-extension.html</loc>
+  <lastmod>2020-10-27T11:57:13+08:00</lastmod>
+</url>
+
+<url>
+  <loc>http://zh.mweb.im/how_to_use_home.html</loc>
+  <lastmod>2017-11-10T22:03:58+08:00</lastmod>
+</url>
+
+<url>
+  <loc>http://zh.mweb.im/reseller.html</loc>
+  <lastmod>2019-12-09T10:43:13+08:00</lastmod>
+</url>
+
+<url>
+  <loc>http://zh.mweb.im/themes.html</loc>
+  <lastmod>2020-05-14T16:00:47+08:00</lastmod>
+</url>
+
+<url>
+  <loc>http://zh.mweb.im/buy.html</loc>
+  <lastmod>2020-05-22T11:43:56+08:00</lastmod>
+</url>
+
+<url>
+  <loc>http://zh.mweb.im/download.html</loc>
+  <lastmod>2021-04-06T17:45:55+08:00</lastmod>
+</url>
+
+<url>
+  <loc>http://zh.mweb.im/16100251436637.html</loc>
+  <lastmod>2021-01-11T11:02:13+08:00</lastmod>
+</url>
+
+<url>
+  <loc>http://zh.mweb.im/onemarkdown-syntax.html</loc>
+  <lastmod>2021-01-09T17:07:13+08:00</lastmod>
+</url>
+
+<url>
+  <loc>http://zh.mweb.im/onemarkdown-about.html</loc>
+  <lastmod>2021-01-08T01:27:14+08:00</lastmod>
+</url>
+
+<url>
+  <loc>http://zh.mweb.im/onemarkdown-policy.html</loc>
+  <lastmod>2021-01-07T23:35:17+08:00</lastmod>
+</url>
+
+<url>
+  <loc>http://zh.mweb.im/onemarkdown-help.html</loc>
+  <lastmod>2021-04-06T00:52:55+08:00</lastmod>
+</url>
+
+<url>
+  <loc>http://zh.mweb.im/policy.html</loc>
+  <lastmod>2021-03-18T15:32:22+08:00</lastmod>
 </url>
 
 
 <url>
-  <loc>http://coderforart.com/Cocoa.html</loc>
+  <loc>http://zh.mweb.im/help.html</loc>
 </url>
 
 <url>
-  <loc>http://coderforart.com/CG%20Artist.html</loc>
+  <loc>http://zh.mweb.im/blog.html</loc>
 </url>
 
 <url>
-  <loc>http://coderforart.com/Game%20Engine.html</loc>
+  <loc>http://zh.mweb.im/docsV2.html</loc>
 </url>
 
 <url>
-  <loc>http://coderforart.com/MWeb-cat.html</loc>
+  <loc>http://zh.mweb.im/markdown-cat.html</loc>
 </url>
 
 <url>
-  <loc>http://coderforart.com/Introduction.html</loc>
+  <loc>http://zh.mweb.im/tips.html</loc>
 </url>
 
 <url>
-  <loc>http://coderforart.com/Markdown.html</loc>
-</url>
-
-<url>
-  <loc>http://coderforart.com/PinPhoto-cat.html</loc>
-</url>
-
-<url>
-  <loc>http://coderforart.com/Other.html</loc>
+  <loc>http://zh.mweb.im/releases.html</loc>
 </url>
 
 

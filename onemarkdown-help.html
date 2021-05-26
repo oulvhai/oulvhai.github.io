@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="atom.xml" rel="alternate" title="MWeb" type="application/atom+xml">
+    <title> 
+	  
+  	One Markdown 使用说明 - MWeb
+  	
+  	</title>
+    <link rel="icon" sizes="192x192" href="asset/icon_192.png" />
+    <link rel="shortcut icon" href="asset/icon_64.png" type="image/png" />
+
+    <link href="asset/css/bootstrap.min.css" rel="stylesheet">
+    <link href="asset/css/style.css" rel="stylesheet">
+    <script src="asset/js/jquery.min.js"></script>
+    <script src="asset/js/bootstrap.min.js"></script>
+    <script src="asset/js/docs.js"></script>
+    <script src="asset/highlightjs/highlight.pack.js"></script>
+	<link href="asset/highlightjs/styles/github.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<script>hljs.initHighlightingOnLoad();</script>
+    <!--[if lt IE 9]>
+      <script src="asset/js/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="blog-nav">
+           
+        <a class="menu-index blog-nav-item" target="_self" href="index.html">首页</a>
+        
+        <a class="menu-help blog-nav-item" target="_self" href="help.html">文档</a>
+        
+        <a class="menu-themes blog-nav-item" target="_self" href="themes.html">主题</a>
+        
+        <a class="blog-nav-item menu-blog" target="_self" href="download.html">下载</a>
+        
+        <a class="menu-about blog-nav-item" target="_self" href="about.html">关于</a>
+        
+        <a class="menu-lang blog-nav-item" target="_self" href="https://www.mweb.im/">English</a>
+        
+        
+        </nav>
+      </div>
+    </div>
+      
+      <div style="color:#ff0000; text-align:center; padding:8px;" class="bg-info site_notice">
+        <a style="color:#ff0000;"  onclick="ga('send','event','global_notice_click');" href="https://t.me/mwebapp" target="_blank" >MWeb 官方 Telegram 群已建立，点击可查看</a><br /><a style="color:#ff0000;" href="mweb4-macOS-beta.html">MWeb 4.0.0 for macOS 测试版已发布，欢迎下载测试。</a>
+      </div>
+    
+    
+   <div class="container" id="content-wrap">
+	<div class="page-post">
+		<h2 class="blog-post-title">One Markdown 使用说明</h2>
+<hr />
+		<div class="page-content content-responsive">
+			<h2 id="toc_0">简介</h2>
+
+<p>One Markdown 是一款简单快速的，轻量级的，支持纯文本、Markdown 和 Textbundle 的编辑器。它诞生于一年前的 MWeb 的编辑器改进计划，有以下的特色：</p>
+
+<ol>
+<li>完整支持 CommonMark 标准和 GitHub Flavored Markdown (GFM)。MWeb 现在的编辑器是跟这两个标准是有点差别的，现在 One Markdown 都统一按这两个标准了。</li>
+<li>语法高亮和解析成 HTML 用的都是同一个基础库，不会出现编辑和预览不大一样的问题了。然后经测试，性能也大大提升，编辑上百万字的文档都不成问题了。</li>
+<li>边编辑边预览模式下，编辑的内容和预览的内容现在能<strong>精准</strong>对上了，然后由于采用了 WKWebView，性能也大大提升。</li>
+<li>支持编辑器内显示图片，MWeb 的编辑器之前只能显示本地图片，现在 One Markdown 不但支持本地图片，也支持显示网络图片了，并且还支持 svg、webP、HEIC 等格式。</li>
+<li>支持创建和编辑 Textbundle 文档。</li>
+<li>支持数学公式、Echarts、mermaid。</li>
+</ol>
+
+<h3 id="toc_1">收费模式</h3>
+
+<p>One Markdown 是免费有内购的 App，它的编辑器是准备整合进 MWeb 中的，所以在整合进 MWeb 前，不会锁定任何功能，以便于 MWeb 用户尝试和使用。它的收费模式是一次付费，永久使用的买断制，并且 macOS 平台和 iOS 平台是分开销售的。目前 macOS 版定价是半价（¥25），等整合进 MWeb 之后，将锁定一部分功能并恢复原价（¥50），iOS 平台也是同样这样定价。</p>
+
+<p>我会尽快完善这个编辑器并整合进 MWeb，这样轻量级的选择是 One Markdown，功能完善且强大的选择是 MWeb。</p>
+
+<h3 id="toc_2">一些时间表</h3>
+
+<ul>
+<li>iOS 版 One Markdown 发布：顺利的话，大概 2 周后。<strong>2 月 2 号更新：</strong> 实际发布时间为 1 月 29 号，大概 20 天后。</li>
+<li>One Markdown 的编辑器基本完善：一个半月后。<strong>2 月 2 号更新：</strong> 计划有变，先进行整合进 MWeb 的计划。</li>
+<li>整合进 MWeb：三个月后，要这么长的时间，主要是 MWeb 本身也要做一些升级，界面上，同步上等等，这次整合和升级都是免费的。</li>
+</ul>
+
+<h2 id="toc_3">详细的使用说明</h2>
+
+<h3 id="toc_4">关于新建文档和未保存文档</h3>
+
+<p>在 One Markdown 中，新建文档和仅输入了文本的未保存文档在保存时，可以选择保存为纯文本、Markdown 或 Textbundle。但是如果未保存的文档，在插入过图片后，将自动变为 Textbundle 文档，保存时将不能保存为纯文本或 Markdown 文档，只能保存为 Textbundle 文档。所以如果要新建纯文本或 Markdown 文档，最好在新建文档后先保存一下，再进行编辑。</p>
+
+<h3 id="toc_5">关于在编辑器中显示图片</h3>
+
+<p>在 One Markdown 中，在编辑器中显示图片有四种选项，分别为：显示图片、显示为缩略图、浮动显示图片和不显示图片，点击工具栏上的预览按钮（眼睛图标）即可设置，也可以在偏好设置中设置。如果选择浮动显示图片，则光标移动到图片语法中时，会在浮动窗口中显示图片，效果如下图所示。要注意的是，在<strong>边编辑边预览</strong>模式下，将<strong>不会</strong>显示这个浮动框。<br/>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/01/09/16101750368019.jpg" alt="" style="width:731px;"/></p>
+
+<h3 id="toc_6">对列表中的代码块和 HTML 的更好支持</h3>
+
+<p>得益于 CommonMark 标准和 GFM，One Markdown 在列表中写代码块支持得更好了，对 HTML 本身的支持也更好了，如下图所示，这是 MWeb 当前的编辑器做不到的事。<br/>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/01/09/16101739157381.jpg" alt="列表中写代码块和 HTML 更好的支持" style="width:999px;"/></p>
+
+<h3 id="toc_7">表格插入和编辑的支持</h3>
+
+<p>点工具栏上的“插入表格”按钮时，将显示插入表格辅助界面，如果光标移动到表格语法中，插入表格按钮将变成“编辑表格”按钮，如下图的示：<br/>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/01/09/16101798857434.jpg" alt="" style="width:808px;"/></p>
+
+<p>界面中的“格式化输出”复选框如果勾上的话，则会生成整齐 Markdown 表格文本，但是这个功能在中文环境下效果不好，这是因为英文字符和中文字符宽度不同，无法很好对齐。</p>
+
+<h3 id="toc_8">数学公式部分的改动</h3>
+
+<p>MWeb 目前的数学公式是使用 <code>$ 和 $$</code> 符号，这种方法在 One Markdown 不再支持，转而采用 CommonMark 中本身的代码块语法来支持。CommonMark 中的行内代码和代码块的语法有很高的扩展性，可以随意扩展。One Markdown 采用了 ``inline math`` 作为数学公式的行内语法，```math block math ``` 作为数学公式的块语法。然后 `code` 仍然是行内代码的语法， ``inline math`` 在 CommonMark 中也是行内代码，但是在 One Markdown 中会渲染成数学公式。这样做的好处是，原 markdown 文档发布到不支持数学公式的环境时，会以代码显示，这样就会显示原本的公式文本，不会太过影响阅读。</p>
+
+<p>同样，One Markdown 也会显示一个浮动窗口来辅助数学公式的输入，效果如下图所示：<br/>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/01/09/16101752494411.jpg" alt="" style="width:731px;"/></p>
+
+<h3 id="toc_9">ECharts 和 mermaid 画图支持</h3>
+
+<p>MWeb 原本支持 ECharts、mermaid、Graphviz、plantuml 等，One Markdown 目前仅支持 ECharts 和 mermaid 这两个。主要原因是 Graphviz JS 版不再维护，plantuml 需要连接它的线上服务，然后 mermaid 支持的画图类型也变多了，可以满足很多需求了。MWeb 原本的不用担心，新编辑器整合进 MWeb 后，将继续支持 MWeb 原来的画图库。<br/>
+One Markdown 还会显示一个辅助输入的浮动窗口，如下图：<br/>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/01/09/16101768998409.jpg" alt="" style="width:798px;"/></p>
+
+<h3 id="toc_10">显示 Markdown 文档内的本地图片</h3>
+
+<p>如果使用 One Markdown 打开的纯文本或 Markdown 文档中有引用到本地图片，打开时会显示如下图的提示窗口：<br/>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/01/09/16101781953794.jpg" alt="" style="width:737px;"/></p>
+
+<p>如窗口提示所说，默认的情况下，One Markdown 是无法读取你打开的文档之外的文件的，你需要授权 One Markdown，它才能读取这些引用的图片并显示。要注意的是，目前仅支持显示当前文档下的图片，如果文档引用到了其他位置的图片，是无法显示的。</p>
+
+<p>如果你不想每次都点授权，可以去偏好设置增加常用的文件夹，这样当打开这些文件夹内的 Markdown 文档时，将不再显示这个提示。</p>
+
+<h3 id="toc_11">把多张图片合成一张</h3>
+
+<p>One Markdown 也支持这个在 MWeb 中已有的功能，这个功能在某些情况下非常方便。要使用这个功能，请点击工具栏上的插入图片按钮，选择 “把多张图片合成一张...” 即可，如下图所示：<br/>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/01/09/16101794878533.jpg" alt="" style="width:810px;"/></p>
+
+<h3 id="toc_12">生成 Github 格式的 TOC</h3>
+
+<p>点击菜单：“语法 - 生成 Github 格式的 TOC” 可以使用这个功能，使用后，将在光标位置插入 Github 格式的 TOC。原本 MWeb 的 [TOC] 语法将不再支持，主要原因是这个方法比较灵活和标准。在整合进 MWeb 时，可能会加一个选项，变相支持 [TOC] 语法（实际是调用这个功能）。</p>
+
+<h3 id="toc_13">其它功能和反馈</h3>
+
+<p>其它功能都不是很重要，就暂时不一一说明了，所有功能都在菜单和工具栏上，感兴趣可以试试。</p>
+
+<p>如果有任何问题，欢迎联系我，联系方法：<a href="onemarkdown-about.html">One Markdown 反馈</a></p>
+
+		</div>
+  	</div>
+ </div>
+   <footer class="blog-footer">
+      <p>Copyright &copy; 2019
+Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a> &nbsp;&nbsp; 
+ <a href="reseller.html">Official Reseller</a>&nbsp;&nbsp; host on <a target="_blank" href="https://coding.net/">Coding.net Pages</a>
+.</p>
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+    </footer>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="asset/js/ie10-viewport-bug-workaround.js"></script>
+    
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-58735702-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </body>
+</html>

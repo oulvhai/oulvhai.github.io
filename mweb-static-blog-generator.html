@@ -1,0 +1,246 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="atom.xml" rel="alternate" title="MWeb" type="application/atom+xml">
+    <title> 
+	  
+  	MWeb 生成静态博客详细说明 - MWeb
+  	
+  	</title>
+    <link rel="icon" sizes="192x192" href="asset/icon_192.png" />
+    <link rel="shortcut icon" href="asset/icon_64.png" type="image/png" />
+
+    <link href="asset/css/bootstrap.min.css" rel="stylesheet">
+    <link href="asset/css/style.css" rel="stylesheet">
+    <script src="asset/js/jquery.min.js"></script>
+    <script src="asset/js/bootstrap.min.js"></script>
+    <script src="asset/js/docs.js"></script>
+    <script src="asset/highlightjs/highlight.pack.js"></script>
+	<link href="asset/highlightjs/styles/github.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<script>hljs.initHighlightingOnLoad();</script>
+    <!--[if lt IE 9]>
+      <script src="asset/js/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="blog-nav">
+           
+        <a class="menu-index blog-nav-item" target="_self" href="index.html">首页</a>
+        
+        <a class="menu-help blog-nav-item" target="_self" href="help.html">文档</a>
+        
+        <a class="menu-themes blog-nav-item" target="_self" href="themes.html">主题</a>
+        
+        <a class="blog-nav-item menu-blog" target="_self" href="download.html">下载</a>
+        
+        <a class="menu-about blog-nav-item" target="_self" href="about.html">关于</a>
+        
+        <a class="menu-lang blog-nav-item" target="_self" href="https://www.mweb.im/">English</a>
+        
+        
+        </nav>
+      </div>
+    </div>
+      
+      <div style="color:#ff0000; text-align:center; padding:8px;" class="bg-info site_notice">
+        <a style="color:#ff0000;"  onclick="ga('send','event','global_notice_click');" href="https://t.me/mwebapp" target="_blank" >MWeb 官方 Telegram 群已建立，点击可查看</a><br /><a style="color:#ff0000;" href="mweb4-macOS-beta.html">MWeb 4.0.0 for macOS 测试版已发布，欢迎下载测试。</a>
+      </div>
+    
+    
+ <div class="container" id="content-wrap">
+ 
+ 
+    
+     
+   <script type="text/javascript">
+      $(function(){
+        $('a.menu-blog').addClass('active');
+      });
+      </script>
+
+    
+      <script type="text/javascript">
+    $(function(){
+      var url = window.location.pathname;
+    var filename = url.substring(url.lastIndexOf('/')+1);
+    if (filename.length > 5) {
+      $('.blog-cats a').each(function(){
+        var href = $(this).attr('href');
+        if(href.length>5){
+          href = href.substring(0,href.length-5);
+          if (filename.startsWith(href)) { $(this).parent().addClass('active'); }
+        }
+      });
+    }
+    });
+  </script>
+   <div class="row">
+        <div class="col-sm-12">
+
+          <div class="blog-categories" style="padding-top: 0em; padding-bottom: 0em;">
+
+        <ul class="blog-cats">
+
+  
+    
+
+  
+      <li><a href="blog.html">所有分类</a></li> 
+        
+              <li><a href="docsV2.html">使用文档</a></li>
+        
+              <li><a href="tips.html">使用技巧</a></li>
+        
+              <li><a href="releases.html">版本发布</a></li>
+        
+    
+
+        </ul>
+        <div class="rss"><a href="atom.xml">RSS</a></div>
+          </div>
+       </div>
+     </div>
+     <hr style="margin-bottom: 60px;" />
+
+      <div class="row">
+
+        <div class="col-sm-10 blog-main">
+			<div class="blog-content-wrap">
+				<div class="blog-post">
+		            <h2 class="blog-post-title">MWeb 生成静态博客详细说明</h2>
+		            <p class="blog-post-meta">2015/03/21 
+			            &nbsp;posted in 
+						
+						    <a class='category' href='docsV2.html'>使用文档</a>&nbsp;
+						 
+						 
+		            </p>
+		            <div class="content-responsive">
+		            <p>此文章将介绍MWeb的文章类型和生成静态博客的设置情况。</p>
+
+<span id="more"></span><!-- more -->
+
+<p>文章目录：</p>
+
+<ul>
+<li>
+<a href="#toc_0">MWeb 中的两种文章类型</a>
+</li>
+<li>
+<a href="#toc_1">MWeb 生成静态博客设置说明</a>
+</li>
+<li>
+<a href="#toc_2">为博客增加评论和分享功能</a>
+</li>
+</ul>
+
+
+<h2 id="toc_0">MWeb 中的两种文章类型</h2>
+
+<p>MWeb 和 Wordpress 等这类博客的结构一样，分为<code>一般文章</code>和<code>页面</code>两种文章类型。<code>页面</code>是用来做像关于我们、联系我们等等这类不用放在正式文章中的网页。</p>
+
+<p><img src="media/14269146169133/14272857930068.jpg" alt=""/><br/>
+如上图，把 MWeb 文档库中的文档设置为 <code>页面</code> 非常简单，点击<code>文档设置</code>按钮（右上角第一个），勾选 <code>Is page</code> 即可。其中 <code>HTML file name</code> 栏是用来设置生成的 HTML 文件名的。比如说上图中的这个文章会生成 help.html。<code>一般文章</code>生成的 HTML 文件名也是在此设定。</p>
+
+<p>要自定页面和博客主题请参考这个文章：<a href="custom-site-theme-detail-zh.html">自定网站或博客主题简单说明</a>。这文章也说明了如何自定首页和分类页，MWeb 官网就是自定了首页。</p>
+
+<h2 id="toc_1">MWeb 生成静态博客设置说明</h2>
+
+<p><img src="media/14269146169133/14272532719802.jpg" alt=""/></p>
+
+<p>如上图，双击或者右键点 <code>Edit</code> 即可以打开网站设置面板。如果你没看到这个面板，请点 <code>Set to site</code> 按钮。点 <code>Build site</code> 即可生成静态博客，点 <code>Preview site</code> 可预览效果。各项目设置说明如下：</p>
+
+<ul>
+<li>Order by: 文章的排序方式</li>
+<li>Build path: 生成的静态博客所在位置</li>
+<li>Theme: 博客主题</li>
+<li>Site name: 博客名称</li>
+<li>Site URL: 网站网址，请一定要以 <code>/</code> 结束。</li>
+<li>Site page size: 博客第页显示文章数</li>
+<li>Enable MathJax &amp; Chart: 博客是否支持 MathJax 和 顺序图、流程图</li>
+<li>Site date format type: 时间格式</li>
+<li>Site description: 博客描述</li>
+<li>Comment &amp; Share code: 博客评论和分享的代码</li>
+<li>Site other code: 放置博客统计代码和其他代码的地方。</li>
+</ul>
+
+<p>提示：如果你有改变到设置，请一定要点：<code>Cear and rebuild site</code> 按钮。</p>
+
+<h2 id="toc_2">为博客增加评论和分享功能</h2>
+
+<p>简单来说就是把评论和分享的代码填入 <code>Comment &amp; Share code</code> 这个输入框。可以参考 <a href="mweb-comment-and-share-help.html">给MWeb生成的静态博客增加分享和评论</a> 这篇文章。</p>
+
+		            </div>
+				</div><!-- /.blog-post -->
+			</div>
+			<div class="share-comment">
+			
+
+<div class="jiathis_style_24x24">
+	<a class="jiathis_button_tsina"></a>
+	<a class="jiathis_button_qzone"></a>
+	<a class="jiathis_button_tqq"></a>
+	<a class="jiathis_button_weixin"></a>
+	<a class="jiathis_button_renren"></a>
+	<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+			</div>
+
+        </div><!-- /.blog-main -->
+	</div>
+</div>   <footer class="blog-footer">
+      <p>Copyright &copy; 2019
+Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a> &nbsp;&nbsp; 
+ <a href="reseller.html">Official Reseller</a>&nbsp;&nbsp; host on <a target="_blank" href="https://coding.net/">Coding.net Pages</a>
+.</p>
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+    </footer>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="asset/js/ie10-viewport-bug-workaround.js"></script>
+    
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-58735702-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </body>
+</html>

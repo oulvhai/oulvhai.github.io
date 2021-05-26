@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="atom.xml" rel="alternate" title="MWeb" type="application/atom+xml">
+    <title> 
+	  
+  	MWeb 帮助文档 - MWeb
+  	
+  	</title>
+    <link rel="icon" sizes="192x192" href="asset/icon_192.png" />
+    <link rel="shortcut icon" href="asset/icon_64.png" type="image/png" />
+
+    <link href="asset/css/bootstrap.min.css" rel="stylesheet">
+    <link href="asset/css/style.css" rel="stylesheet">
+    <script src="asset/js/jquery.min.js"></script>
+    <script src="asset/js/bootstrap.min.js"></script>
+    <script src="asset/js/docs.js"></script>
+    <script src="asset/highlightjs/highlight.pack.js"></script>
+	<link href="asset/highlightjs/styles/github.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<script>hljs.initHighlightingOnLoad();</script>
+    <!--[if lt IE 9]>
+      <script src="asset/js/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="blog-nav">
+           
+        <a class="menu-index blog-nav-item" target="_self" href="index.html">首页</a>
+        
+        <a class="menu-help blog-nav-item" target="_self" href="help.html">文档</a>
+        
+        <a class="menu-themes blog-nav-item" target="_self" href="themes.html">主题</a>
+        
+        <a class="blog-nav-item menu-blog" target="_self" href="download.html">下载</a>
+        
+        <a class="menu-about blog-nav-item" target="_self" href="about.html">关于</a>
+        
+        <a class="menu-lang blog-nav-item" target="_self" href="https://www.mweb.im/">English</a>
+        
+        
+        </nav>
+      </div>
+    </div>
+      
+      <div style="color:#ff0000; text-align:center; padding:8px;" class="bg-info site_notice">
+        <a style="color:#ff0000;"  onclick="ga('send','event','global_notice_click');" href="https://t.me/mwebapp" target="_blank" >MWeb 官方 Telegram 群已建立，点击可查看</a><br /><a style="color:#ff0000;" href="mweb4-macOS-beta.html">MWeb 4.0.0 for macOS 测试版已发布，欢迎下载测试。</a>
+      </div>
+    
+    
+   <div class="container" id="content-wrap">
+	<div class="page-post">
+		<h2 class="blog-post-title">MWeb 帮助文档</h2>
+<hr />
+		<div class="page-content content-responsive">
+			<h2 id="toc_0">MWeb 的定位</h2>
+
+<p>正如名字：【MWeb - 专业的Markdown写作、记笔记、静态博客生成软件】 所说，MWeb 未来会在这三方面不断优化。</p>
+
+<h2 id="toc_1">MWeb Lite 数据转移</h2>
+
+<p><a href="move-lite-data-to-mweb.html">把 MWeb Lite 的文档库文档和数据搬到 MWeb 正式版中</a></p>
+
+<h2 id="toc_2">Markdown 语法和 MWeb 写作使用说明</h2>
+
+<p>如果您不知道 Markdown，请先阅读 <a href="markdown-syntax-guide-full-version-zh.html">Markdown 語法官方說明繁體中文版</a> 这篇文章。<br/>
+如果您已经知道 Markdown，请直接阅读 <a href="markdown-syntax-guide-suggest-version-zh.html">Markdown 语法和 MWeb 写作使用说明</a></p>
+
+<h2 id="toc_3">MWeb 的发布/更新到 Wordpress、Evernote、Blogger 等服务</h2>
+
+<p>使用 MWeb 可以把写好的文章发布/更新到 Wordpress、Evernote、Blogger 等多个服务，特别说明的是：拖拽进来的图片都会一并发布的，请阅读：</p>
+
+<ul>
+<li><a href="mweb-1.3.7-releases.html">MWeb 1.3.7 发布！增加发布到 Wordpress 等支持 Metaweblog API 的服务，如：Wordpress 博客、新浪博客、cnblogs、oschina。 </a></li>
+<li><a href="mweb-1.5.1-release.html">MWeb 1.5 发布！增加打字机滚动模式、发布到 Evernote、印象笔记、Wordpress.com、Blogger、编辑器内代码块语法高亮</a></li>
+<li><a href="mweb-1.6.1-release.html">MWeb 1.6 发布！Dark Mode、全文搜寻、发布到Wordpress、Evernote 等支持更新、编辑/预览视图模式等</a></li>
+</ul>
+
+<p><strong>小技巧：</strong>发布到 Wordpress、Blogger 等支持增加 <em>阅读更多</em>，菜单：<code>Actions</code> - <code>Insert Read More Comment</code> 即可插入，如下图，注意前后要空两行，因为这是一个 HTML 标记。</p>
+
+<p><img src="media/14269147176240/14423776037999.jpg" alt="w546"/></p>
+
+<h2 id="toc_4">MWeb 外部文档模式（CMD + E）</h2>
+
+<p>外部文档模式是基于文件的管理方式，非常利于同步和协作，另外 MWeb 的外部文档模式还为 Otcpress、JekyII 等静态博客增加拖拽和粘贴插入图片、实时预览功能，请阅读：<br/>
+<a href="mweb-1.4-add-floder-octpress-support.html">MWeb 1.4 新功能介绍一：引入文件夹到 MWeb 中管理，支持 Octpress、Jekyll 等静态博客拖拽插入图片和实时预览</a></p>
+
+<h2 id="toc_5">MWeb 图床功能</h2>
+
+<p>请阅读：<a href="mweb-1.9.1-release.html">MWeb 1.9 发布！新图标、编辑器大改进、导出 PDF 改进、增加图床功能、中文版等！</a></p>
+
+<h2 id="toc_6">MWeb 文档库模式（CMD + L）</h2>
+
+<p>文档库用于记笔记和静态网站、博客生成，请阅读：<a href="mweb-document-library.html">MWeb 文档库模式详细说明</a> 这篇文章。</p>
+
+<p>另外有用的文章：<br/>
+<a href="mweb-v1.2-release-zh.html">用 wkhtmltopdf 生成带目录的 PDF 和自定预览 CSS</a><br/>
+<a href="mweb-1.3.7-releases.html">如何用 MWeb 发布到 Wordpress 等支持 Metaweblog API 的服务，如：Wordpress 博客、新浪博客、cnblogs、oschina</a></p>
+
+<h2 id="toc_7">MWeb 生成静态网站、博客</h2>
+
+<p>请阅读：<a href="mweb-static-blog-generator.html">MWeb 生成静态博客详细说明</a><br/>
+如果您想增加分享和评论，请阅读：<a href="mweb-comment-and-share-help.html">给MWeb生成的静态博客增加分享和评论</a><br/>
+MWeb 自带的网站主题肯定不能满足所有人的需求，如果您要制作自己的主题，请阅读：<a href="custom-site-theme-detail-zh.html">自定网站或博客主题简单说明</a></p>
+
+<p>MWeb 所有的主题都放到 github 上了：<a href="https://github.com/oulvhai/MWeb-Themes">https://github.com/oulvhai/MWeb-Themes</a>，这其中：</p>
+
+<ul>
+<li>mweb-Bootstrap-blog-EN    这个主题是 MWeb 英文官网 <a href="http://www.mweb.im/">http://www.mweb.im/</a> 在用，也是放在github pages上。</li>
+<li>mweb-Bootstrap-blog 主题是 MWeb 中文官网 <a href="http://zh.mweb.im/">http://zh.mweb.im/</a> 在用，目前放在 gitcafe pages 上。</li>
+<li>新增： mweb-medium-like 主题，放在 <a href="https://github.com/oulvhai/mweb-medium-like">https://github.com/oulvhai/mweb-medium-like</a> 这个位置，目前我的博客在用：<a href="http://coderforart.com">http://coderforart.com</a></li>
+<li>新增：mweb-foundation-book 主题，放在 <a href="https://github.com/oulvhai/mweb-foundation-book">https://github.com/oulvhai/mweb-foundation-book</a> 这个位置，Demo 网址：<a href="http://coderforart.com/objccndemo/">http://coderforart.com/objccndemo/</a></li>
+</ul>
+
+<p>网站、博客生成后，要发布和更新到网站服务器，请阅读以下两篇文章：</p>
+
+<ul>
+<li><a href="sync-webistes-to-github-or-ftp-zh.html">把生成的静态网站发布到github或FTP</a></li>
+<li><a href="use-goodsync-sync-mweb-static-websites-zh.html">使用GoodSync把MWeb生成的静态网站自动同步到FTP、SFTP、WebDAV、Amazon S3等</a></li>
+</ul>
+
+<p>个人体验：使用 GoodSync 同步是最简单方便的，然后是使用 git 发布到 github、gitcafe 这类免费的博客服务提供商。而使用一般的 FTP 工具则比较麻烦，适用于更新比较少的情况。</p>
+
+<h2 id="toc_8">文档库备份</h2>
+
+<p>MWeb 1.7 版开始支持备份（<code>MWeb</code> - <code>Preferences</code> - <code>Backup</code>），按狡兔三窟的原理，可以把文档库备份到三处！这样的话，估计能保证文档库安全了！</p>
+
+<p>要恢复备份，只要用之前备份的文件夹下的 <code>LocalData</code> 文件夹换到 </p>
+
+<pre><code class="language-text">~/Library/Containers/com.coderforart.MWeb/Data/Documents/MWeb/LocalData
+</code></pre>
+
+<p>即可。方法：右键文档库标题可以快速转到这个位置，然后 <code>CMD + Q</code> 退出 MWeb，把备份的文件夹换上，再启动 MWeb 即可。</p>
+
+<h2 id="toc_9">问题和建议</h2>
+
+<ul>
+<li>可以查看 <a href="qa.html">MWeb 所有问题和回答收集</a> 这篇文章。</li>
+<li>如果还有任何问题或建议，可以用以下任何一种方法联系我：
+<ol>
+<li>在 MWeb 中点：Help --&gt; Send Feedback 写信给我</li>
+<li>发邮件给我：<a href="mailto:coderforart+233@gmail.com">coderforart+233@gmail.com</a></li>
+<li>在微博上私信我：<a href="http://weibo.com/oulvhai">@oulvhai</a></li>
+<li>Twitter：<a href="http://twitter.com/oulvhai">@oulvhai</a></li>
+</ol></li>
+</ul>
+
+<script type="text/javascript">
+$(function(){$('#menu-help').addClass('active');});
+</script>
+
+		</div>
+  	</div>
+ </div>
+   <footer class="blog-footer">
+      <p>Copyright &copy; 2019
+Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a> &nbsp;&nbsp; 
+ <a href="reseller.html">Official Reseller</a>&nbsp;&nbsp; host on <a target="_blank" href="https://coding.net/">Coding.net Pages</a>
+.</p>
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+    </footer>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="asset/js/ie10-viewport-bug-workaround.js"></script>
+    
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-58735702-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </body>
+</html>

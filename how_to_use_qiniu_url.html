@@ -1,0 +1,230 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="atom.xml" rel="alternate" title="MWeb" type="application/atom+xml">
+    <title> 
+	  
+  	iOS 版 MWeb 图床功能及七牛图床使用指南 - MWeb
+  	
+  	</title>
+    <link rel="icon" sizes="192x192" href="asset/icon_192.png" />
+    <link rel="shortcut icon" href="asset/icon_64.png" type="image/png" />
+
+    <link href="asset/css/bootstrap.min.css" rel="stylesheet">
+    <link href="asset/css/style.css" rel="stylesheet">
+    <script src="asset/js/jquery.min.js"></script>
+    <script src="asset/js/bootstrap.min.js"></script>
+    <script src="asset/js/docs.js"></script>
+    <script src="asset/highlightjs/highlight.pack.js"></script>
+	<link href="asset/highlightjs/styles/github.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<script>hljs.initHighlightingOnLoad();</script>
+    <!--[if lt IE 9]>
+      <script src="asset/js/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="blog-nav">
+           
+        <a class="menu-index blog-nav-item" target="_self" href="index.html">首页</a>
+        
+        <a class="menu-help blog-nav-item" target="_self" href="help.html">文档</a>
+        
+        <a class="menu-themes blog-nav-item" target="_self" href="themes.html">主题</a>
+        
+        <a class="blog-nav-item menu-blog" target="_self" href="download.html">下载</a>
+        
+        <a class="menu-about blog-nav-item" target="_self" href="about.html">关于</a>
+        
+        <a class="menu-lang blog-nav-item" target="_self" href="https://www.mweb.im/">English</a>
+        
+        
+        </nav>
+      </div>
+    </div>
+      
+      <div style="color:#ff0000; text-align:center; padding:8px;" class="bg-info site_notice">
+        <a style="color:#ff0000;"  onclick="ga('send','event','global_notice_click');" href="https://t.me/mwebapp" target="_blank" >MWeb 官方 Telegram 群已建立，点击可查看</a><br /><a style="color:#ff0000;" href="mweb4-macOS-beta.html">MWeb 4.0.0 for macOS 测试版已发布，欢迎下载测试。</a>
+      </div>
+    
+    
+ <div class="container" id="content-wrap">
+ 
+ 
+    
+     
+   <script type="text/javascript">
+      $(function(){
+        $('a.menu-blog').addClass('active');
+      });
+      </script>
+
+    
+      <script type="text/javascript">
+    $(function(){
+      var url = window.location.pathname;
+    var filename = url.substring(url.lastIndexOf('/')+1);
+    if (filename.length > 5) {
+      $('.blog-cats a').each(function(){
+        var href = $(this).attr('href');
+        if(href.length>5){
+          href = href.substring(0,href.length-5);
+          if (filename.startsWith(href)) { $(this).parent().addClass('active'); }
+        }
+      });
+    }
+    });
+  </script>
+   <div class="row">
+        <div class="col-sm-12">
+
+          <div class="blog-categories" style="padding-top: 0em; padding-bottom: 0em;">
+
+        <ul class="blog-cats">
+
+  
+    
+
+  
+      <li><a href="blog.html">所有分类</a></li> 
+        
+              <li><a href="docsV2.html">使用文档</a></li>
+        
+              <li><a href="tips.html">使用技巧</a></li>
+        
+              <li><a href="releases.html">版本发布</a></li>
+        
+    
+
+        </ul>
+        <div class="rss"><a href="atom.xml">RSS</a></div>
+          </div>
+       </div>
+     </div>
+     <hr style="margin-bottom: 60px;" />
+
+      <div class="row">
+
+        <div class="col-sm-10 blog-main">
+			<div class="blog-content-wrap">
+				<div class="blog-post">
+		            <h2 class="blog-post-title">iOS 版 MWeb 图床功能及七牛图床使用指南</h2>
+		            <p class="blog-post-meta">2016/12/21 
+			            &nbsp;posted in 
+						
+						    <a class='category' href='docsV2.html'>使用文档</a>&nbsp;
+						
+						    <a class='category' href='tips.html'>使用技巧</a>&nbsp;
+						 
+						 
+		            </p>
+		            <div class="content-responsive">
+		            <p>首先说说 iOS 版 MWeb 中的图床的功能：把 Markdown 中的本地图片替换成图床的图片，直接分享出去或者转成 HTML 后再分享出去。如果你没有这种使用场景，应该用不到图床功能。</p>
+
+<p>MWeb 中插入的图片都会保存在 Markdown 文档的相对位置，也就是都为<strong>本地图片</strong>，不会像其他编辑器那样，插入图片时，先上传到图床，然后再返回图片的地址并插入。当文档编辑完成后，才会使用图床功能，把文档中的<strong>本地图片</strong>上传到所选图床中。当图片上传完后，使用 “复制为 Markdown” 或 “复制为 HTML” 按钮，会把文档中的本地图片替换成图床的图片，然后复制到剪切板中，但是原文档的图片地址还是<strong>本地图片</strong>，并不会改变。这种方式的好处是，不会因为图床问题而丢失图片，可以轻松切换不同的图床。</p>
+
+<p>下面介绍一下图床的用法，首先，要新增图床服务。在首页中，点左上角的 “设置” 按钮，进入设置界面，并滑动到底部，就可以看到 “增加本地图片上传服务” 这个按钮了，如下图左边的图。点击后，可以选择增加那种图床。MWeb 支持 Google Photos、Imgur、七牛、自定义这四种图床。其中 Google Photos 和 Imgur 增加方法非常简单，选择后，提示登入时，用自己的帐号登入即可，这里不多做说明了。这里只说一下七牛图床的增加方法，自定义图床会另开一篇文章说明。</p>
+
+<span id="more"></span><!-- more -->
+
+<p><img src="media/14822883566969/local-image-upload-1.png" alt="local-image-upload-1" style="width:760px;"/></p>
+
+<p>选择上图右边的图片中的 “qiniu.com” 后，就会出现下图左边的增加七牛图床的界面，右边的图是增加后的效果。各字段说明如下：</p>
+
+<ul>
+<li>名称：填入自定的名称即可。</li>
+<li>API 地址：这个是跟你七牛中新增存储空间时选择的存储区域有关联的，目前共四个区域，请选择正确的区域的 API 地址，不然会出错。</li>
+<li>空间名称：你在七牛中新增的空间的名称。</li>
+<li>Access Key 和 Secret Key：在 七牛个人面板 - 密钥管理 中可以找到，写此文时的网址为：<a href="https://portal.qiniu.com/user/key">https://portal.qiniu.com/user/key</a>。</li>
+<li>图片 URL 前缀：选择存储空间后，在测试域名那里可以看到了，我这里是：oi4i4yuef.bkt.clouddn.com。要注意的是不是直接填入 oi4i4yuef.bkt.clouddn.com，要填入完整的网址，比如说我这里是：<a href="http://oi4i4yuef.bkt.clouddn.com/">http://oi4i4yuef.bkt.clouddn.com/</a> </li>
+</ul>
+
+<p>当你点验证设置这个按钮时，会尝试上传一张小图片至你设置的空间，看看是否成功。</p>
+
+<p><img src="media/14822883566969/local-image-upload-2.png" alt="local-image-upload-2" style="width:760px;"/></p>
+
+<p>当增加完成图床服务后，要使用图床服务，非常简单，打开或者新增文档，插入图片后，点右下角的 “分享” 按钮，在弹出的界面中滑动到最底下，就会看到之前新增的图床服务，如下图左边的图。选择刚刚新增的 “mymweb”，后就会出现下图右边的图的界面，界面中会列出文档中的所有的本地图片。</p>
+
+<p><img src="media/14822883566969/local-image-upload-3.png" alt="local-image-upload-3" style="width:760px;"/></p>
+
+<p>当你点击右上角的 “上传” 按钮后，就会把本地图片上传至图床中了，如下图左边的图所示。当上传完成后，就可以点击底部的 “复制 Markdown” 或 “复制 HTML” 按钮了，这两个按钮都会把本地的图片换成图床的，并把内容复制到剪切版中。</p>
+
+<p>当你文档有变动，比如说新增了图片时，可以再调出这个界面，再点右上角的 “上传” 按钮即可。</p>
+
+<p><img src="media/14822883566969/local-image-upload-4.png" alt="local-image-upload-4" style="width:760px;"/></p>
+
+<p>上图右边的图是点击某项图片弹出来的菜单，如果选择 “删除已上传的网址”，就会把所选的图上的已上传网址删除，这时你再点右上角的 “上传” 按钮，就会重新上传图片。</p>
+
+		            </div>
+				</div><!-- /.blog-post -->
+			</div>
+			<div class="share-comment">
+			
+
+<div class="jiathis_style_24x24">
+	<a class="jiathis_button_tsina"></a>
+	<a class="jiathis_button_qzone"></a>
+	<a class="jiathis_button_tqq"></a>
+	<a class="jiathis_button_weixin"></a>
+	<a class="jiathis_button_renren"></a>
+	<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+			</div>
+
+        </div><!-- /.blog-main -->
+	</div>
+</div>   <footer class="blog-footer">
+      <p>Copyright &copy; 2019
+Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a> &nbsp;&nbsp; 
+ <a href="reseller.html">Official Reseller</a>&nbsp;&nbsp; host on <a target="_blank" href="https://coding.net/">Coding.net Pages</a>
+.</p>
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+    </footer>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="asset/js/ie10-viewport-bug-workaround.js"></script>
+    
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-58735702-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </body>
+</html>

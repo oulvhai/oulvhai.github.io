@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="atom.xml" rel="alternate" title="MWeb" type="application/atom+xml">
+    <title> 
+	  
+  	MWeb 的图片上传服务介绍 - MWeb
+  	
+  	</title>
+    <link rel="icon" sizes="192x192" href="asset/icon_192.png" />
+    <link rel="shortcut icon" href="asset/icon_64.png" type="image/png" />
+
+    <link href="asset/css/bootstrap.min.css" rel="stylesheet">
+    <link href="asset/css/style.css" rel="stylesheet">
+    <script src="asset/js/jquery.min.js"></script>
+    <script src="asset/js/bootstrap.min.js"></script>
+    <script src="asset/js/docs.js"></script>
+    <script src="asset/highlightjs/highlight.pack.js"></script>
+	<link href="asset/highlightjs/styles/github.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<script>hljs.initHighlightingOnLoad();</script>
+    <!--[if lt IE 9]>
+      <script src="asset/js/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="blog-nav">
+           
+        <a class="menu-index blog-nav-item" target="_self" href="index.html">首页</a>
+        
+        <a class="menu-help blog-nav-item" target="_self" href="help.html">文档</a>
+        
+        <a class="menu-themes blog-nav-item" target="_self" href="themes.html">主题</a>
+        
+        <a class="blog-nav-item menu-blog" target="_self" href="download.html">下载</a>
+        
+        <a class="menu-about blog-nav-item" target="_self" href="about.html">关于</a>
+        
+        <a class="menu-lang blog-nav-item" target="_self" href="https://www.mweb.im/">English</a>
+        
+        
+        </nav>
+      </div>
+    </div>
+      
+      <div style="color:#ff0000; text-align:center; padding:8px;" class="bg-info site_notice">
+        <a style="color:#ff0000;"  onclick="ga('send','event','global_notice_click');" href="https://t.me/mwebapp" target="_blank" >MWeb 官方 Telegram 群已建立，点击可查看</a><br /><a style="color:#ff0000;" href="mweb4-macOS-beta.html">MWeb 4.0.0 for macOS 测试版已发布，欢迎下载测试。</a>
+      </div>
+    
+    
+ <div class="container" id="content-wrap">
+ 
+
+	<div class="row">
+		<div class="col-sm-10 blog-main">
+			<h1 style="padding-left: 20px;">
+				<a href="help.html">文档</a> - MWeb 的图片上传服务介绍</h1>
+		</div>
+	</div>
+	<hr style="margin-bottom: 20px;" />
+
+
+      <div class="row">
+
+        <div class="col-sm-10 blog-main">
+			<div class="blog-content-wrap">
+				<div class="blog-post">
+		            <div class="content-responsive">
+		            <p>图片上传服务（图床）支持 Google Photos、Imgur、七牛云、又拍云和自定义的图床服务。而在 MWeb 中使用图片上传服务，有两种处理方式，下面分别介绍一下：</p>
+
+<h2 id="toc_0">1. 插入图片后自动上传至图床</h2>
+
+<p>这是很多朋友喜欢用，但是我不怎么建议用的方式，主要是万一图床挂了或者是什么问题，比较麻烦。这个方式只在外部模式中支持，文档库不支持，下面介绍一下配置方法。</p>
+
+<p><strong>MWeb for Mac 中的配置方法为：</strong>在外部模式中 <code>右键</code> 引入的文件夹，选择 <code>编辑</code>，这时出来如下图的<strong>文件夹设置</strong>界面。<br/>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303749773096.jpg" alt="" style="width:333px;"/></p>
+
+<p>勾选红框中的把插入的图片自动上传至...，然后选择要上传的图床即可（图床服务可以在 <code>偏好设置</code> - <code>发布服务</code> 中增加）。这样设置后，该引入的文件夹内的文档在插入图片时，会自动上传至所选择的图床并返回地址和生成 Markdown 语法。</p>
+
+<h2 id="toc_1">2. 插入图片后复制一份到文档所在的相对位置</h2>
+
+<p>这个是 MWeb 建议使用的方式，这个方式的好处是图片在本地并且跟 Markdown 文档相关联，不会造成图片丢失这种问题，MWeb 在编辑器中会直接显示本地图片，预览时也方便一点。MWeb 的文档库和外部模式都支持这种方式，下面介绍一下如何配置。</p>
+
+<p><strong>在 MWeb for Mac 中配置：</strong></p>
+
+<p>文档库不用配置，默认就是这样，外部模式中，同样 <code>右键</code> 引入的文件夹，在出来的菜单中选择 <code>编辑</code>，调出<strong>文件夹设置</strong>界面，其中的配置如下图：</p>
+
+<p><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303752255512.jpg" alt="" style="width:346px;"/></p>
+
+<p>首先要取消勾选 “把插入的图片自动上传至”。上面的配置可以用默认的，也就是说你只要取消勾选自动上传图片即可。</p>
+
+<p>上面也只有两个可设置的地方，一个是 “文件夹名称”，一个是 “保存位置”，保存位置有两种设置，一种是 “相对位置”，另一种是 “绝对位置”。</p>
+
+<p>这里举个例子说明一下，比如说引入的文件夹为 folder，在 folder/sub/sub2/sub3/doc.md 这个位置的文档插入图片，如果是 “绝对位置”，图片会保存在 fodler/media 下，生成的 Markdown 为 <code>![](/media/pic.jpg)</code>；而 “相对位置”，则会保存在 folder/sub/sub2/sub3/media 下，生成的 Markdown 为  <code>![](media/pic.jpg)</code>。“绝对位置” 这个设置其实是为了支持 Hexo、Octpress、Jekyll 等静态博客的 Markdown 文档能文件用 MWeb 编辑。</p>
+
+<p>大家或者看出来了，也就是一般情况下不用配置，除非是 Hexo、Jekyll 等静态博客的 Markdown 文档，或者是想要自动上传到图床。</p>
+
+<h2 id="toc_2">把文档中的本地图片上传至图床</h2>
+
+<p>为什么推荐使用第二种插入后图片处理方式，就是因为有这个功能。使用方法非常简单，在 Mac 版中点 “分享” 按钮 - 把本地图片传至图床，或者菜单：发布 - 把本地图片传至图床 即可调出以下的图片上传面板：</p>
+
+<p><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/15303753518695.jpg" alt="" style="width:975px;"/></p>
+
+<p>在这个面板中，中间的列表会列出文档中的所有本地图片（<strong>注意是文档中的</strong>），首先请选择要上传的图床，然后点 “上传本地图片” 按钮即可。当图片上传完成后，你可以选择使用 “复制 Markdown” 按钮或者 “复制 HTML” 按钮，看你需要什么样的格式。复制进来的就是已经把本地图片地址换成图床的远程地址后的内容。</p>
+
+<h2 id="toc_3">其它详细介绍</h2>
+
+<p>你可以查看以下两篇文章关于自定义图床和七牛图床的使用方法：</p>
+
+<ul>
+<li><a href="how_to_use_custom_image_upload_url.html">iOS 版 MWeb 图床功能中自定义图床的使用指南</a></li>
+<li><a href="how_to_use_qiniu_url.html">iOS 版 MWeb 图床功能及七牛图床使用指南</a></li>
+</ul>
+
+		            </div>
+				</div><!-- /.blog-post -->
+			</div>
+			<div class="share-comment">
+			
+
+<div class="jiathis_style_24x24">
+	<a class="jiathis_button_tsina"></a>
+	<a class="jiathis_button_qzone"></a>
+	<a class="jiathis_button_tqq"></a>
+	<a class="jiathis_button_weixin"></a>
+	<a class="jiathis_button_renren"></a>
+	<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+			</div>
+
+        </div><!-- /.blog-main -->
+	</div>
+</div>   <footer class="blog-footer">
+      <p>Copyright &copy; 2019
+Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a> &nbsp;&nbsp; 
+ <a href="reseller.html">Official Reseller</a>&nbsp;&nbsp; host on <a target="_blank" href="https://coding.net/">Coding.net Pages</a>
+.</p>
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+    </footer>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="asset/js/ie10-viewport-bug-workaround.js"></script>
+    
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-58735702-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </body>
+</html>

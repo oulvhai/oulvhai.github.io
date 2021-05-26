@@ -1,0 +1,289 @@
+
+/*
+ * Globals
+ */
+
+body {
+  font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif,Georgia, "Times New Roman", Times, serif;
+  color: #555;
+  font-size: 1.5em;  line-height: 1.6em;
+}
+
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin-top: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #333;
+}
+h1, .h1,h2, .h2{  margin-bottom: 0.3em; font-size: 26px;}
+
+h3, .h3,h4, .h4{padding-top: 0.8em; }
+
+.content-responsive h1{ padding-top: 1.0em; font-size: 24px;}
+.content-responsive h2{ padding-top: 1.0em;font-size: 22px;}
+.content-responsive h3{ padding-top: 0.8em;font-size: 20px;}
+.content-responsive h4{ padding-top: 0.8em;font-size: 18px;}
+.content-responsive h5{ padding-top: 0.5em;font-size: 16px;}
+.content-responsive img{ max-width: 100%;}
+.container ul{ margin-left: 20px; padding-left: 0px;}
+
+pre{background-color: #f8f8f8;border-radius:0px;}   
+#content-wrap{ padding-top:2.5em; padding-bottom: 2.5em;}
+
+.product-name{  background: url('../img/header-bg.jpg') no-repeat center top;
+  background-size: cover;
+  height: 433px;
+}
+.banner-head {
+        width: 100%;text-align: left;
+        font-family: Chalkboard,Helvetica, Arial, sans-serif; 
+        font-family: 'Myriad Pro','Helvetica Neue', 'Helvetica', 'STHeitiSC-Light', 'Arial', sans-serif;
+        padding:0.5em;
+        padding-left: 0;
+        padding-top: 15px;
+        font-size: 2.4em;
+        color: #fff;
+        margin-bottom: 0; padding-bottom: 0;
+    }
+.product-name h2{ margin: 0; padding: 0.5em; color: #fff; width: 100%; text-align: left; padding-left: 0; font-size: 1.2em;}
+.product-name p{ color: #fff;}
+
+#app_info{ padding-top: 6em; }
+.app_download{ padding-top: 3em; }
+.app_download .download-mweb-store{font-family: 'Myriad Pro','Helvetica Neue', 'Helvetica', 'STHeitiSC-Light', 'Arial', sans-serif; 
+padding-top: 8px; font-size: 15px; font-weight: normal;}
+.app_download .download-mweb-store a{ text-decoration: none; color: #eee; }
+.app_download .download-mweb-store a strong{ color: #fff; text-decoration: underline; }
+.app_download .download-mweb-store a em{ font-size: 13px;}
+
+a.btn-download{ display: inline-block; }
+a.btn-buy-mas,a.btn-buy-ios,a.btn-video{ display: inline-block; padding-right: 20px; }
+a.btn-download img{ width: 115px; }
+a.btn-buy-mas img,a.btn-buy-ios img{ width: 179px; }
+a.btn-video img{ width: 179px; }
+
+ul.screenshots{ padding: 0; margin: 0; margin-left: 10px; list-style: none; }
+ul.screenshots li{ list-style: none; display: block; width: 178px; margin-bottom: 10px; margin-left: 10px; float: left; }
+ul.screenshots li img{ width: 178px; }
+.mwebspecial ul,.mwebspecial li{ }
+.mwebspecial div.item{display: block; float: left; width: 50%;}
+.mwebspecial ul{ }
+.mwebspecial li{ padding: 4px 0px; padding-right: 40px; }
+.mwebspecial h2{ margin-top: 1.0em; margin-bottom: 1.2em; }
+@media (max-width: 640px) {
+  .mwebspecial div.item{display: block; float: none; width: 100%;}
+
+}
+
+.images-list,.images-list li{ list-style: none; margin: 0 !important; padding: 0 ;}
+.images-list li{ width: 145px; display: block; float: left; padding-right: 4px; padding-top: 4px;}
+@media (min-width: 768px) and (max-width: 991px) {
+.images-list li{ width: 110px;}
+}
+#index-container{ padding-top: 2.5em;}
+#index-container h1{font-family: 'Myriad Pro','Helvetica Neue', 'Helvetica', 'STHeitiSC-Light', 'Arial', sans-serif; font-size: 2em;}
+#index-container .bigTitle{font-family: 'Myriad Pro','Helvetica Neue', 'Helvetica', 'STHeitiSC-Light', 'Arial', sans-serif !important; font-weight: normal !important; font-size: 2em;}
+
+#index-container hr { margin-top: 2.0em; margin-bottom: 2.0em;}
+#index-container h3,#index-container h4 { padding-top: 0;}
+#index-container h2{ font-size: 22px; font-weight: bold; }
+#index-container .btn:focus,
+#index-container .btn:active:focus{
+  outline: 0px;
+}
+.img_content p{ font-size: 14px; color: #666; }
+.img_content_buttons{ padding:0.5em; text-align: center; padding-bottom: 1em; }
+.mark_list_wrap p{  vertical-align: middle; padding-left: 25px; font-size: 13px; margin-bottom: 8px; }
+span.mark_number{display: inline-block; margin-top: -4px; margin-left: -22px; width: 18px; height: 18px; background: #a61010; border-radius: 9px; text-align: center;
+vertical-align: middle; line-height: 19px; font-size: 14px; font-family: 'Helvetica Neue', 'Arial', sans-serif; color: #fff;}
+
+.mark_list_wrap2{ padding: 8px 0; }
+.mark_list_wrap2 p{ padding-left: 0;font-size: 13px;  }
+.mark_list_wrap2 span.mark_number{ margin-left: 0; }
+.help-content h3{ font-size: 20px; font-weight: bold; }
+.help-content{ font-size: 13px; }
+
+
+/*
+ * Override Bootstrap's default container.
+ */
+
+.product-info{ width: 768px; margin: 0 auto; }
+#logo-container{ text-align: right; }
+
+
+@media (min-width: 1200px) {
+  .container {
+    width: 970px; 
+  }
+}
+
+@media (max-width: 767px) {
+  .banner-head{ font-size: 1.4em; }
+  .product-name h3{font-size: 1.0em;}
+  .mweb-logo{ width: 90px;  }
+  .product-info{ width: auto !important; margin: 0 auto; }
+#logo-container{ text-align: left; }
+
+  #app_info{ padding-top: 4em; }
+  .app_download{ padding-top: 1.5em; }
+  .app_download>div{padding-left: 0;}
+
+ 
+  a.btn-video{display: inline-block;padding-right: 4px; padding-bottom: 4px; }
+
+  a.btn-download{ display: inline-block; padding-bottom: 4px;padding-right: 4px;}
+  a.btn-buy-mas{ display: inline-block; padding-bottom: 4px; padding-right: 4px;}
+   a.btn-buy-ios{ display: inline-block; padding-right: 4px; }
+  a.btn-download img{ width: 85px; }
+  a.btn-buy-mas img,a.btn-buy-ios img{ width: 131px; }
+  a.btn-video img{ width: 131px; }
+}
+/*
+ * Masthead for nav
+ */
+
+.blog-masthead {
+  background-color: #0F120F;
+  -webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+          box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+}
+
+/* Nav links */
+.blog-nav-item {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  font-weight: 500;
+  color: #cdddeb;
+}
+.blog-nav-item:hover,
+.blog-nav-item:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Active state gets a caret at the bottom */
+.blog-nav .active {
+  color: #fff;
+}
+a.menu-lang{ float: right; }
+
+
+/* help */
+.help-item{ margin: 20px 10px; width: 215px; height: 348px; overflow: hidden; float: left; display: block;}
+.help-item .help-img{ border: solid 1px #ddd; width: 215px; height: 180px; overflow: hidden; }
+.help-item a{}
+.help-item h2{font-size: 17px; font-weight: bold; padding: 12px 0px; padding-top: 18px; margin: 0;}
+.help-item h2:hover{text-decoration: underline;}
+.help-item p{color: #444;font-size: 14px; padding: 8px 0px; padding-top: 0; margin: 0;}
+.help-item a:hover{text-decoration: none;}
+
+@media (max-width: 470px) {
+  .help-item{ display: block; margin: 0 auto; clear: both;float: none; }
+
+}
+
+/*
+ * Blog name and description
+ */
+
+.blog-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.blog-title {
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-size: 60px;
+  font-weight: normal;
+}
+.blog-description {
+  font-size: 20px;
+  color: #999;
+}
+
+
+/*
+ * Main column and sidebar layout
+ */
+
+.blog-main {
+  font-size: 16px;
+  line-height: 1.5em;
+}
+.blog-main img{ padding: 8px 0px; }
+
+/* Sidebar modules for boxing content */
+.sidebar-module {
+  padding: 15px;
+  margin: 0 -15px 15px;
+}
+.sidebar-module-inset {
+  padding: 15px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+.sidebar-module-inset p:last-child,
+.sidebar-module-inset ul:last-child,
+.sidebar-module-inset ol:last-child {
+  margin-bottom: 0;
+}
+
+
+/* Pagination */
+.pager {
+  margin-bottom: 60px;
+}
+.pager > li > a {
+  width: 140px;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+
+/*
+ * Blog posts
+ */
+
+ h2.blog-post-title a{color: #222;font-size: 24px;}
+
+.blog-categories ul,.blog-categories li{ list-style: none; margin: 0; padding: 0; display: block;float: left; }
+.blog-categories li{padding: 4px 20px; font-size: 1em;}
+.blog-categories li.active{font-weight: bold;}
+.blog-categories .rss{display: block; float: right;font-size: 0.9em;padding: 4px 20px;  }
+.blog-content-wrap{ padding: 0 20px; }
+
+.blog-post {
+  margin-bottom: 60px;
+}
+.blog-post-title {
+
+}
+.blog-post-meta {
+  margin-bottom: 20px;
+  color: #999;
+}
+
+
+/*
+ * Footer
+ */
+
+.blog-footer {
+  padding: 20px 0 40px 0;
+  color: #999;
+  text-align: center;
+  max-width: 970px;margin: 0 auto;
+  border-top: 1px solid #eee;margin-top: 80px;
+}
+.blog-footer p:last-child {
+  margin-bottom: 0;
+}

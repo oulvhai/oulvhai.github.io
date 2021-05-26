@@ -1,649 +1,687 @@
-<!doctype html>
-<html class="no-js" lang="en">
+
+<!DOCTYPE html>
+<html>
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-    
-  Coder For Art
-  
-  </title>
-  
-  
-  <link href="atom.xml" rel="alternate" title="Coder For Art" type="application/atom+xml">
-  
-    <link rel="stylesheet" href="asset/css/foundation.min.css" />
-    <link rel="stylesheet" href="asset/css/docs.css" />
-    <script src="asset/js/vendor/modernizr.js"></script>
-    <script src="asset/js/vendor/jquery.js"></script>
-  <script src="asset/highlightjs/highlight.pack.js"></script>
-  <link href="asset/highlightjs/styles/github.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <script>hljs.initHighlightingOnLoad();</script>
-<script type="text/javascript">
-  function before_search(){
-    var searchVal = 'site:coderforart.com ' + document.getElementById('search_input').value;
-    document.getElementById('search_q').value = searchVal;
-    return true;
-  }
-</script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="atom.xml" rel="alternate" title="MWeb" type="application/atom+xml">
+    <title> 
+	  
+  	MWeb
+  	
+  	</title>
+    <link rel="icon" sizes="192x192" href="asset/icon_192.png" />
+    <link rel="shortcut icon" href="asset/icon_64.png" type="image/png" />
+
+    <link href="asset/css/bootstrap.min.css" rel="stylesheet">
+    <link href="asset/css/style.css" rel="stylesheet">
+    <script src="asset/js/jquery.min.js"></script>
+    <script src="asset/js/bootstrap.min.js"></script>
+    <script src="asset/js/docs.js"></script>
+    <script src="asset/highlightjs/highlight.pack.js"></script>
+	<link href="asset/highlightjs/styles/github.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<script>hljs.initHighlightingOnLoad();</script>
+    <!--[if lt IE 9]>
+      <script src="asset/js/html5shiv.min.js"></script>
+    <![endif]-->
   </head>
-  <body class="antialiased hide-extras">
-    
-    <div class="marketing off-canvas-wrap" data-offcanvas>
-      <div class="inner-wrap">
 
+  <body>
 
-<nav class="top-bar docs-bar hide-for-small" data-topbar>
-
-
-  <section class="top-bar-section">
-  <div class="row">
-      <div style="position: relative;width:100%;"><div style="position: absolute; width:100%;">
-        <ul id="main-menu" class="left">
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="blog-nav">
+           
+        <a class="menu-index blog-nav-item" target="_self" href="index.html">首页</a>
         
-        <li id="menu_item_index"><a target="_self" href="index.html">Home</a></li>
+        <a class="menu-help blog-nav-item" target="_self" href="help.html">文档</a>
         
-        <li id="menu_item_archives"><a target="_self" href="archives.html">Archives</a></li>
+        <a class="menu-themes blog-nav-item" target="_self" href="themes.html">主题</a>
         
-        <li id="menu_item_about"><a target="_self" href="about.html">About</a></li>
+        <a class="blog-nav-item menu-blog" target="_self" href="download.html">下载</a>
         
-        </ul>
-
-        <ul class="right" id="search-wrap">
-          <li>
-<form >
-    <input tabindex="1" type="text"  id="bdcsMain"   placeholder="Search"/>
-</form>
-<script type="text/javascript">(function(){document.write(unescape('%3Cdiv id="bdcs"%3E%3C/div%3E'));var bdcs = document.createElement('script');bdcs.type = 'text/javascript';bdcs.async = true;bdcs.src = 'http://znsv.baidu.com/customer_search/api/js?sid=10705098311362963641' + '&plate_url=' + encodeURIComponent(window.location.href) + '&t=' + Math.ceil(new Date()/3600000);var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(bdcs, s);})();</script>
-</li>
-          </ul>
-      </div></div>
-  </div>
-  </section>
-
-</nav>
-
-        <nav class="tab-bar show-for-small">
-  <a href="javascript:void(0)" class="left-off-canvas-toggle menu-icon">
-    <span> &nbsp; Coder For Art</span>
-  </a>
-</nav>
-
-<aside class="left-off-canvas-menu">
-      <ul class="off-canvas-list">
-       
-       <li><a href="index.html">HOME</a></li>
-    <li><a href="archives.html">Archives</a></li>
-    <li><a href="about.html">ABOUT</a></li>
-
-    <li><label>Categories</label></li>
-
+        <a class="menu-about blog-nav-item" target="_self" href="about.html">关于</a>
         
-            <li><a href="Cocoa.html">Cocoa</a></li>
+        <a class="menu-lang blog-nav-item" target="_self" href="https://www.mweb.im/">English</a>
         
-            <li><a href="CG%20Artist.html">CG Artist</a></li>
         
-            <li><a href="Game%20Engine.html">Game Engine</a></li>
-        
-            <li><a href="MWeb-cat.html">MWeb</a></li>
-        
-            <li><a href="PinPhoto-cat.html">PinPhoto</a></li>
-        
-            <li><a href="Other.html">Other</a></li>
-         
-
-      </ul>
-    </aside>
-
-<a class="exit-off-canvas" href="#"></a>
-
-
-        <section id="main-content" role="main" class="scroll-container">
-        
-       
-
- <script type="text/javascript">
-	$(function(){
-		$('#menu_item_index').addClass('is_active');
-	});
-</script>
-<div class="row">
-	<div class="large-8 medium-8 columns">
-		<div class="markdown-body home-categories">
-		
-			<div class="article">
-                <a class="clearlink" href="mweb3-release-note.html">
-                
-                  <h1>MWeb 3.0 测试版更新情况</h1>
-                  <div class="a-content">
-                      
-                      <div class="a-content-text">
-                        
-                        	<h2 id="toc_0">MWeb 3.x 版升级及 2.x 版处理说明：</h2>
-
-<p>由于昨天把 Mac App Store 的 MWeb 改名为：MWeb （旧版），然后蛮多人问，现在关于 MWeb 3.0 版的升级情况统一说明如下：</p>
-
-
-                        
-                      </div>
-                  </div>
-                </a>
-                <div class="read-more clearfix">
-                  <div class="more-left left">
-                   <a href="mweb3-release-note.html">Read more</a>&nbsp;&nbsp; 
-                    <span class="date">2018/6/14</span>
-                    <span>posted in&nbsp;</span> 
-          				  
-          					    <span class="posted-in"><a href='MWeb-cat.html'>MWeb</a></span>
-          				   
-                  </div>
-                  <div class="more-right right">
-                  <span class="comments">
-                      
-                        <a href="http://coderforart.com/mweb3-release-note.html#disqus_thread">comments</a>
-                      
-
-                       
-                  </span>
-                  </div>
-                </div>
-              </div><!-- article -->
-        
-			<div class="article">
-                <a class="clearlink" href="mweb3.0-on-test.html">
-                
-                  <h1>MWeb 3.0 测试版终于发布了！欢迎大家试用！</h1>
-                  <div class="a-content">
-                      
-                      <div class="a-content-text">
-                        
-                        	<p>MWeb 转眼间已经快四岁了，如果从开始写第一行代码那时起，已经四周岁了，我做独立开发者的道路也变得坚定了！MWeb 3.0 版本是一个蛮重要的版本，这个版本是 MWeb 的第一个付费升级的版本。这个版本支持的最低系统是 ELCapitan，废除的代码很多，UI 几乎是重写了，所以才需要先行测试再发布。</p>
-
-<p>为了方便了解新版本的功能，我录制了一个视频，这也是我第一次录制有声音的视频，录制后才发现这视频竟然这么长！！<br/>
-关于 MWeb 和这次测试的详细，强烈建议您先看完下面的 MWeb 3.0 测试介绍视频！视频的网址如下：</p>
-
-<ul>
-<li>Bilibili：<a href="https://www.bilibili.com/video/av24789660/">https://www.bilibili.com/video/av24789660/</a></li>
-<li>Youtube：<a href="https://youtu.be/vwStR6LgMZs">https://youtu.be/vwStR6LgMZs</a></li>
-</ul>
-
-<p>MWeb 3.0 的情况都在视频里有说，这里就不详细介绍了，下面放几张截图。需要重点说明的是：现在的版本是英文混合少量中文的，这个情况会在未来几个测试版中得到改进。</p>
-
-
-                        
-                      </div>
-                  </div>
-                </a>
-                <div class="read-more clearfix">
-                  <div class="more-left left">
-                   <a href="mweb3.0-on-test.html">Read more</a>&nbsp;&nbsp; 
-                    <span class="date">2018/6/13</span>
-                    <span>posted in&nbsp;</span> 
-          				  
-          					    <span class="posted-in"><a href='MWeb-cat.html'>MWeb</a></span>
-          				   
-                  </div>
-                  <div class="more-right right">
-                  <span class="comments">
-                      
-                        <a href="http://coderforart.com/mweb3.0-on-test.html#disqus_thread">comments</a>
-                      
-
-                       
-                  </span>
-                  </div>
-                </div>
-              </div><!-- article -->
-        
-			<div class="article">
-                <a class="clearlink" href="15113184658847.html">
-                
-                  <h1>MWeb for Mac, iOS 黑五半价促销一周，写个大概介绍。</h1>
-                  <div class="a-content">
-                      
-                      <div class="a-content-text">
-                        
-                        	<p>不知不觉 MWeb for Mac 差不多三周年了，iOS 版也差不多一周年了，时间过得飞快。记得当时离职入坑 Mac/iOS 开发，我一并注册了 coderforart.com 这个域名，并做为自己的博客，我所做的软件的标识也是用 coderforart。这么多年过去了，Mac/iOS 学了个皮毛，博客也没更新文章，然后 coder for <strong>art</strong>，当时想法很好，然而在 <strong>art</strong> 方面却是啥也没学，目前已经定性为：我不适合 <strong>art</strong>。 我心中对 <strong>art</strong> 的执念也是越发淡薄了。</p>
-
-<p>MWeb 倒是坚持不断小更新一下，但这很大一部分原因在于用户的建议和需求，非常感谢你们。有很多需求我看了，但是没实现，这其中有的是技术的原因，有的是我认为没必要做的。虽然我可以做得更好，比如说花精力反馈给每个提需求的朋友没实现的原因，但是我没这样做，因为还不如直接花在改进产品上。总之，给 MWeb 反馈的朋友，非常感谢你们，然后有些情况，请见谅了！</p>
-
-<p>还有很多需要感谢的，比如说推荐 MWeb 的媒体和朋友，非常感谢你们！我文笔太渣，就不多说了，下面选几个 MWeb 代表性的功能介绍一下。</p>
-
-
-                        
-                      </div>
-                  </div>
-                </a>
-                <div class="read-more clearfix">
-                  <div class="more-left left">
-                   <a href="15113184658847.html">Read more</a>&nbsp;&nbsp; 
-                    <span class="date">2017/11/22</span>
-                    <span>posted in&nbsp;</span> 
-          				  
-          					    <span class="posted-in"><a href='MWeb-cat.html'>MWeb</a></span>
-          				   
-                  </div>
-                  <div class="more-right right">
-                  <span class="comments">
-                      
-                        <a href="http://coderforart.com/15113184658847.html#disqus_thread">comments</a>
-                      
-
-                       
-                  </span>
-                  </div>
-                </div>
-              </div><!-- article -->
-        
-			<div class="article">
-                <a class="clearlink" href="mweb-ios-2.3.2-release.html">
-                
-                  <h1>MWeb for iOS 2.3.2 发布！</h1>
-                  <div class="a-content">
-                      
-                      <div class="a-content-text">
-                        
-                        	<p>这次是比较大的更新，主要有：</p>
-
-<ul>
-<li>新图标！感谢 @Red5Sign <a href="http://weibo.com/u/6264169884">http://weibo.com/u/6264169884</a>，@泰米啊 <a href="http://weibo.com/313612326">http://weibo.com/313612326</a> 。</li>
-<li>增加 Dropbox 同步支持。</li>
-<li>增加移动文档功能。</li>
-<li>增加 mweb-solarized-dark，mweb-solarized-light，mweb-Tomorrow Blue，mweb-Tomorrow 四种预览样式，另外，现在切换编辑器样式时，整个界面都会改变，之前只限于编辑器改变。</li>
-<li>编辑模式中显示图片现在可以选择显示缩略图，在设置中开启显示为缩略图即可。</li>
-<li>增加：url scheme，3D touch 支持。Url scheme 使用为方法：显示首页： mwebapp://?p=home。显示首页中的列表基中第一个标题包含 “MWeb” 的项目，如果是文档会直接打开：mwebapp://?p=home&amp;name=MWeb。显示文档库：mwebapp://?p=lib。显示文档库列表中名包含 “所有” 的分类：mwebapp://?p=lib&amp;name=所有。显示网盘文档：mwebapp://?p=cloud。显示本机文档：mwebapp://?p=local。</li>
-<li>七牛上传 可配置增加后缀</li>
-<li>增加删除自定义预览样式（用编辑样式底部的删除按钮）。</li>
-<li>首页的收藏的项支持自定义排序，点右上角的编辑，然后拖动排序。</li>
-<li>修正在 iPad SplitView 打开时空白问题。</li>
-<li>点击文档库的引用文档的连接现在可以跳转到所引用的文档了。</li>
-<li>设置页底部增加特别感谢和 MWeb for iOS 所用到的库。</li>
-<li>其他 Bug 和细节修正。</li>
-</ul>
-
-                        
-                      </div>
-                  </div>
-                </a>
-                <div class="read-more clearfix">
-                  <div class="more-left left">
-                  
-                    <span class="date">2017/6/21</span>
-                    <span>posted in&nbsp;</span> 
-          				  
-          					    <span class="posted-in"><a href='MWeb-cat.html'>MWeb</a></span>
-          				   
-                  </div>
-                  <div class="more-right right">
-                  <span class="comments">
-                      
-                        <a href="http://coderforart.com/mweb-ios-2.3.2-release.html#disqus_thread">comments</a>
-                      
-
-                       
-                  </span>
-                  </div>
-                </div>
-              </div><!-- article -->
-        
-			<div class="article">
-                <a class="clearlink" href="how_to_use_images_in_mweb.html">
-                
-                  <h1>MWeb Mac 版和 iOS 版图片及图床使用完全指南</h1>
-                  <div class="a-content">
-                      
-                      <div class="a-content-text">
-                        
-                        	<p>在 MWeb 中插入图片（不管你是拖拽插入还是粘贴插入，在下面都统一为插入图片）后，有二种处理方式，下面简单介绍一下。</p>
-
-
-                        
-                      </div>
-                  </div>
-                </a>
-                <div class="read-more clearfix">
-                  <div class="more-left left">
-                   <a href="how_to_use_images_in_mweb.html">Read more</a>&nbsp;&nbsp; 
-                    <span class="date">2017/6/20</span>
-                    <span>posted in&nbsp;</span> 
-          				  
-          					    <span class="posted-in"><a href='MWeb-cat.html'>MWeb</a></span>
-          				   
-                  </div>
-                  <div class="more-right right">
-                  <span class="comments">
-                      
-                        <a href="http://coderforart.com/how_to_use_images_in_mweb.html#disqus_thread">comments</a>
-                      
-
-                       
-                  </span>
-                  </div>
-                </div>
-              </div><!-- article -->
-        
-			<div class="article">
-                <a class="clearlink" href="how_to_use_library_in_ios.html">
-                
-                  <h1>在 iOS 中如何使用 MWeb for Mac 文档库</h1>
-                  <div class="a-content">
-                      
-                      <div class="a-content-text">
-                        
-                        	<p>要在 iOS 中使用文档库，必须先把 Mac 版的文档库保存到 iCloud Drive 或者 Dropbox 中，下面分别介绍一下如何做。</p>
-
-
-                        
-                      </div>
-                  </div>
-                </a>
-                <div class="read-more clearfix">
-                  <div class="more-left left">
-                   <a href="how_to_use_library_in_ios.html">Read more</a>&nbsp;&nbsp; 
-                    <span class="date">2017/6/2</span>
-                    <span>posted in&nbsp;</span> 
-          				  
-          					    <span class="posted-in"><a href='MWeb-cat.html'>MWeb</a></span>
-          				   
-                  </div>
-                  <div class="more-right right">
-                  <span class="comments">
-                      
-                        <a href="http://coderforart.com/how_to_use_library_in_ios.html#disqus_thread">comments</a>
-                      
-
-                       
-                  </span>
-                  </div>
-                </div>
-              </div><!-- article -->
-        
-			<div class="article">
-                <a class="clearlink" href="mweb-for-ios-2.3.x-tf.html">
-                
-                  <h1>MWeb for iOS 2.3.x 版测试说明</h1>
-                  <div class="a-content">
-                      
-                      <div class="a-content-text">
-                        
-                        	<p>2.3.x 版的目标是增加 Dropbox 和 WebDAV 同步，测试重点也是这两个，然后这个版本还未来得及修正 2.2.7 之前反馈的一些 bug 和改进，这些改进会在 2.3.x 测试时顺便修正，非常感谢反馈的朋友！</p>
-
-
-                        
-                      </div>
-                  </div>
-                </a>
-                <div class="read-more clearfix">
-                  <div class="more-left left">
-                   <a href="mweb-for-ios-2.3.x-tf.html">Read more</a>&nbsp;&nbsp; 
-                    <span class="date">2017/6/2</span>
-                    <span>posted in&nbsp;</span> 
-          				  
-          					    <span class="posted-in"><a href='MWeb-cat.html'>MWeb</a></span>
-          				   
-                  </div>
-                  <div class="more-right right">
-                  <span class="comments">
-                      
-                        <a href="http://coderforart.com/mweb-for-ios-2.3.x-tf.html#disqus_thread">comments</a>
-                      
-
-                       
-                  </span>
-                  </div>
-                </div>
-              </div><!-- article -->
-        
-			<div class="article">
-                <a class="clearlink" href="introducing-mweb-for-ios.html">
-                
-                  <h1>iOS 版 MWeb 正式发布及简介</h1>
-                  <div class="a-content">
-                      
-                      <div class="a-content-text">
-                        
-                        	<p>MWeb 首先是一个 Markdown 编辑器，所使用的 Markdown 语法为 Github Flavored Markdown，简称 GFM，这是一种最为广泛使用的 Markdown 语法之一。如果你不知道什么是 Markdown，建议看一下 <a href="markdown-syntax-guide-full-version-zh.html">Markdown 語法官方說明繁體中文版</a>。GFM 除了支持官方的语法外，还扩展了不少语法，具体情况会在本文后说明。这里先介绍一下 iOS 版 MWeb 的基本使用方法。 </p>
-
-
-                        
-                      </div>
-                  </div>
-                </a>
-                <div class="read-more clearfix">
-                  <div class="more-left left">
-                   <a href="introducing-mweb-for-ios.html">Read more</a>&nbsp;&nbsp; 
-                    <span class="date">2017/1/5</span>
-                    <span>posted in&nbsp;</span> 
-          				  
-          					    <span class="posted-in"><a href='MWeb-cat.html'>MWeb</a></span>
-          				  
-          					    <span class="posted-in"><a href='Introduction.html'>Introduction</a></span>
-          				   
-                  </div>
-                  <div class="more-right right">
-                  <span class="comments">
-                      
-                        <a href="http://coderforart.com/introducing-mweb-for-ios.html#disqus_thread">comments</a>
-                      
-
-                       
-                  </span>
-                  </div>
-                </div>
-              </div><!-- article -->
-        
-              
-
-
-			<div class="row">
-			  <div class="large-6 columns">
-			  <p class="text-left" style="padding-top:25px;">
-			   
-			  </p>
-			  </div>
-			  <div class="large-6 columns">
-			<p class="text-right" style="padding-top:25px;">
-			 <a href="all_1.html">&raquo; Next Page</a> 
-			</p>
-			  </div>
-			</div>
-		</div>
-	</div><!-- large 8 -->
-
- <div class="large-4 medium-4 columns">
-  <div class="hide-for-small">
-    <div id="sidebar" class="sidebar">
-          <div id="site-info" class="site-info">
-            
-                <div class="site-a-logo"><img src="media/14195170907881/icon.jpg" /></div>
-            
-                <h1>Coder For Art</h1>
-                <div class="site-des">I'm an indie Mac/iOS developer, also want to be a CG artist</div>
-                <div class="social">
-
-
-
-
-
-
-
-<a target="_blank" class="weibo" href="http://weibo.com/oulvhai" title="weibo">Weibo</a>
-<a target="_blank" class="twitter" target="_blank" href="http://twitter.com/oulvhai" title="Twitter">Twitter</a>
-<a target="_blank" class="github" target="_blank" href="https://github.com/oulvhai" title="GitHub">GitHub</a>
-
-  <a target="_blank" class="rss" href="atom.xml" title="RSS">RSS</a>
-                
-              	 </div>
-          	</div>
-
-               
-             <div id="site-categories" class="side-item ">
-                <div class="side-header">
-                  <h2>Important</h2>
-                </div>
-                <div class="side-content">
-                  <div style="color:#ff0000; text-align:center; padding:8px;" class="bg-info site_notice">
-                    <a style="color:#ff0000;"  onclick="ga('send','event','global_notice_click');" href="https://zh.mweb.im/mweb3x-release-note.html" >MWeb 3 发布后 2.x 版维护说明及两者之间的功能对比！</a>
-                  </div>
-                </div>
-            </div>
-    
-
-              <div id="site-categories" class="side-item ">
-                <div class="side-header">
-                  <h2>Categories</h2>
-                </div>
-                <div class="side-content">
-
-      	<p class="cat-list">
-        
-            <a href="Cocoa.html"><strong>Cocoa</strong></a>
-        
-            <a href="CG%20Artist.html"><strong>CG Artist</strong></a>
-        
-            <a href="Game%20Engine.html"><strong>Game Engine</strong></a>
-        
-            <a href="MWeb-cat.html"><strong>MWeb</strong></a>
-        
-            <a href="PinPhoto-cat.html"><strong>PinPhoto</strong></a>
-        
-            <a href="Other.html"><strong>Other</strong></a>
-         
-        </p>
-
-
-                </div>
-              </div>
-
-              <div id="site-categories" class="side-item">
-                <div class="side-header">
-                  <h2>Recent Posts</h2>
-                </div>
-                <div class="side-content">
-                <ul class="posts-list">
-	      
-		      
-			      <li class="post">
-			        <a href="mweb3-release-note.html">MWeb 3.0 测试版更新情况</a>
-			      </li>
-		     
-		  
-		      
-			      <li class="post">
-			        <a href="mweb3.0-on-test.html">MWeb 3.0 测试版终于发布了！欢迎大家试用！</a>
-			      </li>
-		     
-		  
-		      
-			      <li class="post">
-			        <a href="15113184658847.html">MWeb for Mac, iOS 黑五半价促销一周，写个大概介绍。</a>
-			      </li>
-		     
-		  
-		      
-			      <li class="post">
-			        <a href="mweb-ios-2.3.2-release.html">MWeb for iOS 2.3.2 发布！</a>
-			      </li>
-		     
-		  
-		      
-			      <li class="post">
-			        <a href="how_to_use_images_in_mweb.html">MWeb Mac 版和 iOS 版图片及图床使用完全指南</a>
-			      </li>
-		     
-		  
-		      
-		  
-		      
-		  
-		      
-		  
-		      
-		  
-		      
-		  
-		      
-		  
-		      
-		  
-		      
-		  
-		      
-		  
-		      
-		  
-		      
-		  
-		      
-		  
-		      
-		  
-		      
-		  
-		      
-		   
-		  		</ul>
-                </div>
-              </div>
-        </div><!-- sidebar -->
-      </div><!-- hide for small -->
-</div><!-- large 4 -->
-
-</div><!-- row -->
-
- <div class="page-bottom clearfix">
-  <div class="row">
-   <p class="copyright">Copyright &copy; 2015
-Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a>,&nbsp; 
-Theme used <a target="_blank" href="http://github.com">GitHub CSS</a>.</p>
-  </div>
-</div>
-
-        </section>
+        </nav>
       </div>
     </div>
+      
+      <div style="color:#ff0000; text-align:center; padding:8px;" class="bg-info site_notice">
+        <a style="color:#ff0000;"  onclick="ga('send','event','global_notice_click');" href="https://t.me/mwebapp" target="_blank" >MWeb 官方 Telegram 群已建立，点击可查看</a><br /><a style="color:#ff0000;" href="mweb4-macOS-beta.html">MWeb 4.0.0 for macOS 测试版已发布，欢迎下载测试。</a>
+      </div>
+    
+    
+  <div class="container" id="content-wrap">
 
+ 
+    
+     
+   <script type="text/javascript">
+      $(function(){
+        $('a.menu-blog').addClass('active');
+      });
+      </script>
 
-<script type="text/javascript">
-    var disqus_shortname = 'coderforart'; 
+    
+      <script type="text/javascript">
+    $(function(){
+      var url = window.location.pathname;
+    var filename = url.substring(url.lastIndexOf('/')+1);
+    if (filename.length > 5) {
+      $('.blog-cats a').each(function(){
+        var href = $(this).attr('href');
+        if(href.length>5){
+          href = href.substring(0,href.length-5);
+          if (filename.startsWith(href)) { $(this).parent().addClass('active'); }
+        }
+      });
+    }
+    });
+  </script>
+   <div class="row">
+        <div class="col-sm-12">
 
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
+          <div class="blog-categories" style="padding-top: 0em; padding-bottom: 0em;">
 
-<script type="text/javascript">
-var disqus_shortname = 'coderforart'; 
+        <ul class="blog-cats">
 
-(function () {
-var s = document.createElement('script'); s.async = true;
-s.type = 'text/javascript';
-s.src = '//' + disqus_shortname + '.disqus.com/count.js';
-(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-}());
-</script>
   
     
 
-    <script src="asset/js/foundation.min.js"></script>
-    <script>
-      $(document).foundation();
-      function fixSidebarHeight(){
-        var w1 = $('.markdown-body').height();
-          var w2 = $('#sidebar').height();
-          if (w1 > w2) { $('#sidebar').height(w1); };
-      }
-      $(function(){
-        fixSidebarHeight();
-      })
-      $(window).load(function(){
-          fixSidebarHeight();
-      });
-     
-    </script>
+  
+      <li><a href="blog.html">所有分类</a></li> 
+        
+              <li><a href="docsV2.html">使用文档</a></li>
+        
+              <li><a href="tips.html">使用技巧</a></li>
+        
+              <li><a href="releases.html">版本发布</a></li>
+        
+    
 
+        </ul>
+        <div class="rss"><a href="atom.xml">RSS</a></div>
+          </div>
+       </div>
+     </div>
+     <hr style="margin-bottom: 60px;" />
+      <div class="row">
+
+        <div class="col-sm-10 blog-main">
+
+        	<div class="blog-content-wrap">
+			
+				<div class="blog-post">
+		            <h2 class="blog-post-title"><a href="mweb4-macOS-beta.html">MWeb 4.0.0 for macOS 测试版已发布，欢迎下载测试。</a></h2>
+		            <p class="blog-post-meta">2021/04/06 
+						&nbsp;posted in 
+						
+						    <a class='category' href='releases.html'>版本发布</a>&nbsp;
+						 
+						 
+					 
+		            </p>
+		          </div><!-- /.blog-post -->
+			 
+				<div class="blog-post">
+		            <h2 class="blog-post-title"><a href="16101924428280.html">MWeb 计划在三个月后要换编辑器，然后新编辑器已经可以下载体验了。</a></h2>
+		            <p class="blog-post-meta">2021/01/09 
+						&nbsp;posted in 
+						
+						    <a class='category' href='blog.html'>博客</a>&nbsp;
+						
+						    <a class='category' href='releases.html'>版本发布</a>&nbsp;
+						 
+						 
+					 
+		            </p>
+		          </div><!-- /.blog-post -->
+			 
+				<div class="blog-post">
+		            <h2 class="blog-post-title"><a href="make_your_site_template.html">自定义或制作自己的静态网站模板</a></h2>
+		            <p class="blog-post-meta">2019/12/12 
+						&nbsp;posted in 
+						
+						    <a class='category' href='help.html'>文档</a>&nbsp;
+						 
+						 
+					 
+		            </p>
+		          </div><!-- /.blog-post -->
+			 
+				<div class="blog-post">
+		            <h2 class="blog-post-title"><a href="version-3.2.8-to-3.3.1-release-note.html">MWeb 3.2.8 及以下版本升级到 3.3.1 版本说明</a></h2>
+		            <p class="blog-post-meta">2019/09/21 
+						&nbsp;posted in 
+						
+						    <a class='category' href='tips.html'>使用技巧</a>&nbsp;
+						
+						    <a class='category' href='releases.html'>版本发布</a>&nbsp;
+						 
+						 
+					 
+		            </p>
+		          </div><!-- /.blog-post -->
+			 
+				<div class="blog-post">
+		            <h2 class="blog-post-title"><a href="how_to_use_aliyun_cos.html">如何使用阿里云 OSS 图床</a></h2>
+		            <p class="blog-post-meta">2019/09/05 
+						&nbsp;posted in 
+						
+						    <a class='category' href='docsV2.html'>使用文档</a>&nbsp;
+						
+						    <a class='category' href='tips.html'>使用技巧</a>&nbsp;
+						 
+						 
+					 
+		            </p>
+		          </div><!-- /.blog-post -->
+			 
+				<div class="blog-post">
+		            <h2 class="blog-post-title"><a href="mweb-2019-06-update.html">MWeb 最近更新及现状分享，然后今天（5/29）开始进行全平台 (macOS 和 iOS) 半价促销，持续一周。</a></h2>
+		            <p class="blog-post-meta">2019/05/29 
+						&nbsp;posted in 
+						
+						    <a class='category' href='blog.html'>博客</a>&nbsp;
+						
+						    <a class='category' href='releases.html'>版本发布</a>&nbsp;
+						 
+						 
+					 
+		            </p>
+		          </div><!-- /.blog-post -->
+			 
+				<div class="blog-post">
+		            <h2 class="blog-post-title"><a href="how_to_use_tencent_cos.html">如何使用腾讯云 COS 图床</a></h2>
+		            <p class="blog-post-meta">2019/04/12 
+						&nbsp;posted in 
+						
+						    <a class='category' href='blog.html'>博客</a>&nbsp;
+						
+						    <a class='category' href='docsV2.html'>使用文档</a>&nbsp;
+						 
+						 
+					 
+		            </p>
+		          </div><!-- /.blog-post -->
+			 
+				<div class="blog-post">
+		            <h2 class="blog-post-title"><a href="mweb-ios-3.0-release.html">MWeb for iOS 3.0.0 版发布了，此文章详细介绍一下更新的情况。</a></h2>
+		            <p class="blog-post-meta">2019/01/03 
+						&nbsp;posted in 
+						
+						    <a class='category' href='docsV2.html'>使用文档</a>&nbsp;
+						 
+						 
+					 
+		            </p>
+		          </div><!-- /.blog-post -->
+			 
+				<div class="blog-post">
+		            <h2 class="blog-post-title"><a href="how_to_use_quicknote_in_ios.html">iOS 版 MWeb 快速笔记使用说明</a></h2>
+		            <p class="blog-post-meta">2019/01/03 
+						&nbsp;posted in 
+						
+						    <a class='category' href='docsV2.html'>使用文档</a>&nbsp;
+						 
+						 
+					 
+		            </p>
+		          </div><!-- /.blog-post -->
+			 
+				<div class="blog-post">
+		            <h2 class="blog-post-title"><a href="mweb3x-release-note.html">MWeb 3 发布后 2.x 版维护说明及两者之间的功能对比</a></h2>
+		            <p class="blog-post-meta">2018/07/02 
+						&nbsp;posted in 
+						
+						    <a class='category' href='releases.html'>版本发布</a>&nbsp;
+						 
+						 
+					 
+		            </p>
+		          </div><!-- /.blog-post -->
+			 
+				<div class="blog-post">
+		            <h2 class="blog-post-title"><a href="mweb-static-blog.html">MWeb 生成静态网站 & 博客</a></h2>
+		            <p class="blog-post-meta">2018/07/02 
+						&nbsp;posted in 
+						
+						    <a class='category' href='help.html'>文档</a>&nbsp;
+						 
+						 
+					 
+		            </p>
+		          </div><!-- /.blog-post -->
+			 
+				<div class="blog-post">
+		            <h2 class="blog-post-title"><a href="15304187309476.html">MWeb 外部模式详细介绍</a></h2>
+		            <p class="blog-post-meta">2018/07/01 
+						&nbsp;posted in 
+						
+						    <a class='category' href='help.html'>文档</a>&nbsp;
+						 
+						 
+					 
+		            </p>
+		          </div><!-- /.blog-post -->
+			 
+				<div class="blog-post">
+		            <h2 class="blog-post-title"><a href="15303804636963.html">快速搜索</a></h2>
+		            <p class="blog-post-meta">2018/07/01 
+						&nbsp;posted in 
+						
+						    <a class='category' href='help.html'>文档</a>&nbsp;
+						 
+						 
+					 
+		            </p>
+		          </div><!-- /.blog-post -->
+			 
+				<div class="blog-post">
+		            <h2 class="blog-post-title"><a href="15303794142935.html">快速笔记</a></h2>
+		            <p class="blog-post-meta">2018/07/01 
+						&nbsp;posted in 
+						
+						    <a class='category' href='help.html'>文档</a>&nbsp;
+						 
+						 
+					 
+		            </p>
+		          </div><!-- /.blog-post -->
+			 
+				<div class="blog-post">
+		            <h2 class="blog-post-title"><a href="mweb-library.html">MWeb 文档库详细介绍</a></h2>
+		            <p class="blog-post-meta">2018/07/01 
+						&nbsp;posted in 
+						
+						    <a class='category' href='help.html'>文档</a>&nbsp;
+						 
+						 
+					 
+		            </p>
+		          </div><!-- /.blog-post -->
+			 
+				<div class="blog-post">
+		            <h2 class="blog-post-title"><a href="15303740497765.html">MWeb 的图片上传服务介绍</a></h2>
+		            <p class="blog-post-meta">2018/06/30 
+						&nbsp;posted in 
+						
+						    <a class='category' href='help.html'>文档</a>&nbsp;
+						 
+						 
+					 
+		            </p>
+		          </div><!-- /.blog-post -->
+			 
+				<div class="blog-post">
+		            <h2 class="blog-post-title"><a href="15303685987267.html">MWeb 的发布服务介绍</a></h2>
+		            <p class="blog-post-meta">2018/06/30 
+						&nbsp;posted in 
+						
+						    <a class='category' href='help.html'>文档</a>&nbsp;
+						 
+						 
+					 
+		            </p>
+		          </div><!-- /.blog-post -->
+			 
+				<div class="blog-post">
+		            <h2 class="blog-post-title"><a href="15303673435460.html">Markdown 输出</a></h2>
+		            <p class="blog-post-meta">2018/06/30 
+						&nbsp;posted in 
+						
+						    <a class='category' href='help.html'>文档</a>&nbsp;
+						 
+						 
+					 
+		            </p>
+		          </div><!-- /.blog-post -->
+			 
+				<div class="blog-post">
+		            <h2 class="blog-post-title"><a href="15303597337753.html">Markdown 辅助</a></h2>
+		            <p class="blog-post-meta">2018/06/30 
+						&nbsp;posted in 
+						
+						    <a class='category' href='help.html'>文档</a>&nbsp;
+						 
+						 
+					 
+		            </p>
+		          </div><!-- /.blog-post -->
+			 
+				<div class="blog-post">
+		            <h2 class="blog-post-title"><a href="markdown.html">Markdown 语法</a></h2>
+		            <p class="blog-post-meta">2018/06/29 
+						&nbsp;posted in 
+						
+						    <a class='category' href='help.html'>文档</a>&nbsp;
+						 
+						 
+					 
+		            </p>
+		          </div><!-- /.blog-post -->
+			 
+				<div class="blog-post">
+		            <h2 class="blog-post-title"><a href="15303606797118.html">MWeb 的基本使用</a></h2>
+		            <p class="blog-post-meta">2018/06/28 
+						&nbsp;posted in 
+						
+						    <a class='category' href='help.html'>文档</a>&nbsp;
+						 
+						 
+					 
+		            </p>
+		          </div><!-- /.blog-post -->
+			 
+				<div class="blog-post">
+		            <h2 class="blog-post-title"><a href="mweb3-release-note.html">MWeb 3.0 测试版更新情况</a></h2>
+		            <p class="blog-post-meta">2018/06/14 
+						&nbsp;posted in 
+						
+						    <a class='category' href='releases.html'>版本发布</a>&nbsp;
+						 
+						 
+					 
+		            </p>
+		          </div><!-- /.blog-post -->
+			 
+				<div class="blog-post">
+		            <h2 class="blog-post-title"><a href="mweb3.0-on-test.html">MWeb 3.0 测试版终于发布了！欢迎大家试用！</a></h2>
+		            <p class="blog-post-meta">2018/06/13 
+						&nbsp;posted in 
+						
+						    <a class='category' href='releases.html'>版本发布</a>&nbsp;
+						 
+						 
+					 
+		            </p>
+		          </div><!-- /.blog-post -->
+			 
+				<div class="blog-post">
+		            <h2 class="blog-post-title"><a href="15113184658847.html">MWeb for Mac, iOS 黑五半价促销一周，写个大概介绍。</a></h2>
+		            <p class="blog-post-meta">2017/11/22 
+						&nbsp;posted in 
+						
+						    <a class='category' href='docsV2.html'>使用文档</a>&nbsp;
+						
+						    <a class='category' href='tips.html'>使用技巧</a>&nbsp;
+						 
+						 
+					 
+		            </p>
+		          </div><!-- /.blog-post -->
+			 
+				<div class="blog-post">
+		            <h2 class="blog-post-title"><a href="mweb-ios-2.3.4-release.html">MWeb for iOS 2.3.4 版发布</a></h2>
+		            <p class="blog-post-meta">2017/09/29 
+						&nbsp;posted in 
+						
+						    <a class='category' href='releases.html'>版本发布</a>&nbsp;
+						
+						    <a class='category' href='tips.html'>使用技巧</a>&nbsp;
+						
+						    <a class='category' href='docsV2.html'>使用文档</a>&nbsp;
+						 
+						 
+					 
+		            </p>
+		          </div><!-- /.blog-post -->
+			 
+				<div class="blog-post">
+		            <h2 class="blog-post-title"><a href="mweb-for-mac-223-release.html">MWeb for Mac 2.2.3 版发布！</a></h2>
+		            <p class="blog-post-meta">2017/07/13 
+						&nbsp;posted in 
+						
+						    <a class='category' href='releases.html'>版本发布</a>&nbsp;
+						 
+						 
+					 
+		            </p>
+		          </div><!-- /.blog-post -->
+			 
+				<div class="blog-post">
+		            <h2 class="blog-post-title"><a href="how_to_use_shell_script.html">如何使用“发布脚本”功能发布静态网站</a></h2>
+		            <p class="blog-post-meta">2017/07/11 
+						&nbsp;posted in 
+						
+						    <a class='category' href='docsV2.html'>使用文档</a>&nbsp;
+						
+						    <a class='category' href='tips.html'>使用技巧</a>&nbsp;
+						 
+						 
+					 
+		            </p>
+		          </div><!-- /.blog-post -->
+			 
+				<div class="blog-post">
+		            <h2 class="blog-post-title"><a href="mweb-for-mac-221-release.html">MWeb for Mac 2.2.1 和 2.2.2 版发布！</a></h2>
+		            <p class="blog-post-meta">2017/07/02 
+						&nbsp;posted in 
+						
+						    <a class='category' href='releases.html'>版本发布</a>&nbsp;
+						 
+						 
+					 
+		            </p>
+		          </div><!-- /.blog-post -->
+			 
+				<div class="blog-post">
+		            <h2 class="blog-post-title"><a href="mweb-ios-2.3.2-release.html">MWeb for iOS 2.3.2 发布！</a></h2>
+		            <p class="blog-post-meta">2017/06/21 
+						&nbsp;posted in 
+						
+						    <a class='category' href='releases.html'>版本发布</a>&nbsp;
+						 
+						 
+					 
+		            </p>
+		          </div><!-- /.blog-post -->
+			 
+				<div class="blog-post">
+		            <h2 class="blog-post-title"><a href="how_to_use_images_in_mweb.html">MWeb Mac 版和 iOS 版图片及图床使用完全指南</a></h2>
+		            <p class="blog-post-meta">2017/06/20 
+						&nbsp;posted in 
+						
+						    <a class='category' href='tips.html'>使用技巧</a>&nbsp;
+						
+						    <a class='category' href='docsV2.html'>使用文档</a>&nbsp;
+						 
+						 
+					 
+		            </p>
+		          </div><!-- /.blog-post -->
+			 
+				<div class="blog-post">
+		            <h2 class="blog-post-title"><a href="how_to_use_library_in_ios.html">在 iOS 中如何使用 MWeb for Mac 文档库</a></h2>
+		            <p class="blog-post-meta">2017/06/02 
+						&nbsp;posted in 
+						
+						    <a class='category' href='docsV2.html'>使用文档</a>&nbsp;
+						
+						    <a class='category' href='tips.html'>使用技巧</a>&nbsp;
+						 
+						 
+					 
+		            </p>
+		          </div><!-- /.blog-post -->
+			 
+				<div class="blog-post">
+		            <h2 class="blog-post-title"><a href="mweb-for-ios-2.3.x-tf.html">MWeb for iOS 2.3.x 版测试说明</a></h2>
+		            <p class="blog-post-meta">2017/06/02 
+						&nbsp;posted in 
+						
+						    <a class='category' href='docsV2.html'>使用文档</a>&nbsp;
+						
+						    <a class='category' href='releases.html'>版本发布</a>&nbsp;
+						 
+						 
+					 
+		            </p>
+		          </div><!-- /.blog-post -->
+			 
+				<div class="blog-post">
+		            <h2 class="blog-post-title"><a href="14840154051727.html">MWeb for Mac 启动时出现未找到文档库的数据库文档的解决方案</a></h2>
+		            <p class="blog-post-meta">2017/01/10 
+						&nbsp;posted in 
+						
+						    <a class='category' href='tips.html'>使用技巧</a>&nbsp;
+						 
+						 
+					 
+		            </p>
+		          </div><!-- /.blog-post -->
+			 
+				<div class="blog-post">
+		            <h2 class="blog-post-title"><a href="introducing-mweb-for-ios.html">iOS 版 MWeb 正式发布及简介</a></h2>
+		            <p class="blog-post-meta">2017/01/05 
+						&nbsp;posted in 
+						
+						    <a class='category' href='docsV2.html'>使用文档</a>&nbsp;
+						
+						    <a class='category' href='releases.html'>版本发布</a>&nbsp;
+						 
+						 
+					 
+		            </p>
+		          </div><!-- /.blog-post -->
+			 
+				<div class="blog-post">
+		            <h2 class="blog-post-title"><a href="how_to_use_custom_image_upload_url.html">iOS 版 MWeb 图床功能中自定义图床的使用指南</a></h2>
+		            <p class="blog-post-meta">2016/12/21 
+						&nbsp;posted in 
+						
+						    <a class='category' href='docsV2.html'>使用文档</a>&nbsp;
+						
+						    <a class='category' href='tips.html'>使用技巧</a>&nbsp;
+						 
+						 
+					 
+		            </p>
+		          </div><!-- /.blog-post -->
+			 
+				<div class="blog-post">
+		            <h2 class="blog-post-title"><a href="how_to_use_qiniu_url.html">iOS 版 MWeb 图床功能及七牛图床使用指南</a></h2>
+		            <p class="blog-post-meta">2016/12/21 
+						&nbsp;posted in 
+						
+						    <a class='category' href='docsV2.html'>使用文档</a>&nbsp;
+						
+						    <a class='category' href='tips.html'>使用技巧</a>&nbsp;
+						 
+						 
+					 
+		            </p>
+		          </div><!-- /.blog-post -->
+			 
+				<div class="blog-post">
+		            <h2 class="blog-post-title"><a href="how_to_use_wordpress_url.html">iOS 版 MWeb 发布到自建 Wordpress 和 Metaweblog API 使用指南</a></h2>
+		            <p class="blog-post-meta">2016/12/21 
+						&nbsp;posted in 
+						
+						    <a class='category' href='docsV2.html'>使用文档</a>&nbsp;
+						
+						    <a class='category' href='tips.html'>使用技巧</a>&nbsp;
+						 
+						 
+					 
+		            </p>
+		          </div><!-- /.blog-post -->
+			 
+				<div class="blog-post">
+		            <h2 class="blog-post-title"><a href="mweb-ios-test-v2.html">MWeb for iOS 版本发布说明，更新至第五次测试版本。</a></h2>
+		            <p class="blog-post-meta">2016/12/12 
+						&nbsp;posted in 
+						
+						    <a class='category' href='releases.html'>版本发布</a>&nbsp;
+						 
+						 
+					 
+		            </p>
+		          </div><!-- /.blog-post -->
+			 
+				<div class="blog-post">
+		            <h2 class="blog-post-title"><a href="mweb-for-ios-test.html">MWeb for iOS 测试版介绍</a></h2>
+		            <p class="blog-post-meta">2016/12/08 
+						&nbsp;posted in 
+						
+						    <a class='category' href='releases.html'>版本发布</a>&nbsp;
+						
+						    <a class='category' href='docsV2.html'>使用文档</a>&nbsp;
+						 
+						 
+					 
+		            </p>
+		          </div><!-- /.blog-post -->
+			 
+				<div class="blog-post">
+		            <h2 class="blog-post-title"><a href="mweb-2.0.9-release.html">MWeb 2.0.9 版发布！修正 macOS 的问题和发布到 evernote 重大功能！</a></h2>
+		            <p class="blog-post-meta">2016/08/25 
+						&nbsp;posted in 
+						
+						    <a class='category' href='docsV2.html'>使用文档</a>&nbsp;
+						
+						    <a class='category' href='releases.html'>版本发布</a>&nbsp;
+						 
+						 
+					 
+		            </p>
+		          </div><!-- /.blog-post -->
+			           
+
+
+	          <nav>
+	            <ul class="pager">
+	            
+	            	<li class="  disabled "><a href="#index"><span aria-hidden="true">&larr;</span> 上一页</a></li>
+	            
+
+					<li class=""><a href="archives.html">归档</a></li>
+
+				
+				<li class=""><a href="all_1.html">下一页 <span aria-hidden="true">&rarr;</span></a></li>
+				
+	            </ul>
+	          </nav>
+
+        	</div><!-- /.blog-main -->
+		</div>
+	</div>
+
+</div>
+   <footer class="blog-footer">
+      <p>Copyright &copy; 2019
+Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a> &nbsp;&nbsp; 
+ <a href="reseller.html">Official Reseller</a>&nbsp;&nbsp; host on <a target="_blank" href="https://coding.net/">Coding.net Pages</a>
+.</p>
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+    </footer>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="asset/js/ie10-viewport-bug-workaround.js"></script>
     
 
 <script>
@@ -652,10 +690,9 @@ s.src = '//' + disqus_shortname + '.disqus.com/count.js';
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-58735702-1', 'auto');
+  ga('create', 'UA-58735702-2', 'auto');
   ga('send', 'pageview');
 
 </script>
-
   </body>
 </html>

@@ -1,140 +1,130 @@
-<!doctype html>
-<html class="no-js" lang="en">
+
+<!DOCTYPE html>
+<html>
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-    
-  Markdown 語法官方說明繁體中文版 - Coder For Art
-  
-  </title>
-  
-  
-  <link href="atom.xml" rel="alternate" title="Coder For Art" type="application/atom+xml">
-  
-    <link rel="stylesheet" href="asset/css/foundation.min.css" />
-    <link rel="stylesheet" href="asset/css/docs.css" />
-    <script src="asset/js/vendor/modernizr.js"></script>
-    <script src="asset/js/vendor/jquery.js"></script>
-  <script src="asset/highlightjs/highlight.pack.js"></script>
-  <link href="asset/highlightjs/styles/github.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <script>hljs.initHighlightingOnLoad();</script>
-<script type="text/javascript">
-  function before_search(){
-    var searchVal = 'site:coderforart.com ' + document.getElementById('search_input').value;
-    document.getElementById('search_q').value = searchVal;
-    return true;
-  }
-</script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="atom.xml" rel="alternate" title="MWeb" type="application/atom+xml">
+    <title> 
+	  
+  	Markdown 語法官方說明繁體中文版 - MWeb
+  	
+  	</title>
+    <link rel="icon" sizes="192x192" href="asset/icon_192.png" />
+    <link rel="shortcut icon" href="asset/icon_64.png" type="image/png" />
+
+    <link href="asset/css/bootstrap.min.css" rel="stylesheet">
+    <link href="asset/css/style.css" rel="stylesheet">
+    <script src="asset/js/jquery.min.js"></script>
+    <script src="asset/js/bootstrap.min.js"></script>
+    <script src="asset/js/docs.js"></script>
+    <script src="asset/highlightjs/highlight.pack.js"></script>
+	<link href="asset/highlightjs/styles/github.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<script>hljs.initHighlightingOnLoad();</script>
+    <!--[if lt IE 9]>
+      <script src="asset/js/html5shiv.min.js"></script>
+    <![endif]-->
   </head>
-  <body class="antialiased hide-extras">
-    
-    <div class="marketing off-canvas-wrap" data-offcanvas>
-      <div class="inner-wrap">
 
+  <body>
 
-<nav class="top-bar docs-bar hide-for-small" data-topbar>
-
-
-  <section class="top-bar-section">
-  <div class="row">
-      <div style="position: relative;width:100%;"><div style="position: absolute; width:100%;">
-        <ul id="main-menu" class="left">
-        
-        <li id="menu_item_index"><a target="_self" href="index.html">Home</a></li>
-        
-        <li id="menu_item_archives"><a target="_self" href="archives.html">Archives</a></li>
-        
-        <li id="menu_item_about"><a target="_self" href="about.html">About</a></li>
-        
-        </ul>
-
-        <ul class="right" id="search-wrap">
-          <li>
-<form >
-    <input tabindex="1" type="text"  id="bdcsMain"   placeholder="Search"/>
-</form>
-<script type="text/javascript">(function(){document.write(unescape('%3Cdiv id="bdcs"%3E%3C/div%3E'));var bdcs = document.createElement('script');bdcs.type = 'text/javascript';bdcs.async = true;bdcs.src = 'http://znsv.baidu.com/customer_search/api/js?sid=10705098311362963641' + '&plate_url=' + encodeURIComponent(window.location.href) + '&t=' + Math.ceil(new Date()/3600000);var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(bdcs, s);})();</script>
-</li>
-          </ul>
-      </div></div>
-  </div>
-  </section>
-
-</nav>
-
-        <nav class="tab-bar show-for-small">
-  <a href="javascript:void(0)" class="left-off-canvas-toggle menu-icon">
-    <span> &nbsp; Coder For Art</span>
-  </a>
-</nav>
-
-<aside class="left-off-canvas-menu">
-      <ul class="off-canvas-list">
-       
-       <li><a href="index.html">HOME</a></li>
-    <li><a href="archives.html">Archives</a></li>
-    <li><a href="about.html">ABOUT</a></li>
-
-    <li><label>Categories</label></li>
-
-        
-            <li><a href="Cocoa.html">Cocoa</a></li>
-        
-            <li><a href="CG%20Artist.html">CG Artist</a></li>
-        
-            <li><a href="Game%20Engine.html">Game Engine</a></li>
-        
-            <li><a href="MWeb-cat.html">MWeb</a></li>
-        
-            <li><a href="PinPhoto-cat.html">PinPhoto</a></li>
-        
-            <li><a href="Other.html">Other</a></li>
-         
-
-      </ul>
-    </aside>
-
-<a class="exit-off-canvas" href="#"></a>
-
-
-        <section id="main-content" role="main" class="scroll-container">
-        
-       
-
- <script type="text/javascript">
-  $(function(){
-    $('#menu_item_index').addClass('is_active');
-  });
-</script>
-<div class="row">
-  <div class="large-8 medium-8 columns">
-      <div class="markdown-body article-wrap">
-       <div class="article">
-          
-          <h1>Markdown 語法官方說明繁體中文版</h1>
-     
-        <div class="read-more clearfix">
-          <span class="date">2014/12/16</span>
-
-          <span>posted in&nbsp;</span> 
-          
-              <span class="posted-in"><a href='Markdown.html'>Markdown</a></span>
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="blog-nav">
            
-         
-          <span class="comments">
-            
-              <a href="http://coderforart.com/markdown-syntax-guide-full-version-zh.html#disqus_thread">comments</a>
-            
+        <a class="menu-index blog-nav-item" target="_self" href="index.html">首页</a>
+        
+        <a class="menu-help blog-nav-item" target="_self" href="help.html">文档</a>
+        
+        <a class="menu-themes blog-nav-item" target="_self" href="themes.html">主题</a>
+        
+        <a class="blog-nav-item menu-blog" target="_self" href="download.html">下载</a>
+        
+        <a class="menu-about blog-nav-item" target="_self" href="about.html">关于</a>
+        
+        <a class="menu-lang blog-nav-item" target="_self" href="https://www.mweb.im/">English</a>
+        
+        
+        </nav>
+      </div>
+    </div>
+      
+      <div style="color:#ff0000; text-align:center; padding:8px;" class="bg-info site_notice">
+        <a style="color:#ff0000;"  onclick="ga('send','event','global_notice_click');" href="https://t.me/mwebapp" target="_blank" >MWeb 官方 Telegram 群已建立，点击可查看</a><br /><a style="color:#ff0000;" href="mweb4-macOS-beta.html">MWeb 4.0.0 for macOS 测试版已发布，欢迎下载测试。</a>
+      </div>
+    
+    
+ <div class="container" id="content-wrap">
+ 
+ 
+    
+     
+   <script type="text/javascript">
+      $(function(){
+        $('a.menu-blog').addClass('active');
+      });
+      </script>
 
-            
-          </span>
+    
+      <script type="text/javascript">
+    $(function(){
+      var url = window.location.pathname;
+    var filename = url.substring(url.lastIndexOf('/')+1);
+    if (filename.length > 5) {
+      $('.blog-cats a').each(function(){
+        var href = $(this).attr('href');
+        if(href.length>5){
+          href = href.substring(0,href.length-5);
+          if (filename.startsWith(href)) { $(this).parent().addClass('active'); }
+        }
+      });
+    }
+    });
+  </script>
+   <div class="row">
+        <div class="col-sm-12">
 
-        </div>
-      </div><!-- article -->
+          <div class="blog-categories" style="padding-top: 0em; padding-bottom: 0em;">
 
-      <div class="article-content">
-      <h2 id="toc_0">Markdown 文件</h2>
+        <ul class="blog-cats">
+
+  
+    
+
+  
+      <li><a href="blog.html">所有分类</a></li> 
+        
+              <li><a href="docsV2.html">使用文档</a></li>
+        
+              <li><a href="tips.html">使用技巧</a></li>
+        
+              <li><a href="releases.html">版本发布</a></li>
+        
+    
+
+        </ul>
+        <div class="rss"><a href="atom.xml">RSS</a></div>
+          </div>
+       </div>
+     </div>
+     <hr style="margin-bottom: 60px;" />
+
+      <div class="row">
+
+        <div class="col-sm-10 blog-main">
+			<div class="blog-content-wrap">
+				<div class="blog-post">
+		            <h2 class="blog-post-title">Markdown 語法官方說明繁體中文版</h2>
+		            <p class="blog-post-meta">2014/12/16 
+			            &nbsp;posted in 
+						
+						    <a class='category' href='markdown-cat.html'>Markdown</a>&nbsp;
+						 
+						 
+		            </p>
+		            <div class="content-responsive">
+		            <h2 id="toc_0">Markdown 文件</h2>
 
 <p><img src="http://markdown.tw/images/208x128.png" alt="Markdown"/></p>
 
@@ -209,7 +199,7 @@ Document. Please refer to <a href="http://daringfireball.net/projects/markdown/s
 
 <p>舉例來說，在 Markdown 文件裡加上一段 HTML 表格：</p>
 
-<pre class="line-numbers"><code class="language-text">This is a regular paragraph.
+<pre><code class="language-text">This is a regular paragraph.
 
 &lt;table&gt;
     &lt;tr&gt;
@@ -234,39 +224,39 @@ This is another regular paragraph.
 
 <p><code>&amp;</code> 符號其實很容易讓寫作網路文件的人感到困擾，如果你要打「AT&amp;T」 ，你必須要寫成「<code>AT&amp;amp;T</code>」 ，還得轉換網址內的 <code>&amp;</code> 符號，如果你要連結到：</p>
 
-<pre class="line-numbers"><code class="language-text">http://images.google.com/images?num=30&amp;q=larry+bird
+<pre><code class="language-text">http://images.google.com/images?num=30&amp;q=larry+bird
 </code></pre>
 
 <p>你必須要把網址轉成：</p>
 
-<pre class="line-numbers"><code class="language-text">http://images.google.com/images?num=30&amp;amp;q=larry+bird
+<pre><code class="language-text">http://images.google.com/images?num=30&amp;amp;q=larry+bird
 </code></pre>
 
 <p>才能放到連結標籤的 <code>href</code> 屬性裡。不用說也知道這很容易忘記，這也可能是 HTML 標準檢查所檢查到的錯誤中，數量最多的。</p>
 
 <p>Markdown 允許你直接使用這些符號，但是你要小心跳脫字元的使用，如果你是在HTML 實體中使用 <code>&amp;</code> 符號的話，它不會被轉換，而在其它情形下，它則會被轉換成 <code>&amp;amp;</code>。所以你如果要在文件中插入一個著作權的符號，你可以這樣寫：</p>
 
-<pre class="line-numbers"><code class="language-text">&amp;copy;
+<pre><code class="language-text">&amp;copy;
 </code></pre>
 
 <p>Markdown 將不會對這段文字做修改，但是如果你這樣寫：</p>
 
-<pre class="line-numbers"><code class="language-text">AT&amp;T
+<pre><code class="language-text">AT&amp;T
 </code></pre>
 
 <p>Markdown 就會將它轉為：</p>
 
-<pre class="line-numbers"><code class="language-text">AT&amp;amp;T
+<pre><code class="language-text">AT&amp;amp;T
 </code></pre>
 
 <p>類似的狀況也會發生在 <code>&lt;</code> 符號上，因為 Markdown 支援 <a href="#html">行內 HTML</a> ，如果你是使用 <code>&lt;</code> 符號作為 HTML 標籤使用，那 Markdown 也不會對它做任何轉換，但是如果你是寫：</p>
 
-<pre class="line-numbers"><code class="language-text">4 &lt; 5
+<pre><code class="language-text">4 &lt; 5
 </code></pre>
 
 <p>Markdown 將會把它轉換為：</p>
 
-<pre class="line-numbers"><code class="language-text">4 &amp;lt; 5
+<pre><code class="language-text">4 &amp;lt; 5
 </code></pre>
 
 <p>不過需要注意的是，code 範圍內，不論是行內還是區塊， <code>&lt;</code> 和 <code>&amp;</code> 兩個符號都<em>一定</em>會被轉換成 HTML 實體，這項特性讓你可以很容易地用 Markdown 寫 HTML code （和 HTML 相對而言， HTML 語法中，你要把所有的 <code>&lt;</code> 和 <code>&amp;</code> 都轉換為 HTML 實體，才能在 HTML 文件裡面寫出 HTML code。）</p>
@@ -297,7 +287,7 @@ This is another regular paragraph.
 
 <p>Setext 形式是用底線的形式，利用 <code>=</code> （最高階標題）和 <code>-</code> （第二階標題），例如：</p>
 
-<pre class="line-numbers"><code class="language-text">This is an H1
+<pre><code class="language-text">This is an H1
 =============
 
 This is an H2
@@ -308,7 +298,7 @@ This is an H2
 
 <p>Atx 形式則是在行首插入 1 到 6 個 <code>#</code> ，對應到標題 1 到 6 階，例如：</p>
 
-<pre class="line-numbers"><code class="language-text"># This is an H1
+<pre><code class="language-text"># This is an H1
 
 ## This is an H2
 
@@ -317,7 +307,7 @@ This is an H2
 
 <p>你可以選擇性地「關閉」atx 樣式的標題，這純粹只是美觀用的，若是覺得這樣看起來比較舒適，你就可以在行尾加上 <code>#</code>，而行尾的 <code>#</code> 數量也不用和開頭一樣（行首的井字數量決定標題的階數）：</p>
 
-<pre class="line-numbers"><code class="language-text"># This is an H1 #
+<pre><code class="language-text"># This is an H1 #
 
 ## This is an H2 ##
 
@@ -330,7 +320,7 @@ This is an H2
 
 <p>Markdown 使用 email 形式的區塊引言，如果你很熟悉如何在 email 信件中引言，你就知道怎麼在 Markdown 文件中建立一個區塊引言，那會看起來像是你強迫斷行，然後在每行的最前面加上 <code>&gt;</code> ：</p>
 
-<pre class="line-numbers"><code class="language-text">&gt; This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
+<pre><code class="language-text">&gt; This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
 &gt; consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
 &gt; Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
 &gt; 
@@ -340,7 +330,7 @@ This is an H2
 
 <p>Markdown 也允許你只在整個段落的第一行最前面加上 <code>&gt;</code> ：</p>
 
-<pre class="line-numbers"><code class="language-text">&gt; This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
+<pre><code class="language-text">&gt; This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
 consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
 Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
 
@@ -350,7 +340,7 @@ id sem consectetuer libero luctus adipiscing.
 
 <p>區塊引言可以有階層（例如：引言內的引言），只要根據層數加上不同數量的 <code>&gt;</code> ：</p>
 
-<pre class="line-numbers"><code class="language-text">&gt; This is the first level of quoting.
+<pre><code class="language-text">&gt; This is the first level of quoting.
 &gt;
 &gt; &gt; This is nested blockquote.
 &gt;
@@ -359,7 +349,7 @@ id sem consectetuer libero luctus adipiscing.
 
 <p>引言的區塊內也可以使用其他的 Markdown 語法，包括標題、清單、程式碼區塊等：</p>
 
-<pre class="line-numbers"><code class="language-text">&gt; ## This is a header.
+<pre><code class="language-text">&gt; ## This is a header.
 &gt; 
 &gt; 1.   This is the first list item.
 &gt; 2.   This is the second list item.
@@ -377,35 +367,35 @@ id sem consectetuer libero luctus adipiscing.
 
 <p>無序清單使用星號、加號或是減號作為清單標記：</p>
 
-<pre class="line-numbers"><code class="language-text">*   Red
+<pre><code class="language-text">*   Red
 *   Green
 *   Blue
 </code></pre>
 
 <p>等同於：</p>
 
-<pre class="line-numbers"><code class="language-text">+   Red
+<pre><code class="language-text">+   Red
 +   Green
 +   Blue
 </code></pre>
 
 <p>也等同於：</p>
 
-<pre class="line-numbers"><code class="language-text">-   Red
+<pre><code class="language-text">-   Red
 -   Green
 -   Blue
 </code></pre>
 
 <p>有序清單則使用數字接著一個英文句點：</p>
 
-<pre class="line-numbers"><code class="language-text">1.  Bird
+<pre><code class="language-text">1.  Bird
 2.  McHale
 3.  Parish
 </code></pre>
 
 <p>很重要的一點是，你在清單標記上使用的數字並不會影響輸出的 HTML 結果，上面的清單所產生的 HTML 標記為：</p>
 
-<pre class="line-numbers"><code class="language-text">&lt;ol&gt;
+<pre><code class="language-text">&lt;ol&gt;
 &lt;li&gt;Bird&lt;/li&gt;
 &lt;li&gt;McHale&lt;/li&gt;
 &lt;li&gt;Parish&lt;/li&gt;
@@ -414,14 +404,14 @@ id sem consectetuer libero luctus adipiscing.
 
 <p>如果你的清單標記寫成：</p>
 
-<pre class="line-numbers"><code class="language-text">1.  Bird
+<pre><code class="language-text">1.  Bird
 1.  McHale
 1.  Parish
 </code></pre>
 
 <p>或甚至是：</p>
 
-<pre class="line-numbers"><code class="language-text">3. Bird
+<pre><code class="language-text">3. Bird
 1. McHale
 8. Parish
 </code></pre>
@@ -434,7 +424,7 @@ id sem consectetuer libero luctus adipiscing.
 
 <p>要讓清單看起來更漂亮，你可以把內容用固定的縮排整理好：</p>
 
-<pre class="line-numbers"><code class="language-text">*   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+<pre><code class="language-text">*   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
     Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
     viverra nec, fringilla in, laoreet vitae, risus.
 *   Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
@@ -443,7 +433,7 @@ id sem consectetuer libero luctus adipiscing.
 
 <p>但是如果你很懶，那也不一定需要：</p>
 
-<pre class="line-numbers"><code class="language-text">*   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+<pre><code class="language-text">*   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
 Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
 viverra nec, fringilla in, laoreet vitae, risus.
 *   Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
@@ -453,13 +443,13 @@ Suspendisse id sem consectetuer libero luctus adipiscing.
 <p>如果清單項目間用空行分開， Markdown 會把項目的內容在輸出時用 <code>&lt;p&gt;</code> <br/>
 標籤包起來，舉例來說：</p>
 
-<pre class="line-numbers"><code class="language-text">*   Bird
+<pre><code class="language-text">*   Bird
 *   Magic
 </code></pre>
 
 <p>會被轉換為：</p>
 
-<pre class="line-numbers"><code class="language-text">&lt;ul&gt;
+<pre><code class="language-text">&lt;ul&gt;
 &lt;li&gt;Bird&lt;/li&gt;
 &lt;li&gt;Magic&lt;/li&gt;
 &lt;/ul&gt;
@@ -467,14 +457,14 @@ Suspendisse id sem consectetuer libero luctus adipiscing.
 
 <p>但是這個：</p>
 
-<pre class="line-numbers"><code class="language-text">*   Bird
+<pre><code class="language-text">*   Bird
 
 *   Magic
 </code></pre>
 
 <p>會被轉換為：</p>
 
-<pre class="line-numbers"><code class="language-text">&lt;ul&gt;
+<pre><code class="language-text">&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;Bird&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Magic&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -482,7 +472,7 @@ Suspendisse id sem consectetuer libero luctus adipiscing.
 
 <p>清單項目可以包含多個段落，每個項目下的段落都必須縮排 4 個空白或是一個 tab ：</p>
 
-<pre class="line-numbers"><code class="language-text">1.  This is a list item with two paragraphs. Lorem ipsum dolor
+<pre><code class="language-text">1.  This is a list item with two paragraphs. Lorem ipsum dolor
     sit amet, consectetuer adipiscing elit. Aliquam hendrerit
     mi posuere lectus.
 
@@ -495,7 +485,7 @@ Suspendisse id sem consectetuer libero luctus adipiscing.
 
 <p>如果你每行都有縮排，看起來會看好很多，當然，再次地，如果你很懶惰，Markdown 也允許：</p>
 
-<pre class="line-numbers"><code class="language-text">*   This is a list item with two paragraphs.
+<pre><code class="language-text">*   This is a list item with two paragraphs.
 
     This is the second paragraph in the list item. You&#39;re
 only required to indent the first line. Lorem ipsum dolor
@@ -506,7 +496,7 @@ sit amet, consectetuer adipiscing elit.
 
 <p>如果要在清單項目內放進引言，那 <code>&gt;</code> 就需要縮排：</p>
 
-<pre class="line-numbers"><code class="language-text">*   A list item with a blockquote:
+<pre><code class="language-text">*   A list item with a blockquote:
 
     &gt; This is a blockquote
     &gt; inside a list item.
@@ -514,19 +504,19 @@ sit amet, consectetuer adipiscing elit.
 
 <p>如果要放程式碼區塊的話，該區塊就需要縮排<em>兩次</em>，也就是 8 個空白或是兩個 tab：</p>
 
-<pre class="line-numbers"><code class="language-text">*   A list item with a code block:
+<pre><code class="language-text">*   A list item with a code block:
 
         &lt;code goes here&gt;
 </code></pre>
 
 <p>當然，項目清單很可能會不小心產生，像是下面這樣的寫法：</p>
 
-<pre class="line-numbers"><code class="language-text">1986. What a great season.
+<pre><code class="language-text">1986. What a great season.
 </code></pre>
 
 <p>換句話說，也就是在行首出現<em>數字-句點-空白</em>，要避免這樣的狀況，你可以在句點前面加上反斜線。</p>
 
-<pre class="line-numbers"><code class="language-text">1986\. What a great season.
+<pre><code class="language-text">1986\. What a great season.
 </code></pre>
 
 <h3 id="toc_11">程式碼區塊</h3>
@@ -537,14 +527,14 @@ sit amet, consectetuer adipiscing elit.
 
 <p>要在 Markdown 中建立程式碼區塊很簡單，只要簡單地縮排 4 個空白或是 1 個 tab 就可以，例如，下面的輸入：</p>
 
-<pre class="line-numbers"><code class="language-text">This is a normal paragraph:
+<pre><code class="language-text">This is a normal paragraph:
 
     This is a code block.
 </code></pre>
 
 <p>Markdown 會轉換成：</p>
 
-<pre class="line-numbers"><code class="language-text">&lt;p&gt;This is a normal paragraph:&lt;/p&gt;
+<pre><code class="language-text">&lt;p&gt;This is a normal paragraph:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;This is a code block.
 &lt;/code&gt;&lt;/pre&gt;
@@ -552,7 +542,7 @@ sit amet, consectetuer adipiscing elit.
 
 <p>這個每行一階的縮排（4 個空白或是 1 個 tab），都會被移除，例如：</p>
 
-<pre class="line-numbers"><code class="language-text">Here is an example of AppleScript:
+<pre><code class="language-text">Here is an example of AppleScript:
 
     tell application &quot;Foo&quot;
         beep
@@ -561,7 +551,7 @@ sit amet, consectetuer adipiscing elit.
 
 <p>會被轉換為：</p>
 
-<pre class="line-numbers"><code class="language-text">&lt;p&gt;Here is an example of AppleScript:&lt;/p&gt;
+<pre><code class="language-text">&lt;p&gt;Here is an example of AppleScript:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;tell application &quot;Foo&quot;
     beep
@@ -573,14 +563,14 @@ end tell
 
 <p>在程式碼區塊裡面， <code>&amp;</code> 、 <code>&lt;</code> 和 <code>&gt;</code> 會自動轉成 HTML 實體，這樣的方式讓你非常容易使用 Markdown 插入範例用的 HTML 原始碼，只需要複製貼上，再加上縮排就可以了，剩下的 Markdown 都會幫你處理，例如：</p>
 
-<pre class="line-numbers"><code class="language-text">    &lt;div class=&quot;footer&quot;&gt;
+<pre><code class="language-text">    &lt;div class=&quot;footer&quot;&gt;
         &amp;copy; 2004 Foo Corporation
     &lt;/div&gt;
 </code></pre>
 
 <p>會被轉換為：</p>
 
-<pre class="line-numbers"><code class="language-text">&lt;pre&gt;&lt;code&gt;&amp;lt;div class=&quot;footer&quot;&amp;gt;
+<pre><code class="language-text">&lt;pre&gt;&lt;code&gt;&amp;lt;div class=&quot;footer&quot;&amp;gt;
     &amp;amp;copy; 2004 Foo Corporation
 &amp;lt;/div&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
@@ -594,7 +584,7 @@ end tell
 
 <p>你可以在一行中用三個或以上的星號、減號、底線來建立一個分隔線，行內不能有其他東西。你也可以在星號中間插入空白。下面每種寫法都可以建立分隔線：</p>
 
-<pre class="line-numbers"><code class="language-text">* * *
+<pre><code class="language-text">* * *
 
 ***
 
@@ -621,14 +611,14 @@ end tell
 
 <p>要建立一個行內形式的連結，只要在方塊括號後面馬上接著括號並插入網址連結即可，如果你還想要加上連結的 title 文字，只要在網址後面，用雙引號把 title 文字包起來即可，例如：</p>
 
-<pre class="line-numbers"><code class="language-text">This is [an example](http://example.com/ &quot;Title&quot;) inline link.
+<pre><code class="language-text">This is [an example](http://example.com/ &quot;Title&quot;) inline link.
 
 [This link](http://example.net/) has no title attribute.
 </code></pre>
 
 <p>會產生：</p>
 
-<pre class="line-numbers"><code class="language-text">&lt;p&gt;This is &lt;a href=&quot;http://example.com/&quot; title=&quot;Title&quot;&gt;
+<pre><code class="language-text">&lt;p&gt;This is &lt;a href=&quot;http://example.com/&quot; title=&quot;Title&quot;&gt;
 an example&lt;/a&gt; inline link.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://example.net/&quot;&gt;This link&lt;/a&gt; has no
@@ -637,22 +627,22 @@ title attribute.&lt;/p&gt;
 
 <p>如果你是要連結到同樣主機的資源，你可以使用相對路徑：</p>
 
-<pre class="line-numbers"><code class="language-text">See my [About](/about/) page for details.   
+<pre><code class="language-text">See my [About](/about/) page for details.   
 </code></pre>
 
 <p>參考形式的連結使用另外一個方括號接在連結文字的括號後面，而在第二個方括號裡面要填入用以辨識連結的標籤：</p>
 
-<pre class="line-numbers"><code class="language-text">This is [an example][id] reference-style link.
+<pre><code class="language-text">This is [an example][id] reference-style link.
 </code></pre>
 
 <p>你也可以選擇性地在兩個方括號中間加上空白：</p>
 
-<pre class="line-numbers"><code class="language-text">This is [an example] [id] reference-style link.
+<pre><code class="language-text">This is [an example] [id] reference-style link.
 </code></pre>
 
 <p>接著，在文件的任意處，你可以把這個標籤的連結內容定義出來：</p>
 
-<pre class="line-numbers"><code class="language-text">[id]: http://example.com/  &quot;Optional Title Here&quot;
+<pre><code class="language-text">[id]: http://example.com/  &quot;Optional Title Here&quot;
 </code></pre>
 
 <p>連結定義的形式為：</p>
@@ -667,7 +657,7 @@ title attribute.&lt;/p&gt;
 
 <p>下面這三種連結的定義都是相同：</p>
 
-<pre class="line-numbers"><code class="language-text">[foo]: http://example.com/  &quot;Optional Title Here&quot;
+<pre><code class="language-text">[foo]: http://example.com/  &quot;Optional Title Here&quot;
 [foo]: http://example.com/  &#39;Optional Title Here&#39;
 [foo]: http://example.com/  (Optional Title Here)
 </code></pre>
@@ -676,12 +666,12 @@ title attribute.&lt;/p&gt;
 
 <p>連結網址也可以用方括號包起來：</p>
 
-<pre class="line-numbers"><code class="language-text">[id]: &lt;http://example.com/&gt;  &quot;Optional Title Here&quot;
+<pre><code class="language-text">[id]: &lt;http://example.com/&gt;  &quot;Optional Title Here&quot;
 </code></pre>
 
 <p>你也可以把 title 屬性放到下一行，也可以加一些縮排，網址太長的話，這樣會比較好看：</p>
 
-<pre class="line-numbers"><code class="language-text">[id]: http://example.com/longish/path/to/resource/here
+<pre><code class="language-text">[id]: http://example.com/longish/path/to/resource/here
     &quot;Optional Title Here&quot;
 </code></pre>
 
@@ -689,35 +679,35 @@ title attribute.&lt;/p&gt;
 
 <p>連結辨識標籤可以有字母、數字、空白和標點符號，但是並<em>不</em>區分大小寫，因此下面兩個連結是一樣的：</p>
 
-<pre class="line-numbers"><code class="language-text">[link text][a]
+<pre><code class="language-text">[link text][a]
 [link text][A]
 </code></pre>
 
 <p><em>預設的連結標籤</em>功能讓你可以省略指定連結標籤，這種情形下，連結標籤和連結文字會視為相同，要用預設連結標籤只要在連結文字後面加上一個空的方括號，如果你要讓 &quot;Google&quot; 連結到 google.com，你可以簡化成：</p>
 
-<pre class="line-numbers"><code class="language-text">[Google][]
+<pre><code class="language-text">[Google][]
 </code></pre>
 
 <p>然後定義連結內容：</p>
 
-<pre class="line-numbers"><code class="language-text">[Google]: http://google.com/
+<pre><code class="language-text">[Google]: http://google.com/
 </code></pre>
 
 <p>由於連結文字可能包含空白，所以這種簡化的標籤內也可以包含多個文字：</p>
 
-<pre class="line-numbers"><code class="language-text">Visit [Daring Fireball][] for more information.
+<pre><code class="language-text">Visit [Daring Fireball][] for more information.
 </code></pre>
 
 <p>然後接著定義連結：</p>
 
-<pre class="line-numbers"><code class="language-text">[Daring Fireball]: http://daringfireball.net/
+<pre><code class="language-text">[Daring Fireball]: http://daringfireball.net/
 </code></pre>
 
 <p>連結的定義可以放在文件中的任何一個地方，我比較偏好直接放在連結出現段落的後面，你也可以把它放在文件最後面，就像是註解一樣。</p>
 
 <p>下面是一個參考式連結的範例：</p>
 
-<pre class="line-numbers"><code class="language-text">I get 10 times more traffic from [Google] [1] than from
+<pre><code class="language-text">I get 10 times more traffic from [Google] [1] than from
 [Yahoo] [2] or [MSN] [3].
 
   [1]: http://google.com/        &quot;Google&quot;
@@ -727,7 +717,7 @@ title attribute.&lt;/p&gt;
 
 <p>如果改成用連結名稱的方式寫：</p>
 
-<pre class="line-numbers"><code class="language-text">I get 10 times more traffic from [Google][] than from
+<pre><code class="language-text">I get 10 times more traffic from [Google][] than from
 [Yahoo][] or [MSN][].
 
   [google]: http://google.com/        &quot;Google&quot;
@@ -737,7 +727,7 @@ title attribute.&lt;/p&gt;
 
 <p>上面兩種寫法都會產生下面的 HTML。</p>
 
-<pre class="line-numbers"><code class="language-text">&lt;p&gt;I get 10 times more traffic from &lt;a href=&quot;http://google.com/&quot;
+<pre><code class="language-text">&lt;p&gt;I get 10 times more traffic from &lt;a href=&quot;http://google.com/&quot;
 title=&quot;Google&quot;&gt;Google&lt;/a&gt; than from
 &lt;a href=&quot;http://search.yahoo.com/&quot; title=&quot;Yahoo Search&quot;&gt;Yahoo&lt;/a&gt;
 or &lt;a href=&quot;http://search.msn.com/&quot; title=&quot;MSN Search&quot;&gt;MSN&lt;/a&gt;.&lt;/p&gt;
@@ -745,7 +735,7 @@ or &lt;a href=&quot;http://search.msn.com/&quot; title=&quot;MSN Search&quot;&gt
 
 <p>下面是用行內形式寫的同樣一段內容的 Markdown 文件，提供作為比較之用：</p>
 
-<pre class="line-numbers"><code class="language-text">I get 10 times more traffic from [Google](http://google.com/ &quot;Google&quot;)
+<pre><code class="language-text">I get 10 times more traffic from [Google](http://google.com/ &quot;Google&quot;)
 than from [Yahoo](http://search.yahoo.com/ &quot;Yahoo Search&quot;) or
 [MSN](http://search.msn.com/ &quot;MSN Search&quot;).
 </code></pre>
@@ -760,7 +750,7 @@ than from [Yahoo](http://search.yahoo.com/ &quot;Yahoo Search&quot;) or
 
 <p>Markdown 使用星號（<code>*</code>）和底線（<code>_</code>）作為標記強調字詞的符號，被 <code>*</code> 或 <code>_</code> 包圍的字詞會被轉成用 <code>&lt;em&gt;</code> 標籤包圍，用兩個 <code>*</code> 或 <code>_</code> 包起來的話，則會被轉成 <code>&lt;strong&gt;</code>，例如：</p>
 
-<pre class="line-numbers"><code class="language-text">*single asterisks*
+<pre><code class="language-text">*single asterisks*
 
 _single underscores_
 
@@ -771,7 +761,7 @@ __double underscores__
 
 <p>會轉成：</p>
 
-<pre class="line-numbers"><code class="language-text">&lt;em&gt;single asterisks&lt;/em&gt;
+<pre><code class="language-text">&lt;em&gt;single asterisks&lt;/em&gt;
 
 &lt;em&gt;single underscores&lt;/em&gt;
 
@@ -784,14 +774,14 @@ __double underscores__
 
 <p>強調也可以直接插在文字中間：</p>
 
-<pre class="line-numbers"><code class="language-text">un*frigging*believable
+<pre><code class="language-text">un*frigging*believable
 </code></pre>
 
 <p>但是如果你的 <code>*</code> 和 <code>_</code> 兩邊都有空白的話，它們就只會被當成普通的符號。</p>
 
 <p>如果要在文字前後直接插入普通的星號或底線，你可以用反斜線：</p>
 
-<pre class="line-numbers"><code class="language-text">\*this text is surrounded by literal asterisks\*
+<pre><code class="language-text">\*this text is surrounded by literal asterisks\*
 </code></pre>
 
 <h3 id="toc_16">程式碼</h3>
@@ -800,56 +790,56 @@ __double underscores__
 
 <p>如果要標記一小段行內程式碼，你可以用反引號把它包起來（<code>`</code>），例如：</p>
 
-<pre class="line-numbers"><code class="language-text">Use the `printf()` function.
+<pre><code class="language-text">Use the `printf()` function.
 </code></pre>
 
 <p>會產生：</p>
 
-<pre class="line-numbers"><code class="language-text">&lt;p&gt;Use the &lt;code&gt;printf()&lt;/code&gt; function.&lt;/p&gt;
+<pre><code class="language-text">&lt;p&gt;Use the &lt;code&gt;printf()&lt;/code&gt; function.&lt;/p&gt;
 </code></pre>
 
 <p>如果要在程式碼區段內插入反引號，你可以用多個反引號來開啟和結束程式碼區段：</p>
 
-<pre class="line-numbers"><code class="language-text">``There is a literal backtick (`) here.``
+<pre><code class="language-text">``There is a literal backtick (`) here.``
 </code></pre>
 
 <p>這段語法會產生：</p>
 
-<pre class="line-numbers"><code class="language-text">&lt;p&gt;&lt;code&gt;There is a literal backtick (`) here.&lt;/code&gt;&lt;/p&gt;
+<pre><code class="language-text">&lt;p&gt;&lt;code&gt;There is a literal backtick (`) here.&lt;/code&gt;&lt;/p&gt;
 </code></pre>
 
 <p>程式碼區段的起始和結束端都可以放入一個空白，起始端後面一個，結束端前面一個，這樣你就可以在區段的一開始就插入反引號：</p>
 
-<pre class="line-numbers"><code class="language-text">A single backtick in a code span: `` ` ``
+<pre><code class="language-text">A single backtick in a code span: `` ` ``
 
 A backtick-delimited string in a code span: `` `foo` ``
 </code></pre>
 
 <p>會產生：</p>
 
-<pre class="line-numbers"><code class="language-text">&lt;p&gt;A single backtick in a code span: &lt;code&gt;`&lt;/code&gt;&lt;/p&gt;
+<pre><code class="language-text">&lt;p&gt;A single backtick in a code span: &lt;code&gt;`&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;A backtick-delimited string in a code span: &lt;code&gt;`foo`&lt;/code&gt;&lt;/p&gt;
 </code></pre>
 
 <p>在程式碼區段內，<code>&amp;</code> 和方括號都會被轉成 HTML 實體，這樣會比較容易插入 HTML 原始碼，Markdown 會把下面這段：</p>
 
-<pre class="line-numbers"><code class="language-text">Please don&#39;t use any `&lt;blink&gt;` tags.
+<pre><code class="language-text">Please don&#39;t use any `&lt;blink&gt;` tags.
 </code></pre>
 
 <p>轉為：</p>
 
-<pre class="line-numbers"><code class="language-text">&lt;p&gt;Please don&#39;t use any &lt;code&gt;&amp;lt;blink&amp;gt;&lt;/code&gt; tags.&lt;/p&gt;
+<pre><code class="language-text">&lt;p&gt;Please don&#39;t use any &lt;code&gt;&amp;lt;blink&amp;gt;&lt;/code&gt; tags.&lt;/p&gt;
 </code></pre>
 
 <p>你也可以這樣寫：</p>
 
-<pre class="line-numbers"><code class="language-text">`&amp;#8212;` is the decimal-encoded equivalent of `&amp;mdash;`.
+<pre><code class="language-text">`&amp;#8212;` is the decimal-encoded equivalent of `&amp;mdash;`.
 </code></pre>
 
 <p>以產生：</p>
 
-<pre class="line-numbers"><code class="language-text">&lt;p&gt;&lt;code&gt;&amp;amp;#8212;&lt;/code&gt; is the decimal-encoded
+<pre><code class="language-text">&lt;p&gt;&lt;code&gt;&amp;amp;#8212;&lt;/code&gt; is the decimal-encoded
 equivalent of &lt;code&gt;&amp;amp;mdash;&lt;/code&gt;.&lt;/p&gt;
 </code></pre>
 
@@ -863,7 +853,7 @@ equivalent of &lt;code&gt;&amp;amp;mdash;&lt;/code&gt;.&lt;/p&gt;
 
 <p>行內圖片的語法看起來像是：</p>
 
-<pre class="line-numbers"><code class="language-text">![Alt text](/path/to/img.jpg)
+<pre><code class="language-text">![Alt text](/path/to/img.jpg)
 
 ![Alt text](/path/to/img.jpg &quot;Optional title&quot;)
 </code></pre>
@@ -879,12 +869,12 @@ equivalent of &lt;code&gt;&amp;amp;mdash;&lt;/code&gt;.&lt;/p&gt;
 
 <p>參考式的圖片語法則長得像這樣：</p>
 
-<pre class="line-numbers"><code class="language-text">![Alt text][id]
+<pre><code class="language-text">![Alt text][id]
 </code></pre>
 
 <p>「id」是圖片參考的名稱，圖片參考的定義方式則和連結參考一樣：</p>
 
-<pre class="line-numbers"><code class="language-text">[id]: url/to/image  &quot;Optional title attribute&quot;
+<pre><code class="language-text">[id]: url/to/image  &quot;Optional title attribute&quot;
 </code></pre>
 
 <p>到目前為止， Markdown 還沒有辦法指定圖片的寬高，如果你需要的話，你可以使用普通的 <code>&lt;img&gt;</code> 標籤。</p>
@@ -901,22 +891,22 @@ equivalent of &lt;code&gt;&amp;amp;mdash;&lt;/code&gt;.&lt;/p&gt;
 
 <p>Markdown 支援比較簡短的自動連結形式來處理網址和電子郵件信箱，只要是用方括號包起來， Markdown 就會自動把它轉成連結，連結的文字就和連結位置一樣，例如：</p>
 
-<pre class="line-numbers"><code class="language-text">&lt;http://example.com/&gt;
+<pre><code class="language-text">&lt;http://example.com/&gt;
 </code></pre>
 
 <p>Markdown 會轉為：</p>
 
-<pre class="line-numbers"><code class="language-text">&lt;a href=&quot;http://example.com/&quot;&gt;http://example.com/&lt;/a&gt;
+<pre><code class="language-text">&lt;a href=&quot;http://example.com/&quot;&gt;http://example.com/&lt;/a&gt;
 </code></pre>
 
 <p>自動的郵件連結也很類似，只是 Markdown 會先做一個編碼轉換的過程，把文字字元轉成 16 進位碼的 HTML 實體，這樣的格式可以混淆一些不好的信箱地址收集機器人，例如：</p>
 
-<pre class="line-numbers"><code class="language-text">&lt;address@example.com&gt;
+<pre><code class="language-text">&lt;address@example.com&gt;
 </code></pre>
 
 <p>Markdown 會轉成：</p>
 
-<pre class="line-numbers"><code class="language-text">&lt;a href=&quot;&amp;#x6D;&amp;#x61;i&amp;#x6C;&amp;#x74;&amp;#x6F;:&amp;#x61;&amp;#x64;&amp;#x64;&amp;#x72;&amp;#x65;
+<pre><code class="language-text">&lt;a href=&quot;&amp;#x6D;&amp;#x61;i&amp;#x6C;&amp;#x74;&amp;#x6F;:&amp;#x61;&amp;#x64;&amp;#x64;&amp;#x72;&amp;#x65;
 &amp;#115;&amp;#115;&amp;#64;&amp;#101;&amp;#120;&amp;#x61;&amp;#109;&amp;#x70;&amp;#x6C;e&amp;#x2E;&amp;#99;&amp;#111;
 &amp;#109;&quot;&gt;&amp;#x61;&amp;#x64;&amp;#x64;&amp;#x72;&amp;#x65;&amp;#115;&amp;#115;&amp;#64;&amp;#101;&amp;#120;&amp;#x61;
 &amp;#109;&amp;#x70;&amp;#x6C;e&amp;#x2E;&amp;#99;&amp;#111;&amp;#109;&lt;/a&gt;
@@ -932,12 +922,12 @@ equivalent of &lt;code&gt;&amp;amp;mdash;&lt;/code&gt;.&lt;/p&gt;
 
 <p>Markdown 可以利用反斜線來插入一些在語法中有其它意義的符號，例如：如果你想要用星號加在文字旁邊的方式來做出強調效果（但不用 <code>&lt;em&gt;</code> 標籤），你可以在星號的前面加上反斜線：</p>
 
-<pre class="line-numbers"><code class="language-text">\*literal asterisks\*
+<pre><code class="language-text">\*literal asterisks\*
 </code></pre>
 
 <p>Markdown 支援在下面這些符號前面加上反斜線來幫助插入普通的符號：</p>
 
-<pre class="line-numbers"><code class="language-text">\   反斜線
+<pre><code class="language-text">\   反斜線
 `   反引號
 *   星號
 _   底線
@@ -957,250 +947,61 @@ _   底線
 
 <p>感謝 <a href="https://twitter.com/#!/leafy7382">leafy7382</a> 協助翻譯，<a href="http://iamhlb.com/">hlb</a>、<a href="http://twitter.com/randylien">Randylien</a> 幫忙潤稿，<a href="https://twitter.com/#!/ethantw">ethantw</a> 的<a href="http://ethantw.net/projects/han/">漢字標準格式・CSS Reset</a>， <a href="http://kidwm.net/">WM</a> 回報文字錯誤。</p>
 
+		            </div>
+				</div><!-- /.blog-post -->
+			</div>
+			<div class="share-comment">
+			
 
-    
-
-      </div>
-
-      <div class="row">
-        <div class="large-6 columns">
-        <p class="text-left" style="padding:15px 0px;">
-      
-          <a href="markdown-syntax-guide-full-version.html" 
-          title="Previous Post: Markdown syntax guide full version">&laquo; Markdown syntax guide full version</a>
-      
-        </p>
-        </div>
-        <div class="large-6 columns">
-      <p class="text-right" style="padding:15px 0px;">
-      
-      </p>
-        </div>
-      </div>
-      <div class="comments-wrap">
-        <div class="share-comments">
-          <div style="height:26px;" class="share">
-<!-- JiaThis Button BEGIN -->
 <div class="jiathis_style_24x24">
 	<a class="jiathis_button_tsina"></a>
+	<a class="jiathis_button_qzone"></a>
 	<a class="jiathis_button_tqq"></a>
 	<a class="jiathis_button_weixin"></a>
-	<a class="jiathis_button_qzone"></a>
 	<a class="jiathis_button_renren"></a>
 	<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
 	<a class="jiathis_counter_style"></a>
 </div>
-<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1406813199499778" charset="utf-8"></script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
 <!-- JiaThis Button END -->
+
+			</div>
+
+        </div><!-- /.blog-main -->
 	</div>
-
-          
-            <div id="disqus_thread"></div>
-          
-
-          
-        </div>
-      </div>
-    </div><!-- article-wrap -->
-  </div><!-- large 8 -->
-
+</div>   <footer class="blog-footer">
+      <p>Copyright &copy; 2019
+Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a> &nbsp;&nbsp; 
+ <a href="reseller.html">Official Reseller</a>&nbsp;&nbsp; host on <a target="_blank" href="https://coding.net/">Coding.net Pages</a>
+.</p>
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+    </footer>
 
 
-
- <div class="large-4 medium-4 columns">
-  <div class="hide-for-small">
-    <div id="sidebar" class="sidebar">
-          <div id="site-info" class="site-info">
-            
-                <div class="site-a-logo"><img src="media/14195170907881/icon.jpg" /></div>
-            
-                <h1>Coder For Art</h1>
-                <div class="site-des">I'm an indie Mac/iOS developer, also want to be a CG artist</div>
-                <div class="social">
-
-
-
-
-
-
-
-<a target="_blank" class="weibo" href="http://weibo.com/oulvhai" title="weibo">Weibo</a>
-<a target="_blank" class="twitter" target="_blank" href="http://twitter.com/oulvhai" title="Twitter">Twitter</a>
-<a target="_blank" class="github" target="_blank" href="https://github.com/oulvhai" title="GitHub">GitHub</a>
-
-  <a target="_blank" class="rss" href="atom.xml" title="RSS">RSS</a>
-                
-              	 </div>
-          	</div>
-
-               
-             <div id="site-categories" class="side-item ">
-                <div class="side-header">
-                  <h2>Important</h2>
-                </div>
-                <div class="side-content">
-                  <div style="color:#ff0000; text-align:center; padding:8px;" class="bg-info site_notice">
-                    <a style="color:#ff0000;"  onclick="ga('send','event','global_notice_click');" href="https://zh.mweb.im/mweb3x-release-note.html" >MWeb 3 发布后 2.x 版维护说明及两者之间的功能对比！</a>
-                  </div>
-                </div>
-            </div>
-    
-
-              <div id="site-categories" class="side-item ">
-                <div class="side-header">
-                  <h2>Categories</h2>
-                </div>
-                <div class="side-content">
-
-      	<p class="cat-list">
-        
-            <a href="Cocoa.html"><strong>Cocoa</strong></a>
-        
-            <a href="CG%20Artist.html"><strong>CG Artist</strong></a>
-        
-            <a href="Game%20Engine.html"><strong>Game Engine</strong></a>
-        
-            <a href="MWeb-cat.html"><strong>MWeb</strong></a>
-        
-            <a href="PinPhoto-cat.html"><strong>PinPhoto</strong></a>
-        
-            <a href="Other.html"><strong>Other</strong></a>
-         
-        </p>
-
-
-                </div>
-              </div>
-
-              <div id="site-categories" class="side-item">
-                <div class="side-header">
-                  <h2>Recent Posts</h2>
-                </div>
-                <div class="side-content">
-                <ul class="posts-list">
-	      
-		      
-			      <li class="post">
-			        <a href="mweb3-release-note.html">MWeb 3.0 测试版更新情况</a>
-			      </li>
-		     
-		  
-		      
-			      <li class="post">
-			        <a href="mweb3.0-on-test.html">MWeb 3.0 测试版终于发布了！欢迎大家试用！</a>
-			      </li>
-		     
-		  
-		      
-			      <li class="post">
-			        <a href="15113184658847.html">MWeb for Mac, iOS 黑五半价促销一周，写个大概介绍。</a>
-			      </li>
-		     
-		  
-		      
-			      <li class="post">
-			        <a href="mweb-ios-2.3.2-release.html">MWeb for iOS 2.3.2 发布！</a>
-			      </li>
-		     
-		  
-		      
-			      <li class="post">
-			        <a href="how_to_use_images_in_mweb.html">MWeb Mac 版和 iOS 版图片及图床使用完全指南</a>
-			      </li>
-		     
-		  
-		      
-		  
-		      
-		  
-		      
-		  
-		      
-		  
-		      
-		  
-		      
-		  
-		      
-		  
-		      
-		  
-		      
-		  
-		      
-		  
-		      
-		  
-		      
-		  
-		      
-		  
-		      
-		  
-		      
-		   
-		  		</ul>
-                </div>
-              </div>
-        </div><!-- sidebar -->
-      </div><!-- hide for small -->
-</div><!-- large 4 -->
-
-</div><!-- row -->
-
- <div class="page-bottom clearfix">
-  <div class="row">
-   <p class="copyright">Copyright &copy; 2015
-Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a>,&nbsp; 
-Theme used <a target="_blank" href="http://github.com">GitHub CSS</a>.</p>
-  </div>
-</div>
-
-        </section>
-      </div>
-    </div>
-
-
-<script type="text/javascript">
-    var disqus_shortname = 'coderforart'; 
-
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-
-<script type="text/javascript">
-var disqus_shortname = 'coderforart'; 
-
-(function () {
-var s = document.createElement('script'); s.async = true;
-s.type = 'text/javascript';
-s.src = '//' + disqus_shortname + '.disqus.com/count.js';
-(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-}());
-</script>
   
-    
 
-    <script src="asset/js/foundation.min.js"></script>
-    <script>
-      $(document).foundation();
-      function fixSidebarHeight(){
-        var w1 = $('.markdown-body').height();
-          var w2 = $('#sidebar').height();
-          if (w1 > w2) { $('#sidebar').height(w1); };
-      }
-      $(function(){
-        fixSidebarHeight();
-      })
-      $(window).load(function(){
-          fixSidebarHeight();
-      });
-     
-    </script>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="asset/js/ie10-viewport-bug-workaround.js"></script>
     
 
 <script>
@@ -1209,10 +1010,9 @@ s.src = '//' + disqus_shortname + '.disqus.com/count.js';
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-58735702-1', 'auto');
+  ga('create', 'UA-58735702-2', 'auto');
   ga('send', 'pageview');
 
 </script>
-
   </body>
 </html>

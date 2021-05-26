@@ -1,0 +1,249 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="atom.xml" rel="alternate" title="MWeb" type="application/atom+xml">
+    <title> 
+	  
+  	MWeb for iOS 3.0.0 版发布了，此文章详细介绍一下更新的情况。 - MWeb
+  	
+  	</title>
+    <link rel="icon" sizes="192x192" href="asset/icon_192.png" />
+    <link rel="shortcut icon" href="asset/icon_64.png" type="image/png" />
+
+    <link href="asset/css/bootstrap.min.css" rel="stylesheet">
+    <link href="asset/css/style.css" rel="stylesheet">
+    <script src="asset/js/jquery.min.js"></script>
+    <script src="asset/js/bootstrap.min.js"></script>
+    <script src="asset/js/docs.js"></script>
+    <script src="asset/highlightjs/highlight.pack.js"></script>
+	<link href="asset/highlightjs/styles/github.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<script>hljs.initHighlightingOnLoad();</script>
+    <!--[if lt IE 9]>
+      <script src="asset/js/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="blog-nav">
+           
+        <a class="menu-index blog-nav-item" target="_self" href="index.html">首页</a>
+        
+        <a class="menu-help blog-nav-item" target="_self" href="help.html">文档</a>
+        
+        <a class="menu-themes blog-nav-item" target="_self" href="themes.html">主题</a>
+        
+        <a class="blog-nav-item menu-blog" target="_self" href="download.html">下载</a>
+        
+        <a class="menu-about blog-nav-item" target="_self" href="about.html">关于</a>
+        
+        <a class="menu-lang blog-nav-item" target="_self" href="https://www.mweb.im/">English</a>
+        
+        
+        </nav>
+      </div>
+    </div>
+      
+      <div style="color:#ff0000; text-align:center; padding:8px;" class="bg-info site_notice">
+        <a style="color:#ff0000;"  onclick="ga('send','event','global_notice_click');" href="https://t.me/mwebapp" target="_blank" >MWeb 官方 Telegram 群已建立，点击可查看</a><br /><a style="color:#ff0000;" href="mweb4-macOS-beta.html">MWeb 4.0.0 for macOS 测试版已发布，欢迎下载测试。</a>
+      </div>
+    
+    
+ <div class="container" id="content-wrap">
+ 
+ 
+    
+     
+   <script type="text/javascript">
+      $(function(){
+        $('a.menu-blog').addClass('active');
+      });
+      </script>
+
+    
+      <script type="text/javascript">
+    $(function(){
+      var url = window.location.pathname;
+    var filename = url.substring(url.lastIndexOf('/')+1);
+    if (filename.length > 5) {
+      $('.blog-cats a').each(function(){
+        var href = $(this).attr('href');
+        if(href.length>5){
+          href = href.substring(0,href.length-5);
+          if (filename.startsWith(href)) { $(this).parent().addClass('active'); }
+        }
+      });
+    }
+    });
+  </script>
+   <div class="row">
+        <div class="col-sm-12">
+
+          <div class="blog-categories" style="padding-top: 0em; padding-bottom: 0em;">
+
+        <ul class="blog-cats">
+
+  
+    
+
+  
+      <li><a href="blog.html">所有分类</a></li> 
+        
+              <li><a href="docsV2.html">使用文档</a></li>
+        
+              <li><a href="tips.html">使用技巧</a></li>
+        
+              <li><a href="releases.html">版本发布</a></li>
+        
+    
+
+        </ul>
+        <div class="rss"><a href="atom.xml">RSS</a></div>
+          </div>
+       </div>
+     </div>
+     <hr style="margin-bottom: 60px;" />
+
+      <div class="row">
+
+        <div class="col-sm-10 blog-main">
+			<div class="blog-content-wrap">
+				<div class="blog-post">
+		            <h2 class="blog-post-title">MWeb for iOS 3.0.0 版发布了，此文章详细介绍一下更新的情况。</h2>
+		            <p class="blog-post-meta">2019/01/03 
+			            &nbsp;posted in 
+						
+						    <a class='category' href='docsV2.html'>使用文档</a>&nbsp;
+						 
+						 
+		            </p>
+		            <div class="content-responsive">
+		            <p>这次更新有两个坏消息。第一，是这个版本的更新来得太迟了，一转眼，2018 年就过去了！第二，是这次的新版本，很多计划内的功能都没有上。还记得当时决定做 iOS 3.x 时，真的是满怀激动，觉得这次一定要花时间全新设计，让 MWeb 更现代，更好看，还要解决各种用户反馈的问题，特别是文档库同步问题。</p>
+
+<p>而当冷静下来，设立一些目标，比如说，文档库重新设计，同步和功能都要弄好，跟 Mac 版本一致；界面既要简洁又功能强大，用户用起来要舒畅，还要更现代，更好看；再有就是，原来的渣渣代码，也是要重构一下了吧，写得这么乱，太 low 了。</p>
+
+<p>然后当真正开始干后，各种情况真是大受打击，最后变得无法继续了，开始自我否定起来。这时我就开始警惕起来了，毕竟抑郁症才走出来不久。最后放空心情，不去想这事，去干别的了，当然，心里还是很在意的。</p>
+
+<p>当前这个 3.0.0 版本，怎么说呢，算是一个常规更新吧，这个版本是在慢慢想明白了自身的情况，慢慢弄出来的，下面介绍一下。</p>
+
+<h2 id="toc_0">MWeb iOS 3.0 版本界面情况</h2>
+
+<p>如下图，这是新的界面，可以看到，几乎跟原来没什么大的改变。最大的改变就是文档导航变成侧边栏了，编辑器变成总会显示了，也就是在切换要打开的文档时，不会关闭原来已打开的文档了。<br/>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/mweb-ios-3.jpg" alt="mweb ios 3"/></p>
+
+<h2 id="toc_1">打开文件应用中的 Markdown 或文本文档</h2>
+
+<p>这次更新优化了这个用途，侧边栏底部的工具栏中，最后两个按钮是常驻的，最后那个是关闭侧边栏按钮，剩下那个就是打开文件（Files）应用中的 Markdown 文档功能了。由于 iOS 11 及以上版本的新机制，也就是安装了 Dropbox、Google Drive、坚果等云盘的客户端后，都会可以在文件应用中访问到相关的云盘的文档。这个就非常方便了，这样 MWeb 不做同步功能也可以通过文件应用访问其它云盘的文档了。<br/>
+由于目前 iOS 还不开放访问文件应用中的某个文件夹的权限，所以目前用 MWeb 打开文件应用中的 Markdown 文档还不支持插入图片到文档本地。需要插入图片的话，可以通过配置 MWeb 中的图床功能，这样插入图片后，MWeb 会自动上传至图床。还有就是，在文件应用中，还可以选择使用 MWeb 打开 Markdown 和文本文档。</p>
+
+<h2 id="toc_2">快速笔记功能</h2>
+
+<p>快速笔记提供一个这样概念：就是不管什么时候，我需要记笔记的话，只需要点一下快速笔记的按钮即可马上开始记录，不需要考虑文件名、保存位置、怎样归类整理等等。只需要记下就是完成任务，至于整理或者什么的，那是之后的事了，不用考虑，减少负担，只为记下。</p>
+
+<p>快速笔记提供了三个入口，如下图所示为两个入口，还有一个办法是使用 URL Scheme：<code>mwebapp://?p=quicknote</code> 。点击后，MWeb 会自动按下图最右边那张图片的设置的规则，来打开快速笔记的文档并弹出键盘。快速笔记的重点在记，只要记下即可，MWeb 会自动按天来整理成文档。在你点击快速笔记时，如果快速笔记在非打开状态，则会自动加上时间做为标题。</p>
+
+<p><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/openquicknote.jpg" alt="open-quick-note"/></p>
+
+<p>如果你把快速笔记设置保存在 MWeb for Mac 文档库，目前还不支持归类到某一分类，iOS 版本的文档库同步及完整功能会在数个版本内得到完善。</p>
+
+<p>如下图是快速笔记编辑器的情况和查看之前日期的快速笔记的文件夹（我是保存在本机中的 demo folder 文件夹里的）。<br/>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/quicknote.jpg" alt="quick-note"/></p>
+
+<h2 id="toc_3">对 Markdown 语法键盘的改进</h2>
+
+<p><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/markdownkeyboard.jpg" alt="markdown-keyboard"/></p>
+
+<p>如上图，Markdown 语法输入键盘更改了样式，另外还增加了插入文件应用中的图片按钮和预览按钮。另外在 <code>设置 - 自定义键盘工具条按钮及顺序</code> 中，还可以调整顺序和设置是否显示在最上面的工具条中，如上图右边的图片所示。<br/>
+如上图左边，最上面的工具条可以向左滑动来查看其它隐藏的按钮，另外，MWeb 还提供一个切换所有 Markdown 语法输入键盘的按钮，所以如果你不喜欢用滑动方式，可以点此按钮插入 Markdown 语法。</p>
+
+<h2 id="toc_4">全文搜索</h2>
+
+<p>目前这个版本终于是支持全文搜索了，目前的搜索的话，如果填入的关键字用空格隔开，比如说填入 “测试 说明”，会搜索文档中既包含 “测试” 又包含 “说明” 的文档并显示出来。<br/>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/fulltextsearch.jpg" alt="full-text-search"/></p>
+
+<h2 id="toc_5">文档库改进</h2>
+
+<p>如下图所示，文档库首页增加了显示最近新增的文档，在文档库的所有功能完善前，这个功能应该会方便不少。另外直接点击分类会进入如下图右图效果，此分类的子分类会先显示出来，然后再显示此分类下的文档。再有就是增加了一个新增文档库文档的 URL Scheme：<code>mwebapp://?p=newlibdoc</code> 。<br/>
+要注意的是，目前的文档库还是不支持删除、管理分类和文档归类功能，这些功能只能等之后的更新了，其实这功能也是拖好久了。。。<br/>
+<img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/mwebformaclibrary.jpg" alt="mweb-for-mac-library"/></p>
+
+<h2 id="toc_6">网盘文档改动</h2>
+
+<p>之前的本机文档被归类到网盘文档中了，另外点击（i）按钮可以设置文件夹的相关功能还是没变动，如下图所示。</p>
+
+<p><img src="https://cdn.mwebapp.cn/mwebsite/2021/04/06/externalfolder.jpg" alt="external-folde"/></p>
+
+<p>以上，MWeb 新版本的情况就介绍完了。</p>
+
+		            </div>
+				</div><!-- /.blog-post -->
+			</div>
+			<div class="share-comment">
+			
+
+<div class="jiathis_style_24x24">
+	<a class="jiathis_button_tsina"></a>
+	<a class="jiathis_button_qzone"></a>
+	<a class="jiathis_button_tqq"></a>
+	<a class="jiathis_button_weixin"></a>
+	<a class="jiathis_button_renren"></a>
+	<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+			</div>
+
+        </div><!-- /.blog-main -->
+	</div>
+</div>   <footer class="blog-footer">
+      <p>Copyright &copy; 2019
+Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a> &nbsp;&nbsp; 
+ <a href="reseller.html">Official Reseller</a>&nbsp;&nbsp; host on <a target="_blank" href="https://coding.net/">Coding.net Pages</a>
+.</p>
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+    </footer>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="asset/js/ie10-viewport-bug-workaround.js"></script>
+    
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-58735702-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </body>
+</html>
